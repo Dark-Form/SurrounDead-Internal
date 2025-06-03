@@ -118,10 +118,8 @@ public:
 		static inline bool NoDrain = false;
 		static inline bool GodMode = false;
 
-		static inline bool NoRecoil = true;
+		static inline bool NoRecoil = false;
 		static inline bool FullAuto = false;
-		static inline bool CustomFireRate = false;
-		static inline float FireRate = 15.0f;
 		static inline bool InfAmmo = false;
 
 		static inline bool InstaLoot = false;
@@ -129,8 +127,6 @@ public:
 
 		static inline bool SpeedHack = false;
 		static inline float Speed = 1.0f;
-
-		static inline bool DumpImages = false;
 
 		static inline const char* BoneList[] = { "Head", "Body", "Pelvis" };
 		static inline int AimBone = 0;
