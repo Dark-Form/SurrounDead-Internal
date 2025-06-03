@@ -384,7 +384,6 @@ public:
         SDK::ABP_PlayerCharacter_C* SelfPlayerCharacter = static_cast<SDK::ABP_PlayerCharacter_C*>(PlayerController->AcknowledgedPawn);
         if (!SelfPlayerCharacter) return;
 
-        // Handle player cheats
         HandlePlayerCheats(SelfPlayerCharacter);
 
         SDK::ULevel* PersistentLevel = Gworld->PersistentLevel;
