@@ -2,3 +2,5 @@ to use, go to Releases and download the zip then extract it to a folder make sur
 Open the game then run the exe and it will load the trainer.
 
 once injected F1 if the menu key
+
+make sure your game is in dx11 mode
