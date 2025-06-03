@@ -140,11 +140,9 @@ public:
 	{
 		if (showMenu)
 		{
-			// Set window size and position
 			ImGui::SetNextWindowSize(ImVec2(898, 550), ImGuiCond_FirstUseEver);
 			ImGui::SetNextWindowPos(ImVec2(ImGui::GetIO().DisplaySize.x * 0.5f, ImGui::GetIO().DisplaySize.y * 0.5f), ImGuiCond_FirstUseEver, ImVec2(0.5f, 0.5f));
 
-			// Custom style
 			ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(15, 15));
 			ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(5, 5));
 			ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(12, 8));
@@ -153,7 +151,6 @@ public:
 			ImGui::PushStyleVar(ImGuiStyleVar_ScrollbarSize, 15.0f);
 			ImGui::PushStyleVar(ImGuiStyleVar_GrabMinSize, 5.0f);
 
-			// Colors
 			ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.06f, 0.06f, 0.06f, 0.94f));
 			ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.20f, 0.20f, 0.20f, 1.00f));
 			ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.26f, 0.26f, 0.26f, 1.00f));
@@ -491,7 +488,7 @@ public:
 							ImGui::Checkbox("Infinite Stmaina", &u_vars::InfStamina);
 							ImGui::Checkbox("GodMode", &u_vars::GodMode);
 							ImGui::Checkbox("Infinite Staturation", &u_vars::NoDrain);
-							ImGui::Checkbox("No Recoil", &u_vars::NoRecoil);
+							//ImGui::Checkbox("No Recoil", &u_vars::NoRecoil);
 							ImGui::Checkbox("Full Auto", &u_vars::FullAuto);
 							//ImGui::Checkbox("Infinite Ammo", &u_vars::InfAmmo);
 							ImGui::Checkbox("No Lockpick Break", &u_vars::InfLockPick);
@@ -531,7 +528,6 @@ public:
 							ImGui::InputText("Waypoint Name", WaypointSystem::WaypointManager::waypointName, sizeof(WaypointSystem::WaypointManager::waypointName));
 							ImGui::ColorEdit4("Waypoint Color", (float*)&WaypointSystem::WaypointManager::waypointColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
 							
-							// Add icon selection
 							const char* iconNames[] = {
 								"None", "Cross", "Star", "Circle", "Square", "Triangle", "Diamond"
 							};
@@ -595,7 +591,6 @@ public:
 									WaypointSystem::WaypointManager::SaveWaypoints();
 								}
 
-								// Add icon selection for editing
 								int currentIcon = static_cast<int>(WaypointSystem::WaypointManager::waypoints[WaypointSystem::WaypointManager::selectedWaypoint].icon);
 								if (ImGui::Combo("##EditIcon", &currentIcon, iconNames, IM_ARRAYSIZE(iconNames))) {
 									WaypointSystem::WaypointManager::waypoints[WaypointSystem::WaypointManager::selectedWaypoint].icon = 
@@ -627,7 +622,7 @@ public:
 						{
 							ImGui::Text("SurrounDead Internal");
 							ImGui::Text("Developer: DarkForm");
-							ImGui::Text("Version: 2.3");
+							ImGui::Text("Version: 2.7");
 						}
 						ImGui::EndGroup();
 						ImGui::EndTabItem();
