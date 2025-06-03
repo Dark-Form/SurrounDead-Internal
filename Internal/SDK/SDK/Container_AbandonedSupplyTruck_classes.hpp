@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_LootContainer_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -25,10 +25,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Container_AbandonedSupplyTruck_C;   // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void Event1();
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_Container_AbandonedSupplyTruck(int32 EntryPoint);
 	void Event2();
+	void Event1();
 
 public:
 	static class UClass* StaticClass()

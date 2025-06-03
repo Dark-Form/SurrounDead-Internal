@@ -17,41 +17,6 @@
 namespace SDK
 {
 
-// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.GetInteractOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
-
-void ABP_GuaranteedSpawner_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GuaranteedSpawner_C", "GetInteractOptions");
-
-	Params::BP_GuaranteedSpawner_C_GetInteractOptions Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
-}
-
-
-// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.HoldToInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_GuaranteedSpawner_C::HoldToInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GuaranteedSpawner_C", "HoldToInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.Timeline__UpdateFunc
 // (BlueprintEvent)
 
@@ -115,6 +80,26 @@ void ABP_GuaranteedSpawner_C::SetPickupCount(int32 NewCount, bool* Result)
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
+}
+
+
+// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_GuaranteedSpawner_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuaranteedSpawner_C", "SetInteractOption");
+
+	Params::BP_GuaranteedSpawner_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -454,6 +439,20 @@ void ABP_GuaranteedSpawner_C::IsHeld_(bool* Held_)
 }
 
 
+// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.HoldToInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_GuaranteedSpawner_C::HoldToInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuaranteedSpawner_C", "HoldToInteract");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.GetSettings
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -578,6 +577,27 @@ void ABP_GuaranteedSpawner_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, 
 }
 
 
+// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.GetInteractOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+
+void ABP_GuaranteedSpawner_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuaranteedSpawner_C", "GetInteractOptions");
+
+	Params::BP_GuaranteedSpawner_C_GetInteractOptions Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
+}
+
+
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.ExecuteUbergraph_BP_GuaranteedSpawner
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -659,26 +679,6 @@ void ABP_GuaranteedSpawner_C::BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_Com
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_GuaranteedSpawner_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GuaranteedSpawner_C", "SetInteractOption");
-
-	Params::BP_GuaranteedSpawner_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -211,6 +211,70 @@ void ABuildable_HordeBeacon_C::FindLocation(bool* Success, struct FVector* Loc)
 }
 
 
+// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnDestroy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_HordeBeacon_C::OnDestroy(class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_HordeBeacon_C", "OnDestroy");
+
+	Params::Buildable_HordeBeacon_C_OnDestroy Parms{};
+
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnInteractBuildable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_HordeBeacon_C::OnInteractBuildable(class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_HordeBeacon_C", "OnInteractBuildable");
+
+	Params::Buildable_HordeBeacon_C_OnInteractBuildable Parms{};
+
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABuildable_HordeBeacon_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_HordeBeacon_C", "OnServerExecuteInteract");
+
+	Params::Buildable_HordeBeacon_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.ProjectLocation
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -333,70 +397,6 @@ void ABuildable_HordeBeacon_C::TraceForBuildables(bool* BuildableInRadius_)
 
 	if (BuildableInRadius_ != nullptr)
 		*BuildableInRadius_ = Parms.BuildableInRadius_;
-}
-
-
-// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnDestroy
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_HordeBeacon_C::OnDestroy(class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_HordeBeacon_C", "OnDestroy");
-
-	Params::Buildable_HordeBeacon_C_OnDestroy Parms{};
-
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnInteractBuildable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_HordeBeacon_C::OnInteractBuildable(class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_HordeBeacon_C", "OnInteractBuildable");
-
-	Params::Buildable_HordeBeacon_C_OnInteractBuildable Parms{};
-
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABuildable_HordeBeacon_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_HordeBeacon_C", "OnServerExecuteInteract");
-
-	Params::Buildable_HordeBeacon_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

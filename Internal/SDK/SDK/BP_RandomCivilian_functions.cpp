@@ -17,60 +17,6 @@
 namespace SDK
 {
 
-// Function BP_RandomCivilian.BP_RandomCivilian_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RandomCivilian_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomCivilian_C", "OnExecuteInteractDialogue");
-
-	Params::BP_RandomCivilian_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RandomCivilian.BP_RandomCivilian_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_RandomCivilian_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomCivilian_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RandomCivilian.BP_RandomCivilian_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RandomCivilian_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomCivilian_C", "SetInteractOption");
-
-	Params::BP_RandomCivilian_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_RandomCivilian.BP_RandomCivilian_C.SetPickupCount
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -123,6 +69,26 @@ void ABP_RandomCivilian_C::SetMeshAndMaterial()
 }
 
 
+// Function BP_RandomCivilian.BP_RandomCivilian_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RandomCivilian_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RandomCivilian_C", "SetInteractOption");
+
+	Params::BP_RandomCivilian_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_RandomCivilian.BP_RandomCivilian_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -132,6 +98,20 @@ void ABP_RandomCivilian_C::ReceiveBeginPlay()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_RandomCivilian_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RandomCivilian.BP_RandomCivilian_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_RandomCivilian_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RandomCivilian_C", "PickupBuildFromGround");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -220,6 +200,26 @@ void ABP_RandomCivilian_C::OnExecuteInteractEnded()
 		Func = Class->GetFunction("BP_RandomCivilian_C", "OnExecuteInteractEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RandomCivilian.BP_RandomCivilian_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RandomCivilian_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RandomCivilian_C", "OnExecuteInteractDialogue");
+
+	Params::BP_RandomCivilian_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

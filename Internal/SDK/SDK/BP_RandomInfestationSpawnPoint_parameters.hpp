@@ -17,6 +17,60 @@
 namespace SDK::Params
 {
 
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.ExecuteUbergraph_BP_RandomInfestationSpawnPoint
+// 0x00B0 (0x00B0 - 0x0000)
+struct BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0020(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Infestation_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
+	bool                                          CallFunc_RandomSpawn_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint) == 0x000010, "Wrong alignment on BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint");
+static_assert(sizeof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint) == 0x0000B0, "Wrong size on BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, EntryPoint) == 0x000000, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_GetTransform_ReturnValue) == 0x000020, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_FinishSpawningActor_ReturnValue) == 0x000088, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, K2Node_MakeArray_Array) == 0x000090, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_RandomSpawn_ReturnValue) == 0x0000A0, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_RandomSpawn_ReturnValue' has a wrong offset!");
+
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.RandomSpawn
+// 0x0038 (0x0038 - 0x0000)
+struct BP_RandomInfestationSpawnPoint_C_RandomSpawn final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Chance;                                            // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolCVar_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TraceForActor_Ouput;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetFloatCVar_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_RandomInfestationSpawnPoint_C_RandomSpawn) == 0x000008, "Wrong alignment on BP_RandomInfestationSpawnPoint_C_RandomSpawn");
+static_assert(sizeof(BP_RandomInfestationSpawnPoint_C_RandomSpawn) == 0x000038, "Wrong size on BP_RandomInfestationSpawnPoint_C_RandomSpawn");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, ReturnValue) == 0x000000, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, Chance) == 0x000008, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::Chance' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_GetBoolCVar_ReturnValue) == 0x000010, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_GetBoolCVar_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_TraceForActor_Ouput) == 0x000011, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_TraceForActor_Ouput' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_GetFloatCVar_ReturnValue) == 0x000014, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_GetFloatCVar_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_RandomFloatInRange_ReturnValue) == 0x000028, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x000030, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+
 // Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.TraceForActor
 // 0x01F8 (0x01F8 - 0x0000)
 struct BP_RandomInfestationSpawnPoint_C_TraceForActor final
@@ -77,60 +131,6 @@ static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_TraceForActor, CallFunc_
 static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_TraceForActor, CallFunc_BreakHitResult_TraceStart) == 0x0001C0, "Member 'BP_RandomInfestationSpawnPoint_C_TraceForActor::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
 static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_TraceForActor, CallFunc_BreakHitResult_TraceEnd) == 0x0001D8, "Member 'BP_RandomInfestationSpawnPoint_C_TraceForActor::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_TraceForActor, CallFunc_ActorHasTag_ReturnValue) == 0x0001F0, "Member 'BP_RandomInfestationSpawnPoint_C_TraceForActor::CallFunc_ActorHasTag_ReturnValue' has a wrong offset!");
-
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.RandomSpawn
-// 0x0038 (0x0038 - 0x0000)
-struct BP_RandomInfestationSpawnPoint_C_RandomSpawn final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Chance;                                            // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolCVar_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TraceForActor_Ouput;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetFloatCVar_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_RandomInfestationSpawnPoint_C_RandomSpawn) == 0x000008, "Wrong alignment on BP_RandomInfestationSpawnPoint_C_RandomSpawn");
-static_assert(sizeof(BP_RandomInfestationSpawnPoint_C_RandomSpawn) == 0x000038, "Wrong size on BP_RandomInfestationSpawnPoint_C_RandomSpawn");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, ReturnValue) == 0x000000, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, Chance) == 0x000008, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::Chance' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_GetBoolCVar_ReturnValue) == 0x000010, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_GetBoolCVar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_TraceForActor_Ouput) == 0x000011, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_TraceForActor_Ouput' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_GetFloatCVar_ReturnValue) == 0x000014, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_GetFloatCVar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_RandomFloatInRange_ReturnValue) == 0x000028, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_RandomSpawn, CallFunc_Multiply_DoubleDouble_B_ImplicitCast) == 0x000030, "Member 'BP_RandomInfestationSpawnPoint_C_RandomSpawn::CallFunc_Multiply_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.ExecuteUbergraph_BP_RandomInfestationSpawnPoint
-// 0x00B0 (0x00B0 - 0x0000)
-struct BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0020(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Infestation_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	bool                                          CallFunc_RandomSpawn_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint) == 0x000010, "Wrong alignment on BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint");
-static_assert(sizeof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint) == 0x0000B0, "Wrong size on BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, EntryPoint) == 0x000000, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_GetTransform_ReturnValue) == 0x000020, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000080, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_FinishSpawningActor_ReturnValue) == 0x000088, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, K2Node_MakeArray_Array) == 0x000090, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint, CallFunc_RandomSpawn_ReturnValue) == 0x0000A0, "Member 'BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint::CallFunc_RandomSpawn_ReturnValue' has a wrong offset!");
 
 }
 

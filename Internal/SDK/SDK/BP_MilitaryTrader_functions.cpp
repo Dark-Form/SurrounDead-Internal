@@ -17,60 +17,23 @@
 namespace SDK
 {
 
-// Function BP_MilitaryTrader.BP_MilitaryTrader_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MilitaryTrader_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTrader_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MilitaryTrader.BP_MilitaryTrader_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_MilitaryTrader.BP_MilitaryTrader_C.ExecuteUbergraph_BP_MilitaryTrader
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MilitaryTrader_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+void ABP_MilitaryTrader_C::ExecuteUbergraph_BP_MilitaryTrader(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTrader_C", "OnBeginInteract");
+		Func = Class->GetFunction("BP_MilitaryTrader_C", "ExecuteUbergraph_BP_MilitaryTrader");
 
-	Params::BP_MilitaryTrader_C_OnBeginInteract Parms{};
+	Params::BP_MilitaryTrader_C_ExecuteUbergraph_BP_MilitaryTrader Parms{};
 
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MilitaryTrader.BP_MilitaryTrader_C.GetInteractOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
-
-void ABP_MilitaryTrader_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTrader_C", "GetInteractOptions");
-
-	Params::BP_MilitaryTrader_C_GetInteractOptions Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
 }
 
 
@@ -98,23 +61,60 @@ void ABP_MilitaryTrader_C::BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundE
 }
 
 
-// Function BP_MilitaryTrader.BP_MilitaryTrader_C.ExecuteUbergraph_BP_MilitaryTrader
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_MilitaryTrader.BP_MilitaryTrader_C.GetInteractOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_MilitaryTrader_C::ExecuteUbergraph_BP_MilitaryTrader(int32 EntryPoint)
+void ABP_MilitaryTrader_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTrader_C", "ExecuteUbergraph_BP_MilitaryTrader");
+		Func = Class->GetFunction("BP_MilitaryTrader_C", "GetInteractOptions");
 
-	Params::BP_MilitaryTrader_C_ExecuteUbergraph_BP_MilitaryTrader Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::BP_MilitaryTrader_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
+}
+
+
+// Function BP_MilitaryTrader.BP_MilitaryTrader_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_MilitaryTrader_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTrader_C", "OnBeginInteract");
+
+	Params::BP_MilitaryTrader_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MilitaryTrader.BP_MilitaryTrader_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MilitaryTrader_C::OnEndInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTrader_C", "OnEndInteract");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

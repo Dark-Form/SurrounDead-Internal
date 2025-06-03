@@ -25,12 +25,12 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void Saturation(float NewValue);
-	void ReceiveBeginPlay();
-	void NightLength(float NewValue);
-	void NightBright(float NewValue);
-	void ExecuteUbergraph_BP_SkySettings(int32 EntryPoint);
 	void DayLength(float NewValue);
+	void ExecuteUbergraph_BP_SkySettings(int32 EntryPoint);
+	void NightBright(float NewValue);
+	void NightLength(float NewValue);
+	void ReceiveBeginPlay();
+	void Saturation(float NewValue);
 
 public:
 	static class UClass* StaticClass()

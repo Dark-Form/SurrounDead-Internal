@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_TraderMaster_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -26,8 +26,8 @@ public:
 	class UStaticMeshComponent*                   Vehicle;                                           // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
 	void ExecuteUbergraph_BP_VehicleTrader(int32 EntryPoint);
+	void BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
 
 public:
 	static class UClass* StaticClass()

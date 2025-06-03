@@ -44,38 +44,38 @@ public:
 	bool                                          CanOpenDoorFromBehind_;                            // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void TL_DoorsKeycard__UpdateFunc();
-	void TL_DoorsKeycard__FinishedFunc();
-	void TL_DoorsAuto__UpdateFunc();
-	void TL_DoorsAuto__FinishedFunc();
-	void SetPower_Warning(bool SetWarning);
-	void SetPower_TurnedOn(bool TurnOn);
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void SetInteractOption(const struct FGameplayTag& Option);
-	void PickupBuildFromGround();
-	void OnStopExecuteInteract(class AActor* InteractingActor);
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
-	void OnRep_Warning();
-	void OnRep_Unlocked();
-	void OnRep_Locked();
-	void OnExecuteInteractEnded();
-	void OnExecuteInteractDialogue(class AActor* InteractingActor);
-	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
-	void OnEndInteract();
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
-	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
-	void JigCanInteract(bool* Result);
-	void GetMainSceneComp(class USceneComponent** Comp);
-	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
-	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
-	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
-	void ExecuteUbergraph_BP_LaboratorySlidingDoor(int32 EntryPoint);
-	void Event_Door(class AActor* Interactor);
-	void Event_AutoDoor();
-	void CallInteractOnObject();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void CallInteractOnObject();
+	void Event_AutoDoor();
+	void Event_Door(class AActor* Interactor);
+	void ExecuteUbergraph_BP_LaboratorySlidingDoor(int32 EntryPoint);
+	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
+	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
+	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
+	void GetMainSceneComp(class USceneComponent** Comp);
+	void JigCanInteract(bool* Result);
+	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void OnEndInteract();
+	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
+	void OnExecuteInteractDialogue(class AActor* InteractingActor);
+	void OnExecuteInteractEnded();
+	void OnRep_Locked();
+	void OnRep_Unlocked();
+	void OnRep_Warning();
+	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void OnStopExecuteInteract(class AActor* InteractingActor);
+	void PickupBuildFromGround();
+	void SetInteractOption(const struct FGameplayTag& Option);
+	void SetPickupCount(int32 NewCount, bool* Result);
+	void SetPower_TurnedOn(bool TurnOn);
+	void SetPower_Warning(bool SetWarning);
+	void TL_DoorsAuto__FinishedFunc();
+	void TL_DoorsAuto__UpdateFunc();
+	void TL_DoorsKeycard__FinishedFunc();
+	void TL_DoorsKeycard__UpdateFunc();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

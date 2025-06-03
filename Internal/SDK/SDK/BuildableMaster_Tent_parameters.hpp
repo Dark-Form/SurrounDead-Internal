@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 #include "ContainerPickupsInfo_structs.hpp"
 #include "RepItemInfo_structs.hpp"
-#include "S_JigPayload_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_JigPayload_structs.hpp"
 
 
 namespace SDK::Params

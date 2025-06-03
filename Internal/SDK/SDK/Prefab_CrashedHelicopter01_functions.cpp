@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Prefab_CrashedHelicopter01.Prefab_CrashedHelicopter01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APrefab_CrashedHelicopter01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prefab_CrashedHelicopter01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Prefab_CrashedHelicopter01.Prefab_CrashedHelicopter01_C.ExecuteUbergraph_Prefab_CrashedHelicopter01
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void APrefab_CrashedHelicopter01_C::ExecuteUbergraph_Prefab_CrashedHelicopter01(
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Prefab_CrashedHelicopter01.Prefab_CrashedHelicopter01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APrefab_CrashedHelicopter01_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Prefab_CrashedHelicopter01_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_VehicleTrader.BP_VehicleTrader_C.ExecuteUbergraph_BP_VehicleTrader
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_VehicleTrader_C::ExecuteUbergraph_BP_VehicleTrader(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_VehicleTrader_C", "ExecuteUbergraph_BP_VehicleTrader");
+
+	Params::BP_VehicleTrader_C_ExecuteUbergraph_BP_VehicleTrader Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_VehicleTrader.BP_VehicleTrader_C.BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -36,26 +56,6 @@ void ABP_VehicleTrader_C::BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEv
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_VehicleTrader.BP_VehicleTrader_C.ExecuteUbergraph_BP_VehicleTrader
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_VehicleTrader_C::ExecuteUbergraph_BP_VehicleTrader(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleTrader_C", "ExecuteUbergraph_BP_VehicleTrader");
-
-	Params::BP_VehicleTrader_C_ExecuteUbergraph_BP_VehicleTrader Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

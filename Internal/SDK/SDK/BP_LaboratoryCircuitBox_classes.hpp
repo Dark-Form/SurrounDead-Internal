@@ -49,36 +49,36 @@ public:
 	TArray<class ABP_LaboratoryLightSwitch_C*>    LightSwitches;                                     // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void UserConstructionScript();
-	void TL_Levers__UpdateFunc();
-	void TL_Levers__FinishedFunc();
-	void TL_DoorReverse__UpdateFunc();
-	void TL_DoorReverse__FinishedFunc();
-	void Timeline__UpdateFunc();
-	void Timeline__FinishedFunc();
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void SetInteractOption(const struct FGameplayTag& Option);
-	void PickupBuildFromGround();
-	void OnStopExecuteInteract(class AActor* InteractingActor);
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
-	void OnExecuteInteractEnded();
-	void OnExecuteInteractDialogue(class AActor* InteractingActor);
-	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
-	void OnEndInteract();
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
-	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
-	void JigCanInteract(bool* Result);
-	void IsObjectDamageable_(bool* Damageable_);
-	void GetMainSceneComp(class USceneComponent** Comp);
-	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
-	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
-	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
-	void ExecuteUbergraph_BP_LaboratoryCircuitBox(int32 EntryPoint);
-	void Event_Door();
-	void Damage_Shoved(bool Anim, double Force);
-	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
+	void Damage_Shoved(bool Anim, double Force);
+	void Event_Door();
+	void ExecuteUbergraph_BP_LaboratoryCircuitBox(int32 EntryPoint);
+	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
+	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
+	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
+	void GetMainSceneComp(class USceneComponent** Comp);
+	void IsObjectDamageable_(bool* Damageable_);
+	void JigCanInteract(bool* Result);
+	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void OnEndInteract();
+	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
+	void OnExecuteInteractDialogue(class AActor* InteractingActor);
+	void OnExecuteInteractEnded();
+	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void OnStopExecuteInteract(class AActor* InteractingActor);
+	void PickupBuildFromGround();
+	void SetInteractOption(const struct FGameplayTag& Option);
+	void SetPickupCount(int32 NewCount, bool* Result);
+	void Timeline__FinishedFunc();
+	void Timeline__UpdateFunc();
+	void TL_DoorReverse__FinishedFunc();
+	void TL_DoorReverse__UpdateFunc();
+	void TL_Levers__FinishedFunc();
+	void TL_Levers__UpdateFunc();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

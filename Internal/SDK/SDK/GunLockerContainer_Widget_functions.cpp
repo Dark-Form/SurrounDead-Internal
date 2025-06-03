@@ -17,220 +17,107 @@
 namespace SDK
 {
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetItemReference
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.ExecuteUbergraph_GunLockerContainer_Widget
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UJSI_Slot_C*                      ItemRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGunLockerContainer_Widget_C::SetItemReference(class UJSI_Slot_C* ItemRef)
+void UGunLockerContainer_Widget_C::ExecuteUbergraph_GunLockerContainer_Widget(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetItemReference");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "ExecuteUbergraph_GunLockerContainer_Widget");
 
-	Params::GunLockerContainer_Widget_C_SetItemReference Parms{};
+	Params::GunLockerContainer_Widget_C_ExecuteUbergraph_GunLockerContainer_Widget Parms{};
 
-	Parms.ItemRef = ItemRef;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetInspectorRef
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UBP_InspectorWindowWidget_C*      Inspector                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UGunLockerContainer_Widget_C::SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetInspectorRef");
-
-	Params::GunLockerContainer_Widget_C_SetInspectorRef Parms{};
-
-	Parms.Inspector = Inspector;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetActorOwner
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UGunLockerContainer_Widget_C::SetActorOwner(class AActor* ActorRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetActorOwner");
-
-	Params::GunLockerContainer_Widget_C_SetActorOwner Parms{};
-
-	Parms.ActorRef = ActorRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetActionbarFollower
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UJSI_Slot_C*                      JigRef                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UGunLockerContainer_Widget_C::SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetActionbarFollower");
-
-	Params::GunLockerContainer_Widget_C_SetActionbarFollower Parms{};
-
-	Parms.JigRef = JigRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.OnCreatedFromUtility
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.ForceInitSpecialcontainer
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UGunLockerContainer_Widget_C::OnCreatedFromUtility()
+void UGunLockerContainer_Widget_C::ForceInitSpecialcontainer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "OnCreatedFromUtility");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "ForceInitSpecialcontainer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.JSIOnWeightUpdated
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  NewWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UGunLockerContainer_Widget_C::JSIOnWeightUpdated(double NewWeight)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "JSIOnWeightUpdated");
-
-	Params::GunLockerContainer_Widget_C_JSIOnWeightUpdated Parms{};
-
-	Parms.NewWeight = NewWeight;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.JSICheckStatus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UGunLockerContainer_Widget_C::JSICheckStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "JSICheckStatus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.JigSetLootContent
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const class FText&                      Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UGunLockerContainer_Widget_C::JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "JigSetLootContent");
-
-	Params::GunLockerContainer_Widget_C_JigSetLootContent Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Name_0 = std::move(Name_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetValidReloadContainers
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetAllAttachments
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+// TArray<class FName>*                    Attachments                                            (Parm, OutParm)
 
-void UGunLockerContainer_Widget_C::GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers)
+void UGunLockerContainer_Widget_C::GetAllAttachments(TArray<class FName>* Attachments)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetValidReloadContainers");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetAllAttachments");
 
-	Params::GunLockerContainer_Widget_C_GetValidReloadContainers Parms{};
+	Params::GunLockerContainer_Widget_C_GetAllAttachments Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
+	if (Attachments != nullptr)
+		*Attachments = std::move(Parms.Attachments);
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetLootContent
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetContainerByAttachmentType
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 JigContainer                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  ContainerIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGunLockerContainer_Widget_C::GetLootContent(class UUserWidget** Widget)
+void UGunLockerContainer_Widget_C::GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetLootContent");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetContainerByAttachmentType");
 
-	Params::GunLockerContainer_Widget_C_GetLootContent Parms{};
+	Params::GunLockerContainer_Widget_C_GetContainerByAttachmentType Parms{};
+
+	Parms.Type = std::move(Type);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
+	if (JigContainer != nullptr)
+		*JigContainer = Parms.JigContainer;
+
+	if (ContainerIndex != nullptr)
+		*ContainerIndex = Parms.ContainerIndex;
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetListOfNonAddContainers
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetDropWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+// class UDropItemBackGwidget_C**          DropWRef                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UGunLockerContainer_Widget_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
+void UGunLockerContainer_Widget_C::GetDropWidget(class UDropItemBackGwidget_C** DropWRef)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetListOfNonAddContainers");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetDropWidget");
 
-	Params::GunLockerContainer_Widget_C_GetListOfNonAddContainers Parms{};
+	Params::GunLockerContainer_Widget_C_GetDropWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
+	if (DropWRef != nullptr)
+		*DropWRef = Parms.DropWRef;
 }
 
 
@@ -266,105 +153,218 @@ void UGunLockerContainer_Widget_C::GetJSIContainerByPlayerSlots(const struct FGa
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetDropWidget
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetListOfNonAddContainers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UDropItemBackGwidget_C**          DropWRef                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
 
-void UGunLockerContainer_Widget_C::GetDropWidget(class UDropItemBackGwidget_C** DropWRef)
+void UGunLockerContainer_Widget_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetDropWidget");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetListOfNonAddContainers");
 
-	Params::GunLockerContainer_Widget_C_GetDropWidget Parms{};
+	Params::GunLockerContainer_Widget_C_GetListOfNonAddContainers Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (DropWRef != nullptr)
-		*DropWRef = Parms.DropWRef;
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetContainerByAttachmentType
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetLootContent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGameplayTag&              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 JigContainer                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32*                                  ContainerIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UGunLockerContainer_Widget_C::GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex)
+void UGunLockerContainer_Widget_C::GetLootContent(class UUserWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetContainerByAttachmentType");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetLootContent");
 
-	Params::GunLockerContainer_Widget_C_GetContainerByAttachmentType Parms{};
-
-	Parms.Type = std::move(Type);
+	Params::GunLockerContainer_Widget_C_GetLootContent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (JigContainer != nullptr)
-		*JigContainer = Parms.JigContainer;
-
-	if (ContainerIndex != nullptr)
-		*ContainerIndex = Parms.ContainerIndex;
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetAllAttachments
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.GetValidReloadContainers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FName>*                    Attachments                                            (Parm, OutParm)
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
 
-void UGunLockerContainer_Widget_C::GetAllAttachments(TArray<class FName>* Attachments)
+void UGunLockerContainer_Widget_C::GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetAllAttachments");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "GetValidReloadContainers");
 
-	Params::GunLockerContainer_Widget_C_GetAllAttachments Parms{};
+	Params::GunLockerContainer_Widget_C_GetValidReloadContainers Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Attachments != nullptr)
-		*Attachments = std::move(Parms.Attachments);
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.ForceInitSpecialcontainer
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.JigSetLootContent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UGunLockerContainer_Widget_C::JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "JigSetLootContent");
+
+	Params::GunLockerContainer_Widget_C_JigSetLootContent Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.JSICheckStatus
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UGunLockerContainer_Widget_C::ForceInitSpecialcontainer()
+void UGunLockerContainer_Widget_C::JSICheckStatus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "ForceInitSpecialcontainer");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "JSICheckStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.ExecuteUbergraph_GunLockerContainer_Widget
-// (Final, UbergraphFunction, HasDefaults)
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.JSIOnWeightUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  NewWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGunLockerContainer_Widget_C::ExecuteUbergraph_GunLockerContainer_Widget(int32 EntryPoint)
+void UGunLockerContainer_Widget_C::JSIOnWeightUpdated(double NewWeight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GunLockerContainer_Widget_C", "ExecuteUbergraph_GunLockerContainer_Widget");
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "JSIOnWeightUpdated");
 
-	Params::GunLockerContainer_Widget_C_ExecuteUbergraph_GunLockerContainer_Widget Parms{};
+	Params::GunLockerContainer_Widget_C_JSIOnWeightUpdated Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewWeight = NewWeight;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.OnCreatedFromUtility
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UGunLockerContainer_Widget_C::OnCreatedFromUtility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "OnCreatedFromUtility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetActionbarFollower
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UJSI_Slot_C*                      JigRef                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UGunLockerContainer_Widget_C::SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetActionbarFollower");
+
+	Params::GunLockerContainer_Widget_C_SetActionbarFollower Parms{};
+
+	Parms.JigRef = JigRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetActorOwner
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UGunLockerContainer_Widget_C::SetActorOwner(class AActor* ActorRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetActorOwner");
+
+	Params::GunLockerContainer_Widget_C_SetActorOwner Parms{};
+
+	Parms.ActorRef = ActorRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetInspectorRef
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UBP_InspectorWindowWidget_C*      Inspector                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UGunLockerContainer_Widget_C::SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetInspectorRef");
+
+	Params::GunLockerContainer_Widget_C_SetInspectorRef Parms{};
+
+	Parms.Inspector = Inspector;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GunLockerContainer_Widget.GunLockerContainer_Widget_C.SetItemReference
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UJSI_Slot_C*                      ItemRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UGunLockerContainer_Widget_C::SetItemReference(class UJSI_Slot_C* ItemRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GunLockerContainer_Widget_C", "SetItemReference");
+
+	Params::GunLockerContainer_Widget_C_SetItemReference Parms{};
+
+	Parms.ItemRef = ItemRef;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

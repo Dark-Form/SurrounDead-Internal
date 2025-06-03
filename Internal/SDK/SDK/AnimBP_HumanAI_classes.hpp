@@ -12,12 +12,12 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "PhysicsCore_structs.hpp"
+#include "E_BlockType_structs.hpp"
 #include "AnimBP_HumanAI_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 #include "S_AIAnims_structs.hpp"
-#include "E_BlockType_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK
@@ -176,18 +176,11 @@ public:
 	bool                                          Holdable;                                          // 0x26C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Actor_Aim_Focus(class AActor* Instigator);
 	void Turret_Start_Reload();
 	void Turret_Idle_Stop();
 	void Turret_Idle_Start();
 	void Turret_End_Reload();
 	void Turret_Destroyed_Effect();
-	void AnimNotify_Block_Attack();
-	void AnimNotify_Begin_Jump_End();
-	void AnimNotify_AI_Reload();
-	void AnimNotify_ActiveMeleeDetect();
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
 	void Return_Current_Behaviour(E_AIBehaviour* New_Behaviour);
 	void Return_Combat_Stance_Anims(bool* Use_Combat_Stance, struct FS_AIAnims* AI_Animation);
 	void Return_Behaviour_Anims(const struct FS_AllAIAnims& All_Anims, E_AIBehaviour Behaviour, struct FS_AIAnims* Anims);
@@ -207,6 +200,12 @@ public:
 	void AnimNotify_Footstep();
 	void AnimNotify_Equip();
 	void AnimNotify_DeactiveMeleeDetect();
+	void AnimNotify_Block_Attack();
+	void AnimNotify_Begin_Jump_End();
+	void AnimNotify_AI_Reload();
+	void AnimNotify_ActiveMeleeDetect();
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
 	void AI_End_Alert();
 	void AI_Dead();
 	void AI_Can_Interact_(bool* Can_Interact);
@@ -215,6 +214,7 @@ public:
 	void AI_Animation_Switch(E_AIBehaviour Behaviour);
 	void AI_Alert(class AActor* Alert_Actor);
 	void Actor_Attack_Target(class AActor** Attack_Target);
+	void Actor_Aim_Focus(class AActor* Instigator);
 
 	void AI_Is_Dead_(bool* Dead) const;
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "EEffectLayer_structs.hpp"
-#include "ETriggerMethod_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "EEffectType_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ETriggerMethod_structs.hpp"
+#include "EEffectLayer_structs.hpp"
 
 
 namespace SDK

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_OrderOptions_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_OrderOptions_structs.hpp"
 
 
 namespace SDK

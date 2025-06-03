@@ -37,8 +37,6 @@ public:
 	bool                                          PlayerClicked_;                                    // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_Buildable_GeneratorMaster(int32 EntryPoint);
-	void GetObjects_ForceOff();
 	void Svr_UpdateFuel(double Fuel);
 	void Shake();
 	void ReceiveBeginPlay();
@@ -47,11 +45,13 @@ public:
 	void OnRep_CurrentFuel();
 	void OnEndInteract();
 	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void GetObjects_ForceOff();
+	void GetObjects();
+	void FuelCost();
+	void ExecuteUbergraph_Buildable_GeneratorMaster(int32 EntryPoint);
 	void Client_Notification(const class FText& Message, class UTexture2D* Icon, const struct FLinearColor& Icon_Colour, double Delay);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
 	void ActorLoaded();
-	void GetObjects();
-	void FuelCost();
 
 public:
 	static class UClass* StaticClass()

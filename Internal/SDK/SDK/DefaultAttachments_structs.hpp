@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "DefaultAttachments2_structs.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
+#include "DefaultAttachments2_structs.hpp"
 
 
 namespace SDK

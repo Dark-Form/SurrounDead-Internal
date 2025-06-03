@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function Buildable_Couch.Buildable_Couch_C.ExecuteUbergraph_Buildable_Couch
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Couch_C::ExecuteUbergraph_Buildable_Couch(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Couch_C", "ExecuteUbergraph_Buildable_Couch");
-
-	Params::Buildable_Couch_C_ExecuteUbergraph_Buildable_Couch Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Buildable_Couch.Buildable_Couch_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -56,6 +36,26 @@ void ABuildable_Couch_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBo
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Couch.Buildable_Couch_C.ExecuteUbergraph_Buildable_Couch
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_Couch_C::ExecuteUbergraph_Buildable_Couch(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Couch_C", "ExecuteUbergraph_Buildable_Couch");
+
+	Params::Buildable_Couch_C_ExecuteUbergraph_Buildable_Couch Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

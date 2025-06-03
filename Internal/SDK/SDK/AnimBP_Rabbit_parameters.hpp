@@ -29,16 +29,16 @@ static_assert(alignof(AnimBP_Rabbit_C_AnimGraph) == 0x000008, "Wrong alignment o
 static_assert(sizeof(AnimBP_Rabbit_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_Rabbit_C_AnimGraph");
 static_assert(offsetof(AnimBP_Rabbit_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_Rabbit_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
-// Function AnimBP_Rabbit.AnimBP_Rabbit_C.GetSpeed
-// 0x0008 (0x0008 - 0x0000)
-struct AnimBP_Rabbit_C_GetSpeed final
+// Function AnimBP_Rabbit.AnimBP_Rabbit_C.BlueprintThreadSafeUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation final
 {
 public:
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_Rabbit_C_GetSpeed) == 0x000008, "Wrong alignment on AnimBP_Rabbit_C_GetSpeed");
-static_assert(sizeof(AnimBP_Rabbit_C_GetSpeed) == 0x000008, "Wrong size on AnimBP_Rabbit_C_GetSpeed");
-static_assert(offsetof(AnimBP_Rabbit_C_GetSpeed, CallFunc_VSize_ReturnValue) == 0x000000, "Member 'AnimBP_Rabbit_C_GetSpeed::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(alignof(AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation");
+static_assert(sizeof(AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation) == 0x000004, "Wrong size on AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation");
+static_assert(offsetof(AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation, DeltaTime) == 0x000000, "Member 'AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation::DeltaTime' has a wrong offset!");
 
 // Function AnimBP_Rabbit.AnimBP_Rabbit_C.ExecuteUbergraph_AnimBP_Rabbit
 // 0x02D8 (0x02D8 - 0x0000)
@@ -161,16 +161,16 @@ static_assert(offsetof(AnimBP_Rabbit_C_ExecuteUbergraph_AnimBP_Rabbit, CallFunc_
 static_assert(offsetof(AnimBP_Rabbit_C_ExecuteUbergraph_AnimBP_Rabbit, CallFunc_BreakHitResult_TraceEnd) == 0x0002B8, "Member 'AnimBP_Rabbit_C_ExecuteUbergraph_AnimBP_Rabbit::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(AnimBP_Rabbit_C_ExecuteUbergraph_AnimBP_Rabbit, K2Node_Select_Default) == 0x0002D0, "Member 'AnimBP_Rabbit_C_ExecuteUbergraph_AnimBP_Rabbit::K2Node_Select_Default' has a wrong offset!");
 
-// Function AnimBP_Rabbit.AnimBP_Rabbit_C.BlueprintThreadSafeUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation final
+// Function AnimBP_Rabbit.AnimBP_Rabbit_C.GetSpeed
+// 0x0008 (0x0008 - 0x0000)
+struct AnimBP_Rabbit_C_GetSpeed final
 {
 public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation");
-static_assert(sizeof(AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation) == 0x000004, "Wrong size on AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation");
-static_assert(offsetof(AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation, DeltaTime) == 0x000000, "Member 'AnimBP_Rabbit_C_BlueprintThreadSafeUpdateAnimation::DeltaTime' has a wrong offset!");
+static_assert(alignof(AnimBP_Rabbit_C_GetSpeed) == 0x000008, "Wrong alignment on AnimBP_Rabbit_C_GetSpeed");
+static_assert(sizeof(AnimBP_Rabbit_C_GetSpeed) == 0x000008, "Wrong size on AnimBP_Rabbit_C_GetSpeed");
+static_assert(offsetof(AnimBP_Rabbit_C_GetSpeed, CallFunc_VSize_ReturnValue) == 0x000000, "Member 'AnimBP_Rabbit_C_GetSpeed::CallFunc_VSize_ReturnValue' has a wrong offset!");
 
 }
 

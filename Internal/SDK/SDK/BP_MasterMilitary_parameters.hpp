@@ -24,6 +24,109 @@
 namespace SDK::Params
 {
 
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnTwoContainersSwap
+// 0x0014 (0x0014 - 0x0000)
+struct BP_MasterMilitary_C_JigMP_OnTwoContainersSwap final
+{
+public:
+	class FName                                   FromContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnTwoContainersSwap");
+static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap) == 0x000014, "Wrong size on BP_MasterMilitary_C_JigMP_OnTwoContainersSwap");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap, FromContainer) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnTwoContainersSwap::FromContainer' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap, ToContainer) == 0x000008, "Member 'BP_MasterMilitary_C_JigMP_OnTwoContainersSwap::ToContainer' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap, Result) == 0x000010, "Member 'BP_MasterMilitary_C_JigMP_OnTwoContainersSwap::Result' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnRequestDropItem
+// 0x01D0 (0x01D0 - 0x0000)
+struct BP_MasterMilitary_C_JigMP_OnRequestDropItem final
+{
+public:
+	struct FRepItemInfo                           ItemInfo;                                          // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   ContainerName;                                     // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorRef;                                          // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0120(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0150(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_JigMP_OnRequestDropItem) == 0x000010, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnRequestDropItem");
+static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnRequestDropItem) == 0x0001D0, "Wrong size on BP_MasterMilitary_C_JigMP_OnRequestDropItem");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, ItemInfo) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::ItemInfo' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, ContainerName) == 0x000078, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::ContainerName' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, ActorRef) == 0x000080, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000088, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000090, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000A8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000C0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000C8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_ReturnValue) == 0x0000E0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue) == 0x0000F8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000110, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000118, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeVector_ReturnValue) == 0x000120, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000138, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeTransform_ReturnValue) == 0x000150, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001B8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0001C0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupEquipped
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_MasterMilitary_C_JigMP_OnPickupEquipped final
+{
+public:
+	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainerName;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  UID;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           Info;                                              // 0x0030(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 OverrideActor;                                     // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_JigMP_OnPickupEquipped) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnPickupEquipped");
+static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnPickupEquipped) == 0x0000B8, "Wrong size on BP_MasterMilitary_C_JigMP_OnPickupEquipped");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, ActorRef) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, ToContainerName) == 0x000008, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::ToContainerName' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, UID) == 0x000010, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::UID' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, TocontainerUID) == 0x000020, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, Info) == 0x000030, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::Info' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, Result) == 0x0000A8, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::Result' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, OverrideActor) == 0x0000B0, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::OverrideActor' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupAdded
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_MasterMilitary_C_JigMP_OnPickupAdded final
+{
+public:
+	struct FRepItemInfo                           Info;                                              // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainer;                                       // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_JigMP_OnPickupAdded) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnPickupAdded");
+static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnPickupAdded) == 0x0000A8, "Wrong size on BP_MasterMilitary_C_JigMP_OnPickupAdded");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, Info) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::Info' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, ItemUID) == 0x000078, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, TocontainerUID) == 0x000088, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, ToContainer) == 0x000098, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::ToContainer' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, Result) == 0x0000A0, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::Result' has a wrong offset!");
+
 // Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnMainContainerItemRemoved
 // 0x00A8 (0x00A8 - 0x0000)
 struct BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved final
@@ -42,109 +145,6 @@ static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved, Ite
 static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
 static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
 static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_MasterMilitary_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteract
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MasterMilitary_C_OnExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnExecuteInteract");
-static_assert(sizeof(BP_MasterMilitary_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_MasterMilitary_C_OnExecuteInteract");
-static_assert(offsetof(BP_MasterMilitary_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_MasterMilitary_C_OnExecuteInteract::Option' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnRequestServerInteract
-// 0x0048 (0x0048 - 0x0000)
-struct BP_MasterMilitary_C_OnRequestServerInteract final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnRequestServerInteract");
-static_assert(sizeof(BP_MasterMilitary_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_MasterMilitary_C_OnRequestServerInteract");
-static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Actor' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Payload' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Result' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetBurning
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MasterMilitary_C_SetBurning final
-{
-public:
-	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_SetBurning) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_SetBurning");
-static_assert(sizeof(BP_MasterMilitary_C_SetBurning) == 0x000018, "Wrong size on BP_MasterMilitary_C_SetBurning");
-static_assert(offsetof(BP_MasterMilitary_C_SetBurning, Burning_) == 0x000000, "Member 'BP_MasterMilitary_C_SetBurning::Burning_' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_SetBurning, Dmg) == 0x000008, "Member 'BP_MasterMilitary_C_SetBurning::Dmg' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_SetBurning, Actor) == 0x000010, "Member 'BP_MasterMilitary_C_SetBurning::Actor' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.ReceiveAnyDamage
-// 0x0020 (0x0020 - 0x0000)
-struct BP_MasterMilitary_C_ReceiveAnyDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_ReceiveAnyDamage");
-static_assert(sizeof(BP_MasterMilitary_C_ReceiveAnyDamage) == 0x000020, "Wrong size on BP_MasterMilitary_C_ReceiveAnyDamage");
-static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::Damage' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteractDialogue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterMilitary_C_OnExecuteInteractDialogue final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnExecuteInteractDialogue");
-static_assert(sizeof(BP_MasterMilitary_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_MasterMilitary_C_OnExecuteInteractDialogue");
-static_assert(offsetof(BP_MasterMilitary_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct BP_MasterMilitary_C_OnBeginInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(BP_MasterMilitary_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnBeginInteract");
-static_assert(sizeof(BP_MasterMilitary_C_OnBeginInteract) == 0x000058, "Wrong size on BP_MasterMilitary_C_OnBeginInteract");
-static_assert(offsetof(BP_MasterMilitary_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_MasterMilitary_C_OnBeginInteract::Options' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigSetCanInteract
-// 0x0003 (0x0003 - 0x0000)
-struct BP_MasterMilitary_C_JigSetCanInteract final
-{
-public:
-	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_MasterMilitary_C_JigSetCanInteract");
-static_assert(sizeof(BP_MasterMilitary_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_MasterMilitary_C_JigSetCanInteract");
-static_assert(offsetof(BP_MasterMilitary_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_MasterMilitary_C_JigSetCanInteract::CanInteract' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_MasterMilitary_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_MasterMilitary_C_JigSetCanInteract::Result' has a wrong offset!");
 
 // Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnMainContainerItemAdded
 // 0x00B8 (0x00B8 - 0x0000)
@@ -836,18 +836,182 @@ static_assert(alignof(BP_MasterMilitary_C_AddMarker) == 0x000008, "Wrong alignme
 static_assert(sizeof(BP_MasterMilitary_C_AddMarker) == 0x000008, "Wrong size on BP_MasterMilitary_C_AddMarker");
 static_assert(offsetof(BP_MasterMilitary_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_MasterMilitary_C_AddMarker::Marker_0' has a wrong offset!");
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetPickupCount
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterMilitary_C_SetPickupCount final
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnUpdateChamberUID
+// 0x0014 (0x0014 - 0x0000)
+struct BP_MasterMilitary_C_JigMP_OnUpdateChamberUID final
 {
 public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MasterMilitary_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_SetPickupCount");
-static_assert(sizeof(BP_MasterMilitary_C_SetPickupCount) == 0x000008, "Wrong size on BP_MasterMilitary_C_SetPickupCount");
-static_assert(offsetof(BP_MasterMilitary_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_MasterMilitary_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_SetPickupCount, Result) == 0x000004, "Member 'BP_MasterMilitary_C_SetPickupCount::Result' has a wrong offset!");
+static_assert(alignof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnUpdateChamberUID");
+static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_MasterMilitary_C_JigMP_OnUpdateChamberUID");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_MasterMilitary_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigSetCanInteract
+// 0x0003 (0x0003 - 0x0000)
+struct BP_MasterMilitary_C_JigSetCanInteract final
+{
+public:
+	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_MasterMilitary_C_JigSetCanInteract");
+static_assert(sizeof(BP_MasterMilitary_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_MasterMilitary_C_JigSetCanInteract");
+static_assert(offsetof(BP_MasterMilitary_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_MasterMilitary_C_JigSetCanInteract::CanInteract' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_MasterMilitary_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_MasterMilitary_C_JigSetCanInteract::Result' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct BP_MasterMilitary_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(BP_MasterMilitary_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnBeginInteract");
+static_assert(sizeof(BP_MasterMilitary_C_OnBeginInteract) == 0x000058, "Wrong size on BP_MasterMilitary_C_OnBeginInteract");
+static_assert(offsetof(BP_MasterMilitary_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_MasterMilitary_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteract
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MasterMilitary_C_OnExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnExecuteInteract");
+static_assert(sizeof(BP_MasterMilitary_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_MasterMilitary_C_OnExecuteInteract");
+static_assert(offsetof(BP_MasterMilitary_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_MasterMilitary_C_OnExecuteInteract::Option' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteractDialogue
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterMilitary_C_OnExecuteInteractDialogue final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnExecuteInteractDialogue");
+static_assert(sizeof(BP_MasterMilitary_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_MasterMilitary_C_OnExecuteInteractDialogue");
+static_assert(offsetof(BP_MasterMilitary_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnRequestServerInteract
+// 0x0048 (0x0048 - 0x0000)
+struct BP_MasterMilitary_C_OnRequestServerInteract final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnRequestServerInteract");
+static_assert(sizeof(BP_MasterMilitary_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_MasterMilitary_C_OnRequestServerInteract");
+static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Actor' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Payload' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_MasterMilitary_C_OnRequestServerInteract::Result' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct BP_MasterMilitary_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnServerExecuteInteract");
+static_assert(sizeof(BP_MasterMilitary_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_MasterMilitary_C_OnServerExecuteInteract");
+static_assert(offsetof(BP_MasterMilitary_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_MasterMilitary_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_MasterMilitary_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_MasterMilitary_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnStopExecuteInteract
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterMilitary_C_OnStopExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnStopExecuteInteract");
+static_assert(sizeof(BP_MasterMilitary_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_MasterMilitary_C_OnStopExecuteInteract");
+static_assert(offsetof(BP_MasterMilitary_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OverrideName
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MasterMilitary_C_OverrideName final
+{
+public:
+	class FString                                 Param_Name_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_OverrideName) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OverrideName");
+static_assert(sizeof(BP_MasterMilitary_C_OverrideName) == 0x000010, "Wrong size on BP_MasterMilitary_C_OverrideName");
+static_assert(offsetof(BP_MasterMilitary_C_OverrideName, Param_Name_0) == 0x000000, "Member 'BP_MasterMilitary_C_OverrideName::Param_Name_0' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.ReceiveAnyDamage
+// 0x0020 (0x0020 - 0x0000)
+struct BP_MasterMilitary_C_ReceiveAnyDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_ReceiveAnyDamage");
+static_assert(sizeof(BP_MasterMilitary_C_ReceiveAnyDamage) == 0x000020, "Wrong size on BP_MasterMilitary_C_ReceiveAnyDamage");
+static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::Damage' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'BP_MasterMilitary_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetBurning
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MasterMilitary_C_SetBurning final
+{
+public:
+	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_SetBurning) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_SetBurning");
+static_assert(sizeof(BP_MasterMilitary_C_SetBurning) == 0x000018, "Wrong size on BP_MasterMilitary_C_SetBurning");
+static_assert(offsetof(BP_MasterMilitary_C_SetBurning, Burning_) == 0x000000, "Member 'BP_MasterMilitary_C_SetBurning::Burning_' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_SetBurning, Dmg) == 0x000008, "Member 'BP_MasterMilitary_C_SetBurning::Dmg' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_SetBurning, Actor) == 0x000010, "Member 'BP_MasterMilitary_C_SetBurning::Actor' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractDistance
+// 0x0020 (0x0020 - 0x0000)
+struct BP_MasterMilitary_C_SetInteractDistance final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_SetInteractDistance");
+static_assert(sizeof(BP_MasterMilitary_C_SetInteractDistance) == 0x000020, "Wrong size on BP_MasterMilitary_C_SetInteractDistance");
+static_assert(offsetof(BP_MasterMilitary_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_MasterMilitary_C_SetInteractDistance::Target' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_MasterMilitary_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterMilitary_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterMilitary_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_SetInteractOption");
+static_assert(sizeof(BP_MasterMilitary_C_SetInteractOption) == 0x000008, "Wrong size on BP_MasterMilitary_C_SetInteractOption");
+static_assert(offsetof(BP_MasterMilitary_C_SetInteractOption, Option) == 0x000000, "Member 'BP_MasterMilitary_C_SetInteractOption::Option' has a wrong offset!");
 
 // Function BP_MasterMilitary.BP_MasterMilitary_C.SetMeshAndMaterial
 // 0x04D0 (0x04D0 - 0x0000)
@@ -939,182 +1103,18 @@ static_assert(offsetof(BP_MasterMilitary_C_SetMeshAndMaterial, CallFunc_SetStati
 static_assert(offsetof(BP_MasterMilitary_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem) == 0x0004C0, "Member 'BP_MasterMilitary_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem' has a wrong offset!");
 static_assert(offsetof(BP_MasterMilitary_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex) == 0x0004C8, "Member 'BP_MasterMilitary_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex' has a wrong offset!");
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractOption
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetPickupCount
 // 0x0008 (0x0008 - 0x0000)
-struct BP_MasterMilitary_C_SetInteractOption final
+struct BP_MasterMilitary_C_SetPickupCount final
 {
 public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_MasterMilitary_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_SetInteractOption");
-static_assert(sizeof(BP_MasterMilitary_C_SetInteractOption) == 0x000008, "Wrong size on BP_MasterMilitary_C_SetInteractOption");
-static_assert(offsetof(BP_MasterMilitary_C_SetInteractOption, Option) == 0x000000, "Member 'BP_MasterMilitary_C_SetInteractOption::Option' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractDistance
-// 0x0020 (0x0020 - 0x0000)
-struct BP_MasterMilitary_C_SetInteractDistance final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_SetInteractDistance");
-static_assert(sizeof(BP_MasterMilitary_C_SetInteractDistance) == 0x000020, "Wrong size on BP_MasterMilitary_C_SetInteractDistance");
-static_assert(offsetof(BP_MasterMilitary_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_MasterMilitary_C_SetInteractDistance::Target' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_MasterMilitary_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OverrideName
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MasterMilitary_C_OverrideName final
-{
-public:
-	class FString                                 Param_Name_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_OverrideName) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OverrideName");
-static_assert(sizeof(BP_MasterMilitary_C_OverrideName) == 0x000010, "Wrong size on BP_MasterMilitary_C_OverrideName");
-static_assert(offsetof(BP_MasterMilitary_C_OverrideName, Param_Name_0) == 0x000000, "Member 'BP_MasterMilitary_C_OverrideName::Param_Name_0' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnStopExecuteInteract
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterMilitary_C_OnStopExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnStopExecuteInteract");
-static_assert(sizeof(BP_MasterMilitary_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_MasterMilitary_C_OnStopExecuteInteract");
-static_assert(offsetof(BP_MasterMilitary_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_MasterMilitary_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct BP_MasterMilitary_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_OnServerExecuteInteract");
-static_assert(sizeof(BP_MasterMilitary_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_MasterMilitary_C_OnServerExecuteInteract");
-static_assert(offsetof(BP_MasterMilitary_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_MasterMilitary_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_MasterMilitary_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_MasterMilitary_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnUpdateChamberUID
-// 0x0014 (0x0014 - 0x0000)
-struct BP_MasterMilitary_C_JigMP_OnUpdateChamberUID final
-{
-public:
-	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnUpdateChamberUID");
-static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_MasterMilitary_C_JigMP_OnUpdateChamberUID");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_MasterMilitary_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnTwoContainersSwap
-// 0x0014 (0x0014 - 0x0000)
-struct BP_MasterMilitary_C_JigMP_OnTwoContainersSwap final
-{
-public:
-	class FName                                   FromContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnTwoContainersSwap");
-static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap) == 0x000014, "Wrong size on BP_MasterMilitary_C_JigMP_OnTwoContainersSwap");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap, FromContainer) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnTwoContainersSwap::FromContainer' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap, ToContainer) == 0x000008, "Member 'BP_MasterMilitary_C_JigMP_OnTwoContainersSwap::ToContainer' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnTwoContainersSwap, Result) == 0x000010, "Member 'BP_MasterMilitary_C_JigMP_OnTwoContainersSwap::Result' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnRequestDropItem
-// 0x01D0 (0x01D0 - 0x0000)
-struct BP_MasterMilitary_C_JigMP_OnRequestDropItem final
-{
-public:
-	struct FRepItemInfo                           ItemInfo;                                          // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   ContainerName;                                     // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ActorRef;                                          // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0120(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0150(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_JigMP_OnRequestDropItem) == 0x000010, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnRequestDropItem");
-static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnRequestDropItem) == 0x0001D0, "Wrong size on BP_MasterMilitary_C_JigMP_OnRequestDropItem");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, ItemInfo) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, ContainerName) == 0x000078, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::ContainerName' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, ActorRef) == 0x000080, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000088, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000090, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000A8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000C0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000C8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_ReturnValue) == 0x0000E0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue) == 0x0000F8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000110, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000118, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeVector_ReturnValue) == 0x000120, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000138, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeTransform_ReturnValue) == 0x000150, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001B8, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0001C0, "Member 'BP_MasterMilitary_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupEquipped
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_MasterMilitary_C_JigMP_OnPickupEquipped final
-{
-public:
-	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainerName;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  UID;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           Info;                                              // 0x0030(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 OverrideActor;                                     // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_JigMP_OnPickupEquipped) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnPickupEquipped");
-static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnPickupEquipped) == 0x0000B8, "Wrong size on BP_MasterMilitary_C_JigMP_OnPickupEquipped");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, ActorRef) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, ToContainerName) == 0x000008, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::ToContainerName' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, UID) == 0x000010, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::UID' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, TocontainerUID) == 0x000020, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, Info) == 0x000030, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::Info' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, Result) == 0x0000A8, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::Result' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupEquipped, OverrideActor) == 0x0000B0, "Member 'BP_MasterMilitary_C_JigMP_OnPickupEquipped::OverrideActor' has a wrong offset!");
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupAdded
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_MasterMilitary_C_JigMP_OnPickupAdded final
-{
-public:
-	struct FRepItemInfo                           Info;                                              // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainer;                                       // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterMilitary_C_JigMP_OnPickupAdded) == 0x000008, "Wrong alignment on BP_MasterMilitary_C_JigMP_OnPickupAdded");
-static_assert(sizeof(BP_MasterMilitary_C_JigMP_OnPickupAdded) == 0x0000A8, "Wrong size on BP_MasterMilitary_C_JigMP_OnPickupAdded");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, Info) == 0x000000, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::Info' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, ItemUID) == 0x000078, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, TocontainerUID) == 0x000088, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, ToContainer) == 0x000098, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::ToContainer' has a wrong offset!");
-static_assert(offsetof(BP_MasterMilitary_C_JigMP_OnPickupAdded, Result) == 0x0000A0, "Member 'BP_MasterMilitary_C_JigMP_OnPickupAdded::Result' has a wrong offset!");
+static_assert(alignof(BP_MasterMilitary_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_MasterMilitary_C_SetPickupCount");
+static_assert(sizeof(BP_MasterMilitary_C_SetPickupCount) == 0x000008, "Wrong size on BP_MasterMilitary_C_SetPickupCount");
+static_assert(offsetof(BP_MasterMilitary_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_MasterMilitary_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_MasterMilitary_C_SetPickupCount, Result) == 0x000004, "Member 'BP_MasterMilitary_C_SetPickupCount::Result' has a wrong offset!");
 
 // Function BP_MasterMilitary.BP_MasterMilitary_C.SetWeapons
 // 0x0058 (0x0058 - 0x0000)

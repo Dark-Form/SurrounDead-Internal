@@ -26,11 +26,11 @@ public:
 	TArray<class ABP_PrimaryInfestation_C*>       PrimaryInfestations;                               // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void OnCompleted_B3F7F6984C752DC85F8BB59455E585B9();
-	void ExecuteUbergraph_BP_InfestationManager(int32 EntryPoint);
 	void CheckAllPrimaryDestroyed(bool* All_);
+	void ExecuteUbergraph_BP_InfestationManager(int32 EntryPoint);
+	void OnCompleted_B3F7F6984C752DC85F8BB59455E585B9();
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

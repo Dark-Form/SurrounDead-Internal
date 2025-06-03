@@ -14,9 +14,9 @@
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_ItemStat_structs.hpp"
-#include "S_ItemRandomStat_structs.hpp"
 #include "UMG_structs.hpp"
+#include "S_ItemRandomStat_structs.hpp"
+#include "S_ItemStat_structs.hpp"
 #include "S_ItemStatText_structs.hpp"
 
 

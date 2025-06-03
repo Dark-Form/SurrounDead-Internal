@@ -17,38 +17,50 @@
 namespace SDK::Params
 {
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Svr_Explode
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EasterEgg_Nuke_C_Svr_Explode final
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	class AController*                            EventInstigator;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_Nuke_C_Svr_Explode) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_Svr_Explode");
-static_assert(sizeof(BP_EasterEgg_Nuke_C_Svr_Explode) == 0x000008, "Wrong size on BP_EasterEgg_Nuke_C_Svr_Explode");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_Svr_Explode, EventInstigator) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_Svr_Explode::EventInstigator' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.MC_Explode
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EasterEgg_Nuke_C_MC_Explode final
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Damage_Object
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EasterEgg_Nuke_C_Damage_Object final
 {
 public:
-	class AController*                            InputPin;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        Damage;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Damage_Causer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            Event_Instigator;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_Nuke_C_MC_Explode) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_MC_Explode");
-static_assert(sizeof(BP_EasterEgg_Nuke_C_MC_Explode) == 0x000008, "Wrong size on BP_EasterEgg_Nuke_C_MC_Explode");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_MC_Explode, InputPin) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_MC_Explode::InputPin' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_Nuke_C_Damage_Object) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_Damage_Object");
+static_assert(sizeof(BP_EasterEgg_Nuke_C_Damage_Object) == 0x000018, "Wrong size on BP_EasterEgg_Nuke_C_Damage_Object");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Object, Damage) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_Damage_Object::Damage' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Object, Damage_Causer) == 0x000008, "Member 'BP_EasterEgg_Nuke_C_Damage_Object::Damage_Causer' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Object, Event_Instigator) == 0x000010, "Member 'BP_EasterEgg_Nuke_C_Damage_Object::Event_Instigator' has a wrong offset!");
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.IsObjectDamageable?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_EasterEgg_Nuke_C_IsObjectDamageable_ final
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Damage_Shoved
+// 0x0010 (0x0010 - 0x0000)
+struct BP_EasterEgg_Nuke_C_Damage_Shoved final
 {
 public:
-	bool                                          Damageable_;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Anim;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Force;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_Nuke_C_IsObjectDamageable_) == 0x000001, "Wrong alignment on BP_EasterEgg_Nuke_C_IsObjectDamageable_");
-static_assert(sizeof(BP_EasterEgg_Nuke_C_IsObjectDamageable_) == 0x000001, "Wrong size on BP_EasterEgg_Nuke_C_IsObjectDamageable_");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_IsObjectDamageable_, Damageable_) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_IsObjectDamageable_::Damageable_' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_Nuke_C_Damage_Shoved) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_Damage_Shoved");
+static_assert(sizeof(BP_EasterEgg_Nuke_C_Damage_Shoved) == 0x000010, "Wrong size on BP_EasterEgg_Nuke_C_Damage_Shoved");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Shoved, Anim) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_Damage_Shoved::Anim' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Shoved, Force) == 0x000008, "Member 'BP_EasterEgg_Nuke_C_Damage_Shoved::Force' has a wrong offset!");
 
 // Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.ExecuteUbergraph_BP_EasterEgg_Nuke
 // 0x0198 (0x0198 - 0x0000)
@@ -169,50 +181,38 @@ static_assert(offsetof(BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke, C
 static_assert(offsetof(BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke, CallFunc_ApplyDamage_BaseDamage_ImplicitCast) == 0x00018C, "Member 'BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke::CallFunc_ApplyDamage_BaseDamage_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke, CallFunc_SpawnFloatingDamageText_Damage_ImplicitCast) == 0x000190, "Member 'BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke::CallFunc_SpawnFloatingDamageText_Damage_ImplicitCast' has a wrong offset!");
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Damage_Shoved
-// 0x0010 (0x0010 - 0x0000)
-struct BP_EasterEgg_Nuke_C_Damage_Shoved final
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.IsObjectDamageable?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_EasterEgg_Nuke_C_IsObjectDamageable_ final
 {
 public:
-	bool                                          Anim;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Force;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Damageable_;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_Nuke_C_Damage_Shoved) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_Damage_Shoved");
-static_assert(sizeof(BP_EasterEgg_Nuke_C_Damage_Shoved) == 0x000010, "Wrong size on BP_EasterEgg_Nuke_C_Damage_Shoved");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Shoved, Anim) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_Damage_Shoved::Anim' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Shoved, Force) == 0x000008, "Member 'BP_EasterEgg_Nuke_C_Damage_Shoved::Force' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_Nuke_C_IsObjectDamageable_) == 0x000001, "Wrong alignment on BP_EasterEgg_Nuke_C_IsObjectDamageable_");
+static_assert(sizeof(BP_EasterEgg_Nuke_C_IsObjectDamageable_) == 0x000001, "Wrong size on BP_EasterEgg_Nuke_C_IsObjectDamageable_");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_IsObjectDamageable_, Damageable_) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_IsObjectDamageable_::Damageable_' has a wrong offset!");
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Damage_Object
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EasterEgg_Nuke_C_Damage_Object final
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.MC_Explode
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EasterEgg_Nuke_C_MC_Explode final
 {
 public:
-	double                                        Damage;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Damage_Causer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            Event_Instigator;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InputPin;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_Nuke_C_Damage_Object) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_Damage_Object");
-static_assert(sizeof(BP_EasterEgg_Nuke_C_Damage_Object) == 0x000018, "Wrong size on BP_EasterEgg_Nuke_C_Damage_Object");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Object, Damage) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_Damage_Object::Damage' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Object, Damage_Causer) == 0x000008, "Member 'BP_EasterEgg_Nuke_C_Damage_Object::Damage_Causer' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_Damage_Object, Event_Instigator) == 0x000010, "Member 'BP_EasterEgg_Nuke_C_Damage_Object::Event_Instigator' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_Nuke_C_MC_Explode) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_MC_Explode");
+static_assert(sizeof(BP_EasterEgg_Nuke_C_MC_Explode) == 0x000008, "Wrong size on BP_EasterEgg_Nuke_C_MC_Explode");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_MC_Explode, InputPin) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_MC_Explode::InputPin' has a wrong offset!");
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Svr_Explode
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EasterEgg_Nuke_C_Svr_Explode final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            EventInstigator;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_Nuke_C_Svr_Explode) == 0x000008, "Wrong alignment on BP_EasterEgg_Nuke_C_Svr_Explode");
+static_assert(sizeof(BP_EasterEgg_Nuke_C_Svr_Explode) == 0x000008, "Wrong size on BP_EasterEgg_Nuke_C_Svr_Explode");
+static_assert(offsetof(BP_EasterEgg_Nuke_C_Svr_Explode, EventInstigator) == 0x000000, "Member 'BP_EasterEgg_Nuke_C_Svr_Explode::EventInstigator' has a wrong offset!");
 
 }
 

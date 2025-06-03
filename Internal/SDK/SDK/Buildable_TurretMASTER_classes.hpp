@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Buildable_MASTER_classes.hpp"
 #include "E_AIBehaviour_structs.hpp"
+#include "Buildable_MASTER_classes.hpp"
 #include "E_BlockType_structs.hpp"
 
 

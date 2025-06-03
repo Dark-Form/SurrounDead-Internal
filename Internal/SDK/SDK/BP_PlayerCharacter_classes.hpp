@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "S_ServerEquippedItems_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_AIBehaviour_structs.hpp"
-#include "S_ServerEquippedItems_structs.hpp"
-#include "Enum_Firearms_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Enum_Firearms_structs.hpp"
 #include "BP_MasterPlayer_classes.hpp"
+#include "E_AIBehaviour_structs.hpp"
 #include "E_BlockType_structs.hpp"
 
 
@@ -339,7 +339,7 @@ public:
 	void Client_SetCombatCrosshair();
 	void Client_SetInteractCrosshair();
 	void Client_StopAllCameraShake(bool bImmediately);
-	void Client_SUICIDE();
+	void Client_Suicide();
 	void Client_UpdateHealthUI(double Health);
 	void Client_UpdateHungerUI(double NewHunger);
 	void Client_UpdateOxygenUI(double Oxygen);

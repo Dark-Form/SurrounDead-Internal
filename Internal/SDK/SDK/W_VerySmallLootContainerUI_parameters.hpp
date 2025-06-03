@@ -19,17 +19,6 @@
 namespace SDK::Params
 {
 
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetInspectorRef
-// 0x0008 (0x0008 - 0x0000)
-struct W_VerySmallLootContainerUI_C_SetInspectorRef final
-{
-public:
-	class UBP_InspectorWindowWidget_C*            Inspector;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(W_VerySmallLootContainerUI_C_SetInspectorRef) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_SetInspectorRef");
-static_assert(sizeof(W_VerySmallLootContainerUI_C_SetInspectorRef) == 0x000008, "Wrong size on W_VerySmallLootContainerUI_C_SetInspectorRef");
-static_assert(offsetof(W_VerySmallLootContainerUI_C_SetInspectorRef, Inspector) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_SetInspectorRef::Inspector' has a wrong offset!");
-
 // Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.Tick
 // 0x003C (0x003C - 0x0000)
 struct W_VerySmallLootContainerUI_C_Tick final
@@ -42,6 +31,28 @@ static_assert(alignof(W_VerySmallLootContainerUI_C_Tick) == 0x000004, "Wrong ali
 static_assert(sizeof(W_VerySmallLootContainerUI_C_Tick) == 0x00003C, "Wrong size on W_VerySmallLootContainerUI_C_Tick");
 static_assert(offsetof(W_VerySmallLootContainerUI_C_Tick, MyGeometry) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_Tick::MyGeometry' has a wrong offset!");
 static_assert(offsetof(W_VerySmallLootContainerUI_C_Tick, InDeltaTime) == 0x000038, "Member 'W_VerySmallLootContainerUI_C_Tick::InDeltaTime' has a wrong offset!");
+
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetItemReference
+// 0x0008 (0x0008 - 0x0000)
+struct W_VerySmallLootContainerUI_C_SetItemReference final
+{
+public:
+	class UJSI_Slot_C*                            ItemRef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(W_VerySmallLootContainerUI_C_SetItemReference) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_SetItemReference");
+static_assert(sizeof(W_VerySmallLootContainerUI_C_SetItemReference) == 0x000008, "Wrong size on W_VerySmallLootContainerUI_C_SetItemReference");
+static_assert(offsetof(W_VerySmallLootContainerUI_C_SetItemReference, ItemRef) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_SetItemReference::ItemRef' has a wrong offset!");
+
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetInspectorRef
+// 0x0008 (0x0008 - 0x0000)
+struct W_VerySmallLootContainerUI_C_SetInspectorRef final
+{
+public:
+	class UBP_InspectorWindowWidget_C*            Inspector;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(W_VerySmallLootContainerUI_C_SetInspectorRef) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_SetInspectorRef");
+static_assert(sizeof(W_VerySmallLootContainerUI_C_SetInspectorRef) == 0x000008, "Wrong size on W_VerySmallLootContainerUI_C_SetInspectorRef");
+static_assert(offsetof(W_VerySmallLootContainerUI_C_SetInspectorRef, Inspector) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_SetInspectorRef::Inspector' has a wrong offset!");
 
 // Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetActorOwner
 // 0x0008 (0x0008 - 0x0000)
@@ -112,6 +123,17 @@ public:
 static_assert(alignof(W_VerySmallLootContainerUI_C_GetLootContent) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_GetLootContent");
 static_assert(sizeof(W_VerySmallLootContainerUI_C_GetLootContent) == 0x000008, "Wrong size on W_VerySmallLootContainerUI_C_GetLootContent");
 static_assert(offsetof(W_VerySmallLootContainerUI_C_GetLootContent, Widget) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_GetLootContent::Widget' has a wrong offset!");
+
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.GetListOfNonAddContainers
+// 0x0010 (0x0010 - 0x0000)
+struct W_VerySmallLootContainerUI_C_GetListOfNonAddContainers final
+{
+public:
+	TArray<class UJSIContainer_C*>                Containers;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+static_assert(alignof(W_VerySmallLootContainerUI_C_GetListOfNonAddContainers) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_GetListOfNonAddContainers");
+static_assert(sizeof(W_VerySmallLootContainerUI_C_GetListOfNonAddContainers) == 0x000010, "Wrong size on W_VerySmallLootContainerUI_C_GetListOfNonAddContainers");
+static_assert(offsetof(W_VerySmallLootContainerUI_C_GetListOfNonAddContainers, Containers) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_GetListOfNonAddContainers::Containers' has a wrong offset!");
 
 // Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.GetJSIContainerByPlayerSlots
 // 0x0020 (0x0020 - 0x0000)
@@ -263,28 +285,6 @@ static_assert(offsetof(W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmall
 static_assert(offsetof(W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmallLootContainerUI, K2Node_MakeArray_Array) == 0x000170, "Member 'W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmallLootContainerUI::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmallLootContainerUI, CallFunc_Format_ReturnValue) == 0x000180, "Member 'W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmallLootContainerUI::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmallLootContainerUI, CallFunc_Array_IsEmpty_ReturnValue) == 0x000198, "Member 'W_VerySmallLootContainerUI_C_ExecuteUbergraph_W_VerySmallLootContainerUI::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
-
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetItemReference
-// 0x0008 (0x0008 - 0x0000)
-struct W_VerySmallLootContainerUI_C_SetItemReference final
-{
-public:
-	class UJSI_Slot_C*                            ItemRef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(W_VerySmallLootContainerUI_C_SetItemReference) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_SetItemReference");
-static_assert(sizeof(W_VerySmallLootContainerUI_C_SetItemReference) == 0x000008, "Wrong size on W_VerySmallLootContainerUI_C_SetItemReference");
-static_assert(offsetof(W_VerySmallLootContainerUI_C_SetItemReference, ItemRef) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_SetItemReference::ItemRef' has a wrong offset!");
-
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.GetListOfNonAddContainers
-// 0x0010 (0x0010 - 0x0000)
-struct W_VerySmallLootContainerUI_C_GetListOfNonAddContainers final
-{
-public:
-	TArray<class UJSIContainer_C*>                Containers;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-};
-static_assert(alignof(W_VerySmallLootContainerUI_C_GetListOfNonAddContainers) == 0x000008, "Wrong alignment on W_VerySmallLootContainerUI_C_GetListOfNonAddContainers");
-static_assert(sizeof(W_VerySmallLootContainerUI_C_GetListOfNonAddContainers) == 0x000010, "Wrong size on W_VerySmallLootContainerUI_C_GetListOfNonAddContainers");
-static_assert(offsetof(W_VerySmallLootContainerUI_C_GetListOfNonAddContainers, Containers) == 0x000000, "Member 'W_VerySmallLootContainerUI_C_GetListOfNonAddContainers::Containers' has a wrong offset!");
 
 // Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.GetListOfContainers
 // 0x0020 (0x0020 - 0x0000)

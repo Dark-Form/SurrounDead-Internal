@@ -34,10 +34,10 @@ public:
 	class UTexture*                               Img;                                               // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	class UWidget* GetToolTipWidget();
 	class FText GetPrice();
 	void ExecuteUbergraph_VehicleVendorButton(int32 EntryPoint);
+	void Construct();
 	void BndEvt__VehicleVendorButton_Button_K2Node_ComponentBoundEvent_3_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__VehicleVendorButton_Button_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__VehicleVendorButton_Button_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();

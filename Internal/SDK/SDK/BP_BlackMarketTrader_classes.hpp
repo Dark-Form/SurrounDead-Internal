@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_TraderMaster_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -28,8 +28,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh_0;                                      // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_BlackMarketTrader(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

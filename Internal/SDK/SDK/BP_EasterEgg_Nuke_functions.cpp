@@ -17,104 +17,25 @@
 namespace SDK
 {
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Svr_Explode
-// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class AController*                      EventInstigator                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EasterEgg_Nuke_C::Svr_Explode(class AController* EventInstigator)
+void ABP_EasterEgg_Nuke_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "Svr_Explode");
+		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
 
-	Params::BP_EasterEgg_Nuke_C_Svr_Explode Parms{};
+	Params::BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
 
-	Parms.EventInstigator = EventInstigator;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.MC_Explode
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AController*                      InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EasterEgg_Nuke_C::MC_Explode(class AController* InputPin)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "MC_Explode");
-
-	Params::BP_EasterEgg_Nuke_C_MC_Explode Parms{};
-
-	Parms.InputPin = InputPin;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.IsObjectDamageable?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EasterEgg_Nuke_C::IsObjectDamageable_(bool* Damageable_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "IsObjectDamageable?");
-
-	Params::BP_EasterEgg_Nuke_C_IsObjectDamageable_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Damageable_ != nullptr)
-		*Damageable_ = Parms.Damageable_;
-}
-
-
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.ExecuteUbergraph_BP_EasterEgg_Nuke
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EasterEgg_Nuke_C::ExecuteUbergraph_BP_EasterEgg_Nuke(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "ExecuteUbergraph_BP_EasterEgg_Nuke");
-
-	Params::BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Damage_Shoved
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Anim                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Force                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EasterEgg_Nuke_C::Damage_Shoved(bool Anim, double Force)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "Damage_Shoved");
-
-	Params::BP_EasterEgg_Nuke_C_Damage_Shoved Parms{};
-
-	Parms.Anim = Anim;
-	Parms.Force = Force;
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,25 +65,104 @@ void ABP_EasterEgg_Nuke_C::Damage_Object(double Damage, class AActor* Damage_Cau
 }
 
 
-// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Damage_Shoved
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Anim                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Force                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EasterEgg_Nuke_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_EasterEgg_Nuke_C::Damage_Shoved(bool Anim, double Force)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "Damage_Shoved");
 
-	Params::BP_EasterEgg_Nuke_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	Params::BP_EasterEgg_Nuke_C_Damage_Shoved Parms{};
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
+	Parms.Anim = Anim;
+	Parms.Force = Force;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.ExecuteUbergraph_BP_EasterEgg_Nuke
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EasterEgg_Nuke_C::ExecuteUbergraph_BP_EasterEgg_Nuke(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "ExecuteUbergraph_BP_EasterEgg_Nuke");
+
+	Params::BP_EasterEgg_Nuke_C_ExecuteUbergraph_BP_EasterEgg_Nuke Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.IsObjectDamageable?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EasterEgg_Nuke_C::IsObjectDamageable_(bool* Damageable_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "IsObjectDamageable?");
+
+	Params::BP_EasterEgg_Nuke_C_IsObjectDamageable_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Damageable_ != nullptr)
+		*Damageable_ = Parms.Damageable_;
+}
+
+
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.MC_Explode
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AController*                      InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EasterEgg_Nuke_C::MC_Explode(class AController* InputPin)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "MC_Explode");
+
+	Params::BP_EasterEgg_Nuke_C_MC_Explode Parms{};
+
+	Parms.InputPin = InputPin;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EasterEgg_Nuke.BP_EasterEgg_Nuke_C.Svr_Explode
+// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AController*                      EventInstigator                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EasterEgg_Nuke_C::Svr_Explode(class AController* EventInstigator)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_EasterEgg_Nuke_C", "Svr_Explode");
+
+	Params::BP_EasterEgg_Nuke_C_Svr_Explode Parms{};
+
+	Parms.EventInstigator = EventInstigator;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

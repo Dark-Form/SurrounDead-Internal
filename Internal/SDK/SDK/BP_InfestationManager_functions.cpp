@@ -17,45 +17,24 @@
 namespace SDK
 {
 
-// Function BP_InfestationManager.BP_InfestationManager_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_InfestationManager.BP_InfestationManager_C.CheckAllPrimaryDestroyed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   All_                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InfestationManager_C::UserConstructionScript()
+void ABP_InfestationManager_C::CheckAllPrimaryDestroyed(bool* All_)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InfestationManager_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_InfestationManager_C", "CheckAllPrimaryDestroyed");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_InfestationManager_C_CheckAllPrimaryDestroyed Parms{};
 
+	UObject::ProcessEvent(Func, &Parms);
 
-// Function BP_InfestationManager.BP_InfestationManager_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_InfestationManager_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InfestationManager_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_InfestationManager.BP_InfestationManager_C.OnCompleted_B3F7F6984C752DC85F8BB59455E585B9
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_InfestationManager_C::OnCompleted_B3F7F6984C752DC85F8BB59455E585B9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InfestationManager_C", "OnCompleted_B3F7F6984C752DC85F8BB59455E585B9");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (All_ != nullptr)
+		*All_ = Parms.All_;
 }
 
 
@@ -79,24 +58,45 @@ void ABP_InfestationManager_C::ExecuteUbergraph_BP_InfestationManager(int32 Entr
 }
 
 
-// Function BP_InfestationManager.BP_InfestationManager_C.CheckAllPrimaryDestroyed
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   All_                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_InfestationManager.BP_InfestationManager_C.OnCompleted_B3F7F6984C752DC85F8BB59455E585B9
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_InfestationManager_C::CheckAllPrimaryDestroyed(bool* All_)
+void ABP_InfestationManager_C::OnCompleted_B3F7F6984C752DC85F8BB59455E585B9()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InfestationManager_C", "CheckAllPrimaryDestroyed");
+		Func = Class->GetFunction("BP_InfestationManager_C", "OnCompleted_B3F7F6984C752DC85F8BB59455E585B9");
 
-	Params::BP_InfestationManager_C_CheckAllPrimaryDestroyed Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	UObject::ProcessEvent(Func, &Parms);
 
-	if (All_ != nullptr)
-		*All_ = Parms.All_;
+// Function BP_InfestationManager.BP_InfestationManager_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_InfestationManager_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_InfestationManager_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_InfestationManager.BP_InfestationManager_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_InfestationManager_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_InfestationManager_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

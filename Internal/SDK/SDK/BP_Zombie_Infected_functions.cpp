@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Zombie_Infected.BP_Zombie_Infected_C.ExecuteUbergraph_BP_Zombie_Infected
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Zombie_Infected_C::ExecuteUbergraph_BP_Zombie_Infected(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zombie_Infected_C", "ExecuteUbergraph_BP_Zombie_Infected");
-
-	Params::BP_Zombie_Infected_C_ExecuteUbergraph_BP_Zombie_Infected Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Zombie_Infected.BP_Zombie_Infected_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -56,6 +36,26 @@ void ABP_Zombie_Infected_C::BndEvt__BP_Zombie_Master_AIOSubject_K2Node_Component
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Zombie_Infected.BP_Zombie_Infected_C.ExecuteUbergraph_BP_Zombie_Infected
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Zombie_Infected_C::ExecuteUbergraph_BP_Zombie_Infected(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Zombie_Infected_C", "ExecuteUbergraph_BP_Zombie_Infected");
+
+	Params::BP_Zombie_Infected_C_ExecuteUbergraph_BP_Zombie_Infected Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

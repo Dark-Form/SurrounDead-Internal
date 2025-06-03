@@ -19,27 +19,18 @@
 namespace SDK::Params
 {
 
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.SetActorOwner
-// 0x0008 (0x0008 - 0x0000)
-struct W_AxeLootContainerUI_C_SetActorOwner final
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct W_AxeLootContainerUI_C_Tick final
 {
 public:
-	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(W_AxeLootContainerUI_C_SetActorOwner) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_SetActorOwner");
-static_assert(sizeof(W_AxeLootContainerUI_C_SetActorOwner) == 0x000008, "Wrong size on W_AxeLootContainerUI_C_SetActorOwner");
-static_assert(offsetof(W_AxeLootContainerUI_C_SetActorOwner, ActorRef) == 0x000000, "Member 'W_AxeLootContainerUI_C_SetActorOwner::ActorRef' has a wrong offset!");
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetAllAttachments
-// 0x0010 (0x0010 - 0x0000)
-struct W_AxeLootContainerUI_C_GetAllAttachments final
-{
-public:
-	TArray<class FName>                           Attachments;                                       // 0x0000(0x0010)(Parm, OutParm)
-};
-static_assert(alignof(W_AxeLootContainerUI_C_GetAllAttachments) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_GetAllAttachments");
-static_assert(sizeof(W_AxeLootContainerUI_C_GetAllAttachments) == 0x000010, "Wrong size on W_AxeLootContainerUI_C_GetAllAttachments");
-static_assert(offsetof(W_AxeLootContainerUI_C_GetAllAttachments, Attachments) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetAllAttachments::Attachments' has a wrong offset!");
+static_assert(alignof(W_AxeLootContainerUI_C_Tick) == 0x000004, "Wrong alignment on W_AxeLootContainerUI_C_Tick");
+static_assert(sizeof(W_AxeLootContainerUI_C_Tick) == 0x00003C, "Wrong size on W_AxeLootContainerUI_C_Tick");
+static_assert(offsetof(W_AxeLootContainerUI_C_Tick, MyGeometry) == 0x000000, "Member 'W_AxeLootContainerUI_C_Tick::MyGeometry' has a wrong offset!");
+static_assert(offsetof(W_AxeLootContainerUI_C_Tick, InDeltaTime) == 0x000038, "Member 'W_AxeLootContainerUI_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.SetItemReference
 // 0x0008 (0x0008 - 0x0000)
@@ -62,6 +53,17 @@ public:
 static_assert(alignof(W_AxeLootContainerUI_C_SetInspectorRef) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_SetInspectorRef");
 static_assert(sizeof(W_AxeLootContainerUI_C_SetInspectorRef) == 0x000008, "Wrong size on W_AxeLootContainerUI_C_SetInspectorRef");
 static_assert(offsetof(W_AxeLootContainerUI_C_SetInspectorRef, Inspector) == 0x000000, "Member 'W_AxeLootContainerUI_C_SetInspectorRef::Inspector' has a wrong offset!");
+
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.SetActorOwner
+// 0x0008 (0x0008 - 0x0000)
+struct W_AxeLootContainerUI_C_SetActorOwner final
+{
+public:
+	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(W_AxeLootContainerUI_C_SetActorOwner) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_SetActorOwner");
+static_assert(sizeof(W_AxeLootContainerUI_C_SetActorOwner) == 0x000008, "Wrong size on W_AxeLootContainerUI_C_SetActorOwner");
+static_assert(offsetof(W_AxeLootContainerUI_C_SetActorOwner, ActorRef) == 0x000000, "Member 'W_AxeLootContainerUI_C_SetActorOwner::ActorRef' has a wrong offset!");
 
 // Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.SetActionbarFollower
 // 0x0010 (0x0010 - 0x0000)
@@ -111,6 +113,28 @@ static_assert(alignof(W_AxeLootContainerUI_C_GetValidReloadContainers) == 0x0000
 static_assert(sizeof(W_AxeLootContainerUI_C_GetValidReloadContainers) == 0x000010, "Wrong size on W_AxeLootContainerUI_C_GetValidReloadContainers");
 static_assert(offsetof(W_AxeLootContainerUI_C_GetValidReloadContainers, Containers) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetValidReloadContainers::Containers' has a wrong offset!");
 
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetLootContent
+// 0x0008 (0x0008 - 0x0000)
+struct W_AxeLootContainerUI_C_GetLootContent final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(W_AxeLootContainerUI_C_GetLootContent) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_GetLootContent");
+static_assert(sizeof(W_AxeLootContainerUI_C_GetLootContent) == 0x000008, "Wrong size on W_AxeLootContainerUI_C_GetLootContent");
+static_assert(offsetof(W_AxeLootContainerUI_C_GetLootContent, Widget) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetLootContent::Widget' has a wrong offset!");
+
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetListOfNonAddContainers
+// 0x0010 (0x0010 - 0x0000)
+struct W_AxeLootContainerUI_C_GetListOfNonAddContainers final
+{
+public:
+	TArray<class UJSIContainer_C*>                Containers;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+static_assert(alignof(W_AxeLootContainerUI_C_GetListOfNonAddContainers) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_GetListOfNonAddContainers");
+static_assert(sizeof(W_AxeLootContainerUI_C_GetListOfNonAddContainers) == 0x000010, "Wrong size on W_AxeLootContainerUI_C_GetListOfNonAddContainers");
+static_assert(offsetof(W_AxeLootContainerUI_C_GetListOfNonAddContainers, Containers) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetListOfNonAddContainers::Containers' has a wrong offset!");
+
 // Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetJSIContainerByPlayerSlots
 // 0x0020 (0x0020 - 0x0000)
 struct W_AxeLootContainerUI_C_GetJSIContainerByPlayerSlots final
@@ -153,6 +177,17 @@ static_assert(sizeof(W_AxeLootContainerUI_C_GetContainerByAttachmentType) == 0x0
 static_assert(offsetof(W_AxeLootContainerUI_C_GetContainerByAttachmentType, Type) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetContainerByAttachmentType::Type' has a wrong offset!");
 static_assert(offsetof(W_AxeLootContainerUI_C_GetContainerByAttachmentType, JigContainer) == 0x000008, "Member 'W_AxeLootContainerUI_C_GetContainerByAttachmentType::JigContainer' has a wrong offset!");
 static_assert(offsetof(W_AxeLootContainerUI_C_GetContainerByAttachmentType, ContainerIndex) == 0x000010, "Member 'W_AxeLootContainerUI_C_GetContainerByAttachmentType::ContainerIndex' has a wrong offset!");
+
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetAllAttachments
+// 0x0010 (0x0010 - 0x0000)
+struct W_AxeLootContainerUI_C_GetAllAttachments final
+{
+public:
+	TArray<class FName>                           Attachments;                                       // 0x0000(0x0010)(Parm, OutParm)
+};
+static_assert(alignof(W_AxeLootContainerUI_C_GetAllAttachments) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_GetAllAttachments");
+static_assert(sizeof(W_AxeLootContainerUI_C_GetAllAttachments) == 0x000010, "Wrong size on W_AxeLootContainerUI_C_GetAllAttachments");
+static_assert(offsetof(W_AxeLootContainerUI_C_GetAllAttachments, Attachments) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetAllAttachments::Attachments' has a wrong offset!");
 
 // Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.ExecuteUbergraph_W_AxeLootContainerUI
 // 0x0198 (0x0198 - 0x0000)
@@ -250,41 +285,6 @@ static_assert(offsetof(W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContaine
 static_assert(offsetof(W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContainerUI, CallFunc_GetComponentByClass_ReturnValue_1) == 0x000168, "Member 'W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContainerUI::CallFunc_GetComponentByClass_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContainerUI, K2Node_MakeArray_Array) == 0x000170, "Member 'W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContainerUI::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContainerUI, CallFunc_Format_ReturnValue) == 0x000180, "Member 'W_AxeLootContainerUI_C_ExecuteUbergraph_W_AxeLootContainerUI::CallFunc_Format_ReturnValue' has a wrong offset!");
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct W_AxeLootContainerUI_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(W_AxeLootContainerUI_C_Tick) == 0x000004, "Wrong alignment on W_AxeLootContainerUI_C_Tick");
-static_assert(sizeof(W_AxeLootContainerUI_C_Tick) == 0x00003C, "Wrong size on W_AxeLootContainerUI_C_Tick");
-static_assert(offsetof(W_AxeLootContainerUI_C_Tick, MyGeometry) == 0x000000, "Member 'W_AxeLootContainerUI_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(W_AxeLootContainerUI_C_Tick, InDeltaTime) == 0x000038, "Member 'W_AxeLootContainerUI_C_Tick::InDeltaTime' has a wrong offset!");
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetLootContent
-// 0x0008 (0x0008 - 0x0000)
-struct W_AxeLootContainerUI_C_GetLootContent final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(W_AxeLootContainerUI_C_GetLootContent) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_GetLootContent");
-static_assert(sizeof(W_AxeLootContainerUI_C_GetLootContent) == 0x000008, "Wrong size on W_AxeLootContainerUI_C_GetLootContent");
-static_assert(offsetof(W_AxeLootContainerUI_C_GetLootContent, Widget) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetLootContent::Widget' has a wrong offset!");
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetListOfNonAddContainers
-// 0x0010 (0x0010 - 0x0000)
-struct W_AxeLootContainerUI_C_GetListOfNonAddContainers final
-{
-public:
-	TArray<class UJSIContainer_C*>                Containers;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-};
-static_assert(alignof(W_AxeLootContainerUI_C_GetListOfNonAddContainers) == 0x000008, "Wrong alignment on W_AxeLootContainerUI_C_GetListOfNonAddContainers");
-static_assert(sizeof(W_AxeLootContainerUI_C_GetListOfNonAddContainers) == 0x000010, "Wrong size on W_AxeLootContainerUI_C_GetListOfNonAddContainers");
-static_assert(offsetof(W_AxeLootContainerUI_C_GetListOfNonAddContainers, Containers) == 0x000000, "Member 'W_AxeLootContainerUI_C_GetListOfNonAddContainers::Containers' has a wrong offset!");
 
 // Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetListOfContainers
 // 0x0020 (0x0020 - 0x0000)

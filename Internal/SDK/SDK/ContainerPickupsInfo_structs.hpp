@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "S_SubContainerInfo_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "RepItemInfo_structs.hpp"
-#include "S_SubContainerInfo_structs.hpp"
 
 
 namespace SDK

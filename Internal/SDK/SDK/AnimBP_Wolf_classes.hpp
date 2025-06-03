@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "AnimBP_Wolf_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimBP_Wolf_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 
@@ -46,13 +46,13 @@ public:
 
 public:
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void GetSpeed();
-	void ExecuteUbergraph_AnimBP_Wolf(int32 EntryPoint);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6();
-	void BlueprintThreadSafeUpdateAnimation(float DeltaTime);
-	void BlueprintInitializeAnimation();
 	void AnimNotify_Footstep();
+	void BlueprintInitializeAnimation();
+	void BlueprintThreadSafeUpdateAnimation(float DeltaTime);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03();
+	void ExecuteUbergraph_AnimBP_Wolf(int32 EntryPoint);
+	void GetSpeed();
 
 public:
 	static class UClass* StaticClass()

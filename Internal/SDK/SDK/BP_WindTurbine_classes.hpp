@@ -34,14 +34,14 @@ public:
 	struct FTimerHandle                           Timer;                                             // 0x0300(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void SetInteractDistance(class AActor* Target);
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_WindTurbine(int32 EntryPoint);
-	void Event_StartSpin();
-	void Event_Spin();
-	void CheckDistanceFromActor();
 	void BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void CheckDistanceFromActor();
+	void Event_Spin();
+	void Event_StartSpin();
+	void ExecuteUbergraph_BP_WindTurbine(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void SetInteractDistance(class AActor* Target);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

@@ -31,15 +31,15 @@ void UConsumeAmountSelector_C::BndEvt__CancelBtn_K2Node_ComponentBoundEvent_1_On
 }
 
 
-// Function ConsumeAmountSelector.ConsumeAmountSelector_C.BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
+// Function ConsumeAmountSelector.ConsumeAmountSelector_C.BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UConsumeAmountSelector_C::BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
+void UConsumeAmountSelector_C::BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ConsumeAmountSelector_C", "BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("ConsumeAmountSelector_C", "BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

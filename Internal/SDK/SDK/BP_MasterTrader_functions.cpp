@@ -17,686 +17,549 @@
 namespace SDK
 {
 
-// Function BP_MasterTrader.BP_MasterTrader_C.StopBurning
+// Function BP_MasterTrader.BP_MasterTrader_C.AddMarker
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetComponent*                 Marker_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::AddMarker(class UWidgetComponent* Marker_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "AddMarker");
+
+	Params::BP_MasterTrader_C_AddMarker Parms{};
+
+	Parms.Marker_0 = Marker_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.AI_Health
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterTrader_C::StopBurning()
+void ABP_MasterTrader_C::AI_Health()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "StopBurning");
+		Func = Class->GetFunction("BP_MasterTrader_C", "AI_Health");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.SetWeapons
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterTrader_C::SetWeapons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "SetWeapons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.SetPickupCount
+// Function BP_MasterTrader.BP_MasterTrader_C.AIHealthBarInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Visible_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString*                          Name_0                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// bool*                                   Boss_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::SetPickupCount(int32 NewCount, bool* Result)
+void ABP_MasterTrader_C::AIHealthBarInfo(bool* Visible_, class FString* Name_0, bool* Boss_)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "SetPickupCount");
+		Func = Class->GetFunction("BP_MasterTrader_C", "AIHealthBarInfo");
 
-	Params::BP_MasterTrader_C_SetPickupCount Parms{};
-
-	Parms.NewCount = NewCount;
+	Params::BP_MasterTrader_C_AIHealthBarInfo Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
+	if (Visible_ != nullptr)
+		*Visible_ = Parms.Visible_;
+
+	if (Name_0 != nullptr)
+		*Name_0 = std::move(Parms.Name_0);
+
+	if (Boss_ != nullptr)
+		*Boss_ = Parms.Boss_;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.SetMeshAndMaterial
+// Function BP_MasterTrader.BP_MasterTrader_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+
+	Params::BP_MasterTrader_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.CanAddMarkerToAI?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   CanAdd_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::CanAddMarkerToAI_(bool* CanAdd_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "CanAddMarkerToAI?");
+
+	Params::BP_MasterTrader_C_CanAddMarkerToAI_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CanAdd_ != nullptr)
+		*CanAdd_ = Parms.CanAdd_;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.CanStompAI?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Stomp_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::CanStompAI_(bool* Stomp_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "CanStompAI?");
+
+	Params::BP_MasterTrader_C_CanStompAI_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Stomp_ != nullptr)
+		*Stomp_ = Parms.Stomp_;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.CheckDistanceFromActor
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterTrader_C::CheckDistanceFromActor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "CheckDistanceFromActor");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.Death
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::SetMeshAndMaterial()
+void ABP_MasterTrader_C::Death(class AActor* Player)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "SetMeshAndMaterial");
+		Func = Class->GetFunction("BP_MasterTrader_C", "Death");
+
+	Params::BP_MasterTrader_C_Death Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.Event_Fire
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterTrader_C::Event_Fire()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "Event_Fire");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// Function BP_MasterTrader.BP_MasterTrader_C.Event_Marker
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterTrader_C::SetInteractOption(const struct FGameplayTag& Option)
+void ABP_MasterTrader_C::Event_Marker()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "SetInteractOption");
-
-	Params::BP_MasterTrader_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.SetInteractDistance
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::SetInteractDistance(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "SetInteractDistance");
-
-	Params::BP_MasterTrader_C_SetInteractDistance Parms{};
-
-	Parms.Target = Target;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.SetBurning
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Burning_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::SetBurning(bool Burning_, double Dmg, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "SetBurning");
-
-	Params::BP_MasterTrader_C_SetBurning Parms{};
-
-	Parms.Burning_ = Burning_;
-	Parms.Dmg = Dmg;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MasterTrader_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_MasterTrader_C", "Event_Marker");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.ReceiveAnyDamage
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Function BP_MasterTrader.BP_MasterTrader_C.ExecuteUbergraph_BP_MasterTrader
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+void ABP_MasterTrader_C::ExecuteUbergraph_BP_MasterTrader(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "ReceiveAnyDamage");
+		Func = Class->GetFunction("BP_MasterTrader_C", "ExecuteUbergraph_BP_MasterTrader");
 
-	Params::BP_MasterTrader_C_ReceiveAnyDamage Parms{};
+	Params::BP_MasterTrader_C_ExecuteUbergraph_BP_MasterTrader Parms{};
 
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterTrader_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OverrideName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::OverrideName(const class FString& Name_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OverrideName");
-
-	Params::BP_MasterTrader_C_OverrideName Parms{};
-
-	Parms.Name_0 = std::move(Name_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::OnStopExecuteInteract(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnStopExecuteInteract");
-
-	Params::BP_MasterTrader_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnServerExecuteInteract");
-
-	Params::BP_MasterTrader_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnRequestServerInteract");
-
-	Params::BP_MasterTrader_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterTrader_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnExecuteInteractDialogue");
-
-	Params::BP_MasterTrader_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnExecuteInteract");
-
-	Params::BP_MasterTrader_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterTrader_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_MasterTrader_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "OnBeginInteract");
-
-	Params::BP_MasterTrader_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigSetCanInteract");
-
-	Params::BP_MasterTrader_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnUpdateChamberUID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnUpdateChamberUID");
-
-	Params::BP_MasterTrader_C_JigMP_OnUpdateChamberUID Parms{};
-
-	Parms.NewUID = std::move(NewUID);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnTwoContainersSwap
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnTwoContainersSwap");
-
-	Params::BP_MasterTrader_C_JigMP_OnTwoContainersSwap Parms{};
-
-	Parms.FromContainer = FromContainer;
-	Parms.ToContainer = ToContainer;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnRequestDropItem
+// Function BP_MasterTrader.BP_MasterTrader_C.GetInteractOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_MasterTrader_C::JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef)
+void ABP_MasterTrader_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnRequestDropItem");
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetInteractOptions");
 
-	Params::BP_MasterTrader_C_JigMP_OnRequestDropItem Parms{};
-
-	Parms.ItemInfo = std::move(ItemInfo);
-	Parms.ContainerName = ContainerName;
+	Params::BP_MasterTrader_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ActorRef != nullptr)
-		*ActorRef = Parms.ActorRef;
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnPickupEquipped
+// Function BP_MasterTrader.BP_MasterTrader_C.GetItemInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     UID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          OverrideActor                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UJigsawItem_DataAsset_C**         Info                                                   (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_RandomStatsConfig*            RandomStatsConfig                                      (Parm, OutParm, HasGetValueTypeHash)
+// TMap<class FString, class FString>*     CustomData                                             (Parm, OutParm)
 
-void ABP_MasterTrader_C::JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor)
+void ABP_MasterTrader_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnPickupEquipped");
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetItemInfo");
 
-	Params::BP_MasterTrader_C_JigMP_OnPickupEquipped Parms{};
+	Params::BP_MasterTrader_C_GetItemInfo Parms{};
 
-	Parms.ActorRef = ActorRef;
-	Parms.ToContainerName = ToContainerName;
-	Parms.UID = std::move(UID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.Info = std::move(Info);
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Info != nullptr)
+		*Info = Parms.Info;
+
+	if (Count != nullptr)
+		*Count = Parms.Count;
+
+	if (RandomStatsConfig != nullptr)
+		*RandomStatsConfig = std::move(Parms.RandomStatsConfig);
+
+	if (CustomData != nullptr)
+		*CustomData = std::move(Parms.CustomData);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.GetJigMultiplayerComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetJigMultiplayerComponent");
+
+	Params::BP_MasterTrader_C_GetJigMultiplayerComponent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.GetMainSceneComp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::GetMainSceneComp(class USceneComponent** Comp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetMainSceneComp");
+
+	Params::BP_MasterTrader_C_GetMainSceneComp Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.GetMarker
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTexture2D**                      Texture                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 MarkerOffset                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::GetMarker(class UTexture2D** Texture, struct FLinearColor* Color, double* MarkerOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetMarker");
+
+	Params::BP_MasterTrader_C_GetMarker Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Texture != nullptr)
+		*Texture = Parms.Texture;
+
+	if (Color != nullptr)
+		*Color = std::move(Parms.Color);
+
+	if (MarkerOffset != nullptr)
+		*MarkerOffset = Parms.MarkerOffset;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.GetMesh
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USkeletalMeshComponent**          Mesh_0                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::GetMesh(class USkeletalMeshComponent** Mesh_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetMesh");
+
+	Params::BP_MasterTrader_C_GetMesh Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Mesh_0 != nullptr)
+		*Mesh_0 = Parms.Mesh_0;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.GetMovementSpeeds
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double*                                 RoamingSpeed                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 AlertSpeed                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 AttackSpeed                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::GetMovementSpeeds(double* RoamingSpeed, double* AlertSpeed, double* AttackSpeed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "GetMovementSpeeds");
+
+	Params::BP_MasterTrader_C_GetMovementSpeeds Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (RoamingSpeed != nullptr)
+		*RoamingSpeed = Parms.RoamingSpeed;
+
+	if (AlertSpeed != nullptr)
+		*AlertSpeed = Parms.AlertSpeed;
+
+	if (AttackSpeed != nullptr)
+		*AttackSpeed = Parms.AttackSpeed;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.HealthMultiplier
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::HealthMultiplier(float NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "HealthMultiplier");
+
+	Params::BP_MasterTrader_C_HealthMultiplier Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.HitByVehicle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Direction                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::HitByVehicle(double Speed, const struct FVector& Direction)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "HitByVehicle");
+
+	Params::BP_MasterTrader_C_HitByVehicle Parms{};
+
+	Parms.Speed = Speed;
+	Parms.Direction = std::move(Direction);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.IsAIBurning?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   IsBurning_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::IsAIBurning_(bool* IsBurning_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "IsAIBurning?");
+
+	Params::BP_MasterTrader_C_IsAIBurning_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsBurning_ != nullptr)
+		*IsBurning_ = Parms.IsBurning_;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.JigCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::JigCanInteract(bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigCanInteract");
+
+	Params::BP_MasterTrader_C_JigCanInteract Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_GetLootWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Valid_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::JigMP_GetLootWidget(class UWidget** Result, bool* Valid_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_GetLootWidget");
+
+	Params::BP_MasterTrader_C_JigMP_GetLootWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
 
-	if (OverrideActor != nullptr)
-		*OverrideActor = Parms.OverrideActor;
+	if (Valid_ != nullptr)
+		*Valid_ = Parms.Valid_;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnPickupAdded
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnContainersSwap
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class UJSIContainer_C*                  Container1                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C*                  Container2                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnContainersSwap");
+
+	Params::BP_MasterTrader_C_JigMP_OnContainersSwap Parms{};
+
+	Parms.Container1 = Container1;
+	Parms.Container2 = Container2;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemAdded
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
 // const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnPickupAdded");
-
-	Params::BP_MasterTrader_C_JigMP_OnPickupAdded Parms{};
-
-	Parms.Info = std::move(Info);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ToContainer = ToContainer;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnMainContainerItemRemoved
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
 // const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              ItemRemovedInfo                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnMainContainerItemRemoved");
-
-	Params::BP_MasterTrader_C_JigMP_OnMainContainerItemRemoved Parms{};
-
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.ContainerName = ContainerName;
-	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnMainContainerItemAdded
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
 // const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class FName                             FromMain                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  FromComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef)
+void ABP_MasterTrader_C::JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnMainContainerItemAdded");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemAdded");
 
-	Params::BP_MasterTrader_C_JigMP_OnMainContainerItemAdded Parms{};
-
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.ToContainerName = ToContainerName;
-	Parms.ItemInfo = std::move(ItemInfo);
-	Parms.FromMain = FromMain;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (ActorRef != nullptr)
-		*ActorRef = Parms.ActorRef;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemRemoved
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UActorComponent*                  ToComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnItemRemoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* ToComponent, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemRemoved");
-
-	Params::BP_MasterTrader_C_JigMP_OnItemRemoved Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnItemAdded Parms{};
 
 	Parms.ItemUID = std::move(ItemUID);
 	Parms.FromContainerUID = std::move(FromContainerUID);
 	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ToComponent = ToComponent;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemMoved
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnItemMoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemMoved");
-
-	Params::BP_MasterTrader_C_JigMP_OnItemMoved Parms{};
-
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemDropped
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::JigMP_OnItemDropped(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, class AActor* ActorRef, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemDropped");
-
-	Params::BP_MasterTrader_C_JigMP_OnItemDropped Parms{};
-
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.ActorRef = ActorRef;
+	Parms.FromComponent = FromComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -741,28 +604,54 @@ void ABP_MasterTrader_C::JigMP_OnItemConsumed(const struct FRepItemInfo& Consume
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemAdded
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemDropped
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::JigMP_OnItemDropped(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, class AActor* ActorRef, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemDropped");
+
+	Params::BP_MasterTrader_C_JigMP_OnItemDropped Parms{};
+
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.ActorRef = ActorRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemMoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UActorComponent*                  FromComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result)
+void ABP_MasterTrader_C::JigMP_OnItemMoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemAdded");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemMoved");
 
-	Params::BP_MasterTrader_C_JigMP_OnItemAdded Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnItemMoved Parms{};
 
 	Parms.ItemUID = std::move(ItemUID);
 	Parms.FromContainerUID = std::move(FromContainerUID);
 	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.FromComponent = FromComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -771,24 +660,28 @@ void ABP_MasterTrader_C::JigMP_OnItemAdded(const struct FGuid& ItemUID, const st
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnContainersSwap
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnItemRemoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UJSIContainer_C*                  Container1                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C*                  Container2                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  ToComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result)
+void ABP_MasterTrader_C::JigMP_OnItemRemoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* ToComponent, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnContainersSwap");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnItemRemoved");
 
-	Params::BP_MasterTrader_C_JigMP_OnContainersSwap Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnItemRemoved Parms{};
 
-	Parms.Container1 = Container1;
-	Parms.Container2 = Container2;
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ToComponent = ToComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -797,44 +690,64 @@ void ABP_MasterTrader_C::JigMP_OnContainersSwap(class UJSIContainer_C* Container
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_GetLootWidget
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnMainContainerItemAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Valid_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             FromMain                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::JigMP_GetLootWidget(class UWidget** Result, bool* Valid_)
+void ABP_MasterTrader_C::JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_GetLootWidget");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnMainContainerItemAdded");
 
-	Params::BP_MasterTrader_C_JigMP_GetLootWidget Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnMainContainerItemAdded Parms{};
+
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.ToContainerName = ToContainerName;
+	Parms.ItemInfo = std::move(ItemInfo);
+	Parms.FromMain = FromMain;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
 
-	if (Valid_ != nullptr)
-		*Valid_ = Parms.Valid_;
+	if (ActorRef != nullptr)
+		*ActorRef = Parms.ActorRef;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.JigCanInteract
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnMainContainerItemRemoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              ItemRemovedInfo                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::JigCanInteract(bool* Result)
+void ABP_MasterTrader_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "JigCanInteract");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnMainContainerItemRemoved");
 
-	Params::BP_MasterTrader_C_JigCanInteract Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnMainContainerItemRemoved Parms{};
+
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.ContainerName = ContainerName;
+	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -843,452 +756,539 @@ void ABP_MasterTrader_C::JigCanInteract(bool* Result)
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.IsAIBurning?
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnPickupAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   IsBurning_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::IsAIBurning_(bool* IsBurning_)
+void ABP_MasterTrader_C::JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "IsAIBurning?");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnPickupAdded");
 
-	Params::BP_MasterTrader_C_IsAIBurning_ Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnPickupAdded Parms{};
+
+	Parms.Info = std::move(Info);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ToContainer = ToContainer;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsBurning_ != nullptr)
-		*IsBurning_ = Parms.IsBurning_;
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.HitByVehicle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   Direction                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::HitByVehicle(double Speed, const struct FVector& Direction)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "HitByVehicle");
-
-	Params::BP_MasterTrader_C_HitByVehicle Parms{};
-
-	Parms.Speed = Speed;
-	Parms.Direction = std::move(Direction);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.HealthMultiplier
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::HealthMultiplier(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "HealthMultiplier");
-
-	Params::BP_MasterTrader_C_HealthMultiplier Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.GetMovementSpeeds
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnPickupEquipped
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double*                                 RoamingSpeed                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 AlertSpeed                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 AttackSpeed                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     UID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          OverrideActor                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::GetMovementSpeeds(double* RoamingSpeed, double* AlertSpeed, double* AttackSpeed)
+void ABP_MasterTrader_C::JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetMovementSpeeds");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnPickupEquipped");
 
-	Params::BP_MasterTrader_C_GetMovementSpeeds Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnPickupEquipped Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (RoamingSpeed != nullptr)
-		*RoamingSpeed = Parms.RoamingSpeed;
-
-	if (AlertSpeed != nullptr)
-		*AlertSpeed = Parms.AlertSpeed;
-
-	if (AttackSpeed != nullptr)
-		*AttackSpeed = Parms.AttackSpeed;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.GetMesh
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USkeletalMeshComponent**          Mesh_0                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::GetMesh(class USkeletalMeshComponent** Mesh_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetMesh");
-
-	Params::BP_MasterTrader_C_GetMesh Parms{};
+	Parms.ActorRef = ActorRef;
+	Parms.ToContainerName = ToContainerName;
+	Parms.UID = std::move(UID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.Info = std::move(Info);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Mesh_0 != nullptr)
-		*Mesh_0 = Parms.Mesh_0;
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (OverrideActor != nullptr)
+		*OverrideActor = Parms.OverrideActor;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.GetMarker
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UTexture2D**                      Texture                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor*                    Color                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 MarkerOffset                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::GetMarker(class UTexture2D** Texture, struct FLinearColor* Color, double* MarkerOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetMarker");
-
-	Params::BP_MasterTrader_C_GetMarker Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Texture != nullptr)
-		*Texture = Parms.Texture;
-
-	if (Color != nullptr)
-		*Color = std::move(Parms.Color);
-
-	if (MarkerOffset != nullptr)
-		*MarkerOffset = Parms.MarkerOffset;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.GetMainSceneComp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::GetMainSceneComp(class USceneComponent** Comp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetMainSceneComp");
-
-	Params::BP_MasterTrader_C_GetMainSceneComp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.GetJigMultiplayerComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetJigMultiplayerComponent");
-
-	Params::BP_MasterTrader_C_GetJigMultiplayerComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.GetItemInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UJigsawItem_DataAsset_C**         Info                                                   (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_RandomStatsConfig*            RandomStatsConfig                                      (Parm, OutParm, HasGetValueTypeHash)
-// TMap<class FString, class FString>*     CustomData                                             (Parm, OutParm)
-
-void ABP_MasterTrader_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetItemInfo");
-
-	Params::BP_MasterTrader_C_GetItemInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Info != nullptr)
-		*Info = Parms.Info;
-
-	if (Count != nullptr)
-		*Count = Parms.Count;
-
-	if (RandomStatsConfig != nullptr)
-		*RandomStatsConfig = std::move(Parms.RandomStatsConfig);
-
-	if (CustomData != nullptr)
-		*CustomData = std::move(Parms.CustomData);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.GetInteractOptions
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnRequestDropItem
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+void ABP_MasterTrader_C::JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "GetInteractOptions");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnRequestDropItem");
 
-	Params::BP_MasterTrader_C_GetInteractOptions Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnRequestDropItem Parms{};
+
+	Parms.ItemInfo = std::move(ItemInfo);
+	Parms.ContainerName = ContainerName;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
+	if (ActorRef != nullptr)
+		*ActorRef = Parms.ActorRef;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.ExecuteUbergraph_BP_MasterTrader
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnTwoContainersSwap
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::ExecuteUbergraph_BP_MasterTrader(int32 EntryPoint)
+void ABP_MasterTrader_C::JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "ExecuteUbergraph_BP_MasterTrader");
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnTwoContainersSwap");
 
-	Params::BP_MasterTrader_C_ExecuteUbergraph_BP_MasterTrader Parms{};
+	Params::BP_MasterTrader_C_JigMP_OnTwoContainersSwap Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.FromContainer = FromContainer;
+	Parms.ToContainer = ToContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.JigMP_OnUpdateChamberUID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigMP_OnUpdateChamberUID");
+
+	Params::BP_MasterTrader_C_JigMP_OnUpdateChamberUID Parms{};
+
+	Parms.NewUID = std::move(NewUID);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "JigSetCanInteract");
+
+	Params::BP_MasterTrader_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_MasterTrader_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnBeginInteract");
+
+	Params::BP_MasterTrader_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.Event_Marker
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_MasterTrader.BP_MasterTrader_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterTrader_C::Event_Marker()
+void ABP_MasterTrader_C::OnEndInteract()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "Event_Marker");
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.Event_Fire
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_MasterTrader.BP_MasterTrader_C.OnExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::Event_Fire()
+void ABP_MasterTrader_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "Event_Fire");
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnExecuteInteract");
+
+	Params::BP_MasterTrader_C_OnExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnExecuteInteractDialogue");
+
+	Params::BP_MasterTrader_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterTrader_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnExecuteInteractEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.Death
+// Function BP_MasterTrader.BP_MasterTrader_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnRequestServerInteract");
+
+	Params::BP_MasterTrader_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnServerExecuteInteract");
+
+	Params::BP_MasterTrader_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OnStopExecuteInteract");
+
+	Params::BP_MasterTrader_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.OverrideName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::OverrideName(const class FString& Name_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "OverrideName");
+
+	Params::BP_MasterTrader_C_OverrideName Parms{};
+
+	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterTrader_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.ReceiveAnyDamage
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "ReceiveAnyDamage");
+
+	Params::BP_MasterTrader_C_ReceiveAnyDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.DamageType = DamageType;
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MasterTrader_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.SetBurning
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Burning_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::SetBurning(bool Burning_, double Dmg, class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "SetBurning");
+
+	Params::BP_MasterTrader_C_SetBurning Parms{};
+
+	Parms.Burning_ = Burning_;
+	Parms.Dmg = Dmg;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.SetInteractDistance
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::SetInteractDistance(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "SetInteractDistance");
+
+	Params::BP_MasterTrader_C_SetInteractDistance Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterTrader_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterTrader_C", "SetInteractOption");
+
+	Params::BP_MasterTrader_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterTrader.BP_MasterTrader_C.SetMeshAndMaterial
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::Death(class AActor* Player)
+void ABP_MasterTrader_C::SetMeshAndMaterial()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "Death");
-
-	Params::BP_MasterTrader_C_Death Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.CheckDistanceFromActor
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterTrader_C::CheckDistanceFromActor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "CheckDistanceFromActor");
+		Func = Class->GetFunction("BP_MasterTrader_C", "SetMeshAndMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.CanStompAI?
+// Function BP_MasterTrader.BP_MasterTrader_C.SetPickupCount
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   Stomp_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterTrader_C::CanStompAI_(bool* Stomp_)
+void ABP_MasterTrader_C::SetPickupCount(int32 NewCount, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "CanStompAI?");
+		Func = Class->GetFunction("BP_MasterTrader_C", "SetPickupCount");
 
-	Params::BP_MasterTrader_C_CanStompAI_ Parms{};
+	Params::BP_MasterTrader_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Stomp_ != nullptr)
-		*Stomp_ = Parms.Stomp_;
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.CanAddMarkerToAI?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   CanAdd_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MasterTrader.BP_MasterTrader_C.SetWeapons
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterTrader_C::CanAddMarkerToAI_(bool* CanAdd_)
+void ABP_MasterTrader_C::SetWeapons()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "CanAddMarkerToAI?");
+		Func = Class->GetFunction("BP_MasterTrader_C", "SetWeapons");
 
-	Params::BP_MasterTrader_C_CanAddMarkerToAI_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CanAdd_ != nullptr)
-		*CanAdd_ = Parms.CanAdd_;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterTrader.BP_MasterTrader_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-
-	Params::BP_MasterTrader_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.AIHealthBarInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Visible_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString*                          Name_0                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-// bool*                                   Boss_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::AIHealthBarInfo(bool* Visible_, class FString* Name_0, bool* Boss_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "AIHealthBarInfo");
-
-	Params::BP_MasterTrader_C_AIHealthBarInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Visible_ != nullptr)
-		*Visible_ = Parms.Visible_;
-
-	if (Name_0 != nullptr)
-		*Name_0 = std::move(Parms.Name_0);
-
-	if (Boss_ != nullptr)
-		*Boss_ = Parms.Boss_;
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.AI_Health
+// Function BP_MasterTrader.BP_MasterTrader_C.StopBurning
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterTrader_C::AI_Health()
+void ABP_MasterTrader_C::StopBurning()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "AI_Health");
+		Func = Class->GetFunction("BP_MasterTrader_C", "StopBurning");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterTrader.BP_MasterTrader_C.AddMarker
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidgetComponent*                 Marker_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterTrader_C::AddMarker(class UWidgetComponent* Marker_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterTrader_C", "AddMarker");
-
-	Params::BP_MasterTrader_C_AddMarker Parms{};
-
-	Parms.Marker_0 = Marker_0;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

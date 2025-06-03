@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_Combat_structs.hpp"
-#include "CoreUObject_classes.hpp"
 #include "E_TimeOfDay_structs.hpp"
+#include "CoreUObject_classes.hpp"
+#include "E_Combat_structs.hpp"
 
 
 namespace SDK

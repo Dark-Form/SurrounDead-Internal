@@ -16,6 +16,22 @@
 namespace SDK::Params
 {
 
+// Function BP_EasterEgg_Campfire.BP_EasterEgg_Campfire_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+{
+public:
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+
 // Function BP_EasterEgg_Campfire.BP_EasterEgg_Campfire_C.ExecuteUbergraph_BP_EasterEgg_Campfire
 // 0x0060 (0x0060 - 0x0000)
 struct BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire final
@@ -56,22 +72,6 @@ static_assert(offsetof(BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Cam
 static_assert(offsetof(BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire, K2Node_ComponentBoundEvent_bIsSeen) == 0x000050, "Member 'BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
 static_assert(offsetof(BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire, K2Node_SwitchInteger_CmpSuccess) == 0x000051, "Member 'BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x000058, "Member 'BP_EasterEgg_Campfire_C_ExecuteUbergraph_BP_EasterEgg_Campfire::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-
-// Function BP_EasterEgg_Campfire.BP_EasterEgg_Campfire_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
-{
-public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_EasterEgg_Campfire_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 }
 

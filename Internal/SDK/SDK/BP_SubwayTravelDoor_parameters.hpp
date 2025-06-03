@@ -20,199 +20,32 @@
 namespace SDK::Params
 {
 
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.UserConstructionScript
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+{
+public:
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.Event_Door
 // 0x0001 (0x0001 - 0x0000)
-struct BP_SubwayTravelDoor_C_UserConstructionScript final
+struct BP_SubwayTravelDoor_C_Event_Door final
 {
 public:
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Open_;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SubwayTravelDoor_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_UserConstructionScript");
-static_assert(sizeof(BP_SubwayTravelDoor_C_UserConstructionScript) == 0x000001, "Wrong size on BP_SubwayTravelDoor_C_UserConstructionScript");
-static_assert(offsetof(BP_SubwayTravelDoor_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'BP_SubwayTravelDoor_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.SetPickupCount
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SubwayTravelDoor_C_SetPickupCount final
-{
-public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_SubwayTravelDoor_C_SetPickupCount");
-static_assert(sizeof(BP_SubwayTravelDoor_C_SetPickupCount) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_SetPickupCount");
-static_assert(offsetof(BP_SubwayTravelDoor_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_SubwayTravelDoor_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_SetPickupCount, Result) == 0x000004, "Member 'BP_SubwayTravelDoor_C_SetPickupCount::Result' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.SetInteractOption
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SubwayTravelDoor_C_SetInteractOption final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_SubwayTravelDoor_C_SetInteractOption");
-static_assert(sizeof(BP_SubwayTravelDoor_C_SetInteractOption) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_SetInteractOption");
-static_assert(offsetof(BP_SubwayTravelDoor_C_SetInteractOption, Option) == 0x000000, "Member 'BP_SubwayTravelDoor_C_SetInteractOption::Option' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnStopExecuteInteract
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SubwayTravelDoor_C_OnStopExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnStopExecuteInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_OnStopExecuteInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct BP_SubwayTravelDoor_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnServerExecuteInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_SubwayTravelDoor_C_OnServerExecuteInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_SubwayTravelDoor_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnRequestServerInteract
-// 0x0048 (0x0048 - 0x0000)
-struct BP_SubwayTravelDoor_C_OnRequestServerInteract final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnRequestServerInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_SubwayTravelDoor_C_OnRequestServerInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Actor' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Payload' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Result' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnExecuteInteractDialogue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SubwayTravelDoor_C_OnExecuteInteractDialogue final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnExecuteInteractDialogue");
-static_assert(sizeof(BP_SubwayTravelDoor_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_OnExecuteInteractDialogue");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnExecuteInteract
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SubwayTravelDoor_C_OnExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnExecuteInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_SubwayTravelDoor_C_OnExecuteInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnExecuteInteract::Option' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct BP_SubwayTravelDoor_C_OnBeginInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnBeginInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_OnBeginInteract) == 0x000058, "Wrong size on BP_SubwayTravelDoor_C_OnBeginInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnBeginInteract::Options' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.JigSetCanInteract
-// 0x0003 (0x0003 - 0x0000)
-struct BP_SubwayTravelDoor_C_JigSetCanInteract final
-{
-public:
-	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_JigSetCanInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_SubwayTravelDoor_C_JigSetCanInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_SubwayTravelDoor_C_JigSetCanInteract::CanInteract' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_SubwayTravelDoor_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_SubwayTravelDoor_C_JigSetCanInteract::Result' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.JigCanInteract
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SubwayTravelDoor_C_JigCanInteract final
-{
-public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_JigCanInteract) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_JigCanInteract");
-static_assert(sizeof(BP_SubwayTravelDoor_C_JigCanInteract) == 0x000001, "Wrong size on BP_SubwayTravelDoor_C_JigCanInteract");
-static_assert(offsetof(BP_SubwayTravelDoor_C_JigCanInteract, Result) == 0x000000, "Member 'BP_SubwayTravelDoor_C_JigCanInteract::Result' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetMainSceneComp
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SubwayTravelDoor_C_GetMainSceneComp final
-{
-public:
-	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetMainSceneComp");
-static_assert(sizeof(BP_SubwayTravelDoor_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_GetMainSceneComp");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetMainSceneComp::Comp' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetJigMultiplayerComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SubwayTravelDoor_C_GetJigMultiplayerComponent final
-{
-public:
-	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetJigMultiplayerComponent");
-static_assert(sizeof(BP_SubwayTravelDoor_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_GetJigMultiplayerComponent");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetItemInfo
-// 0x0078 (0x0078 - 0x0000)
-struct BP_SubwayTravelDoor_C_GetItemInfo final
-{
-public:
-	class UJigsawItem_DataAsset_C*                Info;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Count;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_RandomStatsConfig                   RandomStatsConfig;                                 // 0x0010(0x0018)(Parm, OutParm, HasGetValueTypeHash)
-	TMap<class FString, class FString>            CustomData;                                        // 0x0028(0x0050)(Parm, OutParm)
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_GetItemInfo) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetItemInfo");
-static_assert(sizeof(BP_SubwayTravelDoor_C_GetItemInfo) == 0x000078, "Wrong size on BP_SubwayTravelDoor_C_GetItemInfo");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, Info) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::Info' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, Count) == 0x000008, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::Count' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::CustomData' has a wrong offset!");
-
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetInteractOptions
-// 0x00A0 (0x00A0 - 0x0000)
-struct BP_SubwayTravelDoor_C_GetInteractOptions final
-{
-public:
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
-	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x0050(0x0050)()
-};
-static_assert(alignof(BP_SubwayTravelDoor_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetInteractOptions");
-static_assert(sizeof(BP_SubwayTravelDoor_C_GetInteractOptions) == 0x0000A0, "Wrong size on BP_SubwayTravelDoor_C_GetInteractOptions");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetInteractOptions::Options' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_GetInteractOptions, K2Node_MakeMap_Map) == 0x000050, "Member 'BP_SubwayTravelDoor_C_GetInteractOptions::K2Node_MakeMap_Map' has a wrong offset!");
+static_assert(alignof(BP_SubwayTravelDoor_C_Event_Door) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_Event_Door");
+static_assert(sizeof(BP_SubwayTravelDoor_C_Event_Door) == 0x000001, "Wrong size on BP_SubwayTravelDoor_C_Event_Door");
+static_assert(offsetof(BP_SubwayTravelDoor_C_Event_Door, Open_) == 0x000000, "Member 'BP_SubwayTravelDoor_C_Event_Door::Open_' has a wrong offset!");
 
 // Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.ExecuteUbergraph_BP_SubwayTravelDoor
 // 0x0418 (0x0418 - 0x0000)
@@ -297,32 +130,199 @@ static_assert(offsetof(BP_SubwayTravelDoor_C_ExecuteUbergraph_BP_SubwayTravelDoo
 static_assert(offsetof(BP_SubwayTravelDoor_C_ExecuteUbergraph_BP_SubwayTravelDoor, CallFunc_Lerp_Alpha_ImplicitCast) == 0x000408, "Member 'BP_SubwayTravelDoor_C_ExecuteUbergraph_BP_SubwayTravelDoor::CallFunc_Lerp_Alpha_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_SubwayTravelDoor_C_ExecuteUbergraph_BP_SubwayTravelDoor, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000410, "Member 'BP_SubwayTravelDoor_C_ExecuteUbergraph_BP_SubwayTravelDoor::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
 
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.Event_Door
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SubwayTravelDoor_C_Event_Door final
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetInteractOptions
+// 0x00A0 (0x00A0 - 0x0000)
+struct BP_SubwayTravelDoor_C_GetInteractOptions final
 {
 public:
-	bool                                          Open_;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
+	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x0050(0x0050)()
 };
-static_assert(alignof(BP_SubwayTravelDoor_C_Event_Door) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_Event_Door");
-static_assert(sizeof(BP_SubwayTravelDoor_C_Event_Door) == 0x000001, "Wrong size on BP_SubwayTravelDoor_C_Event_Door");
-static_assert(offsetof(BP_SubwayTravelDoor_C_Event_Door, Open_) == 0x000000, "Member 'BP_SubwayTravelDoor_C_Event_Door::Open_' has a wrong offset!");
+static_assert(alignof(BP_SubwayTravelDoor_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetInteractOptions");
+static_assert(sizeof(BP_SubwayTravelDoor_C_GetInteractOptions) == 0x0000A0, "Wrong size on BP_SubwayTravelDoor_C_GetInteractOptions");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetInteractOptions::Options' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetInteractOptions, K2Node_MakeMap_Map) == 0x000050, "Member 'BP_SubwayTravelDoor_C_GetInteractOptions::K2Node_MakeMap_Map' has a wrong offset!");
 
-// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetItemInfo
+// 0x0078 (0x0078 - 0x0000)
+struct BP_SubwayTravelDoor_C_GetItemInfo final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UJigsawItem_DataAsset_C*                Info;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_RandomStatsConfig                   RandomStatsConfig;                                 // 0x0010(0x0018)(Parm, OutParm, HasGetValueTypeHash)
+	TMap<class FString, class FString>            CustomData;                                        // 0x0028(0x0050)(Parm, OutParm)
 };
-static_assert(alignof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_SubwayTravelDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(BP_SubwayTravelDoor_C_GetItemInfo) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetItemInfo");
+static_assert(sizeof(BP_SubwayTravelDoor_C_GetItemInfo) == 0x000078, "Wrong size on BP_SubwayTravelDoor_C_GetItemInfo");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, Info) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::Info' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, Count) == 0x000008, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::Count' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_SubwayTravelDoor_C_GetItemInfo::CustomData' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetJigMultiplayerComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SubwayTravelDoor_C_GetJigMultiplayerComponent final
+{
+public:
+	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetJigMultiplayerComponent");
+static_assert(sizeof(BP_SubwayTravelDoor_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_GetJigMultiplayerComponent");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.GetMainSceneComp
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SubwayTravelDoor_C_GetMainSceneComp final
+{
+public:
+	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_GetMainSceneComp");
+static_assert(sizeof(BP_SubwayTravelDoor_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_GetMainSceneComp");
+static_assert(offsetof(BP_SubwayTravelDoor_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_SubwayTravelDoor_C_GetMainSceneComp::Comp' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.JigCanInteract
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SubwayTravelDoor_C_JigCanInteract final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_JigCanInteract) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_JigCanInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_JigCanInteract) == 0x000001, "Wrong size on BP_SubwayTravelDoor_C_JigCanInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_JigCanInteract, Result) == 0x000000, "Member 'BP_SubwayTravelDoor_C_JigCanInteract::Result' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.JigSetCanInteract
+// 0x0003 (0x0003 - 0x0000)
+struct BP_SubwayTravelDoor_C_JigSetCanInteract final
+{
+public:
+	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_JigSetCanInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_SubwayTravelDoor_C_JigSetCanInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_SubwayTravelDoor_C_JigSetCanInteract::CanInteract' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_SubwayTravelDoor_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_SubwayTravelDoor_C_JigSetCanInteract::Result' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct BP_SubwayTravelDoor_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnBeginInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_OnBeginInteract) == 0x000058, "Wrong size on BP_SubwayTravelDoor_C_OnBeginInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnExecuteInteract
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SubwayTravelDoor_C_OnExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnExecuteInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_SubwayTravelDoor_C_OnExecuteInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnExecuteInteract::Option' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnExecuteInteractDialogue
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SubwayTravelDoor_C_OnExecuteInteractDialogue final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnExecuteInteractDialogue");
+static_assert(sizeof(BP_SubwayTravelDoor_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_OnExecuteInteractDialogue");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnRequestServerInteract
+// 0x0048 (0x0048 - 0x0000)
+struct BP_SubwayTravelDoor_C_OnRequestServerInteract final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnRequestServerInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_SubwayTravelDoor_C_OnRequestServerInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Actor' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Payload' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_SubwayTravelDoor_C_OnRequestServerInteract::Result' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct BP_SubwayTravelDoor_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnServerExecuteInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_SubwayTravelDoor_C_OnServerExecuteInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_SubwayTravelDoor_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_SubwayTravelDoor_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.OnStopExecuteInteract
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SubwayTravelDoor_C_OnStopExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_SubwayTravelDoor_C_OnStopExecuteInteract");
+static_assert(sizeof(BP_SubwayTravelDoor_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_OnStopExecuteInteract");
+static_assert(offsetof(BP_SubwayTravelDoor_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_SubwayTravelDoor_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SubwayTravelDoor_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_SubwayTravelDoor_C_SetInteractOption");
+static_assert(sizeof(BP_SubwayTravelDoor_C_SetInteractOption) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_SetInteractOption");
+static_assert(offsetof(BP_SubwayTravelDoor_C_SetInteractOption, Option) == 0x000000, "Member 'BP_SubwayTravelDoor_C_SetInteractOption::Option' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.SetPickupCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SubwayTravelDoor_C_SetPickupCount final
+{
+public:
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_SubwayTravelDoor_C_SetPickupCount");
+static_assert(sizeof(BP_SubwayTravelDoor_C_SetPickupCount) == 0x000008, "Wrong size on BP_SubwayTravelDoor_C_SetPickupCount");
+static_assert(offsetof(BP_SubwayTravelDoor_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_SubwayTravelDoor_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_SubwayTravelDoor_C_SetPickupCount, Result) == 0x000004, "Member 'BP_SubwayTravelDoor_C_SetPickupCount::Result' has a wrong offset!");
+
+// Function BP_SubwayTravelDoor.BP_SubwayTravelDoor_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SubwayTravelDoor_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SubwayTravelDoor_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_SubwayTravelDoor_C_UserConstructionScript");
+static_assert(sizeof(BP_SubwayTravelDoor_C_UserConstructionScript) == 0x000001, "Wrong size on BP_SubwayTravelDoor_C_UserConstructionScript");
+static_assert(offsetof(BP_SubwayTravelDoor_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000000, "Member 'BP_SubwayTravelDoor_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
 
 }
 

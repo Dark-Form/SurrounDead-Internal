@@ -31,11 +31,11 @@ public:
 	struct FTimerHandle                           Timer;                                             // 0x02D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_EasterEgg_Campfire(int32 EntryPoint);
-	void EventTimer();
-	void CustomEvent_0();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void CustomEvent_0();
+	void EventTimer();
+	void ExecuteUbergraph_BP_EasterEgg_Campfire(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

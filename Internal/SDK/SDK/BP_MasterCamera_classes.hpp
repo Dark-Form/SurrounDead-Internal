@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_MasterTurret_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_MasterTurret_classes.hpp"
 
 
 namespace SDK
@@ -30,14 +30,14 @@ public:
 
 public:
 	void Actor_Attack_Target(class AActor** Attack_Target);
-	void AI_Can_Interact_(bool* Can_Interact);
 	void ExecuteUbergraph_BP_MasterCamera(int32 EntryPoint);
 	void Multicast_Turret_Idle_Start();
 	void Multicast_Turret_Idle_Stop();
-	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
 	void ReceiveBeginPlay();
 	void Rotate_Camera__FinishedFunc();
 	void Rotate_Camera__UpdateFunc();
+	void AI_Can_Interact_(bool* Can_Interact);
+	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
 	void Turret_Destroyed_Effect();
 	void Turret_Idle_Start();
 	void Turret_Idle_Stop();

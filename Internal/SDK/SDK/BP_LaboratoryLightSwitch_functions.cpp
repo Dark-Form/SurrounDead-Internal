@@ -17,410 +17,72 @@
 namespace SDK
 {
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.CallInteractOnObject
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LaboratoryLightSwitch_C::UserConstructionScript()
+void ABP_LaboratoryLightSwitch_C::CallInteractOnObject()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "CallInteractOnObject");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetPower_Warning
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    SetWarning                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::SetPower_Warning(bool SetWarning)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetPower_Warning");
-
-	Params::BP_LaboratoryLightSwitch_C_SetPower_Warning Parms{};
-
-	Parms.SetWarning = SetWarning;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetPower_TurnedOn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    TurnOn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::SetPower_TurnedOn(bool TurnOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetPower_TurnedOn");
-
-	Params::BP_LaboratoryLightSwitch_C_SetPower_TurnedOn Parms{};
-
-	Parms.TurnOn = TurnOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::SetPickupCount(int32 NewCount, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetPickupCount");
-
-	Params::BP_LaboratoryLightSwitch_C_SetPickupCount Parms{};
-
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetInteractOption");
-
-	Params::BP_LaboratoryLightSwitch_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LaboratoryLightSwitch_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::OnStopExecuteInteract(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnStopExecuteInteract");
-
-	Params::BP_LaboratoryLightSwitch_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnServerExecuteInteract");
-
-	Params::BP_LaboratoryLightSwitch_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRequestServerInteract");
-
-	Params::BP_LaboratoryLightSwitch_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRep_Warning?
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.Event_LightSwitch
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_LaboratoryLightSwitch_C::OnRep_Warning_()
+void ABP_LaboratoryLightSwitch_C::Event_LightSwitch()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRep_Warning?");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "Event_LightSwitch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRep_On?
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_LaboratoryLightSwitch_C::OnRep_On_()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRep_On?");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRep_Off?
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_LaboratoryLightSwitch_C::OnRep_Off_()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRep_Off?");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LaboratoryLightSwitch_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.ExecuteUbergraph_BP_LaboratoryLightSwitch
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LaboratoryLightSwitch_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+void ABP_LaboratoryLightSwitch_C::ExecuteUbergraph_BP_LaboratoryLightSwitch(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnExecuteInteractDialogue");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "ExecuteUbergraph_BP_LaboratoryLightSwitch");
 
-	Params::BP_LaboratoryLightSwitch_C_OnExecuteInteractDialogue Parms{};
+	Params::BP_LaboratoryLightSwitch_C_ExecuteUbergraph_BP_LaboratoryLightSwitch Parms{};
 
-	Parms.InteractingActor = InteractingActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.GetInteractOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_LaboratoryLightSwitch_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
+void ABP_LaboratoryLightSwitch_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnExecuteInteract");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "GetInteractOptions");
 
-	Params::BP_LaboratoryLightSwitch_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LaboratoryLightSwitch_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_LaboratoryLightSwitch_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnBeginInteract");
-
-	Params::BP_LaboratoryLightSwitch_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "JigSetCanInteract");
-
-	Params::BP_LaboratoryLightSwitch_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
+	Params::BP_LaboratoryLightSwitch_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.JigCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::JigCanInteract(bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "JigCanInteract");
-
-	Params::BP_LaboratoryLightSwitch_C_JigCanInteract Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.GetMainSceneComp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::GetMainSceneComp(class USceneComponent** Comp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "GetMainSceneComp");
-
-	Params::BP_LaboratoryLightSwitch_C_GetMainSceneComp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
-}
-
-
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.GetJigMultiplayerComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LaboratoryLightSwitch_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "GetJigMultiplayerComponent");
-
-	Params::BP_LaboratoryLightSwitch_C_GetJigMultiplayerComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
 }
 
 
@@ -457,70 +119,408 @@ void ABP_LaboratoryLightSwitch_C::GetItemInfo(class UJigsawItem_DataAsset_C** In
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.GetInteractOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.GetJigMultiplayerComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LaboratoryLightSwitch_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+void ABP_LaboratoryLightSwitch_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "GetInteractOptions");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "GetJigMultiplayerComponent");
 
-	Params::BP_LaboratoryLightSwitch_C_GetInteractOptions Parms{};
+	Params::BP_LaboratoryLightSwitch_C_GetJigMultiplayerComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.ExecuteUbergraph_BP_LaboratoryLightSwitch
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.GetMainSceneComp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LaboratoryLightSwitch_C::ExecuteUbergraph_BP_LaboratoryLightSwitch(int32 EntryPoint)
+void ABP_LaboratoryLightSwitch_C::GetMainSceneComp(class USceneComponent** Comp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "ExecuteUbergraph_BP_LaboratoryLightSwitch");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "GetMainSceneComp");
 
-	Params::BP_LaboratoryLightSwitch_C_ExecuteUbergraph_BP_LaboratoryLightSwitch Parms{};
+	Params::BP_LaboratoryLightSwitch_C_GetMainSceneComp Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.JigCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::JigCanInteract(bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "JigCanInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_JigCanInteract Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "JigSetCanInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_LaboratoryLightSwitch_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnBeginInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.Event_LightSwitch
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LaboratoryLightSwitch_C::Event_LightSwitch()
+void ABP_LaboratoryLightSwitch_C::OnEndInteract()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "Event_LightSwitch");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.CallInteractOnObject
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnExecuteInteract
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LaboratoryLightSwitch_C::CallInteractOnObject()
+void ABP_LaboratoryLightSwitch_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "CallInteractOnObject");
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnExecuteInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_OnExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnExecuteInteractDialogue");
+
+	Params::BP_LaboratoryLightSwitch_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLightSwitch_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnExecuteInteractEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRep_Off?
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLightSwitch_C::OnRep_Off_()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRep_Off?");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRep_On?
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLightSwitch_C::OnRep_On_()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRep_On?");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRep_Warning?
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLightSwitch_C::OnRep_Warning_()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRep_Warning?");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnRequestServerInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnServerExecuteInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "OnStopExecuteInteract");
+
+	Params::BP_LaboratoryLightSwitch_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLightSwitch_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetInteractOption");
+
+	Params::BP_LaboratoryLightSwitch_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetPickupCount");
+
+	Params::BP_LaboratoryLightSwitch_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetPower_TurnedOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    TurnOn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::SetPower_TurnedOn(bool TurnOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetPower_TurnedOn");
+
+	Params::BP_LaboratoryLightSwitch_C_SetPower_TurnedOn Parms{};
+
+	Parms.TurnOn = TurnOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.SetPower_Warning
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    SetWarning                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LaboratoryLightSwitch_C::SetPower_Warning(bool SetWarning)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "SetPower_Warning");
+
+	Params::BP_LaboratoryLightSwitch_C_SetPower_Warning Parms{};
+
+	Parms.SetWarning = SetWarning;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LaboratoryLightSwitch.BP_LaboratoryLightSwitch_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLightSwitch_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLightSwitch_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

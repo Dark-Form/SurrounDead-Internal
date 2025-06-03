@@ -28,15 +28,15 @@ public:
 	bool                                          SettlementSpawned_;                                // 0x02BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpawnSettlement();
-	void ReceiveBeginPlay();
-	void OnCompleted_BE652D6747526F18549A3683E8CAC5D2();
-	void ExecuteUbergraph_BP_SettlementManager(int32 EntryPoint);
-	void ComponentsToSave(TArray<class UActorComponent*>* Components);
-	void ActorSaved();
-	void ActorPreSave();
-	void ActorPreLoad();
 	void ActorLoaded();
+	void ActorPreLoad();
+	void ActorPreSave();
+	void ActorSaved();
+	void ComponentsToSave(TArray<class UActorComponent*>* Components);
+	void ExecuteUbergraph_BP_SettlementManager(int32 EntryPoint);
+	void OnCompleted_BE652D6747526F18549A3683E8CAC5D2();
+	void ReceiveBeginPlay();
+	void SpawnSettlement();
 
 public:
 	static class UClass* StaticClass()

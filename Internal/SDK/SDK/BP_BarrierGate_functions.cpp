@@ -17,362 +17,82 @@
 namespace SDK
 {
 
-// Function BP_BarrierGate.BP_BarrierGate_C.Timeline_0__UpdateFunc
+// Function BP_BarrierGate.BP_BarrierGate_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BarrierGate_C::Timeline_0__UpdateFunc()
+void ABP_BarrierGate_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "Timeline_0__UpdateFunc");
+		Func = Class->GetFunction("BP_BarrierGate_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::BP_BarrierGate_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.Event_Door
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_BarrierGate_C::Event_Door()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "Event_Door");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BarrierGate.BP_BarrierGate_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_BarrierGate_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "Timeline_0__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_BarrierGate.BP_BarrierGate_C.ExecuteUbergraph_BP_BarrierGate
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BarrierGate_C::SetPickupCount(int32 NewCount, bool* Result)
+void ABP_BarrierGate_C::ExecuteUbergraph_BP_BarrierGate(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "SetPickupCount");
+		Func = Class->GetFunction("BP_BarrierGate_C", "ExecuteUbergraph_BP_BarrierGate");
 
-	Params::BP_BarrierGate_C_SetPickupCount Parms{};
+	Params::BP_BarrierGate_C_ExecuteUbergraph_BP_BarrierGate Parms{};
 
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "SetInteractOption");
-
-	Params::BP_BarrierGate_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BarrierGate.BP_BarrierGate_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BarrierGate_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BarrierGate.BP_BarrierGate_C.GetInteractOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_BarrierGate_C::OnStopExecuteInteract(class AActor* InteractingActor)
+void ABP_BarrierGate_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnStopExecuteInteract");
+		Func = Class->GetFunction("BP_BarrierGate_C", "GetInteractOptions");
 
-	Params::BP_BarrierGate_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnServerExecuteInteract");
-
-	Params::BP_BarrierGate_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnRequestServerInteract");
-
-	Params::BP_BarrierGate_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
+	Params::BP_BarrierGate_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BarrierGate_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnExecuteInteractDialogue");
-
-	Params::BP_BarrierGate_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnExecuteInteract");
-
-	Params::BP_BarrierGate_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BarrierGate_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_BarrierGate_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "OnBeginInteract");
-
-	Params::BP_BarrierGate_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.MC_OpenDoor
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::MC_OpenDoor(class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "MC_OpenDoor");
-
-	Params::BP_BarrierGate_C_MC_OpenDoor Parms{};
-
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "JigSetCanInteract");
-
-	Params::BP_BarrierGate_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.JigCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::JigCanInteract(bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "JigCanInteract");
-
-	Params::BP_BarrierGate_C_JigCanInteract Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.GetMainSceneComp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::GetMainSceneComp(class USceneComponent** Comp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "GetMainSceneComp");
-
-	Params::BP_BarrierGate_C_GetMainSceneComp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
-}
-
-
-// Function BP_BarrierGate.BP_BarrierGate_C.GetJigMultiplayerComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrierGate_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "GetJigMultiplayerComponent");
-
-	Params::BP_BarrierGate_C_GetJigMultiplayerComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
 }
 
 
@@ -409,82 +129,362 @@ void ABP_BarrierGate_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32*
 }
 
 
-// Function BP_BarrierGate.BP_BarrierGate_C.GetInteractOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BarrierGate.BP_BarrierGate_C.GetJigMultiplayerComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BarrierGate_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+void ABP_BarrierGate_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "GetInteractOptions");
+		Func = Class->GetFunction("BP_BarrierGate_C", "GetJigMultiplayerComponent");
 
-	Params::BP_BarrierGate_C_GetInteractOptions Parms{};
+	Params::BP_BarrierGate_C_GetJigMultiplayerComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
 }
 
 
-// Function BP_BarrierGate.BP_BarrierGate_C.ExecuteUbergraph_BP_BarrierGate
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_BarrierGate.BP_BarrierGate_C.GetMainSceneComp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BarrierGate_C::ExecuteUbergraph_BP_BarrierGate(int32 EntryPoint)
+void ABP_BarrierGate_C::GetMainSceneComp(class USceneComponent** Comp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "ExecuteUbergraph_BP_BarrierGate");
+		Func = Class->GetFunction("BP_BarrierGate_C", "GetMainSceneComp");
 
-	Params::BP_BarrierGate_C_ExecuteUbergraph_BP_BarrierGate Parms{};
+	Params::BP_BarrierGate_C_GetMainSceneComp Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.JigCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::JigCanInteract(bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "JigCanInteract");
+
+	Params::BP_BarrierGate_C_JigCanInteract Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "JigSetCanInteract");
+
+	Params::BP_BarrierGate_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.MC_OpenDoor
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::MC_OpenDoor(class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "MC_OpenDoor");
+
+	Params::BP_BarrierGate_C_MC_OpenDoor Parms{};
+
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BarrierGate.BP_BarrierGate_C.Event_Door
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BarrierGate.BP_BarrierGate_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ABP_BarrierGate_C::Event_Door()
+void ABP_BarrierGate_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "Event_Door");
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnBeginInteract");
+
+	Params::BP_BarrierGate_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BarrierGate_C::OnEndInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BarrierGate.BP_BarrierGate_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_BarrierGate.BP_BarrierGate_C.OnExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BarrierGate_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_BarrierGate_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrierGate_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnExecuteInteract");
 
-	Params::BP_BarrierGate_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	Params::BP_BarrierGate_C_OnExecuteInteract Parms{};
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
+	Parms.InteractingActor = InteractingActor;
+	Parms.Option = std::move(Option);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnExecuteInteractDialogue");
+
+	Params::BP_BarrierGate_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BarrierGate_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnExecuteInteractEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnRequestServerInteract");
+
+	Params::BP_BarrierGate_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnServerExecuteInteract");
+
+	Params::BP_BarrierGate_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "OnStopExecuteInteract");
+
+	Params::BP_BarrierGate_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BarrierGate_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "SetInteractOption");
+
+	Params::BP_BarrierGate_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrierGate_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "SetPickupCount");
+
+	Params::BP_BarrierGate_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_BarrierGate_C::Timeline_0__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BarrierGate.BP_BarrierGate_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_BarrierGate_C::Timeline_0__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BarrierGate_C", "Timeline_0__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

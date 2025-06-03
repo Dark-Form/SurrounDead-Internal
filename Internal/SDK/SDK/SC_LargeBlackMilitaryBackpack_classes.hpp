@@ -29,8 +29,8 @@ public:
 	class UJSIContainer_C*                        JSIContainer_3;                                    // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_SC_LargeBlackMilitaryBackpack(int32 EntryPoint);
 	void PreInitSpecialContainer();
+	void ExecuteUbergraph_SC_LargeBlackMilitaryBackpack(int32 EntryPoint);
 	void Event_Callback(bool NewValue);
 
 public:

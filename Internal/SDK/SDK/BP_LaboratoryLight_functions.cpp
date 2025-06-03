@@ -17,31 +17,27 @@
 namespace SDK
 {
 
-// Function BP_LaboratoryLight.BP_LaboratoryLight_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LaboratoryLight.BP_LaboratoryLight_C.BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LaboratoryLight_C::UserConstructionScript()
+void ABP_LaboratoryLight_C::BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLight_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_LaboratoryLight_C", "BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_LaboratoryLight_C_BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
 
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
 
-// Function BP_LaboratoryLight.BP_LaboratoryLight_C.OnRep_LightOn?
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_LaboratoryLight_C::OnRep_LightOn_()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLight_C", "OnRep_LightOn?");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -65,27 +61,31 @@ void ABP_LaboratoryLight_C::ExecuteUbergraph_BP_LaboratoryLight(int32 EntryPoint
 }
 
 
-// Function BP_LaboratoryLight.BP_LaboratoryLight_C.BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_LaboratoryLight.BP_LaboratoryLight_C.OnRep_LightOn?
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_LaboratoryLight_C::BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_LaboratoryLight_C::OnRep_LightOn_()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LaboratoryLight_C", "BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_LaboratoryLight_C", "OnRep_LightOn?");
 
-	Params::BP_LaboratoryLight_C_BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_LaboratoryLight.BP_LaboratoryLight_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LaboratoryLight_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LaboratoryLight_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "S_AIRespawn_structs.hpp"
-#include "AIOptimizer_structs.hpp"
-#include "S_AISpawner_structs.hpp"
-#include "Engine_structs.hpp"
-#include "E_AIBehaviour_structs.hpp"
-#include "S_TriggerResponse_structs.hpp"
-#include "E_StartingAIBehaviours_structs.hpp"
 #include "BP_MasterObject_classes.hpp"
+#include "S_TriggerResponse_structs.hpp"
+#include "S_AISpawner_structs.hpp"
+#include "AIOptimizer_structs.hpp"
+#include "Engine_structs.hpp"
+#include "E_StartingAIBehaviours_structs.hpp"
+#include "S_AIRespawn_structs.hpp"
+#include "E_AIBehaviour_structs.hpp"
 
 
 namespace SDK
@@ -80,25 +80,25 @@ public:
 	bool                                          SkipPlayerCheck_;                                  // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void TraceForPlayer(const struct FVector& Loc, bool* PlayerHit_);
-	void Stop_Spawning();
-	void Spawn_Location_Trace(int32 Index_0);
-	void Restart_Spawning();
-	void RespawnAI(class APawn* Pawn);
-	void Respawn_Timer();
-	void Reset_Find_Respawn();
-	void Reset_AI(const struct FHitResult& Hit_Result, class ACharacter* AI_Character);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveBeginPlay();
-	bool RandomSpawn();
-	void PlayerInAreaCheck();
-	void KillSpawnedActors();
-	bool Find_Spawn_Location(struct FHitResult* Hit_Result);
-	void ExecuteUbergraph_BP_AISpawningVolume_RandomChanceToSpawn(int32 EntryPoint);
-	void ConvertLocalToWorldLocation(struct FVector& Point_Local, struct FVector* Point_World);
-	void AI_Respawn_Timer_Finished(class ACharacter* AI_Character);
 	void Add_AI_Respawn_Timer(class ACharacter* AI_Character);
+	void AI_Respawn_Timer_Finished(class ACharacter* AI_Character);
+	void ConvertLocalToWorldLocation(struct FVector& Point_Local, struct FVector* Point_World);
+	void ExecuteUbergraph_BP_AISpawningVolume_RandomChanceToSpawn(int32 EntryPoint);
+	bool Find_Spawn_Location(struct FHitResult* Hit_Result);
+	void KillSpawnedActors();
+	void PlayerInAreaCheck();
+	bool RandomSpawn();
+	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void Reset_AI(const struct FHitResult& Hit_Result, class ACharacter* AI_Character);
+	void Reset_Find_Respawn();
+	void Respawn_Timer();
+	void RespawnAI(class APawn* Pawn);
+	void Restart_Spawning();
+	void Spawn_Location_Trace(int32 Index_0);
+	void Stop_Spawning();
+	void TraceForPlayer(const struct FVector& Loc, bool* PlayerHit_);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

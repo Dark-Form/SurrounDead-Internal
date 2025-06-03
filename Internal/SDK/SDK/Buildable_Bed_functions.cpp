@@ -17,29 +17,81 @@
 namespace SDK
 {
 
-// Function Buildable_Bed.Buildable_Bed_C.SetSpawnPoint
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function Buildable_Bed.Buildable_Bed_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABuildable_Bed_C::SetSpawnPoint()
+void ABuildable_Bed_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Bed_C", "SetSpawnPoint");
+		Func = Class->GetFunction("Buildable_Bed_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function Buildable_Bed.Buildable_Bed_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Buildable_Bed.Buildable_Bed_C.ExecuteUbergraph_Buildable_Bed
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABuildable_Bed_C::ReceiveBeginPlay()
+void ABuildable_Bed_C::ExecuteUbergraph_Buildable_Bed(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Bed_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Buildable_Bed_C", "ExecuteUbergraph_Buildable_Bed");
+
+	Params::Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Bed.Buildable_Bed_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABuildable_Bed_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Bed_C", "OnBeginInteract");
+
+	Params::Buildable_Bed_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Bed.Buildable_Bed_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABuildable_Bed_C::OnEndInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Bed_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,83 +121,31 @@ void ABuildable_Bed_C::OnServerExecuteInteract(const struct FGameplayTag& Option
 }
 
 
-// Function Buildable_Bed.Buildable_Bed_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function Buildable_Bed.Buildable_Bed_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABuildable_Bed_C::OnEndInteract()
+void ABuildable_Bed_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Bed_C", "OnEndInteract");
+		Func = Class->GetFunction("Buildable_Bed_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Buildable_Bed.Buildable_Bed_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+// Function Buildable_Bed.Buildable_Bed_C.SetSpawnPoint
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABuildable_Bed_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+void ABuildable_Bed_C::SetSpawnPoint()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Bed_C", "OnBeginInteract");
+		Func = Class->GetFunction("Buildable_Bed_C", "SetSpawnPoint");
 
-	Params::Buildable_Bed_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_Bed.Buildable_Bed_C.ExecuteUbergraph_Buildable_Bed
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Bed_C::ExecuteUbergraph_Buildable_Bed(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Bed_C", "ExecuteUbergraph_Buildable_Bed");
-
-	Params::Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_Bed.Buildable_Bed_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Bed_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Bed_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-
-	Params::Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

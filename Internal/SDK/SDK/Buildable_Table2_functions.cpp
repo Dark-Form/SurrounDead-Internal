@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function Buildable_Table2.Buildable_Table2_C.ExecuteUbergraph_Buildable_Table2
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Table2_C::ExecuteUbergraph_Buildable_Table2(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Table2_C", "ExecuteUbergraph_Buildable_Table2");
-
-	Params::Buildable_Table2_C_ExecuteUbergraph_Buildable_Table2 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Buildable_Table2.Buildable_Table2_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -56,6 +36,26 @@ void ABuildable_Table2_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentB
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Table2.Buildable_Table2_C.ExecuteUbergraph_Buildable_Table2
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_Table2_C::ExecuteUbergraph_Buildable_Table2(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Table2_C", "ExecuteUbergraph_Buildable_Table2");
+
+	Params::Buildable_Table2_C_ExecuteUbergraph_Buildable_Table2 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

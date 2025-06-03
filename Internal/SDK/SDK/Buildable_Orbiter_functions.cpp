@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function Buildable_Orbiter.Buildable_Orbiter_C.ExecuteUbergraph_Buildable_Orbiter
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_Orbiter_C::ExecuteUbergraph_Buildable_Orbiter(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Orbiter_C", "ExecuteUbergraph_Buildable_Orbiter");
+
+	Params::Buildable_Orbiter_C_ExecuteUbergraph_Buildable_Orbiter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Buildable_Orbiter.Buildable_Orbiter_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -36,26 +56,6 @@ void ABuildable_Orbiter_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_Component
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_Orbiter.Buildable_Orbiter_C.ExecuteUbergraph_Buildable_Orbiter
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Orbiter_C::ExecuteUbergraph_Buildable_Orbiter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Orbiter_C", "ExecuteUbergraph_Buildable_Orbiter");
-
-	Params::Buildable_Orbiter_C_ExecuteUbergraph_Buildable_Orbiter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

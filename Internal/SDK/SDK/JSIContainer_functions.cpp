@@ -2335,9 +2335,9 @@ void UJSIContainer_C::GetPaddingBySlotIndex(int32 SlotIndex, const struct FVecto
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    ExcludeEquipTo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 ContainerREF                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 ContainerRef                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UJSIContainer_C::GetRootContainerRef(bool ExcludeEquipTo, class UJSIContainer_C** ContainerREF)
+void UJSIContainer_C::GetRootContainerRef(bool ExcludeEquipTo, class UJSIContainer_C** ContainerRef)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2350,8 +2350,8 @@ void UJSIContainer_C::GetRootContainerRef(bool ExcludeEquipTo, class UJSIContain
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ContainerREF != nullptr)
-		*ContainerREF = Parms.ContainerREF;
+	if (ContainerRef != nullptr)
+		*ContainerRef = Parms.ContainerRef;
 }
 
 

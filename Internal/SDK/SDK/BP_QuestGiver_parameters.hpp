@@ -18,18 +18,18 @@
 namespace SDK::Params
 {
 
-// Function BP_QuestGiver.BP_QuestGiver_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct BP_QuestGiver_C_OnBeginInteract final
+// Function BP_QuestGiver.BP_QuestGiver_C.SetPickupCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_QuestGiver_C_SetPickupCount final
 {
 public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_QuestGiver_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_QuestGiver_C_OnBeginInteract");
-static_assert(sizeof(BP_QuestGiver_C_OnBeginInteract) == 0x000058, "Wrong size on BP_QuestGiver_C_OnBeginInteract");
-static_assert(offsetof(BP_QuestGiver_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_QuestGiver_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_QuestGiver_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_QuestGiver_C_OnBeginInteract::Options' has a wrong offset!");
+static_assert(alignof(BP_QuestGiver_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_QuestGiver_C_SetPickupCount");
+static_assert(sizeof(BP_QuestGiver_C_SetPickupCount) == 0x000008, "Wrong size on BP_QuestGiver_C_SetPickupCount");
+static_assert(offsetof(BP_QuestGiver_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_QuestGiver_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_QuestGiver_C_SetPickupCount, Result) == 0x000004, "Member 'BP_QuestGiver_C_SetPickupCount::Result' has a wrong offset!");
 
 // Function BP_QuestGiver.BP_QuestGiver_C.SetInteractOption
 // 0x0008 (0x0008 - 0x0000)
@@ -108,6 +108,19 @@ static_assert(alignof(BP_QuestGiver_C_OnExecuteInteract) == 0x000008, "Wrong ali
 static_assert(sizeof(BP_QuestGiver_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_QuestGiver_C_OnExecuteInteract");
 static_assert(offsetof(BP_QuestGiver_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_QuestGiver_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
 static_assert(offsetof(BP_QuestGiver_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_QuestGiver_C_OnExecuteInteract::Option' has a wrong offset!");
+
+// Function BP_QuestGiver.BP_QuestGiver_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct BP_QuestGiver_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(BP_QuestGiver_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_QuestGiver_C_OnBeginInteract");
+static_assert(sizeof(BP_QuestGiver_C_OnBeginInteract) == 0x000058, "Wrong size on BP_QuestGiver_C_OnBeginInteract");
+static_assert(offsetof(BP_QuestGiver_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_QuestGiver_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_QuestGiver_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_QuestGiver_C_OnBeginInteract::Options' has a wrong offset!");
 
 // Function BP_QuestGiver.BP_QuestGiver_C.JigSetCanInteract
 // 0x0003 (0x0003 - 0x0000)
@@ -285,19 +298,6 @@ static_assert(sizeof(BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_Compo
 static_assert(offsetof(BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
 static_assert(offsetof(BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
 static_assert(offsetof(BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_QuestGiver_C_BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
-
-// Function BP_QuestGiver.BP_QuestGiver_C.SetPickupCount
-// 0x0008 (0x0008 - 0x0000)
-struct BP_QuestGiver_C_SetPickupCount final
-{
-public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_QuestGiver_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_QuestGiver_C_SetPickupCount");
-static_assert(sizeof(BP_QuestGiver_C_SetPickupCount) == 0x000008, "Wrong size on BP_QuestGiver_C_SetPickupCount");
-static_assert(offsetof(BP_QuestGiver_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_QuestGiver_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_QuestGiver_C_SetPickupCount, Result) == 0x000004, "Member 'BP_QuestGiver_C_SetPickupCount::Result' has a wrong offset!");
 
 }
 

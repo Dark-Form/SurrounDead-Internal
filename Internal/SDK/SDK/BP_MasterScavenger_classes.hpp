@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BP_MasterAICharacter_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "BP_MasterAICharacter_classes.hpp"
 #include "E_AIBehaviour_structs.hpp"
 
 
@@ -54,24 +54,6 @@ public:
 	bool                                          Looted;                                            // 0x09B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddMarker(class UWidgetComponent* Marker_0);
-	void Event_Marker();
-	void IsAIBurning_(bool* IsBurning_);
-	void UserConstructionScript();
-	void StopBurning();
-	void SetWeapons();
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void SetMeshAndMaterial();
-	void SetInteractOption(const struct FGameplayTag& Option);
-	void SetInteractDistance(class AActor* Target);
-	void SetBurning(bool Burning_, double Dmg, class AActor* Actor);
-	void ReceiveBeginPlay();
-	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
-	void PickupBuildFromGround();
-	void OverrideName(const class FString& Param_Name_0);
-	void OnStopExecuteInteract(class AActor* InteractingActor);
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
 	void OnExecuteInteractEnded();
 	void OnExecuteInteractDialogue(class AActor* InteractingActor);
 	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
@@ -93,16 +75,9 @@ public:
 	void JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result);
 	void JigMP_GetLootWidget(class UWidget** Result, bool* Valid_);
 	void JigCanInteract(bool* Result);
+	void IsAIBurning_(bool* IsBurning_);
 	void HitByVehicle(double Speed, const struct FVector& Direction);
 	void HealthMultiplier(float NewValue);
-	void Event_Fire();
-	void Death(class AActor* Player);
-	void CheckDistanceFromActor();
-	void CanStompAI_(bool* Stomp_);
-	void CanAddMarkerToAI_(bool* CanAdd_);
-	void BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
-	void AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss_);
-	void AI_Health();
 	void GetMovementSpeeds(double* RoamingSpeed, double* AlertSpeed, double* AttackSpeed);
 	void GetMesh(class USkeletalMeshComponent** Mesh_0);
 	void GetMarker(class UTexture2D** Texture, struct FLinearColor* Color, double* MarkerOffset);
@@ -111,6 +86,31 @@ public:
 	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
 	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
 	void ExecuteUbergraph_BP_MasterScavenger(int32 EntryPoint);
+	void Event_Marker();
+	void Event_Fire();
+	void Death(class AActor* Player);
+	void CheckDistanceFromActor();
+	void CanStompAI_(bool* Stomp_);
+	void CanAddMarkerToAI_(bool* CanAdd_);
+	void BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss_);
+	void AI_Health();
+	void AddMarker(class UWidgetComponent* Marker_0);
+	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void OnStopExecuteInteract(class AActor* InteractingActor);
+	void OverrideName(const class FString& Param_Name_0);
+	void PickupBuildFromGround();
+	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
+	void ReceiveBeginPlay();
+	void SetBurning(bool Burning_, double Dmg, class AActor* Actor);
+	void SetInteractDistance(class AActor* Target);
+	void SetInteractOption(const struct FGameplayTag& Option);
+	void SetMeshAndMaterial();
+	void SetPickupCount(int32 NewCount, bool* Result);
+	void SetWeapons();
+	void StopBurning();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

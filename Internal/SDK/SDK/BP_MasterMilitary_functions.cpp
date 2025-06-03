@@ -17,6 +17,124 @@
 namespace SDK
 {
 
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnTwoContainersSwap
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnTwoContainersSwap");
+
+	Params::BP_MasterMilitary_C_JigMP_OnTwoContainersSwap Parms{};
+
+	Parms.FromContainer = FromContainer;
+	Parms.ToContainer = ToContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnRequestDropItem
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnRequestDropItem");
+
+	Params::BP_MasterMilitary_C_JigMP_OnRequestDropItem Parms{};
+
+	Parms.ItemInfo = std::move(ItemInfo);
+	Parms.ContainerName = ContainerName;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ActorRef != nullptr)
+		*ActorRef = Parms.ActorRef;
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupEquipped
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     UID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          OverrideActor                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnPickupEquipped");
+
+	Params::BP_MasterMilitary_C_JigMP_OnPickupEquipped Parms{};
+
+	Parms.ActorRef = ActorRef;
+	Parms.ToContainerName = ToContainerName;
+	Parms.UID = std::move(UID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.Info = std::move(Info);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (OverrideActor != nullptr)
+		*OverrideActor = Parms.OverrideActor;
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupAdded
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnPickupAdded");
+
+	Params::BP_MasterMilitary_C_JigMP_OnPickupAdded Parms{};
+
+	Parms.Info = std::move(Info);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ToContainer = ToContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
 // Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnMainContainerItemRemoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -39,230 +157,6 @@ void ABP_MasterMilitary_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& 
 	Parms.ItemUID = std::move(ItemUID);
 	Parms.ContainerName = ContainerName;
 	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnExecuteInteract");
-
-	Params::BP_MasterMilitary_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnRequestServerInteract");
-
-	Params::BP_MasterMilitary_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetBurning
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Burning_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::SetBurning(bool Burning_, double Dmg, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "SetBurning");
-
-	Params::BP_MasterMilitary_C_SetBurning Parms{};
-
-	Parms.Burning_ = Burning_;
-	Parms.Dmg = Dmg;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MasterMilitary_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.ReceiveAnyDamage
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "ReceiveAnyDamage");
-
-	Params::BP_MasterMilitary_C_ReceiveAnyDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterMilitary_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterMilitary_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnExecuteInteractDialogue");
-
-	Params::BP_MasterMilitary_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterMilitary_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_MasterMilitary_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnBeginInteract");
-
-	Params::BP_MasterMilitary_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "JigSetCanInteract");
-
-	Params::BP_MasterMilitary_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -980,22 +874,22 @@ void ABP_MasterMilitary_C::AddMarker(class UWidgetComponent* Marker_0)
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetPickupCount
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnUpdateChamberUID
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterMilitary_C::SetPickupCount(int32 NewCount, bool* Result)
+void ABP_MasterMilitary_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "SetPickupCount");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnUpdateChamberUID");
 
-	Params::BP_MasterMilitary_C_SetPickupCount Parms{};
+	Params::BP_MasterMilitary_C_JigMP_OnUpdateChamberUID Parms{};
 
-	Parms.NewCount = NewCount;
+	Parms.NewUID = std::move(NewUID);
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1004,97 +898,149 @@ void ABP_MasterMilitary_C::SetPickupCount(int32 NewCount, bool* Result)
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetMeshAndMaterial
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_MasterMilitary.BP_MasterMilitary_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterMilitary_C::SetMeshAndMaterial()
+void ABP_MasterMilitary_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "SetMeshAndMaterial");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "JigSetCanInteract");
+
+	Params::BP_MasterMilitary_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_MasterMilitary_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnBeginInteract");
+
+	Params::BP_MasterMilitary_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterMilitary_C::OnEndInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractOption
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteract
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterMilitary_C::SetInteractOption(const struct FGameplayTag& Option)
+void ABP_MasterMilitary_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "SetInteractOption");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnExecuteInteract");
 
-	Params::BP_MasterMilitary_C_SetInteractOption Parms{};
+	Params::BP_MasterMilitary_C_OnExecuteInteract Parms{};
 
+	Parms.InteractingActor = InteractingActor;
 	Parms.Option = std::move(Option);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractDistance
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::SetInteractDistance(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "SetInteractDistance");
-
-	Params::BP_MasterMilitary_C_SetInteractDistance Parms{};
-
-	Parms.Target = Target;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OverrideName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    Param_Name_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::OverrideName(const class FString& Param_Name_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OverrideName");
-
-	Params::BP_MasterMilitary_C_OverrideName Parms{};
-
-	Parms.Param_Name_0 = std::move(Param_Name_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.OnStopExecuteInteract
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteractDialogue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterMilitary_C::OnStopExecuteInteract(class AActor* InteractingActor)
+void ABP_MasterMilitary_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "OnStopExecuteInteract");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnExecuteInteractDialogue");
 
-	Params::BP_MasterMilitary_C_OnStopExecuteInteract Parms{};
+	Params::BP_MasterMilitary_C_OnExecuteInteractDialogue Parms{};
 
 	Parms.InteractingActor = InteractingActor;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterMilitary_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnExecuteInteractEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnRequestServerInteract");
+
+	Params::BP_MasterMilitary_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
@@ -1122,22 +1068,194 @@ void ABP_MasterMilitary_C::OnServerExecuteInteract(const struct FGameplayTag& Op
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnUpdateChamberUID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MasterMilitary_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
+void ABP_MasterMilitary_C::OnStopExecuteInteract(class AActor* InteractingActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnUpdateChamberUID");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OnStopExecuteInteract");
 
-	Params::BP_MasterMilitary_C_JigMP_OnUpdateChamberUID Parms{};
+	Params::BP_MasterMilitary_C_OnStopExecuteInteract Parms{};
 
-	Parms.NewUID = std::move(NewUID);
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.OverrideName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Param_Name_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::OverrideName(const class FString& Param_Name_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "OverrideName");
+
+	Params::BP_MasterMilitary_C_OverrideName Parms{};
+
+	Parms.Param_Name_0 = std::move(Param_Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterMilitary_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.ReceiveAnyDamage
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "ReceiveAnyDamage");
+
+	Params::BP_MasterMilitary_C_ReceiveAnyDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.DamageType = DamageType;
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MasterMilitary_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetBurning
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Burning_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::SetBurning(bool Burning_, double Dmg, class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "SetBurning");
+
+	Params::BP_MasterMilitary_C_SetBurning Parms{};
+
+	Parms.Burning_ = Burning_;
+	Parms.Dmg = Dmg;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractDistance
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::SetInteractDistance(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "SetInteractDistance");
+
+	Params::BP_MasterMilitary_C_SetInteractDistance Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "SetInteractOption");
+
+	Params::BP_MasterMilitary_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetMeshAndMaterial
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterMilitary_C::SetMeshAndMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "SetMeshAndMaterial");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterMilitary_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterMilitary_C", "SetPickupCount");
+
+	Params::BP_MasterMilitary_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1146,133 +1264,15 @@ void ABP_MasterMilitary_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, 
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnTwoContainersSwap
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MasterMilitary.BP_MasterMilitary_C.SetWeapons
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterMilitary_C::JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result)
+void ABP_MasterMilitary_C::SetWeapons()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnTwoContainersSwap");
-
-	Params::BP_MasterMilitary_C_JigMP_OnTwoContainersSwap Parms{};
-
-	Parms.FromContainer = FromContainer;
-	Parms.ToContainer = ToContainer;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnRequestDropItem
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnRequestDropItem");
-
-	Params::BP_MasterMilitary_C_JigMP_OnRequestDropItem Parms{};
-
-	Parms.ItemInfo = std::move(ItemInfo);
-	Parms.ContainerName = ContainerName;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ActorRef != nullptr)
-		*ActorRef = Parms.ActorRef;
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupEquipped
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     UID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          OverrideActor                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnPickupEquipped");
-
-	Params::BP_MasterMilitary_C_JigMP_OnPickupEquipped Parms{};
-
-	Parms.ActorRef = ActorRef;
-	Parms.ToContainerName = ToContainerName;
-	Parms.UID = std::move(UID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.Info = std::move(Info);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (OverrideActor != nullptr)
-		*OverrideActor = Parms.OverrideActor;
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.JigMP_OnPickupAdded
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterMilitary_C::JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "JigMP_OnPickupAdded");
-
-	Params::BP_MasterMilitary_C_JigMP_OnPickupAdded Parms{};
-
-	Parms.Info = std::move(Info);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ToContainer = ToContainer;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterMilitary.BP_MasterMilitary_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterMilitary_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "SetWeapons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1292,15 +1292,15 @@ void ABP_MasterMilitary_C::StopBurning()
 }
 
 
-// Function BP_MasterMilitary.BP_MasterMilitary_C.SetWeapons
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_MasterMilitary.BP_MasterMilitary_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_MasterMilitary_C::SetWeapons()
+void ABP_MasterMilitary_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterMilitary_C", "SetWeapons");
+		Func = Class->GetFunction("BP_MasterMilitary_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

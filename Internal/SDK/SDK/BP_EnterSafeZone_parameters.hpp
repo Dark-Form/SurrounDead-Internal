@@ -16,21 +16,66 @@
 namespace SDK::Params
 {
 
-// Function BP_EnterSafeZone.BP_EnterSafeZone_C.InRadArea
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EnterSafeZone_C_InRadArea final
+// Function BP_EnterSafeZone.BP_EnterSafeZone_C.BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	bool                                          InRadArea_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_PlayerCharacter_C*                  CallFunc_CastToCharacter_Character;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_EnterSafeZone_C_InRadArea) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_InRadArea");
-static_assert(sizeof(BP_EnterSafeZone_C_InRadArea) == 0x000018, "Wrong size on BP_EnterSafeZone_C_InRadArea");
-static_assert(offsetof(BP_EnterSafeZone_C_InRadArea, InRadArea_0) == 0x000000, "Member 'BP_EnterSafeZone_C_InRadArea::InRadArea_0' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_InRadArea, CallFunc_CastToCharacter_Character) == 0x000008, "Member 'BP_EnterSafeZone_C_InRadArea::CallFunc_CastToCharacter_Character' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_InRadArea, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_EnterSafeZone_C_InRadArea::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+
+// Function BP_EnterSafeZone.BP_EnterSafeZone_C.BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+
+// Function BP_EnterSafeZone.BP_EnterSafeZone_C.Event_EnterZone
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EnterSafeZone_C_Event_EnterZone final
+{
+public:
+	class ABP_PlayerCharacter_C*                  Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_EnterSafeZone_C_Event_EnterZone) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_Event_EnterZone");
+static_assert(sizeof(BP_EnterSafeZone_C_Event_EnterZone) == 0x000008, "Wrong size on BP_EnterSafeZone_C_Event_EnterZone");
+static_assert(offsetof(BP_EnterSafeZone_C_Event_EnterZone, Actor) == 0x000000, "Member 'BP_EnterSafeZone_C_Event_EnterZone::Actor' has a wrong offset!");
+
+// Function BP_EnterSafeZone.BP_EnterSafeZone_C.Event_ExitZone
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EnterSafeZone_C_Event_ExitZone final
+{
+public:
+	class ABP_PlayerCharacter_C*                  Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_EnterSafeZone_C_Event_ExitZone) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_Event_ExitZone");
+static_assert(sizeof(BP_EnterSafeZone_C_Event_ExitZone) == 0x000008, "Wrong size on BP_EnterSafeZone_C_Event_ExitZone");
+static_assert(offsetof(BP_EnterSafeZone_C_Event_ExitZone, Actor) == 0x000000, "Member 'BP_EnterSafeZone_C_Event_ExitZone::Actor' has a wrong offset!");
 
 // Function BP_EnterSafeZone.BP_EnterSafeZone_C.ExecuteUbergraph_BP_EnterSafeZone
 // 0x0230 (0x0230 - 0x0000)
@@ -151,66 +196,21 @@ static_assert(offsetof(BP_EnterSafeZone_C_ExecuteUbergraph_BP_EnterSafeZone, K2N
 static_assert(offsetof(BP_EnterSafeZone_C_ExecuteUbergraph_BP_EnterSafeZone, CallFunc_Array_Length_ReturnValue) == 0x000224, "Member 'BP_EnterSafeZone_C_ExecuteUbergraph_BP_EnterSafeZone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_EnterSafeZone_C_ExecuteUbergraph_BP_EnterSafeZone, CallFunc_Less_IntInt_ReturnValue) == 0x000228, "Member 'BP_EnterSafeZone_C_ExecuteUbergraph_BP_EnterSafeZone::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
-// Function BP_EnterSafeZone.BP_EnterSafeZone_C.Event_ExitZone
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EnterSafeZone_C_Event_ExitZone final
+// Function BP_EnterSafeZone.BP_EnterSafeZone_C.InRadArea
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EnterSafeZone_C_InRadArea final
 {
 public:
-	class ABP_PlayerCharacter_C*                  Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          InRadArea_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_PlayerCharacter_C*                  CallFunc_CastToCharacter_Character;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EnterSafeZone_C_Event_ExitZone) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_Event_ExitZone");
-static_assert(sizeof(BP_EnterSafeZone_C_Event_ExitZone) == 0x000008, "Wrong size on BP_EnterSafeZone_C_Event_ExitZone");
-static_assert(offsetof(BP_EnterSafeZone_C_Event_ExitZone, Actor) == 0x000000, "Member 'BP_EnterSafeZone_C_Event_ExitZone::Actor' has a wrong offset!");
-
-// Function BP_EnterSafeZone.BP_EnterSafeZone_C.Event_EnterZone
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EnterSafeZone_C_Event_EnterZone final
-{
-public:
-	class ABP_PlayerCharacter_C*                  Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_EnterSafeZone_C_Event_EnterZone) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_Event_EnterZone");
-static_assert(sizeof(BP_EnterSafeZone_C_Event_EnterZone) == 0x000008, "Wrong size on BP_EnterSafeZone_C_Event_EnterZone");
-static_assert(offsetof(BP_EnterSafeZone_C_Event_EnterZone, Actor) == 0x000000, "Member 'BP_EnterSafeZone_C_Event_EnterZone::Actor' has a wrong offset!");
-
-// Function BP_EnterSafeZone.BP_EnterSafeZone_C.BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-
-// Function BP_EnterSafeZone.BP_EnterSafeZone_C.BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_EnterSafeZone_C_BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+static_assert(alignof(BP_EnterSafeZone_C_InRadArea) == 0x000008, "Wrong alignment on BP_EnterSafeZone_C_InRadArea");
+static_assert(sizeof(BP_EnterSafeZone_C_InRadArea) == 0x000018, "Wrong size on BP_EnterSafeZone_C_InRadArea");
+static_assert(offsetof(BP_EnterSafeZone_C_InRadArea, InRadArea_0) == 0x000000, "Member 'BP_EnterSafeZone_C_InRadArea::InRadArea_0' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_InRadArea, CallFunc_CastToCharacter_Character) == 0x000008, "Member 'BP_EnterSafeZone_C_InRadArea::CallFunc_CastToCharacter_Character' has a wrong offset!");
+static_assert(offsetof(BP_EnterSafeZone_C_InRadArea, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_EnterSafeZone_C_InRadArea::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

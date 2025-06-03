@@ -12,8 +12,8 @@
 
 #include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PhotoModeComponentGalleryIcons_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "PhotoModeComponentGalleryIcons_structs.hpp"
 #include "UMG_structs.hpp"
 #include "PhotosData_structs.hpp"
 #include "EnumIcons_structs.hpp"

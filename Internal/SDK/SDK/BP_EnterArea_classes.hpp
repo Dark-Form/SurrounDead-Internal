@@ -34,14 +34,14 @@ public:
 	struct FLinearColor                           Notification_Details_Icon_Colour;                  // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_EnterArea(int32 EntryPoint);
-	void Event_Respawn();
-	void Event_Overlap();
-	void Event_ExitedArea(class ABP_PlayerCharacter_C* Actor);
-	void Event_EnteredArea(class ABP_PlayerCharacter_C* Actor);
-	void BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void Event_EnteredArea(class ABP_PlayerCharacter_C* Actor);
+	void Event_ExitedArea(class ABP_PlayerCharacter_C* Actor);
+	void Event_Overlap();
+	void Event_Respawn();
+	void ExecuteUbergraph_BP_EnterArea(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

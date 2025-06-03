@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "S_AIRespawn_structs.hpp"
-#include "AIOptimizer_structs.hpp"
-#include "S_AISpawner_structs.hpp"
-#include "Engine_structs.hpp"
-#include "E_AIBehaviour_structs.hpp"
-#include "S_TriggerResponse_structs.hpp"
-#include "E_StartingAIBehaviours_structs.hpp"
 #include "BP_MasterObject_classes.hpp"
+#include "S_TriggerResponse_structs.hpp"
+#include "S_AISpawner_structs.hpp"
+#include "AIOptimizer_structs.hpp"
+#include "Engine_structs.hpp"
+#include "E_StartingAIBehaviours_structs.hpp"
+#include "S_AIRespawn_structs.hpp"
+#include "E_AIBehaviour_structs.hpp"
 
 
 namespace SDK
@@ -82,12 +82,6 @@ public:
 	double                                        Box_Extent_Z;                                      // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void PlayerInAreaCheck();
-	void KillSpawnedActors();
-	bool Find_Spawn_Location(struct FHitResult* Hit_Result);
-	void ExecuteUbergraph_BP_AISpawningVolume_Quest(int32 EntryPoint);
-	void AI_Respawn_Timer_Finished(class ACharacter* AI_Character);
-	void Add_AI_Respawn_Timer(class ACharacter* AI_Character);
 	void UserConstructionScript();
 	void TraceForPlayer(const struct FVector& Loc, bool* PlayerHit_);
 	void Stop_Spawning();
@@ -99,6 +93,12 @@ public:
 	void Reset_AI(const struct FHitResult& Hit_Result, class ACharacter* AI_Character);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void ReceiveBeginPlay();
+	void PlayerInAreaCheck();
+	void KillSpawnedActors();
+	bool Find_Spawn_Location(struct FHitResult* Hit_Result);
+	void ExecuteUbergraph_BP_AISpawningVolume_Quest(int32 EntryPoint);
+	void AI_Respawn_Timer_Finished(class ACharacter* AI_Character);
+	void Add_AI_Respawn_Timer(class ACharacter* AI_Character);
 
 public:
 	static class UClass* StaticClass()

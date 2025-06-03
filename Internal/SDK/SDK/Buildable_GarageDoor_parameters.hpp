@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "S_NotificationDetails_structs.hpp"
-#include "S_JigPayload_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_JigPayload_structs.hpp"
+#include "S_NotificationDetails_structs.hpp"
 
 
 namespace SDK::Params

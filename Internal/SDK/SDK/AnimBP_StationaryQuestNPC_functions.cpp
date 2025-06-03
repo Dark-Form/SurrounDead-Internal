@@ -17,6 +17,30 @@
 namespace SDK
 {
 
+// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.HeadRotation
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Right                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Down                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InterpSpeed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_StationaryQuestNPC_C::HeadRotation(double Right, double Down, double InterpSpeed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_StationaryQuestNPC_C", "HeadRotation");
+
+	Params::AnimBP_StationaryQuestNPC_C_HeadRotation Parms{};
+
+	Parms.Right = Right;
+	Parms.Down = Down;
+	Parms.InterpSpeed = InterpSpeed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.ExecuteUbergraph_AnimBP_StationaryQuestNPC
 // (Final, UbergraphFunction)
 // Parameters:
@@ -75,30 +99,6 @@ void UAnimBP_StationaryQuestNPC_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.HeadRotation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Right                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Down                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  InterpSpeed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_StationaryQuestNPC_C::HeadRotation(double Right, double Down, double InterpSpeed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_StationaryQuestNPC_C", "HeadRotation");
-
-	Params::AnimBP_StationaryQuestNPC_C_HeadRotation Parms{};
-
-	Parms.Right = Right;
-	Parms.Down = Down;
-	Parms.InterpSpeed = InterpSpeed;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

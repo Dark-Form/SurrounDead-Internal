@@ -29,15 +29,15 @@ public:
 	class UClass*                                 Vehicle;                                           // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Svr_Spawn();
-	void ReceiveBeginPlay();
-	void OnCompleted_63EA519847229E38F2FAA4856B866960();
-	void ExecuteUbergraph_BP_VehicleUniqueSpawner(int32 EntryPoint);
-	void ComponentsToSave(TArray<class UActorComponent*>* Components);
-	void ActorSaved();
-	void ActorPreSave();
-	void ActorPreLoad();
 	void ActorLoaded();
+	void ActorPreLoad();
+	void ActorPreSave();
+	void ActorSaved();
+	void ComponentsToSave(TArray<class UActorComponent*>* Components);
+	void ExecuteUbergraph_BP_VehicleUniqueSpawner(int32 EntryPoint);
+	void OnCompleted_63EA519847229E38F2FAA4856B866960();
+	void ReceiveBeginPlay();
+	void Svr_Spawn();
 
 public:
 	static class UClass* StaticClass()

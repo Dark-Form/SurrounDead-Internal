@@ -28,8 +28,8 @@ public:
 	class UJSIContainer_C*                        TacticalContainer;                                 // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PreInitSpecialContainer();
 	void ExecuteUbergraph_SC_XM250(int32 EntryPoint);
+	void PreInitSpecialContainer();
 
 public:
 	static class UClass* StaticClass()

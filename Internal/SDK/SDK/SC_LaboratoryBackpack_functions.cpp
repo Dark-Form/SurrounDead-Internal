@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function SC_LaboratoryBackpack.SC_LaboratoryBackpack_C.PreInitSpecialContainer
+// Function SC_LaboratoryBackpack.SC_LaboratoryBackpack_C.Event_Callback
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USC_LaboratoryBackpack_C::PreInitSpecialContainer()
+void USC_LaboratoryBackpack_C::Event_Callback(bool NewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SC_LaboratoryBackpack_C", "PreInitSpecialContainer");
+		Func = Class->GetFunction("SC_LaboratoryBackpack_C", "Event_Callback");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SC_LaboratoryBackpack_C_Event_Callback Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void USC_LaboratoryBackpack_C::ExecuteUbergraph_SC_LaboratoryBackpack(int32 Entr
 }
 
 
-// Function SC_LaboratoryBackpack.SC_LaboratoryBackpack_C.Event_Callback
+// Function SC_LaboratoryBackpack.SC_LaboratoryBackpack_C.PreInitSpecialContainer
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USC_LaboratoryBackpack_C::Event_Callback(bool NewValue)
+void USC_LaboratoryBackpack_C::PreInitSpecialContainer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SC_LaboratoryBackpack_C", "Event_Callback");
+		Func = Class->GetFunction("SC_LaboratoryBackpack_C", "PreInitSpecialContainer");
 
-	Params::SC_LaboratoryBackpack_C_Event_Callback Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

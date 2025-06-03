@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "S_LocalAttContainerIndexSocket_structs.hpp"
-#include "ContainerPickupsInfo_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "S_RepAttachmentInfo_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
 #include "S_RepWeaponAttachment_structs.hpp"
-#include "S_ItemStat_structs.hpp"
-#include "S_SubContainerInfo_structs.hpp"
 #include "S_JigCompContentSettings_structs.hpp"
+#include "S_SubContainerInfo_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
+#include "S_ItemStat_structs.hpp"
 #include "RepItemInfo_structs.hpp"
 
 

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Enum_AIBehviour_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Buildable_MASTER_classes.hpp"
+#include "Enum_AIBehviour_structs.hpp"
 #include "S_RandomSpawnerSettings_structs.hpp"
 #include "Struct_WaveInfo_structs.hpp"
+#include "Buildable_MASTER_classes.hpp"
 
 
 namespace SDK
@@ -61,6 +61,9 @@ public:
 	void ExecuteUbergraph_Buildable_HordeBeacon(int32 EntryPoint);
 	void FinalWaveDefeated_();
 	void FindLocation(bool* Success, struct FVector* Loc);
+	void OnDestroy(class AActor* Actor);
+	void OnInteractBuildable(class AActor* Actor);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
 	void ProjectLocation(const struct FVector& LocationToProject, bool* Success, struct FVector* ProjectedLocation);
 	void ReceiveBeginPlay();
 	void SpawnRewards();
@@ -68,9 +71,6 @@ public:
 	void Timeline__FinishedFunc();
 	void Timeline__UpdateFunc();
 	void TraceForBuildables(bool* BuildableInRadius_);
-	void OnDestroy(class AActor* Actor);
-	void OnInteractBuildable(class AActor* Actor);
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
 
 public:
 	static class UClass* StaticClass()

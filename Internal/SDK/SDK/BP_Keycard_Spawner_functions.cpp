@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Keycard_Spawner.BP_Keycard_Spawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Keycard_Spawner_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Keycard_Spawner_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Keycard_Spawner.BP_Keycard_Spawner_C.ExecuteUbergraph_BP_Keycard_Spawner
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_Keycard_Spawner_C::ExecuteUbergraph_BP_Keycard_Spawner(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Keycard_Spawner.BP_Keycard_Spawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Keycard_Spawner_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Keycard_Spawner_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

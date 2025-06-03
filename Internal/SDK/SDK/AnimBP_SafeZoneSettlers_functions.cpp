@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_SafeZoneSettlers_C::BlueprintUpdateAnimation(float DeltaTimeX)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_SafeZoneSettlers_C", "BlueprintUpdateAnimation");
-
-	Params::AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.ExecuteUbergraph_AnimBP_SafeZoneSettlers
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -105,6 +85,46 @@ void UAnimBP_SafeZoneSettlers_C::DeathState(bool Dead_0)
 }
 
 
+// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.CombatState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   BlendSpace                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_SafeZoneSettlers_C::CombatState(int32 BlendSpace)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_SafeZoneSettlers_C", "CombatState");
+
+	Params::AnimBP_SafeZoneSettlers_C_CombatState Parms{};
+
+	Parms.BlendSpace = BlendSpace;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_SafeZoneSettlers_C::BlueprintUpdateAnimation(float DeltaTimeX)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_SafeZoneSettlers_C", "BlueprintUpdateAnimation");
+
+	Params::AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX = DeltaTimeX;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.BlueprintInitializeAnimation
 // (Event, Public, BlueprintEvent)
 
@@ -151,26 +171,6 @@ void UAnimBP_SafeZoneSettlers_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.CombatState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   BlendSpace                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_SafeZoneSettlers_C::CombatState(int32 BlendSpace)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_SafeZoneSettlers_C", "CombatState");
-
-	Params::AnimBP_SafeZoneSettlers_C_CombatState Parms{};
-
-	Parms.BlendSpace = BlendSpace;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

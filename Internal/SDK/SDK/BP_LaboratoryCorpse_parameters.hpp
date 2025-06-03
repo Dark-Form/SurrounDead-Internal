@@ -16,6 +16,40 @@
 namespace SDK::Params
 {
 
+// Function BP_LaboratoryCorpse.BP_LaboratoryCorpse_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+{
+public:
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+
+// Function BP_LaboratoryCorpse.BP_LaboratoryCorpse_C.ExecuteUbergraph_BP_LaboratoryCorpse
+// 0x0010 (0x0010 - 0x0000)
+struct BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsBeyondLastLayer;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_LayerIndex;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsSeen;                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse) == 0x000004, "Wrong alignment on BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse");
+static_assert(sizeof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse) == 0x000010, "Wrong size on BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse");
+static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, EntryPoint) == 0x000000, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, K2Node_ComponentBoundEvent_bIsBeyondLastLayer) == 0x000004, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::K2Node_ComponentBoundEvent_bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, K2Node_ComponentBoundEvent_LayerIndex) == 0x000008, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::K2Node_ComponentBoundEvent_LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, K2Node_ComponentBoundEvent_bIsSeen) == 0x00000C, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
+
 // Function BP_LaboratoryCorpse.BP_LaboratoryCorpse_C.UserConstructionScript
 // 0x0048 (0x0048 - 0x0000)
 struct BP_LaboratoryCorpse_C_UserConstructionScript final
@@ -45,40 +79,6 @@ static_assert(offsetof(BP_LaboratoryCorpse_C_UserConstructionScript, Temp_byte_V
 static_assert(offsetof(BP_LaboratoryCorpse_C_UserConstructionScript, K2Node_Select_Default) == 0x000020, "Member 'BP_LaboratoryCorpse_C_UserConstructionScript::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(BP_LaboratoryCorpse_C_UserConstructionScript, K2Node_Select_Default_1) == 0x000028, "Member 'BP_LaboratoryCorpse_C_UserConstructionScript::K2Node_Select_Default_1' has a wrong offset!");
 static_assert(offsetof(BP_LaboratoryCorpse_C_UserConstructionScript, K2Node_MakeStruct_SingleAnimationPlayData) == 0x000030, "Member 'BP_LaboratoryCorpse_C_UserConstructionScript::K2Node_MakeStruct_SingleAnimationPlayData' has a wrong offset!");
-
-// Function BP_LaboratoryCorpse.BP_LaboratoryCorpse_C.ExecuteUbergraph_BP_LaboratoryCorpse
-// 0x0010 (0x0010 - 0x0000)
-struct BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsBeyondLastLayer;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_LayerIndex;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsSeen;                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse) == 0x000004, "Wrong alignment on BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse");
-static_assert(sizeof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse) == 0x000010, "Wrong size on BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse");
-static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, EntryPoint) == 0x000000, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, K2Node_ComponentBoundEvent_bIsBeyondLastLayer) == 0x000004, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::K2Node_ComponentBoundEvent_bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, K2Node_ComponentBoundEvent_LayerIndex) == 0x000008, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::K2Node_ComponentBoundEvent_LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse, K2Node_ComponentBoundEvent_bIsSeen) == 0x00000C, "Member 'BP_LaboratoryCorpse_C_ExecuteUbergraph_BP_LaboratoryCorpse::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
-
-// Function BP_LaboratoryCorpse.BP_LaboratoryCorpse_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
-{
-public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_LaboratoryCorpse_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 }
 

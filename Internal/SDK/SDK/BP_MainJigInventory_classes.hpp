@@ -63,7 +63,7 @@ public:
 	void SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector);
 	void SetItemReference(class UJSI_Slot_C* ItemRef);
 	void SpawnCharacterPreview();
-	void UpdatePreviewCharacter(class UJSIContainer_C* ContainerREF, class UJSIContainer_C* ToContainer, bool Equipped_);
+	void UpdatePreviewCharacter(class UJSIContainer_C* ContainerRef, class UJSIContainer_C* ToContainer, bool Equipped_);
 
 	void GetListOfContainers(TArray<class UJSIContainer_C*>* Containers) const;
 

@@ -14,730 +14,231 @@
 #include "CoreUObject_structs.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
 #include "RepItemInfo_structs.hpp"
-#include "S_JigPayload_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_JigPayload_structs.hpp"
 #include "Struct_EnemyWaveInfo_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function BP_Infestation.BP_Infestation_C.UserConstructionScript
-// 0x0250 (0x0250 - 0x0000)
-struct BP_Infestation_C_UserConstructionScript final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue_1;        // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FBox                                   CallFunc_MakeBox_ReturnValue;                      // 0x0050(0x0038)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsPackagedForDistribution_ReturnValue;    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0xC];                                       // 0x0094(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0108(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0120(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_154[0xC];                                      // 0x0154(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0160(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBoxComponent*                          CallFunc_AddComponent_ReturnValue;                 // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_Array_Get_Item_2;                         // 0x01D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue_1;               // 0x0230(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x023D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x023E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23F[0x1];                                      // 0x023F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Infestation_C_UserConstructionScript");
-static_assert(sizeof(BP_Infestation_C_UserConstructionScript) == 0x000250, "Wrong size on BP_Infestation_C_UserConstructionScript");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000020, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x000038, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_MakeBox_ReturnValue) == 0x000050, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_MakeBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_IsPackagedForDistribution_ReturnValue) == 0x000088, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_IsPackagedForDistribution_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Loop_Counter_Variable_1) == 0x00008C, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000090, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x0000A0, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_BreakTransform_Location) == 0x000108, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_BreakTransform_Rotation) == 0x000120, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_BreakTransform_Scale) == 0x000138, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000150, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x0001C0, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x0001C8, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Get_Item_2) == 0x0001D0, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue_1) == 0x000230, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000238, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x00023C, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue_1) == 0x00023D, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00023E, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x000240, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.TestSpawns
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_Infestation_C_TestSpawns final
-{
-public:
-	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_LocToSpawn_Loc;                           // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_TestSpawns) == 0x000010, "Wrong alignment on BP_Infestation_C_TestSpawns");
-static_assert(sizeof(BP_Infestation_C_TestSpawns) == 0x0000C0, "Wrong size on BP_Infestation_C_TestSpawns");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, Temp_int_Variable) == 0x000000, "Member 'BP_Infestation_C_TestSpawns::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'BP_Infestation_C_TestSpawns::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_TestSpawns::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_LocToSpawn_Loc) == 0x000010, "Member 'BP_Infestation_C_TestSpawns::CallFunc_LocToSpawn_Loc' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_BreakTransform_Location) == 0x000070, "Member 'BP_Infestation_C_TestSpawns::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_BreakTransform_Rotation) == 0x000088, "Member 'BP_Infestation_C_TestSpawns::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_BreakTransform_Scale) == 0x0000A0, "Member 'BP_Infestation_C_TestSpawns::CallFunc_BreakTransform_Scale' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.SetPickupCount
+// Function BP_Infestation.BP_Infestation_C.AddMarker
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_SetPickupCount final
+struct BP_Infestation_C_AddMarker final
 {
 public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                       Marker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_Infestation_C_SetPickupCount");
-static_assert(sizeof(BP_Infestation_C_SetPickupCount) == 0x000008, "Wrong size on BP_Infestation_C_SetPickupCount");
-static_assert(offsetof(BP_Infestation_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_Infestation_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_SetPickupCount, Result) == 0x000004, "Member 'BP_Infestation_C_SetPickupCount::Result' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_AddMarker) == 0x000008, "Wrong alignment on BP_Infestation_C_AddMarker");
+static_assert(sizeof(BP_Infestation_C_AddMarker) == 0x000008, "Wrong size on BP_Infestation_C_AddMarker");
+static_assert(offsetof(BP_Infestation_C_AddMarker, Marker) == 0x000000, "Member 'BP_Infestation_C_AddMarker::Marker' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.SetInteractOption
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_SetInteractOption final
+// Function BP_Infestation.BP_Infestation_C.AIHealthBarInfo
+// 0x0070 (0x0070 - 0x0000)
+struct BP_Infestation_C_AIHealthBarInfo final
 {
 public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_Infestation_C_SetInteractOption");
-static_assert(sizeof(BP_Infestation_C_SetInteractOption) == 0x000008, "Wrong size on BP_Infestation_C_SetInteractOption");
-static_assert(offsetof(BP_Infestation_C_SetInteractOption, Option) == 0x000000, "Member 'BP_Infestation_C_SetInteractOption::Option' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.SetInteractDistance
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Infestation_C_SetInteractDistance final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_Infestation_C_SetInteractDistance");
-static_assert(sizeof(BP_Infestation_C_SetInteractDistance) == 0x000020, "Wrong size on BP_Infestation_C_SetInteractDistance");
-static_assert(offsetof(BP_Infestation_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_Infestation_C_SetInteractDistance::Target' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.SetBurning
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Infestation_C_SetBurning final
-{
-public:
-	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Param_Name_0;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Boss_;                                             // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetInfestationName_Name;                  // 0x0020(0x0018)()
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetValues_StandardHealth;                 // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetValues_CurrentHealth;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetValues_MaxHealth;                      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_SetBurning) == 0x000008, "Wrong alignment on BP_Infestation_C_SetBurning");
-static_assert(sizeof(BP_Infestation_C_SetBurning) == 0x000018, "Wrong size on BP_Infestation_C_SetBurning");
-static_assert(offsetof(BP_Infestation_C_SetBurning, Burning_) == 0x000000, "Member 'BP_Infestation_C_SetBurning::Burning_' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_SetBurning, Dmg) == 0x000008, "Member 'BP_Infestation_C_SetBurning::Dmg' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_SetBurning, Actor) == 0x000010, "Member 'BP_Infestation_C_SetBurning::Actor' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_Infestation_C_AIHealthBarInfo");
+static_assert(sizeof(BP_Infestation_C_AIHealthBarInfo) == 0x000070, "Wrong size on BP_Infestation_C_AIHealthBarInfo");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_Infestation_C_AIHealthBarInfo::Visible_' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, Param_Name_0) == 0x000008, "Member 'BP_Infestation_C_AIHealthBarInfo::Param_Name_0' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, Boss_) == 0x000018, "Member 'BP_Infestation_C_AIHealthBarInfo::Boss_' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetInfestationName_Name) == 0x000020, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetInfestationName_Name' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000040, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetValues_StandardHealth) == 0x000050, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetValues_StandardHealth' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetValues_CurrentHealth) == 0x000058, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetValues_CurrentHealth' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetValues_MaxHealth) == 0x000060, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetValues_MaxHealth' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000068, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.OverrideName
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_OverrideName final
+// Function BP_Infestation.BP_Infestation_C.AreSecondariesDestroyed?
+// 0x0028 (0x0028 - 0x0000)
+struct BP_Infestation_C_AreSecondariesDestroyed_ final
 {
 public:
-	class FString                                 Param_Name_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Destroyed;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          All_;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Destroyed_0;                                       // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_Infestation_C*                      CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_OverrideName) == 0x000008, "Wrong alignment on BP_Infestation_C_OverrideName");
-static_assert(sizeof(BP_Infestation_C_OverrideName) == 0x000010, "Wrong size on BP_Infestation_C_OverrideName");
-static_assert(offsetof(BP_Infestation_C_OverrideName, Param_Name_0) == 0x000000, "Member 'BP_Infestation_C_OverrideName::Param_Name_0' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_AreSecondariesDestroyed_) == 0x000008, "Wrong alignment on BP_Infestation_C_AreSecondariesDestroyed_");
+static_assert(sizeof(BP_Infestation_C_AreSecondariesDestroyed_) == 0x000028, "Wrong size on BP_Infestation_C_AreSecondariesDestroyed_");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Destroyed) == 0x000000, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Destroyed' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, All_) == 0x000001, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::All_' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Destroyed_0) == 0x000002, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Destroyed_0' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Temp_bool_True_if_break_was_hit_Variable) == 0x000003, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Array_Get_Item) == 0x000018, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_BooleanAND_ReturnValue) == 0x000025, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.OnStopExecuteInteract
+// Function BP_Infestation.BP_Infestation_C.BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_OnStopExecuteInteract final
+struct BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature final
 {
 public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DmgCauser;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnStopExecuteInteract");
-static_assert(sizeof(BP_Infestation_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_Infestation_C_OnStopExecuteInteract");
-static_assert(offsetof(BP_Infestation_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature) == 0x000008, "Wrong alignment on BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature");
+static_assert(sizeof(BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature) == 0x000008, "Wrong size on BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature");
+static_assert(offsetof(BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature, DmgCauser) == 0x000000, "Member 'BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature::DmgCauser' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct BP_Infestation_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnServerExecuteInteract");
-static_assert(sizeof(BP_Infestation_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_Infestation_C_OnServerExecuteInteract");
-static_assert(offsetof(BP_Infestation_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_Infestation_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_Infestation_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_Infestation_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.OnRequestServerInteract
-// 0x0048 (0x0048 - 0x0000)
-struct BP_Infestation_C_OnRequestServerInteract final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnRequestServerInteract");
-static_assert(sizeof(BP_Infestation_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_Infestation_C_OnRequestServerInteract");
-static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_Infestation_C_OnRequestServerInteract::Actor' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_Infestation_C_OnRequestServerInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_Infestation_C_OnRequestServerInteract::Payload' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_Infestation_C_OnRequestServerInteract::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.OnExecuteInteractDialogue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_OnExecuteInteractDialogue final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_Infestation_C_OnExecuteInteractDialogue");
-static_assert(sizeof(BP_Infestation_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_Infestation_C_OnExecuteInteractDialogue");
-static_assert(offsetof(BP_Infestation_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.OnExecuteInteract
+// Function BP_Infestation.BP_Infestation_C.BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_OnExecuteInteract final
+struct BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature final
 {
 public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	double                                        Dmg;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DmgCauser;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnExecuteInteract");
-static_assert(sizeof(BP_Infestation_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_Infestation_C_OnExecuteInteract");
-static_assert(offsetof(BP_Infestation_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_Infestation_C_OnExecuteInteract::Option' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature) == 0x000008, "Wrong alignment on BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature");
+static_assert(sizeof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature) == 0x000010, "Wrong size on BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature");
+static_assert(offsetof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature, Dmg) == 0x000000, "Member 'BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature::Dmg' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature, DmgCauser) == 0x000008, "Member 'BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature::DmgCauser' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.OnBeginInteract
+// Function BP_Infestation.BP_Infestation_C.CanAddMarkerToAI?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Infestation_C_CanAddMarkerToAI_ final
+{
+public:
+	bool                                          CanAdd_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_CanAddMarkerToAI_) == 0x000001, "Wrong alignment on BP_Infestation_C_CanAddMarkerToAI_");
+static_assert(sizeof(BP_Infestation_C_CanAddMarkerToAI_) == 0x000001, "Wrong size on BP_Infestation_C_CanAddMarkerToAI_");
+static_assert(offsetof(BP_Infestation_C_CanAddMarkerToAI_, CanAdd_) == 0x000000, "Member 'BP_Infestation_C_CanAddMarkerToAI_::CanAdd_' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.CanStompAI?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Infestation_C_CanStompAI_ final
+{
+public:
+	bool                                          Stomp_;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_CanStompAI_) == 0x000001, "Wrong alignment on BP_Infestation_C_CanStompAI_");
+static_assert(sizeof(BP_Infestation_C_CanStompAI_) == 0x000001, "Wrong size on BP_Infestation_C_CanStompAI_");
+static_assert(offsetof(BP_Infestation_C_CanStompAI_, Stomp_) == 0x000000, "Member 'BP_Infestation_C_CanStompAI_::Stomp_' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.CheckDistanceFromActor
 // 0x0058 (0x0058 - 0x0000)
-struct BP_Infestation_C_OnBeginInteract final
+struct BP_Infestation_C_CheckDistanceFromActor final
 {
 public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnBeginInteract");
-static_assert(sizeof(BP_Infestation_C_OnBeginInteract) == 0x000058, "Wrong size on BP_Infestation_C_OnBeginInteract");
-static_assert(offsetof(BP_Infestation_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_Infestation_C_OnBeginInteract::Options' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_Infestation_C_CheckDistanceFromActor");
+static_assert(sizeof(BP_Infestation_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_Infestation_C_CheckDistanceFromActor");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_Infestation_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Infestation_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.LocToSpawn
-// 0x02B0 (0x02B0 - 0x0000)
-struct BP_Infestation_C_LocToSpawn final
+// Function BP_Infestation.BP_Infestation_C.ComponentsToSave
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Infestation_C_ComponentsToSave final
 {
 public:
-	struct FTransform                             Loc;                                               // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00A0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_Array_Random_OutItem;                     // 0x0100(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_165[0x3];                                      // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0168(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x01C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_1;                          // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_1;                          // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_1;                          // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0220(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0240(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+	TArray<class UActorComponent*>                K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(BP_Infestation_C_LocToSpawn) == 0x000010, "Wrong alignment on BP_Infestation_C_LocToSpawn");
-static_assert(sizeof(BP_Infestation_C_LocToSpawn) == 0x0002B0, "Wrong size on BP_Infestation_C_LocToSpawn");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, Loc) == 0x000000, "Member 'BP_Infestation_C_LocToSpawn::Loc' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_RandomFloatInRange_ReturnValue) == 0x000060, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeVector_ReturnValue) == 0x000068, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeRotator_ReturnValue) == 0x000080, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_GetTransform_ReturnValue) == 0x0000A0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Array_Random_OutItem) == 0x000100, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Array_Random_OutIndex) == 0x000160, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000164, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakTransform_Location) == 0x000168, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakTransform_Rotation) == 0x000180, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakTransform_Scale) == 0x000198, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_TransformLocation_ReturnValue) == 0x0001B0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_TransformLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x0001C8, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_X) == 0x0001E0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Y) == 0x0001E8, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Z) == 0x0001F0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_X_1) == 0x0001F8, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Y_1) == 0x000200, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Z_1) == 0x000208, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000210, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000218, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeVector_ReturnValue_1) == 0x000220, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeTransform_ReturnValue) == 0x000240, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0002A0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_Infestation_C_ComponentsToSave");
+static_assert(sizeof(BP_Infestation_C_ComponentsToSave) == 0x000020, "Wrong size on BP_Infestation_C_ComponentsToSave");
+static_assert(offsetof(BP_Infestation_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_Infestation_C_ComponentsToSave::Components' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_ComponentsToSave, K2Node_MakeArray_Array) == 0x000010, "Member 'BP_Infestation_C_ComponentsToSave::K2Node_MakeArray_Array' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.JigSetCanInteract
-// 0x0003 (0x0003 - 0x0000)
-struct BP_Infestation_C_JigSetCanInteract final
-{
-public:
-	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_Infestation_C_JigSetCanInteract");
-static_assert(sizeof(BP_Infestation_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_Infestation_C_JigSetCanInteract");
-static_assert(offsetof(BP_Infestation_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_Infestation_C_JigSetCanInteract::CanInteract' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_Infestation_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_Infestation_C_JigSetCanInteract::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnUpdateChamberUID
-// 0x0014 (0x0014 - 0x0000)
-struct BP_Infestation_C_JigMP_OnUpdateChamberUID final
-{
-public:
-	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_Infestation_C_JigMP_OnUpdateChamberUID");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_Infestation_C_JigMP_OnUpdateChamberUID");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnTwoContainersSwap
-// 0x0014 (0x0014 - 0x0000)
-struct BP_Infestation_C_JigMP_OnTwoContainersSwap final
-{
-public:
-	class FName                                   FromContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnTwoContainersSwap) == 0x000004, "Wrong alignment on BP_Infestation_C_JigMP_OnTwoContainersSwap");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnTwoContainersSwap) == 0x000014, "Wrong size on BP_Infestation_C_JigMP_OnTwoContainersSwap");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnTwoContainersSwap, FromContainer) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnTwoContainersSwap::FromContainer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnTwoContainersSwap, ToContainer) == 0x000008, "Member 'BP_Infestation_C_JigMP_OnTwoContainersSwap::ToContainer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnTwoContainersSwap, Result) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnTwoContainersSwap::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnRequestDropItem
-// 0x0088 (0x0088 - 0x0000)
-struct BP_Infestation_C_JigMP_OnRequestDropItem final
-{
-public:
-	struct FRepItemInfo                           ItemInfo;                                          // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   ContainerName;                                     // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ActorRef;                                          // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnRequestDropItem) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnRequestDropItem");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnRequestDropItem) == 0x000088, "Wrong size on BP_Infestation_C_JigMP_OnRequestDropItem");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnRequestDropItem, ItemInfo) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnRequestDropItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnRequestDropItem, ContainerName) == 0x000078, "Member 'BP_Infestation_C_JigMP_OnRequestDropItem::ContainerName' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnRequestDropItem, ActorRef) == 0x000080, "Member 'BP_Infestation_C_JigMP_OnRequestDropItem::ActorRef' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnPickupEquipped
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_Infestation_C_JigMP_OnPickupEquipped final
-{
-public:
-	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainerName;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  UID;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           Info;                                              // 0x0030(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 OverrideActor;                                     // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnPickupEquipped) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnPickupEquipped");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnPickupEquipped) == 0x0000B8, "Wrong size on BP_Infestation_C_JigMP_OnPickupEquipped");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, ActorRef) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, ToContainerName) == 0x000008, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::ToContainerName' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, UID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::UID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, Info) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::Info' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, Result) == 0x0000A8, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::Result' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, OverrideActor) == 0x0000B0, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::OverrideActor' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnPickupAdded
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_Infestation_C_JigMP_OnPickupAdded final
-{
-public:
-	struct FRepItemInfo                           Info;                                              // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainer;                                       // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnPickupAdded) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnPickupAdded");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnPickupAdded) == 0x0000A8, "Wrong size on BP_Infestation_C_JigMP_OnPickupAdded");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, Info) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::Info' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, ItemUID) == 0x000078, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, TocontainerUID) == 0x000088, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, ToContainer) == 0x000098, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::ToContainer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, Result) == 0x0000A0, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnMainContainerItemRemoved
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_Infestation_C_JigMP_OnMainContainerItemRemoved final
-{
-public:
-	struct FGuid                                  FromContainerUID;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ContainerName;                                     // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           ItemRemovedInfo;                                   // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnMainContainerItemRemoved");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved) == 0x0000A8, "Wrong size on BP_Infestation_C_JigMP_OnMainContainerItemRemoved");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, FromContainerUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, ItemUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnMainContainerItemAdded
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_Infestation_C_JigMP_OnMainContainerItemAdded final
-{
-public:
-	struct FGuid                                  TocontainerUID;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainerName;                                   // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           ItemInfo;                                          // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   FromMain;                                          // 0x00A0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 ActorRef;                                          // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnMainContainerItemAdded) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnMainContainerItemAdded");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnMainContainerItemAdded) == 0x0000B8, "Wrong size on BP_Infestation_C_JigMP_OnMainContainerItemAdded");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, TocontainerUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ItemUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ToContainerName) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ToContainerName' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ItemInfo) == 0x000028, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ItemInfo' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, FromMain) == 0x0000A0, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::FromMain' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, Result) == 0x0000A8, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::Result' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ActorRef) == 0x0000B0, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ActorRef' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemRemoved
-// 0x0040 (0x0040 - 0x0000)
-struct BP_Infestation_C_JigMP_OnItemRemoved final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UActorComponent*                        ToComponent;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnItemRemoved) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemRemoved");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnItemRemoved) == 0x000040, "Wrong size on BP_Infestation_C_JigMP_OnItemRemoved");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, ToComponent) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::ToComponent' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, Result) == 0x000038, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemMoved
-// 0x0034 (0x0034 - 0x0000)
-struct BP_Infestation_C_JigMP_OnItemMoved final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnItemMoved) == 0x000004, "Wrong alignment on BP_Infestation_C_JigMP_OnItemMoved");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnItemMoved) == 0x000034, "Wrong size on BP_Infestation_C_JigMP_OnItemMoved");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemMoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemMoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemMoved::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, Result) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnItemMoved::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemDropped
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Infestation_C_JigMP_OnItemDropped final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ActorRef;                                          // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnItemDropped) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemDropped");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnItemDropped) == 0x000030, "Wrong size on BP_Infestation_C_JigMP_OnItemDropped");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemDropped::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemDropped::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, ActorRef) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemDropped::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, Result) == 0x000028, "Member 'BP_Infestation_C_JigMP_OnItemDropped::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemConsumed
-// 0x0118 (0x0118 - 0x0000)
-struct BP_Infestation_C_JigMP_OnItemConsumed final
-{
-public:
-	struct FRepItemInfo                           ConsumedItem;                                      // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         Amount;                                            // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Remaining;                                         // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           InsideOf;                                          // 0x0080(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   FromContainer;                                     // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CustomData;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallbackToPlayer_;                                 // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0111(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnItemConsumed) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemConsumed");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnItemConsumed) == 0x000118, "Wrong size on BP_Infestation_C_JigMP_OnItemConsumed");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, ConsumedItem) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::ConsumedItem' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, Amount) == 0x000078, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::Amount' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, Remaining) == 0x00007C, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::Remaining' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, InsideOf) == 0x000080, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::InsideOf' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, FromContainer) == 0x0000F8, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::FromContainer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, CustomData) == 0x000100, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::CustomData' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, CallbackToPlayer_) == 0x000110, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::CallbackToPlayer_' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, Result) == 0x000111, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemAdded
-// 0x0040 (0x0040 - 0x0000)
-struct BP_Infestation_C_JigMP_OnItemAdded final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UActorComponent*                        FromComponent;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_JigMP_OnItemAdded) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemAdded");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnItemAdded) == 0x000040, "Wrong size on BP_Infestation_C_JigMP_OnItemAdded");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemAdded::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, FromComponent) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnItemAdded::FromComponent' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, Result) == 0x000038, "Member 'BP_Infestation_C_JigMP_OnItemAdded::Result' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.JigMP_OnContainersSwap
+// Function BP_Infestation.BP_Infestation_C.Damage_Object
 // 0x0018 (0x0018 - 0x0000)
-struct BP_Infestation_C_JigMP_OnContainersSwap final
+struct BP_Infestation_C_Damage_Object final
 {
 public:
-	class UJSIContainer_C*                        Container1;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UJSIContainer_C*                        Container2;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Damage;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Damage_Causer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            Event_Instigator;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_JigMP_OnContainersSwap) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnContainersSwap");
-static_assert(sizeof(BP_Infestation_C_JigMP_OnContainersSwap) == 0x000018, "Wrong size on BP_Infestation_C_JigMP_OnContainersSwap");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnContainersSwap, Container1) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnContainersSwap::Container1' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnContainersSwap, Container2) == 0x000008, "Member 'BP_Infestation_C_JigMP_OnContainersSwap::Container2' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_OnContainersSwap, Result) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnContainersSwap::Result' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_Damage_Object) == 0x000008, "Wrong alignment on BP_Infestation_C_Damage_Object");
+static_assert(sizeof(BP_Infestation_C_Damage_Object) == 0x000018, "Wrong size on BP_Infestation_C_Damage_Object");
+static_assert(offsetof(BP_Infestation_C_Damage_Object, Damage) == 0x000000, "Member 'BP_Infestation_C_Damage_Object::Damage' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_Damage_Object, Damage_Causer) == 0x000008, "Member 'BP_Infestation_C_Damage_Object::Damage_Causer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_Damage_Object, Event_Instigator) == 0x000010, "Member 'BP_Infestation_C_Damage_Object::Event_Instigator' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.JigMP_GetLootWidget
+// Function BP_Infestation.BP_Infestation_C.Damage_Shoved
 // 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_JigMP_GetLootWidget final
+struct BP_Infestation_C_Damage_Shoved final
 {
 public:
-	class UWidget*                                Result;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Valid_;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Anim;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Force;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_JigMP_GetLootWidget) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_GetLootWidget");
-static_assert(sizeof(BP_Infestation_C_JigMP_GetLootWidget) == 0x000010, "Wrong size on BP_Infestation_C_JigMP_GetLootWidget");
-static_assert(offsetof(BP_Infestation_C_JigMP_GetLootWidget, Result) == 0x000000, "Member 'BP_Infestation_C_JigMP_GetLootWidget::Result' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_JigMP_GetLootWidget, Valid_) == 0x000008, "Member 'BP_Infestation_C_JigMP_GetLootWidget::Valid_' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_Damage_Shoved) == 0x000008, "Wrong alignment on BP_Infestation_C_Damage_Shoved");
+static_assert(sizeof(BP_Infestation_C_Damage_Shoved) == 0x000010, "Wrong size on BP_Infestation_C_Damage_Shoved");
+static_assert(offsetof(BP_Infestation_C_Damage_Shoved, Anim) == 0x000000, "Member 'BP_Infestation_C_Damage_Shoved::Anim' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_Damage_Shoved, Force) == 0x000008, "Member 'BP_Infestation_C_Damage_Shoved::Force' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.JigCanInteract
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Infestation_C_JigCanInteract final
+// Function BP_Infestation.BP_Infestation_C.Event_OnDestroyed
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Infestation_C_Event_OnDestroyed final
 {
 public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Causer;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CalledFromGameLoad_;                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_JigCanInteract) == 0x000001, "Wrong alignment on BP_Infestation_C_JigCanInteract");
-static_assert(sizeof(BP_Infestation_C_JigCanInteract) == 0x000001, "Wrong size on BP_Infestation_C_JigCanInteract");
-static_assert(offsetof(BP_Infestation_C_JigCanInteract, Result) == 0x000000, "Member 'BP_Infestation_C_JigCanInteract::Result' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_Event_OnDestroyed) == 0x000008, "Wrong alignment on BP_Infestation_C_Event_OnDestroyed");
+static_assert(sizeof(BP_Infestation_C_Event_OnDestroyed) == 0x000010, "Wrong size on BP_Infestation_C_Event_OnDestroyed");
+static_assert(offsetof(BP_Infestation_C_Event_OnDestroyed, Causer) == 0x000000, "Member 'BP_Infestation_C_Event_OnDestroyed::Causer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_Event_OnDestroyed, CalledFromGameLoad_) == 0x000008, "Member 'BP_Infestation_C_Event_OnDestroyed::CalledFromGameLoad_' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.IsObjectDamageable?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Infestation_C_IsObjectDamageable_ final
+// Function BP_Infestation.BP_Infestation_C.Event_SecondaryDestroyed
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Infestation_C_Event_SecondaryDestroyed final
 {
 public:
-	bool                                          Damageable_;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Causer;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CalledFromGameLoad_;                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_IsObjectDamageable_) == 0x000001, "Wrong alignment on BP_Infestation_C_IsObjectDamageable_");
-static_assert(sizeof(BP_Infestation_C_IsObjectDamageable_) == 0x000001, "Wrong size on BP_Infestation_C_IsObjectDamageable_");
-static_assert(offsetof(BP_Infestation_C_IsObjectDamageable_, Damageable_) == 0x000000, "Member 'BP_Infestation_C_IsObjectDamageable_::Damageable_' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.IsAIBurning?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Infestation_C_IsAIBurning_ final
-{
-public:
-	bool                                          IsBurning_;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_IsAIBurning_) == 0x000001, "Wrong alignment on BP_Infestation_C_IsAIBurning_");
-static_assert(sizeof(BP_Infestation_C_IsAIBurning_) == 0x000001, "Wrong size on BP_Infestation_C_IsAIBurning_");
-static_assert(offsetof(BP_Infestation_C_IsAIBurning_, IsBurning_) == 0x000000, "Member 'BP_Infestation_C_IsAIBurning_::IsBurning_' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.HitByVehicle
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Infestation_C_HitByVehicle final
-{
-public:
-	double                                        Speed;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Direction;                                         // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_HitByVehicle) == 0x000008, "Wrong alignment on BP_Infestation_C_HitByVehicle");
-static_assert(sizeof(BP_Infestation_C_HitByVehicle) == 0x000020, "Wrong size on BP_Infestation_C_HitByVehicle");
-static_assert(offsetof(BP_Infestation_C_HitByVehicle, Speed) == 0x000000, "Member 'BP_Infestation_C_HitByVehicle::Speed' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_HitByVehicle, Direction) == 0x000008, "Member 'BP_Infestation_C_HitByVehicle::Direction' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetMovementSpeeds
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Infestation_C_GetMovementSpeeds final
-{
-public:
-	double                                        RoamingSpeed;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        AlertSpeed;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        AttackSpeed;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_GetMovementSpeeds) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMovementSpeeds");
-static_assert(sizeof(BP_Infestation_C_GetMovementSpeeds) == 0x000018, "Wrong size on BP_Infestation_C_GetMovementSpeeds");
-static_assert(offsetof(BP_Infestation_C_GetMovementSpeeds, RoamingSpeed) == 0x000000, "Member 'BP_Infestation_C_GetMovementSpeeds::RoamingSpeed' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetMovementSpeeds, AlertSpeed) == 0x000008, "Member 'BP_Infestation_C_GetMovementSpeeds::AlertSpeed' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetMovementSpeeds, AttackSpeed) == 0x000010, "Member 'BP_Infestation_C_GetMovementSpeeds::AttackSpeed' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetMesh
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_GetMesh final
-{
-public:
-	class USkeletalMeshComponent*                 Mesh;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_GetMesh) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMesh");
-static_assert(sizeof(BP_Infestation_C_GetMesh) == 0x000008, "Wrong size on BP_Infestation_C_GetMesh");
-static_assert(offsetof(BP_Infestation_C_GetMesh, Mesh) == 0x000000, "Member 'BP_Infestation_C_GetMesh::Mesh' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetMarker
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Infestation_C_GetMarker final
-{
-public:
-	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        MarkerOffset;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_GetMarker) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMarker");
-static_assert(sizeof(BP_Infestation_C_GetMarker) == 0x000020, "Wrong size on BP_Infestation_C_GetMarker");
-static_assert(offsetof(BP_Infestation_C_GetMarker, Texture) == 0x000000, "Member 'BP_Infestation_C_GetMarker::Texture' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetMarker, Color) == 0x000008, "Member 'BP_Infestation_C_GetMarker::Color' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetMarker, MarkerOffset) == 0x000018, "Member 'BP_Infestation_C_GetMarker::MarkerOffset' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetMainSceneComp
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_GetMainSceneComp final
-{
-public:
-	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMainSceneComp");
-static_assert(sizeof(BP_Infestation_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_Infestation_C_GetMainSceneComp");
-static_assert(offsetof(BP_Infestation_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_Infestation_C_GetMainSceneComp::Comp' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetJigMultiplayerComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_GetJigMultiplayerComponent final
-{
-public:
-	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_Infestation_C_GetJigMultiplayerComponent");
-static_assert(sizeof(BP_Infestation_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_Infestation_C_GetJigMultiplayerComponent");
-static_assert(offsetof(BP_Infestation_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_Infestation_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetItemInfo
-// 0x0078 (0x0078 - 0x0000)
-struct BP_Infestation_C_GetItemInfo final
-{
-public:
-	class UJigsawItem_DataAsset_C*                Info;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Count;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_RandomStatsConfig                   RandomStatsConfig;                                 // 0x0010(0x0018)(Parm, OutParm, HasGetValueTypeHash)
-	TMap<class FString, class FString>            CustomData;                                        // 0x0028(0x0050)(Parm, OutParm)
-};
-static_assert(alignof(BP_Infestation_C_GetItemInfo) == 0x000008, "Wrong alignment on BP_Infestation_C_GetItemInfo");
-static_assert(sizeof(BP_Infestation_C_GetItemInfo) == 0x000078, "Wrong size on BP_Infestation_C_GetItemInfo");
-static_assert(offsetof(BP_Infestation_C_GetItemInfo, Info) == 0x000000, "Member 'BP_Infestation_C_GetItemInfo::Info' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetItemInfo, Count) == 0x000008, "Member 'BP_Infestation_C_GetItemInfo::Count' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_Infestation_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_Infestation_C_GetItemInfo::CustomData' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetInteractOptions
-// 0x0050 (0x0050 - 0x0000)
-struct BP_Infestation_C_GetInteractOptions final
-{
-public:
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
-};
-static_assert(alignof(BP_Infestation_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_Infestation_C_GetInteractOptions");
-static_assert(sizeof(BP_Infestation_C_GetInteractOptions) == 0x000050, "Wrong size on BP_Infestation_C_GetInteractOptions");
-static_assert(offsetof(BP_Infestation_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_Infestation_C_GetInteractOptions::Options' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.GetInfestationName
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Infestation_C_GetInfestationName final
-{
-public:
-	class FText                                   Param_Name_0;                                      // 0x0000(0x0018)(Parm, OutParm)
-};
-static_assert(alignof(BP_Infestation_C_GetInfestationName) == 0x000008, "Wrong alignment on BP_Infestation_C_GetInfestationName");
-static_assert(sizeof(BP_Infestation_C_GetInfestationName) == 0x000018, "Wrong size on BP_Infestation_C_GetInfestationName");
-static_assert(offsetof(BP_Infestation_C_GetInfestationName, Param_Name_0) == 0x000000, "Member 'BP_Infestation_C_GetInfestationName::Param_Name_0' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_Event_SecondaryDestroyed) == 0x000008, "Wrong alignment on BP_Infestation_C_Event_SecondaryDestroyed");
+static_assert(sizeof(BP_Infestation_C_Event_SecondaryDestroyed) == 0x000010, "Wrong size on BP_Infestation_C_Event_SecondaryDestroyed");
+static_assert(offsetof(BP_Infestation_C_Event_SecondaryDestroyed, Causer) == 0x000000, "Member 'BP_Infestation_C_Event_SecondaryDestroyed::Causer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_Event_SecondaryDestroyed, CalledFromGameLoad_) == 0x000008, "Member 'BP_Infestation_C_Event_SecondaryDestroyed::CalledFromGameLoad_' has a wrong offset!");
 
 // Function BP_Infestation.BP_Infestation_C.ExecuteUbergraph_BP_Infestation
 // 0x08D0 (0x08D0 - 0x0000)
@@ -1124,223 +625,722 @@ static_assert(offsetof(BP_Infestation_C_ExecuteUbergraph_BP_Infestation, CallFun
 static_assert(offsetof(BP_Infestation_C_ExecuteUbergraph_BP_Infestation, CallFunc_Delay_Duration_ImplicitCast) == 0x0008B8, "Member 'BP_Infestation_C_ExecuteUbergraph_BP_Infestation::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_Infestation_C_ExecuteUbergraph_BP_Infestation, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x0008C0, "Member 'BP_Infestation_C_ExecuteUbergraph_BP_Infestation::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.Event_SecondaryDestroyed
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_Event_SecondaryDestroyed final
-{
-public:
-	class AActor*                                 Causer;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CalledFromGameLoad_;                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_Event_SecondaryDestroyed) == 0x000008, "Wrong alignment on BP_Infestation_C_Event_SecondaryDestroyed");
-static_assert(sizeof(BP_Infestation_C_Event_SecondaryDestroyed) == 0x000010, "Wrong size on BP_Infestation_C_Event_SecondaryDestroyed");
-static_assert(offsetof(BP_Infestation_C_Event_SecondaryDestroyed, Causer) == 0x000000, "Member 'BP_Infestation_C_Event_SecondaryDestroyed::Causer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_Event_SecondaryDestroyed, CalledFromGameLoad_) == 0x000008, "Member 'BP_Infestation_C_Event_SecondaryDestroyed::CalledFromGameLoad_' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.Event_OnDestroyed
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_Event_OnDestroyed final
-{
-public:
-	class AActor*                                 Causer;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CalledFromGameLoad_;                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_Event_OnDestroyed) == 0x000008, "Wrong alignment on BP_Infestation_C_Event_OnDestroyed");
-static_assert(sizeof(BP_Infestation_C_Event_OnDestroyed) == 0x000010, "Wrong size on BP_Infestation_C_Event_OnDestroyed");
-static_assert(offsetof(BP_Infestation_C_Event_OnDestroyed, Causer) == 0x000000, "Member 'BP_Infestation_C_Event_OnDestroyed::Causer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_Event_OnDestroyed, CalledFromGameLoad_) == 0x000008, "Member 'BP_Infestation_C_Event_OnDestroyed::CalledFromGameLoad_' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.Damage_Shoved
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_Damage_Shoved final
-{
-public:
-	bool                                          Anim;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Force;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Infestation_C_Damage_Shoved) == 0x000008, "Wrong alignment on BP_Infestation_C_Damage_Shoved");
-static_assert(sizeof(BP_Infestation_C_Damage_Shoved) == 0x000010, "Wrong size on BP_Infestation_C_Damage_Shoved");
-static_assert(offsetof(BP_Infestation_C_Damage_Shoved, Anim) == 0x000000, "Member 'BP_Infestation_C_Damage_Shoved::Anim' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_Damage_Shoved, Force) == 0x000008, "Member 'BP_Infestation_C_Damage_Shoved::Force' has a wrong offset!");
-
-// Function BP_Infestation.BP_Infestation_C.Damage_Object
+// Function BP_Infestation.BP_Infestation_C.GetInfestationName
 // 0x0018 (0x0018 - 0x0000)
-struct BP_Infestation_C_Damage_Object final
+struct BP_Infestation_C_GetInfestationName final
 {
 public:
-	double                                        Damage;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Damage_Causer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            Event_Instigator;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Param_Name_0;                                      // 0x0000(0x0018)(Parm, OutParm)
 };
-static_assert(alignof(BP_Infestation_C_Damage_Object) == 0x000008, "Wrong alignment on BP_Infestation_C_Damage_Object");
-static_assert(sizeof(BP_Infestation_C_Damage_Object) == 0x000018, "Wrong size on BP_Infestation_C_Damage_Object");
-static_assert(offsetof(BP_Infestation_C_Damage_Object, Damage) == 0x000000, "Member 'BP_Infestation_C_Damage_Object::Damage' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_Damage_Object, Damage_Causer) == 0x000008, "Member 'BP_Infestation_C_Damage_Object::Damage_Causer' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_Damage_Object, Event_Instigator) == 0x000010, "Member 'BP_Infestation_C_Damage_Object::Event_Instigator' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_GetInfestationName) == 0x000008, "Wrong alignment on BP_Infestation_C_GetInfestationName");
+static_assert(sizeof(BP_Infestation_C_GetInfestationName) == 0x000018, "Wrong size on BP_Infestation_C_GetInfestationName");
+static_assert(offsetof(BP_Infestation_C_GetInfestationName, Param_Name_0) == 0x000000, "Member 'BP_Infestation_C_GetInfestationName::Param_Name_0' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.ComponentsToSave
+// Function BP_Infestation.BP_Infestation_C.GetInteractOptions
+// 0x0050 (0x0050 - 0x0000)
+struct BP_Infestation_C_GetInteractOptions final
+{
+public:
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
+};
+static_assert(alignof(BP_Infestation_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_Infestation_C_GetInteractOptions");
+static_assert(sizeof(BP_Infestation_C_GetInteractOptions) == 0x000050, "Wrong size on BP_Infestation_C_GetInteractOptions");
+static_assert(offsetof(BP_Infestation_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_Infestation_C_GetInteractOptions::Options' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.GetItemInfo
+// 0x0078 (0x0078 - 0x0000)
+struct BP_Infestation_C_GetItemInfo final
+{
+public:
+	class UJigsawItem_DataAsset_C*                Info;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_RandomStatsConfig                   RandomStatsConfig;                                 // 0x0010(0x0018)(Parm, OutParm, HasGetValueTypeHash)
+	TMap<class FString, class FString>            CustomData;                                        // 0x0028(0x0050)(Parm, OutParm)
+};
+static_assert(alignof(BP_Infestation_C_GetItemInfo) == 0x000008, "Wrong alignment on BP_Infestation_C_GetItemInfo");
+static_assert(sizeof(BP_Infestation_C_GetItemInfo) == 0x000078, "Wrong size on BP_Infestation_C_GetItemInfo");
+static_assert(offsetof(BP_Infestation_C_GetItemInfo, Info) == 0x000000, "Member 'BP_Infestation_C_GetItemInfo::Info' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetItemInfo, Count) == 0x000008, "Member 'BP_Infestation_C_GetItemInfo::Count' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_Infestation_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_Infestation_C_GetItemInfo::CustomData' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.GetJigMultiplayerComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Infestation_C_GetJigMultiplayerComponent final
+{
+public:
+	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_Infestation_C_GetJigMultiplayerComponent");
+static_assert(sizeof(BP_Infestation_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_Infestation_C_GetJigMultiplayerComponent");
+static_assert(offsetof(BP_Infestation_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_Infestation_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.GetMainSceneComp
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Infestation_C_GetMainSceneComp final
+{
+public:
+	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMainSceneComp");
+static_assert(sizeof(BP_Infestation_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_Infestation_C_GetMainSceneComp");
+static_assert(offsetof(BP_Infestation_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_Infestation_C_GetMainSceneComp::Comp' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.GetMarker
 // 0x0020 (0x0020 - 0x0000)
-struct BP_Infestation_C_ComponentsToSave final
+struct BP_Infestation_C_GetMarker final
 {
 public:
-	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	TArray<class UActorComponent*>                K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MarkerOffset;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_Infestation_C_ComponentsToSave");
-static_assert(sizeof(BP_Infestation_C_ComponentsToSave) == 0x000020, "Wrong size on BP_Infestation_C_ComponentsToSave");
-static_assert(offsetof(BP_Infestation_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_Infestation_C_ComponentsToSave::Components' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_ComponentsToSave, K2Node_MakeArray_Array) == 0x000010, "Member 'BP_Infestation_C_ComponentsToSave::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_GetMarker) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMarker");
+static_assert(sizeof(BP_Infestation_C_GetMarker) == 0x000020, "Wrong size on BP_Infestation_C_GetMarker");
+static_assert(offsetof(BP_Infestation_C_GetMarker, Texture) == 0x000000, "Member 'BP_Infestation_C_GetMarker::Texture' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetMarker, Color) == 0x000008, "Member 'BP_Infestation_C_GetMarker::Color' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetMarker, MarkerOffset) == 0x000018, "Member 'BP_Infestation_C_GetMarker::MarkerOffset' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.CheckDistanceFromActor
-// 0x0058 (0x0058 - 0x0000)
-struct BP_Infestation_C_CheckDistanceFromActor final
+// Function BP_Infestation.BP_Infestation_C.GetMesh
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Infestation_C_GetMesh final
 {
 public:
-	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 Mesh;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_Infestation_C_CheckDistanceFromActor");
-static_assert(sizeof(BP_Infestation_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_Infestation_C_CheckDistanceFromActor");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_Infestation_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Infestation_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_Infestation_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_GetMesh) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMesh");
+static_assert(sizeof(BP_Infestation_C_GetMesh) == 0x000008, "Wrong size on BP_Infestation_C_GetMesh");
+static_assert(offsetof(BP_Infestation_C_GetMesh, Mesh) == 0x000000, "Member 'BP_Infestation_C_GetMesh::Mesh' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.CanStompAI?
+// Function BP_Infestation.BP_Infestation_C.GetMovementSpeeds
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Infestation_C_GetMovementSpeeds final
+{
+public:
+	double                                        RoamingSpeed;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AlertSpeed;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AttackSpeed;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_GetMovementSpeeds) == 0x000008, "Wrong alignment on BP_Infestation_C_GetMovementSpeeds");
+static_assert(sizeof(BP_Infestation_C_GetMovementSpeeds) == 0x000018, "Wrong size on BP_Infestation_C_GetMovementSpeeds");
+static_assert(offsetof(BP_Infestation_C_GetMovementSpeeds, RoamingSpeed) == 0x000000, "Member 'BP_Infestation_C_GetMovementSpeeds::RoamingSpeed' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetMovementSpeeds, AlertSpeed) == 0x000008, "Member 'BP_Infestation_C_GetMovementSpeeds::AlertSpeed' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_GetMovementSpeeds, AttackSpeed) == 0x000010, "Member 'BP_Infestation_C_GetMovementSpeeds::AttackSpeed' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.HitByVehicle
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Infestation_C_HitByVehicle final
+{
+public:
+	double                                        Speed;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Direction;                                         // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_HitByVehicle) == 0x000008, "Wrong alignment on BP_Infestation_C_HitByVehicle");
+static_assert(sizeof(BP_Infestation_C_HitByVehicle) == 0x000020, "Wrong size on BP_Infestation_C_HitByVehicle");
+static_assert(offsetof(BP_Infestation_C_HitByVehicle, Speed) == 0x000000, "Member 'BP_Infestation_C_HitByVehicle::Speed' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_HitByVehicle, Direction) == 0x000008, "Member 'BP_Infestation_C_HitByVehicle::Direction' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.IsAIBurning?
 // 0x0001 (0x0001 - 0x0000)
-struct BP_Infestation_C_CanStompAI_ final
+struct BP_Infestation_C_IsAIBurning_ final
 {
 public:
-	bool                                          Stomp_;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsBurning_;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_CanStompAI_) == 0x000001, "Wrong alignment on BP_Infestation_C_CanStompAI_");
-static_assert(sizeof(BP_Infestation_C_CanStompAI_) == 0x000001, "Wrong size on BP_Infestation_C_CanStompAI_");
-static_assert(offsetof(BP_Infestation_C_CanStompAI_, Stomp_) == 0x000000, "Member 'BP_Infestation_C_CanStompAI_::Stomp_' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_IsAIBurning_) == 0x000001, "Wrong alignment on BP_Infestation_C_IsAIBurning_");
+static_assert(sizeof(BP_Infestation_C_IsAIBurning_) == 0x000001, "Wrong size on BP_Infestation_C_IsAIBurning_");
+static_assert(offsetof(BP_Infestation_C_IsAIBurning_, IsBurning_) == 0x000000, "Member 'BP_Infestation_C_IsAIBurning_::IsBurning_' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.CanAddMarkerToAI?
+// Function BP_Infestation.BP_Infestation_C.IsObjectDamageable?
 // 0x0001 (0x0001 - 0x0000)
-struct BP_Infestation_C_CanAddMarkerToAI_ final
+struct BP_Infestation_C_IsObjectDamageable_ final
 {
 public:
-	bool                                          CanAdd_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Damageable_;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_CanAddMarkerToAI_) == 0x000001, "Wrong alignment on BP_Infestation_C_CanAddMarkerToAI_");
-static_assert(sizeof(BP_Infestation_C_CanAddMarkerToAI_) == 0x000001, "Wrong size on BP_Infestation_C_CanAddMarkerToAI_");
-static_assert(offsetof(BP_Infestation_C_CanAddMarkerToAI_, CanAdd_) == 0x000000, "Member 'BP_Infestation_C_CanAddMarkerToAI_::CanAdd_' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_IsObjectDamageable_) == 0x000001, "Wrong alignment on BP_Infestation_C_IsObjectDamageable_");
+static_assert(sizeof(BP_Infestation_C_IsObjectDamageable_) == 0x000001, "Wrong size on BP_Infestation_C_IsObjectDamageable_");
+static_assert(offsetof(BP_Infestation_C_IsObjectDamageable_, Damageable_) == 0x000000, "Member 'BP_Infestation_C_IsObjectDamageable_::Damageable_' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature
+// Function BP_Infestation.BP_Infestation_C.JigCanInteract
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Infestation_C_JigCanInteract final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigCanInteract) == 0x000001, "Wrong alignment on BP_Infestation_C_JigCanInteract");
+static_assert(sizeof(BP_Infestation_C_JigCanInteract) == 0x000001, "Wrong size on BP_Infestation_C_JigCanInteract");
+static_assert(offsetof(BP_Infestation_C_JigCanInteract, Result) == 0x000000, "Member 'BP_Infestation_C_JigCanInteract::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_GetLootWidget
 // 0x0010 (0x0010 - 0x0000)
-struct BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature final
+struct BP_Infestation_C_JigMP_GetLootWidget final
 {
 public:
-	double                                        Dmg;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DmgCauser;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Result;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Valid_;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature) == 0x000008, "Wrong alignment on BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature");
-static_assert(sizeof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature) == 0x000010, "Wrong size on BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature");
-static_assert(offsetof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature, Dmg) == 0x000000, "Member 'BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature::Dmg' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature, DmgCauser) == 0x000008, "Member 'BP_Infestation_C_BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature::DmgCauser' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_JigMP_GetLootWidget) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_GetLootWidget");
+static_assert(sizeof(BP_Infestation_C_JigMP_GetLootWidget) == 0x000010, "Wrong size on BP_Infestation_C_JigMP_GetLootWidget");
+static_assert(offsetof(BP_Infestation_C_JigMP_GetLootWidget, Result) == 0x000000, "Member 'BP_Infestation_C_JigMP_GetLootWidget::Result' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_GetLootWidget, Valid_) == 0x000008, "Member 'BP_Infestation_C_JigMP_GetLootWidget::Valid_' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnContainersSwap
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Infestation_C_JigMP_OnContainersSwap final
+{
+public:
+	class UJSIContainer_C*                        Container1;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        Container2;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnContainersSwap) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnContainersSwap");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnContainersSwap) == 0x000018, "Wrong size on BP_Infestation_C_JigMP_OnContainersSwap");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnContainersSwap, Container1) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnContainersSwap::Container1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnContainersSwap, Container2) == 0x000008, "Member 'BP_Infestation_C_JigMP_OnContainersSwap::Container2' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnContainersSwap, Result) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnContainersSwap::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemAdded
+// 0x0040 (0x0040 - 0x0000)
+struct BP_Infestation_C_JigMP_OnItemAdded final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        FromComponent;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnItemAdded) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemAdded");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnItemAdded) == 0x000040, "Wrong size on BP_Infestation_C_JigMP_OnItemAdded");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemAdded::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, FromComponent) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnItemAdded::FromComponent' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemAdded, Result) == 0x000038, "Member 'BP_Infestation_C_JigMP_OnItemAdded::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemConsumed
+// 0x0118 (0x0118 - 0x0000)
+struct BP_Infestation_C_JigMP_OnItemConsumed final
+{
+public:
+	struct FRepItemInfo                           ConsumedItem;                                      // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	int32                                         Amount;                                            // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Remaining;                                         // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           InsideOf;                                          // 0x0080(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   FromContainer;                                     // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CustomData;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallbackToPlayer_;                                 // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0111(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnItemConsumed) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemConsumed");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnItemConsumed) == 0x000118, "Wrong size on BP_Infestation_C_JigMP_OnItemConsumed");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, ConsumedItem) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::ConsumedItem' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, Amount) == 0x000078, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::Amount' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, Remaining) == 0x00007C, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::Remaining' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, InsideOf) == 0x000080, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::InsideOf' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, FromContainer) == 0x0000F8, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::FromContainer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, CustomData) == 0x000100, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::CustomData' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, CallbackToPlayer_) == 0x000110, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::CallbackToPlayer_' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemConsumed, Result) == 0x000111, "Member 'BP_Infestation_C_JigMP_OnItemConsumed::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemDropped
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Infestation_C_JigMP_OnItemDropped final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorRef;                                          // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnItemDropped) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemDropped");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnItemDropped) == 0x000030, "Wrong size on BP_Infestation_C_JigMP_OnItemDropped");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemDropped::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemDropped::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, ActorRef) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemDropped::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemDropped, Result) == 0x000028, "Member 'BP_Infestation_C_JigMP_OnItemDropped::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemMoved
+// 0x0034 (0x0034 - 0x0000)
+struct BP_Infestation_C_JigMP_OnItemMoved final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnItemMoved) == 0x000004, "Wrong alignment on BP_Infestation_C_JigMP_OnItemMoved");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnItemMoved) == 0x000034, "Wrong size on BP_Infestation_C_JigMP_OnItemMoved");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemMoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemMoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemMoved::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemMoved, Result) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnItemMoved::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnItemRemoved
+// 0x0040 (0x0040 - 0x0000)
+struct BP_Infestation_C_JigMP_OnItemRemoved final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        ToComponent;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnItemRemoved) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnItemRemoved");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnItemRemoved) == 0x000040, "Wrong size on BP_Infestation_C_JigMP_OnItemRemoved");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, ItemUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, FromContainerUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, ToComponent) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::ToComponent' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnItemRemoved, Result) == 0x000038, "Member 'BP_Infestation_C_JigMP_OnItemRemoved::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnMainContainerItemAdded
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_Infestation_C_JigMP_OnMainContainerItemAdded final
+{
+public:
+	struct FGuid                                  TocontainerUID;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainerName;                                   // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           ItemInfo;                                          // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   FromMain;                                          // 0x00A0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 ActorRef;                                          // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnMainContainerItemAdded) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnMainContainerItemAdded");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnMainContainerItemAdded) == 0x0000B8, "Wrong size on BP_Infestation_C_JigMP_OnMainContainerItemAdded");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, TocontainerUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ItemUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ToContainerName) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ToContainerName' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ItemInfo) == 0x000028, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ItemInfo' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, FromMain) == 0x0000A0, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::FromMain' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, Result) == 0x0000A8, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::Result' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemAdded, ActorRef) == 0x0000B0, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemAdded::ActorRef' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnMainContainerItemRemoved
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_Infestation_C_JigMP_OnMainContainerItemRemoved final
+{
+public:
+	struct FGuid                                  FromContainerUID;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ContainerName;                                     // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           ItemRemovedInfo;                                   // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnMainContainerItemRemoved");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved) == 0x0000A8, "Wrong size on BP_Infestation_C_JigMP_OnMainContainerItemRemoved");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, FromContainerUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, ItemUID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_Infestation_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnPickupAdded
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_Infestation_C_JigMP_OnPickupAdded final
+{
+public:
+	struct FRepItemInfo                           Info;                                              // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainer;                                       // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnPickupAdded) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnPickupAdded");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnPickupAdded) == 0x0000A8, "Wrong size on BP_Infestation_C_JigMP_OnPickupAdded");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, Info) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::Info' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, ItemUID) == 0x000078, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, TocontainerUID) == 0x000088, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, ToContainer) == 0x000098, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::ToContainer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupAdded, Result) == 0x0000A0, "Member 'BP_Infestation_C_JigMP_OnPickupAdded::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnPickupEquipped
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_Infestation_C_JigMP_OnPickupEquipped final
+{
+public:
+	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainerName;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  UID;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           Info;                                              // 0x0030(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 OverrideActor;                                     // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnPickupEquipped) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnPickupEquipped");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnPickupEquipped) == 0x0000B8, "Wrong size on BP_Infestation_C_JigMP_OnPickupEquipped");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, ActorRef) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, ToContainerName) == 0x000008, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::ToContainerName' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, UID) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::UID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, TocontainerUID) == 0x000020, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, Info) == 0x000030, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::Info' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, Result) == 0x0000A8, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::Result' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnPickupEquipped, OverrideActor) == 0x0000B0, "Member 'BP_Infestation_C_JigMP_OnPickupEquipped::OverrideActor' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnRequestDropItem
+// 0x0088 (0x0088 - 0x0000)
+struct BP_Infestation_C_JigMP_OnRequestDropItem final
+{
+public:
+	struct FRepItemInfo                           ItemInfo;                                          // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   ContainerName;                                     // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorRef;                                          // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnRequestDropItem) == 0x000008, "Wrong alignment on BP_Infestation_C_JigMP_OnRequestDropItem");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnRequestDropItem) == 0x000088, "Wrong size on BP_Infestation_C_JigMP_OnRequestDropItem");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnRequestDropItem, ItemInfo) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnRequestDropItem::ItemInfo' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnRequestDropItem, ContainerName) == 0x000078, "Member 'BP_Infestation_C_JigMP_OnRequestDropItem::ContainerName' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnRequestDropItem, ActorRef) == 0x000080, "Member 'BP_Infestation_C_JigMP_OnRequestDropItem::ActorRef' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnTwoContainersSwap
+// 0x0014 (0x0014 - 0x0000)
+struct BP_Infestation_C_JigMP_OnTwoContainersSwap final
+{
+public:
+	class FName                                   FromContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnTwoContainersSwap) == 0x000004, "Wrong alignment on BP_Infestation_C_JigMP_OnTwoContainersSwap");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnTwoContainersSwap) == 0x000014, "Wrong size on BP_Infestation_C_JigMP_OnTwoContainersSwap");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnTwoContainersSwap, FromContainer) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnTwoContainersSwap::FromContainer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnTwoContainersSwap, ToContainer) == 0x000008, "Member 'BP_Infestation_C_JigMP_OnTwoContainersSwap::ToContainer' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnTwoContainersSwap, Result) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnTwoContainersSwap::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigMP_OnUpdateChamberUID
+// 0x0014 (0x0014 - 0x0000)
+struct BP_Infestation_C_JigMP_OnUpdateChamberUID final
+{
+public:
+	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_Infestation_C_JigMP_OnUpdateChamberUID");
+static_assert(sizeof(BP_Infestation_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_Infestation_C_JigMP_OnUpdateChamberUID");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_Infestation_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_Infestation_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.JigSetCanInteract
+// 0x0003 (0x0003 - 0x0000)
+struct BP_Infestation_C_JigSetCanInteract final
+{
+public:
+	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_Infestation_C_JigSetCanInteract");
+static_assert(sizeof(BP_Infestation_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_Infestation_C_JigSetCanInteract");
+static_assert(offsetof(BP_Infestation_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_Infestation_C_JigSetCanInteract::CanInteract' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_Infestation_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_Infestation_C_JigSetCanInteract::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.LocToSpawn
+// 0x02B0 (0x02B0 - 0x0000)
+struct BP_Infestation_C_LocToSpawn final
+{
+public:
+	struct FTransform                             Loc;                                               // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x00A0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_Array_Random_OutItem;                     // 0x0100(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_165[0x3];                                      // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0168(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_TransformLocation_ReturnValue;            // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_RandomPointInBoundingBox_ReturnValue;     // 0x01C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_1;                          // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_1;                          // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_1;                          // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0220(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0240(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x02A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_LocToSpawn) == 0x000010, "Wrong alignment on BP_Infestation_C_LocToSpawn");
+static_assert(sizeof(BP_Infestation_C_LocToSpawn) == 0x0002B0, "Wrong size on BP_Infestation_C_LocToSpawn");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, Loc) == 0x000000, "Member 'BP_Infestation_C_LocToSpawn::Loc' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_RandomFloatInRange_ReturnValue) == 0x000060, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeVector_ReturnValue) == 0x000068, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeRotator_ReturnValue) == 0x000080, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_GetTransform_ReturnValue) == 0x0000A0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Array_Random_OutItem) == 0x000100, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Array_Random_OutIndex) == 0x000160, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000164, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakTransform_Location) == 0x000168, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakTransform_Rotation) == 0x000180, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakTransform_Scale) == 0x000198, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_TransformLocation_ReturnValue) == 0x0001B0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_TransformLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_RandomPointInBoundingBox_ReturnValue) == 0x0001C8, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_RandomPointInBoundingBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_X) == 0x0001E0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Y) == 0x0001E8, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Z) == 0x0001F0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_X_1) == 0x0001F8, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_X_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Y_1) == 0x000200, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Y_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_BreakVector_Z_1) == 0x000208, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_BreakVector_Z_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000210, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000218, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeVector_ReturnValue_1) == 0x000220, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeTransform_ReturnValue) == 0x000240, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_LocToSpawn, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0002A0, "Member 'BP_Infestation_C_LocToSpawn::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct BP_Infestation_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(BP_Infestation_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnBeginInteract");
+static_assert(sizeof(BP_Infestation_C_OnBeginInteract) == 0x000058, "Wrong size on BP_Infestation_C_OnBeginInteract");
+static_assert(offsetof(BP_Infestation_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_Infestation_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.OnExecuteInteract
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Infestation_C_OnExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnExecuteInteract");
+static_assert(sizeof(BP_Infestation_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_Infestation_C_OnExecuteInteract");
+static_assert(offsetof(BP_Infestation_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_Infestation_C_OnExecuteInteract::Option' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.OnExecuteInteractDialogue
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature final
+struct BP_Infestation_C_OnExecuteInteractDialogue final
 {
 public:
-	class AActor*                                 DmgCauser;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature) == 0x000008, "Wrong alignment on BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature");
-static_assert(sizeof(BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature) == 0x000008, "Wrong size on BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature");
-static_assert(offsetof(BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature, DmgCauser) == 0x000000, "Member 'BP_Infestation_C_BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature::DmgCauser' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_Infestation_C_OnExecuteInteractDialogue");
+static_assert(sizeof(BP_Infestation_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_Infestation_C_OnExecuteInteractDialogue");
+static_assert(offsetof(BP_Infestation_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.AreSecondariesDestroyed?
-// 0x0028 (0x0028 - 0x0000)
-struct BP_Infestation_C_AreSecondariesDestroyed_ final
+// Function BP_Infestation.BP_Infestation_C.OnRequestServerInteract
+// 0x0048 (0x0048 - 0x0000)
+struct BP_Infestation_C_OnRequestServerInteract final
 {
 public:
-	bool                                          Destroyed;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          All_;                                              // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Destroyed_0;                                       // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_Infestation_C*                      CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_AreSecondariesDestroyed_) == 0x000008, "Wrong alignment on BP_Infestation_C_AreSecondariesDestroyed_");
-static_assert(sizeof(BP_Infestation_C_AreSecondariesDestroyed_) == 0x000028, "Wrong size on BP_Infestation_C_AreSecondariesDestroyed_");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Destroyed) == 0x000000, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Destroyed' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, All_) == 0x000001, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::All_' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Destroyed_0) == 0x000002, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Destroyed_0' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Temp_bool_True_if_break_was_hit_Variable) == 0x000003, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Array_Get_Item) == 0x000018, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AreSecondariesDestroyed_, CallFunc_BooleanAND_ReturnValue) == 0x000025, "Member 'BP_Infestation_C_AreSecondariesDestroyed_::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnRequestServerInteract");
+static_assert(sizeof(BP_Infestation_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_Infestation_C_OnRequestServerInteract");
+static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_Infestation_C_OnRequestServerInteract::Actor' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_Infestation_C_OnRequestServerInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_Infestation_C_OnRequestServerInteract::Payload' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_Infestation_C_OnRequestServerInteract::Result' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.AIHealthBarInfo
-// 0x0070 (0x0070 - 0x0000)
-struct BP_Infestation_C_AIHealthBarInfo final
+// Function BP_Infestation.BP_Infestation_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct BP_Infestation_C_OnServerExecuteInteract final
 {
 public:
-	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnServerExecuteInteract");
+static_assert(sizeof(BP_Infestation_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_Infestation_C_OnServerExecuteInteract");
+static_assert(offsetof(BP_Infestation_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_Infestation_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_Infestation_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_Infestation_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.OnStopExecuteInteract
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Infestation_C_OnStopExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_Infestation_C_OnStopExecuteInteract");
+static_assert(sizeof(BP_Infestation_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_Infestation_C_OnStopExecuteInteract");
+static_assert(offsetof(BP_Infestation_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_Infestation_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.OverrideName
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Infestation_C_OverrideName final
+{
+public:
+	class FString                                 Param_Name_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_OverrideName) == 0x000008, "Wrong alignment on BP_Infestation_C_OverrideName");
+static_assert(sizeof(BP_Infestation_C_OverrideName) == 0x000010, "Wrong size on BP_Infestation_C_OverrideName");
+static_assert(offsetof(BP_Infestation_C_OverrideName, Param_Name_0) == 0x000000, "Member 'BP_Infestation_C_OverrideName::Param_Name_0' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.SetBurning
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Infestation_C_SetBurning final
+{
+public:
+	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Param_Name_0;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Boss_;                                             // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetInfestationName_Name;                  // 0x0020(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetValues_StandardHealth;                 // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetValues_CurrentHealth;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetValues_MaxHealth;                      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_Infestation_C_AIHealthBarInfo");
-static_assert(sizeof(BP_Infestation_C_AIHealthBarInfo) == 0x000070, "Wrong size on BP_Infestation_C_AIHealthBarInfo");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_Infestation_C_AIHealthBarInfo::Visible_' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, Param_Name_0) == 0x000008, "Member 'BP_Infestation_C_AIHealthBarInfo::Param_Name_0' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, Boss_) == 0x000018, "Member 'BP_Infestation_C_AIHealthBarInfo::Boss_' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetInfestationName_Name) == 0x000020, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetInfestationName_Name' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000040, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetValues_StandardHealth) == 0x000050, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetValues_StandardHealth' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetValues_CurrentHealth) == 0x000058, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetValues_CurrentHealth' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetValues_MaxHealth) == 0x000060, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetValues_MaxHealth' has a wrong offset!");
-static_assert(offsetof(BP_Infestation_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000068, "Member 'BP_Infestation_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_SetBurning) == 0x000008, "Wrong alignment on BP_Infestation_C_SetBurning");
+static_assert(sizeof(BP_Infestation_C_SetBurning) == 0x000018, "Wrong size on BP_Infestation_C_SetBurning");
+static_assert(offsetof(BP_Infestation_C_SetBurning, Burning_) == 0x000000, "Member 'BP_Infestation_C_SetBurning::Burning_' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_SetBurning, Dmg) == 0x000008, "Member 'BP_Infestation_C_SetBurning::Dmg' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_SetBurning, Actor) == 0x000010, "Member 'BP_Infestation_C_SetBurning::Actor' has a wrong offset!");
 
-// Function BP_Infestation.BP_Infestation_C.AddMarker
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Infestation_C_AddMarker final
+// Function BP_Infestation.BP_Infestation_C.SetInteractDistance
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Infestation_C_SetInteractDistance final
 {
 public:
-	class UWidgetComponent*                       Marker;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Infestation_C_AddMarker) == 0x000008, "Wrong alignment on BP_Infestation_C_AddMarker");
-static_assert(sizeof(BP_Infestation_C_AddMarker) == 0x000008, "Wrong size on BP_Infestation_C_AddMarker");
-static_assert(offsetof(BP_Infestation_C_AddMarker, Marker) == 0x000000, "Member 'BP_Infestation_C_AddMarker::Marker' has a wrong offset!");
+static_assert(alignof(BP_Infestation_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_Infestation_C_SetInteractDistance");
+static_assert(sizeof(BP_Infestation_C_SetInteractDistance) == 0x000020, "Wrong size on BP_Infestation_C_SetInteractDistance");
+static_assert(offsetof(BP_Infestation_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_Infestation_C_SetInteractDistance::Target' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Infestation_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_Infestation_C_SetInteractOption");
+static_assert(sizeof(BP_Infestation_C_SetInteractOption) == 0x000008, "Wrong size on BP_Infestation_C_SetInteractOption");
+static_assert(offsetof(BP_Infestation_C_SetInteractOption, Option) == 0x000000, "Member 'BP_Infestation_C_SetInteractOption::Option' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.SetPickupCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Infestation_C_SetPickupCount final
+{
+public:
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_Infestation_C_SetPickupCount");
+static_assert(sizeof(BP_Infestation_C_SetPickupCount) == 0x000008, "Wrong size on BP_Infestation_C_SetPickupCount");
+static_assert(offsetof(BP_Infestation_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_Infestation_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_SetPickupCount, Result) == 0x000004, "Member 'BP_Infestation_C_SetPickupCount::Result' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.TestSpawns
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_Infestation_C_TestSpawns final
+{
+public:
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_LocToSpawn_Loc;                           // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_TestSpawns) == 0x000010, "Wrong alignment on BP_Infestation_C_TestSpawns");
+static_assert(sizeof(BP_Infestation_C_TestSpawns) == 0x0000C0, "Wrong size on BP_Infestation_C_TestSpawns");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, Temp_int_Variable) == 0x000000, "Member 'BP_Infestation_C_TestSpawns::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'BP_Infestation_C_TestSpawns::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_TestSpawns::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_LocToSpawn_Loc) == 0x000010, "Member 'BP_Infestation_C_TestSpawns::CallFunc_LocToSpawn_Loc' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_BreakTransform_Location) == 0x000070, "Member 'BP_Infestation_C_TestSpawns::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_BreakTransform_Rotation) == 0x000088, "Member 'BP_Infestation_C_TestSpawns::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_TestSpawns, CallFunc_BreakTransform_Scale) == 0x0000A0, "Member 'BP_Infestation_C_TestSpawns::CallFunc_BreakTransform_Scale' has a wrong offset!");
+
+// Function BP_Infestation.BP_Infestation_C.UserConstructionScript
+// 0x0250 (0x0250 - 0x0000)
+struct BP_Infestation_C_UserConstructionScript final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue_1;        // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FBox                                   CallFunc_MakeBox_ReturnValue;                      // 0x0050(0x0038)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsPackagedForDistribution_ReturnValue;    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0xC];                                       // 0x0094(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0108(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0120(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0xC];                                      // 0x0154(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0160(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBoxComponent*                          CallFunc_AddComponent_ReturnValue;                 // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_Array_Get_Item_2;                         // 0x01D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue_1;               // 0x0230(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x023D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x023E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23F[0x1];                                      // 0x023F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Infestation_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Infestation_C_UserConstructionScript");
+static_assert(sizeof(BP_Infestation_C_UserConstructionScript) == 0x000250, "Wrong size on BP_Infestation_C_UserConstructionScript");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Array_Index_Variable_1) == 0x00000C, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue) == 0x000020, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Conv_DoubleToVector_ReturnValue_1) == 0x000038, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Conv_DoubleToVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_MakeBox_ReturnValue) == 0x000050, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_MakeBox_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_IsPackagedForDistribution_ReturnValue) == 0x000088, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_IsPackagedForDistribution_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, Temp_int_Loop_Counter_Variable_1) == 0x00008C, "Member 'BP_Infestation_C_UserConstructionScript::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000090, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x0000A0, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_BreakTransform_Location) == 0x000108, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_BreakTransform_Location' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_BreakTransform_Rotation) == 0x000120, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_BreakTransform_Rotation' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_BreakTransform_Scale) == 0x000138, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_BreakTransform_Scale' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000150, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_MakeTransform_ReturnValue) == 0x000160, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x0001C0, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x0001C8, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Get_Item_2) == 0x0001D0, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue_1) == 0x000230, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000238, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x00023C, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue_1) == 0x00023D, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00023E, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Infestation_C_UserConstructionScript, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x000240, "Member 'BP_Infestation_C_UserConstructionScript::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 
 }
 

@@ -9,48 +9,72 @@
 // FORWARD DECLARATIONS
 
 
-namespace BPAnim_Truck { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPAnim_4x4Jeep { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BPAnim_GolfCart { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace AnimBP_Trader { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace BPAnim_Buggy { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace BPAnim_DamagedSedan { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPAnim_Humvee { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace AnimBP_StationaryQuestNPC { struct FAnimBlueprintGeneratedConstantData; }
 
+namespace BPAnim_RV { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BPAnim_PickupUtilityTruck { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BPAnim_Buggy { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace AnimBP_Trader { struct FAnimBlueprintGeneratedConstantData; }
+
 namespace AnimBP_Dog { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BPAnim_4x4Jeep { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPAnim_GolfCart { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BPAnim_ModifiedPickupUtilityTruck { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPAnim_BigRig { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace TestChargerVehicle { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BPAnim_FlatbedTruck { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BPAnim_DamagedSedan { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace BPAnim_Ambulance { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace BPAnim_Van { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BPAnim_BigRig { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace BPAnim_FlatbedTruck { struct FAnimBlueprintGeneratedConstantData; }
-
 namespace BPAnim_PickupTruck { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BPAnim_RV { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPAnim_Truck { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace BPAnim_SUV { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace BPAnim_PickupUtilityTruck { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace TestChargerVehicle { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace BPAnim_Humvee { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPAnim_ModifiedPickupUtilityTruck { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace BPAnim_SwatVan { struct FAnimBlueprintGeneratedConstantData; }
 
 
+namespace AnimBP_SafeZoneSettlers
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
 namespace AnimBP_Bear
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace AnimBP_HumanAI
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace AnimBP_Deer
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace AICharacter_AnimBP
 {
 	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
@@ -62,19 +86,7 @@ namespace AnimBP_DogAI
 	struct FAnimBlueprintGeneratedConstantData;
 }
 
-namespace AICharacter_AnimBP
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace AnimBP_WanderingTraderAI
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace AnimBP_HumanAI
+namespace Player_AnimBP
 {
 	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
@@ -82,38 +94,8 @@ namespace AnimBP_HumanAI
 
 namespace AnimBP_Wolf
 {
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace AnimBP_Rabbit
-{
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace AnimBP_Zombie
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
-}
-
-namespace AnimBP_ZombieBossBrute
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace Player_AnimBP
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace AnimBP_SafeZoneSettlers
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
 }
 
 namespace ExampleCharacter_AnimBP
@@ -122,13 +104,31 @@ namespace ExampleCharacter_AnimBP
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace AnimBP_Deer
+namespace AnimBP_Zombie
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace AnimBP_ZombieBossBrute
 {
 	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
 }
 
 namespace AnimBP_ZombieDog
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace AnimBP_WanderingTraderAI
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace AnimBP_Rabbit
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;

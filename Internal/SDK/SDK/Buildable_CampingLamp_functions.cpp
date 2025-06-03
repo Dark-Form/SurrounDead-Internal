@@ -17,17 +17,136 @@
 namespace SDK
 {
 
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABuildable_CampingLamp_C::ReceiveBeginPlay()
+void ABuildable_CampingLamp_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.ExecuteUbergraph_Buildable_CampingLamp
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_CampingLamp_C::ExecuteUbergraph_Buildable_CampingLamp(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "ExecuteUbergraph_Buildable_CampingLamp");
+
+	Params::Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_CampingLamp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.GetPickupName
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText*                            Result                                                 (Parm, OutParm)
+
+void ABuildable_CampingLamp_C::GetPickupName(class FText* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "GetPickupName");
+
+	Params::Buildable_CampingLamp_C_GetPickupName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
+}
+
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.LightCallback
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_CampingLamp_C::LightCallback(bool NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "LightCallback");
+
+	Params::Buildable_CampingLamp_C_LightCallback Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.Off
+// (BlueprintCallable, BlueprintEvent)
+
+void ABuildable_CampingLamp_C::Off()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "Off");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.On
+// (BlueprintCallable, BlueprintEvent)
+
+void ABuildable_CampingLamp_C::On()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "On");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.OnInteractBuildable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_CampingLamp_C::OnInteractBuildable(class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "OnInteractBuildable");
+
+	Params::Buildable_CampingLamp_C_OnInteractBuildable Parms{};
+
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -55,136 +174,17 @@ void ABuildable_CampingLamp_C::OnServerExecuteInteract(const struct FGameplayTag
 }
 
 
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.OnInteractBuildable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABuildable_CampingLamp_C::OnInteractBuildable(class AActor* Actor)
+void ABuildable_CampingLamp_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "OnInteractBuildable");
-
-	Params::Buildable_CampingLamp_C_OnInteractBuildable Parms{};
-
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.On
-// (BlueprintCallable, BlueprintEvent)
-
-void ABuildable_CampingLamp_C::On()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "On");
+		Func = Class->GetFunction("Buildable_CampingLamp_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.Off
-// (BlueprintCallable, BlueprintEvent)
-
-void ABuildable_CampingLamp_C::Off()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "Off");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.LightCallback
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_CampingLamp_C::LightCallback(bool NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "LightCallback");
-
-	Params::Buildable_CampingLamp_C_LightCallback Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.GetPickupName
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText*                            Result                                                 (Parm, OutParm)
-
-void ABuildable_CampingLamp_C::GetPickupName(class FText* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "GetPickupName");
-
-	Params::Buildable_CampingLamp_C_GetPickupName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-}
-
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.ExecuteUbergraph_Buildable_CampingLamp
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_CampingLamp_C::ExecuteUbergraph_Buildable_CampingLamp(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "ExecuteUbergraph_Buildable_CampingLamp");
-
-	Params::Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_CampingLamp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_CampingLamp_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CampingLamp_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-
-	Params::Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

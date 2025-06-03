@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Prefab_CrashedApache01.Prefab_CrashedApache01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APrefab_CrashedApache01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prefab_CrashedApache01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Prefab_CrashedApache01.Prefab_CrashedApache01_C.ExecuteUbergraph_Prefab_CrashedApache01
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void APrefab_CrashedApache01_C::ExecuteUbergraph_Prefab_CrashedApache01(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Prefab_CrashedApache01.Prefab_CrashedApache01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APrefab_CrashedApache01_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Prefab_CrashedApache01_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

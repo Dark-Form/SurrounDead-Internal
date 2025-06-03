@@ -24,8 +24,8 @@ class UJigSplitWidget_C final : public UUserWidget
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UButton*                                CancelBtn;                                         // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                confirmBtn;                                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             CountText;                                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                ConfirmBtn;                                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             countText;                                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             itemNametxt;                                       // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USlider*                                SplitSlider;                                       // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UJSIContainer_C*                        ContainerRec;                                      // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -37,7 +37,7 @@ public:
 
 public:
 	void BndEvt__CancelBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__SplitSlider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void Construct();
 	void ExecuteUbergraph_JigSplitWidget(int32 EntryPoint);
@@ -56,8 +56,8 @@ static_assert(alignof(UJigSplitWidget_C) == 0x000008, "Wrong alignment on UJigSp
 static_assert(sizeof(UJigSplitWidget_C) == 0x000310, "Wrong size on UJigSplitWidget_C");
 static_assert(offsetof(UJigSplitWidget_C, UberGraphFrame) == 0x0002C0, "Member 'UJigSplitWidget_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UJigSplitWidget_C, CancelBtn) == 0x0002C8, "Member 'UJigSplitWidget_C::CancelBtn' has a wrong offset!");
-static_assert(offsetof(UJigSplitWidget_C, confirmBtn) == 0x0002D0, "Member 'UJigSplitWidget_C::confirmBtn' has a wrong offset!");
-static_assert(offsetof(UJigSplitWidget_C, CountText) == 0x0002D8, "Member 'UJigSplitWidget_C::CountText' has a wrong offset!");
+static_assert(offsetof(UJigSplitWidget_C, ConfirmBtn) == 0x0002D0, "Member 'UJigSplitWidget_C::ConfirmBtn' has a wrong offset!");
+static_assert(offsetof(UJigSplitWidget_C, countText) == 0x0002D8, "Member 'UJigSplitWidget_C::countText' has a wrong offset!");
 static_assert(offsetof(UJigSplitWidget_C, itemNametxt) == 0x0002E0, "Member 'UJigSplitWidget_C::itemNametxt' has a wrong offset!");
 static_assert(offsetof(UJigSplitWidget_C, SplitSlider) == 0x0002E8, "Member 'UJigSplitWidget_C::SplitSlider' has a wrong offset!");
 static_assert(offsetof(UJigSplitWidget_C, ContainerRec) == 0x0002F0, "Member 'UJigSplitWidget_C::ContainerRec' has a wrong offset!");

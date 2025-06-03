@@ -38,27 +38,6 @@ void ABP_MasterCamera_C::Actor_Attack_Target(class AActor** Attack_Target)
 }
 
 
-// Function BP_MasterCamera.BP_MasterCamera_C.AI Can Interact?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Can_Interact                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterCamera_C::AI_Can_Interact_(bool* Can_Interact)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterCamera_C", "AI Can Interact?");
-
-	Params::BP_MasterCamera_C_AI_Can_Interact_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Can_Interact != nullptr)
-		*Can_Interact = Parms.Can_Interact;
-}
-
-
 // Function BP_MasterCamera.BP_MasterCamera_C.ExecuteUbergraph_BP_MasterCamera
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -107,32 +86,6 @@ void ABP_MasterCamera_C::Multicast_Turret_Idle_Stop()
 }
 
 
-// Function BP_MasterCamera.BP_MasterCamera_C.ReceiveAnyDamage
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterCamera_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterCamera_C", "ReceiveAnyDamage");
-
-	Params::BP_MasterCamera_C_ReceiveAnyDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_MasterCamera.BP_MasterCamera_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -172,6 +125,53 @@ void ABP_MasterCamera_C::Rotate_Camera__UpdateFunc()
 		Func = Class->GetFunction("BP_MasterCamera_C", "Rotate Camera__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterCamera.BP_MasterCamera_C.AI Can Interact?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Can_Interact                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterCamera_C::AI_Can_Interact_(bool* Can_Interact)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterCamera_C", "AI Can Interact?");
+
+	Params::BP_MasterCamera_C_AI_Can_Interact_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Can_Interact != nullptr)
+		*Can_Interact = Parms.Can_Interact;
+}
+
+
+// Function BP_MasterCamera.BP_MasterCamera_C.ReceiveAnyDamage
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterCamera_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterCamera_C", "ReceiveAnyDamage");
+
+	Params::BP_MasterCamera_C_ReceiveAnyDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.DamageType = DamageType;
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

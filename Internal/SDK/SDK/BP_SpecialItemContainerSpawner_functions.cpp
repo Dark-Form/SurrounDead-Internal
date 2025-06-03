@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.SpawnContainer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_SpecialItemContainerSpawner_C::SpawnContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpecialItemContainerSpawner_C", "SpawnContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SpecialItemContainerSpawner_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpecialItemContainerSpawner_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.ExecuteUbergraph_BP_SpecialItemContainerSpawner
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void ABP_SpecialItemContainerSpawner_C::ExecuteUbergraph_BP_SpecialItemContainer
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SpecialItemContainerSpawner_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SpecialItemContainerSpawner_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.SpawnContainer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_SpecialItemContainerSpawner_C::SpawnContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SpecialItemContainerSpawner_C", "SpawnContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

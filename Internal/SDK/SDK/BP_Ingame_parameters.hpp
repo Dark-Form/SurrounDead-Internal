@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "S_MarkerData_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -782,7 +782,7 @@ public:
 	class UJSI_Slot_C*                            ItemRef;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Found_;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJSIContainer_C*                        ContainerREF;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        ContainerRef;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UJSI_Slot_C*                            MainItem;                                          // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UJSI_Slot_C*                            TheMainItem;                                       // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UJSI_Slot_C*                            EquippedItem;                                      // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -814,7 +814,7 @@ static_assert(sizeof(BP_Ingame_C_GetHotbarByIndex) == 0x0000B8, "Wrong size on B
 static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, Index_0) == 0x000000, "Member 'BP_Ingame_C_GetHotbarByIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, ItemRef) == 0x000008, "Member 'BP_Ingame_C_GetHotbarByIndex::ItemRef' has a wrong offset!");
 static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, Found_) == 0x000010, "Member 'BP_Ingame_C_GetHotbarByIndex::Found_' has a wrong offset!");
-static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, ContainerREF) == 0x000018, "Member 'BP_Ingame_C_GetHotbarByIndex::ContainerREF' has a wrong offset!");
+static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, ContainerRef) == 0x000018, "Member 'BP_Ingame_C_GetHotbarByIndex::ContainerRef' has a wrong offset!");
 static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, MainItem) == 0x000020, "Member 'BP_Ingame_C_GetHotbarByIndex::MainItem' has a wrong offset!");
 static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, TheMainItem) == 0x000028, "Member 'BP_Ingame_C_GetHotbarByIndex::TheMainItem' has a wrong offset!");
 static_assert(offsetof(BP_Ingame_C_GetHotbarByIndex, EquippedItem) == 0x000030, "Member 'BP_Ingame_C_GetHotbarByIndex::EquippedItem' has a wrong offset!");

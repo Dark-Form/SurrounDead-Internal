@@ -12,12 +12,12 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_RepAttachmentInfo_structs.hpp"
+#include "S_EquipmentIDInfo_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "S_RepNonActorData_structs.hpp"
-#include "S_RepAttachmentInfo_structs.hpp"
 #include "S_RepActorData_structs.hpp"
 #include "RepItemInfo_structs.hpp"
-#include "S_EquipmentIDInfo_structs.hpp"
 #include "ContainerPickupsInfo_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
 

@@ -14,11 +14,11 @@
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "RarityColors_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
+#include "RarityColors_structs.hpp"
 #include "DefaultItemInfo_structs.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK
@@ -252,7 +252,7 @@ public:
 	void GetLowestIndexItem(class UJSI_Slot_C** HostingItem);
 	void GetMaxCapacity(int32 ItemMaxStack, int32* MaxCap);
 	void GetPaddingBySlotIndex(int32 SlotIndex, const struct FVector2D& SlotVector, struct FMargin* Padding_0, int32* Conumn, int32* Row);
-	void GetRootContainerRef(bool ExcludeEquipTo, class UJSIContainer_C** ContainerREF);
+	void GetRootContainerRef(bool ExcludeEquipTo, class UJSIContainer_C** ContainerRef);
 	void GetSlotIndex(int32* Result);
 	void GetSlotMotherUID(bool ReturnContainerID_IfInvalid_, bool GetContainerIDIfSpecialC_, struct FGuid* UDID);
 	void GetTotalCountOfItemID(class FName ItemId, int32* TotalItemCount);

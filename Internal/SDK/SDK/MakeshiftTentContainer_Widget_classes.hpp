@@ -26,7 +26,6 @@ public:
 	class UJSIContainer_C*                        MainContainer;                                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_MakeshiftTentContainer_Widget(int32 EntryPoint);
 	void SetItemReference(class UJSI_Slot_C* ItemRef);
 	void SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector);
 	void SetActorOwner(class AActor* ActorRef);
@@ -43,6 +42,7 @@ public:
 	void GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex);
 	void GetAllAttachments(TArray<class FName>* Attachments);
 	void ForceInitSpecialcontainer();
+	void ExecuteUbergraph_MakeshiftTentContainer_Widget(int32 EntryPoint);
 
 	void GetListOfContainers(TArray<class UJSIContainer_C*>* Containers) const;
 

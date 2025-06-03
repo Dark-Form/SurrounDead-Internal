@@ -17,41 +17,6 @@
 namespace SDK::Params
 {
 
-// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.ExecuteUbergraph_AnimBP_StationaryQuestNPC
-// 0x0008 (0x0008 - 0x0000)
-struct AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaTimeX;                           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC) == 0x000004, "Wrong alignment on AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC");
-static_assert(sizeof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC) == 0x000008, "Wrong size on AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC");
-static_assert(offsetof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC, EntryPoint) == 0x000000, "Member 'AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC, K2Node_Event_DeltaTimeX) == 0x000004, "Member 'AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC::K2Node_Event_DeltaTimeX' has a wrong offset!");
-
-// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation");
-static_assert(sizeof(AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation");
-static_assert(offsetof(AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
-// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_StationaryQuestNPC_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(AnimBP_StationaryQuestNPC_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_StationaryQuestNPC_C_AnimGraph");
-static_assert(sizeof(AnimBP_StationaryQuestNPC_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_StationaryQuestNPC_C_AnimGraph");
-static_assert(offsetof(AnimBP_StationaryQuestNPC_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_StationaryQuestNPC_C_AnimGraph::AnimGraph_0' has a wrong offset!");
-
 // Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.HeadRotation
 // 0x0148 (0x0148 - 0x0000)
 struct AnimBP_StationaryQuestNPC_C_HeadRotation final
@@ -128,6 +93,41 @@ static_assert(offsetof(AnimBP_StationaryQuestNPC_C_HeadRotation, CallFunc_Subtra
 static_assert(offsetof(AnimBP_StationaryQuestNPC_C_HeadRotation, CallFunc_MakeRotator_Roll_ImplicitCast) == 0x000138, "Member 'AnimBP_StationaryQuestNPC_C_HeadRotation::CallFunc_MakeRotator_Roll_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(AnimBP_StationaryQuestNPC_C_HeadRotation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x00013C, "Member 'AnimBP_StationaryQuestNPC_C_HeadRotation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(AnimBP_StationaryQuestNPC_C_HeadRotation, CallFunc_RInterpTo_DeltaTime_ImplicitCast) == 0x000140, "Member 'AnimBP_StationaryQuestNPC_C_HeadRotation::CallFunc_RInterpTo_DeltaTime_ImplicitCast' has a wrong offset!");
+
+// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.ExecuteUbergraph_AnimBP_StationaryQuestNPC
+// 0x0008 (0x0008 - 0x0000)
+struct AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTimeX;                           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC) == 0x000004, "Wrong alignment on AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC");
+static_assert(sizeof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC) == 0x000008, "Wrong size on AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC");
+static_assert(offsetof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC, EntryPoint) == 0x000000, "Member 'AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC::EntryPoint' has a wrong offset!");
+static_assert(offsetof(AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC, K2Node_Event_DeltaTimeX) == 0x000004, "Member 'AnimBP_StationaryQuestNPC_C_ExecuteUbergraph_AnimBP_StationaryQuestNPC::K2Node_Event_DeltaTimeX' has a wrong offset!");
+
+// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation");
+static_assert(sizeof(AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation");
+static_assert(offsetof(AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_StationaryQuestNPC_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
+// Function AnimBP_StationaryQuestNPC.AnimBP_StationaryQuestNPC_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_StationaryQuestNPC_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(AnimBP_StationaryQuestNPC_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_StationaryQuestNPC_C_AnimGraph");
+static_assert(sizeof(AnimBP_StationaryQuestNPC_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_StationaryQuestNPC_C_AnimGraph");
+static_assert(offsetof(AnimBP_StationaryQuestNPC_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_StationaryQuestNPC_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

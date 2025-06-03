@@ -11,23 +11,12 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "S_RepAttachmentInfo_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_RepAttachmentInfo_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetAttachmentActiveState
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState final
-{
-public:
-	struct FGameplayTag                           Result;                                            // 0x0000(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState) == 0x000004, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState) == 0x000008, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState, Result) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState::Result' has a wrong offset!");
 
 // Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_StartReloading
 // 0x0020 (0x0020 - 0x0000)
@@ -60,140 +49,6 @@ static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag) == 0x
 static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag, MagRef) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag::MagRef' has a wrong offset!");
 static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag, DA) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag::DA' has a wrong offset!");
 static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_SetPendingMag::Result' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetADSSocketLocation
-// 0x0020 (0x0020 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation final
-{
-public:
-	struct FVector                                SocketLoc;                                         // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          SocketFound;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation) == 0x000020, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation, SocketLoc) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation::SocketLoc' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation, SocketFound) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation::SocketFound' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_ExecuteChamberWeapon
-// 0x0028 (0x0028 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon final
-{
-public:
-	class UActorComponent*                        MPComp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           PlayerSlots;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           ChamberMontage;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Speed;                                             // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon) == 0x000028, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, MPComp) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::MPComp' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, PlayerSlots) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::PlayerSlots' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::Result' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, ChamberMontage) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::ChamberMontage' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, Speed) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::Speed' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CheckCanReload
-// 0x0040 (0x0040 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload final
-{
-public:
-	class UActorComponent*                        MPComp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           PlayerSlots;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJSIContainer_C*                        ContainerMag;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           ReloadMontage;                                     // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          HasInternalMag;                                    // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanChamber_;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJSI_Slot_C*                            ReloadWith;                                        // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UAnimMontage*                           LoopReloadAnim;                                    // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload) == 0x000040, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, MPComp) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::MPComp' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, PlayerSlots) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::PlayerSlots' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::Result' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, ContainerMag) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::ContainerMag' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, ReloadMontage) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::ReloadMontage' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, HasInternalMag) == 0x000028, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::HasInternalMag' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, CanChamber_) == 0x000029, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::CanChamber_' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, ReloadWith) == 0x000030, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::ReloadWith' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, LoopReloadAnim) == 0x000038, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::LoopReloadAnim' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CanChamberWeapon
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon final
-{
-public:
-	class UActorComponent*                        MPComp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           PlayerSlots;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon) == 0x000018, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon, MPComp) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon::MPComp' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon, PlayerSlots) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon::PlayerSlots' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon::Result' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentRemoved
-// 0x0020 (0x0020 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved final
-{
-public:
-	TArray<struct FS_RepAttachmentInfo>           Attachments;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           AttachmentType;                                    // 0x0014(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved) == 0x000020, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved, Attachments) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved::Attachments' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved::Result' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved, AttachmentType) == 0x000014, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved::AttachmentType' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentInstalled
-// 0x0030 (0x0030 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled final
-{
-public:
-	struct FGuid                                  MainUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FS_RepAttachmentInfo>           Attachments;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          Result;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           AttachmentType;                                    // 0x0024(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled) == 0x000030, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, MainUID) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::MainUID' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, Attachments) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::Attachments' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, Result) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::Result' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, AttachmentType) == 0x000024, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::AttachmentType' has a wrong offset!");
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup
-// 0x0038 (0x0038 - 0x0000)
-struct BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGuid>                          K2Node_Event_UID;                                  // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	struct FGameplayTag                           K2Node_Event_NewState;                             // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_PreExecuteClientSide_;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_NotifyName;                           // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           K2Node_Event_Value;                                // 0x002C(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup");
-static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup) == 0x000038, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, EntryPoint) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_UID) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_UID' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_NewState) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_NewState' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_PreExecuteClientSide_) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_PreExecuteClientSide_' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_NotifyName) == 0x000024, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_NotifyName' has a wrong offset!");
-static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_Value) == 0x00002C, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_Value' has a wrong offset!");
 
 // Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_SetAttachmentState
 // 0x0020 (0x0020 - 0x0000)
@@ -349,6 +204,151 @@ static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArray
 static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArrayByType, Found) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArrayByType::Found' has a wrong offset!");
 static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArrayByType, CallFunc_FindAttachmentActorByTypeArr_Attachment) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArrayByType::CallFunc_FindAttachmentActorByTypeArr_Attachment' has a wrong offset!");
 static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArrayByType, CallFunc_FindAttachmentActorByTypeArr_Found) == 0x000030, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentArrayByType::CallFunc_FindAttachmentActorByTypeArr_Found' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetAttachmentActiveState
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState final
+{
+public:
+	struct FGameplayTag                           Result;                                            // 0x0000(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState) == 0x000004, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState) == 0x000008, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState, Result) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState::Result' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetADSSocketLocation
+// 0x0020 (0x0020 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation final
+{
+public:
+	struct FVector                                SocketLoc;                                         // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SocketFound;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation) == 0x000020, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation, SocketLoc) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation::SocketLoc' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation, SocketFound) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation::SocketFound' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_ExecuteChamberWeapon
+// 0x0028 (0x0028 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon final
+{
+public:
+	class UActorComponent*                        MPComp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           PlayerSlots;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           ChamberMontage;                                    // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        Speed;                                             // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon) == 0x000028, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, MPComp) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::MPComp' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, PlayerSlots) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::PlayerSlots' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::Result' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, ChamberMontage) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::ChamberMontage' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon, Speed) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon::Speed' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CheckCanReload
+// 0x0040 (0x0040 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload final
+{
+public:
+	class UActorComponent*                        MPComp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           PlayerSlots;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UJSIContainer_C*                        ContainerMag;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           ReloadMontage;                                     // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasInternalMag;                                    // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanChamber_;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UJSI_Slot_C*                            ReloadWith;                                        // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UAnimMontage*                           LoopReloadAnim;                                    // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload) == 0x000040, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, MPComp) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::MPComp' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, PlayerSlots) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::PlayerSlots' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::Result' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, ContainerMag) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::ContainerMag' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, ReloadMontage) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::ReloadMontage' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, HasInternalMag) == 0x000028, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::HasInternalMag' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, CanChamber_) == 0x000029, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::CanChamber_' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, ReloadWith) == 0x000030, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::ReloadWith' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload, LoopReloadAnim) == 0x000038, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload::LoopReloadAnim' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CanChamberWeapon
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon final
+{
+public:
+	class UActorComponent*                        MPComp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           PlayerSlots;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon) == 0x000018, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon, MPComp) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon::MPComp' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon, PlayerSlots) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon::PlayerSlots' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon::Result' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentRemoved
+// 0x0020 (0x0020 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved final
+{
+public:
+	TArray<struct FS_RepAttachmentInfo>           Attachments;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           AttachmentType;                                    // 0x0014(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved) == 0x000020, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved, Attachments) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved::Attachments' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved, Result) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved::Result' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved, AttachmentType) == 0x000014, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved::AttachmentType' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentInstalled
+// 0x0030 (0x0030 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled final
+{
+public:
+	struct FGuid                                  MainUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FS_RepAttachmentInfo>           Attachments;                                       // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          Result;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           AttachmentType;                                    // 0x0024(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled) == 0x000030, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, MainUID) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::MainUID' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, Attachments) == 0x000010, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::Attachments' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, Result) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::Result' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled, AttachmentType) == 0x000024, "Member 'BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled::AttachmentType' has a wrong offset!");
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup
+// 0x0038 (0x0038 - 0x0000)
+struct BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGuid>                          K2Node_Event_UID;                                  // 0x0008(0x0010)(ConstParm, ReferenceParm)
+	struct FGameplayTag                           K2Node_Event_NewState;                             // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_PreExecuteClientSide_;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_NotifyName;                           // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           K2Node_Event_Value;                                // 0x002C(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup) == 0x000008, "Wrong alignment on BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup");
+static_assert(sizeof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup) == 0x000038, "Wrong size on BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, EntryPoint) == 0x000000, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_UID) == 0x000008, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_UID' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_NewState) == 0x000018, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_NewState' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_PreExecuteClientSide_) == 0x000020, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_PreExecuteClientSide_' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_NotifyName) == 0x000024, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_NotifyName' has a wrong offset!");
+static_assert(offsetof(BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup, K2Node_Event_Value) == 0x00002C, "Member 'BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup::K2Node_Event_Value' has a wrong offset!");
 
 }
 

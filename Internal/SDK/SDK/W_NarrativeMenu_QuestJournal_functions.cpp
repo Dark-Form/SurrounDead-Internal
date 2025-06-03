@@ -65,20 +65,6 @@ void UW_NarrativeMenu_QuestJournal_C::Clear_Quest()
 }
 
 
-// Function W_NarrativeMenu_QuestJournal.W_NarrativeMenu_QuestJournal_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UW_NarrativeMenu_QuestJournal_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_NarrativeMenu_QuestJournal_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function W_NarrativeMenu_QuestJournal.W_NarrativeMenu_QuestJournal_C.CreateQuestWidgetButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -215,6 +201,20 @@ void UW_NarrativeMenu_QuestJournal_C::Show_Quest(class UQuest* Quest, class UBP_
 	Parms.JournalButton = JournalButton;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function W_NarrativeMenu_QuestJournal.W_NarrativeMenu_QuestJournal_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UW_NarrativeMenu_QuestJournal_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_NarrativeMenu_QuestJournal_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

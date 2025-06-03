@@ -14,148 +14,21 @@
 namespace SDK::Params
 {
 
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.SetPower_Warning
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_SetPower_Warning final
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	bool                                          SetWarning;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PoliceStationGarageDoor_C_SetPower_Warning) == 0x000001, "Wrong alignment on BP_PoliceStationGarageDoor_C_SetPower_Warning");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_SetPower_Warning) == 0x000001, "Wrong size on BP_PoliceStationGarageDoor_C_SetPower_Warning");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_SetPower_Warning, SetWarning) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_SetPower_Warning::SetWarning' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.SetPower_TurnedOn
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_SetPower_TurnedOn final
-{
-public:
-	bool                                          TurnOn;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_SetPower_TurnedOn) == 0x000001, "Wrong alignment on BP_PoliceStationGarageDoor_C_SetPower_TurnedOn");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_SetPower_TurnedOn) == 0x000001, "Wrong size on BP_PoliceStationGarageDoor_C_SetPower_TurnedOn");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_SetPower_TurnedOn, TurnOn) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_SetPower_TurnedOn::TurnOn' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnInterrupted_2203FE894E82A21CC5DE86828FE291C5
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnCompleted_2203FE894E82A21CC5DE86828FE291C5
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnBlendOut_2203FE894E82A21CC5DE86828FE291C5
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
-
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.MC_OpenDoor
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceStationGarageDoor_C_MC_OpenDoor final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_PoliceStationGarageDoor_C_MC_OpenDoor) == 0x000008, "Wrong alignment on BP_PoliceStationGarageDoor_C_MC_OpenDoor");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_MC_OpenDoor) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_MC_OpenDoor");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_MC_OpenDoor, Actor) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_MC_OpenDoor::Actor' has a wrong offset!");
+static_assert(alignof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 // Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.ExecuteUbergraph_BP_PoliceStationGarageDoor
 // 0x0140 (0x0140 - 0x0000)
@@ -237,21 +110,148 @@ static_assert(offsetof(BP_PoliceStationGarageDoor_C_ExecuteUbergraph_BP_PoliceSt
 static_assert(offsetof(BP_PoliceStationGarageDoor_C_ExecuteUbergraph_BP_PoliceStationGarageDoor, CallFunc_IsValid_ReturnValue_1) == 0x000129, "Member 'BP_PoliceStationGarageDoor_C_ExecuteUbergraph_BP_PoliceStationGarageDoor::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_PoliceStationGarageDoor_C_ExecuteUbergraph_BP_PoliceStationGarageDoor, K2Node_CreateDelegate_OutputDelegate_9) == 0x00012C, "Member 'BP_PoliceStationGarageDoor_C_ExecuteUbergraph_BP_PoliceStationGarageDoor::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
 
-// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.MC_OpenDoor
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_MC_OpenDoor final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_PoliceStationGarageDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(BP_PoliceStationGarageDoor_C_MC_OpenDoor) == 0x000008, "Wrong alignment on BP_PoliceStationGarageDoor_C_MC_OpenDoor");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_MC_OpenDoor) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_MC_OpenDoor");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_MC_OpenDoor, Actor) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_MC_OpenDoor::Actor' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnBlendOut_2203FE894E82A21CC5DE86828FE291C5
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnBlendOut_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnCompleted_2203FE894E82A21CC5DE86828FE291C5
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnCompleted_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnInterrupted_2203FE894E82A21CC5DE86828FE291C5
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnInterrupted_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000004, "Wrong alignment on BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3) == 0x000008, "Wrong size on BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3, NotifyName) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3::NotifyName' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.SetPower_TurnedOn
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_SetPower_TurnedOn final
+{
+public:
+	bool                                          TurnOn;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_SetPower_TurnedOn) == 0x000001, "Wrong alignment on BP_PoliceStationGarageDoor_C_SetPower_TurnedOn");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_SetPower_TurnedOn) == 0x000001, "Wrong size on BP_PoliceStationGarageDoor_C_SetPower_TurnedOn");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_SetPower_TurnedOn, TurnOn) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_SetPower_TurnedOn::TurnOn' has a wrong offset!");
+
+// Function BP_PoliceStationGarageDoor.BP_PoliceStationGarageDoor_C.SetPower_Warning
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PoliceStationGarageDoor_C_SetPower_Warning final
+{
+public:
+	bool                                          SetWarning;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_PoliceStationGarageDoor_C_SetPower_Warning) == 0x000001, "Wrong alignment on BP_PoliceStationGarageDoor_C_SetPower_Warning");
+static_assert(sizeof(BP_PoliceStationGarageDoor_C_SetPower_Warning) == 0x000001, "Wrong size on BP_PoliceStationGarageDoor_C_SetPower_Warning");
+static_assert(offsetof(BP_PoliceStationGarageDoor_C_SetPower_Warning, SetWarning) == 0x000000, "Member 'BP_PoliceStationGarageDoor_C_SetPower_Warning::SetWarning' has a wrong offset!");
 
 }
 

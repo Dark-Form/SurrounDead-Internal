@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Struct_KeepInventory_structs.hpp"
-#include "EJoystickTypes_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Enum_Occupation_structs.hpp"
+#include "Struct_KeepInventory_structs.hpp"
 #include "BP_MasterPlayerController_classes.hpp"
+#include "Enum_Occupation_structs.hpp"
+#include "EJoystickTypes_structs.hpp"
 
 
 namespace SDK
@@ -62,7 +62,7 @@ public:
 	void CameraShake(class UClass* CameraShake_0, bool Force_);
 	void CameraShakeClient(class UClass* Shake, float Scale);
 	void Client_Died();
-	void Client_SUICIDE();
+	void Client_Suicide();
 	void ComponentsToSave(TArray<class UActorComponent*>* Components);
 	void EventLightShafts(bool NewValue);
 	void EventVolFog(bool NewValue);

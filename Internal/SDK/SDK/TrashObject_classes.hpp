@@ -29,17 +29,17 @@ public:
 	double                                        Health;                                            // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void IsObjectDamageable_(bool* Damageable_);
-	void ExecuteUbergraph_TrashObject(int32 EntryPoint);
-	void Damage_Shoved(bool Anim, double Force);
-	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
-	void ComponentsToSave(TArray<class UActorComponent*>* Components);
-	void BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature();
-	void BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature(double Dmg);
-	void ActorSaved();
-	void ActorPreSave();
-	void ActorPreLoad();
 	void ActorLoaded();
+	void ActorPreLoad();
+	void ActorPreSave();
+	void ActorSaved();
+	void BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature(double Dmg);
+	void BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature();
+	void ComponentsToSave(TArray<class UActorComponent*>* Components);
+	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
+	void Damage_Shoved(bool Anim, double Force);
+	void ExecuteUbergraph_TrashObject(int32 EntryPoint);
+	void IsObjectDamageable_(bool* Damageable_);
 
 public:
 	static class UClass* StaticClass()

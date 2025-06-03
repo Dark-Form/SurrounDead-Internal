@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "S_AIRespawn_structs.hpp"
+#include "E_AIBehaviour_structs.hpp"
 #include "S_AIOptimization_structs.hpp"
-#include "S_AISpawner_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_AIBehaviour_structs.hpp"
+#include "S_AIRespawn_structs.hpp"
+#include "S_AISpawner_structs.hpp"
 
 
 namespace SDK::Params

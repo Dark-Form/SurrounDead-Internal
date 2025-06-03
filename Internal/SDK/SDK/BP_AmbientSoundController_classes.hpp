@@ -52,30 +52,30 @@ public:
 	double                                        Foggy_Volume_Multiplier;                           // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void Update_Volume_Multiplier();
-	void UDW_Starting_Up(class AUltra_Dynamic_Weather_C* UDW_0);
-	void UDW_Ending_Play();
-	void UDW_End_Play(class AActor* Actor, EEndPlayReason EndPlayReason);
-	void UDS_Starting_Up(class AUltra_Dynamic_Sky_C* UDS_0);
-	void UDS_Ending_Play();
-	void UDS_End_Play(class AActor* Actor, EEndPlayReason EndPlayReason);
-	void Sunset();
-	void Sunrise();
-	void State_Change_Fog();
-	void Started_Snowing();
-	void Started_Raining();
-	void Started_Dust();
-	void Start_Up_Sound();
-	void ReceiveBeginPlay();
-	void Get_UDS_and_UDW_Reference();
-	void Get_Starting_Dispatchers_State();
-	void Finished_Snowing();
-	void Finished_Raining();
-	void Finished_Dust();
-	void ExecuteUbergraph_BP_AmbientSoundController(int32 EntryPoint);
-	void Check_if_UDS_and_UDW_Are_Both_Gone();
 	void Bind_to_Dispatchers();
+	void Check_if_UDS_and_UDW_Are_Both_Gone();
+	void ExecuteUbergraph_BP_AmbientSoundController(int32 EntryPoint);
+	void Finished_Dust();
+	void Finished_Raining();
+	void Finished_Snowing();
+	void Get_Starting_Dispatchers_State();
+	void Get_UDS_and_UDW_Reference();
+	void ReceiveBeginPlay();
+	void Start_Up_Sound();
+	void Started_Dust();
+	void Started_Raining();
+	void Started_Snowing();
+	void State_Change_Fog();
+	void Sunrise();
+	void Sunset();
+	void UDS_End_Play(class AActor* Actor, EEndPlayReason EndPlayReason);
+	void UDS_Ending_Play();
+	void UDS_Starting_Up(class AUltra_Dynamic_Sky_C* UDS_0);
+	void UDW_End_Play(class AActor* Actor, EEndPlayReason EndPlayReason);
+	void UDW_Ending_Play();
+	void UDW_Starting_Up(class AUltra_Dynamic_Weather_C* UDW_0);
+	void Update_Volume_Multiplier();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

@@ -17,92 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MasterBandit.BP_MasterBandit_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterBandit_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.StopBurning
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterBandit_C::StopBurning()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "StopBurning");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.SetWeapons
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterBandit_C::SetWeapons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "SetWeapons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::SetPickupCount(int32 NewCount, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "SetPickupCount");
-
-	Params::BP_MasterBandit_C_SetPickupCount Parms{};
-
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.SetMeshAndMaterial
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    SkipRandomMaterial__0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::SetMeshAndMaterial(bool SkipRandomMaterial__0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "SetMeshAndMaterial");
-
-	Params::BP_MasterBandit_C_SetMeshAndMaterial Parms{};
-
-	Parms.SkipRandomMaterial__0 = SkipRandomMaterial__0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_MasterBandit.BP_MasterBandit_C.SetItemShadowVisibility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -422,6 +336,32 @@ void ABP_MasterBandit_C::OnBeginInteract(class AActor* InteractingActor, const T
 	Parms.Options = std::move(Options);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "JigSetCanInteract");
+
+	Params::BP_MasterBandit_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
@@ -811,6 +751,31 @@ void ABP_MasterBandit_C::JigMP_OnContainersSwap(class UJSIContainer_C* Container
 }
 
 
+// Function BP_MasterBandit.BP_MasterBandit_C.JigMP_GetLootWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Valid_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::JigMP_GetLootWidget(class UWidget** Result, bool* Valid_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "JigMP_GetLootWidget");
+
+	Params::BP_MasterBandit_C_JigMP_GetLootWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (Valid_ != nullptr)
+		*Valid_ = Parms.Valid_;
+}
+
+
 // Function BP_MasterBandit.BP_MasterBandit_C.JigCanInteract
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -945,162 +910,6 @@ void ABP_MasterBandit_C::GetMesh(class USkeletalMeshComponent** Mesh_0)
 }
 
 
-// Function BP_MasterBandit.BP_MasterBandit_C.GetJigMultiplayerComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "GetJigMultiplayerComponent");
-
-	Params::BP_MasterBandit_C_GetJigMultiplayerComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.AIHealthBarInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Visible_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString*                          Param_Name_0                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-// bool*                                   Boss__0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss__0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "AIHealthBarInfo");
-
-	Params::BP_MasterBandit_C_AIHealthBarInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Visible_ != nullptr)
-		*Visible_ = Parms.Visible_;
-
-	if (Param_Name_0 != nullptr)
-		*Param_Name_0 = std::move(Parms.Param_Name_0);
-
-	if (Boss__0 != nullptr)
-		*Boss__0 = Parms.Boss__0;
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.AI_Health
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterBandit_C::AI_Health()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "AI_Health");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.AddMarker
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidgetComponent*                 Marker_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::AddMarker(class UWidgetComponent* Marker_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "AddMarker");
-
-	Params::BP_MasterBandit_C_AddMarker Parms{};
-
-	Parms.Marker_0 = Marker_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.JigMP_GetLootWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Valid_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::JigMP_GetLootWidget(class UWidget** Result, bool* Valid_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "JigMP_GetLootWidget");
-
-	Params::BP_MasterBandit_C_JigMP_GetLootWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (Valid_ != nullptr)
-		*Valid_ = Parms.Valid_;
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "JigSetCanInteract");
-
-	Params::BP_MasterBandit_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterBandit.BP_MasterBandit_C.GetMainSceneComp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterBandit_C::GetMainSceneComp(class USceneComponent** Comp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterBandit_C", "GetMainSceneComp");
-
-	Params::BP_MasterBandit_C_GetMainSceneComp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
-}
-
-
 // Function BP_MasterBandit.BP_MasterBandit_C.GetMarker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1127,6 +936,48 @@ void ABP_MasterBandit_C::GetMarker(class UTexture2D** Texture, struct FLinearCol
 
 	if (MarkerOffset != nullptr)
 		*MarkerOffset = Parms.MarkerOffset;
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.GetMainSceneComp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::GetMainSceneComp(class USceneComponent** Comp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "GetMainSceneComp");
+
+	Params::BP_MasterBandit_C_GetMainSceneComp Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.GetJigMultiplayerComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "GetJigMultiplayerComponent");
+
+	Params::BP_MasterBandit_C_GetJigMultiplayerComponent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
 }
 
 
@@ -1329,6 +1180,155 @@ void ABP_MasterBandit_C::BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBou
 	Parms.bIsSeen = bIsSeen;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.AIHealthBarInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Visible_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString*                          Param_Name_0                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// bool*                                   Boss__0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss__0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "AIHealthBarInfo");
+
+	Params::BP_MasterBandit_C_AIHealthBarInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Visible_ != nullptr)
+		*Visible_ = Parms.Visible_;
+
+	if (Param_Name_0 != nullptr)
+		*Param_Name_0 = std::move(Parms.Param_Name_0);
+
+	if (Boss__0 != nullptr)
+		*Boss__0 = Parms.Boss__0;
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.AI_Health
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterBandit_C::AI_Health()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "AI_Health");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.AddMarker
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetComponent*                 Marker_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::AddMarker(class UWidgetComponent* Marker_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "AddMarker");
+
+	Params::BP_MasterBandit_C_AddMarker Parms{};
+
+	Parms.Marker_0 = Marker_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.SetMeshAndMaterial
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    SkipRandomMaterial__0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::SetMeshAndMaterial(bool SkipRandomMaterial__0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "SetMeshAndMaterial");
+
+	Params::BP_MasterBandit_C_SetMeshAndMaterial Parms{};
+
+	Parms.SkipRandomMaterial__0 = SkipRandomMaterial__0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterBandit_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "SetPickupCount");
+
+	Params::BP_MasterBandit_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.SetWeapons
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterBandit_C::SetWeapons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "SetWeapons");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.StopBurning
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterBandit_C::StopBurning()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "StopBurning");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterBandit.BP_MasterBandit_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterBandit_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterBandit_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

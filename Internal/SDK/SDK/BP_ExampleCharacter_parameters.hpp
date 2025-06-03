@@ -12,10 +12,10 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_HitboxTypeAI_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 #include "E_BlockType_structs.hpp"
-#include "E_HitboxTypeAI_structs.hpp"
 
 
 namespace SDK::Params

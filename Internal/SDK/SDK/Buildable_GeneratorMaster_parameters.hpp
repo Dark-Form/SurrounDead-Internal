@@ -19,6 +19,278 @@
 namespace SDK::Params
 {
 
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Svr_UpdateFuel
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_GeneratorMaster_C_Svr_UpdateFuel final
+{
+public:
+	double                                        Fuel;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_Svr_UpdateFuel) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_Svr_UpdateFuel");
+static_assert(sizeof(Buildable_GeneratorMaster_C_Svr_UpdateFuel) == 0x000008, "Wrong size on Buildable_GeneratorMaster_C_Svr_UpdateFuel");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Svr_UpdateFuel, Fuel) == 0x000000, "Member 'Buildable_GeneratorMaster_C_Svr_UpdateFuel::Fuel' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Shake
+// 0x0150 (0x0150 - 0x0000)
+struct Buildable_GeneratorMaster_C_Shake final
+{
+public:
+	struct FVector                                RelativeMeshLoc;                                   // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        SpriteShakeHor;                                    // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0068(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_Shake) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_Shake");
+static_assert(sizeof(Buildable_GeneratorMaster_C_Shake) == 0x000150, "Wrong size on Buildable_GeneratorMaster_C_Shake");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, RelativeMeshLoc) == 0x000000, "Member 'Buildable_GeneratorMaster_C_Shake::RelativeMeshLoc' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, SpriteShakeHor) == 0x000018, "Member 'Buildable_GeneratorMaster_C_Shake::SpriteShakeHor' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_RandomFloatInRange_ReturnValue) == 0x000020, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_BreakVector_X) == 0x000028, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_BreakVector_Y) == 0x000030, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_BreakVector_Z) == 0x000038, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000040, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000048, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_MakeVector_ReturnValue) == 0x000050, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000068, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct Buildable_GeneratorMaster_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_OnServerExecuteInteract");
+static_assert(sizeof(Buildable_GeneratorMaster_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_GeneratorMaster_C_OnServerExecuteInteract");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_GeneratorMaster_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_GeneratorMaster_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_GeneratorMaster_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.OnRep_TurnedOn?
+// 0x0028 (0x0028 - 0x0000)
+struct Buildable_GeneratorMaster_C_OnRep_TurnedOn_ final
+{
+public:
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_1;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue_1;                // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue_2;                // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_OnRep_TurnedOn_");
+static_assert(sizeof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_) == 0x000028, "Wrong size on Buildable_GeneratorMaster_C_OnRep_TurnedOn_");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_GetHUD_HUD) == 0x000000, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_GetHUD_HUD' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_GetHUD_HUD_1) == 0x000008, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_GetHUD_HUD_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_K2_SetTimer_ReturnValue) == 0x000010, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_K2_SetTimer_ReturnValue_1) == 0x000018, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_K2_SetTimer_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_K2_SetTimer_ReturnValue_2) == 0x000020, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_K2_SetTimer_ReturnValue_2' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct Buildable_GeneratorMaster_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_OnBeginInteract) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_OnBeginInteract");
+static_assert(sizeof(Buildable_GeneratorMaster_C_OnBeginInteract) == 0x000058, "Wrong size on Buildable_GeneratorMaster_C_OnBeginInteract");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'Buildable_GeneratorMaster_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_OnBeginInteract, Options) == 0x000008, "Member 'Buildable_GeneratorMaster_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects_ForceOff
+// 0x0250 (0x0250 - 0x0000)
+struct Buildable_GeneratorMaster_C_GetObjects_ForceOff final
+{
+public:
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0000(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FHitResult>                     CallFunc_SphereTraceMultiForObjects_OutHits;       // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceMultiForObjects_ReturnValue;   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_Array_Get_Item;                           // 0x0060(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14B[0x1];                                      // 0x014B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0158(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0170(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0188(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables;               // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables_1;             // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Requires_Power__Required_;                // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_GetObjects_ForceOff) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_GetObjects_ForceOff");
+static_assert(sizeof(Buildable_GeneratorMaster_C_GetObjects_ForceOff) == 0x000250, "Wrong size on Buildable_GeneratorMaster_C_GetObjects_ForceOff");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, Temp_object_Variable) == 0x000000, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_MakeArray_Array) == 0x000038, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_SphereTraceMultiForObjects_OutHits) == 0x000048, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_SphereTraceMultiForObjects_OutHits' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_SphereTraceMultiForObjects_ReturnValue) == 0x000058, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_SphereTraceMultiForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Array_Get_Item) == 0x000060, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Less_IntInt_ReturnValue) == 0x000148, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_bBlockingHit) == 0x000149, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_bInitialOverlap) == 0x00014A, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Time) == 0x00014C, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Distance) == 0x000150, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Location) == 0x000158, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_ImpactPoint) == 0x000170, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Normal) == 0x000188, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_ImpactNormal) == 0x0001A0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_PhysMat) == 0x0001B8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitActor) == 0x0001C0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitComponent) == 0x0001C8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitBoneName) == 0x0001D0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_BoneName) == 0x0001D8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitItem) == 0x0001E0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_ElementIndex) == 0x0001E4, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_FaceIndex) == 0x0001E8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_TraceStart) == 0x0001F0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_AsBPI_Buildables) == 0x000220, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_AsBPI_Buildables' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_bSuccess) == 0x000230, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_AsBPI_Buildables_1) == 0x000238, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_AsBPI_Buildables_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_bSuccess_1) == 0x000248, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Requires_Power__Required_) == 0x000249, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Requires_Power__Required_' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects
+// 0x0268 (0x0268 - 0x0000)
+struct Buildable_GeneratorMaster_C_GetObjects final
+{
+public:
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0000(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ConstParm, ReferenceParm)
+	TArray<struct FHitResult>                     CallFunc_SphereTraceMultiForObjects_OutHits;       // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceMultiForObjects_ReturnValue;   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_Array_Get_Item;                           // 0x0060(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14B[0x1];                                      // 0x014B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0158(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0170(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0188(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables;               // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables_1;             // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Requires_Power__Required_;                // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24A[0x6];                                      // 0x024A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables_2;             // 0x0250(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_GetObjects) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_GetObjects");
+static_assert(sizeof(Buildable_GeneratorMaster_C_GetObjects) == 0x000268, "Wrong size on Buildable_GeneratorMaster_C_GetObjects");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, Temp_object_Variable) == 0x000000, "Member 'Buildable_GeneratorMaster_C_GetObjects::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Buildable_GeneratorMaster_C_GetObjects::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'Buildable_GeneratorMaster_C_GetObjects::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_MakeArray_Array) == 0x000038, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_SphereTraceMultiForObjects_OutHits) == 0x000048, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_SphereTraceMultiForObjects_OutHits' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_SphereTraceMultiForObjects_ReturnValue) == 0x000058, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_SphereTraceMultiForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Array_Get_Item) == 0x000060, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Less_IntInt_ReturnValue) == 0x000148, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_bBlockingHit) == 0x000149, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_bInitialOverlap) == 0x00014A, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Time) == 0x00014C, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Distance) == 0x000150, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Location) == 0x000158, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_ImpactPoint) == 0x000170, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Normal) == 0x000188, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_ImpactNormal) == 0x0001A0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_PhysMat) == 0x0001B8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitActor) == 0x0001C0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitComponent) == 0x0001C8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitBoneName) == 0x0001D0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_BoneName) == 0x0001D8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitItem) == 0x0001E0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_ElementIndex) == 0x0001E4, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_FaceIndex) == 0x0001E8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_TraceStart) == 0x0001F0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_AsBPI_Buildables) == 0x000220, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_AsBPI_Buildables' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_bSuccess) == 0x000230, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_AsBPI_Buildables_1) == 0x000238, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_AsBPI_Buildables_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_bSuccess_1) == 0x000248, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Requires_Power__Required_) == 0x000249, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Requires_Power__Required_' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_AsBPI_Buildables_2) == 0x000250, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_AsBPI_Buildables_2' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_bSuccess_2) == 0x000260, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.FuelCost
+// 0x0010 (0x0010 - 0x0000)
+struct Buildable_GeneratorMaster_C_FuelCost final
+{
+public:
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_GeneratorMaster_C_FuelCost) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_FuelCost");
+static_assert(sizeof(Buildable_GeneratorMaster_C_FuelCost) == 0x000010, "Wrong size on Buildable_GeneratorMaster_C_FuelCost");
+static_assert(offsetof(Buildable_GeneratorMaster_C_FuelCost, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000000, "Member 'Buildable_GeneratorMaster_C_FuelCost::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_GeneratorMaster_C_FuelCost, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000008, "Member 'Buildable_GeneratorMaster_C_FuelCost::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
+
 // Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.ExecuteUbergraph_Buildable_GeneratorMaster
 // 0x03A0 (0x03A0 - 0x0000)
 struct Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster final
@@ -145,176 +417,6 @@ static_assert(offsetof(Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_Ge
 static_assert(offsetof(Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster, K2Node_MakeMap_Map_4) == 0x000348, "Member 'Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster::K2Node_MakeMap_Map_4' has a wrong offset!");
 static_assert(offsetof(Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster, CallFunc_RetriggerableDelay_Duration_ImplicitCast) == 0x000398, "Member 'Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster::CallFunc_RetriggerableDelay_Duration_ImplicitCast' has a wrong offset!");
 
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects_ForceOff
-// 0x0250 (0x0250 - 0x0000)
-struct Buildable_GeneratorMaster_C_GetObjects_ForceOff final
-{
-public:
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0000(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FHitResult>                     CallFunc_SphereTraceMultiForObjects_OutHits;       // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceMultiForObjects_ReturnValue;   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_Array_Get_Item;                           // 0x0060(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14B[0x1];                                      // 0x014B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0158(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0170(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0188(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables;               // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables_1;             // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Requires_Power__Required_;                // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_GetObjects_ForceOff) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_GetObjects_ForceOff");
-static_assert(sizeof(Buildable_GeneratorMaster_C_GetObjects_ForceOff) == 0x000250, "Wrong size on Buildable_GeneratorMaster_C_GetObjects_ForceOff");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, Temp_object_Variable) == 0x000000, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_MakeArray_Array) == 0x000038, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_SphereTraceMultiForObjects_OutHits) == 0x000048, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_SphereTraceMultiForObjects_OutHits' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_SphereTraceMultiForObjects_ReturnValue) == 0x000058, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_SphereTraceMultiForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Array_Get_Item) == 0x000060, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Less_IntInt_ReturnValue) == 0x000148, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_bBlockingHit) == 0x000149, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_bInitialOverlap) == 0x00014A, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Time) == 0x00014C, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Distance) == 0x000150, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Location) == 0x000158, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_ImpactPoint) == 0x000170, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_Normal) == 0x000188, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_ImpactNormal) == 0x0001A0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_PhysMat) == 0x0001B8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitActor) == 0x0001C0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitComponent) == 0x0001C8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitBoneName) == 0x0001D0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_BoneName) == 0x0001D8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_HitItem) == 0x0001E0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_ElementIndex) == 0x0001E4, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_FaceIndex) == 0x0001E8, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_TraceStart) == 0x0001F0, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_AsBPI_Buildables) == 0x000220, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_AsBPI_Buildables' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_bSuccess) == 0x000230, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_AsBPI_Buildables_1) == 0x000238, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_AsBPI_Buildables_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, K2Node_DynamicCast_bSuccess_1) == 0x000248, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects_ForceOff, CallFunc_Requires_Power__Required_) == 0x000249, "Member 'Buildable_GeneratorMaster_C_GetObjects_ForceOff::CallFunc_Requires_Power__Required_' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Svr_UpdateFuel
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_GeneratorMaster_C_Svr_UpdateFuel final
-{
-public:
-	double                                        Fuel;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_Svr_UpdateFuel) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_Svr_UpdateFuel");
-static_assert(sizeof(Buildable_GeneratorMaster_C_Svr_UpdateFuel) == 0x000008, "Wrong size on Buildable_GeneratorMaster_C_Svr_UpdateFuel");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Svr_UpdateFuel, Fuel) == 0x000000, "Member 'Buildable_GeneratorMaster_C_Svr_UpdateFuel::Fuel' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Shake
-// 0x0150 (0x0150 - 0x0000)
-struct Buildable_GeneratorMaster_C_Shake final
-{
-public:
-	struct FVector                                RelativeMeshLoc;                                   // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        SpriteShakeHor;                                    // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0068(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_Shake) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_Shake");
-static_assert(sizeof(Buildable_GeneratorMaster_C_Shake) == 0x000150, "Wrong size on Buildable_GeneratorMaster_C_Shake");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, RelativeMeshLoc) == 0x000000, "Member 'Buildable_GeneratorMaster_C_Shake::RelativeMeshLoc' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, SpriteShakeHor) == 0x000018, "Member 'Buildable_GeneratorMaster_C_Shake::SpriteShakeHor' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_RandomFloatInRange_ReturnValue) == 0x000020, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_BreakVector_X) == 0x000028, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_BreakVector_Y) == 0x000030, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_BreakVector_Z) == 0x000038, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000040, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x000048, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_MakeVector_ReturnValue) == 0x000050, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_Shake, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000068, "Member 'Buildable_GeneratorMaster_C_Shake::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct Buildable_GeneratorMaster_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_OnServerExecuteInteract");
-static_assert(sizeof(Buildable_GeneratorMaster_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_GeneratorMaster_C_OnServerExecuteInteract");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_GeneratorMaster_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_GeneratorMaster_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_GeneratorMaster_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.OnRep_TurnedOn?
-// 0x0028 (0x0028 - 0x0000)
-struct Buildable_GeneratorMaster_C_OnRep_TurnedOn_ final
-{
-public:
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_1;                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue_1;                // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue_2;                // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_OnRep_TurnedOn_");
-static_assert(sizeof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_) == 0x000028, "Wrong size on Buildable_GeneratorMaster_C_OnRep_TurnedOn_");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_GetHUD_HUD) == 0x000000, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_GetHUD_HUD' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_GetHUD_HUD_1) == 0x000008, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_GetHUD_HUD_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_K2_SetTimer_ReturnValue) == 0x000010, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_K2_SetTimer_ReturnValue_1) == 0x000018, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_K2_SetTimer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnRep_TurnedOn_, CallFunc_K2_SetTimer_ReturnValue_2) == 0x000020, "Member 'Buildable_GeneratorMaster_C_OnRep_TurnedOn_::CallFunc_K2_SetTimer_ReturnValue_2' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct Buildable_GeneratorMaster_C_OnBeginInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_OnBeginInteract) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_OnBeginInteract");
-static_assert(sizeof(Buildable_GeneratorMaster_C_OnBeginInteract) == 0x000058, "Wrong size on Buildable_GeneratorMaster_C_OnBeginInteract");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'Buildable_GeneratorMaster_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_OnBeginInteract, Options) == 0x000008, "Member 'Buildable_GeneratorMaster_C_OnBeginInteract::Options' has a wrong offset!");
-
 // Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Client_Notification
 // 0x0038 (0x0038 - 0x0000)
 struct Buildable_GeneratorMaster_C_Client_Notification final
@@ -347,108 +449,6 @@ static_assert(sizeof(Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSu
 static_assert(offsetof(Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
 static_assert(offsetof(Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
 static_assert(offsetof(Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_GeneratorMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects
-// 0x0268 (0x0268 - 0x0000)
-struct Buildable_GeneratorMaster_C_GetObjects final
-{
-public:
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0000(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x0038(0x0010)(ConstParm, ReferenceParm)
-	TArray<struct FHitResult>                     CallFunc_SphereTraceMultiForObjects_OutHits;       // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceMultiForObjects_ReturnValue;   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_Array_Get_Item;                           // 0x0060(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14B[0x1];                                      // 0x014B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0158(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0170(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0188(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x01A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_BoneName;                  // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EC[0x4];                                      // 0x01EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables;               // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables_1;             // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Requires_Power__Required_;                // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24A[0x6];                                      // 0x024A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IBPI_Buildables_C>     K2Node_DynamicCast_AsBPI_Buildables_2;             // 0x0250(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_GetObjects) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_GetObjects");
-static_assert(sizeof(Buildable_GeneratorMaster_C_GetObjects) == 0x000268, "Wrong size on Buildable_GeneratorMaster_C_GetObjects");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, Temp_object_Variable) == 0x000000, "Member 'Buildable_GeneratorMaster_C_GetObjects::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Buildable_GeneratorMaster_C_GetObjects::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'Buildable_GeneratorMaster_C_GetObjects::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_MakeArray_Array) == 0x000038, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_SphereTraceMultiForObjects_OutHits) == 0x000048, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_SphereTraceMultiForObjects_OutHits' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_SphereTraceMultiForObjects_ReturnValue) == 0x000058, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_SphereTraceMultiForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Array_Get_Item) == 0x000060, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Less_IntInt_ReturnValue) == 0x000148, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_bBlockingHit) == 0x000149, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_bInitialOverlap) == 0x00014A, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Time) == 0x00014C, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Distance) == 0x000150, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Location) == 0x000158, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_ImpactPoint) == 0x000170, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_Normal) == 0x000188, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_ImpactNormal) == 0x0001A0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_PhysMat) == 0x0001B8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitActor) == 0x0001C0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitComponent) == 0x0001C8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitBoneName) == 0x0001D0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_BoneName) == 0x0001D8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_BoneName' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_HitItem) == 0x0001E0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_ElementIndex) == 0x0001E4, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_FaceIndex) == 0x0001E8, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_TraceStart) == 0x0001F0, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_AsBPI_Buildables) == 0x000220, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_AsBPI_Buildables' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_bSuccess) == 0x000230, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_AsBPI_Buildables_1) == 0x000238, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_AsBPI_Buildables_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_bSuccess_1) == 0x000248, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, CallFunc_Requires_Power__Required_) == 0x000249, "Member 'Buildable_GeneratorMaster_C_GetObjects::CallFunc_Requires_Power__Required_' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_AsBPI_Buildables_2) == 0x000250, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_AsBPI_Buildables_2' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_GetObjects, K2Node_DynamicCast_bSuccess_2) == 0x000260, "Member 'Buildable_GeneratorMaster_C_GetObjects::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.FuelCost
-// 0x0010 (0x0010 - 0x0000)
-struct Buildable_GeneratorMaster_C_FuelCost final
-{
-public:
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_GeneratorMaster_C_FuelCost) == 0x000008, "Wrong alignment on Buildable_GeneratorMaster_C_FuelCost");
-static_assert(sizeof(Buildable_GeneratorMaster_C_FuelCost) == 0x000010, "Wrong size on Buildable_GeneratorMaster_C_FuelCost");
-static_assert(offsetof(Buildable_GeneratorMaster_C_FuelCost, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000000, "Member 'Buildable_GeneratorMaster_C_FuelCost::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_GeneratorMaster_C_FuelCost, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000008, "Member 'Buildable_GeneratorMaster_C_FuelCost::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
 
 }
 

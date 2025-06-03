@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_HiddenCache_Spawner.BP_HiddenCache_Spawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_HiddenCache_Spawner_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenCache_Spawner_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_HiddenCache_Spawner.BP_HiddenCache_Spawner_C.ExecuteUbergraph_BP_HiddenCache_Spawner
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_HiddenCache_Spawner_C::ExecuteUbergraph_BP_HiddenCache_Spawner(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HiddenCache_Spawner.BP_HiddenCache_Spawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_HiddenCache_Spawner_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HiddenCache_Spawner_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

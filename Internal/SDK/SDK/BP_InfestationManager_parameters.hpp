@@ -14,16 +14,34 @@
 namespace SDK::Params
 {
 
-// Function BP_InfestationManager.BP_InfestationManager_C.UserConstructionScript
-// 0x0010 (0x0010 - 0x0000)
-struct BP_InfestationManager_C_UserConstructionScript final
+// Function BP_InfestationManager.BP_InfestationManager_C.CheckAllPrimaryDestroyed
+// 0x0018 (0x0018 - 0x0000)
+struct BP_InfestationManager_C_CheckAllPrimaryDestroyed final
 {
 public:
-	TArray<class ABP_PrimaryInfestation_C*>       CallFunc_GetAllActorsOfClass_OutActors;            // 0x0000(0x0010)(ReferenceParm)
+	bool                                          All_;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_InfestationManager_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_InfestationManager_C_UserConstructionScript");
-static_assert(sizeof(BP_InfestationManager_C_UserConstructionScript) == 0x000010, "Wrong size on BP_InfestationManager_C_UserConstructionScript");
-static_assert(offsetof(BP_InfestationManager_C_UserConstructionScript, CallFunc_GetAllActorsOfClass_OutActors) == 0x000000, "Member 'BP_InfestationManager_C_UserConstructionScript::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
+static_assert(alignof(BP_InfestationManager_C_CheckAllPrimaryDestroyed) == 0x000004, "Wrong alignment on BP_InfestationManager_C_CheckAllPrimaryDestroyed");
+static_assert(sizeof(BP_InfestationManager_C_CheckAllPrimaryDestroyed) == 0x000018, "Wrong size on BP_InfestationManager_C_CheckAllPrimaryDestroyed");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, All_) == 0x000000, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::All_' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, Temp_bool_Variable) == 0x000001, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, Temp_int_Variable) == 0x000004, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_Array_LastIndex_ReturnValue) == 0x000010, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000014, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_IsValid_ReturnValue) == 0x000015, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_BooleanAND_ReturnValue) == 0x000016, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_InfestationManager.BP_InfestationManager_C.ExecuteUbergraph_BP_InfestationManager
 // 0x0048 (0x0048 - 0x0000)
@@ -63,34 +81,16 @@ static_assert(offsetof(BP_InfestationManager_C_ExecuteUbergraph_BP_InfestationMa
 static_assert(offsetof(BP_InfestationManager_C_ExecuteUbergraph_BP_InfestationManager, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000044, "Member 'BP_InfestationManager_C_ExecuteUbergraph_BP_InfestationManager::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_InfestationManager_C_ExecuteUbergraph_BP_InfestationManager, CallFunc_BooleanAND_ReturnValue) == 0x000045, "Member 'BP_InfestationManager_C_ExecuteUbergraph_BP_InfestationManager::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
-// Function BP_InfestationManager.BP_InfestationManager_C.CheckAllPrimaryDestroyed
-// 0x0018 (0x0018 - 0x0000)
-struct BP_InfestationManager_C_CheckAllPrimaryDestroyed final
+// Function BP_InfestationManager.BP_InfestationManager_C.UserConstructionScript
+// 0x0010 (0x0010 - 0x0000)
+struct BP_InfestationManager_C_UserConstructionScript final
 {
 public:
-	bool                                          All_;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ABP_PrimaryInfestation_C*>       CallFunc_GetAllActorsOfClass_OutActors;            // 0x0000(0x0010)(ReferenceParm)
 };
-static_assert(alignof(BP_InfestationManager_C_CheckAllPrimaryDestroyed) == 0x000004, "Wrong alignment on BP_InfestationManager_C_CheckAllPrimaryDestroyed");
-static_assert(sizeof(BP_InfestationManager_C_CheckAllPrimaryDestroyed) == 0x000018, "Wrong size on BP_InfestationManager_C_CheckAllPrimaryDestroyed");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, All_) == 0x000000, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::All_' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, Temp_bool_Variable) == 0x000001, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, Temp_int_Variable) == 0x000004, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_Array_LastIndex_ReturnValue) == 0x000010, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000014, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_IsValid_ReturnValue) == 0x000015, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_InfestationManager_C_CheckAllPrimaryDestroyed, CallFunc_BooleanAND_ReturnValue) == 0x000016, "Member 'BP_InfestationManager_C_CheckAllPrimaryDestroyed::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_InfestationManager_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_InfestationManager_C_UserConstructionScript");
+static_assert(sizeof(BP_InfestationManager_C_UserConstructionScript) == 0x000010, "Wrong size on BP_InfestationManager_C_UserConstructionScript");
+static_assert(offsetof(BP_InfestationManager_C_UserConstructionScript, CallFunc_GetAllActorsOfClass_OutActors) == 0x000000, "Member 'BP_InfestationManager_C_UserConstructionScript::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
 
 }
 

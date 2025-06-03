@@ -12,9 +12,9 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_ReplicatedContainerInfo_structs.hpp"
-#include "S_InvWeight_structs.hpp"
 #include "Buildable_MASTER_classes.hpp"
+#include "S_InvWeight_structs.hpp"
+#include "S_ReplicatedContainerInfo_structs.hpp"
 
 
 namespace SDK
@@ -33,7 +33,6 @@ public:
 
 public:
 	void ActorLoaded();
-	void ActorPreSave();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
 	void Event_BeginInteract();
 	void Event_PowerOff();
@@ -42,6 +41,7 @@ public:
 	void ExecuteUbergraph_Buildable_BatteryCharger(int32 EntryPoint);
 	void ReceiveBeginPlay();
 	void UpdateStorageStat();
+	void ActorPreSave();
 	void JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef);
 	void JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result);
 	void OnInteractBuildable(class AActor* Actor);

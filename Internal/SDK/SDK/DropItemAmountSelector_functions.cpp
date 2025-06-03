@@ -31,15 +31,15 @@ void UDropItemAmountSelector_C::BndEvt__CancelBtn_K2Node_ComponentBoundEvent_1_O
 }
 
 
-// Function DropItemAmountSelector.DropItemAmountSelector_C.BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
+// Function DropItemAmountSelector.DropItemAmountSelector_C.BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UDropItemAmountSelector_C::BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
+void UDropItemAmountSelector_C::BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DropItemAmountSelector_C", "BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("DropItemAmountSelector_C", "BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

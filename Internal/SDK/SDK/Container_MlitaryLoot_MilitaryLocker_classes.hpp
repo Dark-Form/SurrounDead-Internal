@@ -25,10 +25,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Container_MlitaryLoot_MilitaryLocker_C; // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_Container_MlitaryLoot_MilitaryLocker(int32 EntryPoint);
-	void Event2();
 	void Event1();
+	void Event2();
+	void ExecuteUbergraph_Container_MlitaryLoot_MilitaryLocker(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

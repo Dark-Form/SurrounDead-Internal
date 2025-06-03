@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.ExecuteUbergraph_Buildable_GeneratorMaster
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_GeneratorMaster_C::ExecuteUbergraph_Buildable_GeneratorMaster(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "ExecuteUbergraph_Buildable_GeneratorMaster");
-
-	Params::Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects_ForceOff
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABuildable_GeneratorMaster_C::GetObjects_ForceOff()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "GetObjects_ForceOff");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Svr_UpdateFuel
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -187,6 +153,68 @@ void ABuildable_GeneratorMaster_C::OnBeginInteract(class AActor* InteractingActo
 }
 
 
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects_ForceOff
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABuildable_GeneratorMaster_C::GetObjects_ForceOff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "GetObjects_ForceOff");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABuildable_GeneratorMaster_C::GetObjects()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "GetObjects");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.FuelCost
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABuildable_GeneratorMaster_C::FuelCost()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "FuelCost");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.ExecuteUbergraph_Buildable_GeneratorMaster
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_GeneratorMaster_C::ExecuteUbergraph_Buildable_GeneratorMaster(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "ExecuteUbergraph_Buildable_GeneratorMaster");
+
+	Params::Buildable_GeneratorMaster_C_ExecuteUbergraph_Buildable_GeneratorMaster Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.Client_Notification
 // (Net, NetClient, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -246,34 +274,6 @@ void ABuildable_GeneratorMaster_C::ActorLoaded()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "ActorLoaded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.GetObjects
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABuildable_GeneratorMaster_C::GetObjects()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "GetObjects");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_GeneratorMaster.Buildable_GeneratorMaster_C.FuelCost
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABuildable_GeneratorMaster_C::FuelCost()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_GeneratorMaster_C", "FuelCost");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

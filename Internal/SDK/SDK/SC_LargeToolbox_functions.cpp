@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_LargeToolbox.SC_LargeToolbox_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_LargeToolbox_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_LargeToolbox_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_LargeToolbox.SC_LargeToolbox_C.ExecuteUbergraph_SC_LargeToolbox
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_LargeToolbox_C::ExecuteUbergraph_SC_LargeToolbox(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_LargeToolbox.SC_LargeToolbox_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_LargeToolbox_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_LargeToolbox_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

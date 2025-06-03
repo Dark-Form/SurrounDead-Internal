@@ -32,12 +32,12 @@ public:
 	TArray<struct FTransform>                     AISpawningTransforms;                              // 0x02D8(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void UserConstructionScript();
-	void TraceForActor(bool* Ouput);
-	void SpawnInfestation();
-	void ReceiveBeginPlay();
-	bool RandomSpawn();
 	void ExecuteUbergraph_BP_RandomInfestationSpawnPoint(int32 EntryPoint);
+	bool RandomSpawn();
+	void ReceiveBeginPlay();
+	void SpawnInfestation();
+	void TraceForActor(bool* Ouput);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

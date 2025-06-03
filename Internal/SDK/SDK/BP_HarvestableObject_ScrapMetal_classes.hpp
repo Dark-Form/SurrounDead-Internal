@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BP_HarvestableObject_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "BP_HarvestableObject_classes.hpp"
 
 
 namespace SDK
@@ -31,31 +31,31 @@ public:
 	bool                                          Salvaged_;                                         // 0x0309(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Svr_PlaySound(const struct FVector& Location);
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void SetInteractOption(const struct FGameplayTag& Option);
-	void ReceiveBeginPlay();
-	void PickupBuildFromGround();
-	void OnStopExecuteInteract(class AActor* InteractingActor);
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
-	void OnExecuteInteractEnded();
-	void OnExecuteInteractDialogue(class AActor* InteractingActor);
-	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
-	void OnEndInteract();
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
-	void MC_PlaySound(const struct FVector& Location);
-	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
-	void JigCanInteract(bool* Result);
-	void GetMainSceneComp(class USceneComponent** Comp);
-	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
-	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
-	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
-	void ExecuteUbergraph_BP_HarvestableObject_ScrapMetal(int32 EntryPoint);
-	void Event_UpdateTimer();
-	void Event_StopTimer();
-	void Event_HoldTimer();
 	void BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void Event_HoldTimer();
+	void Event_StopTimer();
+	void Event_UpdateTimer();
+	void ExecuteUbergraph_BP_HarvestableObject_ScrapMetal(int32 EntryPoint);
+	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
+	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
+	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
+	void GetMainSceneComp(class USceneComponent** Comp);
+	void JigCanInteract(bool* Result);
+	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
+	void MC_PlaySound(const struct FVector& Location);
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void OnEndInteract();
+	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
+	void OnExecuteInteractDialogue(class AActor* InteractingActor);
+	void OnExecuteInteractEnded();
+	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void OnStopExecuteInteract(class AActor* InteractingActor);
+	void PickupBuildFromGround();
+	void ReceiveBeginPlay();
+	void SetInteractOption(const struct FGameplayTag& Option);
+	void SetPickupCount(int32 NewCount, bool* Result);
+	void Svr_PlaySound(const struct FVector& Location);
 
 public:
 	static class UClass* StaticClass()

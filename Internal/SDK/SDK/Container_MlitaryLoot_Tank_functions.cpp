@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function Container_MlitaryLoot_Tank.Container_MlitaryLoot_Tank_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Container_MlitaryLoot_Tank.Container_MlitaryLoot_Tank_C.Event1
+// (BlueprintCallable, BlueprintEvent)
 
-void AContainer_MlitaryLoot_Tank_C::ReceiveBeginPlay()
+void AContainer_MlitaryLoot_Tank_C::Event1()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Container_MlitaryLoot_Tank_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Container_MlitaryLoot_Tank_C", "Event1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Container_MlitaryLoot_Tank.Container_MlitaryLoot_Tank_C.Event2
+// (BlueprintCallable, BlueprintEvent)
+
+void AContainer_MlitaryLoot_Tank_C::Event2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Container_MlitaryLoot_Tank_C", "Event2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +65,15 @@ void AContainer_MlitaryLoot_Tank_C::ExecuteUbergraph_Container_MlitaryLoot_Tank(
 }
 
 
-// Function Container_MlitaryLoot_Tank.Container_MlitaryLoot_Tank_C.Event2
-// (BlueprintCallable, BlueprintEvent)
+// Function Container_MlitaryLoot_Tank.Container_MlitaryLoot_Tank_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AContainer_MlitaryLoot_Tank_C::Event2()
+void AContainer_MlitaryLoot_Tank_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Container_MlitaryLoot_Tank_C", "Event2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Container_MlitaryLoot_Tank.Container_MlitaryLoot_Tank_C.Event1
-// (BlueprintCallable, BlueprintEvent)
-
-void AContainer_MlitaryLoot_Tank_C::Event1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Container_MlitaryLoot_Tank_C", "Event1");
+		Func = Class->GetFunction("Container_MlitaryLoot_Tank_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -28,17 +28,6 @@ static_assert(alignof(BP_MasterCamera_C_Actor_Attack_Target) == 0x000008, "Wrong
 static_assert(sizeof(BP_MasterCamera_C_Actor_Attack_Target) == 0x000008, "Wrong size on BP_MasterCamera_C_Actor_Attack_Target");
 static_assert(offsetof(BP_MasterCamera_C_Actor_Attack_Target, Attack_Target) == 0x000000, "Member 'BP_MasterCamera_C_Actor_Attack_Target::Attack_Target' has a wrong offset!");
 
-// Function BP_MasterCamera.BP_MasterCamera_C.AI Can Interact?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MasterCamera_C_AI_Can_Interact_ final
-{
-public:
-	bool                                          Can_Interact;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterCamera_C_AI_Can_Interact_) == 0x000001, "Wrong alignment on BP_MasterCamera_C_AI_Can_Interact_");
-static_assert(sizeof(BP_MasterCamera_C_AI_Can_Interact_) == 0x000001, "Wrong size on BP_MasterCamera_C_AI_Can_Interact_");
-static_assert(offsetof(BP_MasterCamera_C_AI_Can_Interact_, Can_Interact) == 0x000000, "Member 'BP_MasterCamera_C_AI_Can_Interact_::Can_Interact' has a wrong offset!");
-
 // Function BP_MasterCamera.BP_MasterCamera_C.ExecuteUbergraph_BP_MasterCamera
 // 0x01A0 (0x01A0 - 0x0000)
 struct BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera final
@@ -85,6 +74,17 @@ static_assert(offsetof(BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera, CallF
 static_assert(offsetof(BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x00018C, "Member 'BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera, CallFunc_MakeRotator_Yaw_ImplicitCast_1) == 0x000190, "Member 'BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera::CallFunc_MakeRotator_Yaw_ImplicitCast_1' has a wrong offset!");
 static_assert(offsetof(BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera, CallFunc_Server_Turret_Damaged_Damage_ImplicitCast) == 0x000198, "Member 'BP_MasterCamera_C_ExecuteUbergraph_BP_MasterCamera::CallFunc_Server_Turret_Damaged_Damage_ImplicitCast' has a wrong offset!");
+
+// Function BP_MasterCamera.BP_MasterCamera_C.AI Can Interact?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MasterCamera_C_AI_Can_Interact_ final
+{
+public:
+	bool                                          Can_Interact;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterCamera_C_AI_Can_Interact_) == 0x000001, "Wrong alignment on BP_MasterCamera_C_AI_Can_Interact_");
+static_assert(sizeof(BP_MasterCamera_C_AI_Can_Interact_) == 0x000001, "Wrong size on BP_MasterCamera_C_AI_Can_Interact_");
+static_assert(offsetof(BP_MasterCamera_C_AI_Can_Interact_, Can_Interact) == 0x000000, "Member 'BP_MasterCamera_C_AI_Can_Interact_::Can_Interact' has a wrong offset!");
 
 // Function BP_MasterCamera.BP_MasterCamera_C.ReceiveAnyDamage
 // 0x0020 (0x0020 - 0x0000)

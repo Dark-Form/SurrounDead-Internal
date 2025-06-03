@@ -11,51 +11,16 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "S_AllAIAnims_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_AIAnims_structs.hpp"
+#include "PhysicsCore_structs.hpp"
+#include "S_AllAIAnims_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 #include "E_BlockType_structs.hpp"
-#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Actor Aim Focus
-// 0x0008 (0x0008 - 0x0000)
-struct AnimBP_HumanAI_C_Actor_Aim_Focus final
-{
-public:
-	class AActor*                                 Instigator;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_HumanAI_C_Actor_Aim_Focus) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_Actor_Aim_Focus");
-static_assert(sizeof(AnimBP_HumanAI_C_Actor_Aim_Focus) == 0x000008, "Wrong size on AnimBP_HumanAI_C_Actor_Aim_Focus");
-static_assert(offsetof(AnimBP_HumanAI_C_Actor_Aim_Focus, Instigator) == 0x000000, "Member 'AnimBP_HumanAI_C_Actor_Aim_Focus::Instigator' has a wrong offset!");
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_HumanAI_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(AnimBP_HumanAI_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_AnimGraph");
-static_assert(sizeof(AnimBP_HumanAI_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_HumanAI_C_AnimGraph");
-static_assert(offsetof(AnimBP_HumanAI_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_HumanAI_C_AnimGraph::AnimGraph_0' has a wrong offset!");
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Alert Actor Defenders
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_HumanAI_C_Alert_Actor_Defenders final
-{
-public:
-	class AActor*                                 Attacked;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Attacker;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_HumanAI_C_Alert_Actor_Defenders) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_Alert_Actor_Defenders");
-static_assert(sizeof(AnimBP_HumanAI_C_Alert_Actor_Defenders) == 0x000010, "Wrong size on AnimBP_HumanAI_C_Alert_Actor_Defenders");
-static_assert(offsetof(AnimBP_HumanAI_C_Alert_Actor_Defenders, Attacked) == 0x000000, "Member 'AnimBP_HumanAI_C_Alert_Actor_Defenders::Attacked' has a wrong offset!");
-static_assert(offsetof(AnimBP_HumanAI_C_Alert_Actor_Defenders, Attacker) == 0x000008, "Member 'AnimBP_HumanAI_C_Alert_Actor_Defenders::Attacker' has a wrong offset!");
 
 // Function AnimBP_HumanAI.AnimBP_HumanAI_C.Return Current Behaviour
 // 0x0003 (0x0003 - 0x0000)
@@ -450,6 +415,30 @@ static_assert(alignof(AnimBP_HumanAI_C_BlueprintUpdateAnimation) == 0x000004, "W
 static_assert(sizeof(AnimBP_HumanAI_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_HumanAI_C_BlueprintUpdateAnimation");
 static_assert(offsetof(AnimBP_HumanAI_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_HumanAI_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
 
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_HumanAI_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(AnimBP_HumanAI_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_AnimGraph");
+static_assert(sizeof(AnimBP_HumanAI_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_HumanAI_C_AnimGraph");
+static_assert(offsetof(AnimBP_HumanAI_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_HumanAI_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Alert Actor Defenders
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_HumanAI_C_Alert_Actor_Defenders final
+{
+public:
+	class AActor*                                 Attacked;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Attacker;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_HumanAI_C_Alert_Actor_Defenders) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_Alert_Actor_Defenders");
+static_assert(sizeof(AnimBP_HumanAI_C_Alert_Actor_Defenders) == 0x000010, "Wrong size on AnimBP_HumanAI_C_Alert_Actor_Defenders");
+static_assert(offsetof(AnimBP_HumanAI_C_Alert_Actor_Defenders, Attacked) == 0x000000, "Member 'AnimBP_HumanAI_C_Alert_Actor_Defenders::Attacked' has a wrong offset!");
+static_assert(offsetof(AnimBP_HumanAI_C_Alert_Actor_Defenders, Attacker) == 0x000008, "Member 'AnimBP_HumanAI_C_Alert_Actor_Defenders::Attacker' has a wrong offset!");
+
 // Function AnimBP_HumanAI.AnimBP_HumanAI_C.AI Can Interact?
 // 0x0001 (0x0001 - 0x0000)
 struct AnimBP_HumanAI_C_AI_Can_Interact_ final
@@ -518,6 +507,17 @@ public:
 static_assert(alignof(AnimBP_HumanAI_C_Actor_Attack_Target) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_Actor_Attack_Target");
 static_assert(sizeof(AnimBP_HumanAI_C_Actor_Attack_Target) == 0x000008, "Wrong size on AnimBP_HumanAI_C_Actor_Attack_Target");
 static_assert(offsetof(AnimBP_HumanAI_C_Actor_Attack_Target, Attack_Target) == 0x000000, "Member 'AnimBP_HumanAI_C_Actor_Attack_Target::Attack_Target' has a wrong offset!");
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Actor Aim Focus
+// 0x0008 (0x0008 - 0x0000)
+struct AnimBP_HumanAI_C_Actor_Aim_Focus final
+{
+public:
+	class AActor*                                 Instigator;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_HumanAI_C_Actor_Aim_Focus) == 0x000008, "Wrong alignment on AnimBP_HumanAI_C_Actor_Aim_Focus");
+static_assert(sizeof(AnimBP_HumanAI_C_Actor_Aim_Focus) == 0x000008, "Wrong size on AnimBP_HumanAI_C_Actor_Aim_Focus");
+static_assert(offsetof(AnimBP_HumanAI_C_Actor_Aim_Focus, Instigator) == 0x000000, "Member 'AnimBP_HumanAI_C_Actor_Aim_Focus::Instigator' has a wrong offset!");
 
 // Function AnimBP_HumanAI.AnimBP_HumanAI_C.AI Is Dead?
 // 0x0001 (0x0001 - 0x0000)

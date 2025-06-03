@@ -16,18 +16,6 @@
 namespace SDK
 {
 
-// ScriptStruct AnimBP_Rabbit.AnimBP_Rabbit_C.AnimBlueprintGeneratedMutableData
-// 0x0007 (0x0008 - 0x0001)
-struct AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-public:
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData) == 0x000004, "Wrong alignment on AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData");
-static_assert(sizeof(AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData) == 0x000008, "Wrong size on AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData");
-static_assert(offsetof(AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData, __FloatProperty) == 0x000004, "Member 'AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData::__FloatProperty' has a wrong offset!");
-
 // ScriptStruct AnimBP_Rabbit.AnimBP_Rabbit_C.AnimBlueprintGeneratedConstantData
 // 0x00F7 (0x00F8 - 0x0001)
 struct AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -70,6 +58,18 @@ static_assert(offsetof(AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData, __Int
 static_assert(offsetof(AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData, __StructProperty_51) == 0x000040, "Member 'AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData::__StructProperty_51' has a wrong offset!");
 static_assert(offsetof(AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000060, "Member 'AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
 static_assert(offsetof(AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x0000E0, "Member 'AnimBP_Rabbit::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+
+// ScriptStruct AnimBP_Rabbit.AnimBP_Rabbit_C.AnimBlueprintGeneratedMutableData
+// 0x0007 (0x0008 - 0x0001)
+struct AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+public:
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData) == 0x000004, "Wrong alignment on AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData");
+static_assert(sizeof(AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData) == 0x000008, "Wrong size on AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData");
+static_assert(offsetof(AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData, __FloatProperty) == 0x000004, "Member 'AnimBP_Rabbit::FAnimBlueprintGeneratedMutableData::__FloatProperty' has a wrong offset!");
 
 }
 

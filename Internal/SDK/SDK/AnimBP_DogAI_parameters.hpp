@@ -11,30 +11,16 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "S_AllAIAnims_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_AIAnims_structs.hpp"
+#include "PhysicsCore_structs.hpp"
+#include "S_AllAIAnims_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 #include "E_BlockType_structs.hpp"
-#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function AnimBP_DogAI.AnimBP_DogAI_C.AI Block
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_DogAI_C_AI_Block final
-{
-public:
-	E_BlockType                                   Block_Type;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Block_Attacker;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_DogAI_C_AI_Block) == 0x000008, "Wrong alignment on AnimBP_DogAI_C_AI_Block");
-static_assert(sizeof(AnimBP_DogAI_C_AI_Block) == 0x000010, "Wrong size on AnimBP_DogAI_C_AI_Block");
-static_assert(offsetof(AnimBP_DogAI_C_AI_Block, Block_Type) == 0x000000, "Member 'AnimBP_DogAI_C_AI_Block::Block_Type' has a wrong offset!");
-static_assert(offsetof(AnimBP_DogAI_C_AI_Block, Block_Attacker) == 0x000008, "Member 'AnimBP_DogAI_C_AI_Block::Block_Attacker' has a wrong offset!");
 
 // Function AnimBP_DogAI.AnimBP_DogAI_C.Return Current Behaviour
 // 0x0003 (0x0003 - 0x0000)
@@ -474,6 +460,20 @@ public:
 static_assert(alignof(AnimBP_DogAI_C_AI_Camera_Activate) == 0x000001, "Wrong alignment on AnimBP_DogAI_C_AI_Camera_Activate");
 static_assert(sizeof(AnimBP_DogAI_C_AI_Camera_Activate) == 0x000001, "Wrong size on AnimBP_DogAI_C_AI_Camera_Activate");
 static_assert(offsetof(AnimBP_DogAI_C_AI_Camera_Activate, Activate) == 0x000000, "Member 'AnimBP_DogAI_C_AI_Camera_Activate::Activate' has a wrong offset!");
+
+// Function AnimBP_DogAI.AnimBP_DogAI_C.AI Block
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_DogAI_C_AI_Block final
+{
+public:
+	E_BlockType                                   Block_Type;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Block_Attacker;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_DogAI_C_AI_Block) == 0x000008, "Wrong alignment on AnimBP_DogAI_C_AI_Block");
+static_assert(sizeof(AnimBP_DogAI_C_AI_Block) == 0x000010, "Wrong size on AnimBP_DogAI_C_AI_Block");
+static_assert(offsetof(AnimBP_DogAI_C_AI_Block, Block_Type) == 0x000000, "Member 'AnimBP_DogAI_C_AI_Block::Block_Type' has a wrong offset!");
+static_assert(offsetof(AnimBP_DogAI_C_AI_Block, Block_Attacker) == 0x000008, "Member 'AnimBP_DogAI_C_AI_Block::Block_Attacker' has a wrong offset!");
 
 // Function AnimBP_DogAI.AnimBP_DogAI_C.AI Animation Switch
 // 0x0001 (0x0001 - 0x0000)

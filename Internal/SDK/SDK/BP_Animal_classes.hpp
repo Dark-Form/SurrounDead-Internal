@@ -29,22 +29,22 @@ public:
 	class USD_AIComponent_C*                      SD_AIComponent;                                    // 0x0698(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Turret_Start_Reload();
-	void Turret_Idle_Stop();
-	void Turret_Idle_Start();
-	void Turret_End_Reload();
-	void Turret_Destroyed_Effect();
-	void ExecuteUbergraph_BP_Animal(int32 EntryPoint);
-	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
-	void AI_End_Alert();
-	void AI_Dead();
-	void AI_Can_Interact_(bool* Can_Interact);
-	void AI_Camera_Activate(bool Activate);
-	void AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
-	void AI_Animation_Switch(E_AIBehaviour Behaviour);
-	void AI_Alert(class AActor* Alert_Actor);
-	void Actor_Attack_Target(class AActor** Attack_Target);
 	void Actor_Aim_Focus(class AActor* Instigator_0);
+	void Actor_Attack_Target(class AActor** Attack_Target);
+	void AI_Alert(class AActor* Alert_Actor);
+	void AI_Animation_Switch(E_AIBehaviour Behaviour);
+	void AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
+	void AI_Camera_Activate(bool Activate);
+	void AI_Can_Interact_(bool* Can_Interact);
+	void AI_Dead();
+	void AI_End_Alert();
+	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
+	void ExecuteUbergraph_BP_Animal(int32 EntryPoint);
+	void Turret_Destroyed_Effect();
+	void Turret_End_Reload();
+	void Turret_Idle_Start();
+	void Turret_Idle_Stop();
+	void Turret_Start_Reload();
 
 	void AI_Is_Dead_(bool* Dead_0) const;
 

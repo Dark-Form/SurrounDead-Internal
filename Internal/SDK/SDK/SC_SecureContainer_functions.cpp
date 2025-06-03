@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_SecureContainer.SC_SecureContainer_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_SecureContainer_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_SecureContainer_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_SecureContainer.SC_SecureContainer_C.ExecuteUbergraph_SC_SecureContainer
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_SecureContainer_C::ExecuteUbergraph_SC_SecureContainer(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_SecureContainer.SC_SecureContainer_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_SecureContainer_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_SecureContainer_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

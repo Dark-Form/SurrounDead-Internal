@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "S_JigCrafting_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_JigCrafting_structs.hpp"
 #include "RepItemInfo_structs.hpp"
 #include "InputCore_structs.hpp"
 

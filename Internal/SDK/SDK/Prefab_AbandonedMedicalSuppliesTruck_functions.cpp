@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Prefab_AbandonedMedicalSuppliesTruck.Prefab_AbandonedMedicalSuppliesTruck_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APrefab_AbandonedMedicalSuppliesTruck_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prefab_AbandonedMedicalSuppliesTruck_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Prefab_AbandonedMedicalSuppliesTruck.Prefab_AbandonedMedicalSuppliesTruck_C.ExecuteUbergraph_Prefab_AbandonedMedicalSuppliesTruck
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void APrefab_AbandonedMedicalSuppliesTruck_C::ExecuteUbergraph_Prefab_AbandonedM
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Prefab_AbandonedMedicalSuppliesTruck.Prefab_AbandonedMedicalSuppliesTruck_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APrefab_AbandonedMedicalSuppliesTruck_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Prefab_AbandonedMedicalSuppliesTruck_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

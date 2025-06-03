@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
+#include "Struct_Radio_structs.hpp"
 #include "S_JigPayload_structs.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
-#include "Struct_Radio_structs.hpp"
 
 
 namespace SDK::Params

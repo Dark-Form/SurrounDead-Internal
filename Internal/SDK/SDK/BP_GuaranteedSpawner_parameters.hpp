@@ -20,54 +20,6 @@
 namespace SDK::Params
 {
 
-// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.GetInteractOptions
-// 0x00A0 (0x00A0 - 0x0000)
-struct BP_GuaranteedSpawner_C_GetInteractOptions final
-{
-public:
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
-	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x0050(0x0050)()
-};
-static_assert(alignof(BP_GuaranteedSpawner_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_GuaranteedSpawner_C_GetInteractOptions");
-static_assert(sizeof(BP_GuaranteedSpawner_C_GetInteractOptions) == 0x0000A0, "Wrong size on BP_GuaranteedSpawner_C_GetInteractOptions");
-static_assert(offsetof(BP_GuaranteedSpawner_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_GuaranteedSpawner_C_GetInteractOptions::Options' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_GetInteractOptions, K2Node_MakeMap_Map) == 0x000050, "Member 'BP_GuaranteedSpawner_C_GetInteractOptions::K2Node_MakeMap_Map' has a wrong offset!");
-
-// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.HoldToInteract
-// 0x0068 (0x0068 - 0x0000)
-struct BP_GuaranteedSpawner_C_HoldToInteract final
-{
-public:
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPassiveSkillsComponent_C*              CallFunc_GetPassiveSkillsComponent_SkillsComponent; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPassiveSkillsComponent_C*              CallFunc_GetPassiveSkillsComponent_SkillsComponent_1; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IInt_PassiveSkills_C>  K2Node_DynamicCast_AsInt_Passive_Skills;           // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_GuaranteedSpawner_C_HoldToInteract) == 0x000008, "Wrong alignment on BP_GuaranteedSpawner_C_HoldToInteract");
-static_assert(sizeof(BP_GuaranteedSpawner_C_HoldToInteract) == 0x000068, "Wrong size on BP_GuaranteedSpawner_C_HoldToInteract");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GetHUD_HUD) == 0x000000, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GetHUD_HUD' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GetPassiveSkillsComponent_SkillsComponent) == 0x000030, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GetPassiveSkillsComponent_SkillsComponent' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_RandomFloatInRange_ReturnValue) == 0x000038, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000040, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GetPassiveSkillsComponent_SkillsComponent_1) == 0x000048, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GetPassiveSkillsComponent_SkillsComponent_1' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, K2Node_DynamicCast_AsInt_Passive_Skills) == 0x000050, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::K2Node_DynamicCast_AsInt_Passive_Skills' has a wrong offset!");
-static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.SetPickupCount
 // 0x0008 (0x0008 - 0x0000)
 struct BP_GuaranteedSpawner_C_SetPickupCount final
@@ -80,6 +32,17 @@ static_assert(alignof(BP_GuaranteedSpawner_C_SetPickupCount) == 0x000004, "Wrong
 static_assert(sizeof(BP_GuaranteedSpawner_C_SetPickupCount) == 0x000008, "Wrong size on BP_GuaranteedSpawner_C_SetPickupCount");
 static_assert(offsetof(BP_GuaranteedSpawner_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_GuaranteedSpawner_C_SetPickupCount::NewCount' has a wrong offset!");
 static_assert(offsetof(BP_GuaranteedSpawner_C_SetPickupCount, Result) == 0x000004, "Member 'BP_GuaranteedSpawner_C_SetPickupCount::Result' has a wrong offset!");
+
+// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GuaranteedSpawner_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_GuaranteedSpawner_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_GuaranteedSpawner_C_SetInteractOption");
+static_assert(sizeof(BP_GuaranteedSpawner_C_SetInteractOption) == 0x000008, "Wrong size on BP_GuaranteedSpawner_C_SetInteractOption");
+static_assert(offsetof(BP_GuaranteedSpawner_C_SetInteractOption, Option) == 0x000000, "Member 'BP_GuaranteedSpawner_C_SetInteractOption::Option' has a wrong offset!");
 
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.SearchSound
 // 0x0028 (0x0028 - 0x0000)
@@ -261,6 +224,41 @@ static_assert(alignof(BP_GuaranteedSpawner_C_IsHeld_) == 0x000001, "Wrong alignm
 static_assert(sizeof(BP_GuaranteedSpawner_C_IsHeld_) == 0x000001, "Wrong size on BP_GuaranteedSpawner_C_IsHeld_");
 static_assert(offsetof(BP_GuaranteedSpawner_C_IsHeld_, Held_) == 0x000000, "Member 'BP_GuaranteedSpawner_C_IsHeld_::Held_' has a wrong offset!");
 
+// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.HoldToInteract
+// 0x0068 (0x0068 - 0x0000)
+struct BP_GuaranteedSpawner_C_HoldToInteract final
+{
+public:
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPassiveSkillsComponent_C*              CallFunc_GetPassiveSkillsComponent_SkillsComponent; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPassiveSkillsComponent_C*              CallFunc_GetPassiveSkillsComponent_SkillsComponent_1; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IInt_PassiveSkills_C>  K2Node_DynamicCast_AsInt_Passive_Skills;           // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_GuaranteedSpawner_C_HoldToInteract) == 0x000008, "Wrong alignment on BP_GuaranteedSpawner_C_HoldToInteract");
+static_assert(sizeof(BP_GuaranteedSpawner_C_HoldToInteract) == 0x000068, "Wrong size on BP_GuaranteedSpawner_C_HoldToInteract");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GetHUD_HUD) == 0x000000, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GetHUD_HUD' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000010, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000020, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000028, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GetPassiveSkillsComponent_SkillsComponent) == 0x000030, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GetPassiveSkillsComponent_SkillsComponent' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_RandomFloatInRange_ReturnValue) == 0x000038, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000040, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, CallFunc_GetPassiveSkillsComponent_SkillsComponent_1) == 0x000048, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::CallFunc_GetPassiveSkillsComponent_SkillsComponent_1' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, K2Node_DynamicCast_AsInt_Passive_Skills) == 0x000050, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::K2Node_DynamicCast_AsInt_Passive_Skills' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_HoldToInteract, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'BP_GuaranteedSpawner_C_HoldToInteract::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.GetSettings
 // 0x0018 (0x0018 - 0x0000)
 struct BP_GuaranteedSpawner_C_GetSettings final
@@ -326,6 +324,19 @@ static_assert(offsetof(BP_GuaranteedSpawner_C_GetItemInfo, Info) == 0x000000, "M
 static_assert(offsetof(BP_GuaranteedSpawner_C_GetItemInfo, Count) == 0x000008, "Member 'BP_GuaranteedSpawner_C_GetItemInfo::Count' has a wrong offset!");
 static_assert(offsetof(BP_GuaranteedSpawner_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_GuaranteedSpawner_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
 static_assert(offsetof(BP_GuaranteedSpawner_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_GuaranteedSpawner_C_GetItemInfo::CustomData' has a wrong offset!");
+
+// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.GetInteractOptions
+// 0x00A0 (0x00A0 - 0x0000)
+struct BP_GuaranteedSpawner_C_GetInteractOptions final
+{
+public:
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
+	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x0050(0x0050)()
+};
+static_assert(alignof(BP_GuaranteedSpawner_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_GuaranteedSpawner_C_GetInteractOptions");
+static_assert(sizeof(BP_GuaranteedSpawner_C_GetInteractOptions) == 0x0000A0, "Wrong size on BP_GuaranteedSpawner_C_GetInteractOptions");
+static_assert(offsetof(BP_GuaranteedSpawner_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_GuaranteedSpawner_C_GetInteractOptions::Options' has a wrong offset!");
+static_assert(offsetof(BP_GuaranteedSpawner_C_GetInteractOptions, K2Node_MakeMap_Map) == 0x000050, "Member 'BP_GuaranteedSpawner_C_GetInteractOptions::K2Node_MakeMap_Map' has a wrong offset!");
 
 // Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.ExecuteUbergraph_BP_GuaranteedSpawner
 // 0x04A0 (0x04A0 - 0x0000)
@@ -523,17 +534,6 @@ static_assert(sizeof(BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubj
 static_assert(offsetof(BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
 static_assert(offsetof(BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
 static_assert(offsetof(BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_GuaranteedSpawner_C_BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
-
-// Function BP_GuaranteedSpawner.BP_GuaranteedSpawner_C.SetInteractOption
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GuaranteedSpawner_C_SetInteractOption final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_GuaranteedSpawner_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_GuaranteedSpawner_C_SetInteractOption");
-static_assert(sizeof(BP_GuaranteedSpawner_C_SetInteractOption) == 0x000008, "Wrong size on BP_GuaranteedSpawner_C_SetInteractOption");
-static_assert(offsetof(BP_GuaranteedSpawner_C_SetInteractOption, Option) == 0x000000, "Member 'BP_GuaranteedSpawner_C_SetInteractOption::Option' has a wrong offset!");
 
 }
 

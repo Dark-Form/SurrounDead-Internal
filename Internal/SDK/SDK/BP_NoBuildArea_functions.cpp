@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_NoBuildArea.BP_NoBuildArea_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NoBuildArea_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoBuildArea_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_NoBuildArea.BP_NoBuildArea_C.ExecuteUbergraph_BP_NoBuildArea
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_NoBuildArea_C::ExecuteUbergraph_BP_NoBuildArea(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NoBuildArea.BP_NoBuildArea_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NoBuildArea_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NoBuildArea_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

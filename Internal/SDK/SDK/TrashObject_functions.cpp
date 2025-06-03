@@ -17,66 +17,114 @@
 namespace SDK
 {
 
-// Function TrashObject.TrashObject_C.IsObjectDamageable?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function TrashObject.TrashObject_C.ActorLoaded
+// (Event, Public, BlueprintEvent)
 
-void ATrashObject_C::IsObjectDamageable_(bool* Damageable_)
+void ATrashObject_C::ActorLoaded()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "IsObjectDamageable?");
+		Func = Class->GetFunction("TrashObject_C", "ActorLoaded");
 
-	Params::TrashObject_C_IsObjectDamageable_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Damageable_ != nullptr)
-		*Damageable_ = Parms.Damageable_;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function TrashObject.TrashObject_C.ExecuteUbergraph_TrashObject
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function TrashObject.TrashObject_C.ActorPreLoad
+// (Event, Public, BlueprintEvent)
 
-void ATrashObject_C::ExecuteUbergraph_TrashObject(int32 EntryPoint)
+void ATrashObject_C::ActorPreLoad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "ExecuteUbergraph_TrashObject");
+		Func = Class->GetFunction("TrashObject_C", "ActorPreLoad");
 
-	Params::TrashObject_C_ExecuteUbergraph_TrashObject Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function TrashObject.TrashObject_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
+
+void ATrashObject_C::ActorPreSave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrashObject_C", "ActorPreSave");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TrashObject.TrashObject_C.ActorSaved
+// (Event, Public, BlueprintEvent)
+
+void ATrashObject_C::ActorSaved()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrashObject_C", "ActorSaved");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function TrashObject.TrashObject_C.BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATrashObject_C::BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature(double Dmg)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrashObject_C", "BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature");
+
+	Params::TrashObject_C_BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature Parms{};
+
+	Parms.Dmg = Dmg;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function TrashObject.TrashObject_C.Damage_Shoved
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Anim                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Force                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function TrashObject.TrashObject_C.BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature
+// (BlueprintEvent)
 
-void ATrashObject_C::Damage_Shoved(bool Anim, double Force)
+void ATrashObject_C::BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "Damage_Shoved");
+		Func = Class->GetFunction("TrashObject_C", "BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature");
 
-	Params::TrashObject_C_Damage_Shoved Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Anim = Anim;
-	Parms.Force = Force;
+
+// Function TrashObject.TrashObject_C.ComponentsToSave
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UActorComponent*>*         Components                                             (Parm, OutParm, ContainsInstancedReference)
+
+void ATrashObject_C::ComponentsToSave(TArray<class UActorComponent*>* Components)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TrashObject_C", "ComponentsToSave");
+
+	Params::TrashObject_C_ComponentsToSave Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Components != nullptr)
+		*Components = std::move(Parms.Components);
 }
 
 
@@ -104,114 +152,66 @@ void ATrashObject_C::Damage_Object(double Damage, class AActor* Damage_Causer, c
 }
 
 
-// Function TrashObject.TrashObject_C.ComponentsToSave
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function TrashObject.TrashObject_C.Damage_Shoved
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UActorComponent*>*         Components                                             (Parm, OutParm, ContainsInstancedReference)
+// bool                                    Anim                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Force                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATrashObject_C::ComponentsToSave(TArray<class UActorComponent*>* Components)
+void ATrashObject_C::Damage_Shoved(bool Anim, double Force)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "ComponentsToSave");
+		Func = Class->GetFunction("TrashObject_C", "Damage_Shoved");
 
-	Params::TrashObject_C_ComponentsToSave Parms{};
+	Params::TrashObject_C_Damage_Shoved Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Components != nullptr)
-		*Components = std::move(Parms.Components);
-}
-
-
-// Function TrashObject.TrashObject_C.BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void ATrashObject_C::BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_1_ObjectDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TrashObject.TrashObject_C.BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ATrashObject_C::BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature(double Dmg)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature");
-
-	Params::TrashObject_C_BndEvt__TrashObject_WorldObjectComponent_K2Node_ComponentBoundEvent_0_ObjectDamaged__DelegateSignature Parms{};
-
-	Parms.Dmg = Dmg;
+	Parms.Anim = Anim;
+	Parms.Force = Force;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function TrashObject.TrashObject_C.ActorSaved
-// (Event, Public, BlueprintEvent)
+// Function TrashObject.TrashObject_C.ExecuteUbergraph_TrashObject
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATrashObject_C::ActorSaved()
+void ATrashObject_C::ExecuteUbergraph_TrashObject(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "ActorSaved");
+		Func = Class->GetFunction("TrashObject_C", "ExecuteUbergraph_TrashObject");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::TrashObject_C_ExecuteUbergraph_TrashObject Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function TrashObject.TrashObject_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
+// Function TrashObject.TrashObject_C.IsObjectDamageable?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ATrashObject_C::ActorPreSave()
+void ATrashObject_C::IsObjectDamageable_(bool* Damageable_)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "ActorPreSave");
+		Func = Class->GetFunction("TrashObject_C", "IsObjectDamageable?");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::TrashObject_C_IsObjectDamageable_ Parms{};
 
+	UObject::ProcessEvent(Func, &Parms);
 
-// Function TrashObject.TrashObject_C.ActorPreLoad
-// (Event, Public, BlueprintEvent)
-
-void ATrashObject_C::ActorPreLoad()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "ActorPreLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function TrashObject.TrashObject_C.ActorLoaded
-// (Event, Public, BlueprintEvent)
-
-void ATrashObject_C::ActorLoaded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TrashObject_C", "ActorLoaded");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (Damageable_ != nullptr)
+		*Damageable_ = Parms.Damageable_;
 }
 
 }

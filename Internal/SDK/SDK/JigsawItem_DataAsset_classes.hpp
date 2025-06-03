@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "S_LocalAttContainerIndexSocket_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "S_RandomStatsConfig_structs.hpp"
 #include "ClothingSettings_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "DefaultAttachments_structs.hpp"
+#include "S_RandomStatsConfig_structs.hpp"
+#include "S_LocalAttContainerIndexSocket_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "S_ItemStat_structs.hpp"
 #include "S_ItemStatText_structs.hpp"
 #include "Enum_BuildingSnapTypes_structs.hpp"

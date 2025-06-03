@@ -10,60 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "S_JigPayload_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_JigPayload_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct Buildable_CampingLamp_C_OnServerExecuteInteract final
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Buildable_CampingLamp_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_CampingLamp_C_OnServerExecuteInteract");
-static_assert(sizeof(Buildable_CampingLamp_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_CampingLamp_C_OnServerExecuteInteract");
-static_assert(offsetof(Buildable_CampingLamp_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_CampingLamp_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(Buildable_CampingLamp_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_CampingLamp_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_CampingLamp_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_CampingLamp_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.OnInteractBuildable
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_CampingLamp_C_OnInteractBuildable final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_CampingLamp_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_CampingLamp_C_OnInteractBuildable");
-static_assert(sizeof(Buildable_CampingLamp_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_CampingLamp_C_OnInteractBuildable");
-static_assert(offsetof(Buildable_CampingLamp_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_CampingLamp_C_OnInteractBuildable::Actor' has a wrong offset!");
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.LightCallback
-// 0x0001 (0x0001 - 0x0000)
-struct Buildable_CampingLamp_C_LightCallback final
-{
-public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_CampingLamp_C_LightCallback) == 0x000001, "Wrong alignment on Buildable_CampingLamp_C_LightCallback");
-static_assert(sizeof(Buildable_CampingLamp_C_LightCallback) == 0x000001, "Wrong size on Buildable_CampingLamp_C_LightCallback");
-static_assert(offsetof(Buildable_CampingLamp_C_LightCallback, NewValue) == 0x000000, "Member 'Buildable_CampingLamp_C_LightCallback::NewValue' has a wrong offset!");
-
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.GetPickupName
-// 0x0018 (0x0018 - 0x0000)
-struct Buildable_CampingLamp_C_GetPickupName final
-{
-public:
-	class FText                                   Result;                                            // 0x0000(0x0018)(Parm, OutParm)
-};
-static_assert(alignof(Buildable_CampingLamp_C_GetPickupName) == 0x000008, "Wrong alignment on Buildable_CampingLamp_C_GetPickupName");
-static_assert(sizeof(Buildable_CampingLamp_C_GetPickupName) == 0x000018, "Wrong size on Buildable_CampingLamp_C_GetPickupName");
-static_assert(offsetof(Buildable_CampingLamp_C_GetPickupName, Result) == 0x000000, "Member 'Buildable_CampingLamp_C_GetPickupName::Result' has a wrong offset!");
+static_assert(alignof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 // Function Buildable_CampingLamp.Buildable_CampingLamp_C.ExecuteUbergraph_Buildable_CampingLamp
 // 0x00A8 (0x00A8 - 0x0000)
@@ -115,21 +83,53 @@ static_assert(offsetof(Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_Campin
 static_assert(offsetof(Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_CampingLamp, K2Node_ComponentBoundEvent_bIsSeen) == 0x0000A0, "Member 'Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_CampingLamp::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
 static_assert(offsetof(Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_CampingLamp, K2Node_SwitchInteger_CmpSuccess) == 0x0000A1, "Member 'Buildable_CampingLamp_C_ExecuteUbergraph_Buildable_CampingLamp::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
-// Function Buildable_CampingLamp.Buildable_CampingLamp_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.GetPickupName
+// 0x0018 (0x0018 - 0x0000)
+struct Buildable_CampingLamp_C_GetPickupName final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Result;                                            // 0x0000(0x0018)(Parm, OutParm)
 };
-static_assert(alignof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_CampingLamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(Buildable_CampingLamp_C_GetPickupName) == 0x000008, "Wrong alignment on Buildable_CampingLamp_C_GetPickupName");
+static_assert(sizeof(Buildable_CampingLamp_C_GetPickupName) == 0x000018, "Wrong size on Buildable_CampingLamp_C_GetPickupName");
+static_assert(offsetof(Buildable_CampingLamp_C_GetPickupName, Result) == 0x000000, "Member 'Buildable_CampingLamp_C_GetPickupName::Result' has a wrong offset!");
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.LightCallback
+// 0x0001 (0x0001 - 0x0000)
+struct Buildable_CampingLamp_C_LightCallback final
+{
+public:
+	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_CampingLamp_C_LightCallback) == 0x000001, "Wrong alignment on Buildable_CampingLamp_C_LightCallback");
+static_assert(sizeof(Buildable_CampingLamp_C_LightCallback) == 0x000001, "Wrong size on Buildable_CampingLamp_C_LightCallback");
+static_assert(offsetof(Buildable_CampingLamp_C_LightCallback, NewValue) == 0x000000, "Member 'Buildable_CampingLamp_C_LightCallback::NewValue' has a wrong offset!");
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.OnInteractBuildable
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_CampingLamp_C_OnInteractBuildable final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_CampingLamp_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_CampingLamp_C_OnInteractBuildable");
+static_assert(sizeof(Buildable_CampingLamp_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_CampingLamp_C_OnInteractBuildable");
+static_assert(offsetof(Buildable_CampingLamp_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_CampingLamp_C_OnInteractBuildable::Actor' has a wrong offset!");
+
+// Function Buildable_CampingLamp.Buildable_CampingLamp_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct Buildable_CampingLamp_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_CampingLamp_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_CampingLamp_C_OnServerExecuteInteract");
+static_assert(sizeof(Buildable_CampingLamp_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_CampingLamp_C_OnServerExecuteInteract");
+static_assert(offsetof(Buildable_CampingLamp_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_CampingLamp_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(Buildable_CampingLamp_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_CampingLamp_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_CampingLamp_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_CampingLamp_C_OnServerExecuteInteract::Payload' has a wrong offset!");
 
 }
 

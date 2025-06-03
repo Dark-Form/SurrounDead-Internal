@@ -36,15 +36,15 @@ public:
 	class UTimelineComponent*                     Timeline_TurnOn;                                   // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Timeline_TurnOn__UpdateFunc();
-	void Timeline_TurnOn__FinishedFunc();
-	void Timeline_TurnOff__UpdateFunc();
-	void Timeline_TurnOff__FinishedFunc();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_ResortLight(int32 EntryPoint);
-	void Event_TurnOn();
-	void Event_TurnOff();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void Event_TurnOff();
+	void Event_TurnOn();
+	void ExecuteUbergraph_BP_ResortLight(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void Timeline_TurnOff__FinishedFunc();
+	void Timeline_TurnOff__UpdateFunc();
+	void Timeline_TurnOn__FinishedFunc();
+	void Timeline_TurnOn__UpdateFunc();
 
 public:
 	static class UClass* StaticClass()

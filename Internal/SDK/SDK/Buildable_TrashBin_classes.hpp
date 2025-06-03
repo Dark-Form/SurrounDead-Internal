@@ -26,12 +26,12 @@ public:
 	TArray<int32>                                 BatteryUIDs;                                       // 0x0430(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ReceiveBeginPlay();
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnInteractBuildable(class AActor* Actor);
-	void JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef);
-	void ExecuteUbergraph_Buildable_TrashBin(int32 EntryPoint);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_Buildable_TrashBin(int32 EntryPoint);
+	void JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef);
+	void OnInteractBuildable(class AActor* Actor);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

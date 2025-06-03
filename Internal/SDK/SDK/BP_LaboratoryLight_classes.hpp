@@ -30,10 +30,10 @@ public:
 	bool                                          EnableShadows_;                                    // 0x02C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void OnRep_LightOn_();
-	void ExecuteUbergraph_BP_LaboratoryLight(int32 EntryPoint);
 	void BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_LaboratoryLight(int32 EntryPoint);
+	void OnRep_LightOn_();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

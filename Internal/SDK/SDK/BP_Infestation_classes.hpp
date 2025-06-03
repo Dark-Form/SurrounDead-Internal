@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Enum_ContainerLootTables_structs.hpp"
 #include "Struct_WaveInfo_structs.hpp"
+#include "Enum_ContainerLootTables_structs.hpp"
 #include "BP_MasterObject_classes.hpp"
 
 
@@ -69,70 +69,70 @@ public:
 	bool                                          ForceLock_;                                        // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void TestSpawns();
-	void SpawnWave();
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void SetInteractOption(const struct FGameplayTag& Option);
-	void SetInteractDistance(class AActor* Target);
-	void SetBurning(bool Burning_, double Dmg, class AActor* Actor);
-	void ReceiveBeginPlay();
-	void PickupBuildFromGround();
-	void OverrideName(const class FString& Param_Name_0);
-	void OnStopExecuteInteract(class AActor* InteractingActor);
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
-	void OnExecuteInteractEnded();
-	void OnExecuteInteractDialogue(class AActor* InteractingActor);
-	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
-	void OnEndInteract();
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
-	void LocToSpawn(struct FTransform* Loc);
-	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
-	void JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result);
-	void JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result);
-	void JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef);
-	void JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor);
-	void JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result);
-	void JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result);
-	void JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef);
-	void JigMP_OnItemRemoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* ToComponent, bool* Result);
-	void JigMP_OnItemMoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, bool* Result);
-	void JigMP_OnItemDropped(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, class AActor* ActorRef, bool* Result);
-	void JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result);
-	void JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result);
-	void JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result);
-	void JigMP_GetLootWidget(class UWidget** Result, bool* Valid_);
-	void JigCanInteract(bool* Result);
-	void IsObjectDamageable_(bool* Damageable_);
-	void IsAIBurning_(bool* IsBurning_);
-	void HitByVehicle(double Speed, const struct FVector& Direction);
-	void GetMovementSpeeds(double* RoamingSpeed, double* AlertSpeed, double* AttackSpeed);
-	void GetMesh(class USkeletalMeshComponent** Mesh);
-	void GetMarker(class UTexture2D** Texture, struct FLinearColor* Color, double* MarkerOffset);
-	void GetMainSceneComp(class USceneComponent** Comp);
-	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
-	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
-	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
-	void GetInfestationName(class FText* Param_Name_0);
-	void ExecuteUbergraph_BP_Infestation(int32 EntryPoint);
-	void Event_SecondaryDestroyed(class AActor* Causer, bool CalledFromGameLoad_);
-	void Event_OnDestroyed(class AActor* Causer, bool CalledFromGameLoad_);
-	void Damage_Shoved(bool Anim, double Force);
-	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
-	void ComponentsToSave(TArray<class UActorComponent*>* Components);
-	void CheckDistanceFromActor();
-	void CanStompAI_(bool* Stomp_);
-	void CanAddMarkerToAI_(bool* CanAdd_);
-	void BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature(double Dmg, class AActor* DmgCauser);
-	void BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature(class AActor* DmgCauser);
-	void AreSecondariesDestroyed_(bool* Destroyed);
-	void AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss_);
-	void AddMarker(class UWidgetComponent* Marker);
-	void ActorSaved();
-	void ActorPreSave();
-	void ActorPreLoad();
 	void ActorLoaded();
+	void ActorPreLoad();
+	void ActorPreSave();
+	void ActorSaved();
+	void AddMarker(class UWidgetComponent* Marker);
+	void AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss_);
+	void AreSecondariesDestroyed_(bool* Destroyed);
+	void BndEvt__BP_MasterZombie_DamageComponent_K2Node_ComponentBoundEvent_1_Death__DelegateSignature(class AActor* DmgCauser);
+	void BndEvt__DamageTester_DamageComponent_K2Node_ComponentBoundEvent_0_StandardDamage__DelegateSignature(double Dmg, class AActor* DmgCauser);
+	void CanAddMarkerToAI_(bool* CanAdd_);
+	void CanStompAI_(bool* Stomp_);
+	void CheckDistanceFromActor();
+	void ComponentsToSave(TArray<class UActorComponent*>* Components);
+	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
+	void Damage_Shoved(bool Anim, double Force);
+	void Event_OnDestroyed(class AActor* Causer, bool CalledFromGameLoad_);
+	void Event_SecondaryDestroyed(class AActor* Causer, bool CalledFromGameLoad_);
+	void ExecuteUbergraph_BP_Infestation(int32 EntryPoint);
+	void GetInfestationName(class FText* Param_Name_0);
+	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
+	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
+	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
+	void GetMainSceneComp(class USceneComponent** Comp);
+	void GetMarker(class UTexture2D** Texture, struct FLinearColor* Color, double* MarkerOffset);
+	void GetMesh(class USkeletalMeshComponent** Mesh);
+	void GetMovementSpeeds(double* RoamingSpeed, double* AlertSpeed, double* AttackSpeed);
+	void HitByVehicle(double Speed, const struct FVector& Direction);
+	void IsAIBurning_(bool* IsBurning_);
+	void IsObjectDamageable_(bool* Damageable_);
+	void JigCanInteract(bool* Result);
+	void JigMP_GetLootWidget(class UWidget** Result, bool* Valid_);
+	void JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result);
+	void JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result);
+	void JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result);
+	void JigMP_OnItemDropped(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, class AActor* ActorRef, bool* Result);
+	void JigMP_OnItemMoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, bool* Result);
+	void JigMP_OnItemRemoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* ToComponent, bool* Result);
+	void JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef);
+	void JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result);
+	void JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result);
+	void JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor);
+	void JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef);
+	void JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result);
+	void JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result);
+	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
+	void LocToSpawn(struct FTransform* Loc);
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void OnEndInteract();
+	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
+	void OnExecuteInteractDialogue(class AActor* InteractingActor);
+	void OnExecuteInteractEnded();
+	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void OnStopExecuteInteract(class AActor* InteractingActor);
+	void OverrideName(const class FString& Param_Name_0);
+	void PickupBuildFromGround();
+	void ReceiveBeginPlay();
+	void SetBurning(bool Burning_, double Dmg, class AActor* Actor);
+	void SetInteractDistance(class AActor* Target);
+	void SetInteractOption(const struct FGameplayTag& Option);
+	void SetPickupCount(int32 NewCount, bool* Result);
+	void SpawnWave();
+	void TestSpawns();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

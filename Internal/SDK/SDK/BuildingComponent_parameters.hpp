@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "ContainerPickupsInfo_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Enum_BuildingSnapTypes_structs.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
 
 
 namespace SDK::Params

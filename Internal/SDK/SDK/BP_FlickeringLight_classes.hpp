@@ -36,11 +36,11 @@ public:
 	double                                        IntensityMultiplier;                               // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void LightFlicker__UpdateFunc();
-	void LightFlicker__FinishedFunc();
-	void ExecuteUbergraph_BP_FlickeringLight(int32 EntryPoint);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_FlickeringLight(int32 EntryPoint);
+	void LightFlicker__FinishedFunc();
+	void LightFlicker__UpdateFunc();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

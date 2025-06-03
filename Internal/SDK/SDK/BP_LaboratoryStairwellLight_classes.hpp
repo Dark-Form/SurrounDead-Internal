@@ -27,9 +27,9 @@ public:
 	class UPointLightComponent*                   PointLight;                                        // 0x02B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void ExecuteUbergraph_BP_LaboratoryStairwellLight(int32 EntryPoint);
 	void BndEvt__BP_LaboratoryLight_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_LaboratoryStairwellLight(int32 EntryPoint);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

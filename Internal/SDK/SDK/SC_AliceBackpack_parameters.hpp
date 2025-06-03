@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function SC_AliceBackpack.SC_AliceBackpack_C.Event_Callback
+// 0x0001 (0x0001 - 0x0000)
+struct SC_AliceBackpack_C_Event_Callback final
+{
+public:
+	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(SC_AliceBackpack_C_Event_Callback) == 0x000001, "Wrong alignment on SC_AliceBackpack_C_Event_Callback");
+static_assert(sizeof(SC_AliceBackpack_C_Event_Callback) == 0x000001, "Wrong size on SC_AliceBackpack_C_Event_Callback");
+static_assert(offsetof(SC_AliceBackpack_C_Event_Callback, NewValue) == 0x000000, "Member 'SC_AliceBackpack_C_Event_Callback::NewValue' has a wrong offset!");
+
 // Function SC_AliceBackpack.SC_AliceBackpack_C.ExecuteUbergraph_SC_AliceBackpack
 // 0x0028 (0x0028 - 0x0000)
 struct SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack final
@@ -31,17 +42,6 @@ static_assert(offsetof(SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack, Ent
 static_assert(offsetof(SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack, K2Node_CustomEvent_NewValue) == 0x000014, "Member 'SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack::K2Node_CustomEvent_NewValue' has a wrong offset!");
 static_assert(offsetof(SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack, K2Node_MakeArray_Array) == 0x000018, "Member 'SC_AliceBackpack_C_ExecuteUbergraph_SC_AliceBackpack::K2Node_MakeArray_Array' has a wrong offset!");
-
-// Function SC_AliceBackpack.SC_AliceBackpack_C.Event_Callback
-// 0x0001 (0x0001 - 0x0000)
-struct SC_AliceBackpack_C_Event_Callback final
-{
-public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(SC_AliceBackpack_C_Event_Callback) == 0x000001, "Wrong alignment on SC_AliceBackpack_C_Event_Callback");
-static_assert(sizeof(SC_AliceBackpack_C_Event_Callback) == 0x000001, "Wrong size on SC_AliceBackpack_C_Event_Callback");
-static_assert(offsetof(SC_AliceBackpack_C_Event_Callback, NewValue) == 0x000000, "Member 'SC_AliceBackpack_C_Event_Callback::NewValue' has a wrong offset!");
 
 }
 

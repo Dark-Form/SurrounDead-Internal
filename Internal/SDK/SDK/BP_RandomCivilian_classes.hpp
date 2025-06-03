@@ -39,17 +39,17 @@ public:
 	double                                        Health;                                            // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnExecuteInteractDialogue(class AActor* InteractingActor);
-	void PickupBuildFromGround();
-	void SetInteractOption(const struct FGameplayTag& Option);
 	void SetPickupCount(int32 NewCount, bool* Result);
 	void SetName();
 	void SetMeshAndMaterial();
+	void SetInteractOption(const struct FGameplayTag& Option);
 	void ReceiveBeginPlay();
+	void PickupBuildFromGround();
 	void OnStopExecuteInteract(class AActor* InteractingActor);
 	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
 	void OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result);
 	void OnExecuteInteractEnded();
+	void OnExecuteInteractDialogue(class AActor* InteractingActor);
 	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
 	void OnEndInteract();
 	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);

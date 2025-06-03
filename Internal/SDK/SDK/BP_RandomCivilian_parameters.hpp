@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "S_JigPayload_structs.hpp"
 #include "NameGeneratorDataStruct_structs.hpp"
+#include "S_JigPayload_structs.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
 #include "AIOptimizer_structs.hpp"
 #include "Engine_structs.hpp"
@@ -21,28 +21,6 @@
 
 namespace SDK::Params
 {
-
-// Function BP_RandomCivilian.BP_RandomCivilian_C.OnExecuteInteractDialogue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_RandomCivilian_C_OnExecuteInteractDialogue final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_RandomCivilian_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_RandomCivilian_C_OnExecuteInteractDialogue");
-static_assert(sizeof(BP_RandomCivilian_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_RandomCivilian_C_OnExecuteInteractDialogue");
-static_assert(offsetof(BP_RandomCivilian_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_RandomCivilian_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
-
-// Function BP_RandomCivilian.BP_RandomCivilian_C.SetInteractOption
-// 0x0008 (0x0008 - 0x0000)
-struct BP_RandomCivilian_C_SetInteractOption final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_RandomCivilian_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_RandomCivilian_C_SetInteractOption");
-static_assert(sizeof(BP_RandomCivilian_C_SetInteractOption) == 0x000008, "Wrong size on BP_RandomCivilian_C_SetInteractOption");
-static_assert(offsetof(BP_RandomCivilian_C_SetInteractOption, Option) == 0x000000, "Member 'BP_RandomCivilian_C_SetInteractOption::Option' has a wrong offset!");
 
 // Function BP_RandomCivilian.BP_RandomCivilian_C.SetPickupCount
 // 0x0008 (0x0008 - 0x0000)
@@ -187,6 +165,17 @@ static_assert(offsetof(BP_RandomCivilian_C_SetMeshAndMaterial, CallFunc_SetStati
 static_assert(offsetof(BP_RandomCivilian_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_2) == 0x000220, "Member 'BP_RandomCivilian_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
 static_assert(offsetof(BP_RandomCivilian_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_2) == 0x000228, "Member 'BP_RandomCivilian_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
 
+// Function BP_RandomCivilian.BP_RandomCivilian_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_RandomCivilian_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_RandomCivilian_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_RandomCivilian_C_SetInteractOption");
+static_assert(sizeof(BP_RandomCivilian_C_SetInteractOption) == 0x000008, "Wrong size on BP_RandomCivilian_C_SetInteractOption");
+static_assert(offsetof(BP_RandomCivilian_C_SetInteractOption, Option) == 0x000000, "Member 'BP_RandomCivilian_C_SetInteractOption::Option' has a wrong offset!");
+
 // Function BP_RandomCivilian.BP_RandomCivilian_C.OnStopExecuteInteract
 // 0x0008 (0x0008 - 0x0000)
 struct BP_RandomCivilian_C_OnStopExecuteInteract final
@@ -229,6 +218,17 @@ static_assert(offsetof(BP_RandomCivilian_C_OnRequestServerInteract, Actor) == 0x
 static_assert(offsetof(BP_RandomCivilian_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_RandomCivilian_C_OnRequestServerInteract::Option' has a wrong offset!");
 static_assert(offsetof(BP_RandomCivilian_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_RandomCivilian_C_OnRequestServerInteract::Payload' has a wrong offset!");
 static_assert(offsetof(BP_RandomCivilian_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_RandomCivilian_C_OnRequestServerInteract::Result' has a wrong offset!");
+
+// Function BP_RandomCivilian.BP_RandomCivilian_C.OnExecuteInteractDialogue
+// 0x0008 (0x0008 - 0x0000)
+struct BP_RandomCivilian_C_OnExecuteInteractDialogue final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_RandomCivilian_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_RandomCivilian_C_OnExecuteInteractDialogue");
+static_assert(sizeof(BP_RandomCivilian_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_RandomCivilian_C_OnExecuteInteractDialogue");
+static_assert(offsetof(BP_RandomCivilian_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_RandomCivilian_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
 
 // Function BP_RandomCivilian.BP_RandomCivilian_C.OnExecuteInteract
 // 0x0010 (0x0010 - 0x0000)

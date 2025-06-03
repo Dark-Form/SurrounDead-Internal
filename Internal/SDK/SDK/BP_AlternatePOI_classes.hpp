@@ -28,14 +28,14 @@ public:
 	bool                                          AlternatePrefab_;                                  // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpawnPrefab();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_AlternatePOI(int32 EntryPoint);
-	void ComponentsToSave(TArray<class UActorComponent*>* Components);
-	void ActorSaved();
-	void ActorPreSave();
-	void ActorPreLoad();
 	void ActorLoaded();
+	void ActorPreLoad();
+	void ActorPreSave();
+	void ActorSaved();
+	void ComponentsToSave(TArray<class UActorComponent*>* Components);
+	void ExecuteUbergraph_BP_AlternatePOI(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void SpawnPrefab();
 
 public:
 	static class UClass* StaticClass()

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "EProgressMethod_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "EMarqueeMask_structs.hpp"
-#include "Slate_structs.hpp"
 #include "EGradientTypes_structs.hpp"
-#include "EProgressMethod_structs.hpp"
+#include "Slate_structs.hpp"
 
 
 namespace SDK

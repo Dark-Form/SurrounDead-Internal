@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EJoystickTypes_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "EJoystickTypes_structs.hpp"
 
 
 namespace SDK

@@ -17,44 +17,25 @@
 namespace SDK
 {
 
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.SetActorOwner
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UW_AxeLootContainerUI_C::SetActorOwner(class AActor* ActorRef)
+void UW_AxeLootContainerUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_AxeLootContainerUI_C", "SetActorOwner");
+		Func = Class->GetFunction("W_AxeLootContainerUI_C", "Tick");
 
-	Params::W_AxeLootContainerUI_C_SetActorOwner Parms{};
+	Params::W_AxeLootContainerUI_C_Tick Parms{};
 
-	Parms.ActorRef = ActorRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetAllAttachments
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class FName>*                    Attachments                                            (Parm, OutParm)
-
-void UW_AxeLootContainerUI_C::GetAllAttachments(TArray<class FName>* Attachments)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AxeLootContainerUI_C", "GetAllAttachments");
-
-	Params::W_AxeLootContainerUI_C_GetAllAttachments Parms{};
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Attachments != nullptr)
-		*Attachments = std::move(Parms.Attachments);
 }
 
 
@@ -93,6 +74,26 @@ void UW_AxeLootContainerUI_C::SetInspectorRef(class UBP_InspectorWindowWidget_C*
 	Params::W_AxeLootContainerUI_C_SetInspectorRef Parms{};
 
 	Parms.Inspector = Inspector;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.SetActorOwner
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UW_AxeLootContainerUI_C::SetActorOwner(class AActor* ActorRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_AxeLootContainerUI_C", "SetActorOwner");
+
+	Params::W_AxeLootContainerUI_C_SetActorOwner Parms{};
+
+	Parms.ActorRef = ActorRef;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -227,17 +228,45 @@ void UW_AxeLootContainerUI_C::GetValidReloadContainers(TArray<class UJSIContaine
 }
 
 
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.BndEvt__AxeContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetLootContent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UW_AxeLootContainerUI_C::BndEvt__AxeContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+void UW_AxeLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_AxeLootContainerUI_C", "BndEvt__AxeContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("W_AxeLootContainerUI_C", "GetLootContent");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::W_AxeLootContainerUI_C_GetLootContent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetListOfNonAddContainers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+
+void UW_AxeLootContainerUI_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_AxeLootContainerUI_C", "GetListOfNonAddContainers");
+
+	Params::W_AxeLootContainerUI_C_GetListOfNonAddContainers Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
 }
 
 
@@ -322,6 +351,27 @@ void UW_AxeLootContainerUI_C::GetContainerByAttachmentType(const struct FGamepla
 }
 
 
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetAllAttachments
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class FName>*                    Attachments                                            (Parm, OutParm)
+
+void UW_AxeLootContainerUI_C::GetAllAttachments(TArray<class FName>* Attachments)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_AxeLootContainerUI_C", "GetAllAttachments");
+
+	Params::W_AxeLootContainerUI_C_GetAllAttachments Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Attachments != nullptr)
+		*Attachments = std::move(Parms.Attachments);
+}
+
+
 // Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.ForceInitSpecialcontainer
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -356,67 +406,17 @@ void UW_AxeLootContainerUI_C::ExecuteUbergraph_W_AxeLootContainerUI(int32 EntryP
 }
 
 
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.BndEvt__AxeContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UW_AxeLootContainerUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UW_AxeLootContainerUI_C::BndEvt__AxeContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_AxeLootContainerUI_C", "Tick");
+		Func = Class->GetFunction("W_AxeLootContainerUI_C", "BndEvt__AxeContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
-	Params::W_AxeLootContainerUI_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetLootContent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UW_AxeLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AxeLootContainerUI_C", "GetLootContent");
-
-	Params::W_AxeLootContainerUI_C_GetLootContent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function W_AxeLootContainerUI.W_AxeLootContainerUI_C.GetListOfNonAddContainers
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
-
-void UW_AxeLootContainerUI_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AxeLootContainerUI_C", "GetListOfNonAddContainers");
-
-	Params::W_AxeLootContainerUI_C_GetListOfNonAddContainers Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

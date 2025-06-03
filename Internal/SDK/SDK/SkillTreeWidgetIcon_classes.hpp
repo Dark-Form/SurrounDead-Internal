@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Enum_SkillType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "TechTree_classes.hpp"
-#include "Enum_SkillType_structs.hpp"
 
 
 namespace SDK

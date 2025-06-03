@@ -26,23 +26,23 @@ public:
 	class UJSIContainer_C*                        MainContainer;                                     // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetItemReference(class UJSI_Slot_C* ItemRef);
-	void SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector);
-	void SetActorOwner(class AActor* ActorRef);
-	void SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return);
-	void OnCreatedFromUtility();
-	void JSIOnWeightUpdated(double NewWeight);
-	void JSICheckStatus();
-	void JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0);
-	void GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers);
-	void GetLootContent(class UUserWidget** Widget);
-	void GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers);
-	void GetJSIContainerByPlayerSlots(const struct FGameplayTag& Slot_0, class UJSIContainer_C** Container, class UJSI_Slot_C** EquippedItem, bool* IsPending_);
-	void GetDropWidget(class UDropItemBackGwidget_C** DropWRef);
-	void GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex);
-	void GetAllAttachments(TArray<class FName>* Attachments);
-	void ForceInitSpecialcontainer();
 	void ExecuteUbergraph_TentContainer1_Widget(int32 EntryPoint);
+	void ForceInitSpecialcontainer();
+	void GetAllAttachments(TArray<class FName>* Attachments);
+	void GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex);
+	void GetDropWidget(class UDropItemBackGwidget_C** DropWRef);
+	void GetJSIContainerByPlayerSlots(const struct FGameplayTag& Slot_0, class UJSIContainer_C** Container, class UJSI_Slot_C** EquippedItem, bool* IsPending_);
+	void GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers);
+	void GetLootContent(class UUserWidget** Widget);
+	void GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers);
+	void JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0);
+	void JSICheckStatus();
+	void JSIOnWeightUpdated(double NewWeight);
+	void OnCreatedFromUtility();
+	void SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return);
+	void SetActorOwner(class AActor* ActorRef);
+	void SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector);
+	void SetItemReference(class UJSI_Slot_C* ItemRef);
 
 	void GetListOfContainers(TArray<class UJSIContainer_C*>* Containers) const;
 

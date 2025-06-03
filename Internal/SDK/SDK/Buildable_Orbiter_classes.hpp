@@ -25,8 +25,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Buildable_Orbiter_C;                // 0x0428(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
 	void ExecuteUbergraph_Buildable_Orbiter(int32 EntryPoint);
+	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
 
 public:
 	static class UClass* StaticClass()

@@ -32,18 +32,18 @@ public:
 	bool                                          CooldownRunning_;                                  // 0x0460(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnRep_CooldownRunning_();
-	void OnInteractBuildable(class AActor* Actor);
-	void OnEndInteract();
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
-	void On();
-	void Off();
-	void ExecuteUbergraph_Buildable_DecontaminationShower(int32 EntryPoint);
-	void Event_Cooldown();
-	void DecontaminatePlayer();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void DecontaminatePlayer();
+	void Event_Cooldown();
+	void ExecuteUbergraph_Buildable_DecontaminationShower(int32 EntryPoint);
+	void Off();
+	void On();
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void OnEndInteract();
+	void OnInteractBuildable(class AActor* Actor);
+	void OnRep_CooldownRunning_();
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

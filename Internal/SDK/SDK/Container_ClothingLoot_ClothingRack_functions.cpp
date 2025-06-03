@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function Container_ClothingLoot_ClothingRack.Container_ClothingLoot_ClothingRack_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Container_ClothingLoot_ClothingRack.Container_ClothingLoot_ClothingRack_C.Event1
+// (BlueprintCallable, BlueprintEvent)
 
-void AContainer_ClothingLoot_ClothingRack_C::ReceiveBeginPlay()
+void AContainer_ClothingLoot_ClothingRack_C::Event1()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Container_ClothingLoot_ClothingRack_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Container_ClothingLoot_ClothingRack_C", "Event1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Container_ClothingLoot_ClothingRack.Container_ClothingLoot_ClothingRack_C.Event2
+// (BlueprintCallable, BlueprintEvent)
+
+void AContainer_ClothingLoot_ClothingRack_C::Event2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Container_ClothingLoot_ClothingRack_C", "Event2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +65,15 @@ void AContainer_ClothingLoot_ClothingRack_C::ExecuteUbergraph_Container_Clothing
 }
 
 
-// Function Container_ClothingLoot_ClothingRack.Container_ClothingLoot_ClothingRack_C.Event2
-// (BlueprintCallable, BlueprintEvent)
+// Function Container_ClothingLoot_ClothingRack.Container_ClothingLoot_ClothingRack_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AContainer_ClothingLoot_ClothingRack_C::Event2()
+void AContainer_ClothingLoot_ClothingRack_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Container_ClothingLoot_ClothingRack_C", "Event2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Container_ClothingLoot_ClothingRack.Container_ClothingLoot_ClothingRack_C.Event1
-// (BlueprintCallable, BlueprintEvent)
-
-void AContainer_ClothingLoot_ClothingRack_C::Event1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Container_ClothingLoot_ClothingRack_C", "Event1");
+		Func = Class->GetFunction("Container_ClothingLoot_ClothingRack_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

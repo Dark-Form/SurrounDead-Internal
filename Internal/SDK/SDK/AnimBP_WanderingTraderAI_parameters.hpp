@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "S_AllAIAnims_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "S_AIAnims_structs.hpp"
+#include "PhysicsCore_structs.hpp"
+#include "S_AllAIAnims_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 #include "E_BlockType_structs.hpp"
-#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -44,139 +44,98 @@ static_assert(alignof(AnimBP_WanderingTraderAI_C_Actor_Aim_Focus) == 0x000008, "
 static_assert(sizeof(AnimBP_WanderingTraderAI_C_Actor_Aim_Focus) == 0x000008, "Wrong size on AnimBP_WanderingTraderAI_C_Actor_Aim_Focus");
 static_assert(offsetof(AnimBP_WanderingTraderAI_C_Actor_Aim_Focus, Instigator) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Actor_Aim_Focus::Instigator' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Return Current Behaviour
-// 0x0003 (0x0003 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_Return_Current_Behaviour final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Alert
+// 0x0008 (0x0008 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_AI_Alert final
 {
 public:
-	E_AIBehaviour                                 New_Behaviour;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Alert_Actor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_Return_Current_Behaviour");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour) == 0x000003, "Wrong size on AnimBP_WanderingTraderAI_C_Return_Current_Behaviour");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour, New_Behaviour) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Return_Current_Behaviour::New_Behaviour' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'AnimBP_WanderingTraderAI_C_Return_Current_Behaviour::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'AnimBP_WanderingTraderAI_C_Return_Current_Behaviour::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Alert) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Alert");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Alert) == 0x000008, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Alert");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Alert, Alert_Actor) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Alert::Alert_Actor' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Return Combat Stance Anims
-// 0x0060 (0x0060 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Animation Switch
+// 0x0001 (0x0001 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_AI_Animation_Switch final
 {
 public:
-	bool                                          Use_Combat_Stance;                                 // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_AIBehaviour                                 Behaviour;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Animation_Switch) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Animation_Switch");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Animation_Switch) == 0x000001, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Animation_Switch");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Animation_Switch, Behaviour) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Animation_Switch::Behaviour' has a wrong offset!");
+
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Block
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_AI_Block final
+{
+public:
+	E_BlockType                                   Block_Type;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_AIAnims                             AI_Animation;                                      // 0x0008(0x0050)(Parm, OutParm, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Block_Attacker;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims) == 0x000060, "Wrong size on AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, Use_Combat_Stance) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::Use_Combat_Stance' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, AI_Animation) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::AI_Animation' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000059, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00005A, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00005B, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00005C, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Block) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Block");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Block) == 0x000010, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Block");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Block, Block_Type) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Block::Block_Type' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Block, Block_Attacker) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_AI_Block::Block_Attacker' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Return Behaviour Anims
-// 0x0528 (0x0528 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Camera Activate
+// 0x0001 (0x0001 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_AI_Camera_Activate final
 {
 public:
-	struct FS_AllAIAnims                          All_Anims;                                         // 0x0000(0x04C8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	E_AIBehaviour                                 Behaviour;                                         // 0x04C8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_AIAnims                             Anims;                                             // 0x04D0(0x0050)(Parm, OutParm, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Activate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims) == 0x000528, "Wrong size on AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, All_Anims) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::All_Anims' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, Behaviour) == 0x0004C8, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::Behaviour' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, Anims) == 0x0004D0, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::Anims' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, K2Node_SwitchEnum_CmpSuccess) == 0x000520, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Camera_Activate) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Camera_Activate");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Camera_Activate) == 0x000001, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Camera_Activate");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Camera_Activate, Activate) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Camera_Activate::Activate' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.HeadRotation
-// 0x0148 (0x0148 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_HeadRotation final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Can Interact?
+// 0x0001 (0x0001 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_AI_Can_Interact_ final
 {
 public:
-	double                                        Right;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Down;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        InterpSpeed;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACharacter*                             Player;                                            // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwningActor_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_ClampAngle_ReturnValue;                   // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_ClampAngle_ReturnValue_1;                 // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	double                                        CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_RInterpTo_ReturnValue;                    // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_RInterpTo_InterpSpeed_ImplicitCast;       // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_ClampAngle_AngleDegrees_ImplicitCast;     // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RInterpTo_DeltaTime_ImplicitCast;         // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Can_Interact;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_HeadRotation) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_HeadRotation");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_HeadRotation) == 0x000148, "Wrong size on AnimBP_WanderingTraderAI_C_HeadRotation");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, Right) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::Right' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, Down) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::Down' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, InterpSpeed) == 0x000010, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::InterpSpeed' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, Player) == 0x000018, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::Player' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_GetOwningActor_ReturnValue) == 0x000020, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_GetOwningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000030, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000048, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Roll) == 0x000060, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Pitch) == 0x000064, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Yaw) == 0x000068, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000078, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000080, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_FindLookAtRotation_ReturnValue) == 0x0000A0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Roll_1) == 0x0000B8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Pitch_1) == 0x0000BC, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Yaw_1) == 0x0000C0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x0000C8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_ClampAngle_ReturnValue) == 0x0000D0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_ClampAngle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_ClampAngle_ReturnValue_1) == 0x0000D8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_ClampAngle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_MakeRotator_ReturnValue) == 0x0000E0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0000F8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_RInterpTo_ReturnValue) == 0x000100, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_RInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_RInterpTo_InterpSpeed_ImplicitCast) == 0x000118, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_RInterpTo_InterpSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x000120, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_ClampAngle_AngleDegrees_ImplicitCast) == 0x000128, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_ClampAngle_AngleDegrees_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x000130, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_MakeRotator_Roll_ImplicitCast) == 0x000138, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_MakeRotator_Roll_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x00013C, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_RInterpTo_DeltaTime_ImplicitCast) == 0x000140, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_RInterpTo_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Can_Interact_) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Can_Interact_");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Can_Interact_) == 0x000001, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Can_Interact_");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Can_Interact_, Can_Interact) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Can_Interact_::Can_Interact' has a wrong offset!");
+
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Alert Actor Defenders
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders final
+{
+public:
+	class AActor*                                 Attacked;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Attacker;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders) == 0x000010, "Wrong size on AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders, Attacked) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders::Attacked' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders, Attacker) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders::Attacker' has a wrong offset!");
+
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(AnimBP_WanderingTraderAI_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_AnimGraph");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_WanderingTraderAI_C_AnimGraph");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
 
 // Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.ExecuteUbergraph_AnimBP_WanderingTraderAI
 // 0x0700 (0x0700 - 0x0000)
@@ -501,98 +460,139 @@ static_assert(offsetof(AnimBP_WanderingTraderAI_C_ExecuteUbergraph_AnimBP_Wander
 static_assert(offsetof(AnimBP_WanderingTraderAI_C_ExecuteUbergraph_AnimBP_WanderingTraderAI, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2) == 0x0006F0, "Member 'AnimBP_WanderingTraderAI_C_ExecuteUbergraph_AnimBP_WanderingTraderAI::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
 static_assert(offsetof(AnimBP_WanderingTraderAI_C_ExecuteUbergraph_AnimBP_WanderingTraderAI, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_3) == 0x0006F8, "Member 'AnimBP_WanderingTraderAI_C_ExecuteUbergraph_AnimBP_WanderingTraderAI::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast_3' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.HeadRotation
+// 0x0148 (0x0148 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_HeadRotation final
 {
 public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Right;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Down;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        InterpSpeed;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACharacter*                             Player;                                            // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwningActor_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_ClampAngle_ReturnValue;                   // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_ClampAngle_ReturnValue_1;                 // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	double                                        CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_RInterpTo_ReturnValue;                    // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_RInterpTo_InterpSpeed_ImplicitCast;       // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11C[0x4];                                      // 0x011C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Subtract_DoubleDouble_B_ImplicitCast;     // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_ClampAngle_AngleDegrees_ImplicitCast;     // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_RInterpTo_DeltaTime_ImplicitCast;         // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_HeadRotation) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_HeadRotation");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_HeadRotation) == 0x000148, "Wrong size on AnimBP_WanderingTraderAI_C_HeadRotation");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, Right) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::Right' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, Down) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::Down' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, InterpSpeed) == 0x000010, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::InterpSpeed' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, Player) == 0x000018, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::Player' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_GetOwningActor_ReturnValue) == 0x000020, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_GetOwningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000030, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000048, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Roll) == 0x000060, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Pitch) == 0x000064, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Yaw) == 0x000068, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000070, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000078, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000080, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_FindLookAtRotation_ReturnValue) == 0x0000A0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Roll_1) == 0x0000B8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Pitch_1) == 0x0000BC, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_BreakRotator_Yaw_1) == 0x0000C0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x0000C8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_ClampAngle_ReturnValue) == 0x0000D0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_ClampAngle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_ClampAngle_ReturnValue_1) == 0x0000D8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_ClampAngle_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_MakeRotator_ReturnValue) == 0x0000E0, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x0000F8, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_RInterpTo_ReturnValue) == 0x000100, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_RInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_RInterpTo_InterpSpeed_ImplicitCast) == 0x000118, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_RInterpTo_InterpSpeed_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x000120, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_ClampAngle_AngleDegrees_ImplicitCast) == 0x000128, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_ClampAngle_AngleDegrees_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x000130, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_MakeRotator_Roll_ImplicitCast) == 0x000138, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_MakeRotator_Roll_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x00013C, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_HeadRotation, CallFunc_RInterpTo_DeltaTime_ImplicitCast) == 0x000140, "Member 'AnimBP_WanderingTraderAI_C_HeadRotation::CallFunc_RInterpTo_DeltaTime_ImplicitCast' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_AnimGraph final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Return Behaviour Anims
+// 0x0528 (0x0528 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims final
 {
 public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FS_AllAIAnims                          All_Anims;                                         // 0x0000(0x04C8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	E_AIBehaviour                                 Behaviour;                                         // 0x04C8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_AIAnims                             Anims;                                             // 0x04D0(0x0050)(Parm, OutParm, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_AnimGraph");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_WanderingTraderAI_C_AnimGraph");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims) == 0x000528, "Wrong size on AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, All_Anims) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::All_Anims' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, Behaviour) == 0x0004C8, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::Behaviour' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, Anims) == 0x0004D0, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::Anims' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims, K2Node_SwitchEnum_CmpSuccess) == 0x000520, "Member 'AnimBP_WanderingTraderAI_C_Return_Behaviour_Anims::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Alert Actor Defenders
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Return Combat Stance Anims
+// 0x0060 (0x0060 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims final
 {
 public:
-	class AActor*                                 Attacked;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Attacker;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders) == 0x000010, "Wrong size on AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders, Attacked) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders::Attacked' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders, Attacker) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_Alert_Actor_Defenders::Attacker' has a wrong offset!");
-
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Can Interact?
-// 0x0001 (0x0001 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_AI_Can_Interact_ final
-{
-public:
-	bool                                          Can_Interact;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Can_Interact_) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Can_Interact_");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Can_Interact_) == 0x000001, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Can_Interact_");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Can_Interact_, Can_Interact) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Can_Interact_::Can_Interact' has a wrong offset!");
-
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Camera Activate
-// 0x0001 (0x0001 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_AI_Camera_Activate final
-{
-public:
-	bool                                          Activate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Camera_Activate) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Camera_Activate");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Camera_Activate) == 0x000001, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Camera_Activate");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Camera_Activate, Activate) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Camera_Activate::Activate' has a wrong offset!");
-
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Block
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_AI_Block final
-{
-public:
-	E_BlockType                                   Block_Type;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Use_Combat_Stance;                                 // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Block_Attacker;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_AIAnims                             AI_Animation;                                      // 0x0008(0x0050)(Parm, OutParm, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_3;        // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Block) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Block");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Block) == 0x000010, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Block");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Block, Block_Type) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Block::Block_Type' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Block, Block_Attacker) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_AI_Block::Block_Attacker' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims) == 0x000060, "Wrong size on AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, Use_Combat_Stance) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::Use_Combat_Stance' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, AI_Animation) == 0x000008, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::AI_Animation' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000059, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00005A, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00005B, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00005C, "Member 'AnimBP_WanderingTraderAI_C_Return_Combat_Stance_Anims::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
 
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Animation Switch
-// 0x0001 (0x0001 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_AI_Animation_Switch final
+// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.Return Current Behaviour
+// 0x0003 (0x0003 - 0x0000)
+struct AnimBP_WanderingTraderAI_C_Return_Current_Behaviour final
 {
 public:
-	E_AIBehaviour                                 Behaviour;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_AIBehaviour                                 New_Behaviour;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Animation_Switch) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Animation_Switch");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Animation_Switch) == 0x000001, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Animation_Switch");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Animation_Switch, Behaviour) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Animation_Switch::Behaviour' has a wrong offset!");
-
-// Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Alert
-// 0x0008 (0x0008 - 0x0000)
-struct AnimBP_WanderingTraderAI_C_AI_Alert final
-{
-public:
-	class AActor*                                 Alert_Actor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_WanderingTraderAI_C_AI_Alert) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI_C_AI_Alert");
-static_assert(sizeof(AnimBP_WanderingTraderAI_C_AI_Alert) == 0x000008, "Wrong size on AnimBP_WanderingTraderAI_C_AI_Alert");
-static_assert(offsetof(AnimBP_WanderingTraderAI_C_AI_Alert, Alert_Actor) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_AI_Alert::Alert_Actor' has a wrong offset!");
+static_assert(alignof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour) == 0x000001, "Wrong alignment on AnimBP_WanderingTraderAI_C_Return_Current_Behaviour");
+static_assert(sizeof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour) == 0x000003, "Wrong size on AnimBP_WanderingTraderAI_C_Return_Current_Behaviour");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour, New_Behaviour) == 0x000000, "Member 'AnimBP_WanderingTraderAI_C_Return_Current_Behaviour::New_Behaviour' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'AnimBP_WanderingTraderAI_C_Return_Current_Behaviour::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI_C_Return_Current_Behaviour, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'AnimBP_WanderingTraderAI_C_Return_Current_Behaviour::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AI Is Dead?
 // 0x0001 (0x0001 - 0x0000)

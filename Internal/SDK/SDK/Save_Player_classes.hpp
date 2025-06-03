@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "S_InvWeight_structs.hpp"
 #include "Enum_Occupation_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_InvWeight_structs.hpp"
 #include "EasyMultiSave_classes.hpp"
 
 

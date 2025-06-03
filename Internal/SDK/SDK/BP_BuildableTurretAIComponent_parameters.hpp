@@ -60,7 +60,7 @@ struct BP_BuildableTurretAIComponent_C_Check_Tags final
 public:
 	TArray<class FName>                           Tags_1;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<class FName>                           Tags_2;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Found_Tag;                                         // 0x0024(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Tag_Name_L;                                        // 0x002C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,7 +89,7 @@ static_assert(alignof(BP_BuildableTurretAIComponent_C_Check_Tags) == 0x000008, "
 static_assert(sizeof(BP_BuildableTurretAIComponent_C_Check_Tags) == 0x000068, "Wrong size on BP_BuildableTurretAIComponent_C_Check_Tags");
 static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Tags_1) == 0x000000, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Tags_1' has a wrong offset!");
 static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Tags_2) == 0x000010, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Tags_2' has a wrong offset!");
-static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Return_Value) == 0x000020, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Return_Value' has a wrong offset!");
+static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Return_value) == 0x000020, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Return_value' has a wrong offset!");
 static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Found_Tag) == 0x000024, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Found_Tag' has a wrong offset!");
 static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Tag_Name_L) == 0x00002C, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Tag_Name_L' has a wrong offset!");
 static_assert(offsetof(BP_BuildableTurretAIComponent_C_Check_Tags, Tag_Found_L) == 0x000034, "Member 'BP_BuildableTurretAIComponent_C_Check_Tags::Tag_Found_L' has a wrong offset!");

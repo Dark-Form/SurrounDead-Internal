@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_WinterCoat.SC_WinterCoat_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_WinterCoat_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_WinterCoat_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_WinterCoat.SC_WinterCoat_C.ExecuteUbergraph_SC_WinterCoat
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_WinterCoat_C::ExecuteUbergraph_SC_WinterCoat(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_WinterCoat.SC_WinterCoat_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_WinterCoat_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_WinterCoat_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

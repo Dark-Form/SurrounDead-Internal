@@ -17,68 +17,6 @@
 namespace SDK
 {
 
-// Function BP_StartQuestArea.BP_StartQuestArea_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_StartQuestArea_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StartQuestArea_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_StartQuestArea.BP_StartQuestArea_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_StartQuestArea_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StartQuestArea_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_StartQuestArea.BP_StartQuestArea_C.ExecuteUbergraph_BP_StartQuestArea
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_StartQuestArea_C::ExecuteUbergraph_BP_StartQuestArea(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StartQuestArea_C", "ExecuteUbergraph_BP_StartQuestArea");
-
-	Params::BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_StartQuestArea.BP_StartQuestArea_C.Event_Overlap
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_StartQuestArea_C::Event_Overlap()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StartQuestArea_C", "Event_Overlap");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_StartQuestArea.BP_StartQuestArea_C.BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -106,6 +44,68 @@ void ABP_StartQuestArea_C::BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEv
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_StartQuestArea.BP_StartQuestArea_C.Event_Overlap
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_StartQuestArea_C::Event_Overlap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_StartQuestArea_C", "Event_Overlap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_StartQuestArea.BP_StartQuestArea_C.ExecuteUbergraph_BP_StartQuestArea
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_StartQuestArea_C::ExecuteUbergraph_BP_StartQuestArea(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_StartQuestArea_C", "ExecuteUbergraph_BP_StartQuestArea");
+
+	Params::BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_StartQuestArea.BP_StartQuestArea_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_StartQuestArea_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_StartQuestArea_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_StartQuestArea.BP_StartQuestArea_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_StartQuestArea_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_StartQuestArea_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

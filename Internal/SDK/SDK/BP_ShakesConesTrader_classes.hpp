@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_TraderMaster_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -28,13 +28,13 @@ public:
 	class USkeletalMeshComponent*                 SkeletalMesh1;                                     // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void OnEndInteract();
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
-	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
-	void BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
-	void Sounds(bool NewValue);
 	void ExecuteUbergraph_BP_ShakesConesTrader(int32 EntryPoint);
+	void Sounds(bool NewValue);
+	void BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void OnEndInteract();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

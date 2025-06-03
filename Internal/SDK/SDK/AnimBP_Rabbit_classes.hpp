@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "AnimBP_Rabbit_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 
 
@@ -46,13 +46,13 @@ public:
 
 public:
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void GetSpeed();
-	void ExecuteUbergraph_AnimBP_Rabbit(int32 EntryPoint);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Rabbit_AnimGraphNode_TransitionResult_A37E71524AB0DD8D2AA146B67ECFFB07();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Rabbit_AnimGraphNode_TransitionResult_2EB65D384E80E08509544FAC4396A118();
-	void BlueprintThreadSafeUpdateAnimation(float DeltaTime);
-	void BlueprintInitializeAnimation();
 	void AnimNotify_Footstep();
+	void BlueprintInitializeAnimation();
+	void BlueprintThreadSafeUpdateAnimation(float DeltaTime);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Rabbit_AnimGraphNode_TransitionResult_2EB65D384E80E08509544FAC4396A118();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Rabbit_AnimGraphNode_TransitionResult_A37E71524AB0DD8D2AA146B67ECFFB07();
+	void ExecuteUbergraph_AnimBP_Rabbit(int32 EntryPoint);
+	void GetSpeed();
 
 public:
 	static class UClass* StaticClass()

@@ -29,9 +29,9 @@ public:
 	bool                                          Scientist_;                                        // 0x02BD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void ExecuteUbergraph_BP_LaboratoryCorpse(int32 EntryPoint);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_LaboratoryCorpse(int32 EntryPoint);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

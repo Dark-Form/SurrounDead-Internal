@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UDS_Season_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "UDS_Season_structs.hpp"
 #include "UDS_RandomWeatherTiming_structs.hpp"
 #include "UDS_TemperatureType_structs.hpp"
 

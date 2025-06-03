@@ -17,63 +17,31 @@
 namespace SDK
 {
 
-// Function BP_WaterSpline.BP_WaterSpline_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_WaterSpline_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WaterSpline_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_WaterSpline.BP_WaterSpline_C.SetCollisionType
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_WaterSpline_C::SetCollisionType()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WaterSpline_C", "SetCollisionType");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_WaterSpline.BP_WaterSpline_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_WaterSpline_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WaterSpline_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_WaterSpline.BP_WaterSpline_C.ExecuteUbergraph_BP_WaterSpline
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_WaterSpline.BP_WaterSpline_C.BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_WaterSpline_C::ExecuteUbergraph_BP_WaterSpline(int32 EntryPoint)
+void ABP_WaterSpline_C::BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WaterSpline_C", "ExecuteUbergraph_BP_WaterSpline");
+		Func = Class->GetFunction("BP_WaterSpline_C", "BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
-	Params::BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline Parms{};
+	Params::BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -105,33 +73,65 @@ void ABP_WaterSpline_C::BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBo
 }
 
 
-// Function BP_WaterSpline.BP_WaterSpline_C.BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_WaterSpline.BP_WaterSpline_C.ExecuteUbergraph_BP_WaterSpline
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WaterSpline_C::BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void ABP_WaterSpline_C::ExecuteUbergraph_BP_WaterSpline(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WaterSpline_C", "BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+		Func = Class->GetFunction("BP_WaterSpline_C", "ExecuteUbergraph_BP_WaterSpline");
 
-	Params::BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+	Params::BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline Parms{};
 
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WaterSpline.BP_WaterSpline_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_WaterSpline_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WaterSpline_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_WaterSpline.BP_WaterSpline_C.SetCollisionType
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_WaterSpline_C::SetCollisionType()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WaterSpline_C", "SetCollisionType");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_WaterSpline.BP_WaterSpline_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_WaterSpline_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_WaterSpline_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

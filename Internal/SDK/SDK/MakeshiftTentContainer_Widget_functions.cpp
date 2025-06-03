@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.ExecuteUbergraph_MakeshiftTentContainer_Widget
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMakeshiftTentContainer_Widget_C::ExecuteUbergraph_MakeshiftTentContainer_Widget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MakeshiftTentContainer_Widget_C", "ExecuteUbergraph_MakeshiftTentContainer_Widget");
-
-	Params::MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.SetItemReference
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -367,6 +347,26 @@ void UMakeshiftTentContainer_Widget_C::ForceInitSpecialcontainer()
 		Func = Class->GetFunction("MakeshiftTentContainer_Widget_C", "ForceInitSpecialcontainer");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.ExecuteUbergraph_MakeshiftTentContainer_Widget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMakeshiftTentContainer_Widget_C::ExecuteUbergraph_MakeshiftTentContainer_Widget(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MakeshiftTentContainer_Widget_C", "ExecuteUbergraph_MakeshiftTentContainer_Widget");
+
+	Params::MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

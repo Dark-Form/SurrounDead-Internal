@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "S_MeleeAnimations_structs.hpp"
+#include "E_BlockType_structs.hpp"
+#include "S_AttachedHoldables_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "E_DeadBodyReaction_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "S_EmoteAnimations_structs.hpp"
 #include "E_FleeSetting_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "E_StimuliReaction_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 #include "E_OrderOptions_structs.hpp"
-#include "S_EmoteAnimations_structs.hpp"
-#include "AIModule_structs.hpp"
-#include "E_HitboxTypeAI_structs.hpp"
-#include "S_AIInteractAnim_structs.hpp"
 #include "S_TriggerResponse_structs.hpp"
+#include "E_HitboxTypeAI_structs.hpp"
+#include "S_MeleeAnimations_structs.hpp"
+#include "S_AIInteractAnim_structs.hpp"
+#include "E_StimuliReaction_structs.hpp"
 #include "S_ReactSettings_structs.hpp"
-#include "S_AttachedHoldables_structs.hpp"
-#include "E_BlockType_structs.hpp"
 #include "E_StartingAIBehaviours_structs.hpp"
 #include "S_ReactedActors_structs.hpp"
 #include "S_AIOptimization_structs.hpp"
@@ -34,8 +34,8 @@
 #include "PhysicsCore_structs.hpp"
 #include "S_ClimbAnims_structs.hpp"
 #include "S_RoutineSettings_structs.hpp"
-#include "E_DeadBodyReaction_structs.hpp"
 #include "E_Radius_structs.hpp"
+#include "AIModule_structs.hpp"
 
 
 namespace SDK
@@ -477,7 +477,7 @@ public:
 	void Cancel_Melee_Timer();
 	void Cancel_Temp_Behaviour();
 	void ChangeDamageMulti(double ChangeAmount);
-	void Check_Attached_Holdables(class UClass* Holdable_Class, bool* Return_Value, class ABP_AIWeapon_Master_C** Holdable);
+	void Check_Attached_Holdables(class UClass* Holdable_Class, bool* Return_value, class ABP_AIWeapon_Master_C** Holdable);
 	void Check_Attack_Targets(bool* Target_Found, class AActor** Actor);
 	void Check_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
 	void Check_Flee_Alert(class AActor* Actor);
@@ -518,7 +518,7 @@ public:
 	void ExecuteUbergraph_BP_SmartAIComponent(int32 EntryPoint);
 	void Flee_Timer_End();
 	void Forget_Attackers_Timer();
-	void Forward_Check(double Forward_Distance, double Down_Distance, const struct FVector& Trace_Towards, struct FHitResult* Hit_Result, bool* Return_Value);
+	void Forward_Check(double Forward_Distance, double Down_Distance, const struct FVector& Trace_Towards, struct FHitResult* Hit_Result, bool* Return_value);
 	void FrequencyTimer(double Time_0);
 	void Generic_Damage_Reaction(class AActor* Damage_Cause);
 	void Get_Attached_Weapon_Ammo(bool* Ammo_Found, class ABP_AIWeapon_Master_C** Holdable_With_Ammo);
@@ -562,8 +562,8 @@ public:
 	void Proximity_Activated(class AActor* Proximity_Actor, bool* Proximity_Triggered);
 	void Proximity_Deactivated(class AActor* Proximity_Actor, bool* Proximity_Deactivated_0);
 	void Proximity_Updates();
-	void Random_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_Value, class ABP_MasterInteractionPoint_C** Interaction_Point_0);
-	void Random_Specified_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_Value, class ABP_MasterInteractionPoint_C** Interaction_Point_0);
+	void Random_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_value, class ABP_MasterInteractionPoint_C** Interaction_Point_0);
+	void Random_Specified_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_value, class ABP_MasterInteractionPoint_C** Interaction_Point_0);
 	void Range_Attack();
 	void Reacted_Actor_Check(class AActor* Actor, bool* Actor_Found);
 	void ReceiveBeginPlay();
@@ -622,7 +622,7 @@ public:
 	void Stop_Fleeing();
 	void StopCurrentAudio();
 	void StreamLevelUnLoaded();
-	void Tag_Check(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_Value, class FName* Found_Tag);
+	void Tag_Check(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_value, class FName* Found_Tag);
 	void Take_Damage(double Damage);
 	void Total_Ammo_Check(bool* Has_Ammo, int32* Ammo);
 	void Transition_Anim(bool Start_Transition, const struct FS_GeneralSettings& AI_Settings, bool* Use_Transition, class UAnimMontage** Anim);

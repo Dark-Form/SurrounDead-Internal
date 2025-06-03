@@ -137,7 +137,7 @@ public:
 	void AdaptImageToActionbar(class UTextureRenderTarget2D* RenderTargetSnap_0);
 	void AddToXY(int32 X, int32 Y, struct FVector2D* SlotDimension);
 	void AdjustImageScale();
-	void CanOpenSpecialContainer_(bool* Return_Value);
+	void CanOpenSpecialContainer_(bool* Return_value);
 	void CanStack_(bool* CanStack, bool* FreeSpaceAvailable);
 	void CapacityContainer_GetLastItem(class UJSI_Slot_C** Output);
 	void ChangePrice(double Price_0);
@@ -157,7 +157,7 @@ public:
 	void GetBorderColorByRarity(const struct FGameplayTag& Rarity_0, struct FLinearColor* Color);
 	void GetClickLocation(const struct FGeometry& Geometry, const struct FPointerEvent& MouseEvents, struct FVector2D* Output_Get);
 	void GetContainerCapacity(int32* Cap, int32* MaxCapacity);
-	void GetContainerOneRef(class UUserWidget** ContainerREF);
+	void GetContainerOneRef(class UUserWidget** ContainerRef);
 	void GetContainerRef(class UUserWidget** SpecialContainerRef_0, class UJSIContainer_C** SlotContainer_0, bool* IsSpecialContainer);
 	void GetContainers(TArray<class UJSIContainer_C*>* Container);
 	void GetCount(int32* Count);

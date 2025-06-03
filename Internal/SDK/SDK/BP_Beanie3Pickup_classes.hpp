@@ -25,29 +25,29 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Beanie3Pickup_C;                 // 0x0310(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void Jig_ToggleAttachmentActiveState();
-	void Jig_StartReloading(class UActorComponent* MPCom, class UJSIContainer_C* MagContainer, class UJSI_Slot_C* WithMag, bool* Result);
-	void Jig_SetPendingMag(class ABP_AMainLocalAttachment_C* MagRef, class UJigsawItem_DataAsset_C* DA, bool* Result);
-	void Jig_SetAttachmentState(const TArray<struct FGuid>& UID, const struct FGameplayTag& NewState, bool PreExecuteClientSide_);
-	void Jig_SetAttachmentInfo(const struct FGuid& UID, class UJigsawItem_DataAsset_C* AttachmentInfo, bool* Result);
-	void Jig_SetAttachmentActiveState(const struct FGameplayTag& Value);
-	void Jig_OnMontageNotify(class FName NotifyName);
-	void Jig_OnAttachmentSnapInspector();
-	void Jig_GetPrimitiveComponent(class UPrimitiveComponent** Comp);
-	void Jig_GetPendingMag(bool FindMagIfNoPending_, class ABP_AMainLocalAttachment_C** MagRef);
-	void Jig_GetEquipMontage(bool CanChamber_, class UAnimMontage** EquipMontage);
-	void Jig_GetAvailableAttachmentStates(struct FGameplayTagContainer* States);
-	void Jig_GetAttachmentInfo(struct FGuid* UID, class UJigsawItem_DataAsset_C** AttachmentInfo);
-	void Jig_GetAttachmentByType(const struct FGameplayTag& Type, class ABP_AMainLocalAttachment_C** Attachment, bool* Found);
-	void Jig_GetAttachmentArrayByType(const struct FGameplayTag& Type, TArray<class ABP_AMainLocalAttachment_C*>* Attachment, bool* Found);
-	void Jig_GetAttachmentActiveState(struct FGameplayTag* Result);
-	void Jig_GetADSSocketLocation(struct FVector* SocketLoc, bool* SocketFound);
-	void Jig_ExecuteChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UAnimMontage** ChamberMontage, double* Speed);
-	void Jig_CheckCanReload(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UJSIContainer_C** ContainerMag, class UAnimMontage** ReloadMontage, bool* HasInternalMag, bool* CanChamber_, class UJSI_Slot_C** ReloadWith, class UAnimMontage** LoopReloadAnim);
-	void Jig_CanChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result);
-	void Jig_AttachmentRemoved(TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType);
-	void Jig_AttachmentInstalled(const struct FGuid& MainUID, TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType);
 	void ExecuteUbergraph_BP_Beanie3Pickup(int32 EntryPoint);
+	void Jig_AttachmentInstalled(const struct FGuid& MainUID, TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType);
+	void Jig_AttachmentRemoved(TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType);
+	void Jig_CanChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result);
+	void Jig_CheckCanReload(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UJSIContainer_C** ContainerMag, class UAnimMontage** ReloadMontage, bool* HasInternalMag, bool* CanChamber_, class UJSI_Slot_C** ReloadWith, class UAnimMontage** LoopReloadAnim);
+	void Jig_ExecuteChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UAnimMontage** ChamberMontage, double* Speed);
+	void Jig_GetADSSocketLocation(struct FVector* SocketLoc, bool* SocketFound);
+	void Jig_GetAttachmentActiveState(struct FGameplayTag* Result);
+	void Jig_GetAttachmentArrayByType(const struct FGameplayTag& Type, TArray<class ABP_AMainLocalAttachment_C*>* Attachment, bool* Found);
+	void Jig_GetAttachmentByType(const struct FGameplayTag& Type, class ABP_AMainLocalAttachment_C** Attachment, bool* Found);
+	void Jig_GetAttachmentInfo(struct FGuid* UID, class UJigsawItem_DataAsset_C** AttachmentInfo);
+	void Jig_GetAvailableAttachmentStates(struct FGameplayTagContainer* States);
+	void Jig_GetEquipMontage(bool CanChamber_, class UAnimMontage** EquipMontage);
+	void Jig_GetPendingMag(bool FindMagIfNoPending_, class ABP_AMainLocalAttachment_C** MagRef);
+	void Jig_GetPrimitiveComponent(class UPrimitiveComponent** Comp);
+	void Jig_OnAttachmentSnapInspector();
+	void Jig_OnMontageNotify(class FName NotifyName);
+	void Jig_SetAttachmentActiveState(const struct FGameplayTag& Value);
+	void Jig_SetAttachmentInfo(const struct FGuid& UID, class UJigsawItem_DataAsset_C* AttachmentInfo, bool* Result);
+	void Jig_SetAttachmentState(const TArray<struct FGuid>& UID, const struct FGameplayTag& NewState, bool PreExecuteClientSide_);
+	void Jig_SetPendingMag(class ABP_AMainLocalAttachment_C* MagRef, class UJigsawItem_DataAsset_C* DA, bool* Result);
+	void Jig_StartReloading(class UActorComponent* MPCom, class UJSIContainer_C* MagContainer, class UJSI_Slot_C* WithMag, bool* Result);
+	void Jig_ToggleAttachmentActiveState();
 
 public:
 	static class UClass* StaticClass()

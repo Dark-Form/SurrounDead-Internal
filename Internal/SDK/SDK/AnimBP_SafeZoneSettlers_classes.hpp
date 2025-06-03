@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
-#include "AnimBP_SafeZoneSettlers_structs.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "AnimBP_SafeZoneSettlers_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 namespace SDK
@@ -51,15 +51,15 @@ public:
 	bool                                          Dead;                                              // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void ExecuteUbergraph_AnimBP_SafeZoneSettlers(int32 EntryPoint);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_SafeZoneSettlers_AnimGraphNode_TransitionResult_64B60A3048ECD9D6343702858A51CCE6();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_SafeZoneSettlers_AnimGraphNode_TransitionResult_0F1699B0429C7B98EBEC7388A4769E3C();
 	void DeathState(bool Dead_0);
+	void CombatState(int32 BlendSpace);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void BlueprintInitializeAnimation();
 	void AnimNotify_Footstep();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void CombatState(int32 BlendSpace);
 
 public:
 	static class UClass* StaticClass()

@@ -17,112 +17,25 @@
 namespace SDK
 {
 
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ExplosiveBarrelMaster_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ExplosiveBarrelMaster_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.IsObjectDamageable?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ExplosiveBarrelMaster_C::IsObjectDamageable_(bool* Damageable_)
+void ABP_ExplosiveBarrelMaster_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "IsObjectDamageable?");
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
 
-	Params::BP_ExplosiveBarrelMaster_C_IsObjectDamageable_ Parms{};
+	Params::BP_ExplosiveBarrelMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Damageable_ != nullptr)
-		*Damageable_ = Parms.Damageable_;
-}
-
-
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.ExecuteUbergraph_BP_ExplosiveBarrelMaster
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ExplosiveBarrelMaster_C::ExecuteUbergraph_BP_ExplosiveBarrelMaster(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "ExecuteUbergraph_BP_ExplosiveBarrelMaster");
-
-	Params::BP_ExplosiveBarrelMaster_C_ExecuteUbergraph_BP_ExplosiveBarrelMaster Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.Event_Explode
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AController*                      EventInstigator                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ExplosiveBarrelMaster_C::Event_Explode(class AController* EventInstigator)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "Event_Explode");
-
-	Params::BP_ExplosiveBarrelMaster_C_Event_Explode Parms{};
-
-	Parms.EventInstigator = EventInstigator;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.Damage_Shoved
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Anim                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Force                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ExplosiveBarrelMaster_C::Damage_Shoved(bool Anim, double Force)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "Damage_Shoved");
-
-	Params::BP_ExplosiveBarrelMaster_C_Damage_Shoved Parms{};
-
-	Parms.Anim = Anim;
-	Parms.Force = Force;
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -152,27 +65,114 @@ void ABP_ExplosiveBarrelMaster_C::Damage_Object(double Damage, class AActor* Dam
 }
 
 
-// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.Damage_Shoved
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Anim                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Force                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ExplosiveBarrelMaster_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_ExplosiveBarrelMaster_C::Damage_Shoved(bool Anim, double Force)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "Damage_Shoved");
 
-	Params::BP_ExplosiveBarrelMaster_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	Params::BP_ExplosiveBarrelMaster_C_Damage_Shoved Parms{};
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
+	Parms.Anim = Anim;
+	Parms.Force = Force;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.Event_Explode
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AController*                      EventInstigator                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ExplosiveBarrelMaster_C::Event_Explode(class AController* EventInstigator)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "Event_Explode");
+
+	Params::BP_ExplosiveBarrelMaster_C_Event_Explode Parms{};
+
+	Parms.EventInstigator = EventInstigator;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.ExecuteUbergraph_BP_ExplosiveBarrelMaster
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ExplosiveBarrelMaster_C::ExecuteUbergraph_BP_ExplosiveBarrelMaster(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "ExecuteUbergraph_BP_ExplosiveBarrelMaster");
+
+	Params::BP_ExplosiveBarrelMaster_C_ExecuteUbergraph_BP_ExplosiveBarrelMaster Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.IsObjectDamageable?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ExplosiveBarrelMaster_C::IsObjectDamageable_(bool* Damageable_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "IsObjectDamageable?");
+
+	Params::BP_ExplosiveBarrelMaster_C_IsObjectDamageable_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Damageable_ != nullptr)
+		*Damageable_ = Parms.Damageable_;
+}
+
+
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ExplosiveBarrelMaster_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ExplosiveBarrelMaster.BP_ExplosiveBarrelMaster_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_ExplosiveBarrelMaster_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ExplosiveBarrelMaster_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

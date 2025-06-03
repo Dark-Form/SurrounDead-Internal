@@ -29,17 +29,19 @@ public:
 	TArray<class UJSI_Slot_C*>                    Array_Of_Items;                                    // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void GetLootContent(class UUserWidget** Widget);
-	void OnInitialized();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void SetItemReference(class UJSI_Slot_C* ItemRef);
 	void SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector);
 	void SetActorOwner(class AActor* ActorRef);
 	void SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnInitialized();
 	void OnCreatedFromUtility();
 	void JSIOnWeightUpdated(double NewWeight);
 	void JSICheckStatus();
 	void JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0);
+	void GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers);
+	void GetLootContent(class UUserWidget** Widget);
 	void GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers);
 	void GetJSIContainerByPlayerSlots(const struct FGameplayTag& Slot_0, class UJSIContainer_C** Container, class UJSI_Slot_C** EquippedItem, bool* IsPending_);
 	void GetDropWidget(class UDropItemBackGwidget_C** DropWRef);
@@ -48,8 +50,6 @@ public:
 	void ForceInitSpecialcontainer();
 	void ExecuteUbergraph_W_SmallLootContainerUI(int32 EntryPoint);
 	void BndEvt__SmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	void GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers);
 
 	void GetListOfContainers(TArray<class UJSIContainer_C*>* Containers) const;
 

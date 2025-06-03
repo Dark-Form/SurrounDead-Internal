@@ -35,9 +35,9 @@ public:
 	TArray<class FName>                           UniqueLootSets;                                    // 0x0300(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void SpawnContainer();
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_SpecialItemContainerSpawner(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void SpawnContainer();
 
 public:
 	static class UClass* StaticClass()

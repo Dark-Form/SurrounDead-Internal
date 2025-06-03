@@ -17,65 +17,59 @@
 namespace SDK
 {
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.Svr_Spawn
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorLoaded
+// (Event, Public, BlueprintEvent)
 
-void ABP_VehicleUniqueSpawner_C::Svr_Spawn()
+void ABP_VehicleUniqueSpawner_C::ActorLoaded()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "Svr_Spawn");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorLoaded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorPreLoad
+// (Event, Public, BlueprintEvent)
 
-void ABP_VehicleUniqueSpawner_C::ReceiveBeginPlay()
+void ABP_VehicleUniqueSpawner_C::ActorPreLoad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorPreLoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.OnCompleted_63EA519847229E38F2FAA4856B866960
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
 
-void ABP_VehicleUniqueSpawner_C::OnCompleted_63EA519847229E38F2FAA4856B866960()
+void ABP_VehicleUniqueSpawner_C::ActorPreSave()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "OnCompleted_63EA519847229E38F2FAA4856B866960");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorPreSave");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ExecuteUbergraph_BP_VehicleUniqueSpawner
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorSaved
+// (Event, Public, BlueprintEvent)
 
-void ABP_VehicleUniqueSpawner_C::ExecuteUbergraph_BP_VehicleUniqueSpawner(int32 EntryPoint)
+void ABP_VehicleUniqueSpawner_C::ActorSaved()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ExecuteUbergraph_BP_VehicleUniqueSpawner");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorSaved");
 
-	Params::BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -100,57 +94,63 @@ void ABP_VehicleUniqueSpawner_C::ComponentsToSave(TArray<class UActorComponent*>
 }
 
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorSaved
-// (Event, Public, BlueprintEvent)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ExecuteUbergraph_BP_VehicleUniqueSpawner
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VehicleUniqueSpawner_C::ActorSaved()
+void ABP_VehicleUniqueSpawner_C::ExecuteUbergraph_BP_VehicleUniqueSpawner(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorSaved");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ExecuteUbergraph_BP_VehicleUniqueSpawner");
+
+	Params::BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.OnCompleted_63EA519847229E38F2FAA4856B866960
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_VehicleUniqueSpawner_C::OnCompleted_63EA519847229E38F2FAA4856B866960()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "OnCompleted_63EA519847229E38F2FAA4856B866960");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_VehicleUniqueSpawner_C::ActorPreSave()
+void ABP_VehicleUniqueSpawner_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorPreSave");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorPreLoad
-// (Event, Public, BlueprintEvent)
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.Svr_Spawn
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
-void ABP_VehicleUniqueSpawner_C::ActorPreLoad()
+void ABP_VehicleUniqueSpawner_C::Svr_Spawn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorPreLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ActorLoaded
-// (Event, Public, BlueprintEvent)
-
-void ABP_VehicleUniqueSpawner_C::ActorLoaded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "ActorLoaded");
+		Func = Class->GetFunction("BP_VehicleUniqueSpawner_C", "Svr_Spawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

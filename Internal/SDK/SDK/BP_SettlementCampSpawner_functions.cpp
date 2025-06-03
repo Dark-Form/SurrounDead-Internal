@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_SettlementCampSpawner_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementCampSpawner_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.SpawnSettlement
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SettlementCampSpawner_C::SpawnSettlement()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementCampSpawner_C", "SpawnSettlement");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.ExecuteUbergraph_BP_SettlementCampSpawner
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -62,6 +34,34 @@ void ABP_SettlementCampSpawner_C::ExecuteUbergraph_BP_SettlementCampSpawner(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.SpawnSettlement
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SettlementCampSpawner_C::SpawnSettlement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SettlementCampSpawner_C", "SpawnSettlement");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_SettlementCampSpawner_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SettlementCampSpawner_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

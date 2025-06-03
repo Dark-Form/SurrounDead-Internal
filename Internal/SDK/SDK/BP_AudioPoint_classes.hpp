@@ -27,9 +27,9 @@ public:
 	class USoundBase*                             Sound;                                             // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_AudioPoint(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

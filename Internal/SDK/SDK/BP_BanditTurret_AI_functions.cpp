@@ -17,461 +17,130 @@
 namespace SDK
 {
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.TurretRotateAnimation__UpdateFunc
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BanditTurret_AI_C::TurretRotateAnimation__UpdateFunc()
+void ABP_BanditTurret_AI_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "TurretRotateAnimation__UpdateFunc");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::BP_BanditTurret_AI_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.CheckBehindTurret
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::CheckBehindTurret(class AActor* Interactor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "CheckBehindTurret");
+
+	Params::BP_BanditTurret_AI_C_CheckBehindTurret Parms{};
+
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Event_HoldTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::Event_HoldTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Event_HoldTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.TurretRotateAnimation__FinishedFunc
-// (BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Event_StopTimer
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_BanditTurret_AI_C::TurretRotateAnimation__FinishedFunc()
+void ABP_BanditTurret_AI_C::Event_StopTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "TurretRotateAnimation__FinishedFunc");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Event_StopTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Turret Idle Stop
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Event_UpdateTimer
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_BanditTurret_AI_C::Turret_Idle_Stop()
+void ABP_BanditTurret_AI_C::Event_UpdateTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Turret Idle Stop");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Event_UpdateTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Turret Idle Start
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::Turret_Idle_Start()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Turret Idle Start");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Turret Destroyed Effect
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::Turret_Destroyed_Effect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Turret Destroyed Effect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.ExecuteUbergraph_BP_BanditTurret_AI
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BanditTurret_AI_C::SetPickupCount(int32 NewCount, bool* Result)
+void ABP_BanditTurret_AI_C::ExecuteUbergraph_BP_BanditTurret_AI(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "SetPickupCount");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "ExecuteUbergraph_BP_BanditTurret_AI");
 
-	Params::BP_BanditTurret_AI_C_SetPickupCount Parms{};
+	Params::BP_BanditTurret_AI_C_ExecuteUbergraph_BP_BanditTurret_AI Parms{};
 
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "SetInteractOption");
-
-	Params::BP_BanditTurret_AI_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.GetInteractOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_BanditTurret_AI_C::OnStopExecuteInteract(class AActor* InteractingActor)
+void ABP_BanditTurret_AI_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnStopExecuteInteract");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "GetInteractOptions");
 
-	Params::BP_BanditTurret_AI_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnServerExecuteInteract");
-
-	Params::BP_BanditTurret_AI_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnRequestServerInteract");
-
-	Params::BP_BanditTurret_AI_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
+	Params::BP_BanditTurret_AI_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnExecuteInteractDialogue");
-
-	Params::BP_BanditTurret_AI_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnExecuteInteract");
-
-	Params::BP_BanditTurret_AI_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_BanditTurret_AI_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnBeginInteract");
-
-	Params::BP_BanditTurret_AI_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Multicast Turret Idle Stop
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::Multicast_Turret_Idle_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Multicast Turret Idle Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Multicast Turret Idle Start
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::Multicast_Turret_Idle_Start()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Multicast Turret Idle Start");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Multicast Spawn Emitter
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_BanditTurret_AI_C::Multicast_Spawn_Emitter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Multicast Spawn Emitter");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "JigSetCanInteract");
-
-	Params::BP_BanditTurret_AI_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.JigCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::JigCanInteract(bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "JigCanInteract");
-
-	Params::BP_BanditTurret_AI_C_JigCanInteract Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.IsObjectDamageable?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::IsObjectDamageable_(bool* Damageable_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "IsObjectDamageable?");
-
-	Params::BP_BanditTurret_AI_C_IsObjectDamageable_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Damageable_ != nullptr)
-		*Damageable_ = Parms.Damageable_;
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.GetMainSceneComp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::GetMainSceneComp(class USceneComponent** Comp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "GetMainSceneComp");
-
-	Params::BP_BanditTurret_AI_C_GetMainSceneComp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
-}
-
-
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.GetJigMultiplayerComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BanditTurret_AI_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "GetJigMultiplayerComponent");
-
-	Params::BP_BanditTurret_AI_C_GetJigMultiplayerComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
 }
 
 
@@ -508,130 +177,461 @@ void ABP_BanditTurret_AI_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, in
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.GetInteractOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.GetJigMultiplayerComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BanditTurret_AI_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+void ABP_BanditTurret_AI_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "GetInteractOptions");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "GetJigMultiplayerComponent");
 
-	Params::BP_BanditTurret_AI_C_GetInteractOptions Parms{};
+	Params::BP_BanditTurret_AI_C_GetJigMultiplayerComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.ExecuteUbergraph_BP_BanditTurret_AI
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.GetMainSceneComp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BanditTurret_AI_C::ExecuteUbergraph_BP_BanditTurret_AI(int32 EntryPoint)
+void ABP_BanditTurret_AI_C::GetMainSceneComp(class USceneComponent** Comp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "ExecuteUbergraph_BP_BanditTurret_AI");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "GetMainSceneComp");
 
-	Params::BP_BanditTurret_AI_C_ExecuteUbergraph_BP_BanditTurret_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::BP_BanditTurret_AI_C_GetMainSceneComp Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Event_UpdateTimer
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.IsObjectDamageable?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BanditTurret_AI_C::Event_UpdateTimer()
+void ABP_BanditTurret_AI_C::IsObjectDamageable_(bool* Damageable_)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Event_UpdateTimer");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "IsObjectDamageable?");
+
+	Params::BP_BanditTurret_AI_C_IsObjectDamageable_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Damageable_ != nullptr)
+		*Damageable_ = Parms.Damageable_;
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.JigCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::JigCanInteract(bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "JigCanInteract");
+
+	Params::BP_BanditTurret_AI_C_JigCanInteract Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "JigSetCanInteract");
+
+	Params::BP_BanditTurret_AI_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Multicast Spawn Emitter
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::Multicast_Spawn_Emitter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Multicast Spawn Emitter");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Event_StopTimer
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Multicast Turret Idle Start
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_BanditTurret_AI_C::Event_StopTimer()
+void ABP_BanditTurret_AI_C::Multicast_Turret_Idle_Start()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Event_StopTimer");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Multicast Turret Idle Start");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Event_HoldTimer
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Multicast Turret Idle Stop
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_BanditTurret_AI_C::Event_HoldTimer()
+void ABP_BanditTurret_AI_C::Multicast_Turret_Idle_Stop()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Event_HoldTimer");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Multicast Turret Idle Stop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.CheckBehindTurret
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnBeginInteract
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ABP_BanditTurret_AI_C::CheckBehindTurret(class AActor* Interactor)
+void ABP_BanditTurret_AI_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "CheckBehindTurret");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnBeginInteract");
 
-	Params::BP_BanditTurret_AI_C_CheckBehindTurret Parms{};
+	Params::BP_BanditTurret_AI_C_OnBeginInteract Parms{};
 
-	Parms.Interactor = Interactor;
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_BanditTurret_AI_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_BanditTurret_AI_C::OnEndInteract()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BanditTurret_AI_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnEndInteract");
 
-	Params::BP_BanditTurret_AI_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnExecuteInteract");
+
+	Params::BP_BanditTurret_AI_C_OnExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Option = std::move(Option);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnExecuteInteractDialogue");
+
+	Params::BP_BanditTurret_AI_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnExecuteInteractEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnRequestServerInteract");
+
+	Params::BP_BanditTurret_AI_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnServerExecuteInteract");
+
+	Params::BP_BanditTurret_AI_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "OnStopExecuteInteract");
+
+	Params::BP_BanditTurret_AI_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "SetInteractOption");
+
+	Params::BP_BanditTurret_AI_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BanditTurret_AI_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "SetPickupCount");
+
+	Params::BP_BanditTurret_AI_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Turret Destroyed Effect
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::Turret_Destroyed_Effect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Turret Destroyed Effect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Turret Idle Start
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::Turret_Idle_Start()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Turret Idle Start");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.Turret Idle Stop
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::Turret_Idle_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "Turret Idle Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.TurretRotateAnimation__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::TurretRotateAnimation__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "TurretRotateAnimation__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BanditTurret_AI.BP_BanditTurret_AI_C.TurretRotateAnimation__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_BanditTurret_AI_C::TurretRotateAnimation__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BanditTurret_AI_C", "TurretRotateAnimation__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

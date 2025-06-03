@@ -24,140 +24,6 @@
 namespace SDK::Params
 {
 
-// Function BP_MasterBandit.BP_MasterBandit_C.SetWeapons
-// 0x0058 (0x0058 - 0x0000)
-struct BP_MasterBandit_C_SetWeapons final
-{
-public:
-	int32                                         RandomRanged;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Random_OutItem;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Random_OutItem_1;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_Array_Get_Item_1;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_Array_Random_OutItem_2;                   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Random_OutItem_3;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_3;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_SetWeapons) == 0x000008, "Wrong alignment on BP_MasterBandit_C_SetWeapons");
-static_assert(sizeof(BP_MasterBandit_C_SetWeapons) == 0x000058, "Wrong size on BP_MasterBandit_C_SetWeapons");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, RandomRanged) == 0x000000, "Member 'BP_MasterBandit_C_SetWeapons::RandomRanged' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem) == 0x000008, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex) == 0x000010, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem_1) == 0x000018, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex_1) == 0x000020, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem_2) == 0x000038, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex_2) == 0x000040, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem_3) == 0x000048, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem_3' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex_3) == 0x000050, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex_3' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.SetPickupCount
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterBandit_C_SetPickupCount final
-{
-public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_MasterBandit_C_SetPickupCount");
-static_assert(sizeof(BP_MasterBandit_C_SetPickupCount) == 0x000008, "Wrong size on BP_MasterBandit_C_SetPickupCount");
-static_assert(offsetof(BP_MasterBandit_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_MasterBandit_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetPickupCount, Result) == 0x000004, "Member 'BP_MasterBandit_C_SetPickupCount::Result' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.SetMeshAndMaterial
-// 0x0240 (0x0240 - 0x0000)
-struct BP_MasterBandit_C_SetMeshAndMaterial final
-{
-public:
-	bool                                          SkipRandomMaterial__0;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         BackpackMap;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_8;                            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_9;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_10;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_11;                           // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_12;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FTransform>                     CallFunc_Map_Values_Values;                        // 0x0078(0x0010)(ReferenceParm)
-	TArray<class UStaticMesh*>                    CallFunc_Map_Keys_Keys;                            // 0x0088(0x0010)(ReferenceParm)
-	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0108(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            CallFunc_Array_Random_OutItem;                     // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            CallFunc_Array_Random_OutItem_1;                   // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22D[0x3];                                      // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMesh*                          CallFunc_Array_Random_OutItem_2;                   // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_SetMeshAndMaterial) == 0x000010, "Wrong alignment on BP_MasterBandit_C_SetMeshAndMaterial");
-static_assert(sizeof(BP_MasterBandit_C_SetMeshAndMaterial) == 0x000240, "Wrong size on BP_MasterBandit_C_SetMeshAndMaterial");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, SkipRandomMaterial__0) == 0x000000, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::SkipRandomMaterial__0' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, BackpackMap) == 0x000004, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::BackpackMap' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_int_Variable) == 0x000008, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable) == 0x000010, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_1) == 0x000018, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_2) == 0x000020, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_3) == 0x000028, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_4) == 0x000030, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_5) == 0x000038, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_6) == 0x000040, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_7) == 0x000048, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_8) == 0x000050, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_9) == 0x000058, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_10) == 0x000060, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_11) == 0x000068, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_12) == 0x000070, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Map_Values_Values) == 0x000078, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Map_Keys_Keys) == 0x000088, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Get_Item) == 0x0000A0, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000108, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue) == 0x0001F0, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Length_ReturnValue) == 0x0001F4, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0001F8, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001FC, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000200, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, K2Node_Select_Default) == 0x000208, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem) == 0x000210, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex) == 0x000218, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00021C, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_1) == 0x000220, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_1) == 0x000228, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_2) == 0x00022C, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_2) == 0x000230, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_2) == 0x000238, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
-
 // Function BP_MasterBandit.BP_MasterBandit_C.SetItemShadowVisibility
 // 0x0001 (0x0001 - 0x0000)
 struct BP_MasterBandit_C_SetItemShadowVisibility final
@@ -317,6 +183,21 @@ static_assert(alignof(BP_MasterBandit_C_OnBeginInteract) == 0x000008, "Wrong ali
 static_assert(sizeof(BP_MasterBandit_C_OnBeginInteract) == 0x000058, "Wrong size on BP_MasterBandit_C_OnBeginInteract");
 static_assert(offsetof(BP_MasterBandit_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_MasterBandit_C_OnBeginInteract::InteractingActor' has a wrong offset!");
 static_assert(offsetof(BP_MasterBandit_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_MasterBandit_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.JigSetCanInteract
+// 0x0003 (0x0003 - 0x0000)
+struct BP_MasterBandit_C_JigSetCanInteract final
+{
+public:
+	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_MasterBandit_C_JigSetCanInteract");
+static_assert(sizeof(BP_MasterBandit_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_MasterBandit_C_JigSetCanInteract");
+static_assert(offsetof(BP_MasterBandit_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_MasterBandit_C_JigSetCanInteract::CanInteract' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_MasterBandit_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_MasterBandit_C_JigSetCanInteract::Result' has a wrong offset!");
 
 // Function BP_MasterBandit.BP_MasterBandit_C.JigMP_OnUpdateChamberUID
 // 0x0014 (0x0014 - 0x0000)
@@ -589,6 +470,19 @@ static_assert(offsetof(BP_MasterBandit_C_JigMP_OnContainersSwap, Container1) == 
 static_assert(offsetof(BP_MasterBandit_C_JigMP_OnContainersSwap, Container2) == 0x000008, "Member 'BP_MasterBandit_C_JigMP_OnContainersSwap::Container2' has a wrong offset!");
 static_assert(offsetof(BP_MasterBandit_C_JigMP_OnContainersSwap, Result) == 0x000010, "Member 'BP_MasterBandit_C_JigMP_OnContainersSwap::Result' has a wrong offset!");
 
+// Function BP_MasterBandit.BP_MasterBandit_C.JigMP_GetLootWidget
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MasterBandit_C_JigMP_GetLootWidget final
+{
+public:
+	class UWidget*                                Result;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Valid_;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_JigMP_GetLootWidget) == 0x000008, "Wrong alignment on BP_MasterBandit_C_JigMP_GetLootWidget");
+static_assert(sizeof(BP_MasterBandit_C_JigMP_GetLootWidget) == 0x000010, "Wrong size on BP_MasterBandit_C_JigMP_GetLootWidget");
+static_assert(offsetof(BP_MasterBandit_C_JigMP_GetLootWidget, Result) == 0x000000, "Member 'BP_MasterBandit_C_JigMP_GetLootWidget::Result' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_JigMP_GetLootWidget, Valid_) == 0x000008, "Member 'BP_MasterBandit_C_JigMP_GetLootWidget::Valid_' has a wrong offset!");
+
 // Function BP_MasterBandit.BP_MasterBandit_C.JigCanInteract
 // 0x0001 (0x0001 - 0x0000)
 struct BP_MasterBandit_C_JigCanInteract final
@@ -661,94 +555,6 @@ static_assert(alignof(BP_MasterBandit_C_GetMesh) == 0x000008, "Wrong alignment o
 static_assert(sizeof(BP_MasterBandit_C_GetMesh) == 0x000008, "Wrong size on BP_MasterBandit_C_GetMesh");
 static_assert(offsetof(BP_MasterBandit_C_GetMesh, Mesh_0) == 0x000000, "Member 'BP_MasterBandit_C_GetMesh::Mesh_0' has a wrong offset!");
 
-// Function BP_MasterBandit.BP_MasterBandit_C.GetJigMultiplayerComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterBandit_C_GetJigMultiplayerComponent final
-{
-public:
-	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_MasterBandit_C_GetJigMultiplayerComponent");
-static_assert(sizeof(BP_MasterBandit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_MasterBandit_C_GetJigMultiplayerComponent");
-static_assert(offsetof(BP_MasterBandit_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_MasterBandit_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.AIHealthBarInfo
-// 0x0048 (0x0048 - 0x0000)
-struct BP_MasterBandit_C_AIHealthBarInfo final
-{
-public:
-	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Param_Name_0;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Boss__0;                                           // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_MasterBandit_C_AIHealthBarInfo");
-static_assert(sizeof(BP_MasterBandit_C_AIHealthBarInfo) == 0x000048, "Wrong size on BP_MasterBandit_C_AIHealthBarInfo");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_MasterBandit_C_AIHealthBarInfo::Visible_' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, Param_Name_0) == 0x000008, "Member 'BP_MasterBandit_C_AIHealthBarInfo::Param_Name_0' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, Boss__0) == 0x000018, "Member 'BP_MasterBandit_C_AIHealthBarInfo::Boss__0' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000028, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000040, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.AddMarker
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterBandit_C_AddMarker final
-{
-public:
-	class UWidgetComponent*                       Marker_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_AddMarker) == 0x000008, "Wrong alignment on BP_MasterBandit_C_AddMarker");
-static_assert(sizeof(BP_MasterBandit_C_AddMarker) == 0x000008, "Wrong size on BP_MasterBandit_C_AddMarker");
-static_assert(offsetof(BP_MasterBandit_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_MasterBandit_C_AddMarker::Marker_0' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.JigMP_GetLootWidget
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MasterBandit_C_JigMP_GetLootWidget final
-{
-public:
-	class UWidget*                                Result;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Valid_;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_JigMP_GetLootWidget) == 0x000008, "Wrong alignment on BP_MasterBandit_C_JigMP_GetLootWidget");
-static_assert(sizeof(BP_MasterBandit_C_JigMP_GetLootWidget) == 0x000010, "Wrong size on BP_MasterBandit_C_JigMP_GetLootWidget");
-static_assert(offsetof(BP_MasterBandit_C_JigMP_GetLootWidget, Result) == 0x000000, "Member 'BP_MasterBandit_C_JigMP_GetLootWidget::Result' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_JigMP_GetLootWidget, Valid_) == 0x000008, "Member 'BP_MasterBandit_C_JigMP_GetLootWidget::Valid_' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.JigSetCanInteract
-// 0x0003 (0x0003 - 0x0000)
-struct BP_MasterBandit_C_JigSetCanInteract final
-{
-public:
-	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_MasterBandit_C_JigSetCanInteract");
-static_assert(sizeof(BP_MasterBandit_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_MasterBandit_C_JigSetCanInteract");
-static_assert(offsetof(BP_MasterBandit_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_MasterBandit_C_JigSetCanInteract::CanInteract' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_MasterBandit_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
-static_assert(offsetof(BP_MasterBandit_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_MasterBandit_C_JigSetCanInteract::Result' has a wrong offset!");
-
-// Function BP_MasterBandit.BP_MasterBandit_C.GetMainSceneComp
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterBandit_C_GetMainSceneComp final
-{
-public:
-	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterBandit_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_MasterBandit_C_GetMainSceneComp");
-static_assert(sizeof(BP_MasterBandit_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_MasterBandit_C_GetMainSceneComp");
-static_assert(offsetof(BP_MasterBandit_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_MasterBandit_C_GetMainSceneComp::Comp' has a wrong offset!");
-
 // Function BP_MasterBandit.BP_MasterBandit_C.GetMarker
 // 0x0020 (0x0020 - 0x0000)
 struct BP_MasterBandit_C_GetMarker final
@@ -763,6 +569,28 @@ static_assert(sizeof(BP_MasterBandit_C_GetMarker) == 0x000020, "Wrong size on BP
 static_assert(offsetof(BP_MasterBandit_C_GetMarker, Texture) == 0x000000, "Member 'BP_MasterBandit_C_GetMarker::Texture' has a wrong offset!");
 static_assert(offsetof(BP_MasterBandit_C_GetMarker, Color) == 0x000008, "Member 'BP_MasterBandit_C_GetMarker::Color' has a wrong offset!");
 static_assert(offsetof(BP_MasterBandit_C_GetMarker, MarkerOffset) == 0x000018, "Member 'BP_MasterBandit_C_GetMarker::MarkerOffset' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.GetMainSceneComp
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterBandit_C_GetMainSceneComp final
+{
+public:
+	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_MasterBandit_C_GetMainSceneComp");
+static_assert(sizeof(BP_MasterBandit_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_MasterBandit_C_GetMainSceneComp");
+static_assert(offsetof(BP_MasterBandit_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_MasterBandit_C_GetMainSceneComp::Comp' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.GetJigMultiplayerComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterBandit_C_GetJigMultiplayerComponent final
+{
+public:
+	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_MasterBandit_C_GetJigMultiplayerComponent");
+static_assert(sizeof(BP_MasterBandit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_MasterBandit_C_GetJigMultiplayerComponent");
+static_assert(offsetof(BP_MasterBandit_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_MasterBandit_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
 
 // Function BP_MasterBandit.BP_MasterBandit_C.GetItemInfo
 // 0x0078 (0x0078 - 0x0000)
@@ -1158,6 +986,178 @@ static_assert(sizeof(BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Nod
 static_assert(offsetof(BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
 static_assert(offsetof(BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
 static_assert(offsetof(BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_MasterBandit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.AIHealthBarInfo
+// 0x0048 (0x0048 - 0x0000)
+struct BP_MasterBandit_C_AIHealthBarInfo final
+{
+public:
+	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Param_Name_0;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Boss__0;                                           // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_MasterBandit_C_AIHealthBarInfo");
+static_assert(sizeof(BP_MasterBandit_C_AIHealthBarInfo) == 0x000048, "Wrong size on BP_MasterBandit_C_AIHealthBarInfo");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_MasterBandit_C_AIHealthBarInfo::Visible_' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, Param_Name_0) == 0x000008, "Member 'BP_MasterBandit_C_AIHealthBarInfo::Param_Name_0' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, Boss__0) == 0x000018, "Member 'BP_MasterBandit_C_AIHealthBarInfo::Boss__0' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000028, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000040, "Member 'BP_MasterBandit_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.AddMarker
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterBandit_C_AddMarker final
+{
+public:
+	class UWidgetComponent*                       Marker_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_AddMarker) == 0x000008, "Wrong alignment on BP_MasterBandit_C_AddMarker");
+static_assert(sizeof(BP_MasterBandit_C_AddMarker) == 0x000008, "Wrong size on BP_MasterBandit_C_AddMarker");
+static_assert(offsetof(BP_MasterBandit_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_MasterBandit_C_AddMarker::Marker_0' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.SetMeshAndMaterial
+// 0x0240 (0x0240 - 0x0000)
+struct BP_MasterBandit_C_SetMeshAndMaterial final
+{
+public:
+	bool                                          SkipRandomMaterial__0;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         BackpackMap;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_8;                            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_9;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_10;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_11;                           // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_12;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FTransform>                     CallFunc_Map_Values_Values;                        // 0x0078(0x0010)(ReferenceParm)
+	TArray<class UStaticMesh*>                    CallFunc_Map_Keys_Keys;                            // 0x0088(0x0010)(ReferenceParm)
+	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0108(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F1[0x3];                                      // 0x01F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            CallFunc_Array_Random_OutItem;                     // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            CallFunc_Array_Random_OutItem_1;                   // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22D[0x3];                                      // 0x022D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMesh*                          CallFunc_Array_Random_OutItem_2;                   // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_SetMeshAndMaterial) == 0x000010, "Wrong alignment on BP_MasterBandit_C_SetMeshAndMaterial");
+static_assert(sizeof(BP_MasterBandit_C_SetMeshAndMaterial) == 0x000240, "Wrong size on BP_MasterBandit_C_SetMeshAndMaterial");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, SkipRandomMaterial__0) == 0x000000, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::SkipRandomMaterial__0' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, BackpackMap) == 0x000004, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::BackpackMap' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_int_Variable) == 0x000008, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable) == 0x000010, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_1) == 0x000018, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_2) == 0x000020, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_3) == 0x000028, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_4) == 0x000030, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_5) == 0x000038, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_5' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_6) == 0x000040, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_6' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_7) == 0x000048, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_7' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_8) == 0x000050, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_9) == 0x000058, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_9' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_10) == 0x000060, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_10' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_11) == 0x000068, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_11' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, Temp_object_Variable_12) == 0x000070, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::Temp_object_Variable_12' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Map_Values_Values) == 0x000078, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Map_Keys_Keys) == 0x000088, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Get_Item) == 0x0000A0, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Get_Item_1) == 0x000100, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000108, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue) == 0x0001F0, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Length_ReturnValue) == 0x0001F4, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0001F8, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001FC, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000200, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, K2Node_Select_Default) == 0x000208, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem) == 0x000210, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex) == 0x000218, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00021C, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_1) == 0x000220, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_1) == 0x000228, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_2) == 0x00022C, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_2) == 0x000230, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_2) == 0x000238, "Member 'BP_MasterBandit_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.SetPickupCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterBandit_C_SetPickupCount final
+{
+public:
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_MasterBandit_C_SetPickupCount");
+static_assert(sizeof(BP_MasterBandit_C_SetPickupCount) == 0x000008, "Wrong size on BP_MasterBandit_C_SetPickupCount");
+static_assert(offsetof(BP_MasterBandit_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_MasterBandit_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetPickupCount, Result) == 0x000004, "Member 'BP_MasterBandit_C_SetPickupCount::Result' has a wrong offset!");
+
+// Function BP_MasterBandit.BP_MasterBandit_C.SetWeapons
+// 0x0058 (0x0058 - 0x0000)
+struct BP_MasterBandit_C_SetWeapons final
+{
+public:
+	int32                                         RandomRanged;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Random_OutItem;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Random_OutItem_1;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_Array_Get_Item_1;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_Array_Random_OutItem_2;                   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Random_OutItem_3;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_3;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterBandit_C_SetWeapons) == 0x000008, "Wrong alignment on BP_MasterBandit_C_SetWeapons");
+static_assert(sizeof(BP_MasterBandit_C_SetWeapons) == 0x000058, "Wrong size on BP_MasterBandit_C_SetWeapons");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, RandomRanged) == 0x000000, "Member 'BP_MasterBandit_C_SetWeapons::RandomRanged' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem) == 0x000008, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex) == 0x000010, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem_1) == 0x000018, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex_1) == 0x000020, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem_2) == 0x000038, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex_2) == 0x000040, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutItem_3) == 0x000048, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutItem_3' has a wrong offset!");
+static_assert(offsetof(BP_MasterBandit_C_SetWeapons, CallFunc_Array_Random_OutIndex_3) == 0x000050, "Member 'BP_MasterBandit_C_SetWeapons::CallFunc_Array_Random_OutIndex_3' has a wrong offset!");
 
 }
 

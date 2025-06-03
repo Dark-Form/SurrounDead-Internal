@@ -522,10 +522,10 @@ void UBP_SmartAIComponent_C::ChangeDamageMulti(double ChangeAmount)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           Holdable_Class                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_AIWeapon_Master_C**           Holdable                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_SmartAIComponent_C::Check_Attached_Holdables(class UClass* Holdable_Class, bool* Return_Value, class ABP_AIWeapon_Master_C** Holdable)
+void UBP_SmartAIComponent_C::Check_Attached_Holdables(class UClass* Holdable_Class, bool* Return_value, class ABP_AIWeapon_Master_C** Holdable)
 {
 	static class UFunction* Func = nullptr;
 
@@ -538,8 +538,8 @@ void UBP_SmartAIComponent_C::Check_Attached_Holdables(class UClass* Holdable_Cla
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 
 	if (Holdable != nullptr)
 		*Holdable = Parms.Holdable;
@@ -1226,9 +1226,9 @@ void UBP_SmartAIComponent_C::Forget_Attackers_Timer()
 // double                                  Down_Distance                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Trace_Towards                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Hit_Result                                             (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_SmartAIComponent_C::Forward_Check(double Forward_Distance, double Down_Distance, const struct FVector& Trace_Towards, struct FHitResult* Hit_Result, bool* Return_Value)
+void UBP_SmartAIComponent_C::Forward_Check(double Forward_Distance, double Down_Distance, const struct FVector& Trace_Towards, struct FHitResult* Hit_Result, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1246,8 +1246,8 @@ void UBP_SmartAIComponent_C::Forward_Check(double Forward_Distance, double Down_
 	if (Hit_Result != nullptr)
 		*Hit_Result = std::move(Parms.Hit_Result);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2105,10 +2105,10 @@ void UBP_SmartAIComponent_C::Proximity_Updates()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABP_MasterInteractionPoint_C*     Last_Interaction_Point                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_MasterInteractionPoint_C**    Interaction_Point_0                                    (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_SmartAIComponent_C::Random_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_Value, class ABP_MasterInteractionPoint_C** Interaction_Point_0)
+void UBP_SmartAIComponent_C::Random_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_value, class ABP_MasterInteractionPoint_C** Interaction_Point_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2121,8 +2121,8 @@ void UBP_SmartAIComponent_C::Random_IP(class ABP_MasterInteractionPoint_C* Last_
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 
 	if (Interaction_Point_0 != nullptr)
 		*Interaction_Point_0 = Parms.Interaction_Point_0;
@@ -2133,10 +2133,10 @@ void UBP_SmartAIComponent_C::Random_IP(class ABP_MasterInteractionPoint_C* Last_
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABP_MasterInteractionPoint_C*     Last_Interaction_Point                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_MasterInteractionPoint_C**    Interaction_Point_0                                    (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_SmartAIComponent_C::Random_Specified_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_Value, class ABP_MasterInteractionPoint_C** Interaction_Point_0)
+void UBP_SmartAIComponent_C::Random_Specified_IP(class ABP_MasterInteractionPoint_C* Last_Interaction_Point, bool* Return_value, class ABP_MasterInteractionPoint_C** Interaction_Point_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2149,8 +2149,8 @@ void UBP_SmartAIComponent_C::Random_Specified_IP(class ABP_MasterInteractionPoin
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 
 	if (Interaction_Point_0 != nullptr)
 		*Interaction_Point_0 = Parms.Interaction_Point_0;
@@ -3201,10 +3201,10 @@ void UBP_SmartAIComponent_C::StreamLevelUnLoaded()
 // Parameters:
 // TArray<class FName>&                    Tags_1                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // TArray<class FName>&                    Tags_2                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName*                            Found_Tag                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_SmartAIComponent_C::Tag_Check(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_Value, class FName* Found_Tag)
+void UBP_SmartAIComponent_C::Tag_Check(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_value, class FName* Found_Tag)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3221,8 +3221,8 @@ void UBP_SmartAIComponent_C::Tag_Check(TArray<class FName>& Tags_1, TArray<class
 	Tags_1 = std::move(Parms.Tags_1);
 	Tags_2 = std::move(Parms.Tags_2);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 
 	if (Found_Tag != nullptr)
 		*Found_Tag = Parms.Found_Tag;

@@ -17,65 +17,59 @@
 namespace SDK
 {
 
-// Function BP_SettlementManager.BP_SettlementManager_C.SpawnSettlement
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SettlementManager.BP_SettlementManager_C.ActorLoaded
+// (Event, Public, BlueprintEvent)
 
-void ABP_SettlementManager_C::SpawnSettlement()
+void ABP_SettlementManager_C::ActorLoaded()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "SpawnSettlement");
+		Func = Class->GetFunction("BP_SettlementManager_C", "ActorLoaded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SettlementManager.BP_SettlementManager_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SettlementManager.BP_SettlementManager_C.ActorPreLoad
+// (Event, Public, BlueprintEvent)
 
-void ABP_SettlementManager_C::ReceiveBeginPlay()
+void ABP_SettlementManager_C::ActorPreLoad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_SettlementManager_C", "ActorPreLoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SettlementManager.BP_SettlementManager_C.OnCompleted_BE652D6747526F18549A3683E8CAC5D2
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SettlementManager.BP_SettlementManager_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
 
-void ABP_SettlementManager_C::OnCompleted_BE652D6747526F18549A3683E8CAC5D2()
+void ABP_SettlementManager_C::ActorPreSave()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "OnCompleted_BE652D6747526F18549A3683E8CAC5D2");
+		Func = Class->GetFunction("BP_SettlementManager_C", "ActorPreSave");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SettlementManager.BP_SettlementManager_C.ExecuteUbergraph_BP_SettlementManager
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SettlementManager.BP_SettlementManager_C.ActorSaved
+// (Event, Public, BlueprintEvent)
 
-void ABP_SettlementManager_C::ExecuteUbergraph_BP_SettlementManager(int32 EntryPoint)
+void ABP_SettlementManager_C::ActorSaved()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "ExecuteUbergraph_BP_SettlementManager");
+		Func = Class->GetFunction("BP_SettlementManager_C", "ActorSaved");
 
-	Params::BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -100,57 +94,63 @@ void ABP_SettlementManager_C::ComponentsToSave(TArray<class UActorComponent*>* C
 }
 
 
-// Function BP_SettlementManager.BP_SettlementManager_C.ActorSaved
-// (Event, Public, BlueprintEvent)
+// Function BP_SettlementManager.BP_SettlementManager_C.ExecuteUbergraph_BP_SettlementManager
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SettlementManager_C::ActorSaved()
+void ABP_SettlementManager_C::ExecuteUbergraph_BP_SettlementManager(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "ActorSaved");
+		Func = Class->GetFunction("BP_SettlementManager_C", "ExecuteUbergraph_BP_SettlementManager");
+
+	Params::BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SettlementManager.BP_SettlementManager_C.OnCompleted_BE652D6747526F18549A3683E8CAC5D2
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SettlementManager_C::OnCompleted_BE652D6747526F18549A3683E8CAC5D2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SettlementManager_C", "OnCompleted_BE652D6747526F18549A3683E8CAC5D2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SettlementManager.BP_SettlementManager_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
+// Function BP_SettlementManager.BP_SettlementManager_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SettlementManager_C::ActorPreSave()
+void ABP_SettlementManager_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "ActorPreSave");
+		Func = Class->GetFunction("BP_SettlementManager_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SettlementManager.BP_SettlementManager_C.ActorPreLoad
-// (Event, Public, BlueprintEvent)
+// Function BP_SettlementManager.BP_SettlementManager_C.SpawnSettlement
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SettlementManager_C::ActorPreLoad()
+void ABP_SettlementManager_C::SpawnSettlement()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "ActorPreLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SettlementManager.BP_SettlementManager_C.ActorLoaded
-// (Event, Public, BlueprintEvent)
-
-void ABP_SettlementManager_C::ActorLoaded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SettlementManager_C", "ActorLoaded");
+		Func = Class->GetFunction("BP_SettlementManager_C", "SpawnSettlement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

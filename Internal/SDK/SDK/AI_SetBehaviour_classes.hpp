@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Enum_AIBehviour_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Enum_AIBehviour_structs.hpp"
 #include "AIModule_classes.hpp"
 
 

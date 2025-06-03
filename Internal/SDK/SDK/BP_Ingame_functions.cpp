@@ -451,10 +451,10 @@ void UBP_Ingame_C::GetFlashlightDurability(double Dur)
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UJSI_Slot_C**                     ItemRef                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Found_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 ContainerREF                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 ContainerRef                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UJSI_Slot_C**                     MainItem                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Ingame_C::GetHotbarByIndex(int32 Index_0, class UJSI_Slot_C** ItemRef, bool* Found_, class UJSIContainer_C** ContainerREF, class UJSI_Slot_C** MainItem)
+void UBP_Ingame_C::GetHotbarByIndex(int32 Index_0, class UJSI_Slot_C** ItemRef, bool* Found_, class UJSIContainer_C** ContainerRef, class UJSI_Slot_C** MainItem)
 {
 	static class UFunction* Func = nullptr;
 
@@ -473,8 +473,8 @@ void UBP_Ingame_C::GetHotbarByIndex(int32 Index_0, class UJSI_Slot_C** ItemRef, 
 	if (Found_ != nullptr)
 		*Found_ = Parms.Found_;
 
-	if (ContainerREF != nullptr)
-		*ContainerREF = Parms.ContainerREF;
+	if (ContainerRef != nullptr)
+		*ContainerRef = Parms.ContainerRef;
 
 	if (MainItem != nullptr)
 		*MainItem = Parms.MainItem;

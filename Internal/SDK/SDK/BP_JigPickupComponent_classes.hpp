@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "S_RepWeaponAttachment_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
-#include "S_RepWeaponAttachment_structs.hpp"
 
 
 namespace SDK

@@ -28,9 +28,9 @@ public:
 	TArray<class UClass*>                         IgnoreList;                                        // 0x02B0(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_ActorDestroyer(int32 EntryPoint);
 	void Event_TimerDestroy();
+	void ExecuteUbergraph_BP_ActorDestroyer(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

@@ -20,17 +20,6 @@
 namespace SDK::Params
 {
 
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetLootContent
-// 0x0008 (0x0008 - 0x0000)
-struct W_SmallLootContainerUI_C_GetLootContent final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(W_SmallLootContainerUI_C_GetLootContent) == 0x000008, "Wrong alignment on W_SmallLootContainerUI_C_GetLootContent");
-static_assert(sizeof(W_SmallLootContainerUI_C_GetLootContent) == 0x000008, "Wrong size on W_SmallLootContainerUI_C_GetLootContent");
-static_assert(offsetof(W_SmallLootContainerUI_C_GetLootContent, Widget) == 0x000000, "Member 'W_SmallLootContainerUI_C_GetLootContent::Widget' has a wrong offset!");
-
 // Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.Tick
 // 0x003C (0x003C - 0x0000)
 struct W_SmallLootContainerUI_C_Tick final
@@ -90,6 +79,23 @@ static_assert(sizeof(W_SmallLootContainerUI_C_SetActionbarFollower) == 0x000010,
 static_assert(offsetof(W_SmallLootContainerUI_C_SetActionbarFollower, JigRef) == 0x000000, "Member 'W_SmallLootContainerUI_C_SetActionbarFollower::JigRef' has a wrong offset!");
 static_assert(offsetof(W_SmallLootContainerUI_C_SetActionbarFollower, Return) == 0x000008, "Member 'W_SmallLootContainerUI_C_SetActionbarFollower::Return' has a wrong offset!");
 
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnKeyDown
+// 0x01E8 (0x01E8 - 0x0000)
+struct W_SmallLootContainerUI_C_OnKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0130(0x00B8)()
+};
+static_assert(alignof(W_SmallLootContainerUI_C_OnKeyDown) == 0x000008, "Wrong alignment on W_SmallLootContainerUI_C_OnKeyDown");
+static_assert(sizeof(W_SmallLootContainerUI_C_OnKeyDown) == 0x0001E8, "Wrong size on W_SmallLootContainerUI_C_OnKeyDown");
+static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'W_SmallLootContainerUI_C_OnKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'W_SmallLootContainerUI_C_OnKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, ReturnValue) == 0x000078, "Member 'W_SmallLootContainerUI_C_OnKeyDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000130, "Member 'W_SmallLootContainerUI_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+
 // Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.JSIOnWeightUpdated
 // 0x0008 (0x0008 - 0x0000)
 struct W_SmallLootContainerUI_C_JSIOnWeightUpdated final
@@ -113,6 +119,28 @@ static_assert(alignof(W_SmallLootContainerUI_C_JigSetLootContent) == 0x000008, "
 static_assert(sizeof(W_SmallLootContainerUI_C_JigSetLootContent) == 0x000020, "Wrong size on W_SmallLootContainerUI_C_JigSetLootContent");
 static_assert(offsetof(W_SmallLootContainerUI_C_JigSetLootContent, Widget) == 0x000000, "Member 'W_SmallLootContainerUI_C_JigSetLootContent::Widget' has a wrong offset!");
 static_assert(offsetof(W_SmallLootContainerUI_C_JigSetLootContent, Name_0) == 0x000008, "Member 'W_SmallLootContainerUI_C_JigSetLootContent::Name_0' has a wrong offset!");
+
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetValidReloadContainers
+// 0x0010 (0x0010 - 0x0000)
+struct W_SmallLootContainerUI_C_GetValidReloadContainers final
+{
+public:
+	TArray<class UJSIContainer_C*>                Containers;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+static_assert(alignof(W_SmallLootContainerUI_C_GetValidReloadContainers) == 0x000008, "Wrong alignment on W_SmallLootContainerUI_C_GetValidReloadContainers");
+static_assert(sizeof(W_SmallLootContainerUI_C_GetValidReloadContainers) == 0x000010, "Wrong size on W_SmallLootContainerUI_C_GetValidReloadContainers");
+static_assert(offsetof(W_SmallLootContainerUI_C_GetValidReloadContainers, Containers) == 0x000000, "Member 'W_SmallLootContainerUI_C_GetValidReloadContainers::Containers' has a wrong offset!");
+
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetLootContent
+// 0x0008 (0x0008 - 0x0000)
+struct W_SmallLootContainerUI_C_GetLootContent final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(W_SmallLootContainerUI_C_GetLootContent) == 0x000008, "Wrong alignment on W_SmallLootContainerUI_C_GetLootContent");
+static_assert(sizeof(W_SmallLootContainerUI_C_GetLootContent) == 0x000008, "Wrong size on W_SmallLootContainerUI_C_GetLootContent");
+static_assert(offsetof(W_SmallLootContainerUI_C_GetLootContent, Widget) == 0x000000, "Member 'W_SmallLootContainerUI_C_GetLootContent::Widget' has a wrong offset!");
 
 // Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetListOfNonAddContainers
 // 0x0010 (0x0010 - 0x0000)
@@ -275,34 +303,6 @@ static_assert(offsetof(W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootCont
 static_assert(offsetof(W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootContainerUI, K2Node_MakeArray_Array) == 0x000170, "Member 'W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootContainerUI::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootContainerUI, CallFunc_Format_ReturnValue) == 0x000180, "Member 'W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootContainerUI::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootContainerUI, CallFunc_Array_IsEmpty_ReturnValue) == 0x000198, "Member 'W_SmallLootContainerUI_C_ExecuteUbergraph_W_SmallLootContainerUI::CallFunc_Array_IsEmpty_ReturnValue' has a wrong offset!");
-
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnKeyDown
-// 0x01E8 (0x01E8 - 0x0000)
-struct W_SmallLootContainerUI_C_OnKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0130(0x00B8)()
-};
-static_assert(alignof(W_SmallLootContainerUI_C_OnKeyDown) == 0x000008, "Wrong alignment on W_SmallLootContainerUI_C_OnKeyDown");
-static_assert(sizeof(W_SmallLootContainerUI_C_OnKeyDown) == 0x0001E8, "Wrong size on W_SmallLootContainerUI_C_OnKeyDown");
-static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'W_SmallLootContainerUI_C_OnKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'W_SmallLootContainerUI_C_OnKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, ReturnValue) == 0x000078, "Member 'W_SmallLootContainerUI_C_OnKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(W_SmallLootContainerUI_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000130, "Member 'W_SmallLootContainerUI_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetValidReloadContainers
-// 0x0010 (0x0010 - 0x0000)
-struct W_SmallLootContainerUI_C_GetValidReloadContainers final
-{
-public:
-	TArray<class UJSIContainer_C*>                Containers;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-};
-static_assert(alignof(W_SmallLootContainerUI_C_GetValidReloadContainers) == 0x000008, "Wrong alignment on W_SmallLootContainerUI_C_GetValidReloadContainers");
-static_assert(sizeof(W_SmallLootContainerUI_C_GetValidReloadContainers) == 0x000010, "Wrong size on W_SmallLootContainerUI_C_GetValidReloadContainers");
-static_assert(offsetof(W_SmallLootContainerUI_C_GetValidReloadContainers, Containers) == 0x000000, "Member 'W_SmallLootContainerUI_C_GetValidReloadContainers::Containers' has a wrong offset!");
 
 // Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetListOfContainers
 // 0x0020 (0x0020 - 0x0000)

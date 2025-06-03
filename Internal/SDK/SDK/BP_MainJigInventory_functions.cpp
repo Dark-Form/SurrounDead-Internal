@@ -606,11 +606,11 @@ void UBP_MainJigInventory_C::SpawnCharacterPreview()
 // Function BP_MainJigInventory.BP_MainJigInventory_C.UpdatePreviewCharacter
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UJSIContainer_C*                  ContainerREF                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C*                  ContainerRef                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UJSIContainer_C*                  ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    Equipped_                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_MainJigInventory_C::UpdatePreviewCharacter(class UJSIContainer_C* ContainerREF, class UJSIContainer_C* ToContainer, bool Equipped_)
+void UBP_MainJigInventory_C::UpdatePreviewCharacter(class UJSIContainer_C* ContainerRef, class UJSIContainer_C* ToContainer, bool Equipped_)
 {
 	static class UFunction* Func = nullptr;
 
@@ -619,7 +619,7 @@ void UBP_MainJigInventory_C::UpdatePreviewCharacter(class UJSIContainer_C* Conta
 
 	Params::BP_MainJigInventory_C_UpdatePreviewCharacter Parms{};
 
-	Parms.ContainerREF = ContainerREF;
+	Parms.ContainerRef = ContainerRef;
 	Parms.ToContainer = ToContainer;
 	Parms.Equipped_ = Equipped_;
 

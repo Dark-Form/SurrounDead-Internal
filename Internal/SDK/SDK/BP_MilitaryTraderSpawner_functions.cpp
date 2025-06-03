@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MilitaryTraderSpawner.BP_MilitaryTraderSpawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MilitaryTraderSpawner_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTraderSpawner_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MilitaryTraderSpawner.BP_MilitaryTraderSpawner_C.ExecuteUbergraph_BP_MilitaryTraderSpawner
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_MilitaryTraderSpawner_C::ExecuteUbergraph_BP_MilitaryTraderSpawner(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MilitaryTraderSpawner.BP_MilitaryTraderSpawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MilitaryTraderSpawner_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTraderSpawner_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

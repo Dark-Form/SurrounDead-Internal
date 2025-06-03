@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function BP_ActorDestroyer.BP_ActorDestroyer_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_ActorDestroyer.BP_ActorDestroyer_C.Event_TimerDestroy
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_ActorDestroyer_C::ReceiveBeginPlay()
+void ABP_ActorDestroyer_C::Event_TimerDestroy()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActorDestroyer_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_ActorDestroyer_C", "Event_TimerDestroy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,15 +51,15 @@ void ABP_ActorDestroyer_C::ExecuteUbergraph_BP_ActorDestroyer(int32 EntryPoint)
 }
 
 
-// Function BP_ActorDestroyer.BP_ActorDestroyer_C.Event_TimerDestroy
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_ActorDestroyer.BP_ActorDestroyer_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ActorDestroyer_C::Event_TimerDestroy()
+void ABP_ActorDestroyer_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActorDestroyer_C", "Event_TimerDestroy");
+		Func = Class->GetFunction("BP_ActorDestroyer_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

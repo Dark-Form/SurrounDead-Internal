@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Enum_AILootTables_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "Enum_RadiationLevel_structs.hpp"
@@ -19,7 +20,6 @@
 #include "Enum_LootType_structs.hpp"
 #include "Enum_Difficulty_structs.hpp"
 #include "Enum_LootDifficulties_structs.hpp"
-#include "Enum_AILootTables_structs.hpp"
 
 
 namespace SDK
@@ -58,7 +58,7 @@ public:
 	static void GetSkillTreeManager(class UObject* __WorldContext, class UTechTreeComponent_C** TechTree);
 	static void GetUDS(class UObject* __WorldContext, class AUltra_Dynamic_Sky_C** UDS);
 	static void GetUDW(class UObject* __WorldContext, class AUltra_Dynamic_Weather_C** UDW);
-	static void IsKeyDown(const class UInputAction* Action, class UObject* __WorldContext, bool* Down);
+	static void isKeyDown(const class UInputAction* Action, class UObject* __WorldContext, bool* Down);
 	static void IsOutsideOfPlayerView_(const struct FVector& Loc, class AActor* Actor, class UObject* __WorldContext, bool* NotInPlayerView_);
 	static void LookForMapping(struct FKeyEvent& Key, const class FText& Mapping, const class UInputAction* Action, class UObject* __WorldContext, bool* Found);
 	static void LootDegredationMultiplier(double Chance, class UObject* __WorldContext, double* NewChance);

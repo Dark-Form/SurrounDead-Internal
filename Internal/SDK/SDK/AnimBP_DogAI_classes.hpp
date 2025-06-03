@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "AnimBP_DogAI_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
-#include "AnimBP_DogAI_structs.hpp"
 #include "S_AIAnims_structs.hpp"
 #include "E_BlockType_structs.hpp"
 #include "PhysicsCore_structs.hpp"
@@ -176,16 +176,12 @@ public:
 	bool                                          Holdable;                                          // 0x26C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
-	void AI_Dead();
-	void AnimNotify_Unequip();
-	void BlueprintInitializeAnimation();
-	void Return_Current_Behaviour(E_AIBehaviour* New_Behaviour);
 	void Turret_Start_Reload();
 	void Turret_Idle_Stop();
 	void Turret_Idle_Start();
 	void Turret_End_Reload();
 	void Turret_Destroyed_Effect();
+	void Return_Current_Behaviour(E_AIBehaviour* New_Behaviour);
 	void Return_Combat_Stance_Anims(bool* Use_Combat_Stance, struct FS_AIAnims* AI_Animation);
 	void Return_Behaviour_Anims(const struct FS_AllAIAnims& All_Anims, E_AIBehaviour Behaviour, struct FS_AIAnims* Anims);
 	void Reinitialize_Animation();
@@ -195,6 +191,8 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_DogAI_AnimGraphNode_TransitionResult_9A581C424BD2A81DC43F20835517FC9B();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_DogAI_AnimGraphNode_TransitionResult_7591BFC44C6725F810EC05969CA72338();
 	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void BlueprintInitializeAnimation();
+	void AnimNotify_Unequip();
 	void AnimNotify_Unblock_Attack();
 	void AnimNotify_Jump_End();
 	void AnimNotify_JogStart();
@@ -209,8 +207,10 @@ public:
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
 	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
 	void AI_End_Alert();
+	void AI_Dead();
 	void AI_Can_Interact_(bool* Can_Interact);
 	void AI_Camera_Activate(bool Activate);
+	void AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
 	void AI_Animation_Switch(E_AIBehaviour Behaviour);
 	void AI_Alert(class AActor* Alert_Actor);
 	void Actor_Attack_Target(class AActor** Attack_Target);

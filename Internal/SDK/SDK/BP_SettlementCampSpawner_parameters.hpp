@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.UserConstructionScript
-// 0x00E8 (0x00E8 - 0x0000)
-struct BP_SettlementCampSpawner_C_UserConstructionScript final
-{
-public:
-	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x0000(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(BP_SettlementCampSpawner_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_SettlementCampSpawner_C_UserConstructionScript");
-static_assert(sizeof(BP_SettlementCampSpawner_C_UserConstructionScript) == 0x0000E8, "Wrong size on BP_SettlementCampSpawner_C_UserConstructionScript");
-static_assert(offsetof(BP_SettlementCampSpawner_C_UserConstructionScript, CallFunc_K2_AddLocalOffset_SweepHitResult) == 0x000000, "Member 'BP_SettlementCampSpawner_C_UserConstructionScript::CallFunc_K2_AddLocalOffset_SweepHitResult' has a wrong offset!");
-
 // Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.ExecuteUbergraph_BP_SettlementCampSpawner
 // 0x0080 (0x0080 - 0x0000)
 struct BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner final
@@ -45,6 +34,17 @@ static_assert(offsetof(BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_Settlement
 static_assert(offsetof(BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner, CallFunc_GetTransform_ReturnValue) == 0x000010, "Member 'BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000070, "Member 'BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'BP_SettlementCampSpawner_C_ExecuteUbergraph_BP_SettlementCampSpawner::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+
+// Function BP_SettlementCampSpawner.BP_SettlementCampSpawner_C.UserConstructionScript
+// 0x00E8 (0x00E8 - 0x0000)
+struct BP_SettlementCampSpawner_C_UserConstructionScript final
+{
+public:
+	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x0000(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(BP_SettlementCampSpawner_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_SettlementCampSpawner_C_UserConstructionScript");
+static_assert(sizeof(BP_SettlementCampSpawner_C_UserConstructionScript) == 0x0000E8, "Wrong size on BP_SettlementCampSpawner_C_UserConstructionScript");
+static_assert(offsetof(BP_SettlementCampSpawner_C_UserConstructionScript, CallFunc_K2_AddLocalOffset_SweepHitResult) == 0x000000, "Member 'BP_SettlementCampSpawner_C_UserConstructionScript::CallFunc_K2_AddLocalOffset_SweepHitResult' has a wrong offset!");
 
 }
 

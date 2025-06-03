@@ -34,12 +34,12 @@ public:
 	bool                                          Radiated_;                                         // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void SetCollisionType();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_WaterBox(int32 EntryPoint);
-	void BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void ExecuteUbergraph_BP_WaterBox(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void SetCollisionType();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

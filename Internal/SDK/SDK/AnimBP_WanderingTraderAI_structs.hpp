@@ -17,6 +17,84 @@
 namespace SDK
 {
 
+// ScriptStruct AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AnimBlueprintGeneratedConstantData
+// 0x0197 (0x0198 - 0x0001)
+struct AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
+{
+public:
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   __NameProperty_879;                                // 0x0004(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   __NameProperty_880;                                // 0x000C(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_881;                                 // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   __NameProperty_882;                                // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_883;                                 // 0x0020(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   __NameProperty_884;                                // 0x0024(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_885;                                 // 0x002C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   __NameProperty_886;                                // 0x0030(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_887;                                 // 0x0038(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   __NameProperty_888;                                // 0x003C(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_889;                                 // 0x0044(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FInputScaleBiasClampConstants          __StructProperty_890;                              // 0x0048(0x002C)(BlueprintVisible, NoDestructor)
+	class FName                                   __NameProperty_891;                                // 0x0074(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_892;                                 // 0x007C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 __ArrayProperty_893;                               // 0x0080(0x0010)(BlueprintVisible, EditFixedSize)
+	class FName                                   __NameProperty_894;                                // 0x0090(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         __IntProperty_895;                                 // 0x0098(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          __BoolProperty_896;                                // 0x009C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         __FloatProperty_897;                               // 0x00A0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_898;                               // 0x00A4(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAnimSyncMethod                               __EnumProperty_899;                                // 0x00A8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAnimGroupRole                                __ByteProperty_900;                                // 0x00A9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   __NameProperty_901;                                // 0x00AC(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBlendProfile*                          __BlendProfile_902;                                // 0x00B8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class UCurveFloat*                            __CurveFloat_903;                                  // 0x00C0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          __BoolProperty_904;                                // 0x00C8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EAlphaBlendOption                             __EnumProperty_905;                                // 0x00C9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EBlendListTransitionType                      __EnumProperty_906;                                // 0x00CA(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CB[0x5];                                       // 0x00CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 __ArrayProperty_907;                               // 0x00D0(0x0010)(BlueprintVisible, EditFixedSize)
+	struct FAnimNodeFunctionRef                   __StructProperty_908;                              // 0x00E0(0x0020)(BlueprintVisible, NoDestructor)
+	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0100(0x0080)()
+	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x0180(0x0018)()
+};
+static_assert(alignof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData");
+static_assert(sizeof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData) == 0x000198, "Wrong size on AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_879) == 0x000004, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_879' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_880) == 0x00000C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_880' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_881) == 0x000014, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_881' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_882) == 0x000018, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_882' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_883) == 0x000020, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_883' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_884) == 0x000024, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_884' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_885) == 0x00002C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_885' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_886) == 0x000030, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_886' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_887) == 0x000038, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_887' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_888) == 0x00003C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_888' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_889) == 0x000044, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_889' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __StructProperty_890) == 0x000048, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__StructProperty_890' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_891) == 0x000074, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_891' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_892) == 0x00007C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_892' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __ArrayProperty_893) == 0x000080, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__ArrayProperty_893' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_894) == 0x000090, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_894' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_895) == 0x000098, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_895' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __BoolProperty_896) == 0x00009C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__BoolProperty_896' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __FloatProperty_897) == 0x0000A0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__FloatProperty_897' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __FloatProperty_898) == 0x0000A4, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__FloatProperty_898' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __EnumProperty_899) == 0x0000A8, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__EnumProperty_899' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __ByteProperty_900) == 0x0000A9, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__ByteProperty_900' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_901) == 0x0000AC, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_901' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __BlendProfile_902) == 0x0000B8, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__BlendProfile_902' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __CurveFloat_903) == 0x0000C0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__CurveFloat_903' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __BoolProperty_904) == 0x0000C8, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__BoolProperty_904' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __EnumProperty_905) == 0x0000C9, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__EnumProperty_905' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __EnumProperty_906) == 0x0000CA, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__EnumProperty_906' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __ArrayProperty_907) == 0x0000D0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__ArrayProperty_907' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __StructProperty_908) == 0x0000E0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__StructProperty_908' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000100, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
+static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000180, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
+
 // ScriptStruct AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AnimBlueprintGeneratedMutableData
 // 0x007F (0x0080 - 0x0001)
 struct AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
@@ -126,84 +204,6 @@ static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableD
 static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData, __BoolProperty_42) == 0x000074, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData::__BoolProperty_42' has a wrong offset!");
 static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData, __FloatProperty_43) == 0x000078, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData::__FloatProperty_43' has a wrong offset!");
 static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData, __BoolProperty_44) == 0x00007C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedMutableData::__BoolProperty_44' has a wrong offset!");
-
-// ScriptStruct AnimBP_WanderingTraderAI.AnimBP_WanderingTraderAI_C.AnimBlueprintGeneratedConstantData
-// 0x0197 (0x0198 - 0x0001)
-struct AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
-{
-public:
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   __NameProperty_879;                                // 0x0004(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   __NameProperty_880;                                // 0x000C(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_881;                                 // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   __NameProperty_882;                                // 0x0018(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_883;                                 // 0x0020(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   __NameProperty_884;                                // 0x0024(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_885;                                 // 0x002C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   __NameProperty_886;                                // 0x0030(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_887;                                 // 0x0038(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   __NameProperty_888;                                // 0x003C(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_889;                                 // 0x0044(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FInputScaleBiasClampConstants          __StructProperty_890;                              // 0x0048(0x002C)(BlueprintVisible, NoDestructor)
-	class FName                                   __NameProperty_891;                                // 0x0074(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_892;                                 // 0x007C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<float>                                 __ArrayProperty_893;                               // 0x0080(0x0010)(BlueprintVisible, EditFixedSize)
-	class FName                                   __NameProperty_894;                                // 0x0090(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         __IntProperty_895;                                 // 0x0098(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          __BoolProperty_896;                                // 0x009C(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         __FloatProperty_897;                               // 0x00A0(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_898;                               // 0x00A4(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAnimSyncMethod                               __EnumProperty_899;                                // 0x00A8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAnimGroupRole                                __ByteProperty_900;                                // 0x00A9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   __NameProperty_901;                                // 0x00AC(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBlendProfile*                          __BlendProfile_902;                                // 0x00B8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class UCurveFloat*                            __CurveFloat_903;                                  // 0x00C0(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          __BoolProperty_904;                                // 0x00C8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EAlphaBlendOption                             __EnumProperty_905;                                // 0x00C9(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EBlendListTransitionType                      __EnumProperty_906;                                // 0x00CA(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CB[0x5];                                       // 0x00CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 __ArrayProperty_907;                               // 0x00D0(0x0010)(BlueprintVisible, EditFixedSize)
-	struct FAnimNodeFunctionRef                   __StructProperty_908;                              // 0x00E0(0x0020)(BlueprintVisible, NoDestructor)
-	struct FAnimSubsystem_PropertyAccess          AnimBlueprintExtension_PropertyAccess;             // 0x0100(0x0080)()
-	struct FAnimSubsystem_Base                    AnimBlueprintExtension_Base;                       // 0x0180(0x0018)()
-};
-static_assert(alignof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData) == 0x000008, "Wrong alignment on AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData");
-static_assert(sizeof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData) == 0x000198, "Wrong size on AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_879) == 0x000004, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_879' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_880) == 0x00000C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_880' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_881) == 0x000014, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_881' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_882) == 0x000018, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_882' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_883) == 0x000020, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_883' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_884) == 0x000024, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_884' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_885) == 0x00002C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_885' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_886) == 0x000030, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_886' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_887) == 0x000038, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_887' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_888) == 0x00003C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_888' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_889) == 0x000044, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_889' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __StructProperty_890) == 0x000048, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__StructProperty_890' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_891) == 0x000074, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_891' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_892) == 0x00007C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_892' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __ArrayProperty_893) == 0x000080, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__ArrayProperty_893' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_894) == 0x000090, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_894' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __IntProperty_895) == 0x000098, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__IntProperty_895' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __BoolProperty_896) == 0x00009C, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__BoolProperty_896' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __FloatProperty_897) == 0x0000A0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__FloatProperty_897' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __FloatProperty_898) == 0x0000A4, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__FloatProperty_898' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __EnumProperty_899) == 0x0000A8, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__EnumProperty_899' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __ByteProperty_900) == 0x0000A9, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__ByteProperty_900' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __NameProperty_901) == 0x0000AC, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__NameProperty_901' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __BlendProfile_902) == 0x0000B8, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__BlendProfile_902' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __CurveFloat_903) == 0x0000C0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__CurveFloat_903' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __BoolProperty_904) == 0x0000C8, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__BoolProperty_904' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __EnumProperty_905) == 0x0000C9, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__EnumProperty_905' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __EnumProperty_906) == 0x0000CA, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__EnumProperty_906' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __ArrayProperty_907) == 0x0000D0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__ArrayProperty_907' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, __StructProperty_908) == 0x0000E0, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::__StructProperty_908' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_PropertyAccess) == 0x000100, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_PropertyAccess' has a wrong offset!");
-static_assert(offsetof(AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData, AnimBlueprintExtension_Base) == 0x000180, "Member 'AnimBP_WanderingTraderAI::FAnimBlueprintGeneratedConstantData::AnimBlueprintExtension_Base' has a wrong offset!");
 
 }
 

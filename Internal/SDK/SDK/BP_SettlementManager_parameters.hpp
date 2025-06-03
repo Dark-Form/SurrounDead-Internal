@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function BP_SettlementManager.BP_SettlementManager_C.ComponentsToSave
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SettlementManager_C_ComponentsToSave final
+{
+public:
+	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+static_assert(alignof(BP_SettlementManager_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_SettlementManager_C_ComponentsToSave");
+static_assert(sizeof(BP_SettlementManager_C_ComponentsToSave) == 0x000010, "Wrong size on BP_SettlementManager_C_ComponentsToSave");
+static_assert(offsetof(BP_SettlementManager_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_SettlementManager_C_ComponentsToSave::Components' has a wrong offset!");
+
 // Function BP_SettlementManager.BP_SettlementManager_C.ExecuteUbergraph_BP_SettlementManager
 // 0x0068 (0x0068 - 0x0000)
 struct BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager final
@@ -45,17 +56,6 @@ static_assert(offsetof(BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementMana
 static_assert(offsetof(BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager, CallFunc_Array_Get_Item_1) == 0x000050, "Member 'BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager::CallFunc_Array_Get_Item_1' has a wrong offset!");
 static_assert(offsetof(BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager, CallFunc_SpawnSettlement_self_CastInput_1) == 0x000058, "Member 'BP_SettlementManager_C_ExecuteUbergraph_BP_SettlementManager::CallFunc_SpawnSettlement_self_CastInput_1' has a wrong offset!");
-
-// Function BP_SettlementManager.BP_SettlementManager_C.ComponentsToSave
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SettlementManager_C_ComponentsToSave final
-{
-public:
-	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-};
-static_assert(alignof(BP_SettlementManager_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_SettlementManager_C_ComponentsToSave");
-static_assert(sizeof(BP_SettlementManager_C_ComponentsToSave) == 0x000010, "Wrong size on BP_SettlementManager_C_ComponentsToSave");
-static_assert(offsetof(BP_SettlementManager_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_SettlementManager_C_ComponentsToSave::Components' has a wrong offset!");
 
 }
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "S_MeleeAnimations_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_MeleeAnimations_structs.hpp"
 
 
 namespace SDK::Params

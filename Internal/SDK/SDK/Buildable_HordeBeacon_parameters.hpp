@@ -12,11 +12,11 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "S_RandomItemInfo_structs.hpp"
 #include "S_JigPayload_structs.hpp"
-#include "Struct_WaveInfo_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "Struct_EnemyWaveInfo_structs.hpp"
+#include "Struct_WaveInfo_structs.hpp"
 
 
 namespace SDK::Params
@@ -297,6 +297,43 @@ static_assert(offsetof(Buildable_HordeBeacon_C_FindLocation, CallFunc_ProjectLoc
 static_assert(offsetof(Buildable_HordeBeacon_C_FindLocation, CallFunc_ProjectLocation_ProjectedLocation) == 0x000120, "Member 'Buildable_HordeBeacon_C_FindLocation::CallFunc_ProjectLocation_ProjectedLocation' has a wrong offset!");
 static_assert(offsetof(Buildable_HordeBeacon_C_FindLocation, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000138, "Member 'Buildable_HordeBeacon_C_FindLocation::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
 
+// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnDestroy
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_HordeBeacon_C_OnDestroy final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_HordeBeacon_C_OnDestroy) == 0x000008, "Wrong alignment on Buildable_HordeBeacon_C_OnDestroy");
+static_assert(sizeof(Buildable_HordeBeacon_C_OnDestroy) == 0x000008, "Wrong size on Buildable_HordeBeacon_C_OnDestroy");
+static_assert(offsetof(Buildable_HordeBeacon_C_OnDestroy, Actor) == 0x000000, "Member 'Buildable_HordeBeacon_C_OnDestroy::Actor' has a wrong offset!");
+
+// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnInteractBuildable
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_HordeBeacon_C_OnInteractBuildable final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_HordeBeacon_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_HordeBeacon_C_OnInteractBuildable");
+static_assert(sizeof(Buildable_HordeBeacon_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_HordeBeacon_C_OnInteractBuildable");
+static_assert(offsetof(Buildable_HordeBeacon_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_HordeBeacon_C_OnInteractBuildable::Actor' has a wrong offset!");
+
+// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct Buildable_HordeBeacon_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_HordeBeacon_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_HordeBeacon_C_OnServerExecuteInteract");
+static_assert(sizeof(Buildable_HordeBeacon_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_HordeBeacon_C_OnServerExecuteInteract");
+static_assert(offsetof(Buildable_HordeBeacon_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_HordeBeacon_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(Buildable_HordeBeacon_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_HordeBeacon_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_HordeBeacon_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_HordeBeacon_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
 // Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.ProjectLocation
 // 0x02C0 (0x02C0 - 0x0000)
 struct Buildable_HordeBeacon_C_ProjectLocation final
@@ -557,43 +594,6 @@ static_assert(offsetof(Buildable_HordeBeacon_C_TraceForBuildables, CallFunc_Brea
 static_assert(offsetof(Buildable_HordeBeacon_C_TraceForBuildables, CallFunc_BreakHitResult_TraceEnd) == 0x000208, "Member 'Buildable_HordeBeacon_C_TraceForBuildables::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(Buildable_HordeBeacon_C_TraceForBuildables, CallFunc_GetObjectClass_ReturnValue) == 0x000220, "Member 'Buildable_HordeBeacon_C_TraceForBuildables::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(Buildable_HordeBeacon_C_TraceForBuildables, CallFunc_ClassIsChildOf_ReturnValue) == 0x000228, "Member 'Buildable_HordeBeacon_C_TraceForBuildables::CallFunc_ClassIsChildOf_ReturnValue' has a wrong offset!");
-
-// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnDestroy
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_HordeBeacon_C_OnDestroy final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_HordeBeacon_C_OnDestroy) == 0x000008, "Wrong alignment on Buildable_HordeBeacon_C_OnDestroy");
-static_assert(sizeof(Buildable_HordeBeacon_C_OnDestroy) == 0x000008, "Wrong size on Buildable_HordeBeacon_C_OnDestroy");
-static_assert(offsetof(Buildable_HordeBeacon_C_OnDestroy, Actor) == 0x000000, "Member 'Buildable_HordeBeacon_C_OnDestroy::Actor' has a wrong offset!");
-
-// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnInteractBuildable
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_HordeBeacon_C_OnInteractBuildable final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_HordeBeacon_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_HordeBeacon_C_OnInteractBuildable");
-static_assert(sizeof(Buildable_HordeBeacon_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_HordeBeacon_C_OnInteractBuildable");
-static_assert(offsetof(Buildable_HordeBeacon_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_HordeBeacon_C_OnInteractBuildable::Actor' has a wrong offset!");
-
-// Function Buildable_HordeBeacon.Buildable_HordeBeacon_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct Buildable_HordeBeacon_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_HordeBeacon_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_HordeBeacon_C_OnServerExecuteInteract");
-static_assert(sizeof(Buildable_HordeBeacon_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_HordeBeacon_C_OnServerExecuteInteract");
-static_assert(offsetof(Buildable_HordeBeacon_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_HordeBeacon_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(Buildable_HordeBeacon_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_HordeBeacon_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_HordeBeacon_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_HordeBeacon_C_OnServerExecuteInteract::Payload' has a wrong offset!");
 
 }
 

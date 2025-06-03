@@ -31,20 +31,6 @@ void ABuildable_BatteryCharger_C::ActorLoaded()
 }
 
 
-// Function Buildable_BatteryCharger.Buildable_BatteryCharger_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
-
-void ABuildable_BatteryCharger_C::ActorPreSave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_BatteryCharger_C", "ActorPreSave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Buildable_BatteryCharger.Buildable_BatteryCharger_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -168,6 +154,20 @@ void ABuildable_BatteryCharger_C::UpdateStorageStat()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Buildable_BatteryCharger_C", "UpdateStorageStat");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_BatteryCharger.Buildable_BatteryCharger_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
+
+void ABuildable_BatteryCharger_C::ActorPreSave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_BatteryCharger_C", "ActorPreSave");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

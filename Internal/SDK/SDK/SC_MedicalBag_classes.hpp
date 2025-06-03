@@ -26,8 +26,8 @@ public:
 	class UJSIContainer_C*                        JSIContainer_1;                                    // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PreInitSpecialContainer();
 	void ExecuteUbergraph_SC_MedicalBag(int32 EntryPoint);
+	void PreInitSpecialContainer();
 
 public:
 	static class UClass* StaticClass()

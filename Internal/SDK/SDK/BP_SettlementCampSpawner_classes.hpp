@@ -31,9 +31,9 @@ public:
 	struct FVector                                DebugOffset;                                       // 0x02D8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void SpawnSettlement();
 	void ExecuteUbergraph_BP_SettlementCampSpawner(int32 EntryPoint);
+	void SpawnSettlement();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

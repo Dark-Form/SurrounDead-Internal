@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "BP_MasterObject_classes.hpp"
+#include "Struct_POI_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Struct_POI_structs.hpp"
-#include "BP_MasterObject_classes.hpp"
 
 
 namespace SDK

@@ -42,8 +42,8 @@ public:
 	TArray<class USceneComponent*>                Spawns;                                            // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_ShakesConesSpawner(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

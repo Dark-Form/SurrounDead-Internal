@@ -15,9 +15,9 @@
 #include "S_RandomStatsConfig_structs.hpp"
 #include "RepItemInfo_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "E_BlockType_structs.hpp"
 #include "S_JigPayload_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
+#include "E_BlockType_structs.hpp"
 #include "AIOptimizer_structs.hpp"
 
 

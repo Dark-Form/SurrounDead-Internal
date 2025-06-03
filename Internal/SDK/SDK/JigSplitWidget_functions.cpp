@@ -31,15 +31,15 @@ void UJigSplitWidget_C::BndEvt__CancelBtn_K2Node_ComponentBoundEvent_0_OnButtonC
 }
 
 
-// Function JigSplitWidget.JigSplitWidget_C.BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
+// Function JigSplitWidget.JigSplitWidget_C.BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UJigSplitWidget_C::BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
+void UJigSplitWidget_C::BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("JigSplitWidget_C", "BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("JigSplitWidget_C", "BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -38,63 +38,29 @@ void UAnimBP_Wolf_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 }
 
 
-// Function AnimBP_Wolf.AnimBP_Wolf_C.GetSpeed
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function AnimBP_Wolf.AnimBP_Wolf_C.AnimNotify_Footstep
+// (BlueprintCallable, BlueprintEvent)
 
-void UAnimBP_Wolf_C::GetSpeed()
+void UAnimBP_Wolf_C::AnimNotify_Footstep()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_Wolf_C", "GetSpeed");
+		Func = Class->GetFunction("AnimBP_Wolf_C", "AnimNotify_Footstep");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AnimBP_Wolf.AnimBP_Wolf_C.ExecuteUbergraph_AnimBP_Wolf
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function AnimBP_Wolf.AnimBP_Wolf_C.BlueprintInitializeAnimation
+// (Event, Public, BlueprintEvent)
 
-void UAnimBP_Wolf_C::ExecuteUbergraph_AnimBP_Wolf(int32 EntryPoint)
+void UAnimBP_Wolf_C::BlueprintInitializeAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_Wolf_C", "ExecuteUbergraph_AnimBP_Wolf");
-
-	Params::AnimBP_Wolf_C_ExecuteUbergraph_AnimBP_Wolf Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AnimBP_Wolf.AnimBP_Wolf_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03
-// (BlueprintEvent)
-
-void UAnimBP_Wolf_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_Wolf_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_Wolf.AnimBP_Wolf_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6
-// (BlueprintEvent)
-
-void UAnimBP_Wolf_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_Wolf_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6");
+		Func = Class->GetFunction("AnimBP_Wolf_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -120,29 +86,63 @@ void UAnimBP_Wolf_C::BlueprintThreadSafeUpdateAnimation(float DeltaTime)
 }
 
 
-// Function AnimBP_Wolf.AnimBP_Wolf_C.BlueprintInitializeAnimation
-// (Event, Public, BlueprintEvent)
+// Function AnimBP_Wolf.AnimBP_Wolf_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6
+// (BlueprintEvent)
 
-void UAnimBP_Wolf_C::BlueprintInitializeAnimation()
+void UAnimBP_Wolf_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_Wolf_C", "BlueprintInitializeAnimation");
+		Func = Class->GetFunction("AnimBP_Wolf_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_371585D64CCD99DDD6B315901C8736A6");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AnimBP_Wolf.AnimBP_Wolf_C.AnimNotify_Footstep
-// (BlueprintCallable, BlueprintEvent)
+// Function AnimBP_Wolf.AnimBP_Wolf_C.EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03
+// (BlueprintEvent)
 
-void UAnimBP_Wolf_C::AnimNotify_Footstep()
+void UAnimBP_Wolf_C::EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_Wolf_C", "AnimNotify_Footstep");
+		Func = Class->GetFunction("AnimBP_Wolf_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_Wolf_AnimGraphNode_TransitionResult_84FA0BBA449C725C173465BF58BE4E03");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_Wolf.AnimBP_Wolf_C.ExecuteUbergraph_AnimBP_Wolf
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_Wolf_C::ExecuteUbergraph_AnimBP_Wolf(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_Wolf_C", "ExecuteUbergraph_AnimBP_Wolf");
+
+	Params::AnimBP_Wolf_C_ExecuteUbergraph_AnimBP_Wolf Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AnimBP_Wolf.AnimBP_Wolf_C.GetSpeed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_Wolf_C::GetSpeed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_Wolf_C", "GetSpeed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

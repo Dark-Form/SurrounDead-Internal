@@ -25,8 +25,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Zombie_Infected_C;               // 0x08B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_Zombie_Infected(int32 EntryPoint);
 	void BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_Zombie_Infected(int32 EntryPoint);
 	void ReceiveBeginPlay();
 
 public:

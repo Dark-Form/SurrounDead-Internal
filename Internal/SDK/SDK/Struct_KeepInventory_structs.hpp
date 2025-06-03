@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "S_InvWeight_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_InvWeight_structs.hpp"
 
 
 namespace SDK

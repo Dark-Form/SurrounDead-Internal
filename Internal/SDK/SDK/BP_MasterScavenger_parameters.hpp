@@ -10,282 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "AIOptimizer_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "S_RandomStatsConfig_structs.hpp"
 #include "RepItemInfo_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "S_AttachedHoldables_structs.hpp"
 #include "S_JigPayload_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
-#include "AIOptimizer_structs.hpp"
+#include "S_AttachedHoldables_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.AddMarker
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterScavenger_C_AddMarker final
-{
-public:
-	class UWidgetComponent*                       Marker_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_AddMarker) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_AddMarker");
-static_assert(sizeof(BP_MasterScavenger_C_AddMarker) == 0x000008, "Wrong size on BP_MasterScavenger_C_AddMarker");
-static_assert(offsetof(BP_MasterScavenger_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_MasterScavenger_C_AddMarker::Marker_0' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.IsAIBurning?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MasterScavenger_C_IsAIBurning_ final
-{
-public:
-	bool                                          IsBurning_;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_IsAIBurning_) == 0x000001, "Wrong alignment on BP_MasterScavenger_C_IsAIBurning_");
-static_assert(sizeof(BP_MasterScavenger_C_IsAIBurning_) == 0x000001, "Wrong size on BP_MasterScavenger_C_IsAIBurning_");
-static_assert(offsetof(BP_MasterScavenger_C_IsAIBurning_, IsBurning_) == 0x000000, "Member 'BP_MasterScavenger_C_IsAIBurning_::IsBurning_' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetWeapons
-// 0x0058 (0x0058 - 0x0000)
-struct BP_MasterScavenger_C_SetWeapons final
-{
-public:
-	int32                                         RandomRanged;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Random_OutItem;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Random_OutItem_1;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_Array_Get_Item_1;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_Array_Random_OutItem_2;                   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Random_OutItem_3;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_3;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_SetWeapons) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_SetWeapons");
-static_assert(sizeof(BP_MasterScavenger_C_SetWeapons) == 0x000058, "Wrong size on BP_MasterScavenger_C_SetWeapons");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, RandomRanged) == 0x000000, "Member 'BP_MasterScavenger_C_SetWeapons::RandomRanged' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem) == 0x000008, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex) == 0x000010, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem_1) == 0x000018, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex_1) == 0x000020, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem_2) == 0x000038, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex_2) == 0x000040, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem_3) == 0x000048, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem_3' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex_3) == 0x000050, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex_3' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetPickupCount
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterScavenger_C_SetPickupCount final
-{
-public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_SetPickupCount");
-static_assert(sizeof(BP_MasterScavenger_C_SetPickupCount) == 0x000008, "Wrong size on BP_MasterScavenger_C_SetPickupCount");
-static_assert(offsetof(BP_MasterScavenger_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_MasterScavenger_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetPickupCount, Result) == 0x000004, "Member 'BP_MasterScavenger_C_SetPickupCount::Result' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetMeshAndMaterial
-// 0x0230 (0x0230 - 0x0000)
-struct BP_MasterScavenger_C_SetMeshAndMaterial final
-{
-public:
-	int32                                         BackpackMap;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_8;                            // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_9;                            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_10;                           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_11;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_12;                           // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FTransform>                     CallFunc_Map_Values_Values;                        // 0x0070(0x0010)(ReferenceParm)
-	TArray<class UStaticMesh*>                    CallFunc_Map_Keys_Keys;                            // 0x0080(0x0010)(ReferenceParm)
-	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x0090(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00F8(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            CallFunc_Array_Random_OutItem;                     // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20D[0x3];                                      // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            CallFunc_Array_Random_OutItem_1;                   // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMesh*                          CallFunc_Array_Random_OutItem_2;                   // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_SetMeshAndMaterial) == 0x000010, "Wrong alignment on BP_MasterScavenger_C_SetMeshAndMaterial");
-static_assert(sizeof(BP_MasterScavenger_C_SetMeshAndMaterial) == 0x000230, "Wrong size on BP_MasterScavenger_C_SetMeshAndMaterial");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, BackpackMap) == 0x000000, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::BackpackMap' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_int_Variable) == 0x000004, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable) == 0x000008, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_1) == 0x000010, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_2) == 0x000018, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_3) == 0x000020, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_4) == 0x000028, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_5) == 0x000030, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_6) == 0x000038, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_7) == 0x000040, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_8) == 0x000048, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_9) == 0x000050, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_10) == 0x000058, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_11) == 0x000060, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_12) == 0x000068, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Map_Values_Values) == 0x000070, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Map_Keys_Keys) == 0x000080, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Get_Item) == 0x000090, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Get_Item_1) == 0x0000F0, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000F8, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue) == 0x0001E0, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Length_ReturnValue) == 0x0001E4, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0001E8, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001EC, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x0001F0, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, K2Node_Select_Default) == 0x0001F8, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem) == 0x000200, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex) == 0x000208, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00020C, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_1) == 0x000210, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_1) == 0x000218, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_2) == 0x00021C, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_2) == 0x000220, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_2) == 0x000228, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractOption
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterScavenger_C_SetInteractOption final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_SetInteractOption");
-static_assert(sizeof(BP_MasterScavenger_C_SetInteractOption) == 0x000008, "Wrong size on BP_MasterScavenger_C_SetInteractOption");
-static_assert(offsetof(BP_MasterScavenger_C_SetInteractOption, Option) == 0x000000, "Member 'BP_MasterScavenger_C_SetInteractOption::Option' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractDistance
-// 0x0020 (0x0020 - 0x0000)
-struct BP_MasterScavenger_C_SetInteractDistance final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_SetInteractDistance");
-static_assert(sizeof(BP_MasterScavenger_C_SetInteractDistance) == 0x000020, "Wrong size on BP_MasterScavenger_C_SetInteractDistance");
-static_assert(offsetof(BP_MasterScavenger_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_MasterScavenger_C_SetInteractDistance::Target' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_MasterScavenger_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetBurning
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MasterScavenger_C_SetBurning final
-{
-public:
-	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_SetBurning) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_SetBurning");
-static_assert(sizeof(BP_MasterScavenger_C_SetBurning) == 0x000018, "Wrong size on BP_MasterScavenger_C_SetBurning");
-static_assert(offsetof(BP_MasterScavenger_C_SetBurning, Burning_) == 0x000000, "Member 'BP_MasterScavenger_C_SetBurning::Burning_' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetBurning, Dmg) == 0x000008, "Member 'BP_MasterScavenger_C_SetBurning::Dmg' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_SetBurning, Actor) == 0x000010, "Member 'BP_MasterScavenger_C_SetBurning::Actor' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.ReceiveAnyDamage
-// 0x0020 (0x0020 - 0x0000)
-struct BP_MasterScavenger_C_ReceiveAnyDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_ReceiveAnyDamage");
-static_assert(sizeof(BP_MasterScavenger_C_ReceiveAnyDamage) == 0x000020, "Wrong size on BP_MasterScavenger_C_ReceiveAnyDamage");
-static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::Damage' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OverrideName
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MasterScavenger_C_OverrideName final
-{
-public:
-	class FString                                 Param_Name_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_OverrideName) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OverrideName");
-static_assert(sizeof(BP_MasterScavenger_C_OverrideName) == 0x000010, "Wrong size on BP_MasterScavenger_C_OverrideName");
-static_assert(offsetof(BP_MasterScavenger_C_OverrideName, Param_Name_0) == 0x000000, "Member 'BP_MasterScavenger_C_OverrideName::Param_Name_0' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OnStopExecuteInteract
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MasterScavenger_C_OnStopExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OnStopExecuteInteract");
-static_assert(sizeof(BP_MasterScavenger_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_MasterScavenger_C_OnStopExecuteInteract");
-static_assert(offsetof(BP_MasterScavenger_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_MasterScavenger_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct BP_MasterScavenger_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OnServerExecuteInteract");
-static_assert(sizeof(BP_MasterScavenger_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_MasterScavenger_C_OnServerExecuteInteract");
-static_assert(offsetof(BP_MasterScavenger_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_MasterScavenger_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_MasterScavenger_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_MasterScavenger_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OnRequestServerInteract
-// 0x0048 (0x0048 - 0x0000)
-struct BP_MasterScavenger_C_OnRequestServerInteract final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OnRequestServerInteract");
-static_assert(sizeof(BP_MasterScavenger_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_MasterScavenger_C_OnRequestServerInteract");
-static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Actor' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Payload' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Result' has a wrong offset!");
 
 // Function BP_MasterScavenger.BP_MasterScavenger_C.OnExecuteInteractDialogue
 // 0x0008 (0x0008 - 0x0000)
@@ -621,6 +358,17 @@ static_assert(alignof(BP_MasterScavenger_C_JigCanInteract) == 0x000001, "Wrong a
 static_assert(sizeof(BP_MasterScavenger_C_JigCanInteract) == 0x000001, "Wrong size on BP_MasterScavenger_C_JigCanInteract");
 static_assert(offsetof(BP_MasterScavenger_C_JigCanInteract, Result) == 0x000000, "Member 'BP_MasterScavenger_C_JigCanInteract::Result' has a wrong offset!");
 
+// Function BP_MasterScavenger.BP_MasterScavenger_C.IsAIBurning?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MasterScavenger_C_IsAIBurning_ final
+{
+public:
+	bool                                          IsBurning_;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_IsAIBurning_) == 0x000001, "Wrong alignment on BP_MasterScavenger_C_IsAIBurning_");
+static_assert(sizeof(BP_MasterScavenger_C_IsAIBurning_) == 0x000001, "Wrong size on BP_MasterScavenger_C_IsAIBurning_");
+static_assert(offsetof(BP_MasterScavenger_C_IsAIBurning_, IsBurning_) == 0x000000, "Member 'BP_MasterScavenger_C_IsAIBurning_::IsBurning_' has a wrong offset!");
+
 // Function BP_MasterScavenger.BP_MasterScavenger_C.HitByVehicle
 // 0x0020 (0x0020 - 0x0000)
 struct BP_MasterScavenger_C_HitByVehicle final
@@ -644,159 +392,6 @@ public:
 static_assert(alignof(BP_MasterScavenger_C_HealthMultiplier) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_HealthMultiplier");
 static_assert(sizeof(BP_MasterScavenger_C_HealthMultiplier) == 0x000004, "Wrong size on BP_MasterScavenger_C_HealthMultiplier");
 static_assert(offsetof(BP_MasterScavenger_C_HealthMultiplier, NewValue) == 0x000000, "Member 'BP_MasterScavenger_C_HealthMultiplier::NewValue' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.Death
-// 0x00F0 (0x00F0 - 0x0000)
-struct BP_MasterScavenger_C_Death final
-{
-public:
-	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActorHasTag_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActorHasTag_ReturnValue_1;                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevellingComponent_C*                  CallFunc_GetLevellingComponent_LevellingComponent; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_AddXP_XPOutput;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_PlayerController_C*                 CallFunc_CastToController_Controller;              // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StoreStats_ReturnValue;                   // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetAchievement_ReturnValue;               // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StoreStats_ReturnValue_1;                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetAchievement_ReturnValue_1;             // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_Death) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_Death");
-static_assert(sizeof(BP_MasterScavenger_C_Death) == 0x0000F0, "Wrong size on BP_MasterScavenger_C_Death");
-static_assert(offsetof(BP_MasterScavenger_C_Death, Player) == 0x000000, "Member 'BP_MasterScavenger_C_Death::Player' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_RandomFloatInRange_ReturnValue) == 0x000008, "Member 'BP_MasterScavenger_C_Death::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_ActorHasTag_ReturnValue) == 0x000010, "Member 'BP_MasterScavenger_C_Death::CallFunc_ActorHasTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_ActorHasTag_ReturnValue_1) == 0x000011, "Member 'BP_MasterScavenger_C_Death::CallFunc_ActorHasTag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_GetLevellingComponent_LevellingComponent) == 0x000018, "Member 'BP_MasterScavenger_C_Death::CallFunc_GetLevellingComponent_LevellingComponent' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_BooleanOR_ReturnValue) == 0x000020, "Member 'BP_MasterScavenger_C_Death::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, Temp_int_Variable) == 0x000024, "Member 'BP_MasterScavenger_C_Death::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000028, "Member 'BP_MasterScavenger_C_Death::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000030, "Member 'BP_MasterScavenger_C_Death::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000038, "Member 'BP_MasterScavenger_C_Death::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_AddXP_XPOutput) == 0x000040, "Member 'BP_MasterScavenger_C_Death::CallFunc_AddXP_XPOutput' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_FTrunc_ReturnValue) == 0x000048, "Member 'BP_MasterScavenger_C_Death::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000050, "Member 'BP_MasterScavenger_C_Death::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'BP_MasterScavenger_C_Death::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, K2Node_MakeArray_Array) == 0x0000A8, "Member 'BP_MasterScavenger_C_Death::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Format_ReturnValue) == 0x0000B8, "Member 'BP_MasterScavenger_C_Death::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'BP_MasterScavenger_C_Death::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_CastToController_Controller) == 0x0000D8, "Member 'BP_MasterScavenger_C_Death::CallFunc_CastToController_Controller' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_StoreStats_ReturnValue) == 0x0000E0, "Member 'BP_MasterScavenger_C_Death::CallFunc_StoreStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_SetAchievement_ReturnValue) == 0x0000E1, "Member 'BP_MasterScavenger_C_Death::CallFunc_SetAchievement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Add_IntInt_ReturnValue) == 0x0000E4, "Member 'BP_MasterScavenger_C_Death::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_StoreStats_ReturnValue_1) == 0x0000E8, "Member 'BP_MasterScavenger_C_Death::CallFunc_StoreStats_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_SetAchievement_ReturnValue_1) == 0x0000E9, "Member 'BP_MasterScavenger_C_Death::CallFunc_SetAchievement_ReturnValue_1' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.CheckDistanceFromActor
-// 0x0058 (0x0058 - 0x0000)
-struct BP_MasterScavenger_C_CheckDistanceFromActor final
-{
-public:
-	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_CheckDistanceFromActor");
-static_assert(sizeof(BP_MasterScavenger_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_MasterScavenger_C_CheckDistanceFromActor");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.CanStompAI?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MasterScavenger_C_CanStompAI_ final
-{
-public:
-	bool                                          Stomp_;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_CanStompAI_) == 0x000001, "Wrong alignment on BP_MasterScavenger_C_CanStompAI_");
-static_assert(sizeof(BP_MasterScavenger_C_CanStompAI_) == 0x000001, "Wrong size on BP_MasterScavenger_C_CanStompAI_");
-static_assert(offsetof(BP_MasterScavenger_C_CanStompAI_, Stomp_) == 0x000000, "Member 'BP_MasterScavenger_C_CanStompAI_::Stomp_' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.CanAddMarkerToAI?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MasterScavenger_C_CanAddMarkerToAI_ final
-{
-public:
-	bool                                          CanAdd_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_CanAddMarkerToAI_) == 0x000001, "Wrong alignment on BP_MasterScavenger_C_CanAddMarkerToAI_");
-static_assert(sizeof(BP_MasterScavenger_C_CanAddMarkerToAI_) == 0x000001, "Wrong size on BP_MasterScavenger_C_CanAddMarkerToAI_");
-static_assert(offsetof(BP_MasterScavenger_C_CanAddMarkerToAI_, CanAdd_) == 0x000000, "Member 'BP_MasterScavenger_C_CanAddMarkerToAI_::CanAdd_' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature final
-{
-public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.AIHealthBarInfo
-// 0x0050 (0x0050 - 0x0000)
-struct BP_MasterScavenger_C_AIHealthBarInfo final
-{
-public:
-	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Param_Name_0;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Boss_;                                             // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_MasterScavenger_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_AIHealthBarInfo");
-static_assert(sizeof(BP_MasterScavenger_C_AIHealthBarInfo) == 0x000050, "Wrong size on BP_MasterScavenger_C_AIHealthBarInfo");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::Visible_' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, Param_Name_0) == 0x000008, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::Param_Name_0' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, Boss_) == 0x000018, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::Boss_' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000020, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000030, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000038, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000040, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000048, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
 
 // Function BP_MasterScavenger.BP_MasterScavenger_C.GetMovementSpeeds
 // 0x0018 (0x0018 - 0x0000)
@@ -1124,6 +719,411 @@ static_assert(offsetof(BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger,
 static_assert(offsetof(BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger, CallFunc_ApplyDamage_BaseDamage_ImplicitCast) == 0x000600, "Member 'BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger::CallFunc_ApplyDamage_BaseDamage_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger, CallFunc_Delay_Duration_ImplicitCast) == 0x000604, "Member 'BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000608, "Member 'BP_MasterScavenger_C_ExecuteUbergraph_BP_MasterScavenger::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.Death
+// 0x00F0 (0x00F0 - 0x0000)
+struct BP_MasterScavenger_C_Death final
+{
+public:
+	class AActor*                                 Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActorHasTag_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActorHasTag_ReturnValue_1;                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevellingComponent_C*                  CallFunc_GetLevellingComponent_LevellingComponent; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_AddXP_XPOutput;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_PlayerController_C*                 CallFunc_CastToController_Controller;              // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_StoreStats_ReturnValue;                   // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetAchievement_ReturnValue;               // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_StoreStats_ReturnValue_1;                 // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetAchievement_ReturnValue_1;             // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_Death) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_Death");
+static_assert(sizeof(BP_MasterScavenger_C_Death) == 0x0000F0, "Wrong size on BP_MasterScavenger_C_Death");
+static_assert(offsetof(BP_MasterScavenger_C_Death, Player) == 0x000000, "Member 'BP_MasterScavenger_C_Death::Player' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_RandomFloatInRange_ReturnValue) == 0x000008, "Member 'BP_MasterScavenger_C_Death::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_ActorHasTag_ReturnValue) == 0x000010, "Member 'BP_MasterScavenger_C_Death::CallFunc_ActorHasTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_ActorHasTag_ReturnValue_1) == 0x000011, "Member 'BP_MasterScavenger_C_Death::CallFunc_ActorHasTag_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_GetLevellingComponent_LevellingComponent) == 0x000018, "Member 'BP_MasterScavenger_C_Death::CallFunc_GetLevellingComponent_LevellingComponent' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_BooleanOR_ReturnValue) == 0x000020, "Member 'BP_MasterScavenger_C_Death::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, Temp_int_Variable) == 0x000024, "Member 'BP_MasterScavenger_C_Death::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000028, "Member 'BP_MasterScavenger_C_Death::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000030, "Member 'BP_MasterScavenger_C_Death::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000038, "Member 'BP_MasterScavenger_C_Death::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_AddXP_XPOutput) == 0x000040, "Member 'BP_MasterScavenger_C_Death::CallFunc_AddXP_XPOutput' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_FTrunc_ReturnValue) == 0x000048, "Member 'BP_MasterScavenger_C_Death::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Conv_IntToInt64_ReturnValue) == 0x000050, "Member 'BP_MasterScavenger_C_Death::CallFunc_Conv_IntToInt64_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'BP_MasterScavenger_C_Death::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, K2Node_MakeArray_Array) == 0x0000A8, "Member 'BP_MasterScavenger_C_Death::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Format_ReturnValue) == 0x0000B8, "Member 'BP_MasterScavenger_C_Death::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'BP_MasterScavenger_C_Death::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_CastToController_Controller) == 0x0000D8, "Member 'BP_MasterScavenger_C_Death::CallFunc_CastToController_Controller' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_StoreStats_ReturnValue) == 0x0000E0, "Member 'BP_MasterScavenger_C_Death::CallFunc_StoreStats_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_SetAchievement_ReturnValue) == 0x0000E1, "Member 'BP_MasterScavenger_C_Death::CallFunc_SetAchievement_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_Add_IntInt_ReturnValue) == 0x0000E4, "Member 'BP_MasterScavenger_C_Death::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_StoreStats_ReturnValue_1) == 0x0000E8, "Member 'BP_MasterScavenger_C_Death::CallFunc_StoreStats_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_Death, CallFunc_SetAchievement_ReturnValue_1) == 0x0000E9, "Member 'BP_MasterScavenger_C_Death::CallFunc_SetAchievement_ReturnValue_1' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.CheckDistanceFromActor
+// 0x0058 (0x0058 - 0x0000)
+struct BP_MasterScavenger_C_CheckDistanceFromActor final
+{
+public:
+	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_CheckDistanceFromActor");
+static_assert(sizeof(BP_MasterScavenger_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_MasterScavenger_C_CheckDistanceFromActor");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_MasterScavenger_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.CanStompAI?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MasterScavenger_C_CanStompAI_ final
+{
+public:
+	bool                                          Stomp_;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_CanStompAI_) == 0x000001, "Wrong alignment on BP_MasterScavenger_C_CanStompAI_");
+static_assert(sizeof(BP_MasterScavenger_C_CanStompAI_) == 0x000001, "Wrong size on BP_MasterScavenger_C_CanStompAI_");
+static_assert(offsetof(BP_MasterScavenger_C_CanStompAI_, Stomp_) == 0x000000, "Member 'BP_MasterScavenger_C_CanStompAI_::Stomp_' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.CanAddMarkerToAI?
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MasterScavenger_C_CanAddMarkerToAI_ final
+{
+public:
+	bool                                          CanAdd_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_CanAddMarkerToAI_) == 0x000001, "Wrong alignment on BP_MasterScavenger_C_CanAddMarkerToAI_");
+static_assert(sizeof(BP_MasterScavenger_C_CanAddMarkerToAI_) == 0x000001, "Wrong size on BP_MasterScavenger_C_CanAddMarkerToAI_");
+static_assert(offsetof(BP_MasterScavenger_C_CanAddMarkerToAI_, CanAdd_) == 0x000000, "Member 'BP_MasterScavenger_C_CanAddMarkerToAI_::CanAdd_' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature final
+{
+public:
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.AIHealthBarInfo
+// 0x0050 (0x0050 - 0x0000)
+struct BP_MasterScavenger_C_AIHealthBarInfo final
+{
+public:
+	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Param_Name_0;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Boss_;                                             // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_AIHealthBarInfo");
+static_assert(sizeof(BP_MasterScavenger_C_AIHealthBarInfo) == 0x000050, "Wrong size on BP_MasterScavenger_C_AIHealthBarInfo");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::Visible_' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, Param_Name_0) == 0x000008, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::Param_Name_0' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, Boss_) == 0x000018, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::Boss_' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000020, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000030, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000038, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_Conv_IntToDouble_ReturnValue_1) == 0x000040, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_Conv_IntToDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000048, "Member 'BP_MasterScavenger_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.AddMarker
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterScavenger_C_AddMarker final
+{
+public:
+	class UWidgetComponent*                       Marker_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_AddMarker) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_AddMarker");
+static_assert(sizeof(BP_MasterScavenger_C_AddMarker) == 0x000008, "Wrong size on BP_MasterScavenger_C_AddMarker");
+static_assert(offsetof(BP_MasterScavenger_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_MasterScavenger_C_AddMarker::Marker_0' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OnRequestServerInteract
+// 0x0048 (0x0048 - 0x0000)
+struct BP_MasterScavenger_C_OnRequestServerInteract final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OnRequestServerInteract");
+static_assert(sizeof(BP_MasterScavenger_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_MasterScavenger_C_OnRequestServerInteract");
+static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Actor' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Payload' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_MasterScavenger_C_OnRequestServerInteract::Result' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct BP_MasterScavenger_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OnServerExecuteInteract");
+static_assert(sizeof(BP_MasterScavenger_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_MasterScavenger_C_OnServerExecuteInteract");
+static_assert(offsetof(BP_MasterScavenger_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_MasterScavenger_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_MasterScavenger_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_MasterScavenger_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OnStopExecuteInteract
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterScavenger_C_OnStopExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OnStopExecuteInteract");
+static_assert(sizeof(BP_MasterScavenger_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_MasterScavenger_C_OnStopExecuteInteract");
+static_assert(offsetof(BP_MasterScavenger_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_MasterScavenger_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OverrideName
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MasterScavenger_C_OverrideName final
+{
+public:
+	class FString                                 Param_Name_0;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_OverrideName) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_OverrideName");
+static_assert(sizeof(BP_MasterScavenger_C_OverrideName) == 0x000010, "Wrong size on BP_MasterScavenger_C_OverrideName");
+static_assert(offsetof(BP_MasterScavenger_C_OverrideName, Param_Name_0) == 0x000000, "Member 'BP_MasterScavenger_C_OverrideName::Param_Name_0' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.ReceiveAnyDamage
+// 0x0020 (0x0020 - 0x0000)
+struct BP_MasterScavenger_C_ReceiveAnyDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_ReceiveAnyDamage");
+static_assert(sizeof(BP_MasterScavenger_C_ReceiveAnyDamage) == 0x000020, "Wrong size on BP_MasterScavenger_C_ReceiveAnyDamage");
+static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::Damage' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'BP_MasterScavenger_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetBurning
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MasterScavenger_C_SetBurning final
+{
+public:
+	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_SetBurning) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_SetBurning");
+static_assert(sizeof(BP_MasterScavenger_C_SetBurning) == 0x000018, "Wrong size on BP_MasterScavenger_C_SetBurning");
+static_assert(offsetof(BP_MasterScavenger_C_SetBurning, Burning_) == 0x000000, "Member 'BP_MasterScavenger_C_SetBurning::Burning_' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetBurning, Dmg) == 0x000008, "Member 'BP_MasterScavenger_C_SetBurning::Dmg' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetBurning, Actor) == 0x000010, "Member 'BP_MasterScavenger_C_SetBurning::Actor' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractDistance
+// 0x0020 (0x0020 - 0x0000)
+struct BP_MasterScavenger_C_SetInteractDistance final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_SetInteractDistance");
+static_assert(sizeof(BP_MasterScavenger_C_SetInteractDistance) == 0x000020, "Wrong size on BP_MasterScavenger_C_SetInteractDistance");
+static_assert(offsetof(BP_MasterScavenger_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_MasterScavenger_C_SetInteractDistance::Target' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_MasterScavenger_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterScavenger_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_SetInteractOption");
+static_assert(sizeof(BP_MasterScavenger_C_SetInteractOption) == 0x000008, "Wrong size on BP_MasterScavenger_C_SetInteractOption");
+static_assert(offsetof(BP_MasterScavenger_C_SetInteractOption, Option) == 0x000000, "Member 'BP_MasterScavenger_C_SetInteractOption::Option' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetMeshAndMaterial
+// 0x0230 (0x0230 - 0x0000)
+struct BP_MasterScavenger_C_SetMeshAndMaterial final
+{
+public:
+	int32                                         BackpackMap;                                       // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_8;                            // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_9;                            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_10;                           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_11;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_12;                           // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FTransform>                     CallFunc_Map_Values_Values;                        // 0x0070(0x0010)(ReferenceParm)
+	TArray<class UStaticMesh*>                    CallFunc_Map_Keys_Keys;                            // 0x0080(0x0010)(ReferenceParm)
+	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x0090(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00F8(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F4[0x4];                                      // 0x01F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x01F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            CallFunc_Array_Random_OutItem;                     // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x020C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20D[0x3];                                      // 0x020D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            CallFunc_Array_Random_OutItem_1;                   // 0x0210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMesh*                          CallFunc_Array_Random_OutItem_2;                   // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_SetMeshAndMaterial) == 0x000010, "Wrong alignment on BP_MasterScavenger_C_SetMeshAndMaterial");
+static_assert(sizeof(BP_MasterScavenger_C_SetMeshAndMaterial) == 0x000230, "Wrong size on BP_MasterScavenger_C_SetMeshAndMaterial");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, BackpackMap) == 0x000000, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::BackpackMap' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_int_Variable) == 0x000004, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable) == 0x000008, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_1) == 0x000010, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_2) == 0x000018, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_3) == 0x000020, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_4) == 0x000028, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_5) == 0x000030, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_5' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_6) == 0x000038, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_6' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_7) == 0x000040, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_7' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_8) == 0x000048, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_9) == 0x000050, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_9' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_10) == 0x000058, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_10' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_11) == 0x000060, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_11' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, Temp_object_Variable_12) == 0x000068, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::Temp_object_Variable_12' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Map_Values_Values) == 0x000070, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Map_Keys_Keys) == 0x000080, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Get_Item) == 0x000090, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Get_Item_1) == 0x0000F0, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0000F8, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue) == 0x0001E0, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Length_ReturnValue) == 0x0001E4, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0001E8, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001EC, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x0001F0, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, K2Node_Select_Default) == 0x0001F8, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem) == 0x000200, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex) == 0x000208, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_1) == 0x00020C, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_1) == 0x000210, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_1) == 0x000218, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_SetStaticMesh_ReturnValue_2) == 0x00021C, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_SetStaticMesh_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutItem_2) == 0x000220, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetMeshAndMaterial, CallFunc_Array_Random_OutIndex_2) == 0x000228, "Member 'BP_MasterScavenger_C_SetMeshAndMaterial::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetPickupCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MasterScavenger_C_SetPickupCount final
+{
+public:
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_MasterScavenger_C_SetPickupCount");
+static_assert(sizeof(BP_MasterScavenger_C_SetPickupCount) == 0x000008, "Wrong size on BP_MasterScavenger_C_SetPickupCount");
+static_assert(offsetof(BP_MasterScavenger_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_MasterScavenger_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetPickupCount, Result) == 0x000004, "Member 'BP_MasterScavenger_C_SetPickupCount::Result' has a wrong offset!");
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetWeapons
+// 0x0058 (0x0058 - 0x0000)
+struct BP_MasterScavenger_C_SetWeapons final
+{
+public:
+	int32                                         RandomRanged;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Random_OutItem;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Random_OutItem_1;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_1;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_Array_Get_Item_1;                         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_Array_Random_OutItem_2;                   // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_2;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Random_OutItem_3;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Random_OutIndex_3;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_MasterScavenger_C_SetWeapons) == 0x000008, "Wrong alignment on BP_MasterScavenger_C_SetWeapons");
+static_assert(sizeof(BP_MasterScavenger_C_SetWeapons) == 0x000058, "Wrong size on BP_MasterScavenger_C_SetWeapons");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, RandomRanged) == 0x000000, "Member 'BP_MasterScavenger_C_SetWeapons::RandomRanged' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem) == 0x000008, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex) == 0x000010, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem_1) == 0x000018, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex_1) == 0x000020, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Get_Item_1) == 0x000030, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem_2) == 0x000038, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex_2) == 0x000040, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex_2' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutItem_3) == 0x000048, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutItem_3' has a wrong offset!");
+static_assert(offsetof(BP_MasterScavenger_C_SetWeapons, CallFunc_Array_Random_OutIndex_3) == 0x000050, "Member 'BP_MasterScavenger_C_SetWeapons::CallFunc_Array_Random_OutIndex_3' has a wrong offset!");
 
 }
 

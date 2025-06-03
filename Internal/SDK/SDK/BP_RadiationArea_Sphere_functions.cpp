@@ -17,139 +17,31 @@
 namespace SDK
 {
 
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_RadiationArea_Sphere_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_RadiationArea_Sphere_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.InRadArea
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    InRadArea_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_RadiationArea_Sphere_C::InRadArea(class AActor* Actor, bool InRadArea_0)
+void ABP_RadiationArea_Sphere_C::BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "InRadArea");
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
-	Params::BP_RadiationArea_Sphere_C_InRadArea Parms{};
+	Params::BP_RadiationArea_Sphere_C_BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Parms.Actor = Actor;
-	Parms.InRadArea_0 = InRadArea_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.ExecuteUbergraph_BP_RadiationArea_Sphere
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RadiationArea_Sphere_C::ExecuteUbergraph_BP_RadiationArea_Sphere(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "ExecuteUbergraph_BP_RadiationArea_Sphere");
-
-	Params::BP_RadiationArea_Sphere_C_ExecuteUbergraph_BP_RadiationArea_Sphere Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_Respawn
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RadiationArea_Sphere_C::Event_Respawn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_Respawn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_Overlap
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RadiationArea_Sphere_C::Event_Overlap()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_Overlap");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_ExitedRadZone
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RadiationArea_Sphere_C::Event_ExitedRadZone(class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_ExitedRadZone");
-
-	Params::BP_RadiationArea_Sphere_C_Event_ExitedRadZone Parms{};
-
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_EnteredRadZone
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RadiationArea_Sphere_C::Event_EnteredRadZone(class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_EnteredRadZone");
-
-	Params::BP_RadiationArea_Sphere_C_Event_EnteredRadZone Parms{};
-
-	Parms.Actor = Actor;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -181,33 +73,141 @@ void ABP_RadiationArea_Sphere_C::BndEvt__BP_RadiationArea_Sphere_K2Node_Componen
 }
 
 
-// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_EnteredRadZone
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RadiationArea_Sphere_C::BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void ABP_RadiationArea_Sphere_C::Event_EnteredRadZone(class AActor* Actor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_EnteredRadZone");
 
-	Params::BP_RadiationArea_Sphere_C_BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+	Params::BP_RadiationArea_Sphere_C_Event_EnteredRadZone Parms{};
 
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_ExitedRadZone
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RadiationArea_Sphere_C::Event_ExitedRadZone(class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_ExitedRadZone");
+
+	Params::BP_RadiationArea_Sphere_C_Event_ExitedRadZone Parms{};
+
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_Overlap
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RadiationArea_Sphere_C::Event_Overlap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_Overlap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.Event_Respawn
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RadiationArea_Sphere_C::Event_Respawn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "Event_Respawn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.ExecuteUbergraph_BP_RadiationArea_Sphere
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RadiationArea_Sphere_C::ExecuteUbergraph_BP_RadiationArea_Sphere(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "ExecuteUbergraph_BP_RadiationArea_Sphere");
+
+	Params::BP_RadiationArea_Sphere_C_ExecuteUbergraph_BP_RadiationArea_Sphere Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.InRadArea
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    InRadArea_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RadiationArea_Sphere_C::InRadArea(class AActor* Actor, bool InRadArea_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "InRadArea");
+
+	Params::BP_RadiationArea_Sphere_C_InRadArea Parms{};
+
+	Parms.Actor = Actor;
+	Parms.InRadArea_0 = InRadArea_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_RadiationArea_Sphere_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RadiationArea_Sphere.BP_RadiationArea_Sphere_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_RadiationArea_Sphere_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RadiationArea_Sphere_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

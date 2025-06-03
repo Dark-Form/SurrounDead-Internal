@@ -31,14 +31,14 @@ public:
 	bool                                          LightOn;                                           // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
-	void OnInteractBuildable(class AActor* Actor);
-	void LightCallback(bool NewValue);
-	void ExecuteUbergraph_Buildable_ConstructionLight(int32 EntryPoint);
-	void EventPoweredOn();
-	void EventPoweredOff();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void EventPoweredOff();
+	void EventPoweredOn();
+	void ExecuteUbergraph_Buildable_ConstructionLight(int32 EntryPoint);
+	void LightCallback(bool NewValue);
+	void OnInteractBuildable(class AActor* Actor);
+	void OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

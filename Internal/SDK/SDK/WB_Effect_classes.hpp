@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "EEffectType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EEffectType_structs.hpp"
 #include "Slate_structs.hpp"
+#include "ETriggerMethod_structs.hpp"
+#include "S_Effects_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "S_Effects_structs.hpp"
-#include "ETriggerMethod_structs.hpp"
 
 
 namespace SDK

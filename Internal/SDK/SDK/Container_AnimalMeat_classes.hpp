@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_LootContainer_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Enum_ContainerLootTables_structs.hpp"
 
 

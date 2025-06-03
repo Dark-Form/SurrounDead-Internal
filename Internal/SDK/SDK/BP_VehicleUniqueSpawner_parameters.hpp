@@ -16,6 +16,17 @@
 namespace SDK::Params
 {
 
+// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ComponentsToSave
+// 0x0010 (0x0010 - 0x0000)
+struct BP_VehicleUniqueSpawner_C_ComponentsToSave final
+{
+public:
+	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+static_assert(alignof(BP_VehicleUniqueSpawner_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_VehicleUniqueSpawner_C_ComponentsToSave");
+static_assert(sizeof(BP_VehicleUniqueSpawner_C_ComponentsToSave) == 0x000010, "Wrong size on BP_VehicleUniqueSpawner_C_ComponentsToSave");
+static_assert(offsetof(BP_VehicleUniqueSpawner_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_VehicleUniqueSpawner_C_ComponentsToSave::Components' has a wrong offset!");
+
 // Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ExecuteUbergraph_BP_VehicleUniqueSpawner
 // 0x0150 (0x0150 - 0x0000)
 struct BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner final
@@ -51,17 +62,6 @@ static_assert(offsetof(BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniq
 static_assert(offsetof(BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner, CallFunc_MakeTransform_ReturnValue) == 0x0000E0, "Member 'BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000140, "Member 'BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner, CallFunc_FinishSpawningActor_ReturnValue) == 0x000148, "Member 'BP_VehicleUniqueSpawner_C_ExecuteUbergraph_BP_VehicleUniqueSpawner::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-
-// Function BP_VehicleUniqueSpawner.BP_VehicleUniqueSpawner_C.ComponentsToSave
-// 0x0010 (0x0010 - 0x0000)
-struct BP_VehicleUniqueSpawner_C_ComponentsToSave final
-{
-public:
-	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-};
-static_assert(alignof(BP_VehicleUniqueSpawner_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_VehicleUniqueSpawner_C_ComponentsToSave");
-static_assert(sizeof(BP_VehicleUniqueSpawner_C_ComponentsToSave) == 0x000010, "Wrong size on BP_VehicleUniqueSpawner_C_ComponentsToSave");
-static_assert(offsetof(BP_VehicleUniqueSpawner_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_VehicleUniqueSpawner_C_ComponentsToSave::Components' has a wrong offset!");
 
 }
 

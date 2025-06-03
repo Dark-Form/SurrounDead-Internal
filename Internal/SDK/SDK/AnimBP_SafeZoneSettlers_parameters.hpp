@@ -18,17 +18,6 @@
 namespace SDK::Params
 {
 
-// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation");
-static_assert(sizeof(AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation");
-static_assert(offsetof(AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
 // Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.ExecuteUbergraph_AnimBP_SafeZoneSettlers
 // 0x0328 (0x0328 - 0x0000)
 struct AnimBP_SafeZoneSettlers_C_ExecuteUbergraph_AnimBP_SafeZoneSettlers final
@@ -180,17 +169,6 @@ static_assert(alignof(AnimBP_SafeZoneSettlers_C_DeathState) == 0x000001, "Wrong 
 static_assert(sizeof(AnimBP_SafeZoneSettlers_C_DeathState) == 0x000001, "Wrong size on AnimBP_SafeZoneSettlers_C_DeathState");
 static_assert(offsetof(AnimBP_SafeZoneSettlers_C_DeathState, Dead_0) == 0x000000, "Member 'AnimBP_SafeZoneSettlers_C_DeathState::Dead_0' has a wrong offset!");
 
-// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct AnimBP_SafeZoneSettlers_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(AnimBP_SafeZoneSettlers_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_SafeZoneSettlers_C_AnimGraph");
-static_assert(sizeof(AnimBP_SafeZoneSettlers_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_SafeZoneSettlers_C_AnimGraph");
-static_assert(offsetof(AnimBP_SafeZoneSettlers_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_SafeZoneSettlers_C_AnimGraph::AnimGraph_0' has a wrong offset!");
-
 // Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.CombatState
 // 0x0004 (0x0004 - 0x0000)
 struct AnimBP_SafeZoneSettlers_C_CombatState final
@@ -201,6 +179,28 @@ public:
 static_assert(alignof(AnimBP_SafeZoneSettlers_C_CombatState) == 0x000004, "Wrong alignment on AnimBP_SafeZoneSettlers_C_CombatState");
 static_assert(sizeof(AnimBP_SafeZoneSettlers_C_CombatState) == 0x000004, "Wrong size on AnimBP_SafeZoneSettlers_C_CombatState");
 static_assert(offsetof(AnimBP_SafeZoneSettlers_C_CombatState, BlendSpace) == 0x000000, "Member 'AnimBP_SafeZoneSettlers_C_CombatState::BlendSpace' has a wrong offset!");
+
+// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation");
+static_assert(sizeof(AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation");
+static_assert(offsetof(AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'AnimBP_SafeZoneSettlers_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
+// Function AnimBP_SafeZoneSettlers.AnimBP_SafeZoneSettlers_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct AnimBP_SafeZoneSettlers_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(AnimBP_SafeZoneSettlers_C_AnimGraph) == 0x000008, "Wrong alignment on AnimBP_SafeZoneSettlers_C_AnimGraph");
+static_assert(sizeof(AnimBP_SafeZoneSettlers_C_AnimGraph) == 0x000010, "Wrong size on AnimBP_SafeZoneSettlers_C_AnimGraph");
+static_assert(offsetof(AnimBP_SafeZoneSettlers_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'AnimBP_SafeZoneSettlers_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

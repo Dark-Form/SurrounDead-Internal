@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_SkirtPockets.SC_SkirtPockets_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_SkirtPockets_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_SkirtPockets_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_SkirtPockets.SC_SkirtPockets_C.ExecuteUbergraph_SC_SkirtPockets
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_SkirtPockets_C::ExecuteUbergraph_SC_SkirtPockets(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_SkirtPockets.SC_SkirtPockets_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_SkirtPockets_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_SkirtPockets_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

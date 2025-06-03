@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Prefab_AbandonedRandomSuppliesTruck.Prefab_AbandonedRandomSuppliesTruck_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void APrefab_AbandonedRandomSuppliesTruck_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prefab_AbandonedRandomSuppliesTruck_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Prefab_AbandonedRandomSuppliesTruck.Prefab_AbandonedRandomSuppliesTruck_C.ExecuteUbergraph_Prefab_AbandonedRandomSuppliesTruck
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void APrefab_AbandonedRandomSuppliesTruck_C::ExecuteUbergraph_Prefab_AbandonedRa
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Prefab_AbandonedRandomSuppliesTruck.Prefab_AbandonedRandomSuppliesTruck_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void APrefab_AbandonedRandomSuppliesTruck_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Prefab_AbandonedRandomSuppliesTruck_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

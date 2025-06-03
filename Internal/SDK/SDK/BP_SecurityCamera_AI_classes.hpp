@@ -27,12 +27,12 @@ public:
 	class UStaticMeshComponent*                   Cube;                                              // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Turret_Destroyed_Effect();
-	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
-	void Multicast_Spawn_Emitter(const struct FVector& Scale);
-	void IsObjectDamageable_(bool* Damageable_);
-	void ExecuteUbergraph_BP_SecurityCamera_AI(int32 EntryPoint);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_SecurityCamera_AI(int32 EntryPoint);
+	void IsObjectDamageable_(bool* Damageable_);
+	void Multicast_Spawn_Emitter(const struct FVector& Scale);
+	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
+	void Turret_Destroyed_Effect();
 
 public:
 	static class UClass* StaticClass()

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "E_Radius_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "AIModule_classes.hpp"
-#include "E_Radius_structs.hpp"
 
 
 namespace SDK

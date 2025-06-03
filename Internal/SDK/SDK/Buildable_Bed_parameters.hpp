@@ -11,54 +11,28 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "S_JigPayload_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_JigPayload_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function Buildable_Bed.Buildable_Bed_C.SetSpawnPoint
-// 0x0070 (0x0070 - 0x0000)
-struct Buildable_Bed_C_SetSpawnPoint final
+// Function Buildable_Bed.Buildable_Bed_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	class ABP_PlayerController_C*                 CallFunc_CastToController_Controller;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Buildable_Bed_C_SetSpawnPoint) == 0x000010, "Wrong alignment on Buildable_Bed_C_SetSpawnPoint");
-static_assert(sizeof(Buildable_Bed_C_SetSpawnPoint) == 0x000070, "Wrong size on Buildable_Bed_C_SetSpawnPoint");
-static_assert(offsetof(Buildable_Bed_C_SetSpawnPoint, CallFunc_CastToController_Controller) == 0x000000, "Member 'Buildable_Bed_C_SetSpawnPoint::CallFunc_CastToController_Controller' has a wrong offset!");
-static_assert(offsetof(Buildable_Bed_C_SetSpawnPoint, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000010, "Member 'Buildable_Bed_C_SetSpawnPoint::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-
-// Function Buildable_Bed.Buildable_Bed_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct Buildable_Bed_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_Bed_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_Bed_C_OnServerExecuteInteract");
-static_assert(sizeof(Buildable_Bed_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_Bed_C_OnServerExecuteInteract");
-static_assert(offsetof(Buildable_Bed_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_Bed_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(Buildable_Bed_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_Bed_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_Bed_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_Bed_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function Buildable_Bed.Buildable_Bed_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct Buildable_Bed_C_OnBeginInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(Buildable_Bed_C_OnBeginInteract) == 0x000008, "Wrong alignment on Buildable_Bed_C_OnBeginInteract");
-static_assert(sizeof(Buildable_Bed_C_OnBeginInteract) == 0x000058, "Wrong size on Buildable_Bed_C_OnBeginInteract");
-static_assert(offsetof(Buildable_Bed_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'Buildable_Bed_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(Buildable_Bed_C_OnBeginInteract, Options) == 0x000008, "Member 'Buildable_Bed_C_OnBeginInteract::Options' has a wrong offset!");
+static_assert(alignof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 // Function Buildable_Bed.Buildable_Bed_C.ExecuteUbergraph_Buildable_Bed
 // 0x01E8 (0x01E8 - 0x0000)
@@ -120,21 +94,47 @@ static_assert(offsetof(Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed, K2Node_Co
 static_assert(offsetof(Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed, K2Node_ComponentBoundEvent_LayerIndex) == 0x0001DC, "Member 'Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed::K2Node_ComponentBoundEvent_LayerIndex' has a wrong offset!");
 static_assert(offsetof(Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed, K2Node_ComponentBoundEvent_bIsSeen) == 0x0001E0, "Member 'Buildable_Bed_C_ExecuteUbergraph_Buildable_Bed::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
 
-// Function Buildable_Bed.Buildable_Bed_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function Buildable_Bed.Buildable_Bed_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct Buildable_Bed_C_OnBeginInteract final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_Bed_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(Buildable_Bed_C_OnBeginInteract) == 0x000008, "Wrong alignment on Buildable_Bed_C_OnBeginInteract");
+static_assert(sizeof(Buildable_Bed_C_OnBeginInteract) == 0x000058, "Wrong size on Buildable_Bed_C_OnBeginInteract");
+static_assert(offsetof(Buildable_Bed_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'Buildable_Bed_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(Buildable_Bed_C_OnBeginInteract, Options) == 0x000008, "Member 'Buildable_Bed_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function Buildable_Bed.Buildable_Bed_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct Buildable_Bed_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_Bed_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_Bed_C_OnServerExecuteInteract");
+static_assert(sizeof(Buildable_Bed_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_Bed_C_OnServerExecuteInteract");
+static_assert(offsetof(Buildable_Bed_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_Bed_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(Buildable_Bed_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_Bed_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_Bed_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_Bed_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function Buildable_Bed.Buildable_Bed_C.SetSpawnPoint
+// 0x0070 (0x0070 - 0x0000)
+struct Buildable_Bed_C_SetSpawnPoint final
+{
+public:
+	class ABP_PlayerController_C*                 CallFunc_CastToController_Controller;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_Bed_C_SetSpawnPoint) == 0x000010, "Wrong alignment on Buildable_Bed_C_SetSpawnPoint");
+static_assert(sizeof(Buildable_Bed_C_SetSpawnPoint) == 0x000070, "Wrong size on Buildable_Bed_C_SetSpawnPoint");
+static_assert(offsetof(Buildable_Bed_C_SetSpawnPoint, CallFunc_CastToController_Controller) == 0x000000, "Member 'Buildable_Bed_C_SetSpawnPoint::CallFunc_CastToController_Controller' has a wrong offset!");
+static_assert(offsetof(Buildable_Bed_C_SetSpawnPoint, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000010, "Member 'Buildable_Bed_C_SetSpawnPoint::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
 
 }
 

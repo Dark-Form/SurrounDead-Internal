@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function Container_AbandonedSupplyTruck.Container_AbandonedSupplyTruck_C.Event1
-// (BlueprintCallable, BlueprintEvent)
-
-void AContainer_AbandonedSupplyTruck_C::Event1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Container_AbandonedSupplyTruck_C", "Event1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Container_AbandonedSupplyTruck.Container_AbandonedSupplyTruck_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -74,6 +60,20 @@ void AContainer_AbandonedSupplyTruck_C::Event2()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Container_AbandonedSupplyTruck_C", "Event2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Container_AbandonedSupplyTruck.Container_AbandonedSupplyTruck_C.Event1
+// (BlueprintCallable, BlueprintEvent)
+
+void AContainer_AbandonedSupplyTruck_C::Event1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Container_AbandonedSupplyTruck_C", "Event1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

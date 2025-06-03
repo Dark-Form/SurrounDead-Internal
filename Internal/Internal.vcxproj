@@ -168,6 +168,8 @@
     <ClCompile Include="SDK\SDK\BP_FirearmPickup_functions.cpp" />
     <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp" />
     <ClCompile Include="SDK\SDK\Engine_functions.cpp" />
+    <ClCompile Include="SDK\SDK\JSIContainer_functions.cpp" />
+    <ClCompile Include="SDK\SDK\JSI_Slot_functions.cpp" />
     <ClCompile Include="SDK\SDK\MedicalComponent_functions.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +185,7 @@
     <ClInclude Include="ImGui\imstb_truetype.h" />
     <ClInclude Include="ImGui\pch.h" />
     <ClInclude Include="ImGui\StringH.h" />
+    <ClInclude Include="json.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MinHook\buffer.h" />
     <ClInclude Include="MinHook\framework.h" />
@@ -196,6 +199,7 @@
     <ClInclude Include="MinHook\table64.h" />
     <ClInclude Include="MinHook\trampoline.h" />
     <ClInclude Include="SDK\SDK.hpp" />
+    <ClInclude Include="Waypoint.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MinHook\minhook.def" />

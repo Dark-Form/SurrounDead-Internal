@@ -48,7 +48,6 @@ public:
 	void BndEvt__BP_QuestJournal_Button_Exit_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__BP_QuestJournal_UseShared__K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 	void Clear_Quest();
-	void Construct();
 	class UBP_QuestJournalQuest_C* CreateQuestWidgetButton(class UQuest* Quest);
 	void ExecuteUbergraph_W_NarrativeMenu_QuestJournal(int32 EntryPoint);
 	void Initialize(class UNarrativeComponent* Narrative);
@@ -56,6 +55,7 @@ public:
 	void Party_Quests_Toggled(bool PartyQuests);
 	void RegisterActions();
 	void Show_Quest(class UQuest* Quest, class UBP_QuestJournalQuest_C* JournalButton);
+	void Construct();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_MasterObject_classes.hpp"
 #include "Enum_PrefabType_structs.hpp"
+#include "BP_MasterObject_classes.hpp"
 
 
 namespace SDK

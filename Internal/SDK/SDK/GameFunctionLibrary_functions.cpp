@@ -717,21 +717,21 @@ void UGameFunctionLibrary_C::GetUDW(class UObject* __WorldContext, class AUltra_
 }
 
 
-// Function GameFunctionLibrary.GameFunctionLibrary_C.IsKeyDown
+// Function GameFunctionLibrary.GameFunctionLibrary_C.isKeyDown
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // const class UInputAction*               Action                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Down                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGameFunctionLibrary_C::IsKeyDown(const class UInputAction* Action, class UObject* __WorldContext, bool* Down)
+void UGameFunctionLibrary_C::isKeyDown(const class UInputAction* Action, class UObject* __WorldContext, bool* Down)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameFunctionLibrary_C", "IsKeyDown");
+		Func = StaticClass()->GetFunction("GameFunctionLibrary_C", "isKeyDown");
 
-	Params::GameFunctionLibrary_C_IsKeyDown Parms{};
+	Params::GameFunctionLibrary_C_isKeyDown Parms{};
 
 	Parms.Action = Action;
 	Parms.__WorldContext = __WorldContext;

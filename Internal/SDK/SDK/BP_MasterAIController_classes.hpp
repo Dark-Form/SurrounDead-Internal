@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "E_BlockType_structs.hpp"
 #include "S_ReactionTime_structs.hpp"
-#include "Engine_structs.hpp"
 #include "AIModule_classes.hpp"
 #include "E_AIBehaviour_structs.hpp"
 

@@ -17,41 +17,6 @@
 namespace SDK
 {
 
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetLootContent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UW_SmallLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_SmallLootContainerUI_C", "GetLootContent");
-
-	Params::W_SmallLootContainerUI_C_GetLootContent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UW_SmallLootContainerUI_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_SmallLootContainerUI_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -158,6 +123,45 @@ void UW_SmallLootContainerUI_C::SetActionbarFollower(class UJSI_Slot_C* JigRef, 
 }
 
 
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnKeyDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UW_SmallLootContainerUI_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_SmallLootContainerUI_C", "OnKeyDown");
+
+	Params::W_SmallLootContainerUI_C_OnKeyDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InKeyEvent = std::move(InKeyEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UW_SmallLootContainerUI_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_SmallLootContainerUI_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnCreatedFromUtility
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -225,6 +229,48 @@ void UW_SmallLootContainerUI_C::JigSetLootContent(class UUserWidget* Widget, con
 	Parms.Name_0 = std::move(Name_0);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetValidReloadContainers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+
+void UW_SmallLootContainerUI_C::GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_SmallLootContainerUI_C", "GetValidReloadContainers");
+
+	Params::W_SmallLootContainerUI_C_GetValidReloadContainers Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
+}
+
+
+// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetLootContent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UW_SmallLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_SmallLootContainerUI_C", "GetLootContent");
+
+	Params::W_SmallLootContainerUI_C_GetLootContent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
 }
 
 
@@ -396,52 +442,6 @@ void UW_SmallLootContainerUI_C::BndEvt__SmallContainer_Widget_Button_66_K2Node_C
 		Func = Class->GetFunction("W_SmallLootContainerUI_C", "BndEvt__SmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.OnKeyDown
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UW_SmallLootContainerUI_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_SmallLootContainerUI_C", "OnKeyDown");
-
-	Params::W_SmallLootContainerUI_C_OnKeyDown Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InKeyEvent = std::move(InKeyEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function W_SmallLootContainerUI.W_SmallLootContainerUI_C.GetValidReloadContainers
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
-
-void UW_SmallLootContainerUI_C::GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_SmallLootContainerUI_C", "GetValidReloadContainers");
-
-	Params::W_SmallLootContainerUI_C_GetValidReloadContainers Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
 }
 
 

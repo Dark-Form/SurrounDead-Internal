@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function LongdownValley.LongdownValley_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ALongdownValley_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LongdownValley_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function LongdownValley.LongdownValley_C.ExecuteUbergraph_LongdownValley
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void ALongdownValley_C::ExecuteUbergraph_LongdownValley(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LongdownValley.LongdownValley_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ALongdownValley_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("LongdownValley_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

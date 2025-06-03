@@ -38,10 +38,10 @@ public:
 	class ABP_TraderMaster_C*                     As_BP_MPVendor;                                    // 0x0598(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void HeadRotation(double Right, double Down, double InterpSpeed);
 	void ExecuteUbergraph_AnimBP_StationaryQuestNPC(int32 EntryPoint);
 	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void HeadRotation(double Right, double Down, double InterpSpeed);
 
 public:
 	static class UClass* StaticClass()

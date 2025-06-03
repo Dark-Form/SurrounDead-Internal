@@ -39,7 +39,7 @@ public:
 	double                                        Multiplier;                                        // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CanCauseNoise_;                                    // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_331[0x7];                                      // 0x0331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 ContainerREF;                                      // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class AActor*                                 ContainerRef;                                      // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TMap<struct FGameplayTag, class FText>        OptionMap;                                         // 0x0340(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TMap<struct FGameplayTag, class UBP_InteractWidgetOption_C*> OptionW;                            // 0x0390(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UBP_InteractWidgetOption_C*>     Options;                                           // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
@@ -80,7 +80,7 @@ static_assert(offsetof(UBP_LootContainerWidget_C, CurrentTime) == 0x000318, "Mem
 static_assert(offsetof(UBP_LootContainerWidget_C, MaxTime) == 0x000320, "Member 'UBP_LootContainerWidget_C::MaxTime' has a wrong offset!");
 static_assert(offsetof(UBP_LootContainerWidget_C, Multiplier) == 0x000328, "Member 'UBP_LootContainerWidget_C::Multiplier' has a wrong offset!");
 static_assert(offsetof(UBP_LootContainerWidget_C, CanCauseNoise_) == 0x000330, "Member 'UBP_LootContainerWidget_C::CanCauseNoise_' has a wrong offset!");
-static_assert(offsetof(UBP_LootContainerWidget_C, ContainerREF) == 0x000338, "Member 'UBP_LootContainerWidget_C::ContainerREF' has a wrong offset!");
+static_assert(offsetof(UBP_LootContainerWidget_C, ContainerRef) == 0x000338, "Member 'UBP_LootContainerWidget_C::ContainerRef' has a wrong offset!");
 static_assert(offsetof(UBP_LootContainerWidget_C, OptionMap) == 0x000340, "Member 'UBP_LootContainerWidget_C::OptionMap' has a wrong offset!");
 static_assert(offsetof(UBP_LootContainerWidget_C, OptionW) == 0x000390, "Member 'UBP_LootContainerWidget_C::OptionW' has a wrong offset!");
 static_assert(offsetof(UBP_LootContainerWidget_C, Options) == 0x0003E0, "Member 'UBP_LootContainerWidget_C::Options' has a wrong offset!");

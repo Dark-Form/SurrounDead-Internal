@@ -16,6 +16,17 @@
 namespace SDK::Params
 {
 
+// Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.ExecuteUbergraph_BP_SpecialItemContainerSpawner
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner) == 0x000004, "Wrong alignment on BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner");
+static_assert(sizeof(BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner) == 0x000004, "Wrong size on BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner");
+static_assert(offsetof(BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner, EntryPoint) == 0x000000, "Member 'BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner::EntryPoint' has a wrong offset!");
+
 // Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.SpawnContainer
 // 0x0110 (0x0110 - 0x0000)
 struct BP_SpecialItemContainerSpawner_C_SpawnContainer final
@@ -52,17 +63,6 @@ static_assert(offsetof(BP_SpecialItemContainerSpawner_C_SpawnContainer, CallFunc
 static_assert(offsetof(BP_SpecialItemContainerSpawner_C_SpawnContainer, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000E8, "Member 'BP_SpecialItemContainerSpawner_C_SpawnContainer::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SpecialItemContainerSpawner_C_SpawnContainer, K2Node_MakeArray_Array) == 0x0000F0, "Member 'BP_SpecialItemContainerSpawner_C_SpawnContainer::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(BP_SpecialItemContainerSpawner_C_SpawnContainer, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x000100, "Member 'BP_SpecialItemContainerSpawner_C_SpawnContainer::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-
-// Function BP_SpecialItemContainerSpawner.BP_SpecialItemContainerSpawner_C.ExecuteUbergraph_BP_SpecialItemContainerSpawner
-// 0x0004 (0x0004 - 0x0000)
-struct BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner) == 0x000004, "Wrong alignment on BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner");
-static_assert(sizeof(BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner) == 0x000004, "Wrong size on BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner");
-static_assert(offsetof(BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner, EntryPoint) == 0x000000, "Member 'BP_SpecialItemContainerSpawner_C_ExecuteUbergraph_BP_SpecialItemContainerSpawner::EntryPoint' has a wrong offset!");
 
 }
 

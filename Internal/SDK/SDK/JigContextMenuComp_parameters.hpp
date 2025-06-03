@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
+#include "S_NotificationDetails_structs.hpp"
+#include "Struct_ItemsAndWeight_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "ContainerPickupsInfo_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Struct_ItemsAndWeight_structs.hpp"
-#include "Enum_LootRarity_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Struct_LootBox_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
+#include "Enum_LootRarity_structs.hpp"
 #include "UMG_structs.hpp"
-#include "S_NotificationDetails_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "InputCore_structs.hpp"
 
 

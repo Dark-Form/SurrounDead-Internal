@@ -17,269 +17,57 @@
 namespace SDK
 {
 
-// Function BP_HangarDoor.BP_HangarDoor_C.Timeline_OpenDoor__UpdateFunc
+// Function BP_HangarDoor.BP_HangarDoor_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::Timeline_OpenDoor__UpdateFunc()
+void ABP_HangarDoor_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "Timeline_OpenDoor__UpdateFunc");
+		Func = Class->GetFunction("BP_HangarDoor_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::BP_HangarDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.Event_CloseDoor
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_HangarDoor_C::Event_CloseDoor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "Event_CloseDoor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.Timeline_OpenDoor__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_HangarDoor_C::Timeline_OpenDoor__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "Timeline_OpenDoor__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::SetPickupCount(int32 NewCount, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "SetPickupCount");
-
-	Params::BP_HangarDoor_C_SetPickupCount Parms{};
-
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "SetInteractOption");
-
-	Params::BP_HangarDoor_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_HangarDoor_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::OnStopExecuteInteract(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnStopExecuteInteract");
-
-	Params::BP_HangarDoor_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnServerExecuteInteract");
-
-	Params::BP_HangarDoor_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnRequestServerInteract");
-
-	Params::BP_HangarDoor_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_HangarDoor_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnExecuteInteractDialogue");
-
-	Params::BP_HangarDoor_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnExecuteInteract");
-
-	Params::BP_HangarDoor_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_HangarDoor_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_HangarDoor_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "OnBeginInteract");
-
-	Params::BP_HangarDoor_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.MC_OpenDoor
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.Event_OpenDoor
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::MC_OpenDoor(class AActor* Actor)
+void ABP_HangarDoor_C::Event_OpenDoor(class AActor* Actor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "MC_OpenDoor");
+		Func = Class->GetFunction("BP_HangarDoor_C", "Event_OpenDoor");
 
-	Params::BP_HangarDoor_C_MC_OpenDoor Parms{};
+	Params::BP_HangarDoor_C_Event_OpenDoor Parms{};
 
 	Parms.Actor = Actor;
 
@@ -287,92 +75,58 @@ void ABP_HangarDoor_C::MC_OpenDoor(class AActor* Actor)
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_HangarDoor.BP_HangarDoor_C.Event_OpenDoorBehind
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_HangarDoor_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+void ABP_HangarDoor_C::Event_OpenDoorBehind()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "JigSetCanInteract");
+		Func = Class->GetFunction("BP_HangarDoor_C", "Event_OpenDoorBehind");
 
-	Params::BP_HangarDoor_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.JigCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.ExecuteUbergraph_BP_HangarDoor
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::JigCanInteract(bool* Result)
+void ABP_HangarDoor_C::ExecuteUbergraph_BP_HangarDoor(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "JigCanInteract");
+		Func = Class->GetFunction("BP_HangarDoor_C", "ExecuteUbergraph_BP_HangarDoor");
 
-	Params::BP_HangarDoor_C_JigCanInteract Parms{};
+	Params::BP_HangarDoor_C_ExecuteUbergraph_BP_HangarDoor Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.GetMainSceneComp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.GetInteractOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_HangarDoor_C::GetMainSceneComp(class USceneComponent** Comp)
+void ABP_HangarDoor_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "GetMainSceneComp");
+		Func = Class->GetFunction("BP_HangarDoor_C", "GetInteractOptions");
 
-	Params::BP_HangarDoor_C_GetMainSceneComp Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
-}
-
-
-// Function BP_HangarDoor.BP_HangarDoor_C.GetJigMultiplayerComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HangarDoor_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "GetJigMultiplayerComponent");
-
-	Params::BP_HangarDoor_C_GetJigMultiplayerComponent Parms{};
+	Params::BP_HangarDoor_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
 }
 
 
@@ -409,74 +163,108 @@ void ABP_HangarDoor_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* 
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.GetInteractOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.GetJigMultiplayerComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+void ABP_HangarDoor_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "GetInteractOptions");
+		Func = Class->GetFunction("BP_HangarDoor_C", "GetJigMultiplayerComponent");
 
-	Params::BP_HangarDoor_C_GetInteractOptions Parms{};
+	Params::BP_HangarDoor_C_GetJigMultiplayerComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.ExecuteUbergraph_BP_HangarDoor
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_HangarDoor.BP_HangarDoor_C.GetMainSceneComp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::ExecuteUbergraph_BP_HangarDoor(int32 EntryPoint)
+void ABP_HangarDoor_C::GetMainSceneComp(class USceneComponent** Comp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "ExecuteUbergraph_BP_HangarDoor");
+		Func = Class->GetFunction("BP_HangarDoor_C", "GetMainSceneComp");
 
-	Params::BP_HangarDoor_C_ExecuteUbergraph_BP_HangarDoor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::BP_HangarDoor_C_GetMainSceneComp Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.Event_OpenDoorBehind
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.JigCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::Event_OpenDoorBehind()
+void ABP_HangarDoor_C::JigCanInteract(bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "Event_OpenDoorBehind");
+		Func = Class->GetFunction("BP_HangarDoor_C", "JigCanInteract");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_HangarDoor_C_JigCanInteract Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.Event_OpenDoor
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "JigSetCanInteract");
+
+	Params::BP_HangarDoor_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.MC_OpenDoor
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::Event_OpenDoor(class AActor* Actor)
+void ABP_HangarDoor_C::MC_OpenDoor(class AActor* Actor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "Event_OpenDoor");
+		Func = Class->GetFunction("BP_HangarDoor_C", "MC_OpenDoor");
 
-	Params::BP_HangarDoor_C_Event_OpenDoor Parms{};
+	Params::BP_HangarDoor_C_MC_OpenDoor Parms{};
 
 	Parms.Actor = Actor;
 
@@ -484,41 +272,253 @@ void ABP_HangarDoor_C::Event_OpenDoor(class AActor* Actor)
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.Event_CloseDoor
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ABP_HangarDoor_C::Event_CloseDoor()
+void ABP_HangarDoor_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "Event_CloseDoor");
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnBeginInteract");
+
+	Params::BP_HangarDoor_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_HangarDoor_C::OnEndInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_HangarDoor.BP_HangarDoor_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_HangarDoor.BP_HangarDoor_C.OnExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HangarDoor_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_HangarDoor_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HangarDoor_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnExecuteInteract");
 
-	Params::BP_HangarDoor_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	Params::BP_HangarDoor_C_OnExecuteInteract Parms{};
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
+	Parms.InteractingActor = InteractingActor;
+	Parms.Option = std::move(Option);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnExecuteInteractDialogue");
+
+	Params::BP_HangarDoor_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_HangarDoor_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnExecuteInteractEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnRequestServerInteract");
+
+	Params::BP_HangarDoor_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnServerExecuteInteract");
+
+	Params::BP_HangarDoor_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "OnStopExecuteInteract");
+
+	Params::BP_HangarDoor_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_HangarDoor_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "SetInteractOption");
+
+	Params::BP_HangarDoor_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HangarDoor_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "SetPickupCount");
+
+	Params::BP_HangarDoor_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.Timeline_OpenDoor__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_HangarDoor_C::Timeline_OpenDoor__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "Timeline_OpenDoor__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HangarDoor.BP_HangarDoor_C.Timeline_OpenDoor__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_HangarDoor_C::Timeline_OpenDoor__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HangarDoor_C", "Timeline_OpenDoor__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

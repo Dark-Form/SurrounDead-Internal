@@ -25,10 +25,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Container_GunCaseLoot_DisplayCase2_C; // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_Container_GunCaseLoot_DisplayCase2(int32 EntryPoint);
-	void Event2();
 	void Event1();
+	void Event2();
+	void ExecuteUbergraph_Container_GunCaseLoot_DisplayCase2(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

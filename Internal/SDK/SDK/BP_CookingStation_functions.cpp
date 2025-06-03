@@ -17,452 +17,173 @@
 namespace SDK
 {
 
-// Function BP_CookingStation.BP_CookingStation_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_CookingStation.BP_CookingStation_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::UserConstructionScript()
+void ABP_CookingStation_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_CookingStation_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::BP_CookingStation_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.CheckDistanceFromActor
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CookingStation_C::CheckDistanceFromActor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "CheckDistanceFromActor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_CookingStation.BP_CookingStation_C.ExecuteUbergraph_BP_CookingStation
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::SetPickupCount(int32 NewCount, bool* Result)
+void ABP_CookingStation_C::ExecuteUbergraph_BP_CookingStation(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "SetPickupCount");
+		Func = Class->GetFunction("BP_CookingStation_C", "ExecuteUbergraph_BP_CookingStation");
 
-	Params::BP_CookingStation_C_SetPickupCount Parms{};
+	Params::BP_CookingStation_C_ExecuteUbergraph_BP_CookingStation Parms{};
 
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "SetInteractOption");
-
-	Params::BP_CookingStation_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.SetInteractDistance
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::SetInteractDistance(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "SetInteractDistance");
-
-	Params::BP_CookingStation_C_SetInteractDistance Parms{};
-
-	Parms.Target = Target;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CookingStation_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::OnStopExecuteInteract(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnStopExecuteInteract");
-
-	Params::BP_CookingStation_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnServerExecuteInteract");
-
-	Params::BP_CookingStation_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnRequestServerInteract");
-
-	Params::BP_CookingStation_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnExecuteInteractEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CookingStation_C::OnExecuteInteractEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnExecuteInteractEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnExecuteInteractDialogue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnExecuteInteractDialogue");
-
-	Params::BP_CookingStation_C_OnExecuteInteractDialogue Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnExecuteInteract");
-
-	Params::BP_CookingStation_C_OnExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CookingStation_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_CookingStation_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "OnBeginInteract");
-
-	Params::BP_CookingStation_C_OnBeginInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.JigSetCanInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigSetCanInteract");
-
-	Params::BP_CookingStation_C_JigSetCanInteract Parms{};
-
-	Parms.CanInteract = CanInteract;
-	Parms.EnablePhysics = EnablePhysics;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnUpdateChamberUID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnUpdateChamberUID");
-
-	Params::BP_CookingStation_C_JigMP_OnUpdateChamberUID Parms{};
-
-	Parms.NewUID = std::move(NewUID);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnTwoContainersSwap
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnTwoContainersSwap");
-
-	Params::BP_CookingStation_C_JigMP_OnTwoContainersSwap Parms{};
-
-	Parms.FromContainer = FromContainer;
-	Parms.ToContainer = ToContainer;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnRequestDropItem
+// Function BP_CookingStation.BP_CookingStation_C.GetInteractOptions
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class FName                             ContainerName_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
 
-void ABP_CookingStation_C::JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName_0, class AActor** ActorRef)
+void ABP_CookingStation_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnRequestDropItem");
+		Func = Class->GetFunction("BP_CookingStation_C", "GetInteractOptions");
 
-	Params::BP_CookingStation_C_JigMP_OnRequestDropItem Parms{};
-
-	Parms.ItemInfo = std::move(ItemInfo);
-	Parms.ContainerName_0 = ContainerName_0;
+	Params::BP_CookingStation_C_GetInteractOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ActorRef != nullptr)
-		*ActorRef = Parms.ActorRef;
+	if (Options != nullptr)
+		*Options = std::move(Parms.Options);
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnPickupEquipped
+// Function BP_CookingStation.BP_CookingStation_C.GetItemInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     UID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          OverrideActor                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UJigsawItem_DataAsset_C**         Info                                                   (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FS_RandomStatsConfig*            RandomStatsConfig                                      (Parm, OutParm, HasGetValueTypeHash)
+// TMap<class FString, class FString>*     CustomData                                             (Parm, OutParm)
 
-void ABP_CookingStation_C::JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor)
+void ABP_CookingStation_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnPickupEquipped");
+		Func = Class->GetFunction("BP_CookingStation_C", "GetItemInfo");
 
-	Params::BP_CookingStation_C_JigMP_OnPickupEquipped Parms{};
-
-	Parms.ActorRef = ActorRef;
-	Parms.ToContainerName = ToContainerName;
-	Parms.UID = std::move(UID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.Info = std::move(Info);
+	Params::BP_CookingStation_C_GetItemInfo Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
+	if (Info != nullptr)
+		*Info = Parms.Info;
 
-	if (OverrideActor != nullptr)
-		*OverrideActor = Parms.OverrideActor;
+	if (Count != nullptr)
+		*Count = Parms.Count;
+
+	if (RandomStatsConfig != nullptr)
+		*RandomStatsConfig = std::move(Parms.RandomStatsConfig);
+
+	if (CustomData != nullptr)
+		*CustomData = std::move(Parms.CustomData);
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnPickupAdded
+// Function BP_CookingStation.BP_CookingStation_C.GetJigMultiplayerComponent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result)
+void ABP_CookingStation_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnPickupAdded");
+		Func = Class->GetFunction("BP_CookingStation_C", "GetJigMultiplayerComponent");
 
-	Params::BP_CookingStation_C_JigMP_OnPickupAdded Parms{};
-
-	Parms.Info = std::move(Info);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ToContainer = ToContainer;
+	Params::BP_CookingStation_C_GetJigMultiplayerComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
+	if (JigComp != nullptr)
+		*JigComp = Parms.JigComp;
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnMainContainerItemRemoved
+// Function BP_CookingStation.BP_CookingStation_C.GetMainSceneComp
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ContainerName_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              ItemRemovedInfo                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName_0, const struct FRepItemInfo& ItemRemovedInfo, bool* Result)
+void ABP_CookingStation_C::GetMainSceneComp(class USceneComponent** Comp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnMainContainerItemRemoved");
+		Func = Class->GetFunction("BP_CookingStation_C", "GetMainSceneComp");
 
-	Params::BP_CookingStation_C_JigMP_OnMainContainerItemRemoved Parms{};
+	Params::BP_CookingStation_C_GetMainSceneComp Parms{};
 
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.ContainerName_0 = ContainerName_0;
-	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Comp != nullptr)
+		*Comp = Parms.Comp;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.JigCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::JigCanInteract(bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "JigCanInteract");
+
+	Params::BP_CookingStation_C_JigCanInteract Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -471,64 +192,49 @@ void ABP_CookingStation_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& 
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnMainContainerItemAdded
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_GetLootWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class FName                             FromMain                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Valid_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef)
+void ABP_CookingStation_C::JigMP_GetLootWidget(class UWidget** Result, bool* Valid_)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnMainContainerItemAdded");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_GetLootWidget");
 
-	Params::BP_CookingStation_C_JigMP_OnMainContainerItemAdded Parms{};
-
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.ToContainerName = ToContainerName;
-	Parms.ItemInfo = std::move(ItemInfo);
-	Parms.FromMain = FromMain;
+	Params::BP_CookingStation_C_JigMP_GetLootWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
 
-	if (ActorRef != nullptr)
-		*ActorRef = Parms.ActorRef;
+	if (Valid_ != nullptr)
+		*Valid_ = Parms.Valid_;
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemRemoved
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnContainersSwap
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UActorComponent*                  ToComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C*                  Container1                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C*                  Container2                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnItemRemoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* ToComponent, bool* Result)
+void ABP_CookingStation_C::JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemRemoved");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnContainersSwap");
 
-	Params::BP_CookingStation_C_JigMP_OnItemRemoved Parms{};
+	Params::BP_CookingStation_C_JigMP_OnContainersSwap Parms{};
 
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.ToComponent = ToComponent;
+	Parms.Container1 = Container1;
+	Parms.Container2 = Container2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -537,54 +243,28 @@ void ABP_CookingStation_C::JigMP_OnItemRemoved(const struct FGuid& ItemUID, cons
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemMoved
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  FromComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnItemMoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, bool* Result)
+void ABP_CookingStation_C::JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemMoved");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemAdded");
 
-	Params::BP_CookingStation_C_JigMP_OnItemMoved Parms{};
+	Params::BP_CookingStation_C_JigMP_OnItemAdded Parms{};
 
 	Parms.ItemUID = std::move(ItemUID);
 	Parms.FromContainerUID = std::move(FromContainerUID);
 	Parms.TocontainerUID = std::move(TocontainerUID);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemDropped
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CookingStation_C::JigMP_OnItemDropped(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, class AActor* ActorRef, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemDropped");
-
-	Params::BP_CookingStation_C_JigMP_OnItemDropped Parms{};
-
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.ActorRef = ActorRef;
+	Parms.FromComponent = FromComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -629,28 +309,54 @@ void ABP_CookingStation_C::JigMP_OnItemConsumed(const struct FRepItemInfo& Consu
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemAdded
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemDropped
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::JigMP_OnItemDropped(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, class AActor* ActorRef, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemDropped");
+
+	Params::BP_CookingStation_C_JigMP_OnItemDropped Parms{};
+
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.ActorRef = ActorRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemMoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UActorComponent*                  FromComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result)
+void ABP_CookingStation_C::JigMP_OnItemMoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemAdded");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemMoved");
 
-	Params::BP_CookingStation_C_JigMP_OnItemAdded Parms{};
+	Params::BP_CookingStation_C_JigMP_OnItemMoved Parms{};
 
 	Parms.ItemUID = std::move(ItemUID);
 	Parms.FromContainerUID = std::move(FromContainerUID);
 	Parms.TocontainerUID = std::move(TocontainerUID);
-	Parms.FromComponent = FromComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -659,24 +365,28 @@ void ABP_CookingStation_C::JigMP_OnItemAdded(const struct FGuid& ItemUID, const 
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnContainersSwap
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnItemRemoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UJSIContainer_C*                  Container1                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C*                  Container2                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  ToComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result)
+void ABP_CookingStation_C::JigMP_OnItemRemoved(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* ToComponent, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnContainersSwap");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnItemRemoved");
 
-	Params::BP_CookingStation_C_JigMP_OnContainersSwap Parms{};
+	Params::BP_CookingStation_C_JigMP_OnItemRemoved Parms{};
 
-	Parms.Container1 = Container1;
-	Parms.Container2 = Container2;
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ToComponent = ToComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -685,44 +395,64 @@ void ABP_CookingStation_C::JigMP_OnContainersSwap(class UJSIContainer_C* Contain
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigMP_GetLootWidget
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnMainContainerItemAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Valid_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             FromMain                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigMP_GetLootWidget(class UWidget** Result, bool* Valid_)
+void ABP_CookingStation_C::JigMP_OnMainContainerItemAdded(const struct FGuid& TocontainerUID, const struct FGuid& ItemUID, class FName ToContainerName, const struct FRepItemInfo& ItemInfo, class FName FromMain, bool* Result, class AActor** ActorRef)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_GetLootWidget");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnMainContainerItemAdded");
 
-	Params::BP_CookingStation_C_JigMP_GetLootWidget Parms{};
+	Params::BP_CookingStation_C_JigMP_OnMainContainerItemAdded Parms{};
+
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.ToContainerName = ToContainerName;
+	Parms.ItemInfo = std::move(ItemInfo);
+	Parms.FromMain = FromMain;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
 
-	if (Valid_ != nullptr)
-		*Valid_ = Parms.Valid_;
+	if (ActorRef != nullptr)
+		*ActorRef = Parms.ActorRef;
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.JigCanInteract
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnMainContainerItemRemoved
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ContainerName_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              ItemRemovedInfo                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::JigCanInteract(bool* Result)
+void ABP_CookingStation_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName_0, const struct FRepItemInfo& ItemRemovedInfo, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "JigCanInteract");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnMainContainerItemRemoved");
 
-	Params::BP_CookingStation_C_JigCanInteract Parms{};
+	Params::BP_CookingStation_C_JigMP_OnMainContainerItemRemoved Parms{};
+
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.ContainerName_0 = ContainerName_0;
+	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -731,157 +461,427 @@ void ABP_CookingStation_C::JigCanInteract(bool* Result)
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.GetMainSceneComp
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnPickupAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USceneComponent**                 Comp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::GetMainSceneComp(class USceneComponent** Comp)
+void ABP_CookingStation_C::JigMP_OnPickupAdded(const struct FRepItemInfo& Info, const struct FGuid& ItemUID, const struct FGuid& TocontainerUID, class FName ToContainer, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "GetMainSceneComp");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnPickupAdded");
 
-	Params::BP_CookingStation_C_GetMainSceneComp Parms{};
+	Params::BP_CookingStation_C_JigMP_OnPickupAdded Parms{};
+
+	Parms.Info = std::move(Info);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.ToContainer = ToContainer;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Comp != nullptr)
-		*Comp = Parms.Comp;
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.GetJigMultiplayerComponent
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnPickupEquipped
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UActorComponent**                 JigComp                                                (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainerName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     UID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     TocontainerUID                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              Info                                                   (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          OverrideActor                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::GetJigMultiplayerComponent(class UActorComponent** JigComp)
+void ABP_CookingStation_C::JigMP_OnPickupEquipped(class AActor* ActorRef, class FName ToContainerName, const struct FGuid& UID, const struct FGuid& TocontainerUID, const struct FRepItemInfo& Info, bool* Result, class AActor** OverrideActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "GetJigMultiplayerComponent");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnPickupEquipped");
 
-	Params::BP_CookingStation_C_GetJigMultiplayerComponent Parms{};
+	Params::BP_CookingStation_C_JigMP_OnPickupEquipped Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigComp != nullptr)
-		*JigComp = Parms.JigComp;
-}
-
-
-// Function BP_CookingStation.BP_CookingStation_C.GetItemInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UJigsawItem_DataAsset_C**         Info                                                   (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FS_RandomStatsConfig*            RandomStatsConfig                                      (Parm, OutParm, HasGetValueTypeHash)
-// TMap<class FString, class FString>*     CustomData                                             (Parm, OutParm)
-
-void ABP_CookingStation_C::GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "GetItemInfo");
-
-	Params::BP_CookingStation_C_GetItemInfo Parms{};
+	Parms.ActorRef = ActorRef;
+	Parms.ToContainerName = ToContainerName;
+	Parms.UID = std::move(UID);
+	Parms.TocontainerUID = std::move(TocontainerUID);
+	Parms.Info = std::move(Info);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Info != nullptr)
-		*Info = Parms.Info;
+	if (Result != nullptr)
+		*Result = Parms.Result;
 
-	if (Count != nullptr)
-		*Count = Parms.Count;
-
-	if (RandomStatsConfig != nullptr)
-		*RandomStatsConfig = std::move(Parms.RandomStatsConfig);
-
-	if (CustomData != nullptr)
-		*CustomData = std::move(Parms.CustomData);
+	if (OverrideActor != nullptr)
+		*OverrideActor = Parms.OverrideActor;
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.GetInteractOptions
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnRequestDropItem
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TMap<struct FGameplayTag, class FText>* Options                                                (Parm, OutParm)
+// const struct FRepItemInfo&              ItemInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             ContainerName_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          ActorRef                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options)
+void ABP_CookingStation_C::JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName_0, class AActor** ActorRef)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "GetInteractOptions");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnRequestDropItem");
 
-	Params::BP_CookingStation_C_GetInteractOptions Parms{};
+	Params::BP_CookingStation_C_JigMP_OnRequestDropItem Parms{};
+
+	Parms.ItemInfo = std::move(ItemInfo);
+	Parms.ContainerName_0 = ContainerName_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Options != nullptr)
-		*Options = std::move(Parms.Options);
+	if (ActorRef != nullptr)
+		*ActorRef = Parms.ActorRef;
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.ExecuteUbergraph_BP_CookingStation
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnTwoContainersSwap
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ToContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::ExecuteUbergraph_BP_CookingStation(int32 EntryPoint)
+void ABP_CookingStation_C::JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "ExecuteUbergraph_BP_CookingStation");
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnTwoContainersSwap");
 
-	Params::BP_CookingStation_C_ExecuteUbergraph_BP_CookingStation Parms{};
+	Params::BP_CookingStation_C_JigMP_OnTwoContainersSwap Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.FromContainer = FromContainer;
+	Parms.ToContainer = ToContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.JigMP_OnUpdateChamberUID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "JigMP_OnUpdateChamberUID");
+
+	Params::BP_CookingStation_C_JigMP_OnUpdateChamberUID Parms{};
+
+	Parms.NewUID = std::move(NewUID);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.JigSetCanInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanInteract                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnablePhysics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "JigSetCanInteract");
+
+	Params::BP_CookingStation_C_JigSetCanInteract Parms{};
+
+	Parms.CanInteract = CanInteract;
+	Parms.EnablePhysics = EnablePhysics;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_CookingStation_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "OnBeginInteract");
+
+	Params::BP_CookingStation_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.CheckDistanceFromActor
+// Function BP_CookingStation.BP_CookingStation_C.OnEndInteract
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CookingStation_C::CheckDistanceFromActor()
+void ABP_CookingStation_C::OnEndInteract()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "CheckDistanceFromActor");
+		Func = Class->GetFunction("BP_CookingStation_C", "OnEndInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_CookingStation.BP_CookingStation_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_CookingStation.BP_CookingStation_C.OnExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CookingStation_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_CookingStation_C::OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CookingStation_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_CookingStation_C", "OnExecuteInteract");
 
-	Params::BP_CookingStation_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	Params::BP_CookingStation_C_OnExecuteInteract Parms{};
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
+	Parms.InteractingActor = InteractingActor;
+	Parms.Option = std::move(Option);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.OnExecuteInteractDialogue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::OnExecuteInteractDialogue(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "OnExecuteInteractDialogue");
+
+	Params::BP_CookingStation_C_OnExecuteInteractDialogue Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.OnExecuteInteractEnded
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CookingStation_C::OnExecuteInteractEnded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "OnExecuteInteractEnded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "OnRequestServerInteract");
+
+	Params::BP_CookingStation_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "OnServerExecuteInteract");
+
+	Params::BP_CookingStation_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "OnStopExecuteInteract");
+
+	Params::BP_CookingStation_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CookingStation_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.SetInteractDistance
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::SetInteractDistance(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "SetInteractDistance");
+
+	Params::BP_CookingStation_C_SetInteractDistance Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "SetInteractOption");
+
+	Params::BP_CookingStation_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CookingStation_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "SetPickupCount");
+
+	Params::BP_CookingStation_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_CookingStation.BP_CookingStation_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CookingStation_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CookingStation_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "S_AllAIAnims_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_HitboxTypeAI_structs.hpp"
-#include "E_OrderOptions_structs.hpp"
-#include "E_NoAmmo_structs.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "E_HitboxTypeAI_structs.hpp"
+#include "S_AllAIAnims_structs.hpp"
+#include "E_OrderOptions_structs.hpp"
 #include "E_BlockType_structs.hpp"
+#include "E_NoAmmo_structs.hpp"
 
 
 namespace SDK

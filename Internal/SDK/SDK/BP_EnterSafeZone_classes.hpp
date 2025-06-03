@@ -28,14 +28,14 @@ public:
 	struct FTimerHandle                           OverlapTimer;                                      // 0x02C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void InRadArea(bool InRadArea_0);
-	void ExecuteUbergraph_BP_EnterSafeZone(int32 EntryPoint);
-	void Event_Overlap();
-	void Event_ExitZone(class ABP_PlayerCharacter_C* Actor);
-	void Event_EnterZone(class ABP_PlayerCharacter_C* Actor);
-	void BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_EnterSafeZone_Sphere_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void Event_EnterZone(class ABP_PlayerCharacter_C* Actor);
+	void Event_ExitZone(class ABP_PlayerCharacter_C* Actor);
+	void Event_Overlap();
+	void ExecuteUbergraph_BP_EnterSafeZone(int32 EntryPoint);
+	void InRadArea(bool InRadArea_0);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

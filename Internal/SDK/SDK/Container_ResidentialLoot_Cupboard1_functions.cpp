@@ -17,15 +17,29 @@
 namespace SDK
 {
 
-// Function Container_ResidentialLoot_Cupboard1.Container_ResidentialLoot_Cupboard1_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Container_ResidentialLoot_Cupboard1.Container_ResidentialLoot_Cupboard1_C.Event1
+// (BlueprintCallable, BlueprintEvent)
 
-void AContainer_ResidentialLoot_Cupboard1_C::ReceiveBeginPlay()
+void AContainer_ResidentialLoot_Cupboard1_C::Event1()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Container_ResidentialLoot_Cupboard1_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Container_ResidentialLoot_Cupboard1_C", "Event1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Container_ResidentialLoot_Cupboard1.Container_ResidentialLoot_Cupboard1_C.Event2
+// (BlueprintCallable, BlueprintEvent)
+
+void AContainer_ResidentialLoot_Cupboard1_C::Event2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Container_ResidentialLoot_Cupboard1_C", "Event2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +65,15 @@ void AContainer_ResidentialLoot_Cupboard1_C::ExecuteUbergraph_Container_Resident
 }
 
 
-// Function Container_ResidentialLoot_Cupboard1.Container_ResidentialLoot_Cupboard1_C.Event2
-// (BlueprintCallable, BlueprintEvent)
+// Function Container_ResidentialLoot_Cupboard1.Container_ResidentialLoot_Cupboard1_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AContainer_ResidentialLoot_Cupboard1_C::Event2()
+void AContainer_ResidentialLoot_Cupboard1_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Container_ResidentialLoot_Cupboard1_C", "Event2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Container_ResidentialLoot_Cupboard1.Container_ResidentialLoot_Cupboard1_C.Event1
-// (BlueprintCallable, BlueprintEvent)
-
-void AContainer_ResidentialLoot_Cupboard1_C::Event1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Container_ResidentialLoot_Cupboard1_C", "Event1");
+		Func = Class->GetFunction("Container_ResidentialLoot_Cupboard1_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

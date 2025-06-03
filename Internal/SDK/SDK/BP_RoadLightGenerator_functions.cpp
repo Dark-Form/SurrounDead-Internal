@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_RoadLightGenerator.BP_RoadLightGenerator_C.ExecuteUbergraph_BP_RoadLightGenerator
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RoadLightGenerator_C::ExecuteUbergraph_BP_RoadLightGenerator(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoadLightGenerator_C", "ExecuteUbergraph_BP_RoadLightGenerator");
-
-	Params::BP_RoadLightGenerator_C_ExecuteUbergraph_BP_RoadLightGenerator Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_RoadLightGenerator.BP_RoadLightGenerator_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -56,6 +36,26 @@ void ABP_RoadLightGenerator_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_Compo
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RoadLightGenerator.BP_RoadLightGenerator_C.ExecuteUbergraph_BP_RoadLightGenerator
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RoadLightGenerator_C::ExecuteUbergraph_BP_RoadLightGenerator(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RoadLightGenerator_C", "ExecuteUbergraph_BP_RoadLightGenerator");
+
+	Params::BP_RoadLightGenerator_C_ExecuteUbergraph_BP_RoadLightGenerator Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

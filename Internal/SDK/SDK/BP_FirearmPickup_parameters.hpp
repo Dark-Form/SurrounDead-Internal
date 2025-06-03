@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ContainerPickupsInfo_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "PhysicsCore_structs.hpp"
-#include "S_RepAttachmentInfo_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_RepAttachmentInfo_structs.hpp"
 #include "RepItemInfo_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
 #include "S_ItemStat_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -1975,6 +1975,63 @@ static_assert(offsetof(BP_FirearmPickup_C_Jig_StartReloading, CallFunc_LocalStar
 static_assert(offsetof(BP_FirearmPickup_C_Jig_StartReloading, K2Node_DynamicCast_AsInt_Passive_Skills) == 0x000030, "Member 'BP_FirearmPickup_C_Jig_StartReloading::K2Node_DynamicCast_AsInt_Passive_Skills' has a wrong offset!");
 static_assert(offsetof(BP_FirearmPickup_C_Jig_StartReloading, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BP_FirearmPickup_C_Jig_StartReloading::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
+// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnItemConsumed
+// 0x0118 (0x0118 - 0x0000)
+struct BP_FirearmPickup_C_JigMP_OnItemConsumed final
+{
+public:
+	struct FRepItemInfo                           ConsumedItem;                                      // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	int32                                         Amount;                                            // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Remaining;                                         // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           InsideOf;                                          // 0x0080(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   FromContainer;                                     // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CustomData;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallbackToPlayer_;                                 // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0111(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_FirearmPickup_C_JigMP_OnItemConsumed) == 0x000008, "Wrong alignment on BP_FirearmPickup_C_JigMP_OnItemConsumed");
+static_assert(sizeof(BP_FirearmPickup_C_JigMP_OnItemConsumed) == 0x000118, "Wrong size on BP_FirearmPickup_C_JigMP_OnItemConsumed");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, ConsumedItem) == 0x000000, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::ConsumedItem' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, Amount) == 0x000078, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::Amount' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, Remaining) == 0x00007C, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::Remaining' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, InsideOf) == 0x000080, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::InsideOf' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, FromContainer) == 0x0000F8, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::FromContainer' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, CustomData) == 0x000100, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::CustomData' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, CallbackToPlayer_) == 0x000110, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::CallbackToPlayer_' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, Result) == 0x000111, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::Result' has a wrong offset!");
+
+// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnMainContainerItemRemoved
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved final
+{
+public:
+	struct FGuid                                  FromContainerUID;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ContainerName;                                     // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           ItemRemovedInfo;                                   // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved) == 0x000008, "Wrong alignment on BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved");
+static_assert(sizeof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved) == 0x0000A8, "Wrong size on BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, FromContainerUID) == 0x000000, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, ItemUID) == 0x000010, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
+
+// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnUpdateChamberUID
+// 0x0014 (0x0014 - 0x0000)
+struct BP_FirearmPickup_C_JigMP_OnUpdateChamberUID final
+{
+public:
+	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_FirearmPickup_C_JigMP_OnUpdateChamberUID");
+static_assert(sizeof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_FirearmPickup_C_JigMP_OnUpdateChamberUID");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_FirearmPickup_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
+static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_FirearmPickup_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
+
 // Function BP_FirearmPickup.BP_FirearmPickup_C.Local_CheckCanReload
 // 0x0268 (0x0268 - 0x0000)
 struct BP_FirearmPickup_C_Local_CheckCanReload final
@@ -3571,63 +3628,6 @@ static_assert(offsetof(BP_FirearmPickup_C_WeaponRecoilValues, CallFunc_Multiply_
 static_assert(offsetof(BP_FirearmPickup_C_WeaponRecoilValues, CallFunc_Multiply_DoubleDouble_ReturnValue_9) == 0x000108, "Member 'BP_FirearmPickup_C_WeaponRecoilValues::CallFunc_Multiply_DoubleDouble_ReturnValue_9' has a wrong offset!");
 static_assert(offsetof(BP_FirearmPickup_C_WeaponRecoilValues, CallFunc_SetPlayRate_NewRate_ImplicitCast) == 0x000110, "Member 'BP_FirearmPickup_C_WeaponRecoilValues::CallFunc_SetPlayRate_NewRate_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_FirearmPickup_C_WeaponRecoilValues, CallFunc_SetPlayRate_NewRate_ImplicitCast_1) == 0x000114, "Member 'BP_FirearmPickup_C_WeaponRecoilValues::CallFunc_SetPlayRate_NewRate_ImplicitCast_1' has a wrong offset!");
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnItemConsumed
-// 0x0118 (0x0118 - 0x0000)
-struct BP_FirearmPickup_C_JigMP_OnItemConsumed final
-{
-public:
-	struct FRepItemInfo                           ConsumedItem;                                      // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         Amount;                                            // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Remaining;                                         // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           InsideOf;                                          // 0x0080(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   FromContainer;                                     // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CustomData;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallbackToPlayer_;                                 // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0111(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FirearmPickup_C_JigMP_OnItemConsumed) == 0x000008, "Wrong alignment on BP_FirearmPickup_C_JigMP_OnItemConsumed");
-static_assert(sizeof(BP_FirearmPickup_C_JigMP_OnItemConsumed) == 0x000118, "Wrong size on BP_FirearmPickup_C_JigMP_OnItemConsumed");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, ConsumedItem) == 0x000000, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::ConsumedItem' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, Amount) == 0x000078, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::Amount' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, Remaining) == 0x00007C, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::Remaining' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, InsideOf) == 0x000080, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::InsideOf' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, FromContainer) == 0x0000F8, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::FromContainer' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, CustomData) == 0x000100, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::CustomData' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, CallbackToPlayer_) == 0x000110, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::CallbackToPlayer_' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnItemConsumed, Result) == 0x000111, "Member 'BP_FirearmPickup_C_JigMP_OnItemConsumed::Result' has a wrong offset!");
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnMainContainerItemRemoved
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved final
-{
-public:
-	struct FGuid                                  FromContainerUID;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ContainerName;                                     // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           ItemRemovedInfo;                                   // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved) == 0x000008, "Wrong alignment on BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved");
-static_assert(sizeof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved) == 0x0000A8, "Wrong size on BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, FromContainerUID) == 0x000000, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, ItemUID) == 0x000010, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnUpdateChamberUID
-// 0x0014 (0x0014 - 0x0000)
-struct BP_FirearmPickup_C_JigMP_OnUpdateChamberUID final
-{
-public:
-	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_FirearmPickup_C_JigMP_OnUpdateChamberUID");
-static_assert(sizeof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_FirearmPickup_C_JigMP_OnUpdateChamberUID");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_FirearmPickup_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
-static_assert(offsetof(BP_FirearmPickup_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_FirearmPickup_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
 
 }
 

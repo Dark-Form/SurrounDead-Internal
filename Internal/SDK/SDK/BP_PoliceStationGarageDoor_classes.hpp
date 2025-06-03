@@ -31,23 +31,23 @@ public:
 	bool                                          Powered_;                                          // 0x02C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetPower_Warning(bool SetWarning);
-	void SetPower_TurnedOn(bool TurnOn);
-	void OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
-	void OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
-	void OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
-	void OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
-	void OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
-	void OnInterrupted_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
-	void OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
-	void OnCompleted_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
-	void OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
-	void OnBlendOut_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
-	void MC_OpenDoor(class AActor* Actor);
-	void ExecuteUbergraph_BP_PoliceStationGarageDoor(int32 EntryPoint);
-	void Event_OpenDoor();
-	void CallInteractOnObject();
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void CallInteractOnObject();
+	void Event_OpenDoor();
+	void ExecuteUbergraph_BP_PoliceStationGarageDoor(int32 EntryPoint);
+	void MC_OpenDoor(class AActor* Actor);
+	void OnBlendOut_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
+	void OnBlendOut_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
+	void OnCompleted_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
+	void OnCompleted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
+	void OnInterrupted_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
+	void OnInterrupted_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
+	void OnNotifyBegin_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
+	void OnNotifyBegin_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
+	void OnNotifyEnd_2203FE894E82A21CC5DE86828FE291C5(class FName NotifyName);
+	void OnNotifyEnd_56D76FBC4D43E45E4D2A4F8DE1E0A0F3(class FName NotifyName);
+	void SetPower_TurnedOn(bool TurnOn);
+	void SetPower_Warning(bool SetWarning);
 
 public:
 	static class UClass* StaticClass()

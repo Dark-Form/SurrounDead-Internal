@@ -19,112 +19,21 @@
 namespace SDK::Params
 {
 
-// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct Buildable_DecontaminationShower_C_OnServerExecuteInteract final
+// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Buildable_DecontaminationShower_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_OnServerExecuteInteract");
-static_assert(sizeof(Buildable_DecontaminationShower_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_DecontaminationShower_C_OnServerExecuteInteract");
-static_assert(offsetof(Buildable_DecontaminationShower_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_DecontaminationShower_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_DecontaminationShower_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_DecontaminationShower_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.OnInteractBuildable
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_DecontaminationShower_C_OnInteractBuildable final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_DecontaminationShower_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_OnInteractBuildable");
-static_assert(sizeof(Buildable_DecontaminationShower_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_DecontaminationShower_C_OnInteractBuildable");
-static_assert(offsetof(Buildable_DecontaminationShower_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_DecontaminationShower_C_OnInteractBuildable::Actor' has a wrong offset!");
-
-// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct Buildable_DecontaminationShower_C_OnBeginInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(Buildable_DecontaminationShower_C_OnBeginInteract) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_OnBeginInteract");
-static_assert(sizeof(Buildable_DecontaminationShower_C_OnBeginInteract) == 0x000058, "Wrong size on Buildable_DecontaminationShower_C_OnBeginInteract");
-static_assert(offsetof(Buildable_DecontaminationShower_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'Buildable_DecontaminationShower_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_OnBeginInteract, Options) == 0x000008, "Member 'Buildable_DecontaminationShower_C_OnBeginInteract::Options' has a wrong offset!");
-
-// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.ExecuteUbergraph_Buildable_DecontaminationShower
-// 0x0220 (0x0220 - 0x0000)
-struct Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsBeyondLastLayer;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_ComponentBoundEvent_LayerIndex;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsSeen;                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_1;                             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_InteractingActor;                     // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        K2Node_Event_Options;                              // 0x0058(0x0050)(ConstParm)
-	class AActor*                                 K2Node_Event_Actor;                                // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IBPI_Player_C>         K2Node_DynamicCast_AsBPI_Player;                   // 0x00B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00C8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBoolCVar_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x00D8(0x0050)(ConstParm)
-	TMap<class FName, class FText>                K2Node_MakeMap_Map_1;                              // 0x0128(0x0050)()
-	TMap<class FName, class FText>                K2Node_MakeMap_Map_2;                              // 0x0178(0x0050)()
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_2;                             // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_3;                             // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           K2Node_Event_Option;                               // 0x01D8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_ByActor;                              // 0x01E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          K2Node_Event_Payload;                              // 0x01E8(0x0030)(HasGetValueTypeHash)
-	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_219[0x3];                                      // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower");
-static_assert(sizeof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower) == 0x000220, "Wrong size on Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, EntryPoint) == 0x000000, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_ComponentBoundEvent_bIsBeyondLastLayer) == 0x000004, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_ComponentBoundEvent_bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_ComponentBoundEvent_LayerIndex) == 0x000008, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_ComponentBoundEvent_LayerIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_ComponentBoundEvent_bIsSeen) == 0x00000C, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_SwitchInteger_CmpSuccess) == 0x00000D, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD) == 0x000040, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD_1) == 0x000048, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD_1' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_InteractingActor) == 0x000050, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_InteractingActor' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Options) == 0x000058, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Options' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Actor) == 0x0000A8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Actor' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_DynamicCast_AsBPI_Player) == 0x0000B0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_DynamicCast_AsBPI_Player' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000C8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetBoolCVar_ReturnValue) == 0x0000D0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetBoolCVar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_MakeMap_Map) == 0x0000D8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_MakeMap_Map_1) == 0x000128, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_MakeMap_Map_1' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_MakeMap_Map_2) == 0x000178, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_MakeMap_Map_2' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD_2) == 0x0001C8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD_2' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD_3) == 0x0001D0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD_3' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Option) == 0x0001D8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Option' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_ByActor) == 0x0001E0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Payload) == 0x0001E8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Payload' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000218, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast) == 0x00021C, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast' has a wrong offset!");
+static_assert(alignof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 // Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.DecontaminatePlayer
 // 0x0240 (0x0240 - 0x0000)
@@ -208,21 +117,112 @@ static_assert(offsetof(Buildable_DecontaminationShower_C_DecontaminatePlayer, Ca
 static_assert(offsetof(Buildable_DecontaminationShower_C_DecontaminatePlayer, CallFunc_BreakHitResult_TraceEnd) == 0x000220, "Member 'Buildable_DecontaminationShower_C_DecontaminatePlayer::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 static_assert(offsetof(Buildable_DecontaminationShower_C_DecontaminatePlayer, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000238, "Member 'Buildable_DecontaminationShower_C_DecontaminatePlayer::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
-// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.ExecuteUbergraph_Buildable_DecontaminationShower
+// 0x0220 (0x0220 - 0x0000)
+struct Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsBeyondLastLayer;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_LayerIndex;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsSeen;                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_1;                             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_InteractingActor;                     // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        K2Node_Event_Options;                              // 0x0058(0x0050)(ConstParm)
+	class AActor*                                 K2Node_Event_Actor;                                // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_Player_C>         K2Node_DynamicCast_AsBPI_Player;                   // 0x00B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00C8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBoolCVar_ReturnValue;                  // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x00D8(0x0050)(ConstParm)
+	TMap<class FName, class FText>                K2Node_MakeMap_Map_1;                              // 0x0128(0x0050)()
+	TMap<class FName, class FText>                K2Node_MakeMap_Map_2;                              // 0x0178(0x0050)()
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_2;                             // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD_3;                             // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           K2Node_Event_Option;                               // 0x01D8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_ByActor;                              // 0x01E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          K2Node_Event_Payload;                              // 0x01E8(0x0030)(HasGetValueTypeHash)
+	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_219[0x3];                                      // 0x0219(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x021C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_DecontaminationShower_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower");
+static_assert(sizeof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower) == 0x000220, "Wrong size on Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, EntryPoint) == 0x000000, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::EntryPoint' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_ComponentBoundEvent_bIsBeyondLastLayer) == 0x000004, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_ComponentBoundEvent_bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_ComponentBoundEvent_LayerIndex) == 0x000008, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_ComponentBoundEvent_LayerIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_ComponentBoundEvent_bIsSeen) == 0x00000C, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_SwitchInteger_CmpSuccess) == 0x00000D, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_CreateDelegate_OutputDelegate_2) == 0x000030, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD) == 0x000040, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD_1) == 0x000048, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD_1' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_InteractingActor) == 0x000050, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_InteractingActor' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Options) == 0x000058, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Options' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Actor) == 0x0000A8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Actor' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_DynamicCast_AsBPI_Player) == 0x0000B0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_DynamicCast_AsBPI_Player' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000C8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetBoolCVar_ReturnValue) == 0x0000D0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetBoolCVar_ReturnValue' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_MakeMap_Map) == 0x0000D8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_MakeMap_Map' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_MakeMap_Map_1) == 0x000128, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_MakeMap_Map_1' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_MakeMap_Map_2) == 0x000178, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_MakeMap_Map_2' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD_2) == 0x0001C8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD_2' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_GetHUD_HUD_3) == 0x0001D0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_GetHUD_HUD_3' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Option) == 0x0001D8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Option' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_ByActor) == 0x0001E0, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, K2Node_Event_Payload) == 0x0001E8, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::K2Node_Event_Payload' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000218, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower, CallFunc_K2_SetTimerDelegate_Time_ImplicitCast) == 0x00021C, "Member 'Buildable_DecontaminationShower_C_ExecuteUbergraph_Buildable_DecontaminationShower::CallFunc_K2_SetTimerDelegate_Time_ImplicitCast' has a wrong offset!");
+
+// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct Buildable_DecontaminationShower_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(Buildable_DecontaminationShower_C_OnBeginInteract) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_OnBeginInteract");
+static_assert(sizeof(Buildable_DecontaminationShower_C_OnBeginInteract) == 0x000058, "Wrong size on Buildable_DecontaminationShower_C_OnBeginInteract");
+static_assert(offsetof(Buildable_DecontaminationShower_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'Buildable_DecontaminationShower_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_OnBeginInteract, Options) == 0x000008, "Member 'Buildable_DecontaminationShower_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.OnInteractBuildable
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_DecontaminationShower_C_OnInteractBuildable final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_DecontaminationShower_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_OnInteractBuildable");
+static_assert(sizeof(Buildable_DecontaminationShower_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_DecontaminationShower_C_OnInteractBuildable");
+static_assert(offsetof(Buildable_DecontaminationShower_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_DecontaminationShower_C_OnInteractBuildable::Actor' has a wrong offset!");
+
+// Function Buildable_DecontaminationShower.Buildable_DecontaminationShower_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct Buildable_DecontaminationShower_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_DecontaminationShower_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_DecontaminationShower_C_OnServerExecuteInteract");
+static_assert(sizeof(Buildable_DecontaminationShower_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_DecontaminationShower_C_OnServerExecuteInteract");
+static_assert(offsetof(Buildable_DecontaminationShower_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_DecontaminationShower_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_DecontaminationShower_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_DecontaminationShower_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_DecontaminationShower_C_OnServerExecuteInteract::Payload' has a wrong offset!");
 
 }
 

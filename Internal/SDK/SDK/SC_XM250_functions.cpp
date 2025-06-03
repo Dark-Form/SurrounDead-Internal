@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_XM250.SC_XM250_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_XM250_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_XM250_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_XM250.SC_XM250_C.ExecuteUbergraph_SC_XM250
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_XM250_C::ExecuteUbergraph_SC_XM250(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_XM250.SC_XM250_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_XM250_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_XM250_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

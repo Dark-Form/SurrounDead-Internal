@@ -17,15 +17,69 @@
 namespace SDK
 {
 
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.ExecuteUbergraph_BP_RandomInfestationSpawnPoint
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RandomInfestationSpawnPoint_C::UserConstructionScript()
+void ABP_RandomInfestationSpawnPoint_C::ExecuteUbergraph_BP_RandomInfestationSpawnPoint(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "ExecuteUbergraph_BP_RandomInfestationSpawnPoint");
+
+	Params::BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.RandomSpawn
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_RandomInfestationSpawnPoint_C::RandomSpawn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "RandomSpawn");
+
+	Params::BP_RandomInfestationSpawnPoint_C_RandomSpawn Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_RandomInfestationSpawnPoint_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.SpawnInfestation
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RandomInfestationSpawnPoint_C::SpawnInfestation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "SpawnInfestation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -52,71 +106,17 @@ void ABP_RandomInfestationSpawnPoint_C::TraceForActor(bool* Ouput)
 }
 
 
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.SpawnInfestation
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_RandomInfestationSpawnPoint_C::SpawnInfestation()
+void ABP_RandomInfestationSpawnPoint_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "SpawnInfestation");
+		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_RandomInfestationSpawnPoint_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.RandomSpawn
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool ABP_RandomInfestationSpawnPoint_C::RandomSpawn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "RandomSpawn");
-
-	Params::BP_RandomInfestationSpawnPoint_C_RandomSpawn Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_RandomInfestationSpawnPoint.BP_RandomInfestationSpawnPoint_C.ExecuteUbergraph_BP_RandomInfestationSpawnPoint
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RandomInfestationSpawnPoint_C::ExecuteUbergraph_BP_RandomInfestationSpawnPoint(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RandomInfestationSpawnPoint_C", "ExecuteUbergraph_BP_RandomInfestationSpawnPoint");
-
-	Params::BP_RandomInfestationSpawnPoint_C_ExecuteUbergraph_BP_RandomInfestationSpawnPoint Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

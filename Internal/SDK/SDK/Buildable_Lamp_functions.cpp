@@ -17,17 +17,115 @@
 namespace SDK
 {
 
-// Function Buildable_Lamp.Buildable_Lamp_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Buildable_Lamp.Buildable_Lamp_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABuildable_Lamp_C::ReceiveBeginPlay()
+void ABuildable_Lamp_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Buildable_Lamp_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::Buildable_Lamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Lamp.Buildable_Lamp_C.ExecuteUbergraph_Buildable_Lamp
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_Lamp_C::ExecuteUbergraph_Buildable_Lamp(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Lamp_C", "ExecuteUbergraph_Buildable_Lamp");
+
+	Params::Buildable_Lamp_C_ExecuteUbergraph_Buildable_Lamp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Lamp.Buildable_Lamp_C.LightCallback
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_Lamp_C::LightCallback(bool NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Lamp_C", "LightCallback");
+
+	Params::Buildable_Lamp_C_LightCallback Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_Lamp.Buildable_Lamp_C.Off
+// (BlueprintCallable, BlueprintEvent)
+
+void ABuildable_Lamp_C::Off()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Lamp_C", "Off");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_Lamp.Buildable_Lamp_C.On
+// (BlueprintCallable, BlueprintEvent)
+
+void ABuildable_Lamp_C::On()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Lamp_C", "On");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_Lamp.Buildable_Lamp_C.OnInteractBuildable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_Lamp_C::OnInteractBuildable(class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_Lamp_C", "OnInteractBuildable");
+
+	Params::Buildable_Lamp_C_OnInteractBuildable Parms{};
+
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -55,115 +153,17 @@ void ABuildable_Lamp_C::OnServerExecuteInteract(const struct FGameplayTag& Optio
 }
 
 
-// Function Buildable_Lamp.Buildable_Lamp_C.OnInteractBuildable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function Buildable_Lamp.Buildable_Lamp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABuildable_Lamp_C::OnInteractBuildable(class AActor* Actor)
+void ABuildable_Lamp_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "OnInteractBuildable");
-
-	Params::Buildable_Lamp_C_OnInteractBuildable Parms{};
-
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_Lamp.Buildable_Lamp_C.On
-// (BlueprintCallable, BlueprintEvent)
-
-void ABuildable_Lamp_C::On()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "On");
+		Func = Class->GetFunction("Buildable_Lamp_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_Lamp.Buildable_Lamp_C.Off
-// (BlueprintCallable, BlueprintEvent)
-
-void ABuildable_Lamp_C::Off()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "Off");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_Lamp.Buildable_Lamp_C.LightCallback
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Lamp_C::LightCallback(bool NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "LightCallback");
-
-	Params::Buildable_Lamp_C_LightCallback Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_Lamp.Buildable_Lamp_C.ExecuteUbergraph_Buildable_Lamp
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Lamp_C::ExecuteUbergraph_Buildable_Lamp(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "ExecuteUbergraph_Buildable_Lamp");
-
-	Params::Buildable_Lamp_C_ExecuteUbergraph_Buildable_Lamp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_Lamp.Buildable_Lamp_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_Lamp_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_Lamp_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-
-	Params::Buildable_Lamp_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

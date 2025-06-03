@@ -42,10 +42,10 @@ void UBP_TurretAIComponent_C::Activate_Target_Actors(bool Activate_0)
 // Parameters:
 // TArray<class FName>&                    Tags_1                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // TArray<class FName>&                    Tags_2                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName*                            Found_Tag                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_TurretAIComponent_C::Check_Tags(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_Value, class FName* Found_Tag)
+void UBP_TurretAIComponent_C::Check_Tags(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_value, class FName* Found_Tag)
 {
 	static class UFunction* Func = nullptr;
 
@@ -62,8 +62,8 @@ void UBP_TurretAIComponent_C::Check_Tags(TArray<class FName>& Tags_1, TArray<cla
 	Tags_1 = std::move(Parms.Tags_1);
 	Tags_2 = std::move(Parms.Tags_2);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 
 	if (Found_Tag != nullptr)
 		*Found_Tag = Parms.Found_Tag;

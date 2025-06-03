@@ -49,12 +49,11 @@ public:
 	class AActor*                                 CurrentActor;                                      // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
-	void HoldToInteract();
 	void Timeline__UpdateFunc();
 	void Timeline__FinishedFunc();
 	void Svr_CrateOpen();
 	void SetPickupCount(int32 NewCount, bool* Result);
+	void SetInteractOption(const struct FGameplayTag& Option);
 	void SearchSound(bool Spawn_);
 	void ReceiveBeginPlay();
 	void PickupBuildFromGround();
@@ -73,17 +72,18 @@ public:
 	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
 	void JigCanInteract(bool* Result);
 	void IsHeld_(bool* Held_);
+	void HoldToInteract();
 	void GetSettings(double* ChanceToProduceNoise_0, double* Default_ChanceToProduceNoise, double* DurationToHold_0);
 	void GetQuestArgument(const class FString& Argument);
 	void GetMainSceneComp(class USceneComponent** Comp);
 	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
 	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
+	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
 	void ExecuteUbergraph_BP_GuaranteedSpawner(int32 EntryPoint);
 	void Event_Outline();
 	void Event_HoldToInteract();
 	void DistanceOutline();
 	void BndEvt__BP_GuaranteedSpawner_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
-	void SetInteractOption(const struct FGameplayTag& Option);
 
 public:
 	static class UClass* StaticClass()

@@ -33,15 +33,15 @@ public:
 	bool                                          IgnoreSoldier_;                                    // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpawnCombatText(const struct FVector& Location, double Damage);
-	void ReceiveBeginPlay();
-	void IsObjectDamageable_(bool* Damageable_);
-	void ExecuteUbergraph_BP_Landmine(int32 EntryPoint);
-	void Event_Explode();
-	void Damage_Shoved(bool Anim, double Force);
-	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
-	void BndEvt__Buildable_BearTrap_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void BndEvt__Buildable_BearTrap_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
+	void Damage_Shoved(bool Anim, double Force);
+	void Event_Explode();
+	void ExecuteUbergraph_BP_Landmine(int32 EntryPoint);
+	void IsObjectDamageable_(bool* Damageable_);
+	void ReceiveBeginPlay();
+	void SpawnCombatText(const struct FVector& Location, double Damage);
 
 public:
 	static class UClass* StaticClass()

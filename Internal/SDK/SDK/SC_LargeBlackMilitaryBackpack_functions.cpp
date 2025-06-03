@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function SC_LargeBlackMilitaryBackpack.SC_LargeBlackMilitaryBackpack_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_LargeBlackMilitaryBackpack_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_LargeBlackMilitaryBackpack_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SC_LargeBlackMilitaryBackpack.SC_LargeBlackMilitaryBackpack_C.ExecuteUbergraph_SC_LargeBlackMilitaryBackpack
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void USC_LargeBlackMilitaryBackpack_C::ExecuteUbergraph_SC_LargeBlackMilitaryBac
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function SC_LargeBlackMilitaryBackpack.SC_LargeBlackMilitaryBackpack_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_LargeBlackMilitaryBackpack_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_LargeBlackMilitaryBackpack_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

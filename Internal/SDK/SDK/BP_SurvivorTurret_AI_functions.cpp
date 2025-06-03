@@ -17,129 +17,47 @@
 namespace SDK
 {
 
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Rotate Animation__UpdateFunc
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SurvivorTurret_AI_C::Turret_Rotate_Animation__UpdateFunc()
+void ABP_SurvivorTurret_AI_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Rotate Animation__UpdateFunc");
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SurvivorTurret_AI_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Rotate Animation__FinishedFunc
-// (BlueprintEvent)
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.ExecuteUbergraph_BP_SurvivorTurret_AI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SurvivorTurret_AI_C::Turret_Rotate_Animation__FinishedFunc()
+void ABP_SurvivorTurret_AI_C::ExecuteUbergraph_BP_SurvivorTurret_AI(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Rotate Animation__FinishedFunc");
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "ExecuteUbergraph_BP_SurvivorTurret_AI");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_SurvivorTurret_AI_C_ExecuteUbergraph_BP_SurvivorTurret_AI Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Idle Stop
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::Turret_Idle_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Idle Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Idle Start
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::Turret_Idle_Start()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Idle Start");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Destroyed Effect
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::Turret_Destroyed_Effect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Destroyed Effect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Multicast Turret Idle Stop
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::Multicast_Turret_Idle_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Multicast Turret Idle Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Multicast Turret Idle Start
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::Multicast_Turret_Idle_Start()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Multicast Turret Idle Start");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Multicast Spawn Emitter
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_SurvivorTurret_AI_C::Multicast_Spawn_Emitter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Multicast Spawn Emitter");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -164,47 +82,129 @@ void ABP_SurvivorTurret_AI_C::IsObjectDamageable_(bool* Damageable_)
 }
 
 
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.ExecuteUbergraph_BP_SurvivorTurret_AI
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Multicast Spawn Emitter
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_SurvivorTurret_AI_C::ExecuteUbergraph_BP_SurvivorTurret_AI(int32 EntryPoint)
+void ABP_SurvivorTurret_AI_C::Multicast_Spawn_Emitter()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "ExecuteUbergraph_BP_SurvivorTurret_AI");
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Multicast Spawn Emitter");
 
-	Params::BP_SurvivorTurret_AI_C_ExecuteUbergraph_BP_SurvivorTurret_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Multicast Turret Idle Start
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_SurvivorTurret_AI_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+void ABP_SurvivorTurret_AI_C::Multicast_Turret_Idle_Start()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Multicast Turret Idle Start");
 
-	Params::BP_SurvivorTurret_AI_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Multicast Turret Idle Stop
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::Multicast_Turret_Idle_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Multicast Turret Idle Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Destroyed Effect
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::Turret_Destroyed_Effect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Destroyed Effect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Idle Start
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::Turret_Idle_Start()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Idle Start");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Idle Stop
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::Turret_Idle_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Idle Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Rotate Animation__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::Turret_Rotate_Animation__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Rotate Animation__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SurvivorTurret_AI.BP_SurvivorTurret_AI_C.Turret Rotate Animation__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_SurvivorTurret_AI_C::Turret_Rotate_Animation__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SurvivorTurret_AI_C", "Turret Rotate Animation__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

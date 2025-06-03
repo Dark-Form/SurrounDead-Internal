@@ -17,53 +17,21 @@
 namespace SDK::Params
 {
 
-// Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.Svr_SetHidden
-// 0x0001 (0x0001 - 0x0000)
-struct BP_EasterEgg_GlowingEyes_C_Svr_SetHidden final
+// Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	bool                                          bNewHidden;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_GlowingEyes_C_Svr_SetHidden) == 0x000001, "Wrong alignment on BP_EasterEgg_GlowingEyes_C_Svr_SetHidden");
-static_assert(sizeof(BP_EasterEgg_GlowingEyes_C_Svr_SetHidden) == 0x000001, "Wrong size on BP_EasterEgg_GlowingEyes_C_Svr_SetHidden");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_Svr_SetHidden, bNewHidden) == 0x000000, "Member 'BP_EasterEgg_GlowingEyes_C_Svr_SetHidden::bNewHidden' has a wrong offset!");
-
-// Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.FacePlayer
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_EasterEgg_GlowingEyes_C_FacePlayer final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_RInterpTo_ReturnValue;                    // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_RInterpTo_DeltaTime_ImplicitCast;         // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_EasterEgg_GlowingEyes_C_FacePlayer) == 0x000008, "Wrong alignment on BP_EasterEgg_GlowingEyes_C_FacePlayer");
-static_assert(sizeof(BP_EasterEgg_GlowingEyes_C_FacePlayer) == 0x0000B8, "Wrong size on BP_EasterEgg_GlowingEyes_C_FacePlayer");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, Target) == 0x000000, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::Target' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000008, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000028, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000040, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_FindLookAtRotation_ReturnValue) == 0x000058, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_RInterpTo_ReturnValue) == 0x000070, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_RInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_BreakRotator_Roll) == 0x000088, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_BreakRotator_Pitch) == 0x00008C, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_BreakRotator_Yaw) == 0x000090, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_MakeRotator_ReturnValue) == 0x000098, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000B0, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_RInterpTo_DeltaTime_ImplicitCast) == 0x0000B4, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_RInterpTo_DeltaTime_ImplicitCast' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 // Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.ExecuteUbergraph_BP_EasterEgg_GlowingEyes
 // 0x0068 (0x0068 - 0x0000)
@@ -111,21 +79,53 @@ static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_ExecuteUbergraph_BP_EasterEgg_
 static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_ExecuteUbergraph_BP_EasterEgg_GlowingEyes, K2Node_SwitchInteger_CmpSuccess) == 0x000059, "Member 'BP_EasterEgg_GlowingEyes_C_ExecuteUbergraph_BP_EasterEgg_GlowingEyes::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_ExecuteUbergraph_BP_EasterEgg_GlowingEyes, CallFunc_LessEqual_DoubleDouble_A_ImplicitCast) == 0x000060, "Member 'BP_EasterEgg_GlowingEyes_C_ExecuteUbergraph_BP_EasterEgg_GlowingEyes::CallFunc_LessEqual_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 
-// Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.FacePlayer
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_EasterEgg_GlowingEyes_C_FacePlayer final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_RInterpTo_ReturnValue;                    // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_RInterpTo_DeltaTime_ImplicitCast;         // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_EasterEgg_GlowingEyes_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(BP_EasterEgg_GlowingEyes_C_FacePlayer) == 0x000008, "Wrong alignment on BP_EasterEgg_GlowingEyes_C_FacePlayer");
+static_assert(sizeof(BP_EasterEgg_GlowingEyes_C_FacePlayer) == 0x0000B8, "Wrong size on BP_EasterEgg_GlowingEyes_C_FacePlayer");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, Target) == 0x000000, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::Target' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000008, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000010, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000028, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000040, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_FindLookAtRotation_ReturnValue) == 0x000058, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_RInterpTo_ReturnValue) == 0x000070, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_RInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_BreakRotator_Roll) == 0x000088, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_BreakRotator_Roll' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_BreakRotator_Pitch) == 0x00008C, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_BreakRotator_Pitch' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_BreakRotator_Yaw) == 0x000090, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_BreakRotator_Yaw' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_MakeRotator_ReturnValue) == 0x000098, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000B0, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_FacePlayer, CallFunc_RInterpTo_DeltaTime_ImplicitCast) == 0x0000B4, "Member 'BP_EasterEgg_GlowingEyes_C_FacePlayer::CallFunc_RInterpTo_DeltaTime_ImplicitCast' has a wrong offset!");
+
+// Function BP_EasterEgg_GlowingEyes.BP_EasterEgg_GlowingEyes_C.Svr_SetHidden
+// 0x0001 (0x0001 - 0x0000)
+struct BP_EasterEgg_GlowingEyes_C_Svr_SetHidden final
+{
+public:
+	bool                                          bNewHidden;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_EasterEgg_GlowingEyes_C_Svr_SetHidden) == 0x000001, "Wrong alignment on BP_EasterEgg_GlowingEyes_C_Svr_SetHidden");
+static_assert(sizeof(BP_EasterEgg_GlowingEyes_C_Svr_SetHidden) == 0x000001, "Wrong size on BP_EasterEgg_GlowingEyes_C_Svr_SetHidden");
+static_assert(offsetof(BP_EasterEgg_GlowingEyes_C_Svr_SetHidden, bNewHidden) == 0x000000, "Member 'BP_EasterEgg_GlowingEyes_C_Svr_SetHidden::bNewHidden' has a wrong offset!");
 
 }
 

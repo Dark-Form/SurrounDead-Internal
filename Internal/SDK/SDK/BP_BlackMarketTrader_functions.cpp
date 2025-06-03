@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_BlackMarketTrader.BP_BlackMarketTrader_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BlackMarketTrader_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BlackMarketTrader_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_BlackMarketTrader.BP_BlackMarketTrader_C.ExecuteUbergraph_BP_BlackMarketTrader
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void ABP_BlackMarketTrader_C::ExecuteUbergraph_BP_BlackMarketTrader(int32 EntryP
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BlackMarketTrader.BP_BlackMarketTrader_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BlackMarketTrader_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BlackMarketTrader_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

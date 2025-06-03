@@ -33,8 +33,8 @@ public:
 	TArray<class USceneComponent*>                Spawns;                                            // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_Keycard_Spawner(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

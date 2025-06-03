@@ -17,27 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetAttachmentActiveState
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FGameplayTag*                    Result                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_GetAttachmentActiveState(struct FGameplayTag* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_GetAttachmentActiveState");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-}
-
-
 // Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_ToggleAttachmentActiveState
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -103,223 +82,6 @@ void ABP_MilitaryTacticalHeadsetPickup_C::Jig_SetPendingMag(class ABP_AMainLocal
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetADSSocketLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector*                         SocketLoc                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   SocketFound                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_GetADSSocketLocation(struct FVector* SocketLoc, bool* SocketFound)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_GetADSSocketLocation");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SocketLoc != nullptr)
-		*SocketLoc = std::move(Parms.SocketLoc);
-
-	if (SocketFound != nullptr)
-		*SocketFound = Parms.SocketFound;
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_ExecuteChamberWeapon
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  MPComp                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              PlayerSlots                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage**                    ChamberMontage                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Speed                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_ExecuteChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UAnimMontage** ChamberMontage, double* Speed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_ExecuteChamberWeapon");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon Parms{};
-
-	Parms.MPComp = MPComp;
-	Parms.PlayerSlots = std::move(PlayerSlots);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (ChamberMontage != nullptr)
-		*ChamberMontage = Parms.ChamberMontage;
-
-	if (Speed != nullptr)
-		*Speed = Parms.Speed;
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CheckCanReload
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  MPComp                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              PlayerSlots                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 ContainerMag                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage**                    ReloadMontage                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   HasInternalMag                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   CanChamber_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UJSI_Slot_C**                     ReloadWith                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage**                    LoopReloadAnim                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_CheckCanReload(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UJSIContainer_C** ContainerMag, class UAnimMontage** ReloadMontage, bool* HasInternalMag, bool* CanChamber_, class UJSI_Slot_C** ReloadWith, class UAnimMontage** LoopReloadAnim)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_CheckCanReload");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload Parms{};
-
-	Parms.MPComp = MPComp;
-	Parms.PlayerSlots = std::move(PlayerSlots);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (ContainerMag != nullptr)
-		*ContainerMag = Parms.ContainerMag;
-
-	if (ReloadMontage != nullptr)
-		*ReloadMontage = Parms.ReloadMontage;
-
-	if (HasInternalMag != nullptr)
-		*HasInternalMag = Parms.HasInternalMag;
-
-	if (CanChamber_ != nullptr)
-		*CanChamber_ = Parms.CanChamber_;
-
-	if (ReloadWith != nullptr)
-		*ReloadWith = Parms.ReloadWith;
-
-	if (LoopReloadAnim != nullptr)
-		*LoopReloadAnim = Parms.LoopReloadAnim;
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CanChamberWeapon
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  MPComp                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              PlayerSlots                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_CanChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_CanChamberWeapon");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon Parms{};
-
-	Parms.MPComp = MPComp;
-	Parms.PlayerSlots = std::move(PlayerSlots);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentRemoved
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FS_RepAttachmentInfo>&    Attachments                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag*                    AttachmentType                                         (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_AttachmentRemoved(TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_AttachmentRemoved");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved Parms{};
-
-	Parms.Attachments = std::move(Attachments);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Attachments = std::move(Parms.Attachments);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (AttachmentType != nullptr)
-		*AttachmentType = std::move(Parms.AttachmentType);
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentInstalled
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     MainUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FS_RepAttachmentInfo>&    Attachments                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag*                    AttachmentType                                         (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::Jig_AttachmentInstalled(const struct FGuid& MainUID, TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_AttachmentInstalled");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled Parms{};
-
-	Parms.MainUID = std::move(MainUID);
-	Parms.Attachments = std::move(Attachments);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Attachments = std::move(Parms.Attachments);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-
-	if (AttachmentType != nullptr)
-		*AttachmentType = std::move(Parms.AttachmentType);
-}
-
-
-// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MilitaryTacticalHeadsetPickup_C::ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup");
-
-	Params::BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -595,6 +357,244 @@ void ABP_MilitaryTacticalHeadsetPickup_C::Jig_GetAttachmentArrayByType(const str
 
 	if (Found != nullptr)
 		*Found = Parms.Found;
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetAttachmentActiveState
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGameplayTag*                    Result                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_GetAttachmentActiveState(struct FGameplayTag* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_GetAttachmentActiveState");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_GetAttachmentActiveState Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_GetADSSocketLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector*                         SocketLoc                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   SocketFound                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_GetADSSocketLocation(struct FVector* SocketLoc, bool* SocketFound)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_GetADSSocketLocation");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_GetADSSocketLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SocketLoc != nullptr)
+		*SocketLoc = std::move(Parms.SocketLoc);
+
+	if (SocketFound != nullptr)
+		*SocketFound = Parms.SocketFound;
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_ExecuteChamberWeapon
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  MPComp                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              PlayerSlots                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage**                    ChamberMontage                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double*                                 Speed                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_ExecuteChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UAnimMontage** ChamberMontage, double* Speed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_ExecuteChamberWeapon");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_ExecuteChamberWeapon Parms{};
+
+	Parms.MPComp = MPComp;
+	Parms.PlayerSlots = std::move(PlayerSlots);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (ChamberMontage != nullptr)
+		*ChamberMontage = Parms.ChamberMontage;
+
+	if (Speed != nullptr)
+		*Speed = Parms.Speed;
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CheckCanReload
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  MPComp                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              PlayerSlots                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 ContainerMag                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage**                    ReloadMontage                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   HasInternalMag                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   CanChamber_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UJSI_Slot_C**                     ReloadWith                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage**                    LoopReloadAnim                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_CheckCanReload(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result, class UJSIContainer_C** ContainerMag, class UAnimMontage** ReloadMontage, bool* HasInternalMag, bool* CanChamber_, class UJSI_Slot_C** ReloadWith, class UAnimMontage** LoopReloadAnim)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_CheckCanReload");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_CheckCanReload Parms{};
+
+	Parms.MPComp = MPComp;
+	Parms.PlayerSlots = std::move(PlayerSlots);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (ContainerMag != nullptr)
+		*ContainerMag = Parms.ContainerMag;
+
+	if (ReloadMontage != nullptr)
+		*ReloadMontage = Parms.ReloadMontage;
+
+	if (HasInternalMag != nullptr)
+		*HasInternalMag = Parms.HasInternalMag;
+
+	if (CanChamber_ != nullptr)
+		*CanChamber_ = Parms.CanChamber_;
+
+	if (ReloadWith != nullptr)
+		*ReloadWith = Parms.ReloadWith;
+
+	if (LoopReloadAnim != nullptr)
+		*LoopReloadAnim = Parms.LoopReloadAnim;
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_CanChamberWeapon
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  MPComp                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              PlayerSlots                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_CanChamberWeapon(class UActorComponent* MPComp, const struct FGameplayTag& PlayerSlots, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_CanChamberWeapon");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_CanChamberWeapon Parms{};
+
+	Parms.MPComp = MPComp;
+	Parms.PlayerSlots = std::move(PlayerSlots);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentRemoved
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FS_RepAttachmentInfo>&    Attachments                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag*                    AttachmentType                                         (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_AttachmentRemoved(TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_AttachmentRemoved");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentRemoved Parms{};
+
+	Parms.Attachments = std::move(Attachments);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Attachments = std::move(Parms.Attachments);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (AttachmentType != nullptr)
+		*AttachmentType = std::move(Parms.AttachmentType);
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.Jig_AttachmentInstalled
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     MainUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FS_RepAttachmentInfo>&    Attachments                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag*                    AttachmentType                                         (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::Jig_AttachmentInstalled(const struct FGuid& MainUID, TArray<struct FS_RepAttachmentInfo>& Attachments, bool* Result, struct FGameplayTag* AttachmentType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "Jig_AttachmentInstalled");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_Jig_AttachmentInstalled Parms{};
+
+	Parms.MainUID = std::move(MainUID);
+	Parms.Attachments = std::move(Attachments);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Attachments = std::move(Parms.Attachments);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+
+	if (AttachmentType != nullptr)
+		*AttachmentType = std::move(Parms.AttachmentType);
+}
+
+
+// Function BP_MilitaryTacticalHeadsetPickup.BP_MilitaryTacticalHeadsetPickup_C.ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MilitaryTacticalHeadsetPickup_C::ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MilitaryTacticalHeadsetPickup_C", "ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup");
+
+	Params::BP_MilitaryTacticalHeadsetPickup_C_ExecuteUbergraph_BP_MilitaryTacticalHeadsetPickup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

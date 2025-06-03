@@ -17,15 +17,114 @@
 namespace SDK
 {
 
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABuildable_CeilingLight_C::ReceiveBeginPlay()
+void ABuildable_CeilingLight_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+
+	Params::Buildable_CeilingLight_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.ExecuteUbergraph_Buildable_CeilingLight
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_CeilingLight_C::ExecuteUbergraph_Buildable_CeilingLight(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "ExecuteUbergraph_Buildable_CeilingLight");
+
+	Params::Buildable_CeilingLight_C_ExecuteUbergraph_Buildable_CeilingLight Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.GetPickupName
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText*                            Result                                                 (Parm, OutParm)
+
+void ABuildable_CeilingLight_C::GetPickupName(class FText* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "GetPickupName");
+
+	Params::Buildable_CeilingLight_C_GetPickupName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
+}
+
+
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.LightCallback
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABuildable_CeilingLight_C::LightCallback(bool NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "LightCallback");
+
+	Params::Buildable_CeilingLight_C_LightCallback Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.Off
+// (BlueprintCallable, BlueprintEvent)
+
+void ABuildable_CeilingLight_C::Off()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "Off");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.On
+// (BlueprintCallable, BlueprintEvent)
+
+void ABuildable_CeilingLight_C::On()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "On");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,116 +154,17 @@ void ABuildable_CeilingLight_C::OnServerExecuteInteract(const struct FGameplayTa
 }
 
 
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.On
-// (BlueprintCallable, BlueprintEvent)
+// Function Buildable_CeilingLight.Buildable_CeilingLight_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABuildable_CeilingLight_C::On()
+void ABuildable_CeilingLight_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "On");
+		Func = Class->GetFunction("Buildable_CeilingLight_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.Off
-// (BlueprintCallable, BlueprintEvent)
-
-void ABuildable_CeilingLight_C::Off()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "Off");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.LightCallback
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_CeilingLight_C::LightCallback(bool NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "LightCallback");
-
-	Params::Buildable_CeilingLight_C_LightCallback Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.GetPickupName
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText*                            Result                                                 (Parm, OutParm)
-
-void ABuildable_CeilingLight_C::GetPickupName(class FText* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "GetPickupName");
-
-	Params::Buildable_CeilingLight_C_GetPickupName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-}
-
-
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.ExecuteUbergraph_Buildable_CeilingLight
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_CeilingLight_C::ExecuteUbergraph_Buildable_CeilingLight(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "ExecuteUbergraph_Buildable_CeilingLight");
-
-	Params::Buildable_CeilingLight_C_ExecuteUbergraph_Buildable_CeilingLight Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Buildable_CeilingLight.Buildable_CeilingLight_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABuildable_CeilingLight_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Buildable_CeilingLight_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-
-	Params::Buildable_CeilingLight_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

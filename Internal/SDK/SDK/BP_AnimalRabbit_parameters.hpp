@@ -22,826 +22,140 @@
 namespace SDK::Params
 {
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.StartExfil
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.AddJigWidgetToContent
+// 0x0028 (0x0028 - 0x0000)
+struct BP_AnimalRabbit_C_AddJigWidgetToContent final
+{
+public:
+	class UUserWidget*                            WidgetRef;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ContentName;                                       // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          Result;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_AddJigWidgetToContent) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_AddJigWidgetToContent");
+static_assert(sizeof(BP_AnimalRabbit_C_AddJigWidgetToContent) == 0x000028, "Wrong size on BP_AnimalRabbit_C_AddJigWidgetToContent");
+static_assert(offsetof(BP_AnimalRabbit_C_AddJigWidgetToContent, WidgetRef) == 0x000000, "Member 'BP_AnimalRabbit_C_AddJigWidgetToContent::WidgetRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_AddJigWidgetToContent, ContentName) == 0x000008, "Member 'BP_AnimalRabbit_C_AddJigWidgetToContent::ContentName' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_AddJigWidgetToContent, Result) == 0x000020, "Member 'BP_AnimalRabbit_C_AddJigWidgetToContent::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.AddMarker
 // 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_StartExfil final
+struct BP_AnimalRabbit_C_AddMarker final
 {
 public:
-	double                                        Time;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetComponent*                       Marker_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_StartExfil) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_StartExfil");
-static_assert(sizeof(BP_AnimalRabbit_C_StartExfil) == 0x000008, "Wrong size on BP_AnimalRabbit_C_StartExfil");
-static_assert(offsetof(BP_AnimalRabbit_C_StartExfil, Time) == 0x000000, "Member 'BP_AnimalRabbit_C_StartExfil::Time' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_AddMarker) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_AddMarker");
+static_assert(sizeof(BP_AnimalRabbit_C_AddMarker) == 0x000008, "Wrong size on BP_AnimalRabbit_C_AddMarker");
+static_assert(offsetof(BP_AnimalRabbit_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_AnimalRabbit_C_AddMarker::Marker_0' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetPreviewActor
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_SetPreviewActor final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.AIHealthBarInfo
+// 0x0028 (0x0028 - 0x0000)
+struct BP_AnimalRabbit_C_AIHealthBarInfo final
 {
 public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_SetPreviewActor) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetPreviewActor");
-static_assert(sizeof(BP_AnimalRabbit_C_SetPreviewActor) == 0x000010, "Wrong size on BP_AnimalRabbit_C_SetPreviewActor");
-static_assert(offsetof(BP_AnimalRabbit_C_SetPreviewActor, Actor) == 0x000000, "Member 'BP_AnimalRabbit_C_SetPreviewActor::Actor' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetPreviewActor, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_SetPreviewActor::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetPickupCount
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_SetPickupCount final
-{
-public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_SetPickupCount");
-static_assert(sizeof(BP_AnimalRabbit_C_SetPickupCount) == 0x000008, "Wrong size on BP_AnimalRabbit_C_SetPickupCount");
-static_assert(offsetof(BP_AnimalRabbit_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_AnimalRabbit_C_SetPickupCount::NewCount' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetPickupCount, Result) == 0x000004, "Member 'BP_AnimalRabbit_C_SetPickupCount::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetMeshesAndMaterial
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_AnimalRabbit_C_SetMeshesAndMaterial final
-{
-public:
-	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMesh*                          Temp_object_Variable_8;                            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_9;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_10;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_11;                           // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_12;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_13;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_14;                           // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          Temp_object_Variable_15;                           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMesh*                          K2Node_Select_Default_1;                           // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_SetMeshesAndMaterial) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetMeshesAndMaterial");
-static_assert(sizeof(BP_AnimalRabbit_C_SetMeshesAndMaterial) == 0x0000A8, "Wrong size on BP_AnimalRabbit_C_SetMeshesAndMaterial");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_int_Variable) == 0x000000, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable) == 0x000008, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_1) == 0x000010, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_2) == 0x000018, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_3) == 0x000020, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_4) == 0x000028, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_5) == 0x000030, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_6) == 0x000038, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_7) == 0x000040, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_int_Variable_1) == 0x000048, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_8) == 0x000050, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_8' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_9) == 0x000058, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_9' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_10) == 0x000060, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_10' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_11) == 0x000068, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_11' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_12) == 0x000070, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_12' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_13) == 0x000078, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_13' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_14) == 0x000080, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_14' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_15) == 0x000088, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_15' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000090, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000094, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, K2Node_Select_Default) == 0x000098, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, K2Node_Select_Default_1) == 0x0000A0, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::K2Node_Select_Default_1' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetInteractOption
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_SetInteractOption final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_SetInteractOption");
-static_assert(sizeof(BP_AnimalRabbit_C_SetInteractOption) == 0x000008, "Wrong size on BP_AnimalRabbit_C_SetInteractOption");
-static_assert(offsetof(BP_AnimalRabbit_C_SetInteractOption, Option) == 0x000000, "Member 'BP_AnimalRabbit_C_SetInteractOption::Option' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetInteractDistance
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AnimalRabbit_C_SetInteractDistance final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetInteractDistance");
-static_assert(sizeof(BP_AnimalRabbit_C_SetInteractDistance) == 0x000020, "Wrong size on BP_AnimalRabbit_C_SetInteractDistance");
-static_assert(offsetof(BP_AnimalRabbit_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_AnimalRabbit_C_SetInteractDistance::Target' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_AnimalRabbit_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetBurning
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AnimalRabbit_C_SetBurning final
-{
-public:
-	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 Name_0;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Boss_;                                             // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_SetBurning) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetBurning");
-static_assert(sizeof(BP_AnimalRabbit_C_SetBurning) == 0x000018, "Wrong size on BP_AnimalRabbit_C_SetBurning");
-static_assert(offsetof(BP_AnimalRabbit_C_SetBurning, Burning_) == 0x000000, "Member 'BP_AnimalRabbit_C_SetBurning::Burning_' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetBurning, Dmg) == 0x000008, "Member 'BP_AnimalRabbit_C_SetBurning::Dmg' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_SetBurning, Actor) == 0x000010, "Member 'BP_AnimalRabbit_C_SetBurning::Actor' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_AIHealthBarInfo");
+static_assert(sizeof(BP_AnimalRabbit_C_AIHealthBarInfo) == 0x000028, "Wrong size on BP_AnimalRabbit_C_AIHealthBarInfo");
+static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::Visible_' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, Name_0) == 0x000008, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::Name_0' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, Boss_) == 0x000018, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::Boss_' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000020, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.RequestServerData
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_RequestServerData final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	class UActorComponent*                        TargetComp;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_RequestServerData) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_RequestServerData");
-static_assert(sizeof(BP_AnimalRabbit_C_RequestServerData) == 0x000010, "Wrong size on BP_AnimalRabbit_C_RequestServerData");
-static_assert(offsetof(BP_AnimalRabbit_C_RequestServerData, TargetComp) == 0x000000, "Member 'BP_AnimalRabbit_C_RequestServerData::TargetComp' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_RequestServerData, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_RequestServerData::Result' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.ReceiveAnyDamage
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AnimalRabbit_C_ReceiveAnyDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_ReceiveAnyDamage");
-static_assert(sizeof(BP_AnimalRabbit_C_ReceiveAnyDamage) == 0x000020, "Wrong size on BP_AnimalRabbit_C_ReceiveAnyDamage");
-static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::Damage' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.PlayMontage
-// 0x0004 (0x0004 - 0x0000)
-struct BP_AnimalRabbit_C_PlayMontage final
-{
-public:
-	float                                         CallFunc_PlayAnimMontage_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_PlayMontage) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_PlayMontage");
-static_assert(sizeof(BP_AnimalRabbit_C_PlayMontage) == 0x000004, "Wrong size on BP_AnimalRabbit_C_PlayMontage");
-static_assert(offsetof(BP_AnimalRabbit_C_PlayMontage, CallFunc_PlayAnimMontage_ReturnValue) == 0x000000, "Member 'BP_AnimalRabbit_C_PlayMontage::CallFunc_PlayAnimMontage_ReturnValue' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OverrideName
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_OverrideName final
-{
-public:
-	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OverrideName) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OverrideName");
-static_assert(sizeof(BP_AnimalRabbit_C_OverrideName) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OverrideName");
-static_assert(offsetof(BP_AnimalRabbit_C_OverrideName, Name_0) == 0x000000, "Member 'BP_AnimalRabbit_C_OverrideName::Name_0' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnStopExecuteInteract
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_OnStopExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnStopExecuteInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_AnimalRabbit_C_OnStopExecuteInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnSpecialContainerattachmentUpdated
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated final
-{
-public:
-	class UJSI_Slot_C*                            ItemRef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated");
-static_assert(sizeof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated");
-static_assert(offsetof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated, ItemRef) == 0x000000, "Member 'BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated::ItemRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct BP_AnimalRabbit_C_OnServerExecuteInteract final
-{
-public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnServerExecuteInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_AnimalRabbit_C_OnServerExecuteInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_AnimalRabbit_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_AnimalRabbit_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_AnimalRabbit_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnRequestServerInteract
-// 0x0048 (0x0048 - 0x0000)
-struct BP_AnimalRabbit_C_OnRequestServerInteract final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnRequestServerInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_AnimalRabbit_C_OnRequestServerInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Actor' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Option' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Payload' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnPickupInteractExecuted
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AnimalRabbit_C_OnPickupInteractExecuted final
-{
-public:
-	class AActor*                                 PickupRef;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UJSIContainer_C*                        TargetContainer;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnPickupInteractExecuted) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnPickupInteractExecuted");
-static_assert(sizeof(BP_AnimalRabbit_C_OnPickupInteractExecuted) == 0x000018, "Wrong size on BP_AnimalRabbit_C_OnPickupInteractExecuted");
-static_assert(offsetof(BP_AnimalRabbit_C_OnPickupInteractExecuted, PickupRef) == 0x000000, "Member 'BP_AnimalRabbit_C_OnPickupInteractExecuted::PickupRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnPickupInteractExecuted, TargetContainer) == 0x000008, "Member 'BP_AnimalRabbit_C_OnPickupInteractExecuted::TargetContainer' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnPickupInteractExecuted, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_OnPickupInteractExecuted::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnLoadSavedDataRequested
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.CanAddMarkerToAI?
 // 0x0001 (0x0001 - 0x0000)
-struct BP_AnimalRabbit_C_OnLoadSavedDataRequested final
+struct BP_AnimalRabbit_C_CanAddMarkerToAI_ final
 {
 public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanAdd_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_OnLoadSavedDataRequested) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_OnLoadSavedDataRequested");
-static_assert(sizeof(BP_AnimalRabbit_C_OnLoadSavedDataRequested) == 0x000001, "Wrong size on BP_AnimalRabbit_C_OnLoadSavedDataRequested");
-static_assert(offsetof(BP_AnimalRabbit_C_OnLoadSavedDataRequested, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_OnLoadSavedDataRequested::Result' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_CanAddMarkerToAI_) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_CanAddMarkerToAI_");
+static_assert(sizeof(BP_AnimalRabbit_C_CanAddMarkerToAI_) == 0x000001, "Wrong size on BP_AnimalRabbit_C_CanAddMarkerToAI_");
+static_assert(offsetof(BP_AnimalRabbit_C_CanAddMarkerToAI_, CanAdd_) == 0x000000, "Member 'BP_AnimalRabbit_C_CanAddMarkerToAI_::CanAdd_' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnInteractActorOverDistance
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_OnInteractActorOverDistance final
-{
-public:
-	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnInteractActorOverDistance) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnInteractActorOverDistance");
-static_assert(sizeof(BP_AnimalRabbit_C_OnInteractActorOverDistance) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OnInteractActorOverDistance");
-static_assert(offsetof(BP_AnimalRabbit_C_OnInteractActorOverDistance, ActorRef) == 0x000000, "Member 'BP_AnimalRabbit_C_OnInteractActorOverDistance::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnInteractActorOverDistance, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_OnInteractActorOverDistance::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnExecuteInteractDialogue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_OnExecuteInteractDialogue final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnExecuteInteractDialogue");
-static_assert(sizeof(BP_AnimalRabbit_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_AnimalRabbit_C_OnExecuteInteractDialogue");
-static_assert(offsetof(BP_AnimalRabbit_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnExecuteInteract
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_OnExecuteInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnExecuteInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OnExecuteInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_AnimalRabbit_C_OnExecuteInteract::Option' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnClientDataRequested
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AnimalRabbit_C_OnClientDataRequested final
-{
-public:
-	TArray<struct FGuid>                          ActionbarUIDs;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnClientDataRequested) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnClientDataRequested");
-static_assert(sizeof(BP_AnimalRabbit_C_OnClientDataRequested) == 0x000018, "Wrong size on BP_AnimalRabbit_C_OnClientDataRequested");
-static_assert(offsetof(BP_AnimalRabbit_C_OnClientDataRequested, ActionbarUIDs) == 0x000000, "Member 'BP_AnimalRabbit_C_OnClientDataRequested::ActionbarUIDs' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnClientDataRequested, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_OnClientDataRequested::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnBeginInteract
-// 0x0058 (0x0058 - 0x0000)
-struct BP_AnimalRabbit_C_OnBeginInteract final
-{
-public:
-	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(BP_AnimalRabbit_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnBeginInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_OnBeginInteract) == 0x000058, "Wrong size on BP_AnimalRabbit_C_OnBeginInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnBeginInteract::InteractingActor' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_AnimalRabbit_C_OnBeginInteract::Options' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigSetCanInteract
-// 0x0003 (0x0003 - 0x0000)
-struct BP_AnimalRabbit_C_JigSetCanInteract final
-{
-public:
-	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_JigSetCanInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_AnimalRabbit_C_JigSetCanInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_AnimalRabbit_C_JigSetCanInteract::CanInteract' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_AnimalRabbit_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_AnimalRabbit_C_JigSetCanInteract::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnUpdateChamberUID
-// 0x0014 (0x0014 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID final
-{
-public:
-	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnTwoContainersSwap
-// 0x0014 (0x0014 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap final
-{
-public:
-	class FName                                   FromContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap) == 0x000014, "Wrong size on BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap, FromContainer) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap::FromContainer' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap, ToContainer) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap::ToContainer' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnRequestDropItem
-// 0x01D0 (0x01D0 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnRequestDropItem final
-{
-public:
-	struct FRepItemInfo                           ItemInfo;                                          // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   ContainerName;                                     // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ActorRef;                                          // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0120(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0150(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem) == 0x000010, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnRequestDropItem");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem) == 0x0001D0, "Wrong size on BP_AnimalRabbit_C_JigMP_OnRequestDropItem");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, ItemInfo) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::ItemInfo' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, ContainerName) == 0x000078, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::ContainerName' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, ActorRef) == 0x000080, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000088, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000090, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000A8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000C0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000C8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_ReturnValue) == 0x0000E0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue) == 0x0000F8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000110, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000118, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeVector_ReturnValue) == 0x000120, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000138, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeTransform_ReturnValue) == 0x000150, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001B8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0001C0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnPickupEquipped
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnPickupEquipped final
-{
-public:
-	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainerName;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  UID;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           Info;                                              // 0x0030(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 OverrideActor;                                     // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnPickupEquipped");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped) == 0x0000B8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnPickupEquipped");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, ActorRef) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, ToContainerName) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::ToContainerName' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, UID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::UID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, Info) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::Info' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, Result) == 0x0000A8, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::Result' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, OverrideActor) == 0x0000B0, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::OverrideActor' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnPickupAdded
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnPickupAdded final
-{
-public:
-	struct FRepItemInfo                           Info;                                              // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainer;                                       // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnPickupAdded) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnPickupAdded");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnPickupAdded) == 0x0000A8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnPickupAdded");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, Info) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::Info' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, ItemUID) == 0x000078, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, TocontainerUID) == 0x000088, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, ToContainer) == 0x000098, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::ToContainer' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, Result) == 0x0000A0, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnMainContainerItemRemoved
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved final
-{
-public:
-	struct FGuid                                  FromContainerUID;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ContainerName;                                     // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           ItemRemovedInfo;                                   // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved) == 0x0000A8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, FromContainerUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, ItemUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnMainContainerItemAdded
-// 0x00B8 (0x00B8 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded final
-{
-public:
-	struct FGuid                                  TocontainerUID;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ToContainerName;                                   // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           ItemInfo;                                          // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   FromMain;                                          // 0x00A0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 ActorRef;                                          // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded) == 0x0000B8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, TocontainerUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ItemUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ToContainerName) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ToContainerName' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ItemInfo) == 0x000028, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ItemInfo' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, FromMain) == 0x0000A0, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::FromMain' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, Result) == 0x0000A8, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::Result' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ActorRef) == 0x0000B0, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ActorRef' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemRemoved
-// 0x0040 (0x0040 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnItemRemoved final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UActorComponent*                        ToComponent;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemRemoved) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemRemoved");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemRemoved) == 0x000040, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemRemoved");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, ToComponent) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::ToComponent' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, Result) == 0x000038, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemMoved
-// 0x0034 (0x0034 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnItemMoved final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemMoved) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemMoved");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemMoved) == 0x000034, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemMoved");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, Result) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemDropped
-// 0x0030 (0x0030 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnItemDropped final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ActorRef;                                          // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemDropped) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemDropped");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemDropped) == 0x000030, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemDropped");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, ActorRef) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::ActorRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, Result) == 0x000028, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemConsumed
-// 0x0118 (0x0118 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnItemConsumed final
-{
-public:
-	struct FRepItemInfo                           ConsumedItem;                                      // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         Amount;                                            // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Remaining;                                         // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRepItemInfo                           InsideOf;                                          // 0x0080(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FName                                   FromContainer;                                     // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CustomData;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallbackToPlayer_;                                 // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0111(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemConsumed) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemConsumed");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemConsumed) == 0x000118, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemConsumed");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, ConsumedItem) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::ConsumedItem' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, Amount) == 0x000078, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::Amount' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, Remaining) == 0x00007C, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::Remaining' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, InsideOf) == 0x000080, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::InsideOf' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, FromContainer) == 0x0000F8, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::FromContainer' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, CustomData) == 0x000100, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::CustomData' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, CallbackToPlayer_) == 0x000110, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::CallbackToPlayer_' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, Result) == 0x000111, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemAdded
-// 0x0040 (0x0040 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnItemAdded final
-{
-public:
-	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UActorComponent*                        FromComponent;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemAdded) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemAdded");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemAdded) == 0x000040, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemAdded");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::ItemUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::FromContainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::TocontainerUID' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, FromComponent) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::FromComponent' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, Result) == 0x000038, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnContainersSwap
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_OnContainersSwap final
-{
-public:
-	class UJSIContainer_C*                        Container1;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UJSIContainer_C*                        Container2;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnContainersSwap) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnContainersSwap");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnContainersSwap) == 0x000018, "Wrong size on BP_AnimalRabbit_C_JigMP_OnContainersSwap");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnContainersSwap, Container1) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnContainersSwap::Container1' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnContainersSwap, Container2) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_OnContainersSwap::Container2' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnContainersSwap, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnContainersSwap::Result' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_GetLootWidget
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_JigMP_GetLootWidget final
-{
-public:
-	class UWidget*                                Result;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Valid_;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigMP_GetLootWidget) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_GetLootWidget");
-static_assert(sizeof(BP_AnimalRabbit_C_JigMP_GetLootWidget) == 0x000010, "Wrong size on BP_AnimalRabbit_C_JigMP_GetLootWidget");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_GetLootWidget, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_GetLootWidget::Result' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigMP_GetLootWidget, Valid_) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_GetLootWidget::Valid_' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigCheckWeaponAmmoCount
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.CanStompAI?
 // 0x0001 (0x0001 - 0x0000)
-struct BP_AnimalRabbit_C_JigCheckWeaponAmmoCount final
+struct BP_AnimalRabbit_C_CanStompAI_ final
 {
 public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Stomp_;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_JigCheckWeaponAmmoCount) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_JigCheckWeaponAmmoCount");
-static_assert(sizeof(BP_AnimalRabbit_C_JigCheckWeaponAmmoCount) == 0x000001, "Wrong size on BP_AnimalRabbit_C_JigCheckWeaponAmmoCount");
-static_assert(offsetof(BP_AnimalRabbit_C_JigCheckWeaponAmmoCount, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_JigCheckWeaponAmmoCount::Result' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_CanStompAI_) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_CanStompAI_");
+static_assert(sizeof(BP_AnimalRabbit_C_CanStompAI_) == 0x000001, "Wrong size on BP_AnimalRabbit_C_CanStompAI_");
+static_assert(offsetof(BP_AnimalRabbit_C_CanStompAI_, Stomp_) == 0x000000, "Member 'BP_AnimalRabbit_C_CanStompAI_::Stomp_' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigCanInteract
-// 0x0002 (0x0002 - 0x0000)
-struct BP_AnimalRabbit_C_JigCanInteract final
-{
-public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_JigCanInteract) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_JigCanInteract");
-static_assert(sizeof(BP_AnimalRabbit_C_JigCanInteract) == 0x000002, "Wrong size on BP_AnimalRabbit_C_JigCanInteract");
-static_assert(offsetof(BP_AnimalRabbit_C_JigCanInteract, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_JigCanInteract::Result' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_JigCanInteract, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000001, "Member 'BP_AnimalRabbit_C_JigCanInteract::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.IsAIBurning?
-// 0x0001 (0x0001 - 0x0000)
-struct BP_AnimalRabbit_C_IsAIBurning_ final
-{
-public:
-	bool                                          IsBurning_;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_IsAIBurning_) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_IsAIBurning_");
-static_assert(sizeof(BP_AnimalRabbit_C_IsAIBurning_) == 0x000001, "Wrong size on BP_AnimalRabbit_C_IsAIBurning_");
-static_assert(offsetof(BP_AnimalRabbit_C_IsAIBurning_, IsBurning_) == 0x000000, "Member 'BP_AnimalRabbit_C_IsAIBurning_::IsBurning_' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.HitByVehicle
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AnimalRabbit_C_HitByVehicle final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.Change Speed
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_Change_Speed final
 {
 public:
 	double                                        Speed;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Direction;                                         // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_VariableSet_MaxWalkSpeed_ImplicitCast;      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_HitByVehicle) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_HitByVehicle");
-static_assert(sizeof(BP_AnimalRabbit_C_HitByVehicle) == 0x000020, "Wrong size on BP_AnimalRabbit_C_HitByVehicle");
-static_assert(offsetof(BP_AnimalRabbit_C_HitByVehicle, Speed) == 0x000000, "Member 'BP_AnimalRabbit_C_HitByVehicle::Speed' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_HitByVehicle, Direction) == 0x000008, "Member 'BP_AnimalRabbit_C_HitByVehicle::Direction' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_Change_Speed) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_Change_Speed");
+static_assert(sizeof(BP_AnimalRabbit_C_Change_Speed) == 0x000010, "Wrong size on BP_AnimalRabbit_C_Change_Speed");
+static_assert(offsetof(BP_AnimalRabbit_C_Change_Speed, Speed) == 0x000000, "Member 'BP_AnimalRabbit_C_Change_Speed::Speed' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_Change_Speed, K2Node_VariableSet_MaxWalkSpeed_ImplicitCast) == 0x000008, "Member 'BP_AnimalRabbit_C_Change_Speed::K2Node_VariableSet_MaxWalkSpeed_ImplicitCast' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetTraceActorsToIgnore
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_GetTraceActorsToIgnore final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.CheckDistanceFromActor
+// 0x0058 (0x0058 - 0x0000)
+struct BP_AnimalRabbit_C_CheckDistanceFromActor final
 {
 public:
-	TArray<class AActor*>                         Actors;                                            // 0x0000(0x0010)(Parm, OutParm)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetTraceActorsToIgnore) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetTraceActorsToIgnore");
-static_assert(sizeof(BP_AnimalRabbit_C_GetTraceActorsToIgnore) == 0x000010, "Wrong size on BP_AnimalRabbit_C_GetTraceActorsToIgnore");
-static_assert(offsetof(BP_AnimalRabbit_C_GetTraceActorsToIgnore, Actors) == 0x000000, "Member 'BP_AnimalRabbit_C_GetTraceActorsToIgnore::Actors' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMovementSpeeds
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AnimalRabbit_C_GetMovementSpeeds final
-{
-public:
-	double                                        RoamingSpeed;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        AlertSpeed;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        AttackSpeed;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetMovementSpeeds) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMovementSpeeds");
-static_assert(sizeof(BP_AnimalRabbit_C_GetMovementSpeeds) == 0x000018, "Wrong size on BP_AnimalRabbit_C_GetMovementSpeeds");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMovementSpeeds, RoamingSpeed) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMovementSpeeds::RoamingSpeed' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMovementSpeeds, AlertSpeed) == 0x000008, "Member 'BP_AnimalRabbit_C_GetMovementSpeeds::AlertSpeed' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMovementSpeeds, AttackSpeed) == 0x000010, "Member 'BP_AnimalRabbit_C_GetMovementSpeeds::AttackSpeed' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMoveLocation
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AnimalRabbit_C_GetMoveLocation final
-{
-public:
-	struct FVector                                RandomLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation; // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue; // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetMoveLocation) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMoveLocation");
-static_assert(sizeof(BP_AnimalRabbit_C_GetMoveLocation) == 0x000050, "Wrong size on BP_AnimalRabbit_C_GetMoveLocation");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, RandomLocation) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMoveLocation::RandomLocation' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_AnimalRabbit_C_GetMoveLocation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation) == 0x000030, "Member 'BP_AnimalRabbit_C_GetMoveLocation::CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue) == 0x000048, "Member 'BP_AnimalRabbit_C_GetMoveLocation::CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMesh
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_GetMesh final
-{
-public:
-	class USkeletalMeshComponent*                 Mesh_0;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetMesh) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMesh");
-static_assert(sizeof(BP_AnimalRabbit_C_GetMesh) == 0x000008, "Wrong size on BP_AnimalRabbit_C_GetMesh");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMesh, Mesh_0) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMesh::Mesh_0' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMarker
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AnimalRabbit_C_GetMarker final
-{
-public:
-	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        MarkerOffset;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetMarker) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMarker");
-static_assert(sizeof(BP_AnimalRabbit_C_GetMarker) == 0x000020, "Wrong size on BP_AnimalRabbit_C_GetMarker");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMarker, Texture) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMarker::Texture' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMarker, Color) == 0x000008, "Member 'BP_AnimalRabbit_C_GetMarker::Color' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMarker, MarkerOffset) == 0x000018, "Member 'BP_AnimalRabbit_C_GetMarker::MarkerOffset' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMainSceneComp
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_GetMainSceneComp final
-{
-public:
-	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMainSceneComp");
-static_assert(sizeof(BP_AnimalRabbit_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_AnimalRabbit_C_GetMainSceneComp");
-static_assert(offsetof(BP_AnimalRabbit_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMainSceneComp::Comp' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetJigMultiplayerComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_GetJigMultiplayerComponent final
-{
-public:
-	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetJigMultiplayerComponent");
-static_assert(sizeof(BP_AnimalRabbit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_AnimalRabbit_C_GetJigMultiplayerComponent");
-static_assert(offsetof(BP_AnimalRabbit_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_AnimalRabbit_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetItemInfo
-// 0x0078 (0x0078 - 0x0000)
-struct BP_AnimalRabbit_C_GetItemInfo final
-{
-public:
-	class UJigsawItem_DataAsset_C*                Info;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Count;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_RandomStatsConfig                   RandomStatsConfig;                                 // 0x0010(0x0018)(Parm, OutParm, HasGetValueTypeHash)
-	TMap<class FString, class FString>            CustomData;                                        // 0x0028(0x0050)(Parm, OutParm)
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetItemInfo) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetItemInfo");
-static_assert(sizeof(BP_AnimalRabbit_C_GetItemInfo) == 0x000078, "Wrong size on BP_AnimalRabbit_C_GetItemInfo");
-static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, Info) == 0x000000, "Member 'BP_AnimalRabbit_C_GetItemInfo::Info' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, Count) == 0x000008, "Member 'BP_AnimalRabbit_C_GetItemInfo::Count' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_AnimalRabbit_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_AnimalRabbit_C_GetItemInfo::CustomData' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetInteractOptions
-// 0x00A0 (0x00A0 - 0x0000)
-struct BP_AnimalRabbit_C_GetInteractOptions final
-{
-public:
-	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
-	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x0050(0x0050)()
-};
-static_assert(alignof(BP_AnimalRabbit_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetInteractOptions");
-static_assert(sizeof(BP_AnimalRabbit_C_GetInteractOptions) == 0x0000A0, "Wrong size on BP_AnimalRabbit_C_GetInteractOptions");
-static_assert(offsetof(BP_AnimalRabbit_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_AnimalRabbit_C_GetInteractOptions::Options' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetInteractOptions, K2Node_MakeMap_Map) == 0x000050, "Member 'BP_AnimalRabbit_C_GetInteractOptions::K2Node_MakeMap_Map' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetAnimationInfo
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AnimalRabbit_C_GetAnimationInfo final
-{
-public:
-	struct FGameplayTag                           ActiveSlot;                                        // 0x0000(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-	double                                        Leaning;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ADS;                                               // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Crouched;                                          // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFirstPerson_;                                    // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJigsawItem_DataAsset_C*                EquippedDA;                                        // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_GetAnimationInfo) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetAnimationInfo");
-static_assert(sizeof(BP_AnimalRabbit_C_GetAnimationInfo) == 0x000020, "Wrong size on BP_AnimalRabbit_C_GetAnimationInfo");
-static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, ActiveSlot) == 0x000000, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::ActiveSlot' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, Leaning) == 0x000008, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::Leaning' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, ADS) == 0x000010, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::ADS' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, Crouched) == 0x000011, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::Crouched' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, IsFirstPerson_) == 0x000012, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::IsFirstPerson_' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, EquippedDA) == 0x000018, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::EquippedDA' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_CheckDistanceFromActor");
+static_assert(sizeof(BP_AnimalRabbit_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_AnimalRabbit_C_CheckDistanceFromActor");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.Event_XP
+// 0x0001 (0x0001 - 0x0000)
+struct BP_AnimalRabbit_C_Event_XP final
+{
+public:
+	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_Event_XP) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_Event_XP");
+static_assert(sizeof(BP_AnimalRabbit_C_Event_XP) == 0x000001, "Wrong size on BP_AnimalRabbit_C_Event_XP");
+static_assert(offsetof(BP_AnimalRabbit_C_Event_XP, NewValue) == 0x000000, "Member 'BP_AnimalRabbit_C_Event_XP::NewValue' has a wrong offset!");
 
 // Function BP_AnimalRabbit.BP_AnimalRabbit_C.ExecuteUbergraph_BP_AnimalRabbit
 // 0x0620 (0x0620 - 0x0000)
@@ -1092,140 +406,826 @@ static_assert(offsetof(BP_AnimalRabbit_C_ExecuteUbergraph_BP_AnimalRabbit, CallF
 static_assert(offsetof(BP_AnimalRabbit_C_ExecuteUbergraph_BP_AnimalRabbit, CallFunc_Delay_Duration_ImplicitCast) == 0x000610, "Member 'BP_AnimalRabbit_C_ExecuteUbergraph_BP_AnimalRabbit::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_AnimalRabbit_C_ExecuteUbergraph_BP_AnimalRabbit, CallFunc_Subtract_DoubleDouble_B_ImplicitCast) == 0x000618, "Member 'BP_AnimalRabbit_C_ExecuteUbergraph_BP_AnimalRabbit::CallFunc_Subtract_DoubleDouble_B_ImplicitCast' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.Event_XP
-// 0x0001 (0x0001 - 0x0000)
-struct BP_AnimalRabbit_C_Event_XP final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetAnimationInfo
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AnimalRabbit_C_GetAnimationInfo final
 {
 public:
-	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AnimalRabbit_C_Event_XP) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_Event_XP");
-static_assert(sizeof(BP_AnimalRabbit_C_Event_XP) == 0x000001, "Wrong size on BP_AnimalRabbit_C_Event_XP");
-static_assert(offsetof(BP_AnimalRabbit_C_Event_XP, NewValue) == 0x000000, "Member 'BP_AnimalRabbit_C_Event_XP::NewValue' has a wrong offset!");
-
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.CheckDistanceFromActor
-// 0x0058 (0x0058 - 0x0000)
-struct BP_AnimalRabbit_C_CheckDistanceFromActor final
-{
-public:
-	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           ActiveSlot;                                        // 0x0000(0x0008)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	double                                        Leaning;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ADS;                                               // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Crouched;                                          // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFirstPerson_;                                    // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UJigsawItem_DataAsset_C*                EquippedDA;                                        // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_CheckDistanceFromActor");
-static_assert(sizeof(BP_AnimalRabbit_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_AnimalRabbit_C_CheckDistanceFromActor");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_AnimalRabbit_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_GetAnimationInfo) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetAnimationInfo");
+static_assert(sizeof(BP_AnimalRabbit_C_GetAnimationInfo) == 0x000020, "Wrong size on BP_AnimalRabbit_C_GetAnimationInfo");
+static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, ActiveSlot) == 0x000000, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::ActiveSlot' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, Leaning) == 0x000008, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::Leaning' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, ADS) == 0x000010, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::ADS' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, Crouched) == 0x000011, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::Crouched' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, IsFirstPerson_) == 0x000012, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::IsFirstPerson_' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetAnimationInfo, EquippedDA) == 0x000018, "Member 'BP_AnimalRabbit_C_GetAnimationInfo::EquippedDA' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.Change Speed
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetInteractOptions
+// 0x00A0 (0x00A0 - 0x0000)
+struct BP_AnimalRabbit_C_GetInteractOptions final
+{
+public:
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0000(0x0050)(Parm, OutParm)
+	TMap<struct FGameplayTag, class FText>        K2Node_MakeMap_Map;                                // 0x0050(0x0050)()
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetInteractOptions) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetInteractOptions");
+static_assert(sizeof(BP_AnimalRabbit_C_GetInteractOptions) == 0x0000A0, "Wrong size on BP_AnimalRabbit_C_GetInteractOptions");
+static_assert(offsetof(BP_AnimalRabbit_C_GetInteractOptions, Options) == 0x000000, "Member 'BP_AnimalRabbit_C_GetInteractOptions::Options' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetInteractOptions, K2Node_MakeMap_Map) == 0x000050, "Member 'BP_AnimalRabbit_C_GetInteractOptions::K2Node_MakeMap_Map' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetItemInfo
+// 0x0078 (0x0078 - 0x0000)
+struct BP_AnimalRabbit_C_GetItemInfo final
+{
+public:
+	class UJigsawItem_DataAsset_C*                Info;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_RandomStatsConfig                   RandomStatsConfig;                                 // 0x0010(0x0018)(Parm, OutParm, HasGetValueTypeHash)
+	TMap<class FString, class FString>            CustomData;                                        // 0x0028(0x0050)(Parm, OutParm)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetItemInfo) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetItemInfo");
+static_assert(sizeof(BP_AnimalRabbit_C_GetItemInfo) == 0x000078, "Wrong size on BP_AnimalRabbit_C_GetItemInfo");
+static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, Info) == 0x000000, "Member 'BP_AnimalRabbit_C_GetItemInfo::Info' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, Count) == 0x000008, "Member 'BP_AnimalRabbit_C_GetItemInfo::Count' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, RandomStatsConfig) == 0x000010, "Member 'BP_AnimalRabbit_C_GetItemInfo::RandomStatsConfig' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetItemInfo, CustomData) == 0x000028, "Member 'BP_AnimalRabbit_C_GetItemInfo::CustomData' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetJigMultiplayerComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_GetJigMultiplayerComponent final
+{
+public:
+	class UActorComponent*                        JigComp;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetJigMultiplayerComponent");
+static_assert(sizeof(BP_AnimalRabbit_C_GetJigMultiplayerComponent) == 0x000008, "Wrong size on BP_AnimalRabbit_C_GetJigMultiplayerComponent");
+static_assert(offsetof(BP_AnimalRabbit_C_GetJigMultiplayerComponent, JigComp) == 0x000000, "Member 'BP_AnimalRabbit_C_GetJigMultiplayerComponent::JigComp' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMainSceneComp
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_GetMainSceneComp final
+{
+public:
+	class USceneComponent*                        Comp;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetMainSceneComp) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMainSceneComp");
+static_assert(sizeof(BP_AnimalRabbit_C_GetMainSceneComp) == 0x000008, "Wrong size on BP_AnimalRabbit_C_GetMainSceneComp");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMainSceneComp, Comp) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMainSceneComp::Comp' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMarker
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AnimalRabbit_C_GetMarker final
+{
+public:
+	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MarkerOffset;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetMarker) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMarker");
+static_assert(sizeof(BP_AnimalRabbit_C_GetMarker) == 0x000020, "Wrong size on BP_AnimalRabbit_C_GetMarker");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMarker, Texture) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMarker::Texture' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMarker, Color) == 0x000008, "Member 'BP_AnimalRabbit_C_GetMarker::Color' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMarker, MarkerOffset) == 0x000018, "Member 'BP_AnimalRabbit_C_GetMarker::MarkerOffset' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMesh
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_GetMesh final
+{
+public:
+	class USkeletalMeshComponent*                 Mesh_0;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetMesh) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMesh");
+static_assert(sizeof(BP_AnimalRabbit_C_GetMesh) == 0x000008, "Wrong size on BP_AnimalRabbit_C_GetMesh");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMesh, Mesh_0) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMesh::Mesh_0' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMoveLocation
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AnimalRabbit_C_GetMoveLocation final
+{
+public:
+	struct FVector                                RandomLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation; // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue; // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetMoveLocation) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMoveLocation");
+static_assert(sizeof(BP_AnimalRabbit_C_GetMoveLocation) == 0x000050, "Wrong size on BP_AnimalRabbit_C_GetMoveLocation");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, RandomLocation) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMoveLocation::RandomLocation' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_AnimalRabbit_C_GetMoveLocation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation) == 0x000030, "Member 'BP_AnimalRabbit_C_GetMoveLocation::CallFunc_K2_GetRandomReachablePointInRadius_RandomLocation' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMoveLocation, CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue) == 0x000048, "Member 'BP_AnimalRabbit_C_GetMoveLocation::CallFunc_K2_GetRandomReachablePointInRadius_ReturnValue' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetMovementSpeeds
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AnimalRabbit_C_GetMovementSpeeds final
+{
+public:
+	double                                        RoamingSpeed;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AlertSpeed;                                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AttackSpeed;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetMovementSpeeds) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetMovementSpeeds");
+static_assert(sizeof(BP_AnimalRabbit_C_GetMovementSpeeds) == 0x000018, "Wrong size on BP_AnimalRabbit_C_GetMovementSpeeds");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMovementSpeeds, RoamingSpeed) == 0x000000, "Member 'BP_AnimalRabbit_C_GetMovementSpeeds::RoamingSpeed' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMovementSpeeds, AlertSpeed) == 0x000008, "Member 'BP_AnimalRabbit_C_GetMovementSpeeds::AlertSpeed' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_GetMovementSpeeds, AttackSpeed) == 0x000010, "Member 'BP_AnimalRabbit_C_GetMovementSpeeds::AttackSpeed' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.GetTraceActorsToIgnore
 // 0x0010 (0x0010 - 0x0000)
-struct BP_AnimalRabbit_C_Change_Speed final
+struct BP_AnimalRabbit_C_GetTraceActorsToIgnore final
+{
+public:
+	TArray<class AActor*>                         Actors;                                            // 0x0000(0x0010)(Parm, OutParm)
+};
+static_assert(alignof(BP_AnimalRabbit_C_GetTraceActorsToIgnore) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_GetTraceActorsToIgnore");
+static_assert(sizeof(BP_AnimalRabbit_C_GetTraceActorsToIgnore) == 0x000010, "Wrong size on BP_AnimalRabbit_C_GetTraceActorsToIgnore");
+static_assert(offsetof(BP_AnimalRabbit_C_GetTraceActorsToIgnore, Actors) == 0x000000, "Member 'BP_AnimalRabbit_C_GetTraceActorsToIgnore::Actors' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.HitByVehicle
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AnimalRabbit_C_HitByVehicle final
 {
 public:
 	double                                        Speed;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_VariableSet_MaxWalkSpeed_ImplicitCast;      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Direction;                                         // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_Change_Speed) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_Change_Speed");
-static_assert(sizeof(BP_AnimalRabbit_C_Change_Speed) == 0x000010, "Wrong size on BP_AnimalRabbit_C_Change_Speed");
-static_assert(offsetof(BP_AnimalRabbit_C_Change_Speed, Speed) == 0x000000, "Member 'BP_AnimalRabbit_C_Change_Speed::Speed' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_Change_Speed, K2Node_VariableSet_MaxWalkSpeed_ImplicitCast) == 0x000008, "Member 'BP_AnimalRabbit_C_Change_Speed::K2Node_VariableSet_MaxWalkSpeed_ImplicitCast' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_HitByVehicle) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_HitByVehicle");
+static_assert(sizeof(BP_AnimalRabbit_C_HitByVehicle) == 0x000020, "Wrong size on BP_AnimalRabbit_C_HitByVehicle");
+static_assert(offsetof(BP_AnimalRabbit_C_HitByVehicle, Speed) == 0x000000, "Member 'BP_AnimalRabbit_C_HitByVehicle::Speed' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_HitByVehicle, Direction) == 0x000008, "Member 'BP_AnimalRabbit_C_HitByVehicle::Direction' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.CanStompAI?
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.IsAIBurning?
 // 0x0001 (0x0001 - 0x0000)
-struct BP_AnimalRabbit_C_CanStompAI_ final
+struct BP_AnimalRabbit_C_IsAIBurning_ final
 {
 public:
-	bool                                          Stomp_;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsBurning_;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_CanStompAI_) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_CanStompAI_");
-static_assert(sizeof(BP_AnimalRabbit_C_CanStompAI_) == 0x000001, "Wrong size on BP_AnimalRabbit_C_CanStompAI_");
-static_assert(offsetof(BP_AnimalRabbit_C_CanStompAI_, Stomp_) == 0x000000, "Member 'BP_AnimalRabbit_C_CanStompAI_::Stomp_' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_IsAIBurning_) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_IsAIBurning_");
+static_assert(sizeof(BP_AnimalRabbit_C_IsAIBurning_) == 0x000001, "Wrong size on BP_AnimalRabbit_C_IsAIBurning_");
+static_assert(offsetof(BP_AnimalRabbit_C_IsAIBurning_, IsBurning_) == 0x000000, "Member 'BP_AnimalRabbit_C_IsAIBurning_::IsBurning_' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.CanAddMarkerToAI?
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigCanInteract
+// 0x0002 (0x0002 - 0x0000)
+struct BP_AnimalRabbit_C_JigCanInteract final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigCanInteract) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_JigCanInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_JigCanInteract) == 0x000002, "Wrong size on BP_AnimalRabbit_C_JigCanInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_JigCanInteract, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_JigCanInteract::Result' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigCanInteract, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000001, "Member 'BP_AnimalRabbit_C_JigCanInteract::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigCheckWeaponAmmoCount
 // 0x0001 (0x0001 - 0x0000)
-struct BP_AnimalRabbit_C_CanAddMarkerToAI_ final
+struct BP_AnimalRabbit_C_JigCheckWeaponAmmoCount final
 {
 public:
-	bool                                          CanAdd_;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_CanAddMarkerToAI_) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_CanAddMarkerToAI_");
-static_assert(sizeof(BP_AnimalRabbit_C_CanAddMarkerToAI_) == 0x000001, "Wrong size on BP_AnimalRabbit_C_CanAddMarkerToAI_");
-static_assert(offsetof(BP_AnimalRabbit_C_CanAddMarkerToAI_, CanAdd_) == 0x000000, "Member 'BP_AnimalRabbit_C_CanAddMarkerToAI_::CanAdd_' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_JigCheckWeaponAmmoCount) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_JigCheckWeaponAmmoCount");
+static_assert(sizeof(BP_AnimalRabbit_C_JigCheckWeaponAmmoCount) == 0x000001, "Wrong size on BP_AnimalRabbit_C_JigCheckWeaponAmmoCount");
+static_assert(offsetof(BP_AnimalRabbit_C_JigCheckWeaponAmmoCount, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_JigCheckWeaponAmmoCount::Result' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_GetLootWidget
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_GetLootWidget final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Result;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Valid_;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_AnimalRabbit_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_GetLootWidget) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_GetLootWidget");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_GetLootWidget) == 0x000010, "Wrong size on BP_AnimalRabbit_C_JigMP_GetLootWidget");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_GetLootWidget, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_GetLootWidget::Result' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_GetLootWidget, Valid_) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_GetLootWidget::Valid_' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.AIHealthBarInfo
-// 0x0028 (0x0028 - 0x0000)
-struct BP_AnimalRabbit_C_AIHealthBarInfo final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnContainersSwap
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnContainersSwap final
 {
 public:
-	bool                                          Visible_;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Name_0;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Boss_;                                             // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AHUD_Game_C*                            CallFunc_GetHUD_HUD;                               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        Container1;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        Container2;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_AIHealthBarInfo) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_AIHealthBarInfo");
-static_assert(sizeof(BP_AnimalRabbit_C_AIHealthBarInfo) == 0x000028, "Wrong size on BP_AnimalRabbit_C_AIHealthBarInfo");
-static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, Visible_) == 0x000000, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::Visible_' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, Name_0) == 0x000008, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::Name_0' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, Boss_) == 0x000018, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::Boss_' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_AIHealthBarInfo, CallFunc_GetHUD_HUD) == 0x000020, "Member 'BP_AnimalRabbit_C_AIHealthBarInfo::CallFunc_GetHUD_HUD' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnContainersSwap) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnContainersSwap");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnContainersSwap) == 0x000018, "Wrong size on BP_AnimalRabbit_C_JigMP_OnContainersSwap");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnContainersSwap, Container1) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnContainersSwap::Container1' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnContainersSwap, Container2) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_OnContainersSwap::Container2' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnContainersSwap, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnContainersSwap::Result' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.AddMarker
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemAdded
+// 0x0040 (0x0040 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnItemAdded final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        FromComponent;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemAdded) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemAdded");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemAdded) == 0x000040, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemAdded");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, FromComponent) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::FromComponent' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemAdded, Result) == 0x000038, "Member 'BP_AnimalRabbit_C_JigMP_OnItemAdded::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemConsumed
+// 0x0118 (0x0118 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnItemConsumed final
+{
+public:
+	struct FRepItemInfo                           ConsumedItem;                                      // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	int32                                         Amount;                                            // 0x0078(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Remaining;                                         // 0x007C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           InsideOf;                                          // 0x0080(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   FromContainer;                                     // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CustomData;                                        // 0x0100(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallbackToPlayer_;                                 // 0x0110(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0111(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemConsumed) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemConsumed");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemConsumed) == 0x000118, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemConsumed");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, ConsumedItem) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::ConsumedItem' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, Amount) == 0x000078, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::Amount' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, Remaining) == 0x00007C, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::Remaining' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, InsideOf) == 0x000080, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::InsideOf' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, FromContainer) == 0x0000F8, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::FromContainer' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, CustomData) == 0x000100, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::CustomData' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, CallbackToPlayer_) == 0x000110, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::CallbackToPlayer_' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemConsumed, Result) == 0x000111, "Member 'BP_AnimalRabbit_C_JigMP_OnItemConsumed::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemDropped
+// 0x0030 (0x0030 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnItemDropped final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorRef;                                          // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemDropped) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemDropped");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemDropped) == 0x000030, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemDropped");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, ActorRef) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemDropped, Result) == 0x000028, "Member 'BP_AnimalRabbit_C_JigMP_OnItemDropped::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemMoved
+// 0x0034 (0x0034 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnItemMoved final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemMoved) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemMoved");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemMoved) == 0x000034, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemMoved");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemMoved, Result) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnItemMoved::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnItemRemoved
+// 0x0040 (0x0040 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnItemRemoved final
+{
+public:
+	struct FGuid                                  ItemUID;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  FromContainerUID;                                  // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        ToComponent;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnItemRemoved) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnItemRemoved");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnItemRemoved) == 0x000040, "Wrong size on BP_AnimalRabbit_C_JigMP_OnItemRemoved");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, ItemUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, FromContainerUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, ToComponent) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::ToComponent' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnItemRemoved, Result) == 0x000038, "Member 'BP_AnimalRabbit_C_JigMP_OnItemRemoved::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnMainContainerItemAdded
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded final
+{
+public:
+	struct FGuid                                  TocontainerUID;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainerName;                                   // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           ItemInfo;                                          // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   FromMain;                                          // 0x00A0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 ActorRef;                                          // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded) == 0x0000B8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, TocontainerUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ItemUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ToContainerName) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ToContainerName' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ItemInfo) == 0x000028, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ItemInfo' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, FromMain) == 0x0000A0, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::FromMain' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, Result) == 0x0000A8, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::Result' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded, ActorRef) == 0x0000B0, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemAdded::ActorRef' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnMainContainerItemRemoved
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved final
+{
+public:
+	struct FGuid                                  FromContainerUID;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ContainerName;                                     // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           ItemRemovedInfo;                                   // 0x0028(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved) == 0x0000A8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, FromContainerUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::FromContainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, ItemUID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, ContainerName) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::ContainerName' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, ItemRemovedInfo) == 0x000028, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::ItemRemovedInfo' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved, Result) == 0x0000A0, "Member 'BP_AnimalRabbit_C_JigMP_OnMainContainerItemRemoved::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnPickupAdded
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnPickupAdded final
+{
+public:
+	struct FRepItemInfo                           Info;                                              // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FGuid                                  ItemUID;                                           // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0088(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainer;                                       // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnPickupAdded) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnPickupAdded");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnPickupAdded) == 0x0000A8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnPickupAdded");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, Info) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::Info' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, ItemUID) == 0x000078, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::ItemUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, TocontainerUID) == 0x000088, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, ToContainer) == 0x000098, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::ToContainer' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupAdded, Result) == 0x0000A0, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupAdded::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnPickupEquipped
+// 0x00B8 (0x00B8 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnPickupEquipped final
+{
+public:
+	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainerName;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  UID;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  TocontainerUID;                                    // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRepItemInfo                           Info;                                              // 0x0030(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x00A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 OverrideActor;                                     // 0x00B0(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnPickupEquipped");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped) == 0x0000B8, "Wrong size on BP_AnimalRabbit_C_JigMP_OnPickupEquipped");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, ActorRef) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, ToContainerName) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::ToContainerName' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, UID) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::UID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, TocontainerUID) == 0x000020, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::TocontainerUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, Info) == 0x000030, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::Info' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, Result) == 0x0000A8, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::Result' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnPickupEquipped, OverrideActor) == 0x0000B0, "Member 'BP_AnimalRabbit_C_JigMP_OnPickupEquipped::OverrideActor' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnRequestDropItem
+// 0x01D0 (0x01D0 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnRequestDropItem final
+{
+public:
+	struct FRepItemInfo                           ItemInfo;                                          // 0x0000(0x0078)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FName                                   ContainerName;                                     // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorRef;                                          // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACharacter*                             CallFunc_GetPlayerCharacter_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_2;         // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0120(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0138(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0150(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem) == 0x000010, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnRequestDropItem");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem) == 0x0001D0, "Wrong size on BP_AnimalRabbit_C_JigMP_OnRequestDropItem");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, ItemInfo) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::ItemInfo' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, ContainerName) == 0x000078, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::ContainerName' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, ActorRef) == 0x000080, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000088, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000090, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000A8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000C0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0000C8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_ReturnValue) == 0x0000E0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue) == 0x0000F8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000110, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000118, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeVector_ReturnValue) == 0x000120, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000138, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeTransform_ReturnValue) == 0x000150, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001B0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001B8, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnRequestDropItem, CallFunc_MakeRotator_Yaw_ImplicitCast) == 0x0001C0, "Member 'BP_AnimalRabbit_C_JigMP_OnRequestDropItem::CallFunc_MakeRotator_Yaw_ImplicitCast' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnTwoContainersSwap
+// 0x0014 (0x0014 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap final
+{
+public:
+	class FName                                   FromContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap) == 0x000014, "Wrong size on BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap, FromContainer) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap::FromContainer' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap, ToContainer) == 0x000008, "Member 'BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap::ToContainer' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnTwoContainersSwap::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigMP_OnUpdateChamberUID
+// 0x0014 (0x0014 - 0x0000)
+struct BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID final
+{
+public:
+	struct FGuid                                  NewUID;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID");
+static_assert(sizeof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID) == 0x000014, "Wrong size on BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID, NewUID) == 0x000000, "Member 'BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID::NewUID' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_JigMP_OnUpdateChamberUID::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.JigSetCanInteract
+// 0x0003 (0x0003 - 0x0000)
+struct BP_AnimalRabbit_C_JigSetCanInteract final
+{
+public:
+	bool                                          CanInteract;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          EnablePhysics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0002(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_JigSetCanInteract) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_JigSetCanInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_JigSetCanInteract) == 0x000003, "Wrong size on BP_AnimalRabbit_C_JigSetCanInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_JigSetCanInteract, CanInteract) == 0x000000, "Member 'BP_AnimalRabbit_C_JigSetCanInteract::CanInteract' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigSetCanInteract, EnablePhysics) == 0x000001, "Member 'BP_AnimalRabbit_C_JigSetCanInteract::EnablePhysics' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_JigSetCanInteract, Result) == 0x000002, "Member 'BP_AnimalRabbit_C_JigSetCanInteract::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnBeginInteract
+// 0x0058 (0x0058 - 0x0000)
+struct BP_AnimalRabbit_C_OnBeginInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<struct FGameplayTag, class FText>        Options;                                           // 0x0008(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnBeginInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnBeginInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_OnBeginInteract) == 0x000058, "Wrong size on BP_AnimalRabbit_C_OnBeginInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_OnBeginInteract, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnBeginInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnBeginInteract, Options) == 0x000008, "Member 'BP_AnimalRabbit_C_OnBeginInteract::Options' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnClientDataRequested
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AnimalRabbit_C_OnClientDataRequested final
+{
+public:
+	TArray<struct FGuid>                          ActionbarUIDs;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnClientDataRequested) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnClientDataRequested");
+static_assert(sizeof(BP_AnimalRabbit_C_OnClientDataRequested) == 0x000018, "Wrong size on BP_AnimalRabbit_C_OnClientDataRequested");
+static_assert(offsetof(BP_AnimalRabbit_C_OnClientDataRequested, ActionbarUIDs) == 0x000000, "Member 'BP_AnimalRabbit_C_OnClientDataRequested::ActionbarUIDs' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnClientDataRequested, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_OnClientDataRequested::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnExecuteInteract
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_OnExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnExecuteInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnExecuteInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_OnExecuteInteract) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OnExecuteInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_OnExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnExecuteInteract::InteractingActor' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnExecuteInteract, Option) == 0x000008, "Member 'BP_AnimalRabbit_C_OnExecuteInteract::Option' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnExecuteInteractDialogue
 // 0x0008 (0x0008 - 0x0000)
-struct BP_AnimalRabbit_C_AddMarker final
+struct BP_AnimalRabbit_C_OnExecuteInteractDialogue final
 {
 public:
-	class UWidgetComponent*                       Marker_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_AddMarker) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_AddMarker");
-static_assert(sizeof(BP_AnimalRabbit_C_AddMarker) == 0x000008, "Wrong size on BP_AnimalRabbit_C_AddMarker");
-static_assert(offsetof(BP_AnimalRabbit_C_AddMarker, Marker_0) == 0x000000, "Member 'BP_AnimalRabbit_C_AddMarker::Marker_0' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_OnExecuteInteractDialogue) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnExecuteInteractDialogue");
+static_assert(sizeof(BP_AnimalRabbit_C_OnExecuteInteractDialogue) == 0x000008, "Wrong size on BP_AnimalRabbit_C_OnExecuteInteractDialogue");
+static_assert(offsetof(BP_AnimalRabbit_C_OnExecuteInteractDialogue, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnExecuteInteractDialogue::InteractingActor' has a wrong offset!");
 
-// Function BP_AnimalRabbit.BP_AnimalRabbit_C.AddJigWidgetToContent
-// 0x0028 (0x0028 - 0x0000)
-struct BP_AnimalRabbit_C_AddJigWidgetToContent final
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnInteractActorOverDistance
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_OnInteractActorOverDistance final
 {
 public:
-	class UUserWidget*                            WidgetRef;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   ContentName;                                       // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Result;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ActorRef;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AnimalRabbit_C_AddJigWidgetToContent) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_AddJigWidgetToContent");
-static_assert(sizeof(BP_AnimalRabbit_C_AddJigWidgetToContent) == 0x000028, "Wrong size on BP_AnimalRabbit_C_AddJigWidgetToContent");
-static_assert(offsetof(BP_AnimalRabbit_C_AddJigWidgetToContent, WidgetRef) == 0x000000, "Member 'BP_AnimalRabbit_C_AddJigWidgetToContent::WidgetRef' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_AddJigWidgetToContent, ContentName) == 0x000008, "Member 'BP_AnimalRabbit_C_AddJigWidgetToContent::ContentName' has a wrong offset!");
-static_assert(offsetof(BP_AnimalRabbit_C_AddJigWidgetToContent, Result) == 0x000020, "Member 'BP_AnimalRabbit_C_AddJigWidgetToContent::Result' has a wrong offset!");
+static_assert(alignof(BP_AnimalRabbit_C_OnInteractActorOverDistance) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnInteractActorOverDistance");
+static_assert(sizeof(BP_AnimalRabbit_C_OnInteractActorOverDistance) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OnInteractActorOverDistance");
+static_assert(offsetof(BP_AnimalRabbit_C_OnInteractActorOverDistance, ActorRef) == 0x000000, "Member 'BP_AnimalRabbit_C_OnInteractActorOverDistance::ActorRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnInteractActorOverDistance, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_OnInteractActorOverDistance::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnLoadSavedDataRequested
+// 0x0001 (0x0001 - 0x0000)
+struct BP_AnimalRabbit_C_OnLoadSavedDataRequested final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnLoadSavedDataRequested) == 0x000001, "Wrong alignment on BP_AnimalRabbit_C_OnLoadSavedDataRequested");
+static_assert(sizeof(BP_AnimalRabbit_C_OnLoadSavedDataRequested) == 0x000001, "Wrong size on BP_AnimalRabbit_C_OnLoadSavedDataRequested");
+static_assert(offsetof(BP_AnimalRabbit_C_OnLoadSavedDataRequested, Result) == 0x000000, "Member 'BP_AnimalRabbit_C_OnLoadSavedDataRequested::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnPickupInteractExecuted
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AnimalRabbit_C_OnPickupInteractExecuted final
+{
+public:
+	class AActor*                                 PickupRef;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        TargetContainer;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnPickupInteractExecuted) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnPickupInteractExecuted");
+static_assert(sizeof(BP_AnimalRabbit_C_OnPickupInteractExecuted) == 0x000018, "Wrong size on BP_AnimalRabbit_C_OnPickupInteractExecuted");
+static_assert(offsetof(BP_AnimalRabbit_C_OnPickupInteractExecuted, PickupRef) == 0x000000, "Member 'BP_AnimalRabbit_C_OnPickupInteractExecuted::PickupRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnPickupInteractExecuted, TargetContainer) == 0x000008, "Member 'BP_AnimalRabbit_C_OnPickupInteractExecuted::TargetContainer' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnPickupInteractExecuted, Result) == 0x000010, "Member 'BP_AnimalRabbit_C_OnPickupInteractExecuted::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnRequestServerInteract
+// 0x0048 (0x0048 - 0x0000)
+struct BP_AnimalRabbit_C_OnRequestServerInteract final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Option;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnRequestServerInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnRequestServerInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_OnRequestServerInteract) == 0x000048, "Wrong size on BP_AnimalRabbit_C_OnRequestServerInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Actor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Actor' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Option) == 0x000008, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Payload) == 0x000010, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Payload' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnRequestServerInteract, Result) == 0x000040, "Member 'BP_AnimalRabbit_C_OnRequestServerInteract::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct BP_AnimalRabbit_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnServerExecuteInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_OnServerExecuteInteract) == 0x000040, "Wrong size on BP_AnimalRabbit_C_OnServerExecuteInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'BP_AnimalRabbit_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'BP_AnimalRabbit_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'BP_AnimalRabbit_C_OnServerExecuteInteract::Payload' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnSpecialContainerattachmentUpdated
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated final
+{
+public:
+	class UJSI_Slot_C*                            ItemRef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated");
+static_assert(sizeof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated");
+static_assert(offsetof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated, ItemRef) == 0x000000, "Member 'BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated::ItemRef' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_OnSpecialContainerattachmentUpdated::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OnStopExecuteInteract
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_OnStopExecuteInteract final
+{
+public:
+	class AActor*                                 InteractingActor;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OnStopExecuteInteract) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OnStopExecuteInteract");
+static_assert(sizeof(BP_AnimalRabbit_C_OnStopExecuteInteract) == 0x000008, "Wrong size on BP_AnimalRabbit_C_OnStopExecuteInteract");
+static_assert(offsetof(BP_AnimalRabbit_C_OnStopExecuteInteract, InteractingActor) == 0x000000, "Member 'BP_AnimalRabbit_C_OnStopExecuteInteract::InteractingActor' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.OverrideName
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_OverrideName final
+{
+public:
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_OverrideName) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_OverrideName");
+static_assert(sizeof(BP_AnimalRabbit_C_OverrideName) == 0x000010, "Wrong size on BP_AnimalRabbit_C_OverrideName");
+static_assert(offsetof(BP_AnimalRabbit_C_OverrideName, Name_0) == 0x000000, "Member 'BP_AnimalRabbit_C_OverrideName::Name_0' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.PlayMontage
+// 0x0004 (0x0004 - 0x0000)
+struct BP_AnimalRabbit_C_PlayMontage final
+{
+public:
+	float                                         CallFunc_PlayAnimMontage_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_PlayMontage) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_PlayMontage");
+static_assert(sizeof(BP_AnimalRabbit_C_PlayMontage) == 0x000004, "Wrong size on BP_AnimalRabbit_C_PlayMontage");
+static_assert(offsetof(BP_AnimalRabbit_C_PlayMontage, CallFunc_PlayAnimMontage_ReturnValue) == 0x000000, "Member 'BP_AnimalRabbit_C_PlayMontage::CallFunc_PlayAnimMontage_ReturnValue' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.ReceiveAnyDamage
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AnimalRabbit_C_ReceiveAnyDamage final
+{
+public:
+	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_ReceiveAnyDamage");
+static_assert(sizeof(BP_AnimalRabbit_C_ReceiveAnyDamage) == 0x000020, "Wrong size on BP_AnimalRabbit_C_ReceiveAnyDamage");
+static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::Damage' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'BP_AnimalRabbit_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.RequestServerData
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_RequestServerData final
+{
+public:
+	class UActorComponent*                        TargetComp;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_RequestServerData) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_RequestServerData");
+static_assert(sizeof(BP_AnimalRabbit_C_RequestServerData) == 0x000010, "Wrong size on BP_AnimalRabbit_C_RequestServerData");
+static_assert(offsetof(BP_AnimalRabbit_C_RequestServerData, TargetComp) == 0x000000, "Member 'BP_AnimalRabbit_C_RequestServerData::TargetComp' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_RequestServerData, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_RequestServerData::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetBurning
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AnimalRabbit_C_SetBurning final
+{
+public:
+	bool                                          Burning_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Dmg;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_SetBurning) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetBurning");
+static_assert(sizeof(BP_AnimalRabbit_C_SetBurning) == 0x000018, "Wrong size on BP_AnimalRabbit_C_SetBurning");
+static_assert(offsetof(BP_AnimalRabbit_C_SetBurning, Burning_) == 0x000000, "Member 'BP_AnimalRabbit_C_SetBurning::Burning_' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetBurning, Dmg) == 0x000008, "Member 'BP_AnimalRabbit_C_SetBurning::Dmg' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetBurning, Actor) == 0x000010, "Member 'BP_AnimalRabbit_C_SetBurning::Actor' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetInteractDistance
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AnimalRabbit_C_SetInteractDistance final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetInteractDistance");
+static_assert(sizeof(BP_AnimalRabbit_C_SetInteractDistance) == 0x000020, "Wrong size on BP_AnimalRabbit_C_SetInteractDistance");
+static_assert(offsetof(BP_AnimalRabbit_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_AnimalRabbit_C_SetInteractDistance::Target' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_AnimalRabbit_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetInteractOption
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_SetInteractOption final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_SetInteractOption) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_SetInteractOption");
+static_assert(sizeof(BP_AnimalRabbit_C_SetInteractOption) == 0x000008, "Wrong size on BP_AnimalRabbit_C_SetInteractOption");
+static_assert(offsetof(BP_AnimalRabbit_C_SetInteractOption, Option) == 0x000000, "Member 'BP_AnimalRabbit_C_SetInteractOption::Option' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetMeshesAndMaterial
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_AnimalRabbit_C_SetMeshesAndMaterial final
+{
+public:
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMesh*                          Temp_object_Variable_8;                            // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_9;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_10;                           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_11;                           // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_12;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_13;                           // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_14;                           // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          Temp_object_Variable_15;                           // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue_1;       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMesh*                          K2Node_Select_Default_1;                           // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_SetMeshesAndMaterial) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetMeshesAndMaterial");
+static_assert(sizeof(BP_AnimalRabbit_C_SetMeshesAndMaterial) == 0x0000A8, "Wrong size on BP_AnimalRabbit_C_SetMeshesAndMaterial");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_int_Variable) == 0x000000, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable) == 0x000008, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_1) == 0x000010, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_2) == 0x000018, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_3) == 0x000020, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_4) == 0x000028, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_4' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_5) == 0x000030, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_5' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_6) == 0x000038, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_6' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_7) == 0x000040, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_7' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_int_Variable_1) == 0x000048, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_8) == 0x000050, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_8' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_9) == 0x000058, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_9' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_10) == 0x000060, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_10' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_11) == 0x000068, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_11' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_12) == 0x000070, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_12' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_13) == 0x000078, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_13' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_14) == 0x000080, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_14' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, Temp_object_Variable_15) == 0x000088, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::Temp_object_Variable_15' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000090, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, CallFunc_RandomIntegerInRange_ReturnValue_1) == 0x000094, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::CallFunc_RandomIntegerInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, K2Node_Select_Default) == 0x000098, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetMeshesAndMaterial, K2Node_Select_Default_1) == 0x0000A0, "Member 'BP_AnimalRabbit_C_SetMeshesAndMaterial::K2Node_Select_Default_1' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetPickupCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_SetPickupCount final
+{
+public:
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_SetPickupCount) == 0x000004, "Wrong alignment on BP_AnimalRabbit_C_SetPickupCount");
+static_assert(sizeof(BP_AnimalRabbit_C_SetPickupCount) == 0x000008, "Wrong size on BP_AnimalRabbit_C_SetPickupCount");
+static_assert(offsetof(BP_AnimalRabbit_C_SetPickupCount, NewCount) == 0x000000, "Member 'BP_AnimalRabbit_C_SetPickupCount::NewCount' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetPickupCount, Result) == 0x000004, "Member 'BP_AnimalRabbit_C_SetPickupCount::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.SetPreviewActor
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AnimalRabbit_C_SetPreviewActor final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_SetPreviewActor) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_SetPreviewActor");
+static_assert(sizeof(BP_AnimalRabbit_C_SetPreviewActor) == 0x000010, "Wrong size on BP_AnimalRabbit_C_SetPreviewActor");
+static_assert(offsetof(BP_AnimalRabbit_C_SetPreviewActor, Actor) == 0x000000, "Member 'BP_AnimalRabbit_C_SetPreviewActor::Actor' has a wrong offset!");
+static_assert(offsetof(BP_AnimalRabbit_C_SetPreviewActor, Result) == 0x000008, "Member 'BP_AnimalRabbit_C_SetPreviewActor::Result' has a wrong offset!");
+
+// Function BP_AnimalRabbit.BP_AnimalRabbit_C.StartExfil
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AnimalRabbit_C_StartExfil final
+{
+public:
+	double                                        Time;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AnimalRabbit_C_StartExfil) == 0x000008, "Wrong alignment on BP_AnimalRabbit_C_StartExfil");
+static_assert(sizeof(BP_AnimalRabbit_C_StartExfil) == 0x000008, "Wrong size on BP_AnimalRabbit_C_StartExfil");
+static_assert(offsetof(BP_AnimalRabbit_C_StartExfil, Time) == 0x000000, "Member 'BP_AnimalRabbit_C_StartExfil::Time' has a wrong offset!");
 
 }
 

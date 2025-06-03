@@ -10,49 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "S_JigPayload_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "S_JigPayload_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function Buildable_Radio.Buildable_Radio_C.OnServerExecuteInteract
-// 0x0040 (0x0040 - 0x0000)
-struct Buildable_Radio_C_OnServerExecuteInteract final
+// Function Buildable_Radio.Buildable_Radio_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Buildable_Radio_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_Radio_C_OnServerExecuteInteract");
-static_assert(sizeof(Buildable_Radio_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_Radio_C_OnServerExecuteInteract");
-static_assert(offsetof(Buildable_Radio_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_Radio_C_OnServerExecuteInteract::Option' has a wrong offset!");
-static_assert(offsetof(Buildable_Radio_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_Radio_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
-static_assert(offsetof(Buildable_Radio_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_Radio_C_OnServerExecuteInteract::Payload' has a wrong offset!");
-
-// Function Buildable_Radio.Buildable_Radio_C.OnInteractBuildable
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_Radio_C_OnInteractBuildable final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_Radio_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_Radio_C_OnInteractBuildable");
-static_assert(sizeof(Buildable_Radio_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_Radio_C_OnInteractBuildable");
-static_assert(offsetof(Buildable_Radio_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_Radio_C_OnInteractBuildable::Actor' has a wrong offset!");
-
-// Function Buildable_Radio.Buildable_Radio_C.OnDestroy
-// 0x0008 (0x0008 - 0x0000)
-struct Buildable_Radio_C_OnDestroy final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(Buildable_Radio_C_OnDestroy) == 0x000008, "Wrong alignment on Buildable_Radio_C_OnDestroy");
-static_assert(sizeof(Buildable_Radio_C_OnDestroy) == 0x000008, "Wrong size on Buildable_Radio_C_OnDestroy");
-static_assert(offsetof(Buildable_Radio_C_OnDestroy, Actor) == 0x000000, "Member 'Buildable_Radio_C_OnDestroy::Actor' has a wrong offset!");
+static_assert(alignof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 // Function Buildable_Radio.Buildable_Radio_C.ExecuteUbergraph_Buildable_Radio
 // 0x0098 (0x0098 - 0x0000)
@@ -93,21 +72,42 @@ static_assert(offsetof(Buildable_Radio_C_ExecuteUbergraph_Buildable_Radio, K2Nod
 static_assert(offsetof(Buildable_Radio_C_ExecuteUbergraph_Buildable_Radio, K2Node_ComponentBoundEvent_LayerIndex) == 0x00008C, "Member 'Buildable_Radio_C_ExecuteUbergraph_Buildable_Radio::K2Node_ComponentBoundEvent_LayerIndex' has a wrong offset!");
 static_assert(offsetof(Buildable_Radio_C_ExecuteUbergraph_Buildable_Radio, K2Node_ComponentBoundEvent_bIsSeen) == 0x000090, "Member 'Buildable_Radio_C_ExecuteUbergraph_Buildable_Radio::K2Node_ComponentBoundEvent_bIsSeen' has a wrong offset!");
 
-// Function Buildable_Radio.Buildable_Radio_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function Buildable_Radio.Buildable_Radio_C.OnDestroy
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_Radio_C_OnDestroy final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'Buildable_Radio_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(Buildable_Radio_C_OnDestroy) == 0x000008, "Wrong alignment on Buildable_Radio_C_OnDestroy");
+static_assert(sizeof(Buildable_Radio_C_OnDestroy) == 0x000008, "Wrong size on Buildable_Radio_C_OnDestroy");
+static_assert(offsetof(Buildable_Radio_C_OnDestroy, Actor) == 0x000000, "Member 'Buildable_Radio_C_OnDestroy::Actor' has a wrong offset!");
+
+// Function Buildable_Radio.Buildable_Radio_C.OnInteractBuildable
+// 0x0008 (0x0008 - 0x0000)
+struct Buildable_Radio_C_OnInteractBuildable final
+{
+public:
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_Radio_C_OnInteractBuildable) == 0x000008, "Wrong alignment on Buildable_Radio_C_OnInteractBuildable");
+static_assert(sizeof(Buildable_Radio_C_OnInteractBuildable) == 0x000008, "Wrong size on Buildable_Radio_C_OnInteractBuildable");
+static_assert(offsetof(Buildable_Radio_C_OnInteractBuildable, Actor) == 0x000000, "Member 'Buildable_Radio_C_OnInteractBuildable::Actor' has a wrong offset!");
+
+// Function Buildable_Radio.Buildable_Radio_C.OnServerExecuteInteract
+// 0x0040 (0x0040 - 0x0000)
+struct Buildable_Radio_C_OnServerExecuteInteract final
+{
+public:
+	struct FGameplayTag                           Option;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 ByActor;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FS_JigPayload                          Payload;                                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+static_assert(alignof(Buildable_Radio_C_OnServerExecuteInteract) == 0x000008, "Wrong alignment on Buildable_Radio_C_OnServerExecuteInteract");
+static_assert(sizeof(Buildable_Radio_C_OnServerExecuteInteract) == 0x000040, "Wrong size on Buildable_Radio_C_OnServerExecuteInteract");
+static_assert(offsetof(Buildable_Radio_C_OnServerExecuteInteract, Option) == 0x000000, "Member 'Buildable_Radio_C_OnServerExecuteInteract::Option' has a wrong offset!");
+static_assert(offsetof(Buildable_Radio_C_OnServerExecuteInteract, ByActor) == 0x000008, "Member 'Buildable_Radio_C_OnServerExecuteInteract::ByActor' has a wrong offset!");
+static_assert(offsetof(Buildable_Radio_C_OnServerExecuteInteract, Payload) == 0x000010, "Member 'Buildable_Radio_C_OnServerExecuteInteract::Payload' has a wrong offset!");
 
 }
 

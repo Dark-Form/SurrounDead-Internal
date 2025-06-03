@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function VehicleVendorButton.VehicleVendorButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UVehicleVendorButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleVendorButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function VehicleVendorButton.VehicleVendorButton_C.GetToolTipWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -88,6 +74,20 @@ void UVehicleVendorButton_C::ExecuteUbergraph_VehicleVendorButton(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function VehicleVendorButton.VehicleVendorButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UVehicleVendorButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("VehicleVendorButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

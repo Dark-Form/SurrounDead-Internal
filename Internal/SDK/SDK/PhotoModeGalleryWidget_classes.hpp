@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EnumIcons_structs.hpp"
+#include "Engine_structs.hpp"
 #include "PhotosData_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"

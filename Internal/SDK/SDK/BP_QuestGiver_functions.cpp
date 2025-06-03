@@ -17,25 +17,27 @@
 namespace SDK
 {
 
-// Function BP_QuestGiver.BP_QuestGiver_C.OnBeginInteract
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_QuestGiver.BP_QuestGiver_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_QuestGiver_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+void ABP_QuestGiver_C::SetPickupCount(int32 NewCount, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_QuestGiver_C", "OnBeginInteract");
+		Func = Class->GetFunction("BP_QuestGiver_C", "SetPickupCount");
 
-	Params::BP_QuestGiver_C_OnBeginInteract Parms{};
+	Params::BP_QuestGiver_C_SetPickupCount Parms{};
 
-	Parms.InteractingActor = InteractingActor;
-	Parms.Options = std::move(Options);
+	Parms.NewCount = NewCount;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
@@ -210,6 +212,42 @@ void ABP_QuestGiver_C::OnExecuteInteract(class AActor* InteractingActor, const s
 
 	Parms.InteractingActor = InteractingActor;
 	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_QuestGiver.BP_QuestGiver_C.OnEndInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_QuestGiver_C::OnEndInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_QuestGiver_C", "OnEndInteract");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_QuestGiver.BP_QuestGiver_C.OnBeginInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TMap<struct FGameplayTag, class FText>&Options                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_QuestGiver_C::OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_QuestGiver_C", "OnBeginInteract");
+
+	Params::BP_QuestGiver_C_OnBeginInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+	Parms.Options = std::move(Options);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -399,44 +437,6 @@ void ABP_QuestGiver_C::BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent
 	Parms.bIsSeen = bIsSeen;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_QuestGiver.BP_QuestGiver_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_QuestGiver_C::SetPickupCount(int32 NewCount, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_QuestGiver_C", "SetPickupCount");
-
-	Params::BP_QuestGiver_C_SetPickupCount Parms{};
-
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_QuestGiver.BP_QuestGiver_C.OnEndInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_QuestGiver_C::OnEndInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_QuestGiver_C", "OnEndInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

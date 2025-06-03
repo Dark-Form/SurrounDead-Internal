@@ -920,15 +920,15 @@ void ABP_PlayerCharacter_C::Client_StopAllCameraShake(bool bImmediately)
 }
 
 
-// Function BP_PlayerCharacter.BP_PlayerCharacter_C.Client_SUICIDE
+// Function BP_PlayerCharacter.BP_PlayerCharacter_C.Client_Suicide
 // (Net, NetClient, BlueprintCallable, BlueprintEvent)
 
-void ABP_PlayerCharacter_C::Client_SUICIDE()
+void ABP_PlayerCharacter_C::Client_Suicide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerCharacter_C", "Client_SUICIDE");
+		Func = Class->GetFunction("BP_PlayerCharacter_C", "Client_Suicide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

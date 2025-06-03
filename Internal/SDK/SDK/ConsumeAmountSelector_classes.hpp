@@ -24,8 +24,8 @@ class UConsumeAmountSelector_C final : public UUserWidget
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UButton*                                CancelBtn;                                         // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                confirmBtn;                                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             CountText;                                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                ConfirmBtn;                                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             countText;                                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             itemNametxt;                                       // 0x02E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USlider*                                Slider_0;                                          // 0x02E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UJSI_Slot_C*                            ItemRef;                                           // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -38,7 +38,7 @@ public:
 
 public:
 	void BndEvt__CancelBtn_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__confirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__ConfirmBtn_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Slider_0_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value);
 	void Construct();
 	void ExecuteUbergraph_ConsumeAmountSelector(int32 EntryPoint);
@@ -58,8 +58,8 @@ static_assert(alignof(UConsumeAmountSelector_C) == 0x000008, "Wrong alignment on
 static_assert(sizeof(UConsumeAmountSelector_C) == 0x000330, "Wrong size on UConsumeAmountSelector_C");
 static_assert(offsetof(UConsumeAmountSelector_C, UberGraphFrame) == 0x0002C0, "Member 'UConsumeAmountSelector_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UConsumeAmountSelector_C, CancelBtn) == 0x0002C8, "Member 'UConsumeAmountSelector_C::CancelBtn' has a wrong offset!");
-static_assert(offsetof(UConsumeAmountSelector_C, confirmBtn) == 0x0002D0, "Member 'UConsumeAmountSelector_C::confirmBtn' has a wrong offset!");
-static_assert(offsetof(UConsumeAmountSelector_C, CountText) == 0x0002D8, "Member 'UConsumeAmountSelector_C::CountText' has a wrong offset!");
+static_assert(offsetof(UConsumeAmountSelector_C, ConfirmBtn) == 0x0002D0, "Member 'UConsumeAmountSelector_C::ConfirmBtn' has a wrong offset!");
+static_assert(offsetof(UConsumeAmountSelector_C, countText) == 0x0002D8, "Member 'UConsumeAmountSelector_C::countText' has a wrong offset!");
 static_assert(offsetof(UConsumeAmountSelector_C, itemNametxt) == 0x0002E0, "Member 'UConsumeAmountSelector_C::itemNametxt' has a wrong offset!");
 static_assert(offsetof(UConsumeAmountSelector_C, Slider_0) == 0x0002E8, "Member 'UConsumeAmountSelector_C::Slider_0' has a wrong offset!");
 static_assert(offsetof(UConsumeAmountSelector_C, ItemRef) == 0x0002F0, "Member 'UConsumeAmountSelector_C::ItemRef' has a wrong offset!");

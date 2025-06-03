@@ -17,53 +17,44 @@
 namespace SDK::Params
 {
 
-// Function BP_WaterSpline.BP_WaterSpline_C.UserConstructionScript
-// 0x00F0 (0x00F0 - 0x0000)
-struct BP_WaterSpline_C_UserConstructionScript final
+// Function BP_WaterSpline.BP_WaterSpline_C.BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USplineMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location; // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent; // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location_1; // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent_1; // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNumberOfSplinePoints_ReturnValue;      // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_WaterSpline_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_WaterSpline_C_UserConstructionScript");
-static_assert(sizeof(BP_WaterSpline_C_UserConstructionScript) == 0x0000F0, "Wrong size on BP_WaterSpline_C_UserConstructionScript");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_WaterSpline_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, Temp_int_Variable) == 0x000060, "Member 'BP_WaterSpline_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000064, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000068, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000070, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Location) == 0x000078, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Location' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent) == 0x000090, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Location_1) == 0x0000A8, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Location_1' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent_1) == 0x0000C0, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent_1' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x0000D8, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000DC, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000E0, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000E4, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
-// Function BP_WaterSpline.BP_WaterSpline_C.SetCollisionType
-// 0x0010 (0x0010 - 0x0000)
-struct BP_WaterSpline_C_SetCollisionType final
+// Function BP_WaterSpline.BP_WaterSpline_C.BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
 {
 public:
-	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WaterSpline_C_SetCollisionType) == 0x000008, "Wrong alignment on BP_WaterSpline_C_SetCollisionType");
-static_assert(sizeof(BP_WaterSpline_C_SetCollisionType) == 0x000010, "Wrong size on BP_WaterSpline_C_SetCollisionType");
-static_assert(offsetof(BP_WaterSpline_C_SetCollisionType, K2Node_MakeArray_Array) == 0x000000, "Member 'BP_WaterSpline_C_SetCollisionType::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(alignof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function BP_WaterSpline.BP_WaterSpline_C.ExecuteUbergraph_BP_WaterSpline
 // 0x0158 (0x0158 - 0x0000)
@@ -111,44 +102,53 @@ static_assert(offsetof(BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline, CallFun
 static_assert(offsetof(BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline, CallFunc_IsValid_ReturnValue) == 0x000150, "Member 'BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline, CallFunc_IsValid_ReturnValue_1) == 0x000151, "Member 'BP_WaterSpline_C_ExecuteUbergraph_BP_WaterSpline::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
-// Function BP_WaterSpline.BP_WaterSpline_C.BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
+// Function BP_WaterSpline.BP_WaterSpline_C.SetCollisionType
+// 0x0010 (0x0010 - 0x0000)
+struct BP_WaterSpline_C_SetCollisionType final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm)
 };
-static_assert(alignof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(alignof(BP_WaterSpline_C_SetCollisionType) == 0x000008, "Wrong alignment on BP_WaterSpline_C_SetCollisionType");
+static_assert(sizeof(BP_WaterSpline_C_SetCollisionType) == 0x000010, "Wrong size on BP_WaterSpline_C_SetCollisionType");
+static_assert(offsetof(BP_WaterSpline_C_SetCollisionType, K2Node_MakeArray_Array) == 0x000000, "Member 'BP_WaterSpline_C_SetCollisionType::K2Node_MakeArray_Array' has a wrong offset!");
 
-// Function BP_WaterSpline.BP_WaterSpline_C.BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_WaterSpline.BP_WaterSpline_C.UserConstructionScript
+// 0x00F0 (0x00F0 - 0x0000)
+struct BP_WaterSpline_C_UserConstructionScript final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USplineMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location; // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent; // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location_1; // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent_1; // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetNumberOfSplinePoints_ReturnValue;      // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_WaterSpline_C_BndEvt__BP_WaterSplineTEST_SplineComp_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+static_assert(alignof(BP_WaterSpline_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_WaterSpline_C_UserConstructionScript");
+static_assert(sizeof(BP_WaterSpline_C_UserConstructionScript) == 0x0000F0, "Wrong size on BP_WaterSpline_C_UserConstructionScript");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_WaterSpline_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, Temp_int_Variable) == 0x000060, "Member 'BP_WaterSpline_C_UserConstructionScript::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000064, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000068, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000070, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Location) == 0x000078, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Location' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent) == 0x000090, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Location_1) == 0x0000A8, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Location_1' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent_1) == 0x0000C0, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent_1' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x0000D8, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000DC, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000E0, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WaterSpline_C_UserConstructionScript, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000E4, "Member 'BP_WaterSpline_C_UserConstructionScript::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

@@ -17,29 +17,47 @@
 namespace SDK::Params
 {
 
-// Function BP_WindTurbine.BP_WindTurbine_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_WindTurbine_C_UserConstructionScript final
+// Function BP_WindTurbine.BP_WindTurbine_C.BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_DoesSaveGameExist_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WindTurbine_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_WindTurbine_C_UserConstructionScript");
-static_assert(sizeof(BP_WindTurbine_C_UserConstructionScript) == 0x000001, "Wrong size on BP_WindTurbine_C_UserConstructionScript");
-static_assert(offsetof(BP_WindTurbine_C_UserConstructionScript, CallFunc_DoesSaveGameExist_ReturnValue) == 0x000000, "Member 'BP_WindTurbine_C_UserConstructionScript::CallFunc_DoesSaveGameExist_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
-// Function BP_WindTurbine.BP_WindTurbine_C.SetInteractDistance
-// 0x0020 (0x0020 - 0x0000)
-struct BP_WindTurbine_C_SetInteractDistance final
+// Function BP_WindTurbine.BP_WindTurbine_C.CheckDistanceFromActor
+// 0x0058 (0x0058 - 0x0000)
+struct BP_WindTurbine_C_CheckDistanceFromActor final
 {
 public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WindTurbine_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_WindTurbine_C_SetInteractDistance");
-static_assert(sizeof(BP_WindTurbine_C_SetInteractDistance) == 0x000020, "Wrong size on BP_WindTurbine_C_SetInteractDistance");
-static_assert(offsetof(BP_WindTurbine_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_WindTurbine_C_SetInteractDistance::Target' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_WindTurbine_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_WindTurbine_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_WindTurbine_C_CheckDistanceFromActor");
+static_assert(sizeof(BP_WindTurbine_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_WindTurbine_C_CheckDistanceFromActor");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function BP_WindTurbine.BP_WindTurbine_C.ExecuteUbergraph_BP_WindTurbine
 // 0x0148 (0x0148 - 0x0000)
@@ -79,47 +97,29 @@ static_assert(offsetof(BP_WindTurbine_C_ExecuteUbergraph_BP_WindTurbine, K2Node_
 static_assert(offsetof(BP_WindTurbine_C_ExecuteUbergraph_BP_WindTurbine, CallFunc_Delay_Duration_ImplicitCast) == 0x00013C, "Member 'BP_WindTurbine_C_ExecuteUbergraph_BP_WindTurbine::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_WindTurbine_C_ExecuteUbergraph_BP_WindTurbine, CallFunc_MakeRotator_Pitch_ImplicitCast) == 0x000140, "Member 'BP_WindTurbine_C_ExecuteUbergraph_BP_WindTurbine::CallFunc_MakeRotator_Pitch_ImplicitCast' has a wrong offset!");
 
-// Function BP_WindTurbine.BP_WindTurbine_C.CheckDistanceFromActor
-// 0x0058 (0x0058 - 0x0000)
-struct BP_WindTurbine_C_CheckDistanceFromActor final
+// Function BP_WindTurbine.BP_WindTurbine_C.SetInteractDistance
+// 0x0020 (0x0020 - 0x0000)
+struct BP_WindTurbine_C_SetInteractDistance final
 {
 public:
-	TScriptInterface<class IBP_JigCharacterInterface_C> K2Node_DynamicCast_AsBP_Jig_Character_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_OnInteractActorOverDistance_Result;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WindTurbine_C_CheckDistanceFromActor) == 0x000008, "Wrong alignment on BP_WindTurbine_C_CheckDistanceFromActor");
-static_assert(sizeof(BP_WindTurbine_C_CheckDistanceFromActor) == 0x000058, "Wrong size on BP_WindTurbine_C_CheckDistanceFromActor");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, K2Node_DynamicCast_AsBP_Jig_Character_Interface) == 0x000000, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::K2Node_DynamicCast_AsBP_Jig_Character_Interface' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_OnInteractActorOverDistance_Result) == 0x000011, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_OnInteractActorOverDistance_Result' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_CheckDistanceFromActor, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000050, "Member 'BP_WindTurbine_C_CheckDistanceFromActor::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_WindTurbine_C_SetInteractDistance) == 0x000008, "Wrong alignment on BP_WindTurbine_C_SetInteractDistance");
+static_assert(sizeof(BP_WindTurbine_C_SetInteractDistance) == 0x000020, "Wrong size on BP_WindTurbine_C_SetInteractDistance");
+static_assert(offsetof(BP_WindTurbine_C_SetInteractDistance, Target) == 0x000000, "Member 'BP_WindTurbine_C_SetInteractDistance::Target' has a wrong offset!");
+static_assert(offsetof(BP_WindTurbine_C_SetInteractDistance, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'BP_WindTurbine_C_SetInteractDistance::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
-// Function BP_WindTurbine.BP_WindTurbine_C.BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature final
+// Function BP_WindTurbine.BP_WindTurbine_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_WindTurbine_C_UserConstructionScript final
 {
 public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DoesSaveGameExist_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_WindTurbine_C_BndEvt__BP_MPLootContainer_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+static_assert(alignof(BP_WindTurbine_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_WindTurbine_C_UserConstructionScript");
+static_assert(sizeof(BP_WindTurbine_C_UserConstructionScript) == 0x000001, "Wrong size on BP_WindTurbine_C_UserConstructionScript");
+static_assert(offsetof(BP_WindTurbine_C_UserConstructionScript, CallFunc_DoesSaveGameExist_ReturnValue) == 0x000000, "Member 'BP_WindTurbine_C_UserConstructionScript::CallFunc_DoesSaveGameExist_ReturnValue' has a wrong offset!");
 
 }
 

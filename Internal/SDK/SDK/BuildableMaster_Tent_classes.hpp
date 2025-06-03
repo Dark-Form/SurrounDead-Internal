@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Buildable_MASTER_classes.hpp"
 #include "S_InvWeight_structs.hpp"
 #include "Struct_WorldActorInventory_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
-#include "Buildable_MASTER_classes.hpp"
 
 
 namespace SDK

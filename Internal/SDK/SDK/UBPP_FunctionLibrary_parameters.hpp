@@ -11,18 +11,18 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "UBPP_Struct_Noise_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "UBPP_Struct_Noise_structs.hpp"
 #include "UBPP_Struct_Trace_structs.hpp"
-#include "UBPP_E_StyleSelection_structs.hpp"
 #include "UMG_structs.hpp"
-#include "UBPP_E_InputMode_structs.hpp"
 #include "Slate_structs.hpp"
+#include "UBPP_E_StyleSelection_structs.hpp"
 #include "UBPP_Struct_Symbols_structs.hpp"
 #include "UBPP_E_PrintMode_structs.hpp"
 #include "ProceduralMeshComponent_structs.hpp"
 #include "UBPP_E_AddingType_structs.hpp"
+#include "UBPP_E_InputMode_structs.hpp"
 
 
 namespace SDK::Params
@@ -260,7 +260,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0080(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00C0(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1AA[0x6];                                      // 0x01AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x01B0(0x0010)(ReferenceParm)
@@ -285,7 +285,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Chann
 static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, Trace_Options) == 0x000080, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, __WorldContext) == 0x0000B8, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, Out_Hit) == 0x0000C0, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, Return_Value) == 0x0001A8, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, Return_value) == 0x0001A8, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, Temp_bool_Variable) == 0x0001A9, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, K2Node_MakeArray_Array) == 0x0001B0, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001C0, "Member 'UBPP_FunctionLibrary_C_Actor_to_Actor_Line_Trace_by_Channel::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
@@ -582,7 +582,7 @@ public:
 	class FText                                   A;                                                 // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                   B;                                                 // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Return_Value;                                      // 0x0038(0x0018)(Parm, OutParm)
+	class FText                                   Return_value;                                      // 0x0038(0x0018)(Parm, OutParm)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -593,7 +593,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Append_Text) == 0x000098, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Append_Text::A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, B) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Append_Text::B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, __WorldContext) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Append_Text::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, Return_Value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Append_Text::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, Return_value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Append_Text::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, CallFunc_Conv_TextToString_ReturnValue) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Append_Text::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Append_Text::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Append_Text, CallFunc_Concat_StrStr_ReturnValue) == 0x000070, "Member 'UBPP_FunctionLibrary_C_Append_Text::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
@@ -820,14 +820,14 @@ struct UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_ final
 public:
 	double                                        Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_, CallFunc_GreaterEqual_DoubleDouble_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Float_::CallFunc_GreaterEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Bigger Than or Zero (Int)
@@ -838,14 +838,14 @@ public:
 	int32                                         Input_Value;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int_::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Bigger Than or Zero (Int64)
@@ -855,14 +855,14 @@ struct UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_ final
 public:
 	int64                                         Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_Int64Int64_ReturnValue;      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_, CallFunc_GreaterEqual_Int64Int64_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_or_Zero__Int64_::CallFunc_GreaterEqual_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Bigger Than Zero (Float)
@@ -872,14 +872,14 @@ struct UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_ final
 public:
 	double                                        Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Float_::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Bigger Than Zero (Int)
@@ -890,14 +890,14 @@ public:
 	int32                                         Input_Value;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_, CallFunc_Greater_IntInt_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int_::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Bigger Than Zero (Int64)
@@ -907,14 +907,14 @@ struct UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_ final
 public:
 	int64                                         Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_Int64Int64_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_, CallFunc_Greater_Int64Int64_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Bigger_Than_Zero__Int64_::CallFunc_Greater_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Boolean Array Add
@@ -960,7 +960,7 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     All_Out_Hits;                                      // 0x0080(0x0010)(Parm, OutParm, ContainsInstancedReference)
 	int32                                         Times_Till_Stop;                                   // 0x0090(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0094(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0094(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Local_Return_Value;                                // 0x0095(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_96[0x2];                                       // 0x0096(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Local_Vector;                                      // 0x0098(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1028,7 +1028,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Tr
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, __WorldContext) == 0x000078, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, All_Out_Hits) == 0x000080, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::All_Out_Hits' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Times_Till_Stop) == 0x000090, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::Times_Till_Stop' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Return_Value) == 0x000094, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Return_value) == 0x000094, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Local_Return_Value) == 0x000095, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::Local_Return_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Local_Vector) == 0x000098, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::Local_Vector' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel, Local_End_Point) == 0x0000B0, "Member 'UBPP_FunctionLibrary_C_Bouncing_Line_Trace_By_Channel::Local_End_Point' has a wrong offset!");
@@ -1280,7 +1280,7 @@ public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1289,7 +1289,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Byte_To_Integer) == 0x000008, "Wron
 static_assert(sizeof(UBPP_FunctionLibrary_C_Byte_To_Integer) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Byte_To_Integer");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer, CallFunc_Round_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer::CallFunc_Round_ReturnValue' has a wrong offset!");
 
@@ -1301,7 +1301,7 @@ public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_ByteToDouble_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Round64_ReturnValue;                      // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -1309,7 +1309,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Byte_To_Integer64) == 0x000008, "Wr
 static_assert(sizeof(UBPP_FunctionLibrary_C_Byte_To_Integer64) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Byte_To_Integer64");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer64, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer64::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer64, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer64::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer64, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer64::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer64, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer64::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer64, CallFunc_Conv_ByteToDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer64::CallFunc_Conv_ByteToDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Byte_To_Integer64, CallFunc_Round64_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Byte_To_Integer64::CallFunc_Round64_ReturnValue' has a wrong offset!");
 
@@ -1348,7 +1348,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0078(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00B8(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01A0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1368,7 +1368,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, Trac
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, Trace_Options) == 0x000078, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, __WorldContext) == 0x0000B0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, Out_Hit) == 0x0000B8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, Return_Value) == 0x0001A0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, Return_value) == 0x0001A0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001A8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001B0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001C8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Channel::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -1392,7 +1392,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0080(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00C0(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01A8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1412,7 +1412,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, Trac
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, Trace_Options) == 0x000080, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, __WorldContext) == 0x0000B8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, Out_Hit) == 0x0000C0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, Return_Value) == 0x0001A8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, Return_value) == 0x0001A8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001B0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001B8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001D0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_By_Profile::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -1436,7 +1436,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0088(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00C8(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01B0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1456,7 +1456,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, Tra
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, Trace_Options) == 0x000088, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, __WorldContext) == 0x0000C0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, Out_Hit) == 0x0000C8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, Return_Value) == 0x0001B0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, Return_value) == 0x0001B0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001B8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001C0, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001D8, "Member 'UBPP_FunctionLibrary_C_Camera_Line_Trace_For_Objects::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -1473,7 +1473,7 @@ public:
 	struct FVector                                Vector_A;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Vector_B;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Z;                            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1495,7 +1495,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_) == 0x0000C0, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, Vector_A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::Vector_A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, Vector_B) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::Vector_B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, __WorldContext) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, Return_Value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, Return_value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, CallFunc_BreakVector_X) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, CallFunc_BreakVector_Y) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Max_, CallFunc_BreakVector_Z) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Max_::CallFunc_BreakVector_Z' has a wrong offset!");
@@ -1518,7 +1518,7 @@ public:
 	struct FVector                                Vector_A;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Vector_B;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Z;                            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1540,7 +1540,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_) == 0x0000C0, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, Vector_A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::Vector_A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, Vector_B) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::Vector_B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, __WorldContext) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, Return_Value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, Return_value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, CallFunc_BreakVector_X) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, CallFunc_BreakVector_Y) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Combine_Vectors__Min_, CallFunc_BreakVector_Z) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Combine_Vectors__Min_::CallFunc_BreakVector_Z' has a wrong offset!");
@@ -1602,14 +1602,14 @@ public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Multiply_ByteByte_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Double__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Double__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Double__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Double__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Byte_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Double__Byte_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Double__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Byte_, CallFunc_Multiply_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Double__Byte_::CallFunc_Multiply_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Double (Float)
@@ -1619,14 +1619,14 @@ struct UBPP_FunctionLibrary_C_Double__Float_ final
 public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Double__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Double__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Double__Float_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Double__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Float_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Double__Float_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Double__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Float_, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Double__Float_::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Double (Int)
@@ -1637,14 +1637,14 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Double__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Double__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Double__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Double__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Double__Int_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Double__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int_, CallFunc_Multiply_IntInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Double__Int_::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Double (Int64)
@@ -1654,14 +1654,14 @@ struct UBPP_FunctionLibrary_C_Double__Int64_ final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Double__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Double__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Double__Int64_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Double__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Double__Int64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Double__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Double__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Double__Int64_, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Double__Int64_::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Draw Static Mesh Debug Box
@@ -1707,7 +1707,7 @@ public:
 	struct FColor                                 A;                                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                 B;                                                 // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1721,7 +1721,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Equal__Color_) == 0x000018, "Wrong s
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, B) == 0x000004, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000012, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Color_, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000013, "Member 'UBPP_FunctionLibrary_C_Equal__Color_::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
@@ -1738,7 +1738,7 @@ public:
 	struct FSlateColor                            A;                                                 // 0x0000(0x0014)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FSlateColor                            B;                                                 // 0x0014(0x0014)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_LinearColorLinearColor_ReturnValue; // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1748,7 +1748,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Equal__Slate_Color_) == 0x000038, "W
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, B) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, __WorldContext) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, Return_Value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, Return_value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, CallFunc_EqualEqual_LinearColorLinearColor_ReturnValue) == 0x000031, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::CallFunc_EqualEqual_LinearColorLinearColor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000032, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Slate_Color_, CallFunc_BooleanAND_ReturnValue) == 0x000033, "Member 'UBPP_FunctionLibrary_C_Equal__Slate_Color_::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
@@ -1761,7 +1761,7 @@ public:
 	struct FRandomStream                          A;                                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 	struct FRandomStream                          B;                                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_BreakRandomStream_InitialSeed;            // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_BreakRandomStream_InitialSeed_1;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1772,7 +1772,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Equal__Stream_) == 0x000028, "Wrong 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, B) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, CallFunc_BreakRandomStream_InitialSeed) == 0x00001C, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::CallFunc_BreakRandomStream_InitialSeed' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, CallFunc_BreakRandomStream_InitialSeed_1) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::CallFunc_BreakRandomStream_InitialSeed_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equal__Stream_, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000024, "Member 'UBPP_FunctionLibrary_C_Equal__Stream_::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
@@ -1803,14 +1803,14 @@ public:
 	uint8                                         Input_Value;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Max__Byte_::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Not Zero (Byte)
@@ -1821,14 +1821,14 @@ public:
 	uint8                                         Input_Value;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Byte_::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Not Zero (Float)
@@ -1838,14 +1838,14 @@ struct UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_ final
 public:
 	double                                        Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_DoubleDouble_ReturnValue;        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_, CallFunc_NotEqual_DoubleDouble_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Float_::CallFunc_NotEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Not Zero (Int)
@@ -1856,14 +1856,14 @@ public:
 	int32                                         Input_Value;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int_::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Not Zero (Int64)
@@ -1873,14 +1873,14 @@ struct UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_ final
 public:
 	int64                                         Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_Int64Int64_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_, CallFunc_NotEqual_Int64Int64_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Not_Zero__Int64_::CallFunc_NotEqual_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Zero (Byte)
@@ -1891,14 +1891,14 @@ public:
 	uint8                                         Input_Value;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Zero__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Zero__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Byte_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Byte_, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Byte_::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Zero (Float)
@@ -1908,14 +1908,14 @@ struct UBPP_FunctionLibrary_C_Equals_Zero__Float_ final
 public:
 	double                                        Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Zero__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Zero__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Zero__Float_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Zero__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Float_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Float_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Float_, CallFunc_EqualEqual_DoubleDouble_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Float_::CallFunc_EqualEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Zero (Int)
@@ -1926,14 +1926,14 @@ public:
 	int32                                         Input_Value;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Zero__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Zero__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Zero__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Zero__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int_, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int_::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Equals Zero (Int64)
@@ -1943,14 +1943,14 @@ struct UBPP_FunctionLibrary_C_Equals_Zero__Int64_ final
 public:
 	int64                                         Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_Int64Int64_ReturnValue;        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Equals_Zero__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Equals_Zero__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int64_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Equals_Zero__Int64_, CallFunc_EqualEqual_Int64Int64_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Equals_Zero__Int64_::CallFunc_EqualEqual_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Find Actor Look at Rotation
@@ -1961,7 +1961,7 @@ public:
 	class AActor*                                 Start;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Target;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Return_Value;                                      // 0x0018(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               Return_value;                                      // 0x0018(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1971,7 +1971,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation) == 0x00
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, Start) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::Start' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, Target) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::Target' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation, CallFunc_FindLookAtRotation_ReturnValue) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Find_Actor_Look_at_Rotation::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
@@ -1986,7 +1986,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Length_Range;                                      // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Return_Value;                                      // 0x0030(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               Return_value;                                      // 0x0030(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2000,7 +2000,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_,
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, PlayerIndex) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::PlayerIndex' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, Length_Range) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::Length_Range' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, __WorldContext) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, Return_Value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, Return_value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_, CallFunc_GetActorForwardVector_ReturnValue) == 0x000068, "Member 'UBPP_FunctionLibrary_C_Find_Look_At_Rotation__Crosshair_::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -2531,7 +2531,7 @@ struct UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -2539,7 +2539,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector) == 0x000
 static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector) == 0x000058, "Wrong size on UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector, Target) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector::Target' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector, CallFunc_GetActorForwardVector_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Backward_Vector::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
@@ -2550,7 +2550,7 @@ struct UBPP_FunctionLibrary_C_Get_Actor_Down_Vector final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorUpVector_ReturnValue;             // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -2558,7 +2558,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector) == 0x000008,
 static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector) == 0x000058, "Wrong size on UBPP_FunctionLibrary_C_Get_Actor_Down_Vector");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector, Target) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Down_Vector::Target' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Down_Vector::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Down_Vector::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Down_Vector::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector, CallFunc_GetActorUpVector_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Down_Vector::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Down_Vector, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Down_Vector::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
@@ -2569,7 +2569,7 @@ struct UBPP_FunctionLibrary_C_Get_Actor_Left_Vector final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0010(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorRightVector_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -2577,7 +2577,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector) == 0x000008,
 static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector) == 0x000058, "Wrong size on UBPP_FunctionLibrary_C_Get_Actor_Left_Vector");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector, Target) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Left_Vector::Target' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Left_Vector::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Left_Vector::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Left_Vector::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector, CallFunc_GetActorRightVector_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Left_Vector::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Actor_Left_Vector, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Actor_Left_Vector::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
@@ -2589,7 +2589,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Return_Value_Vector2D;                             // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetAlignment_ReturnValue;                 // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2600,7 +2600,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Alignment) == 0x000048, "Wrong s
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, Return_Value_Vector2D) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::Return_Value_Vector2D' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, CallFunc_GetAlignment_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::CallFunc_GetAlignment_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Alignment, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Alignment::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -2613,7 +2613,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAnchors                               Return_Value_Anchors;                              // 0x0010(0x0020)(Parm, OutParm, NoDestructor)
-	bool                                          Return_Value;                                      // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FAnchors                               CallFunc_GetAnchors_ReturnValue;                   // 0x0040(0x0020)(NoDestructor)
@@ -2624,7 +2624,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Anchors) == 0x000068, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, Return_Value_Anchors) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::Return_Value_Anchors' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, Return_Value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, Return_value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, CallFunc_GetAnchors_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::CallFunc_GetAnchors_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Anchors, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Get_Anchors::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -2637,7 +2637,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Return_Value_Auto_Size;                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetAutoSize_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2648,7 +2648,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Auto_Size) == 0x000028, "Wrong s
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, Return_Value_Auto_Size) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::Return_Value_Auto_Size' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, Return_Value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, Return_value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, CallFunc_GetAutoSize_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::CallFunc_GetAutoSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Auto_Size, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'UBPP_FunctionLibrary_C_Get_Auto_Size::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -2775,7 +2775,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Return_Value_Column;                               // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUniformGridSlot*                       CallFunc_SlotAsUniformGridSlot_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -2787,7 +2787,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Column) == 0x000030, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Column::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Column::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, Return_Value_Column) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Column::Return_Value_Column' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, Return_Value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Column::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, Return_value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Column::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, CallFunc_SlotAsUniformGridSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Column::CallFunc_SlotAsUniformGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Column::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Column::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -2801,7 +2801,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Return_Value_ZOrder;                               // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2811,7 +2811,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Column_Span) == 0x000028, "Wrong
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, Return_Value_ZOrder) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::Return_Value_ZOrder' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, Return_Value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, Return_value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Column_Span, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Column_Span::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -3030,7 +3030,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Return_Value_Fill_Empty_Space;                     // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3040,7 +3040,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space) == 0x000028, "
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, Return_Value_Fill_Empty_Space) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::Return_Value_Fill_Empty_Space' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, Return_Value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, Return_value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Empty_Space, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Empty_Space::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -3052,7 +3052,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        Return_Value_Fill_Span_when_Less_Than;             // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3064,7 +3064,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than) == 0x0
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, Return_Value_Fill_Span_when_Less_Than) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::Return_Value_Fill_Span_when_Less_Than' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than, K2Node_FunctionResult_Return_Value_Fill_Span_when_Less_Than_ImplicitCast) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Fill_Span_When_Less_Than::K2Node_FunctionResult_Return_Value_Fill_Span_when_Less_Than_ImplicitCast' has a wrong offset!");
@@ -3361,7 +3361,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EHorizontalAlignment                          Return_Value_Horizontal_Alignment;                 // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UScrollBoxSlot*                         CallFunc_SlotAsScrollBoxSlot_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USizeBoxSlot*                           CallFunc_SlotAsSizeBoxSlot_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -3393,7 +3393,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment) == 0x00009
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, Return_Value_Horizontal_Alignment) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::Return_Value_Horizontal_Alignment' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, Return_Value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, Return_value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, CallFunc_SlotAsScrollBoxSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::CallFunc_SlotAsScrollBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, CallFunc_SlotAsSizeBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::CallFunc_SlotAsSizeBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Horizontal_Alignment, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Horizontal_Alignment::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -3639,7 +3639,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Return_Value_Layer;                                // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3649,7 +3649,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Layer) == 0x000028, "Wrong size 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Layer::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Layer::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, Return_Value_Layer) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Layer::Return_Value_Layer' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, Return_Value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Layer::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, Return_value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Layer::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Layer::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layer, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Layer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -3661,7 +3661,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FAnchorData                            Return_Value_Layout;                               // 0x0010(0x0040)(Parm, OutParm, NoDestructor)
-	bool                                          Return_Value;                                      // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FAnchorData                            CallFunc_GetLayout_ReturnValue;                    // 0x0060(0x0040)(NoDestructor)
@@ -3672,7 +3672,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Layout) == 0x0000A8, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Layout::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Layout::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, Return_Value_Layout) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Layout::Return_Value_Layout' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, Return_Value) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Get_Layout::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, Return_value) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Get_Layout::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Get_Layout::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, CallFunc_GetLayout_ReturnValue) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Get_Layout::CallFunc_GetLayout_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Layout, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'UBPP_FunctionLibrary_C_Get_Layout::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -3740,7 +3740,7 @@ public:
 	struct FVector                                Sphere_Origin;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Sphere_Radius;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3752,7 +3752,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, Point) =
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, Sphere_Origin) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::Sphere_Origin' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, Sphere_Radius) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::Sphere_Radius' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, __WorldContext) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, Return_Value) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, Return_value) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, CallFunc_FindLookAtRotation_ReturnValue) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, CallFunc_GetForwardVector_ReturnValue) == 0x000070, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000088, "Member 'UBPP_FunctionLibrary_C_Get_Nearest_Sphere_Point::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
@@ -3922,7 +3922,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Return_Value_Nudge;                                // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -3932,7 +3932,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Nudge) == 0x000038, "Wrong size 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, Return_Value_Nudge) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::Return_Value_Nudge' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Nudge, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Nudge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -3944,7 +3944,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                Return_Value_Offsets;                              // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                CallFunc_GetOffsets_ReturnValue;                   // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -3955,7 +3955,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Offsets) == 0x000048, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, Return_Value_Offsets) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::Return_Value_Offsets' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, CallFunc_GetOffsets_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::CallFunc_GetOffsets_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Offsets, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Offsets::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -3968,7 +3968,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                Return_Value_Padding;                              // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UScrollBoxSlot*                         CallFunc_SlotAsScrollBoxSlot_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USizeBoxSlot*                           CallFunc_SlotAsSizeBoxSlot_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -3995,7 +3995,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Padding) == 0x000088, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Padding::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Padding::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, Return_Value_Padding) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Padding::Return_Value_Padding' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Padding::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Padding::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, CallFunc_SlotAsScrollBoxSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Padding::CallFunc_SlotAsScrollBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, CallFunc_SlotAsSizeBoxSlot_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Padding::CallFunc_SlotAsSizeBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Padding, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Get_Padding::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -4075,7 +4075,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Return_Value_Position;                             // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4086,7 +4086,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Position) == 0x000048, "Wrong si
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Position::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Position::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, Return_Value_Position) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Position::Return_Value_Position' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Position::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Position::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Position::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, CallFunc_GetPosition_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Position::CallFunc_GetPosition_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Position, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Position::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -4816,7 +4816,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Return_Value_Row;                                  // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUniformGridSlot*                       CallFunc_SlotAsUniformGridSlot_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -4828,7 +4828,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Row) == 0x000030, "Wrong size on
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Row::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Row::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, Return_Value_Row) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Row::Return_Value_Row' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, Return_Value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Row::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, Return_value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Row::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, CallFunc_SlotAsUniformGridSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Row::CallFunc_SlotAsUniformGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Row::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Row::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -4842,7 +4842,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Return_Value_Row_Span;                             // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4852,7 +4852,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Row_Span) == 0x000028, "Wrong si
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, Return_Value_Row_Span) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::Return_Value_Row_Span' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, Return_Value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, Return_value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Row_Span, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Row_Span::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -4864,7 +4864,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSlateChildSize                        Return_Value_Size;                                 // 0x0010(0x0008)(Parm, OutParm, NoDestructor)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_SlotAsVerticalBoxSlot_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -4876,7 +4876,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_) == 0x00
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, Return_Value_Size) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::Return_Value_Size' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Size__Slate_Child_Size_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -4890,7 +4890,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              Return_Value_Size;                                 // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetSize_ReturnValue;                      // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4901,7 +4901,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_) == 0x000048, "W
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, Return_Value_Size) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::Return_Value_Size' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, CallFunc_GetSize_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::CallFunc_GetSize_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Size__Vector2D_, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Get_Size__Vector2D_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -5165,7 +5165,7 @@ public:
 	struct FVector                                Vector_A;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Vector_B;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Get_Vector_Difference) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Get_Vector_Difference");
@@ -5173,7 +5173,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Vector_Difference) == 0x000068, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vector_Difference, Vector_A) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Vector_Difference::Vector_A' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vector_Difference, Vector_B) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Vector_Difference::Vector_B' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vector_Difference, __WorldContext) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Get_Vector_Difference::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vector_Difference, Return_Value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Get_Vector_Difference::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vector_Difference, Return_value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Get_Vector_Difference::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vector_Difference, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Get_Vector_Difference::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Get Vertical Alignment
@@ -5184,7 +5184,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EVerticalAlignment                            Return_Value_Vertical_Alignment;                   // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UScrollBoxSlot*                         CallFunc_SlotAsScrollBoxSlot_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USizeBoxSlot*                           CallFunc_SlotAsSizeBoxSlot_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -5216,7 +5216,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment) == 0x000090,
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, Return_Value_Vertical_Alignment) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::Return_Value_Vertical_Alignment' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, Return_Value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, Return_value) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, CallFunc_SlotAsScrollBoxSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::CallFunc_SlotAsScrollBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, CallFunc_SlotAsSizeBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::CallFunc_SlotAsSizeBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_Vertical_Alignment, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Get_Vertical_Alignment::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -5246,7 +5246,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Return_Value_ZOrder;                               // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetZOrder_ReturnValue;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5257,7 +5257,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Get_ZOrder) == 0x000028, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, Return_Value_ZOrder) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::Return_Value_ZOrder' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, Return_Value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, Return_value) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, CallFunc_GetZOrder_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::CallFunc_GetZOrder_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Get_ZOrder, CallFunc_IsValid_ReturnValue) == 0x000024, "Member 'UBPP_FunctionLibrary_C_Get_ZOrder::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -5270,7 +5270,7 @@ public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Percentage;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -5279,7 +5279,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_GetPercentage__Float_) == 0x000030, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, Percentage) == 0x000008, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::Percentage' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Float_, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Float_::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
 
@@ -5292,7 +5292,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Percentage;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5304,7 +5304,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_GetPercentage__Int_) == 0x000040, "W
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, Percentage) == 0x000008, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::Percentage' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int_, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int_::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
@@ -5318,7 +5318,7 @@ public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Percentage;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_To_Float__Int_64__Return_Value;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5329,7 +5329,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_GetPercentage__Int64_) == 0x000040, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, Percentage) == 0x000008, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::Percentage' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, CallFunc_To_Float__Int_64__Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::CallFunc_To_Float__Int_64__Return_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_GetPercentage__Int64_, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_GetPercentage__Int64_::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
@@ -5343,14 +5343,14 @@ public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Divide_ByteByte_ReturnValue;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Half__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Half__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Half__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Half__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Byte_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Half__Byte_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Half__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Byte_, CallFunc_Divide_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Half__Byte_::CallFunc_Divide_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Half (Float)
@@ -5360,14 +5360,14 @@ struct UBPP_FunctionLibrary_C_Half__Float_ final
 public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Half__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Half__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Half__Float_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Half__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Float_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Half__Float_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Half__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Float_, CallFunc_Divide_DoubleDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Half__Float_::CallFunc_Divide_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Half (Int)
@@ -5378,14 +5378,14 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Half__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Half__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Half__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Half__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Half__Int_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Half__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int_, CallFunc_Divide_IntInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Half__Int_::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Half (Int64)
@@ -5395,14 +5395,14 @@ struct UBPP_FunctionLibrary_C_Half__Int64_ final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Divide_Int64Int64_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Half__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Half__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Half__Int64_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Half__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Half__Int64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Half__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Half__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Half__Int64_, CallFunc_Divide_Int64Int64_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Half__Int64_::CallFunc_Divide_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.InRange (Byte)
@@ -5417,7 +5417,7 @@ public:
 	bool                                          Inclusive_Max;                                     // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Local_Int_Array;                                   // 0x0018(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5433,7 +5433,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, Max) == 0x000002, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, Inclusive_Min) == 0x000003, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::Inclusive_Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, Inclusive_Max) == 0x000004, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::Inclusive_Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, Local_Int_Array) == 0x000018, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::Local_Int_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Byte_, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x00002C, "Member 'UBPP_FunctionLibrary_C_InRange__Byte_::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
@@ -5452,7 +5452,7 @@ public:
 	bool                                          Inclusive_Max;                                     // 0x0049(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector>                        Local_Int_Array;                                   // 0x0060(0x0010)(Edit, BlueprintVisible)
 	double                                        CallFunc_BreakVector_X;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5478,7 +5478,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, Max) == 0x000030
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, Inclusive_Min) == 0x000048, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::Inclusive_Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, Inclusive_Max) == 0x000049, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::Inclusive_Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, __WorldContext) == 0x000050, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, Return_Value) == 0x000058, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, Return_value) == 0x000058, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, Local_Int_Array) == 0x000060, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::Local_Int_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, CallFunc_BreakVector_X) == 0x000070, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_InRange__Vector_, CallFunc_BreakVector_Y) == 0x000078, "Member 'UBPP_FunctionLibrary_C_InRange__Vector_::CallFunc_BreakVector_Y' has a wrong offset!");
@@ -5754,14 +5754,14 @@ struct UBPP_FunctionLibrary_C_Invert_Float final
 public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Invert_Float) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Invert_Float");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Invert_Float) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Invert_Float");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Float, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Invert_Float::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Float, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Invert_Float::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Float, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Invert_Float::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Float, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Invert_Float::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Float, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Invert_Float::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Invert Integer
@@ -5772,14 +5772,14 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Invert_Integer) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Invert_Integer");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Invert_Integer) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Invert_Integer");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Invert_Integer::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Invert_Integer::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Invert_Integer::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Invert_Integer::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer, CallFunc_Multiply_IntInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Invert_Integer::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Invert Integer64
@@ -5789,14 +5789,14 @@ struct UBPP_FunctionLibrary_C_Invert_Integer64 final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Invert_Integer64) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Invert_Integer64");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Invert_Integer64) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Invert_Integer64");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer64, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Invert_Integer64::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer64, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Invert_Integer64::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer64, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Invert_Integer64::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer64, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Invert_Integer64::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Integer64, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Invert_Integer64::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Invert Vector
@@ -5806,14 +5806,14 @@ struct UBPP_FunctionLibrary_C_Invert_Vector final
 public:
 	struct FVector                                Value;                                             // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0020(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0020(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Invert_Vector) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Invert_Vector");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Invert_Vector) == 0x000050, "Wrong size on UBPP_FunctionLibrary_C_Invert_Vector");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Vector, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Invert_Vector::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Vector, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Invert_Vector::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Vector, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Invert_Vector::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Vector, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Invert_Vector::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Invert_Vector, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Invert_Vector::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Is Android Platform
@@ -5822,7 +5822,7 @@ struct UBPP_FunctionLibrary_C_Is_Android_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5830,7 +5830,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_Android_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_Android_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_Android_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_Android_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Android_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_Android_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Android_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Android_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Android_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Android_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Android_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_Android_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Android_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Android_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -5840,7 +5840,7 @@ struct UBPP_FunctionLibrary_C_Is_Engine_Version_4_26 final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetEngineVersion_ReturnValue;             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Contains_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5848,7 +5848,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_Engine_Version_4_26");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_Engine_Version_4_26");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_26::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_26::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_26::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26, CallFunc_GetEngineVersion_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_26::CallFunc_GetEngineVersion_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_26, CallFunc_Contains_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_26::CallFunc_Contains_ReturnValue' has a wrong offset!");
 
@@ -5858,7 +5858,7 @@ struct UBPP_FunctionLibrary_C_Is_Engine_Version_4_27 final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetEngineVersion_ReturnValue;             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Contains_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5866,7 +5866,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_Engine_Version_4_27");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_Engine_Version_4_27");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_27::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_27::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_27::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27, CallFunc_GetEngineVersion_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_27::CallFunc_GetEngineVersion_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Engine_Version_4_27, CallFunc_Contains_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Engine_Version_4_27::CallFunc_Contains_ReturnValue' has a wrong offset!");
 
@@ -5885,7 +5885,7 @@ public:
 	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0028(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Wall_Height_Point;                                 // 0x0070(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Times;                                             // 0x0088(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5996,7 +5996,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, TraceChannel) == 0
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, TraceComplex) == 0x000021, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::TraceComplex' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, Trace_Options) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, __WorldContext) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, Return_Value) == 0x000068, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, Return_value) == 0x000068, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, Wall_Height_Point) == 0x000070, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::Wall_Height_Point' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, Times) == 0x000088, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::Times' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Facing_Wall, Last_Blocking_Hit_Height) == 0x000090, "Member 'UBPP_FunctionLibrary_C_Is_Facing_Wall::Last_Blocking_Hit_Height' has a wrong offset!");
@@ -6092,7 +6092,7 @@ struct UBPP_FunctionLibrary_C_Is_IOS_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6100,7 +6100,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_IOS_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_IOS_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_IOS_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_IOS_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_IOS_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_IOS_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_IOS_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_IOS_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_IOS_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_IOS_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_IOS_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_IOS_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_IOS_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_IOS_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -6110,7 +6110,7 @@ struct UBPP_FunctionLibrary_C_Is_Linux_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6118,7 +6118,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_Linux_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_Linux_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_Linux_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_Linux_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Linux_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_Linux_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Linux_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Linux_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Linux_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Linux_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Linux_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_Linux_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Linux_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Linux_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -6128,7 +6128,7 @@ struct UBPP_FunctionLibrary_C_Is_Mac_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6136,7 +6136,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_Mac_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_Mac_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_Mac_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_Mac_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Mac_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_Mac_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Mac_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Mac_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Mac_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Mac_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Mac_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_Mac_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Mac_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Mac_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -6149,7 +6149,7 @@ public:
 	struct FVector                                Sphere_Origin;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Sphere_Radius;                                     // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6160,7 +6160,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, Point) == 0x00
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, Sphere_Origin) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::Sphere_Origin' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, Sphere_Radius) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::Sphere_Radius' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, __WorldContext) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, Return_Value) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, Return_value) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, CallFunc_Vector_Distance_ReturnValue) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Point_In_Sphere, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Is_Point_In_Sphere::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 
@@ -6170,7 +6170,7 @@ struct UBPP_FunctionLibrary_C_Is_PS4_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6178,7 +6178,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_PS4_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_PS4_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_PS4_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_PS4_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_PS4_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_PS4_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_PS4_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_PS4_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_PS4_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_PS4_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_PS4_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_PS4_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_PS4_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_PS4_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -6192,7 +6192,7 @@ public:
 	struct FVector                                Sphere_Origin;                                     // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Sphere_Radius;                                     // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6205,7 +6205,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, Po
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, Sphere_Origin) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::Sphere_Origin' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, Sphere_Radius) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::Sphere_Radius' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, __WorldContext) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, Return_Value) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, Return_value) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, CallFunc_Vector_Distance_ReturnValue) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Completely_In_Sphere::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
@@ -6220,7 +6220,7 @@ public:
 	struct FVector                                Sphere_2;                                          // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Radius_2;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6233,7 +6233,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, Radius_
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, Sphere_2) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::Sphere_2' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, Radius_2) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::Radius_2' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, __WorldContext) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, Return_Value) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, Return_value) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, CallFunc_Vector_Distance_ReturnValue) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Is_Sphere_Touching_Sphere::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
@@ -6244,7 +6244,7 @@ struct UBPP_FunctionLibrary_C_Is_Windows_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6252,7 +6252,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_Windows_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_Windows_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_Windows_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_Windows_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Windows_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_Windows_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Windows_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Windows_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Windows_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_Windows_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Windows_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_Windows_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_Windows_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_Windows_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -6262,7 +6262,7 @@ struct UBPP_FunctionLibrary_C_Is_XboxOne_Platform final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetPlatformName_ReturnValue;              // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6270,7 +6270,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Is_XboxOne_Platform");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Is_XboxOne_Platform");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Is_XboxOne_Platform::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_XboxOne_Platform::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Is_XboxOne_Platform::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform, CallFunc_GetPlatformName_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Is_XboxOne_Platform::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Is_XboxOne_Platform, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Is_XboxOne_Platform::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
@@ -6283,7 +6283,7 @@ public:
 	struct FVector                                Box_Origin;                                        // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Box_Extent;                                        // 0x0030(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_BreakVector_X;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6316,7 +6316,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, Input_Vector)
 static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, Box_Origin) == 0x000018, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::Box_Origin' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, Box_Extent) == 0x000030, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::Box_Extent' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, __WorldContext) == 0x000048, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, Return_Value) == 0x000050, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, Return_value) == 0x000050, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, CallFunc_BreakVector_X) == 0x000058, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, CallFunc_BreakVector_Y) == 0x000060, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_IsVectorInBoxExtent, CallFunc_BreakVector_Z) == 0x000068, "Member 'UBPP_FunctionLibrary_C_IsVectorInBoxExtent::CallFunc_BreakVector_Z' has a wrong offset!");
@@ -6348,7 +6348,7 @@ struct UBPP_FunctionLibrary_C_Len__Text_ final
 public:
 	class FText                                   Input_Text;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6357,7 +6357,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Len__Text_) == 0x000008, "Wrong ali
 static_assert(sizeof(UBPP_FunctionLibrary_C_Len__Text_) == 0x000040, "Wrong size on UBPP_FunctionLibrary_C_Len__Text_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Len__Text_, Input_Text) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Len__Text_::Input_Text' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Len__Text_, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Len__Text_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Len__Text_, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Len__Text_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Len__Text_, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Len__Text_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Len__Text_, CallFunc_Conv_TextToString_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Len__Text_::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Len__Text_, CallFunc_Len_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Len__Text_::CallFunc_Len_ReturnValue' has a wrong offset!");
 
@@ -6369,7 +6369,7 @@ public:
 	int32                                         Pre_Decimal_Places;                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Decimal_Places;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -6381,7 +6381,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Make_Float) == 0x000060, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, Pre_Decimal_Places) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Make_Float::Pre_Decimal_Places' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, Decimal_Places) == 0x000004, "Member 'UBPP_FunctionLibrary_C_Make_Float::Decimal_Places' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Make_Float::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Make_Float::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Make_Float::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, CallFunc_Conv_IntToString_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Make_Float::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Make_Float::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Make_Float, CallFunc_Concat_StrStr_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Make_Float::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
@@ -6631,7 +6631,7 @@ struct UBPP_FunctionLibrary_C_Minus_Absolute__Float_ final
 public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Abs_ReturnValue;                          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -6639,7 +6639,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_) == 0x000008
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Minus_Absolute__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Float_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_, CallFunc_Abs_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Float_::CallFunc_Abs_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Float_, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Float_::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
 
@@ -6651,7 +6651,7 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Abs_Int_ReturnValue;                      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -6659,7 +6659,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_) == 0x000008, 
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Minus_Absolute__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_, CallFunc_Abs_Int_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int_::CallFunc_Abs_Int_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int_, CallFunc_Multiply_IntInt_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int_::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
 
@@ -6670,7 +6670,7 @@ struct UBPP_FunctionLibrary_C_Minus_Absolute__Int64_ final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Abs_Int64_ReturnValue;                    // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Multiply_Int64Int64_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -6678,7 +6678,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_) == 0x000008
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_) == 0x000028, "Wrong size on UBPP_FunctionLibrary_C_Minus_Absolute__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_, CallFunc_Abs_Int64_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int64_::CallFunc_Abs_Int64_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_Absolute__Int64_, CallFunc_Multiply_Int64Int64_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Minus_Absolute__Int64_::CallFunc_Multiply_Int64Int64_ReturnValue' has a wrong offset!");
 
@@ -6690,14 +6690,14 @@ public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Subtract_ByteByte_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Minus_One__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Minus_One__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_One__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Minus_One__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Byte_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_One__Byte_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_One__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Byte_, CallFunc_Subtract_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Minus_One__Byte_::CallFunc_Subtract_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Minus One (Float)
@@ -6707,14 +6707,14 @@ struct UBPP_FunctionLibrary_C_Minus_One__Float_ final
 public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Minus_One__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Minus_One__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_One__Float_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Minus_One__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Float_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_One__Float_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_One__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Float_, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Minus_One__Float_::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Minus One (Int)
@@ -6725,14 +6725,14 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Minus_One__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Minus_One__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_One__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Minus_One__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int_, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int_::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Minus One (Int64)
@@ -6742,14 +6742,14 @@ struct UBPP_FunctionLibrary_C_Minus_One__Int64_ final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Subtract_Int64Int64_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Minus_One__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Minus_One__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Minus_One__Int64_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Minus_One__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Minus_One__Int64_, CallFunc_Subtract_Int64Int64_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Minus_One__Int64_::CallFunc_Subtract_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Mouse Position on Platform
@@ -6797,7 +6797,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0078(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     OutHits;                                           // 0x00B8(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x00C8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x00C8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6817,7 +6817,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, Trace_Options) == 0x000078, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, __WorldContext) == 0x0000B0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, OutHits) == 0x0000B8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::OutHits' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, Return_Value) == 0x0000C8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, Return_value) == 0x0000C8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000F0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Channel::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -6841,7 +6841,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0080(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     OutHits;                                           // 0x00C0(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x00D0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x00D0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6861,7 +6861,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, Trace_Options) == 0x000080, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, __WorldContext) == 0x0000B8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, OutHits) == 0x0000C0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::OutHits' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, Return_Value) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, Return_value) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000E0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000F8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_By_Profile::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -6885,7 +6885,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0088(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     OutHits;                                           // 0x00C8(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x00D8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x00D8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00E8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6905,7 +6905,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Object
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, Trace_Options) == 0x000088, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, __WorldContext) == 0x0000C0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, OutHits) == 0x0000C8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::OutHits' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, Return_Value) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, Return_value) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000E0, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000E8, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects, CallFunc_GetActorForwardVector_ReturnValue) == 0x000100, "Member 'UBPP_FunctionLibrary_C_Multi_Camera_Line_Trace_for_Objects::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -7053,7 +7053,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0090(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     OutHits;                                           // 0x00D0(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x00E0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x00E0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7074,7 +7074,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, Trace_Options) == 0x000090, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, __WorldContext) == 0x0000C8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, OutHits) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::OutHits' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, Return_Value) == 0x0000E0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, Return_value) == 0x0000E0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000E8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000F0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel, CallFunc_GetActorForwardVector_ReturnValue) == 0x000108, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Channel::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -7099,7 +7099,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0098(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00D0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     OutHits;                                           // 0x00D8(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x00E8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x00E8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7120,7 +7120,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, Trace_Options) == 0x000098, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, __WorldContext) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, OutHits) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::OutHits' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, Return_Value) == 0x0000E8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, Return_value) == 0x0000E8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000F0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000F8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile, CallFunc_GetActorForwardVector_ReturnValue) == 0x000110, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_By_Profile::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -7145,7 +7145,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x00A0(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00D8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FHitResult>                     OutHits;                                           // 0x00E0(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x00F0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x00F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7166,7 +7166,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Object
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, Trace_Options) == 0x0000A0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, __WorldContext) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, OutHits) == 0x0000E0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::OutHits' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, Return_Value) == 0x0000F0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, Return_value) == 0x0000F0, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0000F8, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000100, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects, CallFunc_GetActorForwardVector_ReturnValue) == 0x000118, "Member 'UBPP_FunctionLibrary_C_Multi_Weapon_Line_Trace_For_Objects::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -7182,7 +7182,7 @@ struct UBPP_FunctionLibrary_C_Name_to_Int final
 public:
 	class FName                                   Input_Name;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Seperate_Numerics_And_Alphabetics_Numerics; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7193,7 +7193,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Name_to_Int) == 0x000008, "Wrong al
 static_assert(sizeof(UBPP_FunctionLibrary_C_Name_to_Int) == 0x000040, "Wrong size on UBPP_FunctionLibrary_C_Name_to_Int");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, Input_Name) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::Input_Name' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, CallFunc_Conv_NameToString_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, CallFunc_Seperate_Numerics_And_Alphabetics_Numerics) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::CallFunc_Seperate_Numerics_And_Alphabetics_Numerics' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Name_to_Int, CallFunc_Seperate_Numerics_And_Alphabetics_Alphabetics) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Name_to_Int::CallFunc_Seperate_Numerics_And_Alphabetics_Alphabetics' has a wrong offset!");
@@ -7364,14 +7364,14 @@ public:
 	uint8                                         Value;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Add_ByteByte_ReturnValue;                 // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Plus_One__Byte_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Plus_One__Byte_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Plus_One__Byte_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Plus_One__Byte_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Byte_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Plus_One__Byte_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Byte_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Plus_One__Byte_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Byte_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Byte_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Byte_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Byte_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Byte_, CallFunc_Add_ByteByte_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Plus_One__Byte_::CallFunc_Add_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Plus One (Float)
@@ -7381,14 +7381,14 @@ struct UBPP_FunctionLibrary_C_Plus_One__Float_ final
 public:
 	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Plus_One__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Plus_One__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Plus_One__Float_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Plus_One__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Float_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Plus_One__Float_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Plus_One__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Float_, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Plus_One__Float_::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Plus One (Int)
@@ -7399,14 +7399,14 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Plus_One__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Plus_One__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Plus_One__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Plus_One__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int_, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int_::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Plus One (Int64)
@@ -7416,14 +7416,14 @@ struct UBPP_FunctionLibrary_C_Plus_One__Int64_ final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         CallFunc_Add_Int64Int64_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Plus_One__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Plus_One__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Plus_One__Int64_) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Plus_One__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Plus_One__Int64_, CallFunc_Add_Int64Int64_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Plus_One__Int64_::CallFunc_Add_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Print Name
@@ -7510,7 +7510,7 @@ public:
 	uint8                                         Max;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7520,7 +7520,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Random_Byte) == 0x000008, "Wrong al
 static_assert(sizeof(UBPP_FunctionLibrary_C_Random_Byte) == 0x000020, "Wrong size on UBPP_FunctionLibrary_C_Random_Byte");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, Max) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Random_Byte::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Random_Byte::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Random_Byte::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Byte::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte, CallFunc_Conv_IntToByte_ReturnValue) == 0x00001C, "Member 'UBPP_FunctionLibrary_C_Random_Byte::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
@@ -7535,7 +7535,7 @@ public:
 	struct FRandomStream                          Stream;                                            // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Random_Byte_In_Range_From_Stream_Return_Value; // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Random_Byte_From_Stream");
@@ -7543,7 +7543,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream) == 0x000020
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream, Max) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Random_Byte_From_Stream::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream, Stream) == 0x000004, "Member 'UBPP_FunctionLibrary_C_Random_Byte_From_Stream::Stream' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte_From_Stream::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Byte_From_Stream::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Byte_From_Stream::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_From_Stream, CallFunc_Random_Byte_In_Range_From_Stream_Return_Value) == 0x000019, "Member 'UBPP_FunctionLibrary_C_Random_Byte_From_Stream::CallFunc_Random_Byte_In_Range_From_Stream_Return_Value' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Random Byte In Range
@@ -7555,7 +7555,7 @@ public:
 	uint8                                         Max;                                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7567,7 +7567,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Random_Byte_In_Range) == 0x000028, "
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, Min) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, Max) == 0x000001, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range, CallFunc_RandomIntegerInRange_ReturnValue) == 0x00001C, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
@@ -7584,7 +7584,7 @@ public:
 	struct FRandomStream                          Stream;                                            // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7597,7 +7597,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, Max) == 0x000001, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, Stream) == 0x000004, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::Stream' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00001C, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, CallFunc_Conv_ByteToInt_ReturnValue_1) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::CallFunc_Conv_ByteToInt_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream, CallFunc_RandomIntegerInRangeFromStream_ReturnValue) == 0x000024, "Member 'UBPP_FunctionLibrary_C_Random_Byte_In_Range_From_Stream::CallFunc_RandomIntegerInRangeFromStream_ReturnValue' has a wrong offset!");
@@ -7609,7 +7609,7 @@ struct UBPP_FunctionLibrary_C_Random_Byte_Max final
 {
 public:
 	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7617,7 +7617,7 @@ public:
 static_assert(alignof(UBPP_FunctionLibrary_C_Random_Byte_Max) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Random_Byte_Max");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Random_Byte_Max) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Random_Byte_Max");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_Max, __WorldContext) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Random_Byte_Max::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_Max, Return_Value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Random_Byte_Max::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_Max, Return_value) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Random_Byte_Max::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_Max, CallFunc_RandomIntegerInRange_ReturnValue) == 0x00000C, "Member 'UBPP_FunctionLibrary_C_Random_Byte_Max::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Byte_Max, CallFunc_Conv_IntToByte_ReturnValue) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Random_Byte_Max::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
 
@@ -8515,7 +8515,7 @@ public:
 	struct FVector                                Min;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Max;                                               // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X;                            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Z;                            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8532,7 +8532,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Random_Vector_In_Range) == 0x0000B0,
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, Min) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, Max) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, __WorldContext) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, Return_Value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, Return_value) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, CallFunc_BreakVector_X) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, CallFunc_BreakVector_Y) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range, CallFunc_BreakVector_Z) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range::CallFunc_BreakVector_Z' has a wrong offset!");
@@ -8553,7 +8553,7 @@ public:
 	struct FVector                                Max;                                               // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRandomStream                          Stream;                                            // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0040(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_X;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Z;                            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8581,7 +8581,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, Max) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, Stream) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::Stream' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, __WorldContext) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, Return_Value) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, Return_value) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, CallFunc_BreakVector_X) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, CallFunc_BreakVector_Y) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::CallFunc_BreakVector_Y' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream, CallFunc_BreakVector_Z) == 0x000068, "Member 'UBPP_FunctionLibrary_C_Random_Vector_In_Range_from_Stream::CallFunc_BreakVector_Z' has a wrong offset!");
@@ -8612,7 +8612,7 @@ public:
 	uint8                                         Max;                                               // 0x0011(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<uint8>                                 Return_Value;                                      // 0x0020(0x0010)(Parm, OutParm)
+	TArray<uint8>                                 Return_value;                                      // 0x0020(0x0010)(Parm, OutParm)
 	TArray<uint8>                                 Local_Int_Array;                                   // 0x0030(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8630,7 +8630,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Inp
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Min) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Max) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Local_Int_Array) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::Local_Int_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range, Temp_int_Array_Index_Variable) == 0x000044, "Member 'UBPP_FunctionLibrary_C_Remove_All_Bytes_Not_In_Range::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -8689,7 +8689,7 @@ public:
 	int32                                         Min;                                               // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Max;                                               // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 Return_Value;                                      // 0x0020(0x0010)(Parm, OutParm)
+	TArray<int32>                                 Return_value;                                      // 0x0020(0x0010)(Parm, OutParm)
 	TArray<int32>                                 Local_Int_Array;                                   // 0x0030(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8707,7 +8707,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Inpu
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Min) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Max) == 0x000014, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Local_Int_Array) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::Local_Int_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range, Temp_int_Array_Index_Variable) == 0x000044, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints_Not_In_Range::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -8727,7 +8727,7 @@ public:
 	int64                                         Min;                                               // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int64                                         Max;                                               // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int64>                                 Return_Value;                                      // 0x0028(0x0010)(Parm, OutParm)
+	TArray<int64>                                 Return_value;                                      // 0x0028(0x0010)(Parm, OutParm)
 	TArray<int64>                                 Local_Int64_Array;                                 // 0x0038(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8746,7 +8746,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, In
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, Min) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, Max) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, __WorldContext) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, Return_Value) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, Return_value) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, Local_Int64_Array) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::Local_Int64_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'UBPP_FunctionLibrary_C_Remove_All_Ints64_Not_In_Range::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -8766,7 +8766,7 @@ public:
 	struct FVector                                Min;                                               // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Max;                                               // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        Return_Value;                                      // 0x0048(0x0010)(Parm, OutParm)
+	TArray<struct FVector>                        Return_value;                                      // 0x0048(0x0010)(Parm, OutParm)
 	TArray<struct FVector>                        Local_Int_Array;                                   // 0x0058(0x0010)(Edit, BlueprintVisible)
 	double                                        CallFunc_BreakVector_X;                            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_BreakVector_Y;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8798,7 +8798,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, I
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, Min) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::Min' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, Max) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::Max' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, __WorldContext) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, Return_Value) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, Return_value) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, Local_Int_Array) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::Local_Int_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, CallFunc_BreakVector_X) == 0x000068, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::CallFunc_BreakVector_X' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range, CallFunc_BreakVector_Y) == 0x000070, "Member 'UBPP_FunctionLibrary_C_Remove_All_Vectors_Not_In_Range::CallFunc_BreakVector_Y' has a wrong offset!");
@@ -8862,7 +8862,7 @@ struct UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes final
 public:
 	TArray<uint8>                                 Input_Array;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<uint8>                                 Return_Value;                                      // 0x0018(0x0010)(Parm, OutParm)
+	TArray<uint8>                                 Return_value;                                      // 0x0018(0x0010)(Parm, OutParm)
 	TArray<uint8>                                 UnqiueArray;                                       // 0x0028(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8877,7 +8877,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes) == 0x00000
 static_assert(sizeof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes) == 0x000050, "Wrong size on UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, Input_Array) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::Input_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, UnqiueArray) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::UnqiueArray' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Bytes::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -8894,7 +8894,7 @@ struct UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats final
 public:
 	TArray<double>                                Input_Array;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<double>                                Return_Value;                                      // 0x0018(0x0010)(Parm, OutParm)
+	TArray<double>                                Return_value;                                      // 0x0018(0x0010)(Parm, OutParm)
 	TArray<double>                                Local_Unique_Array;                                // 0x0028(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8910,7 +8910,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats) == 0x0000
 static_assert(sizeof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats) == 0x000060, "Wrong size on UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, Input_Array) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::Input_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, Local_Unique_Array) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::Local_Unique_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Floats::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -8927,7 +8927,7 @@ struct UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64 final
 public:
 	TArray<int64>                                 Input_Array;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int64>                                 Return_Value;                                      // 0x0018(0x0010)(Parm, OutParm)
+	TArray<int64>                                 Return_value;                                      // 0x0018(0x0010)(Parm, OutParm)
 	TArray<int64>                                 UnqiueArray;                                       // 0x0028(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8943,7 +8943,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64) == 0x
 static_assert(sizeof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64) == 0x000060, "Wrong size on UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, Input_Array) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::Input_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, UnqiueArray) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::UnqiueArray' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Integers64::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -8960,7 +8960,7 @@ struct UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints final
 public:
 	TArray<int32>                                 Input_Array;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 Return_Value;                                      // 0x0018(0x0010)(Parm, OutParm)
+	TArray<int32>                                 Return_value;                                      // 0x0018(0x0010)(Parm, OutParm)
 	TArray<int32>                                 UnqiueArray;                                       // 0x0028(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -8975,7 +8975,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints) == 0x000008
 static_assert(sizeof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints) == 0x000058, "Wrong size on UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, Input_Array) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::Input_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, UnqiueArray) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::UnqiueArray' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Ints::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -9025,7 +9025,7 @@ struct UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors final
 public:
 	TArray<struct FVector>                        Input_Vector_Array;                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FVector>                        Return_Value;                                      // 0x0018(0x0010)(Parm, OutParm)
+	TArray<struct FVector>                        Return_value;                                      // 0x0018(0x0010)(Parm, OutParm)
 	TArray<struct FVector>                        Local_Unique_Array;                                // 0x0028(0x0010)(Edit, BlueprintVisible)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9041,7 +9041,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors) == 0x000
 static_assert(sizeof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors) == 0x000070, "Wrong size on UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, Input_Vector_Array) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::Input_Vector_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, Local_Unique_Array) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::Local_Unique_Array' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'UBPP_FunctionLibrary_C_Remove_Not_Unique_Vectors::Temp_int_Array_Index_Variable' has a wrong offset!");
@@ -9343,7 +9343,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              InAlignment;                                       // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9353,7 +9353,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Alignment) == 0x000038, "Wrong s
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, InAlignment) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::InAlignment' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Alignment, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Alignment::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9365,7 +9365,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FAnchors                               InAnchors;                                         // 0x0008(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9375,7 +9375,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Anchors) == 0x000048, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, InAnchors) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::InAnchors' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, __WorldContext) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, Return_Value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, Return_value) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Anchors, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Set_Anchors::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9388,7 +9388,7 @@ public:
 	bool                                          InbAutoSize;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9398,7 +9398,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Auto_Size) == 0x000030, "Wrong s
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, InbAutoSize) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::InbAutoSize' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Auto_Size, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Auto_Size::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9411,7 +9411,7 @@ public:
 	int32                                         InColumn;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUniformGridSlot*                       CallFunc_SlotAsUniformGridSlot_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -9423,7 +9423,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Column) == 0x000038, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Column::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, InColumn) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Column::InColumn' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Column::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Column::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Column::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, CallFunc_SlotAsUniformGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Column::CallFunc_SlotAsUniformGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Column::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Column::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -9438,7 +9438,7 @@ public:
 	int32                                         InColumnSpan;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9448,7 +9448,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Column_Span) == 0x000030, "Wrong
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, InColumnSpan) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::InColumnSpan' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Column_Span, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Column_Span::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9461,7 +9461,7 @@ public:
 	bool                                          InbFillEmptySpace;                                 // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9471,7 +9471,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space) == 0x000030, "
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, InbFillEmptySpace) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::InbFillEmptySpace' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Empty_Space, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Empty_Space::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9483,7 +9483,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        InFillSpanWhenLessThan;                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9495,7 +9495,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than) == 0x0
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, InFillSpanWhenLessThan) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::InFillSpanWhenLessThan' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than, CallFunc_SetFillSpanWhenLessThan_InFillSpanWhenLessThan_ImplicitCast) == 0x00002C, "Member 'UBPP_FunctionLibrary_C_Set_Fill_Span_When_Less_Than::CallFunc_SetFillSpanWhenLessThan_InFillSpanWhenLessThan_ImplicitCast' has a wrong offset!");
@@ -9509,7 +9509,7 @@ public:
 	EHorizontalAlignment                          InHorizontalAlignment;                             // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetSwitcherSlot*                    CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -9544,7 +9544,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment) == 0x0000A
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, InHorizontalAlignment) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::InHorizontalAlignment' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Horizontal_Alignment, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Horizontal_Alignment::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -9577,7 +9577,7 @@ public:
 	int32                                         InLayer;                                           // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9587,7 +9587,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Layer) == 0x000030, "Wrong size 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Layer::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, InLayer) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Layer::InLayer' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Layer::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Layer::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Layer::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Layer::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layer, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Layer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9599,7 +9599,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FAnchorData                            InLayoutData;                                      // 0x0008(0x0040)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9609,7 +9609,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Layout) == 0x000068, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Layout::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, InLayoutData) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Layout::InLayoutData' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, __WorldContext) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Set_Layout::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, Return_Value) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Set_Layout::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, Return_value) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Set_Layout::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Set_Layout::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Layout, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'UBPP_FunctionLibrary_C_Set_Layout::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9647,7 +9647,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              InNudge;                                           // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9657,7 +9657,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Nudge) == 0x000038, "Wrong size 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, InNudge) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::InNudge' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Nudge, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Nudge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9669,7 +9669,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                InOffset;                                          // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9679,7 +9679,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Offsets) == 0x000038, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, InOffset) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::InOffset' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Offsets, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Offsets::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9691,7 +9691,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                InPadding;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetSwitcherSlot*                    CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -9721,7 +9721,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Padding) == 0x000098, "Wrong siz
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Padding::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, InPadding) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Padding::InPadding' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Padding::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Padding::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Padding::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Padding::CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Padding::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Padding, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Set_Padding::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -9749,7 +9749,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9759,7 +9759,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Position) == 0x000038, "Wrong si
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Position::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, InPosition) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Position::InPosition' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Position::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Position::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Position::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Position::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Position, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Position::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9798,7 +9798,7 @@ public:
 	int32                                         InRow;                                             // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUniformGridSlot*                       CallFunc_SlotAsUniformGridSlot_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -9810,7 +9810,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Row) == 0x000038, "Wrong size on
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Row::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, InRow) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Row::InRow' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Row::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Row::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Row::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, CallFunc_SlotAsUniformGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Row::CallFunc_SlotAsUniformGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Row::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Row::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -9825,7 +9825,7 @@ public:
 	int32                                         InRowSpan;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGridSlot*                              CallFunc_SlotAsGridSlot_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9835,7 +9835,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Row_Span) == 0x000030, "Wrong si
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, InRowSpan) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::InRowSpan' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, CallFunc_SlotAsGridSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::CallFunc_SlotAsGridSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Row_Span, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Row_Span::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9873,7 +9873,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FSlateChildSize                        InSize;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_SlotAsVerticalBoxSlot_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -9885,7 +9885,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_) == 0x00
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, InSize) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::InSize' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Size__Slate_Child_Size_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -9899,7 +9899,7 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              InSize;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -9909,7 +9909,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_) == 0x000038, "W
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, InSize) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::InSize' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Size__Vector2D_, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Size__Vector2D_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -9939,7 +9939,7 @@ public:
 	EVerticalAlignment                            InVerticalAlignment;                               // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetSwitcherSlot*                    CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWrapBoxSlot*                           CallFunc_SlotAsWrapBoxSlot_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -9974,7 +9974,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment) == 0x0000A8,
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, InVerticalAlignment) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::InVerticalAlignment' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::CallFunc_SlotAsWidgetSwitcherSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, CallFunc_SlotAsWrapBoxSlot_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::CallFunc_SlotAsWrapBoxSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_Vertical_Alignment, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Set_Vertical_Alignment::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -10082,7 +10082,7 @@ public:
 	int32                                         InZOrder;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10092,7 +10092,7 @@ static_assert(sizeof(UBPP_FunctionLibrary_C_Set_ZOrder) == 0x000030, "Wrong size
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, Widget) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::Widget' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, InZOrder) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::InZOrder' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, __WorldContext) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, Return_Value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, Return_value) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, CallFunc_SlotAsCanvasSlot_ReturnValue) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::CallFunc_SlotAsCanvasSlot_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Set_ZOrder, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Set_ZOrder::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
@@ -10123,7 +10123,7 @@ public:
 	struct FVector                                Orient;                                            // 0x0030(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Alpha;                                             // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Return_Value;                                      // 0x0058(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Return_value;                                      // 0x0058(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_VLerp_ReturnValue_1;                      // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_VLerp_ReturnValue_2;                      // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10138,7 +10138,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, End) == 0x000018, 
 static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, Orient) == 0x000030, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::Orient' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, Alpha) == 0x000048, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::Alpha' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, __WorldContext) == 0x000050, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, Return_Value) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, Return_value) == 0x000058, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, CallFunc_VLerp_ReturnValue) == 0x000070, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::CallFunc_VLerp_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, CallFunc_VLerp_ReturnValue_1) == 0x000088, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::CallFunc_VLerp_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Slerp__Vector_, CallFunc_VLerp_ReturnValue_2) == 0x0000A0, "Member 'UBPP_FunctionLibrary_C_Slerp__Vector_::CallFunc_VLerp_ReturnValue_2' has a wrong offset!");
@@ -10153,14 +10153,14 @@ struct UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_ final
 public:
 	double                                        Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_, CallFunc_LessEqual_DoubleDouble_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Float_::CallFunc_LessEqual_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Smaller Than or Zero (Int)
@@ -10171,14 +10171,14 @@ public:
 	int32                                         Input_Value;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int_::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Smaller Than or Zero (Int64)
@@ -10188,14 +10188,14 @@ struct UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_ final
 public:
 	int64                                         Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_Int64Int64_ReturnValue;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_, CallFunc_LessEqual_Int64Int64_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_or_Zero__Int64_::CallFunc_LessEqual_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Smaller Than Zero (Float)
@@ -10205,14 +10205,14 @@ struct UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_ final
 public:
 	double                                        Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_, CallFunc_Less_DoubleDouble_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Float_::CallFunc_Less_DoubleDouble_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Smaller Than Zero (Int)
@@ -10223,14 +10223,14 @@ public:
 	int32                                         Input_Value;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_, CallFunc_Less_IntInt_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int_::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Smaller Than Zero (Int64)
@@ -10240,14 +10240,14 @@ struct UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_ final
 public:
 	int64                                         Input_Value;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_Int64Int64_ReturnValue;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_) == 0x000008, "Wrong alignment on UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_");
 static_assert(sizeof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_) == 0x000018, "Wrong size on UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_, Input_Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_::Input_Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_, CallFunc_Less_Int64Int64_ReturnValue) == 0x000011, "Member 'UBPP_FunctionLibrary_C_Smaller_Than_Zero__Int64_::CallFunc_Less_Int64Int64_ReturnValue' has a wrong offset!");
 
 // Function UBPP_FunctionLibrary.UBPP_FunctionLibrary_C.Snap Actor To Grid
@@ -10263,7 +10263,7 @@ public:
 	double                                        Z_Location;                                        // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Sweep_Hit_Result;                                  // 0x0028(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Vector_SnappedToGrid_ReturnValue;         // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10286,7 +10286,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, Specific_Z_Loc
 static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, Z_Location) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::Z_Location' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, __WorldContext) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, Sweep_Hit_Result) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::Sweep_Hit_Result' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, Return_Value) == 0x000110, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, Return_value) == 0x000110, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000118, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, CallFunc_Vector_SnappedToGrid_ReturnValue) == 0x000130, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::CallFunc_Vector_SnappedToGrid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Snap_Actor_To_Grid, CallFunc_BreakVector_X) == 0x000148, "Member 'UBPP_FunctionLibrary_C_Snap_Actor_To_Grid::CallFunc_BreakVector_X' has a wrong offset!");
@@ -10433,7 +10433,7 @@ struct UBPP_FunctionLibrary_C_Text_to_Int final
 public:
 	class FText                                   Input_Text;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UObject*                                __WorldContext;                                    // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Return_Value;                                      // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Return_value;                                      // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Seperate_Numerics_And_Alphabetics_Numerics; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10444,7 +10444,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_Text_to_Int) == 0x000008, "Wrong al
 static_assert(sizeof(UBPP_FunctionLibrary_C_Text_to_Int) == 0x000050, "Wrong size on UBPP_FunctionLibrary_C_Text_to_Int");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, Input_Text) == 0x000000, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::Input_Text' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, __WorldContext) == 0x000018, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, Return_Value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, Return_value) == 0x000020, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, CallFunc_Conv_TextToString_ReturnValue) == 0x000028, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, CallFunc_Seperate_Numerics_And_Alphabetics_Numerics) == 0x000038, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::CallFunc_Seperate_Numerics_And_Alphabetics_Numerics' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Text_to_Int, CallFunc_Seperate_Numerics_And_Alphabetics_Alphabetics) == 0x000040, "Member 'UBPP_FunctionLibrary_C_Text_to_Int::CallFunc_Seperate_Numerics_And_Alphabetics_Alphabetics' has a wrong offset!");
@@ -10456,7 +10456,7 @@ struct UBPP_FunctionLibrary_C_To_Float__Int_64_ final
 public:
 	int64                                         Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        Return_Value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Return_value;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Integer64_To_Text_Return_Text;            // 0x0018(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_StringToDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10465,7 +10465,7 @@ static_assert(alignof(UBPP_FunctionLibrary_C_To_Float__Int_64_) == 0x000008, "Wr
 static_assert(sizeof(UBPP_FunctionLibrary_C_To_Float__Int_64_) == 0x000048, "Wrong size on UBPP_FunctionLibrary_C_To_Float__Int_64_");
 static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, Value) == 0x000000, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::Value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, __WorldContext) == 0x000008, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::__WorldContext' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, Return_Value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, Return_value) == 0x000010, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, CallFunc_Integer64_To_Text_Return_Text) == 0x000018, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::CallFunc_Integer64_To_Text_Return_Text' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_To_Float__Int_64_, CallFunc_Conv_StringToDouble_ReturnValue) == 0x000040, "Member 'UBPP_FunctionLibrary_C_To_Float__Int_64_::CallFunc_Conv_StringToDouble_ReturnValue' has a wrong offset!");
@@ -10541,7 +10541,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0090(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00D0(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01B8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01B8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10562,7 +10562,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, Trac
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, Trace_Options) == 0x000090, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, __WorldContext) == 0x0000C8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, Out_Hit) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, Return_Value) == 0x0001B8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, Return_value) == 0x0001B8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001C0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001C8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001E0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Channel::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -10587,7 +10587,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x0098(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00D0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00D8(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01C0(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10608,7 +10608,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, Trac
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, Trace_Options) == 0x000098, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, __WorldContext) == 0x0000D0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, Out_Hit) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, Return_Value) == 0x0001C0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, Return_value) == 0x0001C0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001C8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001D0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001E8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_By_Profile::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
@@ -10633,7 +10633,7 @@ public:
 	struct FUBPP_Struct_Trace                     Trace_Options;                                     // 0x00A0(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x00D8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Out_Hit;                                           // 0x00E0(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x01C8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x01C8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerCameraManager*                   CallFunc_GetPlayerCameraManager_ReturnValue;       // 0x01D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -10654,7 +10654,7 @@ static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, Tra
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, Trace_Options) == 0x0000A0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::Trace_Options' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, __WorldContext) == 0x0000D8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::__WorldContext' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, Out_Hit) == 0x0000E0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::Out_Hit' has a wrong offset!");
-static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, Return_Value) == 0x0001C8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::Return_Value' has a wrong offset!");
+static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, Return_value) == 0x0001C8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::Return_value' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x0001D0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001D8, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001F0, "Member 'UBPP_FunctionLibrary_C_Weapon_Line_Trace_For_Objects::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");

@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_HitboxTypeAI_structs.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "E_HitboxTypeAI_structs.hpp"
 
 
 namespace SDK
@@ -80,7 +80,7 @@ public:
 
 public:
 	void Activate_Target_Actors(bool Activate_0);
-	void Check_Tags(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_Value, class FName* Found_Tag);
+	void Check_Tags(TArray<class FName>& Tags_1, TArray<class FName>& Tags_2, bool* Return_value, class FName* Found_Tag);
 	void ComponentLoaded();
 	void ComponentPreSave();
 	void Debug_Text(const class FString& In_String, const struct FLinearColor& Text_Color);

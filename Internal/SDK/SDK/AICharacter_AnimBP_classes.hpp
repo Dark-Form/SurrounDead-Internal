@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "AICharacter_AnimBP_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "E_AIBehaviour_structs.hpp"
-#include "AICharacter_AnimBP_structs.hpp"
-#include "E_MovementSpeed_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "E_MovementSpeed_structs.hpp"
+#include "E_AIBehaviour_structs.hpp"
 #include "S_AIAnims_structs.hpp"
 #include "E_BlockType_structs.hpp"
 

@@ -31,20 +31,6 @@ void ABuildableMaster_Display_C::ActorLoaded()
 }
 
 
-// Function BuildableMaster_Display.BuildableMaster_Display_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
-
-void ABuildableMaster_Display_C::ActorPreSave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildableMaster_Display_C", "ActorPreSave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BuildableMaster_Display.BuildableMaster_Display_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -187,6 +173,20 @@ void ABuildableMaster_Display_C::RemoveIronsights(bool Hide_, class ABP_AMainLoc
 	Parms.Attachment = Attachment;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BuildableMaster_Display.BuildableMaster_Display_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
+
+void ABuildableMaster_Display_C::ActorPreSave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuildableMaster_Display_C", "ActorPreSave");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

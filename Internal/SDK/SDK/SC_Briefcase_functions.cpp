@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_Briefcase.SC_Briefcase_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_Briefcase_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_Briefcase_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_Briefcase.SC_Briefcase_C.ExecuteUbergraph_SC_Briefcase
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_Briefcase_C::ExecuteUbergraph_SC_Briefcase(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_Briefcase.SC_Briefcase_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_Briefcase_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_Briefcase_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

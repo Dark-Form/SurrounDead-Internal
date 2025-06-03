@@ -17,17 +17,45 @@
 namespace SDK
 {
 
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.OnInitialized
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UW_VerySmallLootContainerUI_C::OnInitialized()
+void UW_VerySmallLootContainerUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "OnInitialized");
+		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "Tick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::W_VerySmallLootContainerUI_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetItemReference
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UJSI_Slot_C*                      ItemRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UW_VerySmallLootContainerUI_C::SetItemReference(class UJSI_Slot_C* ItemRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "SetItemReference");
+
+	Params::W_VerySmallLootContainerUI_C_SetItemReference Parms{};
+
+	Parms.ItemRef = ItemRef;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -46,28 +74,6 @@ void UW_VerySmallLootContainerUI_C::SetInspectorRef(class UBP_InspectorWindowWid
 	Params::W_VerySmallLootContainerUI_C_SetInspectorRef Parms{};
 
 	Parms.Inspector = Inspector;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UW_VerySmallLootContainerUI_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "Tick");
-
-	Params::W_VerySmallLootContainerUI_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -114,6 +120,20 @@ void UW_VerySmallLootContainerUI_C::SetActionbarFollower(class UJSI_Slot_C* JigR
 
 	if (Return != nullptr)
 		*Return = Parms.Return;
+}
+
+
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UW_VerySmallLootContainerUI_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -226,6 +246,27 @@ void UW_VerySmallLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
 
 	if (Widget != nullptr)
 		*Widget = Parms.Widget;
+}
+
+
+// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.GetListOfNonAddContainers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+
+void UW_VerySmallLootContainerUI_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "GetListOfNonAddContainers");
+
+	Params::W_VerySmallLootContainerUI_C_GetListOfNonAddContainers Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
 }
 
 
@@ -376,47 +417,6 @@ void UW_VerySmallLootContainerUI_C::BndEvt__VerySmallContainer_Widget_Button_66_
 		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "BndEvt__VerySmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.SetItemReference
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UJSI_Slot_C*                      ItemRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UW_VerySmallLootContainerUI_C::SetItemReference(class UJSI_Slot_C* ItemRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "SetItemReference");
-
-	Params::W_VerySmallLootContainerUI_C_SetItemReference Parms{};
-
-	Parms.ItemRef = ItemRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function W_VerySmallLootContainerUI.W_VerySmallLootContainerUI_C.GetListOfNonAddContainers
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
-
-void UW_VerySmallLootContainerUI_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_VerySmallLootContainerUI_C", "GetListOfNonAddContainers");
-
-	Params::W_VerySmallLootContainerUI_C_GetListOfNonAddContainers Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
 }
 
 

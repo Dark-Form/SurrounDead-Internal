@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PrefabMaster_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PrefabMaster_classes.hpp"
 
 
 namespace SDK
@@ -32,8 +32,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_Prefab_CrashedHelicopter01(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

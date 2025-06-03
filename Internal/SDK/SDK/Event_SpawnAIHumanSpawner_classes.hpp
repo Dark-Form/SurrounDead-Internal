@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Narrative_classes.hpp"
-#include "S_AISpawner_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "S_AISpawner_structs.hpp"
 #include "E_StartingAIBehaviours_structs.hpp"
 
 

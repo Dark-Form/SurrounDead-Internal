@@ -17,51 +17,59 @@
 namespace SDK
 {
 
-// Function BP_AlternatePOI.BP_AlternatePOI_C.SpawnPrefab
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorLoaded
+// (Event, Public, BlueprintEvent)
 
-void ABP_AlternatePOI_C::SpawnPrefab()
+void ABP_AlternatePOI_C::ActorLoaded()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "SpawnPrefab");
+		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorLoaded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorPreLoad
+// (Event, Public, BlueprintEvent)
 
-void ABP_AlternatePOI_C::ReceiveBeginPlay()
+void ABP_AlternatePOI_C::ActorPreLoad()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorPreLoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ExecuteUbergraph_BP_AlternatePOI
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
 
-void ABP_AlternatePOI_C::ExecuteUbergraph_BP_AlternatePOI(int32 EntryPoint)
+void ABP_AlternatePOI_C::ActorPreSave()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "ExecuteUbergraph_BP_AlternatePOI");
+		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorPreSave");
 
-	Params::BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorSaved
+// (Event, Public, BlueprintEvent)
+
+void ABP_AlternatePOI_C::ActorSaved()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorSaved");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -86,57 +94,49 @@ void ABP_AlternatePOI_C::ComponentsToSave(TArray<class UActorComponent*>* Compon
 }
 
 
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorSaved
-// (Event, Public, BlueprintEvent)
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ExecuteUbergraph_BP_AlternatePOI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AlternatePOI_C::ActorSaved()
+void ABP_AlternatePOI_C::ExecuteUbergraph_BP_AlternatePOI(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorSaved");
+		Func = Class->GetFunction("BP_AlternatePOI_C", "ExecuteUbergraph_BP_AlternatePOI");
+
+	Params::BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_AlternatePOI_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AlternatePOI_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
+// Function BP_AlternatePOI.BP_AlternatePOI_C.SpawnPrefab
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_AlternatePOI_C::ActorPreSave()
+void ABP_AlternatePOI_C::SpawnPrefab()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorPreSave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorPreLoad
-// (Event, Public, BlueprintEvent)
-
-void ABP_AlternatePOI_C::ActorPreLoad()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorPreLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ActorLoaded
-// (Event, Public, BlueprintEvent)
-
-void ABP_AlternatePOI_C::ActorLoaded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AlternatePOI_C", "ActorLoaded");
+		Func = Class->GetFunction("BP_AlternatePOI_C", "SpawnPrefab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

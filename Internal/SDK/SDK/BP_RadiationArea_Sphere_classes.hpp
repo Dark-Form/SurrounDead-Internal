@@ -43,16 +43,16 @@ public:
 	float                                         ParticlesMaxHeight;                                // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void InRadArea(class AActor* Actor, bool InRadArea_0);
-	void ExecuteUbergraph_BP_RadiationArea_Sphere(int32 EntryPoint);
-	void Event_Respawn();
-	void Event_Overlap();
-	void Event_ExitedRadZone(class AActor* Actor);
-	void Event_EnteredRadZone(class AActor* Actor);
-	void BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_RadiationArea_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void Event_EnteredRadZone(class AActor* Actor);
+	void Event_ExitedRadZone(class AActor* Actor);
+	void Event_Overlap();
+	void Event_Respawn();
+	void ExecuteUbergraph_BP_RadiationArea_Sphere(int32 EntryPoint);
+	void InRadArea(class AActor* Actor, bool InRadArea_0);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

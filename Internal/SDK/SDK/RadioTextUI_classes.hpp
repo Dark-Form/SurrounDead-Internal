@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Struct_Radio_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_Radio_structs.hpp"
 #include "UMG_classes.hpp"
 
 

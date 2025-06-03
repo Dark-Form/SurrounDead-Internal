@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function SC_MedicalBag.SC_MedicalBag_C.PreInitSpecialContainer
-// (BlueprintCallable, BlueprintEvent)
-
-void USC_MedicalBag_C::PreInitSpecialContainer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SC_MedicalBag_C", "PreInitSpecialContainer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SC_MedicalBag.SC_MedicalBag_C.ExecuteUbergraph_SC_MedicalBag
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -48,6 +34,20 @@ void USC_MedicalBag_C::ExecuteUbergraph_SC_MedicalBag(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SC_MedicalBag.SC_MedicalBag_C.PreInitSpecialContainer
+// (BlueprintCallable, BlueprintEvent)
+
+void USC_MedicalBag_C::PreInitSpecialContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SC_MedicalBag_C", "PreInitSpecialContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

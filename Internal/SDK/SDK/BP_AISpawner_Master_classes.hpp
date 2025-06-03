@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Enum_AIBehviour_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AIOptimizer_structs.hpp"
-#include "BP_MasterObject_classes.hpp"
 #include "Enum_SpawnType_structs.hpp"
+#include "Enum_AIBehviour_structs.hpp"
+#include "BP_MasterObject_classes.hpp"
 
 
 namespace SDK

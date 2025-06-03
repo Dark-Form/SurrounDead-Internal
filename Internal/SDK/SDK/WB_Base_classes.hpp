@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
+#include "EProgressMethod_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
-#include "EProgressMethod_structs.hpp"
-#include "EGradientTypes_structs.hpp"
 #include "Slate_structs.hpp"
+#include "EGradientTypes_structs.hpp"
 #include "EMarqueeMask_structs.hpp"
 
 

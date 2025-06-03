@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "AnimBP_ZombieBossBrute_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "PhysicsCore_structs.hpp"
-#include "AnimBP_ZombieBossBrute_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK

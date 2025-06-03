@@ -17,220 +17,107 @@
 namespace SDK
 {
 
-// Function Dresser_Widget.Dresser_Widget_C.SetItemReference
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function Dresser_Widget.Dresser_Widget_C.ExecuteUbergraph_Dresser_Widget
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UJSI_Slot_C*                      ItemRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDresser_Widget_C::SetItemReference(class UJSI_Slot_C* ItemRef)
+void UDresser_Widget_C::ExecuteUbergraph_Dresser_Widget(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "SetItemReference");
+		Func = Class->GetFunction("Dresser_Widget_C", "ExecuteUbergraph_Dresser_Widget");
 
-	Params::Dresser_Widget_C_SetItemReference Parms{};
+	Params::Dresser_Widget_C_ExecuteUbergraph_Dresser_Widget Parms{};
 
-	Parms.ItemRef = ItemRef;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.SetInspectorRef
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UBP_InspectorWindowWidget_C*      Inspector                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UDresser_Widget_C::SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "SetInspectorRef");
-
-	Params::Dresser_Widget_C_SetInspectorRef Parms{};
-
-	Parms.Inspector = Inspector;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Dresser_Widget.Dresser_Widget_C.SetActorOwner
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UDresser_Widget_C::SetActorOwner(class AActor* ActorRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "SetActorOwner");
-
-	Params::Dresser_Widget_C_SetActorOwner Parms{};
-
-	Parms.ActorRef = ActorRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Dresser_Widget.Dresser_Widget_C.SetActionbarFollower
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UJSI_Slot_C*                      JigRef                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UDresser_Widget_C::SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "SetActionbarFollower");
-
-	Params::Dresser_Widget_C_SetActionbarFollower Parms{};
-
-	Parms.JigRef = JigRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
-}
-
-
-// Function Dresser_Widget.Dresser_Widget_C.OnCreatedFromUtility
+// Function Dresser_Widget.Dresser_Widget_C.ForceInitSpecialcontainer
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UDresser_Widget_C::OnCreatedFromUtility()
+void UDresser_Widget_C::ForceInitSpecialcontainer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "OnCreatedFromUtility");
+		Func = Class->GetFunction("Dresser_Widget_C", "ForceInitSpecialcontainer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.JSIOnWeightUpdated
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  NewWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UDresser_Widget_C::JSIOnWeightUpdated(double NewWeight)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "JSIOnWeightUpdated");
-
-	Params::Dresser_Widget_C_JSIOnWeightUpdated Parms{};
-
-	Parms.NewWeight = NewWeight;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Dresser_Widget.Dresser_Widget_C.JSICheckStatus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UDresser_Widget_C::JSICheckStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "JSICheckStatus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Dresser_Widget.Dresser_Widget_C.JigSetLootContent
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const class FText&                      Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UDresser_Widget_C::JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "JigSetLootContent");
-
-	Params::Dresser_Widget_C_JigSetLootContent Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Name_0 = std::move(Name_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Dresser_Widget.Dresser_Widget_C.GetValidReloadContainers
+// Function Dresser_Widget.Dresser_Widget_C.GetAllAttachments
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+// TArray<class FName>*                    Attachments                                            (Parm, OutParm)
 
-void UDresser_Widget_C::GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers)
+void UDresser_Widget_C::GetAllAttachments(TArray<class FName>* Attachments)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "GetValidReloadContainers");
+		Func = Class->GetFunction("Dresser_Widget_C", "GetAllAttachments");
 
-	Params::Dresser_Widget_C_GetValidReloadContainers Parms{};
+	Params::Dresser_Widget_C_GetAllAttachments Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
+	if (Attachments != nullptr)
+		*Attachments = std::move(Parms.Attachments);
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.GetLootContent
+// Function Dresser_Widget.Dresser_Widget_C.GetContainerByAttachmentType
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 JigContainer                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  ContainerIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDresser_Widget_C::GetLootContent(class UUserWidget** Widget)
+void UDresser_Widget_C::GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "GetLootContent");
+		Func = Class->GetFunction("Dresser_Widget_C", "GetContainerByAttachmentType");
 
-	Params::Dresser_Widget_C_GetLootContent Parms{};
+	Params::Dresser_Widget_C_GetContainerByAttachmentType Parms{};
+
+	Parms.Type = std::move(Type);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
+	if (JigContainer != nullptr)
+		*JigContainer = Parms.JigContainer;
+
+	if (ContainerIndex != nullptr)
+		*ContainerIndex = Parms.ContainerIndex;
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.GetListOfNonAddContainers
+// Function Dresser_Widget.Dresser_Widget_C.GetDropWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+// class UDropItemBackGwidget_C**          DropWRef                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UDresser_Widget_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
+void UDresser_Widget_C::GetDropWidget(class UDropItemBackGwidget_C** DropWRef)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "GetListOfNonAddContainers");
+		Func = Class->GetFunction("Dresser_Widget_C", "GetDropWidget");
 
-	Params::Dresser_Widget_C_GetListOfNonAddContainers Parms{};
+	Params::Dresser_Widget_C_GetDropWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
+	if (DropWRef != nullptr)
+		*DropWRef = Parms.DropWRef;
 }
 
 
@@ -266,105 +153,218 @@ void UDresser_Widget_C::GetJSIContainerByPlayerSlots(const struct FGameplayTag& 
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.GetDropWidget
+// Function Dresser_Widget.Dresser_Widget_C.GetListOfNonAddContainers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UDropItemBackGwidget_C**          DropWRef                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
 
-void UDresser_Widget_C::GetDropWidget(class UDropItemBackGwidget_C** DropWRef)
+void UDresser_Widget_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "GetDropWidget");
+		Func = Class->GetFunction("Dresser_Widget_C", "GetListOfNonAddContainers");
 
-	Params::Dresser_Widget_C_GetDropWidget Parms{};
+	Params::Dresser_Widget_C_GetListOfNonAddContainers Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (DropWRef != nullptr)
-		*DropWRef = Parms.DropWRef;
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.GetContainerByAttachmentType
+// Function Dresser_Widget.Dresser_Widget_C.GetLootContent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGameplayTag&              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 JigContainer                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32*                                  ContainerIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UDresser_Widget_C::GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex)
+void UDresser_Widget_C::GetLootContent(class UUserWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "GetContainerByAttachmentType");
+		Func = Class->GetFunction("Dresser_Widget_C", "GetLootContent");
 
-	Params::Dresser_Widget_C_GetContainerByAttachmentType Parms{};
-
-	Parms.Type = std::move(Type);
+	Params::Dresser_Widget_C_GetLootContent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (JigContainer != nullptr)
-		*JigContainer = Parms.JigContainer;
-
-	if (ContainerIndex != nullptr)
-		*ContainerIndex = Parms.ContainerIndex;
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.GetAllAttachments
+// Function Dresser_Widget.Dresser_Widget_C.GetValidReloadContainers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FName>*                    Attachments                                            (Parm, OutParm)
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
 
-void UDresser_Widget_C::GetAllAttachments(TArray<class FName>* Attachments)
+void UDresser_Widget_C::GetValidReloadContainers(TArray<class UJSIContainer_C*>* Containers)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "GetAllAttachments");
+		Func = Class->GetFunction("Dresser_Widget_C", "GetValidReloadContainers");
 
-	Params::Dresser_Widget_C_GetAllAttachments Parms{};
+	Params::Dresser_Widget_C_GetValidReloadContainers Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Attachments != nullptr)
-		*Attachments = std::move(Parms.Attachments);
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.ForceInitSpecialcontainer
+// Function Dresser_Widget.Dresser_Widget_C.JigSetLootContent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UDresser_Widget_C::JigSetLootContent(class UUserWidget* Widget, const class FText& Name_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Dresser_Widget_C", "JigSetLootContent");
+
+	Params::Dresser_Widget_C_JigSetLootContent Parms{};
+
+	Parms.Widget = Widget;
+	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Dresser_Widget.Dresser_Widget_C.JSICheckStatus
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UDresser_Widget_C::ForceInitSpecialcontainer()
+void UDresser_Widget_C::JSICheckStatus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "ForceInitSpecialcontainer");
+		Func = Class->GetFunction("Dresser_Widget_C", "JSICheckStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Dresser_Widget.Dresser_Widget_C.ExecuteUbergraph_Dresser_Widget
-// (Final, UbergraphFunction, HasDefaults)
+// Function Dresser_Widget.Dresser_Widget_C.JSIOnWeightUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  NewWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDresser_Widget_C::ExecuteUbergraph_Dresser_Widget(int32 EntryPoint)
+void UDresser_Widget_C::JSIOnWeightUpdated(double NewWeight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Dresser_Widget_C", "ExecuteUbergraph_Dresser_Widget");
+		Func = Class->GetFunction("Dresser_Widget_C", "JSIOnWeightUpdated");
 
-	Params::Dresser_Widget_C_ExecuteUbergraph_Dresser_Widget Parms{};
+	Params::Dresser_Widget_C_JSIOnWeightUpdated Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewWeight = NewWeight;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Dresser_Widget.Dresser_Widget_C.OnCreatedFromUtility
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UDresser_Widget_C::OnCreatedFromUtility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Dresser_Widget_C", "OnCreatedFromUtility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Dresser_Widget.Dresser_Widget_C.SetActionbarFollower
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UJSI_Slot_C*                      JigRef                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UDresser_Widget_C::SetActionbarFollower(class UJSI_Slot_C* JigRef, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Dresser_Widget_C", "SetActionbarFollower");
+
+	Params::Dresser_Widget_C_SetActionbarFollower Parms{};
+
+	Parms.JigRef = JigRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
+}
+
+
+// Function Dresser_Widget.Dresser_Widget_C.SetActorOwner
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           ActorRef                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UDresser_Widget_C::SetActorOwner(class AActor* ActorRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Dresser_Widget_C", "SetActorOwner");
+
+	Params::Dresser_Widget_C_SetActorOwner Parms{};
+
+	Parms.ActorRef = ActorRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Dresser_Widget.Dresser_Widget_C.SetInspectorRef
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UBP_InspectorWindowWidget_C*      Inspector                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UDresser_Widget_C::SetInspectorRef(class UBP_InspectorWindowWidget_C* Inspector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Dresser_Widget_C", "SetInspectorRef");
+
+	Params::Dresser_Widget_C_SetInspectorRef Parms{};
+
+	Parms.Inspector = Inspector;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Dresser_Widget.Dresser_Widget_C.SetItemReference
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UJSI_Slot_C*                      ItemRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UDresser_Widget_C::SetItemReference(class UJSI_Slot_C* ItemRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Dresser_Widget_C", "SetItemReference");
+
+	Params::Dresser_Widget_C_SetItemReference Parms{};
+
+	Parms.ItemRef = ItemRef;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

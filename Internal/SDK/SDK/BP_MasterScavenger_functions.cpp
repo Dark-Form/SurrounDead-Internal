@@ -17,351 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MasterScavenger.BP_MasterScavenger_C.AddMarker
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidgetComponent*                 Marker_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::AddMarker(class UWidgetComponent* Marker_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "AddMarker");
-
-	Params::BP_MasterScavenger_C_AddMarker Parms{};
-
-	Parms.Marker_0 = Marker_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.Event_Marker
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::Event_Marker()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "Event_Marker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.IsAIBurning?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   IsBurning_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::IsAIBurning_(bool* IsBurning_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "IsAIBurning?");
-
-	Params::BP_MasterScavenger_C_IsAIBurning_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsBurning_ != nullptr)
-		*IsBurning_ = Parms.IsBurning_;
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.StopBurning
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::StopBurning()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "StopBurning");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetWeapons
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::SetWeapons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "SetWeapons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetPickupCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::SetPickupCount(int32 NewCount, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "SetPickupCount");
-
-	Params::BP_MasterScavenger_C_SetPickupCount Parms{};
-
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetMeshAndMaterial
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::SetMeshAndMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "SetMeshAndMaterial");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractOption
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::SetInteractOption(const struct FGameplayTag& Option)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "SetInteractOption");
-
-	Params::BP_MasterScavenger_C_SetInteractOption Parms{};
-
-	Parms.Option = std::move(Option);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractDistance
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::SetInteractDistance(class AActor* Target)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "SetInteractDistance");
-
-	Params::BP_MasterScavenger_C_SetInteractDistance Parms{};
-
-	Parms.Target = Target;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.SetBurning
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Burning_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::SetBurning(bool Burning_, double Dmg, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "SetBurning");
-
-	Params::BP_MasterScavenger_C_SetBurning Parms{};
-
-	Parms.Burning_ = Burning_;
-	Parms.Dmg = Dmg;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MasterScavenger_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.ReceiveAnyDamage
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "ReceiveAnyDamage");
-
-	Params::BP_MasterScavenger_C_ReceiveAnyDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.PickupBuildFromGround
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::PickupBuildFromGround()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "PickupBuildFromGround");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OverrideName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    Param_Name_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::OverrideName(const class FString& Param_Name_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "OverrideName");
-
-	Params::BP_MasterScavenger_C_OverrideName Parms{};
-
-	Parms.Param_Name_0 = std::move(Param_Name_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OnStopExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::OnStopExecuteInteract(class AActor* InteractingActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "OnStopExecuteInteract");
-
-	Params::BP_MasterScavenger_C_OnStopExecuteInteract Parms{};
-
-	Parms.InteractingActor = InteractingActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OnServerExecuteInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "OnServerExecuteInteract");
-
-	Params::BP_MasterScavenger_C_OnServerExecuteInteract Parms{};
-
-	Parms.Option = std::move(Option);
-	Parms.ByActor = ByActor;
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.OnRequestServerInteract
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "OnRequestServerInteract");
-
-	Params::BP_MasterScavenger_C_OnRequestServerInteract Parms{};
-
-	Parms.Actor = Actor;
-	Parms.Option = std::move(Option);
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
 // Function BP_MasterScavenger.BP_MasterScavenger_C.OnExecuteInteractEnded
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -912,6 +567,27 @@ void ABP_MasterScavenger_C::JigCanInteract(bool* Result)
 }
 
 
+// Function BP_MasterScavenger.BP_MasterScavenger_C.IsAIBurning?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   IsBurning_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::IsAIBurning_(bool* IsBurning_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "IsAIBurning?");
+
+	Params::BP_MasterScavenger_C_IsAIBurning_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsBurning_ != nullptr)
+		*IsBurning_ = Parms.IsBurning_;
+}
+
+
 // Function BP_MasterScavenger.BP_MasterScavenger_C.HitByVehicle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -951,163 +627,6 @@ void ABP_MasterScavenger_C::HealthMultiplier(float NewValue)
 	Parms.NewValue = NewValue;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.Event_Fire
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::Event_Fire()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "Event_Fire");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.Death
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::Death(class AActor* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "Death");
-
-	Params::BP_MasterScavenger_C_Death Parms{};
-
-	Parms.Player = Player;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.CheckDistanceFromActor
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::CheckDistanceFromActor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "CheckDistanceFromActor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.CanStompAI?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Stomp_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::CanStompAI_(bool* Stomp_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "CanStompAI?");
-
-	Params::BP_MasterScavenger_C_CanStompAI_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Stomp_ != nullptr)
-		*Stomp_ = Parms.Stomp_;
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.CanAddMarkerToAI?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   CanAdd_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::CanAddMarkerToAI_(bool* CanAdd_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "CanAddMarkerToAI?");
-
-	Params::BP_MasterScavenger_C_CanAddMarkerToAI_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CanAdd_ != nullptr)
-		*CanAdd_ = Parms.CanAdd_;
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-
-	Params::BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.AIHealthBarInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Visible_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString*                          Param_Name_0                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-// bool*                                   Boss_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MasterScavenger_C::AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "AIHealthBarInfo");
-
-	Params::BP_MasterScavenger_C_AIHealthBarInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Visible_ != nullptr)
-		*Visible_ = Parms.Visible_;
-
-	if (Param_Name_0 != nullptr)
-		*Param_Name_0 = std::move(Parms.Param_Name_0);
-
-	if (Boss_ != nullptr)
-		*Boss_ = Parms.Boss_;
-}
-
-
-// Function BP_MasterScavenger.BP_MasterScavenger_C.AI_Health
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MasterScavenger_C::AI_Health()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MasterScavenger_C", "AI_Health");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -1303,6 +822,487 @@ void ABP_MasterScavenger_C::ExecuteUbergraph_BP_MasterScavenger(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.Event_Marker
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::Event_Marker()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "Event_Marker");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.Event_Fire
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::Event_Fire()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "Event_Fire");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.Death
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::Death(class AActor* Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "Death");
+
+	Params::BP_MasterScavenger_C_Death Parms{};
+
+	Parms.Player = Player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.CheckDistanceFromActor
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::CheckDistanceFromActor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "CheckDistanceFromActor");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.CanStompAI?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Stomp_                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::CanStompAI_(bool* Stomp_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "CanStompAI?");
+
+	Params::BP_MasterScavenger_C_CanStompAI_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Stomp_ != nullptr)
+		*Stomp_ = Parms.Stomp_;
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.CanAddMarkerToAI?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   CanAdd_                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::CanAddMarkerToAI_(bool* CanAdd_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "CanAddMarkerToAI?");
+
+	Params::BP_MasterScavenger_C_CanAddMarkerToAI_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CanAdd_ != nullptr)
+		*CanAdd_ = Parms.CanAdd_;
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+
+	Params::BP_MasterScavenger_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.AIHealthBarInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Visible_                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString*                          Param_Name_0                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// bool*                                   Boss_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "AIHealthBarInfo");
+
+	Params::BP_MasterScavenger_C_AIHealthBarInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Visible_ != nullptr)
+		*Visible_ = Parms.Visible_;
+
+	if (Param_Name_0 != nullptr)
+		*Param_Name_0 = std::move(Parms.Param_Name_0);
+
+	if (Boss_ != nullptr)
+		*Boss_ = Parms.Boss_;
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.AI_Health
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::AI_Health()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "AI_Health");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.AddMarker
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetComponent*                 Marker_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::AddMarker(class UWidgetComponent* Marker_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "AddMarker");
+
+	Params::BP_MasterScavenger_C_AddMarker Parms{};
+
+	Parms.Marker_0 = Marker_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OnRequestServerInteract
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::OnRequestServerInteract(class AActor* Actor, const struct FGameplayTag& Option, const struct FS_JigPayload& Payload, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "OnRequestServerInteract");
+
+	Params::BP_MasterScavenger_C_OnRequestServerInteract Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Option = std::move(Option);
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OnServerExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           ByActor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FS_JigPayload&             Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::OnServerExecuteInteract(const struct FGameplayTag& Option, class AActor* ByActor, const struct FS_JigPayload& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "OnServerExecuteInteract");
+
+	Params::BP_MasterScavenger_C_OnServerExecuteInteract Parms{};
+
+	Parms.Option = std::move(Option);
+	Parms.ByActor = ByActor;
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OnStopExecuteInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           InteractingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::OnStopExecuteInteract(class AActor* InteractingActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "OnStopExecuteInteract");
+
+	Params::BP_MasterScavenger_C_OnStopExecuteInteract Parms{};
+
+	Parms.InteractingActor = InteractingActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.OverrideName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Param_Name_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::OverrideName(const class FString& Param_Name_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "OverrideName");
+
+	Params::BP_MasterScavenger_C_OverrideName Parms{};
+
+	Parms.Param_Name_0 = std::move(Param_Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.PickupBuildFromGround
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::PickupBuildFromGround()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "PickupBuildFromGround");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.ReceiveAnyDamage
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "ReceiveAnyDamage");
+
+	Params::BP_MasterScavenger_C_ReceiveAnyDamage Parms{};
+
+	Parms.Damage = Damage;
+	Parms.DamageType = DamageType;
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MasterScavenger_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetBurning
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Burning_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Dmg                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::SetBurning(bool Burning_, double Dmg, class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "SetBurning");
+
+	Params::BP_MasterScavenger_C_SetBurning Parms{};
+
+	Parms.Burning_ = Burning_;
+	Parms.Dmg = Dmg;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractDistance
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::SetInteractDistance(class AActor* Target)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "SetInteractDistance");
+
+	Params::BP_MasterScavenger_C_SetInteractDistance Parms{};
+
+	Parms.Target = Target;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetInteractOption
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Option                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::SetInteractOption(const struct FGameplayTag& Option)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "SetInteractOption");
+
+	Params::BP_MasterScavenger_C_SetInteractOption Parms{};
+
+	Parms.Option = std::move(Option);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetMeshAndMaterial
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::SetMeshAndMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "SetMeshAndMaterial");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetPickupCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MasterScavenger_C::SetPickupCount(int32 NewCount, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "SetPickupCount");
+
+	Params::BP_MasterScavenger_C_SetPickupCount Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.SetWeapons
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::SetWeapons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "SetWeapons");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.StopBurning
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::StopBurning()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "StopBurning");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MasterScavenger.BP_MasterScavenger_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_MasterScavenger_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MasterScavenger_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

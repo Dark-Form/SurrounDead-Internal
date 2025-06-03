@@ -12,20 +12,20 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "S_RoutineSettings_structs.hpp"
 #include "E_BlockType_structs.hpp"
-#include "E_StartingAIBehaviours_structs.hpp"
+#include "S_GenericAISettings_structs.hpp"
+#include "E_AIBehaviour_structs.hpp"
 #include "S_AIOptimization_structs.hpp"
 #include "S_ReactedActors_structs.hpp"
-#include "E_AIBehaviour_structs.hpp"
+#include "E_StartingAIBehaviours_structs.hpp"
+#include "S_RoutineSettings_structs.hpp"
 #include "S_ReactSettings_structs.hpp"
 #include "S_GeneralSettings_structs.hpp"
-#include "S_GenericAISettings_structs.hpp"
 #include "S_AttachedHoldables_structs.hpp"
 #include "S_EmoteAnimations_structs.hpp"
 #include "S_TriggerResponse_structs.hpp"
-#include "E_HitboxTypeAI_structs.hpp"
 #include "AIModule_structs.hpp"
+#include "E_HitboxTypeAI_structs.hpp"
 #include "S_MeleeAnimations_structs.hpp"
 #include "S_ClimbAnims_structs.hpp"
 
@@ -1014,7 +1014,7 @@ struct BP_SmartAIComponent_C_Check_Attached_Holdables final
 {
 public:
 	class UClass*                                 Holdable_Class;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_AIWeapon_Master_C*                  Holdable;                                          // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_AIWeapon_Master_C*                  Holdable_L;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
@@ -1037,7 +1037,7 @@ public:
 static_assert(alignof(BP_SmartAIComponent_C_Check_Attached_Holdables) == 0x000008, "Wrong alignment on BP_SmartAIComponent_C_Check_Attached_Holdables");
 static_assert(sizeof(BP_SmartAIComponent_C_Check_Attached_Holdables) == 0x000060, "Wrong size on BP_SmartAIComponent_C_Check_Attached_Holdables");
 static_assert(offsetof(BP_SmartAIComponent_C_Check_Attached_Holdables, Holdable_Class) == 0x000000, "Member 'BP_SmartAIComponent_C_Check_Attached_Holdables::Holdable_Class' has a wrong offset!");
-static_assert(offsetof(BP_SmartAIComponent_C_Check_Attached_Holdables, Return_Value) == 0x000008, "Member 'BP_SmartAIComponent_C_Check_Attached_Holdables::Return_Value' has a wrong offset!");
+static_assert(offsetof(BP_SmartAIComponent_C_Check_Attached_Holdables, Return_value) == 0x000008, "Member 'BP_SmartAIComponent_C_Check_Attached_Holdables::Return_value' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Check_Attached_Holdables, Holdable) == 0x000010, "Member 'BP_SmartAIComponent_C_Check_Attached_Holdables::Holdable' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Check_Attached_Holdables, Holdable_L) == 0x000018, "Member 'BP_SmartAIComponent_C_Check_Attached_Holdables::Holdable_L' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Check_Attached_Holdables, Return_Value_L) == 0x000020, "Member 'BP_SmartAIComponent_C_Check_Attached_Holdables::Return_Value_L' has a wrong offset!");
@@ -4039,7 +4039,7 @@ public:
 	double                                        Down_Distance;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Trace_Towards;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit_Result;                                        // 0x0028(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          Return_Value;                                      // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0110(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0118(0x0010)(ConstParm, ReferenceParm)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0128(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4061,7 +4061,7 @@ static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Forward_Distance) ==
 static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Down_Distance) == 0x000008, "Member 'BP_SmartAIComponent_C_Forward_Check::Down_Distance' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Trace_Towards) == 0x000010, "Member 'BP_SmartAIComponent_C_Forward_Check::Trace_Towards' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Hit_Result) == 0x000028, "Member 'BP_SmartAIComponent_C_Forward_Check::Hit_Result' has a wrong offset!");
-static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Return_Value) == 0x000110, "Member 'BP_SmartAIComponent_C_Forward_Check::Return_Value' has a wrong offset!");
+static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Return_value) == 0x000110, "Member 'BP_SmartAIComponent_C_Forward_Check::Return_value' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, Temp_object_Variable) == 0x000118, "Member 'BP_SmartAIComponent_C_Forward_Check::Temp_object_Variable' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, CallFunc_MakeVector_ReturnValue) == 0x000128, "Member 'BP_SmartAIComponent_C_Forward_Check::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Forward_Check, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000140, "Member 'BP_SmartAIComponent_C_Forward_Check::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
@@ -5005,7 +5005,7 @@ struct BP_SmartAIComponent_C_Random_IP final
 {
 public:
 	class ABP_MasterInteractionPoint_C*           Last_Interaction_Point;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MasterInteractionPoint_C*           Interaction_Point_0;                               // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          Tag_Found_L;                                       // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -5077,7 +5077,7 @@ public:
 static_assert(alignof(BP_SmartAIComponent_C_Random_IP) == 0x000008, "Wrong alignment on BP_SmartAIComponent_C_Random_IP");
 static_assert(sizeof(BP_SmartAIComponent_C_Random_IP) == 0x0001C0, "Wrong size on BP_SmartAIComponent_C_Random_IP");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_IP, Last_Interaction_Point) == 0x000000, "Member 'BP_SmartAIComponent_C_Random_IP::Last_Interaction_Point' has a wrong offset!");
-static_assert(offsetof(BP_SmartAIComponent_C_Random_IP, Return_Value) == 0x000008, "Member 'BP_SmartAIComponent_C_Random_IP::Return_Value' has a wrong offset!");
+static_assert(offsetof(BP_SmartAIComponent_C_Random_IP, Return_value) == 0x000008, "Member 'BP_SmartAIComponent_C_Random_IP::Return_value' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_IP, Interaction_Point_0) == 0x000010, "Member 'BP_SmartAIComponent_C_Random_IP::Interaction_Point_0' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_IP, Tag_Found_L) == 0x000018, "Member 'BP_SmartAIComponent_C_Random_IP::Tag_Found_L' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_IP, Array_Element_L) == 0x000020, "Member 'BP_SmartAIComponent_C_Random_IP::Array_Element_L' has a wrong offset!");
@@ -5138,7 +5138,7 @@ struct BP_SmartAIComponent_C_Random_Specified_IP final
 {
 public:
 	class ABP_MasterInteractionPoint_C*           Last_Interaction_Point;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Return_Value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MasterInteractionPoint_C*           Interaction_Point_0;                               // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABP_MasterInteractionPoint_C*>   Temp_Interaction_Points_L;                         // 0x0018(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
@@ -5179,7 +5179,7 @@ public:
 static_assert(alignof(BP_SmartAIComponent_C_Random_Specified_IP) == 0x000008, "Wrong alignment on BP_SmartAIComponent_C_Random_Specified_IP");
 static_assert(sizeof(BP_SmartAIComponent_C_Random_Specified_IP) == 0x000118, "Wrong size on BP_SmartAIComponent_C_Random_Specified_IP");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_Specified_IP, Last_Interaction_Point) == 0x000000, "Member 'BP_SmartAIComponent_C_Random_Specified_IP::Last_Interaction_Point' has a wrong offset!");
-static_assert(offsetof(BP_SmartAIComponent_C_Random_Specified_IP, Return_Value) == 0x000008, "Member 'BP_SmartAIComponent_C_Random_Specified_IP::Return_Value' has a wrong offset!");
+static_assert(offsetof(BP_SmartAIComponent_C_Random_Specified_IP, Return_value) == 0x000008, "Member 'BP_SmartAIComponent_C_Random_Specified_IP::Return_value' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_Specified_IP, Interaction_Point_0) == 0x000010, "Member 'BP_SmartAIComponent_C_Random_Specified_IP::Interaction_Point_0' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_Specified_IP, Temp_Interaction_Points_L) == 0x000018, "Member 'BP_SmartAIComponent_C_Random_Specified_IP::Temp_Interaction_Points_L' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Random_Specified_IP, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'BP_SmartAIComponent_C_Random_Specified_IP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
@@ -7140,7 +7140,7 @@ struct BP_SmartAIComponent_C_Tag_Check final
 public:
 	TArray<class FName>                           Tags_1;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	TArray<class FName>                           Tags_2;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          Return_Value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Found_Tag;                                         // 0x0024(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Tag_Name_L;                                        // 0x002C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -7168,7 +7168,7 @@ static_assert(alignof(BP_SmartAIComponent_C_Tag_Check) == 0x000008, "Wrong align
 static_assert(sizeof(BP_SmartAIComponent_C_Tag_Check) == 0x000068, "Wrong size on BP_SmartAIComponent_C_Tag_Check");
 static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Tags_1) == 0x000000, "Member 'BP_SmartAIComponent_C_Tag_Check::Tags_1' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Tags_2) == 0x000010, "Member 'BP_SmartAIComponent_C_Tag_Check::Tags_2' has a wrong offset!");
-static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Return_Value) == 0x000020, "Member 'BP_SmartAIComponent_C_Tag_Check::Return_Value' has a wrong offset!");
+static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Return_value) == 0x000020, "Member 'BP_SmartAIComponent_C_Tag_Check::Return_value' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Found_Tag) == 0x000024, "Member 'BP_SmartAIComponent_C_Tag_Check::Found_Tag' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Tag_Name_L) == 0x00002C, "Member 'BP_SmartAIComponent_C_Tag_Check::Tag_Name_L' has a wrong offset!");
 static_assert(offsetof(BP_SmartAIComponent_C_Tag_Check, Tag_Found_L) == 0x000034, "Member 'BP_SmartAIComponent_C_Tag_Check::Tag_Found_L' has a wrong offset!");

@@ -13,12 +13,12 @@
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "S_AIAnims_structs.hpp"
-#include "PhysicsCore_structs.hpp"
-#include "AnimBP_WanderingTraderAI_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
+#include "AnimBP_WanderingTraderAI_structs.hpp"
+#include "S_AIAnims_structs.hpp"
 #include "E_BlockType_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 
 
 namespace SDK
@@ -184,44 +184,44 @@ public:
 public:
 	void Actor_Attack_Target(class AActor** Attack_Target);
 	void Actor_Aim_Focus(class AActor* Instigator);
-	void Turret_Start_Reload();
-	void Turret_Idle_Stop();
-	void Turret_Idle_Start();
-	void Turret_End_Reload();
-	void Turret_Destroyed_Effect();
-	void Return_Current_Behaviour(E_AIBehaviour* New_Behaviour);
-	void Return_Combat_Stance_Anims(bool* Use_Combat_Stance, struct FS_AIAnims* AI_Animation);
-	void Return_Behaviour_Anims(const struct FS_AllAIAnims& All_Anims, E_AIBehaviour Behaviour, struct FS_AIAnims* Anims);
-	void Reinitialize_Animation();
-	void HeadRotation(double Right, double Down, double InterpSpeed);
-	void ExecuteUbergraph_AnimBP_WanderingTraderAI(int32 EntryPoint);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_EC11D28240B314E36FFB838D9661E62F();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_90EAB0B940FCAB6456A8C683505724EA();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_573D05DB47B4947454AB8D81E4EF4708();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_386A64C04F4AFB36F7841793639BA881();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void BlueprintInitializeAnimation();
-	void AnimNotify_Unequip();
-	void AnimNotify_Unblock_Attack();
-	void AnimNotify_Jump_End();
-	void AnimNotify_JogStart();
-	void AnimNotify_IdleStart();
-	void AnimNotify_Footstep();
-	void AnimNotify_Equip();
-	void AnimNotify_DeactiveMeleeDetect();
-	void AnimNotify_Block_Attack();
-	void AnimNotify_Begin_Jump_End();
-	void AnimNotify_AI_Reload();
-	void AnimNotify_ActiveMeleeDetect();
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
-	void AI_End_Alert();
-	void AI_Dead();
-	void AI_Can_Interact_(bool* Can_Interact);
-	void AI_Camera_Activate(bool Activate);
-	void AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
-	void AI_Animation_Switch(E_AIBehaviour Behaviour);
 	void AI_Alert(class AActor* Alert_Actor);
+	void AI_Animation_Switch(E_AIBehaviour Behaviour);
+	void AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker);
+	void AI_Camera_Activate(bool Activate);
+	void AI_Can_Interact_(bool* Can_Interact);
+	void AI_Dead();
+	void AI_End_Alert();
+	void Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimNotify_ActiveMeleeDetect();
+	void AnimNotify_AI_Reload();
+	void AnimNotify_Begin_Jump_End();
+	void AnimNotify_Block_Attack();
+	void AnimNotify_DeactiveMeleeDetect();
+	void AnimNotify_Equip();
+	void AnimNotify_Footstep();
+	void AnimNotify_IdleStart();
+	void AnimNotify_JogStart();
+	void AnimNotify_Jump_End();
+	void AnimNotify_Unblock_Attack();
+	void AnimNotify_Unequip();
+	void BlueprintInitializeAnimation();
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_386A64C04F4AFB36F7841793639BA881();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_573D05DB47B4947454AB8D81E4EF4708();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_90EAB0B940FCAB6456A8C683505724EA();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_AnimBP_WanderingTraderAI_AnimGraphNode_TransitionResult_EC11D28240B314E36FFB838D9661E62F();
+	void ExecuteUbergraph_AnimBP_WanderingTraderAI(int32 EntryPoint);
+	void HeadRotation(double Right, double Down, double InterpSpeed);
+	void Reinitialize_Animation();
+	void Return_Behaviour_Anims(const struct FS_AllAIAnims& All_Anims, E_AIBehaviour Behaviour, struct FS_AIAnims* Anims);
+	void Return_Combat_Stance_Anims(bool* Use_Combat_Stance, struct FS_AIAnims* AI_Animation);
+	void Return_Current_Behaviour(E_AIBehaviour* New_Behaviour);
+	void Turret_Destroyed_Effect();
+	void Turret_End_Reload();
+	void Turret_Idle_Start();
+	void Turret_Idle_Stop();
+	void Turret_Start_Reload();
 
 	void AI_Is_Dead_(bool* Dead) const;
 

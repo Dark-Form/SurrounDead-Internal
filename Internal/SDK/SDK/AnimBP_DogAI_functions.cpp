@@ -17,91 +17,6 @@
 namespace SDK
 {
 
-// Function AnimBP_DogAI.AnimBP_DogAI_C.AI Block
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_BlockType                             Block_Type                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Block_Attacker                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_DogAI_C::AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_DogAI_C", "AI Block");
-
-	Params::AnimBP_DogAI_C_AI_Block Parms{};
-
-	Parms.Block_Type = Block_Type;
-	Parms.Block_Attacker = Block_Attacker;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AnimBP_DogAI.AnimBP_DogAI_C.AI Dead
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAnimBP_DogAI_C::AI_Dead()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_DogAI_C", "AI Dead");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_DogAI.AnimBP_DogAI_C.AnimNotify_Unequip
-// (BlueprintCallable, BlueprintEvent)
-
-void UAnimBP_DogAI_C::AnimNotify_Unequip()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_DogAI_C", "AnimNotify_Unequip");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_DogAI.AnimBP_DogAI_C.BlueprintInitializeAnimation
-// (Event, Public, BlueprintEvent)
-
-void UAnimBP_DogAI_C::BlueprintInitializeAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_DogAI_C", "BlueprintInitializeAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_DogAI.AnimBP_DogAI_C.Return Current Behaviour
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_AIBehaviour*                          New_Behaviour                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_DogAI_C::Return_Current_Behaviour(E_AIBehaviour* New_Behaviour)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_DogAI_C", "Return Current Behaviour");
-
-	Params::AnimBP_DogAI_C_Return_Current_Behaviour Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (New_Behaviour != nullptr)
-		*New_Behaviour = Parms.New_Behaviour;
-}
-
-
 // Function AnimBP_DogAI.AnimBP_DogAI_C.Turret Start Reload
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -169,6 +84,27 @@ void UAnimBP_DogAI_C::Turret_Destroyed_Effect()
 		Func = Class->GetFunction("AnimBP_DogAI_C", "Turret Destroyed Effect");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_DogAI.AnimBP_DogAI_C.Return Current Behaviour
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// E_AIBehaviour*                          New_Behaviour                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_DogAI_C::Return_Current_Behaviour(E_AIBehaviour* New_Behaviour)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_DogAI_C", "Return Current Behaviour");
+
+	Params::AnimBP_DogAI_C_Return_Current_Behaviour Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (New_Behaviour != nullptr)
+		*New_Behaviour = Parms.New_Behaviour;
 }
 
 
@@ -330,6 +266,34 @@ void UAnimBP_DogAI_C::BlueprintUpdateAnimation(float DeltaTimeX)
 	Parms.DeltaTimeX = DeltaTimeX;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AnimBP_DogAI.AnimBP_DogAI_C.BlueprintInitializeAnimation
+// (Event, Public, BlueprintEvent)
+
+void UAnimBP_DogAI_C::BlueprintInitializeAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_DogAI_C", "BlueprintInitializeAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_DogAI.AnimBP_DogAI_C.AnimNotify_Unequip
+// (BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_DogAI_C::AnimNotify_Unequip()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_DogAI_C", "AnimNotify_Unequip");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -544,6 +508,20 @@ void UAnimBP_DogAI_C::AI_End_Alert()
 }
 
 
+// Function AnimBP_DogAI.AnimBP_DogAI_C.AI Dead
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_DogAI_C::AI_Dead()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_DogAI_C", "AI Dead");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AnimBP_DogAI.AnimBP_DogAI_C.AI Can Interact?
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -580,6 +558,28 @@ void UAnimBP_DogAI_C::AI_Camera_Activate(bool Activate)
 	Params::AnimBP_DogAI_C_AI_Camera_Activate Parms{};
 
 	Parms.Activate = Activate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AnimBP_DogAI.AnimBP_DogAI_C.AI Block
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// E_BlockType                             Block_Type                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Block_Attacker                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_DogAI_C::AI_Block(E_BlockType Block_Type, class AActor* Block_Attacker)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_DogAI_C", "AI Block");
+
+	Params::AnimBP_DogAI_C_AI_Block Parms{};
+
+	Parms.Block_Type = Block_Type;
+	Parms.Block_Attacker = Block_Attacker;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

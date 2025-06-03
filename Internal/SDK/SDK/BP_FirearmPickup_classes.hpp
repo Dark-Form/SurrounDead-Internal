@@ -97,6 +97,9 @@ public:
 	void Jig_SetPendingMag(class ABP_AMainLocalAttachment_C* MagRef, class UJigsawItem_DataAsset_C* DA, bool* Result);
 	void Jig_StartReloading(class UActorComponent* MPCom, class UJSIContainer_C* MagContainer, class UJSI_Slot_C* WithMag, bool* Result);
 	void Jig_ToggleAttachmentActiveState();
+	void JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result);
+	void JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result);
+	void JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result);
 	void Local_CheckCanReload(class UActorComponent* PlayerComp, const struct FGameplayTag& ActiveSlot, bool* Result, class UJSIContainer_C** ContainerMag, bool* CanChamber_, class UJSI_Slot_C** ReloadWith);
 	void Local_CheckCanReloadInternal(class UActorComponent* PlayerComp, const struct FGameplayTag& ActiveSlot, bool* Result, class UJSIContainer_C** ContainerMag, bool* CanChamber, class UJSI_Slot_C** ReloadWith);
 	void Local_StartShooting(class UBP_JigMultiplayer_C* PlayerMPComp, const struct FGameplayTag& ActiveWeapon, bool HipFire__0);
@@ -115,6 +118,7 @@ public:
 	void OnNotifyBegin_336AF8914848A4799421D89C590F8176(class FName NotifyName);
 	void OnNotifyEnd_336AF8914848A4799421D89C590F8176(class FName NotifyName);
 	void ProjectileTraceFromCamera(struct FTransform* Transform);
+	void ReceiveBeginPlay();
 	void RecoilTL__FinishedFunc();
 	void RecoilTL__UpdateFunc();
 	void ReduceDurability(bool* Reduced_);
@@ -133,10 +137,6 @@ public:
 	void UpdatePlayerPitch_Yaw(double Pitch, double Yaw);
 	void UpdateStat(const struct FGameplayTag& StatTag, double NewStatValue, bool* Updated, double* StatValue);
 	void WeaponRecoilValues(double* Vertical, double* Horizontal);
-	void JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result);
-	void JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result);
-	void JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result);
-	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

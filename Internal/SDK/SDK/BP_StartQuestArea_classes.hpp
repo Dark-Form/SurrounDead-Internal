@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_MasterQuestObject_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -29,11 +29,11 @@ public:
 	bool                                          Debug_;                                            // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_BP_StartQuestArea(int32 EntryPoint);
-	void Event_Overlap();
 	void BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void Event_Overlap();
+	void ExecuteUbergraph_BP_StartQuestArea(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

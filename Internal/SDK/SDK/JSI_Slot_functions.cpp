@@ -103,9 +103,9 @@ void UJSI_Slot_C::AdjustImageScale()
 // Function JSI_Slot.JSI_Slot_C.CanOpenSpecialContainer?
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UJSI_Slot_C::CanOpenSpecialContainer_(bool* Return_Value)
+void UJSI_Slot_C::CanOpenSpecialContainer_(bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -116,8 +116,8 @@ void UJSI_Slot_C::CanOpenSpecialContainer_(bool* Return_Value)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -499,9 +499,9 @@ void UJSI_Slot_C::GetContainerCapacity(int32* Cap, int32* MaxCapacity)
 // Function JSI_Slot.JSI_Slot_C.GetContainerOneRef
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UUserWidget**                     ContainerREF                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     ContainerRef                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UJSI_Slot_C::GetContainerOneRef(class UUserWidget** ContainerREF)
+void UJSI_Slot_C::GetContainerOneRef(class UUserWidget** ContainerRef)
 {
 	static class UFunction* Func = nullptr;
 
@@ -512,8 +512,8 @@ void UJSI_Slot_C::GetContainerOneRef(class UUserWidget** ContainerREF)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ContainerREF != nullptr)
-		*ContainerREF = Parms.ContainerREF;
+	if (ContainerRef != nullptr)
+		*ContainerRef = Parms.ContainerRef;
 }
 
 
@@ -680,20 +680,6 @@ void UJSI_Slot_C::GetDurability(double* Durability_0, double* MaxDurability)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UJSI_Slot_C::GetFreeSpace()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JSI_Slot_C", "GetFreeSpace");
-
-	Params::JSI_Slot_C_GetFreeSpace Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
 
 
 // Function JSI_Slot.JSI_Slot_C.GetHostedSlot

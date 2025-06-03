@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Actor Aim Focus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_HumanAI_C::Actor_Aim_Focus(class AActor* Instigator)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "Actor Aim Focus");
-
-	Params::AnimBP_HumanAI_C_Actor_Aim_Focus Parms{};
-
-	Parms.Instigator = Instigator;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AnimBP_HumanAI.AnimBP_HumanAI_C.Turret Start Reload
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -104,105 +84,6 @@ void UAnimBP_HumanAI_C::Turret_Destroyed_Effect()
 		Func = Class->GetFunction("AnimBP_HumanAI_C", "Turret Destroyed Effect");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_Block Attack
-// (BlueprintCallable, BlueprintEvent)
-
-void UAnimBP_HumanAI_C::AnimNotify_Block_Attack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_Block Attack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_Begin Jump End
-// (BlueprintCallable, BlueprintEvent)
-
-void UAnimBP_HumanAI_C::AnimNotify_Begin_Jump_End()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_Begin Jump End");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_AI Reload
-// (BlueprintCallable, BlueprintEvent)
-
-void UAnimBP_HumanAI_C::AnimNotify_AI_Reload()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_AI Reload");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_ActiveMeleeDetect
-// (BlueprintCallable, BlueprintEvent)
-
-void UAnimBP_HumanAI_C::AnimNotify_ActiveMeleeDetect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_ActiveMeleeDetect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
-
-void UAnimBP_HumanAI_C::AnimGraph(struct FPoseLink* AnimGraph_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimGraph");
-
-	Params::AnimBP_HumanAI_C_AnimGraph Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Alert Actor Defenders
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Attacked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Attacker                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UAnimBP_HumanAI_C::Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimBP_HumanAI_C", "Alert Actor Defenders");
-
-	Params::AnimBP_HumanAI_C_Alert_Actor_Defenders Parms{};
-
-	Parms.Attacked = Attacked;
-	Parms.Attacker = Attacker;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -514,6 +395,105 @@ void UAnimBP_HumanAI_C::AnimNotify_DeactiveMeleeDetect()
 }
 
 
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_Block Attack
+// (BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_HumanAI_C::AnimNotify_Block_Attack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_Block Attack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_Begin Jump End
+// (BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_HumanAI_C::AnimNotify_Begin_Jump_End()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_Begin Jump End");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_AI Reload
+// (BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_HumanAI_C::AnimNotify_AI_Reload()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_AI Reload");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimNotify_ActiveMeleeDetect
+// (BlueprintCallable, BlueprintEvent)
+
+void UAnimBP_HumanAI_C::AnimNotify_ActiveMeleeDetect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimNotify_ActiveMeleeDetect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+
+void UAnimBP_HumanAI_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "AnimGraph");
+
+	Params::AnimBP_HumanAI_C_AnimGraph Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Alert Actor Defenders
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Attacked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Attacker                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_HumanAI_C::Alert_Actor_Defenders(class AActor* Attacked, class AActor* Attacker)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "Alert Actor Defenders");
+
+	Params::AnimBP_HumanAI_C_Alert_Actor_Defenders Parms{};
+
+	Parms.Attacked = Attacked;
+	Parms.Attacker = Attacker;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AnimBP_HumanAI.AnimBP_HumanAI_C.AI End Alert
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -663,6 +643,26 @@ void UAnimBP_HumanAI_C::Actor_Attack_Target(class AActor** Attack_Target)
 
 	if (Attack_Target != nullptr)
 		*Attack_Target = Parms.Attack_Target;
+}
+
+
+// Function AnimBP_HumanAI.AnimBP_HumanAI_C.Actor Aim Focus
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UAnimBP_HumanAI_C::Actor_Aim_Focus(class AActor* Instigator)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimBP_HumanAI_C", "Actor Aim Focus");
+
+	Params::AnimBP_HumanAI_C_Actor_Aim_Focus Parms{};
+
+	Parms.Instigator = Instigator;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

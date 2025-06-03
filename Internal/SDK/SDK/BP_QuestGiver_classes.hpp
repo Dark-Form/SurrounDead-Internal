@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_MasterQuestObject_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -35,7 +35,7 @@ public:
 	class FString                                 InteractionArgument;                               // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void SetPickupCount(int32 NewCount, bool* Result);
 	void SetInteractOption(const struct FGameplayTag& Option);
 	void ReceiveBeginPlay();
 	void PickupBuildFromGround();
@@ -45,6 +45,8 @@ public:
 	void OnExecuteInteractEnded();
 	void OnExecuteInteractDialogue(class AActor* InteractingActor);
 	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
+	void OnEndInteract();
+	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
 	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
 	void JigCanInteract(bool* Result);
 	void GetMainSceneComp(class USceneComponent** Comp);
@@ -53,8 +55,6 @@ public:
 	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
 	void ExecuteUbergraph_BP_QuestGiver(int32 EntryPoint);
 	void BndEvt__BP_MPVendor_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void OnEndInteract();
 
 public:
 	static class UClass* StaticClass()

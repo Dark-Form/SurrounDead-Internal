@@ -14,10 +14,10 @@
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "UMG_structs.hpp"
-#include "S_ItemStat_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "RarityColors_structs.hpp"
+#include "UMG_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "S_ItemStat_structs.hpp"
 
 
 namespace SDK::Params
@@ -162,7 +162,7 @@ static_assert(offsetof(JSI_Slot_C_AdjustImageScale, K2Node_Select_Default_1) == 
 struct JSI_Slot_C_CanOpenSpecialContainer_ final
 {
 public:
-	bool                                          Return_Value;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Return_value;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -173,7 +173,7 @@ public:
 };
 static_assert(alignof(JSI_Slot_C_CanOpenSpecialContainer_) == 0x000001, "Wrong alignment on JSI_Slot_C_CanOpenSpecialContainer_");
 static_assert(sizeof(JSI_Slot_C_CanOpenSpecialContainer_) == 0x000008, "Wrong size on JSI_Slot_C_CanOpenSpecialContainer_");
-static_assert(offsetof(JSI_Slot_C_CanOpenSpecialContainer_, Return_Value) == 0x000000, "Member 'JSI_Slot_C_CanOpenSpecialContainer_::Return_Value' has a wrong offset!");
+static_assert(offsetof(JSI_Slot_C_CanOpenSpecialContainer_, Return_value) == 0x000000, "Member 'JSI_Slot_C_CanOpenSpecialContainer_::Return_value' has a wrong offset!");
 static_assert(offsetof(JSI_Slot_C_CanOpenSpecialContainer_, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'JSI_Slot_C_CanOpenSpecialContainer_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JSI_Slot_C_CanOpenSpecialContainer_, CallFunc_GetVisibility_ReturnValue) == 0x000002, "Member 'JSI_Slot_C_CanOpenSpecialContainer_::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JSI_Slot_C_CanOpenSpecialContainer_, CallFunc_IsVisible_ReturnValue) == 0x000003, "Member 'JSI_Slot_C_CanOpenSpecialContainer_::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
@@ -1005,7 +1005,7 @@ static_assert(offsetof(JSI_Slot_C_GetContainerCapacity, CallFunc_GetCapacity_Cap
 struct JSI_Slot_C_GetContainerOneRef final
 {
 public:
-	class UUserWidget*                            ContainerREF;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            ContainerRef;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1013,7 +1013,7 @@ public:
 };
 static_assert(alignof(JSI_Slot_C_GetContainerOneRef) == 0x000008, "Wrong alignment on JSI_Slot_C_GetContainerOneRef");
 static_assert(sizeof(JSI_Slot_C_GetContainerOneRef) == 0x000018, "Wrong size on JSI_Slot_C_GetContainerOneRef");
-static_assert(offsetof(JSI_Slot_C_GetContainerOneRef, ContainerREF) == 0x000000, "Member 'JSI_Slot_C_GetContainerOneRef::ContainerREF' has a wrong offset!");
+static_assert(offsetof(JSI_Slot_C_GetContainerOneRef, ContainerRef) == 0x000000, "Member 'JSI_Slot_C_GetContainerOneRef::ContainerRef' has a wrong offset!");
 static_assert(offsetof(JSI_Slot_C_GetContainerOneRef, Temp_bool_Variable) == 0x000008, "Member 'JSI_Slot_C_GetContainerOneRef::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(JSI_Slot_C_GetContainerOneRef, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'JSI_Slot_C_GetContainerOneRef::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JSI_Slot_C_GetContainerOneRef, K2Node_Select_Default) == 0x000010, "Member 'JSI_Slot_C_GetContainerOneRef::K2Node_Select_Default' has a wrong offset!");

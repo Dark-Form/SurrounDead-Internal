@@ -31,14 +31,14 @@ public:
 	double                                        Health;                                            // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void IsObjectDamageable_(bool* Damageable_);
-	void ExecuteUbergraph_BP_ExplosiveBarrelMaster(int32 EntryPoint);
-	void Event_Explode(class AController* EventInstigator);
-	void Damage_Shoved(bool Anim, double Force);
-	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
+	void Damage_Shoved(bool Anim, double Force);
+	void Event_Explode(class AController* EventInstigator);
+	void ExecuteUbergraph_BP_ExplosiveBarrelMaster(int32 EntryPoint);
+	void IsObjectDamageable_(bool* Damageable_);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

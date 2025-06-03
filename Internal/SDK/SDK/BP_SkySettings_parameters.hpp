@@ -14,38 +14,16 @@
 namespace SDK::Params
 {
 
-// Function BP_SkySettings.BP_SkySettings_C.Saturation
+// Function BP_SkySettings.BP_SkySettings_C.DayLength
 // 0x0004 (0x0004 - 0x0000)
-struct BP_SkySettings_C_Saturation final
+struct BP_SkySettings_C_DayLength final
 {
 public:
 	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SkySettings_C_Saturation) == 0x000004, "Wrong alignment on BP_SkySettings_C_Saturation");
-static_assert(sizeof(BP_SkySettings_C_Saturation) == 0x000004, "Wrong size on BP_SkySettings_C_Saturation");
-static_assert(offsetof(BP_SkySettings_C_Saturation, NewValue) == 0x000000, "Member 'BP_SkySettings_C_Saturation::NewValue' has a wrong offset!");
-
-// Function BP_SkySettings.BP_SkySettings_C.NightLength
-// 0x0004 (0x0004 - 0x0000)
-struct BP_SkySettings_C_NightLength final
-{
-public:
-	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SkySettings_C_NightLength) == 0x000004, "Wrong alignment on BP_SkySettings_C_NightLength");
-static_assert(sizeof(BP_SkySettings_C_NightLength) == 0x000004, "Wrong size on BP_SkySettings_C_NightLength");
-static_assert(offsetof(BP_SkySettings_C_NightLength, NewValue) == 0x000000, "Member 'BP_SkySettings_C_NightLength::NewValue' has a wrong offset!");
-
-// Function BP_SkySettings.BP_SkySettings_C.NightBright
-// 0x0004 (0x0004 - 0x0000)
-struct BP_SkySettings_C_NightBright final
-{
-public:
-	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_SkySettings_C_NightBright) == 0x000004, "Wrong alignment on BP_SkySettings_C_NightBright");
-static_assert(sizeof(BP_SkySettings_C_NightBright) == 0x000004, "Wrong size on BP_SkySettings_C_NightBright");
-static_assert(offsetof(BP_SkySettings_C_NightBright, NewValue) == 0x000000, "Member 'BP_SkySettings_C_NightBright::NewValue' has a wrong offset!");
+static_assert(alignof(BP_SkySettings_C_DayLength) == 0x000004, "Wrong alignment on BP_SkySettings_C_DayLength");
+static_assert(sizeof(BP_SkySettings_C_DayLength) == 0x000004, "Wrong size on BP_SkySettings_C_DayLength");
+static_assert(offsetof(BP_SkySettings_C_DayLength, NewValue) == 0x000000, "Member 'BP_SkySettings_C_DayLength::NewValue' has a wrong offset!");
 
 // Function BP_SkySettings.BP_SkySettings_C.ExecuteUbergraph_BP_SkySettings
 // 0x00A0 (0x00A0 - 0x0000)
@@ -93,16 +71,38 @@ static_assert(offsetof(BP_SkySettings_C_ExecuteUbergraph_BP_SkySettings, K2Node_
 static_assert(offsetof(BP_SkySettings_C_ExecuteUbergraph_BP_SkySettings, K2Node_VariableSet_Night_Length_ImplicitCast) == 0x000090, "Member 'BP_SkySettings_C_ExecuteUbergraph_BP_SkySettings::K2Node_VariableSet_Night_Length_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_SkySettings_C_ExecuteUbergraph_BP_SkySettings, K2Node_VariableSet_Day_Length_ImplicitCast) == 0x000098, "Member 'BP_SkySettings_C_ExecuteUbergraph_BP_SkySettings::K2Node_VariableSet_Day_Length_ImplicitCast' has a wrong offset!");
 
-// Function BP_SkySettings.BP_SkySettings_C.DayLength
+// Function BP_SkySettings.BP_SkySettings_C.NightBright
 // 0x0004 (0x0004 - 0x0000)
-struct BP_SkySettings_C_DayLength final
+struct BP_SkySettings_C_NightBright final
 {
 public:
 	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SkySettings_C_DayLength) == 0x000004, "Wrong alignment on BP_SkySettings_C_DayLength");
-static_assert(sizeof(BP_SkySettings_C_DayLength) == 0x000004, "Wrong size on BP_SkySettings_C_DayLength");
-static_assert(offsetof(BP_SkySettings_C_DayLength, NewValue) == 0x000000, "Member 'BP_SkySettings_C_DayLength::NewValue' has a wrong offset!");
+static_assert(alignof(BP_SkySettings_C_NightBright) == 0x000004, "Wrong alignment on BP_SkySettings_C_NightBright");
+static_assert(sizeof(BP_SkySettings_C_NightBright) == 0x000004, "Wrong size on BP_SkySettings_C_NightBright");
+static_assert(offsetof(BP_SkySettings_C_NightBright, NewValue) == 0x000000, "Member 'BP_SkySettings_C_NightBright::NewValue' has a wrong offset!");
+
+// Function BP_SkySettings.BP_SkySettings_C.NightLength
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SkySettings_C_NightLength final
+{
+public:
+	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SkySettings_C_NightLength) == 0x000004, "Wrong alignment on BP_SkySettings_C_NightLength");
+static_assert(sizeof(BP_SkySettings_C_NightLength) == 0x000004, "Wrong size on BP_SkySettings_C_NightLength");
+static_assert(offsetof(BP_SkySettings_C_NightLength, NewValue) == 0x000000, "Member 'BP_SkySettings_C_NightLength::NewValue' has a wrong offset!");
+
+// Function BP_SkySettings.BP_SkySettings_C.Saturation
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SkySettings_C_Saturation final
+{
+public:
+	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_SkySettings_C_Saturation) == 0x000004, "Wrong alignment on BP_SkySettings_C_Saturation");
+static_assert(sizeof(BP_SkySettings_C_Saturation) == 0x000004, "Wrong size on BP_SkySettings_C_Saturation");
+static_assert(offsetof(BP_SkySettings_C_Saturation, NewValue) == 0x000000, "Member 'BP_SkySettings_C_Saturation::NewValue' has a wrong offset!");
 
 }
 

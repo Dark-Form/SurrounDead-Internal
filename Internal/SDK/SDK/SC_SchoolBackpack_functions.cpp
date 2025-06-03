@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function SC_SchoolBackpack.SC_SchoolBackpack_C.PreInitSpecialContainer
+// Function SC_SchoolBackpack.SC_SchoolBackpack_C.Event_Callback
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USC_SchoolBackpack_C::PreInitSpecialContainer()
+void USC_SchoolBackpack_C::Event_Callback(bool NewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SC_SchoolBackpack_C", "PreInitSpecialContainer");
+		Func = Class->GetFunction("SC_SchoolBackpack_C", "Event_Callback");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SC_SchoolBackpack_C_Event_Callback Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void USC_SchoolBackpack_C::ExecuteUbergraph_SC_SchoolBackpack(int32 EntryPoint)
 }
 
 
-// Function SC_SchoolBackpack.SC_SchoolBackpack_C.Event_Callback
+// Function SC_SchoolBackpack.SC_SchoolBackpack_C.PreInitSpecialContainer
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USC_SchoolBackpack_C::Event_Callback(bool NewValue)
+void USC_SchoolBackpack_C::PreInitSpecialContainer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SC_SchoolBackpack_C", "Event_Callback");
+		Func = Class->GetFunction("SC_SchoolBackpack_C", "PreInitSpecialContainer");
 
-	Params::SC_SchoolBackpack_C_Event_Callback Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

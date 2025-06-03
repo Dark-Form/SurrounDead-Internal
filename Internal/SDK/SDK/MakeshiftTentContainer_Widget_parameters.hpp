@@ -16,30 +16,6 @@
 namespace SDK::Params
 {
 
-// Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.ExecuteUbergraph_MakeshiftTentContainer_Widget
-// 0x0048 (0x0048 - 0x0000)
-struct MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJSI_Slot_C*                            K2Node_Event_ItemRef;                              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_ActorRef;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_Event_NewWeight;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            K2Node_Event_Widget;                               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Event_Name;                                 // 0x0028(0x0018)()
-	class UBP_InspectorWindowWidget_C*            K2Node_Event_Inspector;                            // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget) == 0x000008, "Wrong alignment on MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget");
-static_assert(sizeof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget) == 0x000048, "Wrong size on MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, EntryPoint) == 0x000000, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_ItemRef) == 0x000008, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_ItemRef' has a wrong offset!");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_ActorRef) == 0x000010, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_ActorRef' has a wrong offset!");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_NewWeight) == 0x000018, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_NewWeight' has a wrong offset!");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_Widget) == 0x000020, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_Name) == 0x000028, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_Name' has a wrong offset!");
-static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_Inspector) == 0x000040, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_Inspector' has a wrong offset!");
-
 // Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.SetItemReference
 // 0x0008 (0x0008 - 0x0000)
 struct MakeshiftTentContainer_Widget_C_SetItemReference final
@@ -196,6 +172,30 @@ public:
 static_assert(alignof(MakeshiftTentContainer_Widget_C_GetAllAttachments) == 0x000008, "Wrong alignment on MakeshiftTentContainer_Widget_C_GetAllAttachments");
 static_assert(sizeof(MakeshiftTentContainer_Widget_C_GetAllAttachments) == 0x000010, "Wrong size on MakeshiftTentContainer_Widget_C_GetAllAttachments");
 static_assert(offsetof(MakeshiftTentContainer_Widget_C_GetAllAttachments, Attachments) == 0x000000, "Member 'MakeshiftTentContainer_Widget_C_GetAllAttachments::Attachments' has a wrong offset!");
+
+// Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.ExecuteUbergraph_MakeshiftTentContainer_Widget
+// 0x0048 (0x0048 - 0x0000)
+struct MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UJSI_Slot_C*                            K2Node_Event_ItemRef;                              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_ActorRef;                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_Event_NewWeight;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            K2Node_Event_Widget;                               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Event_Name;                                 // 0x0028(0x0018)()
+	class UBP_InspectorWindowWidget_C*            K2Node_Event_Inspector;                            // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget) == 0x000008, "Wrong alignment on MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget");
+static_assert(sizeof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget) == 0x000048, "Wrong size on MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, EntryPoint) == 0x000000, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::EntryPoint' has a wrong offset!");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_ItemRef) == 0x000008, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_ItemRef' has a wrong offset!");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_ActorRef) == 0x000010, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_ActorRef' has a wrong offset!");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_NewWeight) == 0x000018, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_NewWeight' has a wrong offset!");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_Widget) == 0x000020, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_Widget' has a wrong offset!");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_Name) == 0x000028, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_Name' has a wrong offset!");
+static_assert(offsetof(MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget, K2Node_Event_Inspector) == 0x000040, "Member 'MakeshiftTentContainer_Widget_C_ExecuteUbergraph_MakeshiftTentContainer_Widget::K2Node_Event_Inspector' has a wrong offset!");
 
 // Function MakeshiftTentContainer_Widget.MakeshiftTentContainer_Widget_C.GetListOfContainers
 // 0x0020 (0x0020 - 0x0000)

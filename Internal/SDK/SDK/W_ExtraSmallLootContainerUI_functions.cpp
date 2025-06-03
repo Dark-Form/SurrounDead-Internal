@@ -39,41 +39,6 @@ void UW_ExtraSmallLootContainerUI_C::Tick(const struct FGeometry& MyGeometry, fl
 }
 
 
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.BndEvt__ExtraSmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UW_ExtraSmallLootContainerUI_C::BndEvt__ExtraSmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "BndEvt__ExtraSmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetLootContent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UW_ExtraSmallLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetLootContent");
-
-	Params::W_ExtraSmallLootContainerUI_C_GetLootContent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
 // Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.SetItemReference
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -89,128 +54,6 @@ void UW_ExtraSmallLootContainerUI_C::SetItemReference(class UJSI_Slot_C* ItemRef
 	Params::W_ExtraSmallLootContainerUI_C_SetItemReference Parms{};
 
 	Parms.ItemRef = ItemRef;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetListOfNonAddContainers
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
-
-void UW_ExtraSmallLootContainerUI_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetListOfNonAddContainers");
-
-	Params::W_ExtraSmallLootContainerUI_C_GetListOfNonAddContainers Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Containers != nullptr)
-		*Containers = std::move(Parms.Containers);
-}
-
-
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetJSIContainerByPlayerSlots
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 Container                                              (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UJSI_Slot_C**                     EquippedItem                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsPending_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UW_ExtraSmallLootContainerUI_C::GetJSIContainerByPlayerSlots(const struct FGameplayTag& Slot_0, class UJSIContainer_C** Container, class UJSI_Slot_C** EquippedItem, bool* IsPending_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetJSIContainerByPlayerSlots");
-
-	Params::W_ExtraSmallLootContainerUI_C_GetJSIContainerByPlayerSlots Parms{};
-
-	Parms.Slot_0 = std::move(Slot_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Container != nullptr)
-		*Container = Parms.Container;
-
-	if (EquippedItem != nullptr)
-		*EquippedItem = Parms.EquippedItem;
-
-	if (IsPending_ != nullptr)
-		*IsPending_ = Parms.IsPending_;
-}
-
-
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetDropWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UDropItemBackGwidget_C**          DropWRef                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UW_ExtraSmallLootContainerUI_C::GetDropWidget(class UDropItemBackGwidget_C** DropWRef)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetDropWidget");
-
-	Params::W_ExtraSmallLootContainerUI_C_GetDropWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (DropWRef != nullptr)
-		*DropWRef = Parms.DropWRef;
-}
-
-
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetContainerByAttachmentType
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class UJSIContainer_C**                 JigContainer                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32*                                  ContainerIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UW_ExtraSmallLootContainerUI_C::GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetContainerByAttachmentType");
-
-	Params::W_ExtraSmallLootContainerUI_C_GetContainerByAttachmentType Parms{};
-
-	Parms.Type = std::move(Type);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (JigContainer != nullptr)
-		*JigContainer = Parms.JigContainer;
-
-	if (ContainerIndex != nullptr)
-		*ContainerIndex = Parms.ContainerIndex;
-}
-
-
-// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.ExecuteUbergraph_W_ExtraSmallLootContainerUI
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UW_ExtraSmallLootContainerUI_C::ExecuteUbergraph_W_ExtraSmallLootContainerUI(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "ExecuteUbergraph_W_ExtraSmallLootContainerUI");
-
-	Params::W_ExtraSmallLootContainerUI_C_ExecuteUbergraph_W_ExtraSmallLootContainerUI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -385,6 +228,129 @@ void UW_ExtraSmallLootContainerUI_C::GetValidReloadContainers(TArray<class UJSIC
 }
 
 
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetLootContent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UW_ExtraSmallLootContainerUI_C::GetLootContent(class UUserWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetLootContent");
+
+	Params::W_ExtraSmallLootContainerUI_C_GetLootContent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetListOfNonAddContainers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UJSIContainer_C*>*         Containers                                             (Parm, OutParm, ContainsInstancedReference)
+
+void UW_ExtraSmallLootContainerUI_C::GetListOfNonAddContainers(TArray<class UJSIContainer_C*>* Containers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetListOfNonAddContainers");
+
+	Params::W_ExtraSmallLootContainerUI_C_GetListOfNonAddContainers Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Containers != nullptr)
+		*Containers = std::move(Parms.Containers);
+}
+
+
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetJSIContainerByPlayerSlots
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 Container                                              (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UJSI_Slot_C**                     EquippedItem                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsPending_                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UW_ExtraSmallLootContainerUI_C::GetJSIContainerByPlayerSlots(const struct FGameplayTag& Slot_0, class UJSIContainer_C** Container, class UJSI_Slot_C** EquippedItem, bool* IsPending_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetJSIContainerByPlayerSlots");
+
+	Params::W_ExtraSmallLootContainerUI_C_GetJSIContainerByPlayerSlots Parms{};
+
+	Parms.Slot_0 = std::move(Slot_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Container != nullptr)
+		*Container = Parms.Container;
+
+	if (EquippedItem != nullptr)
+		*EquippedItem = Parms.EquippedItem;
+
+	if (IsPending_ != nullptr)
+		*IsPending_ = Parms.IsPending_;
+}
+
+
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetDropWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UDropItemBackGwidget_C**          DropWRef                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UW_ExtraSmallLootContainerUI_C::GetDropWidget(class UDropItemBackGwidget_C** DropWRef)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetDropWidget");
+
+	Params::W_ExtraSmallLootContainerUI_C_GetDropWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (DropWRef != nullptr)
+		*DropWRef = Parms.DropWRef;
+}
+
+
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetContainerByAttachmentType
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class UJSIContainer_C**                 JigContainer                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  ContainerIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UW_ExtraSmallLootContainerUI_C::GetContainerByAttachmentType(const struct FGameplayTag& Type, class UJSIContainer_C** JigContainer, int32* ContainerIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "GetContainerByAttachmentType");
+
+	Params::W_ExtraSmallLootContainerUI_C_GetContainerByAttachmentType Parms{};
+
+	Parms.Type = std::move(Type);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (JigContainer != nullptr)
+		*JigContainer = Parms.JigContainer;
+
+	if (ContainerIndex != nullptr)
+		*ContainerIndex = Parms.ContainerIndex;
+}
+
+
 // Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.GetAllAttachments
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -415,6 +381,40 @@ void UW_ExtraSmallLootContainerUI_C::ForceInitSpecialcontainer()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "ForceInitSpecialcontainer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.ExecuteUbergraph_W_ExtraSmallLootContainerUI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UW_ExtraSmallLootContainerUI_C::ExecuteUbergraph_W_ExtraSmallLootContainerUI(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "ExecuteUbergraph_W_ExtraSmallLootContainerUI");
+
+	Params::W_ExtraSmallLootContainerUI_C_ExecuteUbergraph_W_ExtraSmallLootContainerUI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function W_ExtraSmallLootContainerUI.W_ExtraSmallLootContainerUI_C.BndEvt__ExtraSmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UW_ExtraSmallLootContainerUI_C::BndEvt__ExtraSmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_ExtraSmallLootContainerUI_C", "BndEvt__ExtraSmallContainer_Widget_Button_66_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

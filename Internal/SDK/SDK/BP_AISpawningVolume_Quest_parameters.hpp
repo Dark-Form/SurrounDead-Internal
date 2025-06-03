@@ -11,332 +11,15 @@
 #include "Basic.hpp"
 
 #include "AIOptimizer_structs.hpp"
-#include "S_AISpawner_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "S_AIRespawn_structs.hpp"
+#include "S_AISpawner_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.PlayerInAreaCheck
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AISpawningVolume_Quest_C_PlayerInAreaCheck final
-{
-public:
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x0014(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x0020(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_PlayerInAreaCheck");
-static_assert(sizeof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck) == 0x000050, "Wrong size on BP_AISpawningVolume_Quest_C_PlayerInAreaCheck");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_bool_True_if_break_was_hit_Variable) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_name_Variable) == 0x000014, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000020, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Get_Item) == 0x000038, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Greater_IntInt_ReturnValue) == 0x000040, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Contains_ReturnValue) == 0x000041, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Length_ReturnValue_1) == 0x000044, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_BooleanAND_ReturnValue) == 0x000049, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-
-// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.Find Spawn Location
-// 0x0368 (0x0368 - 0x0000)
-struct BP_AISpawningVolume_Quest_C_Find_Spawn_Location final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             Hit_Result;                                        // 0x0008(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                Start_Location_L;                                  // 0x00F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetScaledBoxExtent_ReturnValue;           // 0x0108(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_1;                          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_1;                          // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_1;                          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_2;                          // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_2;                          // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_2;                          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0190(0x0010)(ConstParm, ReferenceParm)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetScaledBoxExtent_ReturnValue_1;         // 0x01D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x01F0(0x0010)(ConstParm, ReferenceParm)
-	double                                        CallFunc_BreakVector_X_3;                          // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_3;                          // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_3;                          // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0218(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_3;      // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0330(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0348(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SphereTraceSingleForObjects_Radius_ImplicitCast; // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_Find_Spawn_Location");
-static_assert(sizeof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location) == 0x000368, "Wrong size on BP_AISpawningVolume_Quest_C_Find_Spawn_Location");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, ReturnValue) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, Hit_Result) == 0x000008, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::Hit_Result' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, Start_Location_L) == 0x0000F0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::Start_Location_L' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_GetScaledBoxExtent_ReturnValue) == 0x000108, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_GetScaledBoxExtent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X) == 0x000120, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y) == 0x000128, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z) == 0x000130, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X_1) == 0x000138, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y_1) == 0x000140, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z_1) == 0x000148, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000150, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000168, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X_2) == 0x000170, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y_2) == 0x000178, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z_2) == 0x000180, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000188, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, Temp_object_Variable) == 0x000190, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0001A0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_MakeVector_ReturnValue) == 0x0001A8, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001C0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_GetScaledBoxExtent_ReturnValue_1) == 0x0001D8, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_GetScaledBoxExtent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, K2Node_MakeArray_Array) == 0x0001F0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X_3) == 0x000200, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y_3) == 0x000208, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z_3) == 0x000210, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000218, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000300, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000308, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000310, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000318, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_RandomFloatInRange_ReturnValue) == 0x000320, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000328, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_MakeVector_ReturnValue_1) == 0x000330, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Add_VectorVector_ReturnValue) == 0x000348, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_SphereTraceSingleForObjects_Radius_ImplicitCast) == 0x000360, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_SphereTraceSingleForObjects_Radius_ImplicitCast' has a wrong offset!");
-
-// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.ExecuteUbergraph_BP_AISpawningVolume_Quest
-// 0x0268 (0x0268 - 0x0000)
-struct BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAIOptimizerSubsystem*                  CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_AISpawner                           CallFunc_Array_Get_Item;                           // 0x0048(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ACharacter*                             K2Node_CustomEvent_AI_Character_1;                 // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ACharacter*                             K2Node_CustomEvent_AI_Character;                   // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0078(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Find_Spawn_Location_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_Find_Spawn_Location_Hit_Result;           // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x017A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17B[0x5];                                      // 0x017B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FS_AISpawner                           CallFunc_Array_Get_Item_1;                         // 0x0180(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_199[0x3];                                      // 0x0199(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_CustomEvent_Pawn;                           // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_SmartAIComponent_C*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	E_AIBehaviour                                 CallFunc_Convert_To_Behaviour_Behaviour;           // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C3[0x5];                                      // 0x01C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item_2;                         // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAIOSubjectHandle                      CallFunc_Array_Get_Item_3;                         // 0x01E4(0x0004)(NoDestructor)
-	bool                                          CallFunc_RemoveDespawnedSubjectByHandle_ReturnValue; // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_3;            // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue_1;                        // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetFloatCVar_ReturnValue;                 // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_221[0x3];                                      // 0x0221(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_Select_Default;                             // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FS_AIRespawn                           K2Node_MakeStruct_S_AIRespawn;                     // 0x0230(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_241[0x3];                                      // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Delay_Duration_ImplicitCast_1;            // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_MakeStruct_RespawnTime_6_8AF0BD5449A6D822BE0FD68EE7713725_ImplicitCast; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest");
-static_assert(sizeof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest) == 0x000268, "Wrong size on BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, EntryPoint) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_Variable) == 0x000008, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Variable) == 0x00000C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_Variable_1) == 0x000015, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_HasAuthority_ReturnValue) == 0x000016, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable) == 0x000024, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable_1) == 0x000030, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable_1) == 0x000034, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Less_IntInt_ReturnValue_1) == 0x000038, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_1) == 0x00003C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable_2) == 0x000040, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item) == 0x000048, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_CustomEvent_AI_Character_1) == 0x000058, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_CustomEvent_AI_Character_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable_3) == 0x000060, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_CustomEvent_AI_Character) == 0x000068, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_CustomEvent_AI_Character' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Greater_IntInt_ReturnValue) == 0x000070, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_K2_SetTimer_ReturnValue) == 0x000078, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Find_Spawn_Location_ReturnValue) == 0x000080, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Find_Spawn_Location_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Find_Spawn_Location_Hit_Result) == 0x000088, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Find_Spawn_Location_Hit_Result' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable_2) == 0x000170, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000174, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000178, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_True_if_break_was_hit_Variable) == 0x000179, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Not_PreBool_ReturnValue) == 0x00017A, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item_1) == 0x000180, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue_1) == 0x000190, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Variable_1) == 0x000194, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000198, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_2) == 0x00019C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable_3) == 0x0001A0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001A4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_3) == 0x0001A8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_BooleanAND_ReturnValue) == 0x0001AC, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_CustomEvent_Pawn) == 0x0001B0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_CustomEvent_Pawn' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GetComponentByClass_ReturnValue) == 0x0001B8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Convert_To_Behaviour_Behaviour) == 0x0001C0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Convert_To_Behaviour_Behaviour' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_Event_EndPlayReason) == 0x0001C1, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_SwitchEnum_CmpSuccess) == 0x0001C2, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item_2) == 0x0001C8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue_2) == 0x0001D0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_IsValid_ReturnValue) == 0x0001D4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x0001D8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Max_ReturnValue) == 0x0001DC, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_Has_Been_Initd_Variable) == 0x0001E0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item_3) == 0x0001E4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RemoveDespawnedSubjectByHandle_ReturnValue) == 0x0001E8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RemoveDespawnedSubjectByHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue_3) == 0x0001EC, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x0001F0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Max_ReturnValue_1) == 0x0001F4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Max_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GetFloatCVar_ReturnValue) == 0x0001F8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GetFloatCVar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RandomFloatInRange_ReturnValue) == 0x000200, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000208, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000210, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000218, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RandomBool_ReturnValue) == 0x000220, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_4) == 0x000224, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_Select_Default) == 0x000228, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_MakeStruct_S_AIRespawn) == 0x000230, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_MakeStruct_S_AIRespawn' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_IsClosed_Variable) == 0x000240, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_AddUnique_ReturnValue) == 0x000244, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Delay_Duration_ImplicitCast) == 0x000248, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Delay_Duration_ImplicitCast_1) == 0x00024C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Delay_Duration_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000250, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x000258, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_MakeStruct_RespawnTime_6_8AF0BD5449A6D822BE0FD68EE7713725_ImplicitCast) == 0x000260, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_MakeStruct_RespawnTime_6_8AF0BD5449A6D822BE0FD68EE7713725_ImplicitCast' has a wrong offset!");
-
-// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.AI Respawn Timer Finished
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished final
-{
-public:
-	class ACharacter*                             AI_Character;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished");
-static_assert(sizeof(BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished) == 0x000008, "Wrong size on BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished, AI_Character) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished::AI_Character' has a wrong offset!");
-
-// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.Add AI Respawn Timer
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer final
-{
-public:
-	class ACharacter*                             AI_Character;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer");
-static_assert(sizeof(BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer) == 0x000008, "Wrong size on BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer");
-static_assert(offsetof(BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer, AI_Character) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer::AI_Character' has a wrong offset!");
 
 // Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.UserConstructionScript
 // 0x0020 (0x0020 - 0x0000)
@@ -700,6 +383,323 @@ public:
 static_assert(alignof(BP_AISpawningVolume_Quest_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_AISpawningVolume_Quest_C_ReceiveEndPlay");
 static_assert(sizeof(BP_AISpawningVolume_Quest_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_AISpawningVolume_Quest_C_ReceiveEndPlay");
 static_assert(offsetof(BP_AISpawningVolume_Quest_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
+
+// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.PlayerInAreaCheck
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AISpawningVolume_Quest_C_PlayerInAreaCheck final
+{
+public:
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x0014(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x0020(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_PlayerInAreaCheck");
+static_assert(sizeof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck) == 0x000050, "Wrong size on BP_AISpawningVolume_Quest_C_PlayerInAreaCheck");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_bool_True_if_break_was_hit_Variable) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, Temp_name_Variable) == 0x000014, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::Temp_name_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_GetOverlappingActors_OverlappingActors) == 0x000020, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Get_Item) == 0x000038, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Greater_IntInt_ReturnValue) == 0x000040, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Contains_ReturnValue) == 0x000041, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Array_Length_ReturnValue_1) == 0x000044, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_Less_IntInt_ReturnValue) == 0x000048, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_PlayerInAreaCheck, CallFunc_BooleanAND_ReturnValue) == 0x000049, "Member 'BP_AISpawningVolume_Quest_C_PlayerInAreaCheck::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.Find Spawn Location
+// 0x0368 (0x0368 - 0x0000)
+struct BP_AISpawningVolume_Quest_C_Find_Spawn_Location final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             Hit_Result;                                        // 0x0008(0x00E8)(Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                Start_Location_L;                                  // 0x00F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetScaledBoxExtent_ReturnValue;           // 0x0108(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_1;                          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_1;                          // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_1;                          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_2;                          // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_2;                          // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_2;                          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0190(0x0010)(ConstParm, ReferenceParm)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x01A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x01C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetScaledBoxExtent_ReturnValue_1;         // 0x01D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EObjectTypeQuery>                      K2Node_MakeArray_Array;                            // 0x01F0(0x0010)(ConstParm, ReferenceParm)
+	double                                        CallFunc_BreakVector_X_3;                          // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_3;                          // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_3;                          // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_SphereTraceSingleForObjects_OutHit;       // 0x0218(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleForObjects_ReturnValue;  // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_3;      // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0330(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0348(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SphereTraceSingleForObjects_Radius_ImplicitCast; // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_Find_Spawn_Location");
+static_assert(sizeof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location) == 0x000368, "Wrong size on BP_AISpawningVolume_Quest_C_Find_Spawn_Location");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, ReturnValue) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, Hit_Result) == 0x000008, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::Hit_Result' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, Start_Location_L) == 0x0000F0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::Start_Location_L' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_GetScaledBoxExtent_ReturnValue) == 0x000108, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_GetScaledBoxExtent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X) == 0x000120, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y) == 0x000128, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z) == 0x000130, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X_1) == 0x000138, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y_1) == 0x000140, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z_1) == 0x000148, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000150, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue) == 0x000168, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X_2) == 0x000170, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y_2) == 0x000178, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z_2) == 0x000180, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000188, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, Temp_object_Variable) == 0x000190, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::Temp_object_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Add_DoubleDouble_ReturnValue_1) == 0x0001A0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Add_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_MakeVector_ReturnValue) == 0x0001A8, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001C0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_GetScaledBoxExtent_ReturnValue_1) == 0x0001D8, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_GetScaledBoxExtent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, K2Node_MakeArray_Array) == 0x0001F0, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_X_3) == 0x000200, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_X_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Y_3) == 0x000208, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Y_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_BreakVector_Z_3) == 0x000210, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_BreakVector_Z_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_SphereTraceSingleForObjects_OutHit) == 0x000218, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_SphereTraceSingleForObjects_OutHit' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_SphereTraceSingleForObjects_ReturnValue) == 0x000300, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_SphereTraceSingleForObjects_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue_1) == 0x000308, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue_2) == 0x000310, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Multiply_DoubleDouble_ReturnValue_3) == 0x000318, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Multiply_DoubleDouble_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_RandomFloatInRange_ReturnValue) == 0x000320, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000328, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_MakeVector_ReturnValue_1) == 0x000330, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_Add_VectorVector_ReturnValue) == 0x000348, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Find_Spawn_Location, CallFunc_SphereTraceSingleForObjects_Radius_ImplicitCast) == 0x000360, "Member 'BP_AISpawningVolume_Quest_C_Find_Spawn_Location::CallFunc_SphereTraceSingleForObjects_Radius_ImplicitCast' has a wrong offset!");
+
+// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.ExecuteUbergraph_BP_AISpawningVolume_Quest
+// 0x0268 (0x0268 - 0x0000)
+struct BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAIOptimizerSubsystem*                  CallFunc_GetWorldSubsystem_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_AISpawner                           CallFunc_Array_Get_Item;                           // 0x0048(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACharacter*                             K2Node_CustomEvent_AI_Character_1;                 // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ACharacter*                             K2Node_CustomEvent_AI_Character;                   // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x0078(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Find_Spawn_Location_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_Find_Spawn_Location_Hit_Result;           // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x017A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17B[0x5];                                      // 0x017B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FS_AISpawner                           CallFunc_Array_Get_Item_1;                         // 0x0180(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0190(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_199[0x3];                                      // 0x0199(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_CustomEvent_Pawn;                           // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_SmartAIComponent_C*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	E_AIBehaviour                                 CallFunc_Convert_To_Behaviour_Behaviour;           // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C3[0x5];                                      // 0x01C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item_2;                         // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAIOSubjectHandle                      CallFunc_Array_Get_Item_3;                         // 0x01E4(0x0004)(NoDestructor)
+	bool                                          CallFunc_RemoveDespawnedSubjectByHandle_ReturnValue; // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E9[0x3];                                      // 0x01E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x01EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_3;            // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue_1;                        // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetFloatCVar_ReturnValue;                 // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1FC[0x4];                                      // 0x01FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0200(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RandomBool_ReturnValue;                   // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_221[0x3];                                      // 0x0221(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_Select_Default;                             // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FS_AIRespawn                           K2Node_MakeStruct_S_AIRespawn;                     // 0x0230(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_241[0x3];                                      // 0x0241(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0244(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Delay_Duration_ImplicitCast_1;            // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_MakeStruct_RespawnTime_6_8AF0BD5449A6D822BE0FD68EE7713725_ImplicitCast; // 0x0260(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest");
+static_assert(sizeof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest) == 0x000268, "Wrong size on BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, EntryPoint) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_Variable) == 0x000008, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Variable) == 0x00000C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_Variable_1) == 0x000015, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_HasAuthority_ReturnValue) == 0x000016, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue) == 0x00001C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000020, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable) == 0x000024, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GetWorldSubsystem_ReturnValue) == 0x000028, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GetWorldSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable_1) == 0x000030, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable_1) == 0x000034, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Less_IntInt_ReturnValue_1) == 0x000038, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_1) == 0x00003C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable_2) == 0x000040, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item) == 0x000048, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_CustomEvent_AI_Character_1) == 0x000058, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_CustomEvent_AI_Character_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Array_Index_Variable_3) == 0x000060, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Array_Index_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_CustomEvent_AI_Character) == 0x000068, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_CustomEvent_AI_Character' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Greater_IntInt_ReturnValue) == 0x000070, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_K2_SetTimer_ReturnValue) == 0x000078, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Find_Spawn_Location_ReturnValue) == 0x000080, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Find_Spawn_Location_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Find_Spawn_Location_Hit_Result) == 0x000088, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Find_Spawn_Location_Hit_Result' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable_2) == 0x000170, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000174, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000178, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_True_if_break_was_hit_Variable) == 0x000179, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Not_PreBool_ReturnValue) == 0x00017A, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item_1) == 0x000180, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue_1) == 0x000190, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Variable_1) == 0x000194, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000198, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_2) == 0x00019C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_int_Loop_Counter_Variable_3) == 0x0001A0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Less_IntInt_ReturnValue_2) == 0x0001A4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_3) == 0x0001A8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_BooleanAND_ReturnValue) == 0x0001AC, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_CustomEvent_Pawn) == 0x0001B0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_CustomEvent_Pawn' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GetComponentByClass_ReturnValue) == 0x0001B8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Convert_To_Behaviour_Behaviour) == 0x0001C0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Convert_To_Behaviour_Behaviour' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_Event_EndPlayReason) == 0x0001C1, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_Event_EndPlayReason' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_SwitchEnum_CmpSuccess) == 0x0001C2, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item_2) == 0x0001C8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue_2) == 0x0001D0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_IsValid_ReturnValue) == 0x0001D4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x0001D8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Max_ReturnValue) == 0x0001DC, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Max_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_Has_Been_Initd_Variable) == 0x0001E0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Get_Item_3) == 0x0001E4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Get_Item_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RemoveDespawnedSubjectByHandle_ReturnValue) == 0x0001E8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RemoveDespawnedSubjectByHandle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_Length_ReturnValue_3) == 0x0001EC, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x0001F0, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Max_ReturnValue_1) == 0x0001F4, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Max_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_GetFloatCVar_ReturnValue) == 0x0001F8, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_GetFloatCVar_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RandomFloatInRange_ReturnValue) == 0x000200, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000208, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_DoubleDouble_ReturnValue) == 0x000210, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_DoubleDouble_ReturnValue) == 0x000218, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_RandomBool_ReturnValue) == 0x000220, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_IntInt_ReturnValue_4) == 0x000224, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_Select_Default) == 0x000228, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_MakeStruct_S_AIRespawn) == 0x000230, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_MakeStruct_S_AIRespawn' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, Temp_bool_IsClosed_Variable) == 0x000240, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::Temp_bool_IsClosed_Variable' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Array_AddUnique_ReturnValue) == 0x000244, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Delay_Duration_ImplicitCast) == 0x000248, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Delay_Duration_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Delay_Duration_ImplicitCast_1) == 0x00024C, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Delay_Duration_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Add_DoubleDouble_A_ImplicitCast) == 0x000250, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Add_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, CallFunc_Subtract_DoubleDouble_A_ImplicitCast) == 0x000258, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::CallFunc_Subtract_DoubleDouble_A_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest, K2Node_MakeStruct_RespawnTime_6_8AF0BD5449A6D822BE0FD68EE7713725_ImplicitCast) == 0x000260, "Member 'BP_AISpawningVolume_Quest_C_ExecuteUbergraph_BP_AISpawningVolume_Quest::K2Node_MakeStruct_RespawnTime_6_8AF0BD5449A6D822BE0FD68EE7713725_ImplicitCast' has a wrong offset!");
+
+// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.AI Respawn Timer Finished
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished final
+{
+public:
+	class ACharacter*                             AI_Character;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished");
+static_assert(sizeof(BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished) == 0x000008, "Wrong size on BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished, AI_Character) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_AI_Respawn_Timer_Finished::AI_Character' has a wrong offset!");
+
+// Function BP_AISpawningVolume_Quest.BP_AISpawningVolume_Quest_C.Add AI Respawn Timer
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer final
+{
+public:
+	class ACharacter*                             AI_Character;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer) == 0x000008, "Wrong alignment on BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer");
+static_assert(sizeof(BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer) == 0x000008, "Wrong size on BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer");
+static_assert(offsetof(BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer, AI_Character) == 0x000000, "Member 'BP_AISpawningVolume_Quest_C_Add_AI_Respawn_Timer::AI_Character' has a wrong offset!");
 
 }
 

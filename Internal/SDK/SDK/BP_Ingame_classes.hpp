@@ -161,7 +161,7 @@ public:
 	float GetBufferBarPercent();
 	float GetCurrentPercent();
 	void GetFlashlightDurability(double Dur);
-	void GetHotbarByIndex(int32 Index_0, class UJSI_Slot_C** ItemRef, bool* Found_, class UJSIContainer_C** ContainerREF, class UJSI_Slot_C** MainItem);
+	void GetHotbarByIndex(int32 Index_0, class UJSI_Slot_C** ItemRef, bool* Found_, class UJSIContainer_C** ContainerRef, class UJSI_Slot_C** MainItem);
 	void GetLevelUI(int32 Level);
 	void GetNightVisionDurability(double Dur);
 	void GetRespiratorDurability(double Dur);

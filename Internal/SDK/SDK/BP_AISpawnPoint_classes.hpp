@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "S_AIRespawn_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "S_AIRespawn_structs.hpp"
 #include "E_StartingAIBehaviours_structs.hpp"
-#include "E_AIBehaviour_structs.hpp"
 #include "S_TriggerResponse_structs.hpp"
+#include "E_AIBehaviour_structs.hpp"
 
 
 namespace SDK

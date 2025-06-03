@@ -12,7 +12,6 @@
 
 #include "S_RandomStatsConfig_structs.hpp"
 #include "RepItemInfo_structs.hpp"
-#include "E_BlockType_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "S_JigPayload_structs.hpp"
 #include "Engine_structs.hpp"
@@ -20,17 +19,18 @@
 #include "S_ItemStat_structs.hpp"
 #include "RandomContainerItem_structs.hpp"
 #include "S_RepAttachmentInfo_structs.hpp"
-#include "ContainerPickupsInfo_structs.hpp"
 #include "S_SubContainerInfo_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
 #include "ClothingSettings_structs.hpp"
 #include "UMG_structs.hpp"
 #include "BodyPartSettings_structs.hpp"
 #include "Struct_KeepInventory_structs.hpp"
 #include "Struct_NightVision_structs.hpp"
+#include "S_NotificationDetails_structs.hpp"
 #include "EnhancedInput_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
-#include "S_NotificationDetails_structs.hpp"
+#include "E_BlockType_structs.hpp"
 
 
 namespace SDK::Params

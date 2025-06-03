@@ -16,6 +16,22 @@
 namespace SDK::Params
 {
 
+// Function BP_Zombie_Radiated.BP_Zombie_Radiated_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature final
+{
+public:
+	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+static_assert(sizeof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
+static_assert(offsetof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
+static_assert(offsetof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
+static_assert(offsetof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
+
 // Function BP_Zombie_Radiated.BP_Zombie_Radiated_C.ExecuteUbergraph_BP_Zombie_Radiated
 // 0x0088 (0x0088 - 0x0000)
 struct BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated final
@@ -89,22 +105,6 @@ static_assert(offsetof(BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated,
 static_assert(offsetof(BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated, CallFunc_Multiply_DoubleDouble_A_ImplicitCast) == 0x000070, "Member 'BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated::CallFunc_Multiply_DoubleDouble_A_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1) == 0x000078, "Member 'BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_1' has a wrong offset!");
 static_assert(offsetof(BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated, CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2) == 0x000080, "Member 'BP_Zombie_Radiated_C_ExecuteUbergraph_BP_Zombie_Radiated::CallFunc_Multiply_DoubleDouble_A_ImplicitCast_2' has a wrong offset!");
-
-// Function BP_Zombie_Radiated.BP_Zombie_Radiated_C.BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature final
-{
-public:
-	bool                                          bIsBeyondLastLayer;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LayerIndex;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSeen;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x000004, "Wrong alignment on BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-static_assert(sizeof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature) == 0x00000C, "Wrong size on BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature");
-static_assert(offsetof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsBeyondLastLayer) == 0x000000, "Member 'BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsBeyondLastLayer' has a wrong offset!");
-static_assert(offsetof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, LayerIndex) == 0x000004, "Member 'BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::LayerIndex' has a wrong offset!");
-static_assert(offsetof(BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature, bIsSeen) == 0x000008, "Member 'BP_Zombie_Radiated_C_BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature::bIsSeen' has a wrong offset!");
 
 }
 

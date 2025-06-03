@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "E_Combat_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ST_Audio_structs.hpp"
 #include "E_TimeOfDay_structs.hpp"
+#include "ST_Audio_structs.hpp"
 #include "E_Switch_Method_structs.hpp"
+#include "E_Combat_structs.hpp"
 
 
 namespace SDK

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_MasterTurret_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_MasterTurret_classes.hpp"
 
 
 namespace SDK
@@ -31,18 +31,18 @@ public:
 	class UTimelineComponent*                     Turret_Rotate_Animation;                           // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Turret_Rotate_Animation__UpdateFunc();
-	void Turret_Rotate_Animation__FinishedFunc();
-	void Turret_Idle_Stop();
-	void Turret_Idle_Start();
-	void Turret_Destroyed_Effect();
-	void ReceiveBeginPlay();
-	void Multicast_Turret_Idle_Stop();
-	void Multicast_Turret_Idle_Start();
-	void Multicast_Spawn_Emitter();
-	void IsObjectDamageable_(bool* Damageable_);
-	void ExecuteUbergraph_BP_SurvivorTurret_AI(int32 EntryPoint);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void ExecuteUbergraph_BP_SurvivorTurret_AI(int32 EntryPoint);
+	void IsObjectDamageable_(bool* Damageable_);
+	void Multicast_Spawn_Emitter();
+	void Multicast_Turret_Idle_Start();
+	void Multicast_Turret_Idle_Stop();
+	void ReceiveBeginPlay();
+	void Turret_Destroyed_Effect();
+	void Turret_Idle_Start();
+	void Turret_Idle_Stop();
+	void Turret_Rotate_Animation__FinishedFunc();
+	void Turret_Rotate_Animation__UpdateFunc();
 
 public:
 	static class UClass* StaticClass()

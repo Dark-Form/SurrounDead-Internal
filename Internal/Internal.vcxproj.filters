@@ -59,6 +59,12 @@
     <ClCompile Include="SDK\SDK\MedicalComponent_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\JSIContainer_functions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\JSI_Slot_functions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MH">
@@ -141,6 +147,8 @@
     <ClInclude Include="SDK\SDK.hpp">
       <Filter>SDK</Filter>
     </ClInclude>
+    <ClInclude Include="json.h" />
+    <ClInclude Include="Waypoint.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MinHook\minhook.def">

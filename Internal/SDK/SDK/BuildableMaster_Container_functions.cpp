@@ -31,20 +31,6 @@ void ABuildableMaster_Container_C::ActorLoaded()
 }
 
 
-// Function BuildableMaster_Container.BuildableMaster_Container_C.ActorPreSave
-// (Event, Public, BlueprintEvent)
-
-void ABuildableMaster_Container_C::ActorPreSave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildableMaster_Container_C", "ActorPreSave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BuildableMaster_Container.BuildableMaster_Container_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -175,6 +161,20 @@ void ABuildableMaster_Container_C::UpdateStorageStat()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BuildableMaster_Container_C", "UpdateStorageStat");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BuildableMaster_Container.BuildableMaster_Container_C.ActorPreSave
+// (Event, Public, BlueprintEvent)
+
+void ABuildableMaster_Container_C::ActorPreSave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BuildableMaster_Container_C", "ActorPreSave");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

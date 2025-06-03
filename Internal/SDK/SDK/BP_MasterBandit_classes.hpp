@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Enum_AILootTables_structs.hpp"
 #include "BP_MasterAICharacter_classes.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Enum_AILootTables_structs.hpp"
+#include "Engine_structs.hpp"
 #include "E_AIBehaviour_structs.hpp"
 
 
@@ -59,11 +59,6 @@ public:
 	bool                                          Looted;                                            // 0x09C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void StopBurning();
-	void SetWeapons();
-	void SetPickupCount(int32 NewCount, bool* Result);
-	void SetMeshAndMaterial(bool SkipRandomMaterial__0);
 	void SetItemShadowVisibility(bool CastShadow_);
 	void SetInteractOption(const struct FGameplayTag& Option);
 	void SetInteractDistance(class AActor* Target);
@@ -80,6 +75,7 @@ public:
 	void OnExecuteInteract(class AActor* InteractingActor, const struct FGameplayTag& Option);
 	void OnEndInteract();
 	void OnBeginInteract(class AActor* InteractingActor, const TMap<struct FGameplayTag, class FText>& Options);
+	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
 	void JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result);
 	void JigMP_OnTwoContainersSwap(class FName FromContainer, class FName ToContainer, bool* Result);
 	void JigMP_OnRequestDropItem(const struct FRepItemInfo& ItemInfo, class FName ContainerName, class AActor** ActorRef);
@@ -93,20 +89,16 @@ public:
 	void JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result);
 	void JigMP_OnItemAdded(const struct FGuid& ItemUID, const struct FGuid& FromContainerUID, const struct FGuid& TocontainerUID, class UActorComponent* FromComponent, bool* Result);
 	void JigMP_OnContainersSwap(class UJSIContainer_C* Container1, class UJSIContainer_C* Container2, bool* Result);
+	void JigMP_GetLootWidget(class UWidget** Result, bool* Valid_);
 	void JigCanInteract(bool* Result);
 	void IsAIBurning_(bool* IsBurning_);
 	void HitByVehicle(double Speed, const struct FVector& Direction);
 	void HealthMultiplier(float NewValue);
 	void GetMovementSpeeds(double* RoamingSpeed, double* AlertSpeed, double* AttackSpeed);
 	void GetMesh(class USkeletalMeshComponent** Mesh_0);
-	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
-	void AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss__0);
-	void AI_Health();
-	void AddMarker(class UWidgetComponent* Marker_0);
-	void JigMP_GetLootWidget(class UWidget** Result, bool* Valid_);
-	void JigSetCanInteract(bool CanInteract, bool EnablePhysics, bool* Result);
-	void GetMainSceneComp(class USceneComponent** Comp);
 	void GetMarker(class UTexture2D** Texture, struct FLinearColor* Color, double* MarkerOffset);
+	void GetMainSceneComp(class USceneComponent** Comp);
+	void GetJigMultiplayerComponent(class UActorComponent** JigComp);
 	void GetItemInfo(class UJigsawItem_DataAsset_C** Info, int32* Count, struct FS_RandomStatsConfig* RandomStatsConfig, TMap<class FString, class FString>* CustomData);
 	void GetInteractOptions(TMap<struct FGameplayTag, class FText>* Options);
 	void ExecuteUbergraph_BP_MasterBandit(int32 EntryPoint);
@@ -117,6 +109,14 @@ public:
 	void CanStompAI_(bool* Stomp_);
 	void CanAddMarkerToAI_(bool* CanAdd_);
 	void BndEvt__BP_Zombie_Master_AIOSubject_K2Node_ComponentBoundEvent_2_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void AIHealthBarInfo(bool* Visible_, class FString* Param_Name_0, bool* Boss__0);
+	void AI_Health();
+	void AddMarker(class UWidgetComponent* Marker_0);
+	void SetMeshAndMaterial(bool SkipRandomMaterial__0);
+	void SetPickupCount(int32 NewCount, bool* Result);
+	void SetWeapons();
+	void StopBurning();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

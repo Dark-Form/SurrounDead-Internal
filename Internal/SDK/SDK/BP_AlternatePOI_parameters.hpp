@@ -16,6 +16,17 @@
 namespace SDK::Params
 {
 
+// Function BP_AlternatePOI.BP_AlternatePOI_C.ComponentsToSave
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AlternatePOI_C_ComponentsToSave final
+{
+public:
+	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+static_assert(alignof(BP_AlternatePOI_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_AlternatePOI_C_ComponentsToSave");
+static_assert(sizeof(BP_AlternatePOI_C_ComponentsToSave) == 0x000010, "Wrong size on BP_AlternatePOI_C_ComponentsToSave");
+static_assert(offsetof(BP_AlternatePOI_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_AlternatePOI_C_ComponentsToSave::Components' has a wrong offset!");
+
 // Function BP_AlternatePOI.BP_AlternatePOI_C.ExecuteUbergraph_BP_AlternatePOI
 // 0x0080 (0x0080 - 0x0000)
 struct BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI final
@@ -37,17 +48,6 @@ static_assert(offsetof(BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI, K2Nod
 static_assert(offsetof(BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI, CallFunc_GetTransform_ReturnValue) == 0x000010, "Member 'BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000070, "Member 'BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI, CallFunc_FinishSpawningActor_ReturnValue) == 0x000078, "Member 'BP_AlternatePOI_C_ExecuteUbergraph_BP_AlternatePOI::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-
-// Function BP_AlternatePOI.BP_AlternatePOI_C.ComponentsToSave
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AlternatePOI_C_ComponentsToSave final
-{
-public:
-	TArray<class UActorComponent*>                Components;                                        // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-};
-static_assert(alignof(BP_AlternatePOI_C_ComponentsToSave) == 0x000008, "Wrong alignment on BP_AlternatePOI_C_ComponentsToSave");
-static_assert(sizeof(BP_AlternatePOI_C_ComponentsToSave) == 0x000010, "Wrong size on BP_AlternatePOI_C_ComponentsToSave");
-static_assert(offsetof(BP_AlternatePOI_C_ComponentsToSave, Components) == 0x000000, "Member 'BP_AlternatePOI_C_ComponentsToSave::Components' has a wrong offset!");
 
 }
 

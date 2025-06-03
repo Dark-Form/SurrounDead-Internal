@@ -17,73 +17,19 @@
 namespace SDK
 {
 
-// Function BP_SkySettings.BP_SkySettings_C.Saturation
+// Function BP_SkySettings.BP_SkySettings_C.DayLength
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkySettings_C::Saturation(float NewValue)
+void ABP_SkySettings_C::DayLength(float NewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkySettings_C", "Saturation");
+		Func = Class->GetFunction("BP_SkySettings_C", "DayLength");
 
-	Params::BP_SkySettings_C_Saturation Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SkySettings.BP_SkySettings_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SkySettings_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkySettings_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SkySettings.BP_SkySettings_C.NightLength
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SkySettings_C::NightLength(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkySettings_C", "NightLength");
-
-	Params::BP_SkySettings_C_NightLength Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SkySettings.BP_SkySettings_C.NightBright
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SkySettings_C::NightBright(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkySettings_C", "NightBright");
-
-	Params::BP_SkySettings_C_NightBright Parms{};
+	Params::BP_SkySettings_C_DayLength Parms{};
 
 	Parms.NewValue = NewValue;
 
@@ -111,19 +57,73 @@ void ABP_SkySettings_C::ExecuteUbergraph_BP_SkySettings(int32 EntryPoint)
 }
 
 
-// Function BP_SkySettings.BP_SkySettings_C.DayLength
+// Function BP_SkySettings.BP_SkySettings_C.NightBright
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkySettings_C::DayLength(float NewValue)
+void ABP_SkySettings_C::NightBright(float NewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkySettings_C", "DayLength");
+		Func = Class->GetFunction("BP_SkySettings_C", "NightBright");
 
-	Params::BP_SkySettings_C_DayLength Parms{};
+	Params::BP_SkySettings_C_NightBright Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkySettings.BP_SkySettings_C.NightLength
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkySettings_C::NightLength(float NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkySettings_C", "NightLength");
+
+	Params::BP_SkySettings_C_NightLength Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkySettings.BP_SkySettings_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SkySettings_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkySettings_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SkySettings.BP_SkySettings_C.Saturation
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkySettings_C::Saturation(float NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkySettings_C", "Saturation");
+
+	Params::BP_SkySettings_C_Saturation Parms{};
 
 	Parms.NewValue = NewValue;
 

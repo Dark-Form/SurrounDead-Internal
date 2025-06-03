@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Container_ShopLoot_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Container_ShopLoot_classes.hpp"
 
 
 namespace SDK
@@ -25,10 +25,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_Container_ShopLoot_ShopFreezer_C;   // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ReceiveBeginPlay();
-	void ExecuteUbergraph_Container_ShopLoot_ShopFreezer(int32 EntryPoint);
-	void Event2();
 	void Event1();
+	void Event2();
+	void ExecuteUbergraph_Container_ShopLoot_ShopFreezer(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

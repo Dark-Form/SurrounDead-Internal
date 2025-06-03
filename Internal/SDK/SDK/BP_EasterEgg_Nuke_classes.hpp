@@ -30,13 +30,13 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x02C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Svr_Explode(class AController* EventInstigator);
-	void MC_Explode(class AController* InputPin);
-	void IsObjectDamageable_(bool* Damageable_);
-	void ExecuteUbergraph_BP_EasterEgg_Nuke(int32 EntryPoint);
-	void Damage_Shoved(bool Anim, double Force);
-	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
 	void BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen);
+	void Damage_Object(double Damage, class AActor* Damage_Causer, class AController* Event_Instigator);
+	void Damage_Shoved(bool Anim, double Force);
+	void ExecuteUbergraph_BP_EasterEgg_Nuke(int32 EntryPoint);
+	void IsObjectDamageable_(bool* Damageable_);
+	void MC_Explode(class AController* InputPin);
+	void Svr_Explode(class AController* EventInstigator);
 
 public:
 	static class UClass* StaticClass()

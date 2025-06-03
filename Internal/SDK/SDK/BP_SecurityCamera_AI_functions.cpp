@@ -17,17 +17,88 @@
 namespace SDK
 {
 
-// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.Turret Destroyed Effect
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SecurityCamera_AI_C::Turret_Destroyed_Effect()
+void ABP_SecurityCamera_AI_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "Turret Destroyed Effect");
+		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SecurityCamera_AI_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
+
+	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
+	Parms.LayerIndex = LayerIndex;
+	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.ExecuteUbergraph_BP_SecurityCamera_AI
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SecurityCamera_AI_C::ExecuteUbergraph_BP_SecurityCamera_AI(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "ExecuteUbergraph_BP_SecurityCamera_AI");
+
+	Params::BP_SecurityCamera_AI_C_ExecuteUbergraph_BP_SecurityCamera_AI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.IsObjectDamageable?
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SecurityCamera_AI_C::IsObjectDamageable_(bool* Damageable_)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "IsObjectDamageable?");
+
+	Params::BP_SecurityCamera_AI_C_IsObjectDamageable_ Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Damageable_ != nullptr)
+		*Damageable_ = Parms.Damageable_;
+}
+
+
+// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.Multicast Spawn Emitter
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SecurityCamera_AI_C::Multicast_Spawn_Emitter(const struct FVector& Scale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "Multicast Spawn Emitter");
+
+	Params::BP_SecurityCamera_AI_C_Multicast_Spawn_Emitter Parms{};
+
+	Parms.Scale = std::move(Scale);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -57,88 +128,17 @@ void ABP_SecurityCamera_AI_C::ReceiveAnyDamage(float Damage, const class UDamage
 }
 
 
-// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.Multicast Spawn Emitter
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Scale                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.Turret Destroyed Effect
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SecurityCamera_AI_C::Multicast_Spawn_Emitter(const struct FVector& Scale)
+void ABP_SecurityCamera_AI_C::Turret_Destroyed_Effect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "Multicast Spawn Emitter");
+		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "Turret Destroyed Effect");
 
-	Params::BP_SecurityCamera_AI_C_Multicast_Spawn_Emitter Parms{};
-
-	Parms.Scale = std::move(Scale);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.IsObjectDamageable?
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Damageable_                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SecurityCamera_AI_C::IsObjectDamageable_(bool* Damageable_)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "IsObjectDamageable?");
-
-	Params::BP_SecurityCamera_AI_C_IsObjectDamageable_ Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Damageable_ != nullptr)
-		*Damageable_ = Parms.Damageable_;
-}
-
-
-// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.ExecuteUbergraph_BP_SecurityCamera_AI
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SecurityCamera_AI_C::ExecuteUbergraph_BP_SecurityCamera_AI(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "ExecuteUbergraph_BP_SecurityCamera_AI");
-
-	Params::BP_SecurityCamera_AI_C_ExecuteUbergraph_BP_SecurityCamera_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SecurityCamera_AI.BP_SecurityCamera_AI_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsBeyondLastLayer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LayerIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSeen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SecurityCamera_AI_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature(bool bIsBeyondLastLayer, int32 LayerIndex, bool bIsSeen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_AI_C", "BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature");
-
-	Params::BP_SecurityCamera_AI_C_BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature Parms{};
-
-	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
-	Parms.LayerIndex = LayerIndex;
-	Parms.bIsSeen = bIsSeen;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

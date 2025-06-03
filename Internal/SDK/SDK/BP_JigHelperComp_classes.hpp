@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "S_RepNonActorData_structs.hpp"
+#include "S_EquipmentIDInfo_structs.hpp"
+#include "S_ServerEquippedItems_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "S_RepActorData_structs.hpp"
-#include "S_ServerEquippedItems_structs.hpp"
-#include "S_EquipmentIDInfo_structs.hpp"
+#include "S_RepNonActorData_structs.hpp"
 
 
 namespace SDK

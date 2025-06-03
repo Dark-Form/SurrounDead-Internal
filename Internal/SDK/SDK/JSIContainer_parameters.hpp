@@ -13,9 +13,9 @@
 #include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "DefaultItemInfo_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "DefaultItemInfo_structs.hpp"
 
 
 namespace SDK::Params
@@ -4802,7 +4802,7 @@ struct JSIContainer_C_GetRootContainerRef final
 public:
 	bool                                          ExcludeEquipTo;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UJSIContainer_C*                        ContainerREF;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        ContainerRef;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UJSIContainer_C*                        CallFunc_GetRootContainerRef_ContainerRef;         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEquipTo__ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -4812,7 +4812,7 @@ public:
 static_assert(alignof(JSIContainer_C_GetRootContainerRef) == 0x000008, "Wrong alignment on JSIContainer_C_GetRootContainerRef");
 static_assert(sizeof(JSIContainer_C_GetRootContainerRef) == 0x000020, "Wrong size on JSIContainer_C_GetRootContainerRef");
 static_assert(offsetof(JSIContainer_C_GetRootContainerRef, ExcludeEquipTo) == 0x000000, "Member 'JSIContainer_C_GetRootContainerRef::ExcludeEquipTo' has a wrong offset!");
-static_assert(offsetof(JSIContainer_C_GetRootContainerRef, ContainerREF) == 0x000008, "Member 'JSIContainer_C_GetRootContainerRef::ContainerREF' has a wrong offset!");
+static_assert(offsetof(JSIContainer_C_GetRootContainerRef, ContainerRef) == 0x000008, "Member 'JSIContainer_C_GetRootContainerRef::ContainerRef' has a wrong offset!");
 static_assert(offsetof(JSIContainer_C_GetRootContainerRef, CallFunc_GetRootContainerRef_ContainerRef) == 0x000010, "Member 'JSIContainer_C_GetRootContainerRef::CallFunc_GetRootContainerRef_ContainerRef' has a wrong offset!");
 static_assert(offsetof(JSIContainer_C_GetRootContainerRef, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'JSIContainer_C_GetRootContainerRef::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(JSIContainer_C_GetRootContainerRef, CallFunc_IsEquipTo__ReturnValue) == 0x000019, "Member 'JSIContainer_C_GetRootContainerRef::CallFunc_IsEquipTo__ReturnValue' has a wrong offset!");

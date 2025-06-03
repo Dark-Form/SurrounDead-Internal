@@ -16,16 +16,27 @@
 namespace SDK::Params
 {
 
-// Function BP_StartQuestArea.BP_StartQuestArea_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_StartQuestArea_C_UserConstructionScript final
+// Function BP_StartQuestArea.BP_StartQuestArea_C.BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_StartQuestArea_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_StartQuestArea_C_UserConstructionScript");
-static_assert(sizeof(BP_StartQuestArea_C_UserConstructionScript) == 0x000001, "Wrong size on BP_StartQuestArea_C_UserConstructionScript");
-static_assert(offsetof(BP_StartQuestArea_C_UserConstructionScript, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'BP_StartQuestArea_C_UserConstructionScript::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function BP_StartQuestArea.BP_StartQuestArea_C.ExecuteUbergraph_BP_StartQuestArea
 // 0x0188 (0x0188 - 0x0000)
@@ -89,27 +100,16 @@ static_assert(offsetof(BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea, C
 static_assert(offsetof(BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea, CallFunc_IsQuestStartedOrFinished_ReturnValue) == 0x000180, "Member 'BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea::CallFunc_IsQuestStartedOrFinished_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea, CallFunc_IsQuestStartedOrFinished_ReturnValue_1) == 0x000181, "Member 'BP_StartQuestArea_C_ExecuteUbergraph_BP_StartQuestArea::CallFunc_IsQuestStartedOrFinished_ReturnValue_1' has a wrong offset!");
 
-// Function BP_StartQuestArea.BP_StartQuestArea_C.BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_StartQuestArea.BP_StartQuestArea_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_StartQuestArea_C_UserConstructionScript final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_StartQuestArea_C_BndEvt__BP_StartQuestArea_Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+static_assert(alignof(BP_StartQuestArea_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_StartQuestArea_C_UserConstructionScript");
+static_assert(sizeof(BP_StartQuestArea_C_UserConstructionScript) == 0x000001, "Wrong size on BP_StartQuestArea_C_UserConstructionScript");
+static_assert(offsetof(BP_StartQuestArea_C_UserConstructionScript, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'BP_StartQuestArea_C_UserConstructionScript::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 }
 

@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Campfire.BP_Campfire_C.ExecuteUbergraph_BP_Campfire
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Campfire_C::ExecuteUbergraph_BP_Campfire(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Campfire_C", "ExecuteUbergraph_BP_Campfire");
-
-	Params::BP_Campfire_C_ExecuteUbergraph_BP_Campfire Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Campfire.BP_Campfire_C.BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundEvent_0_OnOptimizationUpdate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -56,6 +36,26 @@ void ABP_Campfire_C::BndEvt__BP_CookingStation_AIOSubject_K2Node_ComponentBoundE
 	Parms.bIsBeyondLastLayer = bIsBeyondLastLayer;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bIsSeen = bIsSeen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Campfire.BP_Campfire_C.ExecuteUbergraph_BP_Campfire
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Campfire_C::ExecuteUbergraph_BP_Campfire(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Campfire_C", "ExecuteUbergraph_BP_Campfire");
+
+	Params::BP_Campfire_C_ExecuteUbergraph_BP_Campfire Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

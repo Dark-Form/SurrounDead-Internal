@@ -33,7 +33,7 @@ public:
 	class UJSI_Slot_C*                            ParentSlot;                                        // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TArray<class UJSIContainer_C*>                ContainersDragOver;                                // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	struct FKey                                   RotateKey;                                         // 0x0310(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                          IsKeyDown;                                         // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          isKeyDown;                                         // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RotationChanged_;                                  // 0x0329(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_32A[0x6];                                      // 0x032A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UJSI_Slot_C*                            OnSlot;                                            // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -82,7 +82,7 @@ static_assert(offsetof(UDragWidget_C, Image) == 0x0002F0, "Member 'UDragWidget_C
 static_assert(offsetof(UDragWidget_C, ParentSlot) == 0x0002F8, "Member 'UDragWidget_C::ParentSlot' has a wrong offset!");
 static_assert(offsetof(UDragWidget_C, ContainersDragOver) == 0x000300, "Member 'UDragWidget_C::ContainersDragOver' has a wrong offset!");
 static_assert(offsetof(UDragWidget_C, RotateKey) == 0x000310, "Member 'UDragWidget_C::RotateKey' has a wrong offset!");
-static_assert(offsetof(UDragWidget_C, IsKeyDown) == 0x000328, "Member 'UDragWidget_C::IsKeyDown' has a wrong offset!");
+static_assert(offsetof(UDragWidget_C, isKeyDown) == 0x000328, "Member 'UDragWidget_C::isKeyDown' has a wrong offset!");
 static_assert(offsetof(UDragWidget_C, RotationChanged_) == 0x000329, "Member 'UDragWidget_C::RotationChanged_' has a wrong offset!");
 static_assert(offsetof(UDragWidget_C, OnSlot) == 0x000330, "Member 'UDragWidget_C::OnSlot' has a wrong offset!");
 static_assert(offsetof(UDragWidget_C, Operation) == 0x000338, "Member 'UDragWidget_C::Operation' has a wrong offset!");

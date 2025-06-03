@@ -214,9 +214,9 @@ bool UUBPP_FunctionLibrary_C::Actor_Line_Trace_By_Channel(class AActor* Actor, d
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Actor_to_Actor_Line_Trace_by_Channel(class AActor* Actor_A, class AActor* Actor_B, bool Ignore_Actors, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Actor_to_Actor_Line_Trace_by_Channel(class AActor* Actor_A, class AActor* Actor_B, bool Ignore_Actors, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -239,8 +239,8 @@ void UUBPP_FunctionLibrary_C::Actor_to_Actor_Line_Trace_by_Channel(class AActor*
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -495,9 +495,9 @@ void UUBPP_FunctionLibrary_C::Append_String_Arrays(TArray<class FString>& Actor_
 // const class FText&                      A                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // const class FText&                      B                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText*                            Return_Value                                           (Parm, OutParm)
+// class FText*                            Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Append_Text(const class FText& A, const class FText& B, class UObject* __WorldContext, class FText* Return_Value)
+void UUBPP_FunctionLibrary_C::Append_Text(const class FText& A, const class FText& B, class UObject* __WorldContext, class FText* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -512,8 +512,8 @@ void UUBPP_FunctionLibrary_C::Append_Text(const class FText& A, const class FTex
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -625,9 +625,9 @@ void UUBPP_FunctionLibrary_C::Apply_Points_Drag__Linear_(TArray<struct FVector>&
 // Parameters:
 // double                                  Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -641,8 +641,8 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Float_(double Input_Value, cl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -651,9 +651,9 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Float_(double Input_Value, cl
 // Parameters:
 // int32                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -667,8 +667,8 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int_(int32 Input_Value, class
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -677,9 +677,9 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int_(int32 Input_Value, class
 // Parameters:
 // int64                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -693,8 +693,8 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int64_(int64 Input_Value, cla
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -703,9 +703,9 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_or_Zero__Int64_(int64 Input_Value, cla
 // Parameters:
 // double                                  Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -719,8 +719,8 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Float_(double Input_Value, class
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -729,9 +729,9 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Float_(double Input_Value, class
 // Parameters:
 // int32                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -745,8 +745,8 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int_(int32 Input_Value, class UO
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -755,9 +755,9 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int_(int32 Input_Value, class UO
 // Parameters:
 // int64                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -771,8 +771,8 @@ void UUBPP_FunctionLibrary_C::Bigger_Than_Zero__Int64_(int64 Input_Value, class 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -823,9 +823,9 @@ void UUBPP_FunctionLibrary_C::Boolean_Array_Add(TArray<bool>& Input_Array, bool 
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              All_Out_Hits                                           (Parm, OutParm, ContainsInstancedReference)
 // int32*                                  Times_Till_Stop                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Bouncing_Line_Trace_By_Channel(const struct FVector& Start, const struct FRotator& Rotation, double Length, int32 Times, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* All_Out_Hits, int32* Times_Till_Stop, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Bouncing_Line_Trace_By_Channel(const struct FVector& Start, const struct FRotator& Rotation, double Length, int32 Times, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* All_Out_Hits, int32* Times_Till_Stop, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -851,8 +851,8 @@ void UUBPP_FunctionLibrary_C::Bouncing_Line_Trace_By_Channel(const struct FVecto
 	if (Times_Till_Stop != nullptr)
 		*Times_Till_Stop = Parms.Times_Till_Stop;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1037,9 +1037,9 @@ void UUBPP_FunctionLibrary_C::Byte_Array_to_String_Array(TArray<uint8>& Input_Ar
 // Parameters:
 // uint8                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Byte_To_Integer(uint8 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Byte_To_Integer(uint8 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1053,8 +1053,8 @@ void UUBPP_FunctionLibrary_C::Byte_To_Integer(uint8 Value, class UObject* __Worl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1063,9 +1063,9 @@ void UUBPP_FunctionLibrary_C::Byte_To_Integer(uint8 Value, class UObject* __Worl
 // Parameters:
 // uint8                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Byte_To_Integer64(uint8 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Byte_To_Integer64(uint8 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1079,8 +1079,8 @@ void UUBPP_FunctionLibrary_C::Byte_To_Integer64(uint8 Value, class UObject* __Wo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1121,9 +1121,9 @@ void UUBPP_FunctionLibrary_C::Byte_To_Vector(uint8 Input_Byte, class UObject* __
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Channel(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Channel(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1145,8 +1145,8 @@ void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Channel(double Length, int32 
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1161,9 +1161,9 @@ void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Channel(double Length, int32 
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Profile(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Profile(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1185,8 +1185,8 @@ void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Profile(double Length, int32 
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1201,9 +1201,9 @@ void UUBPP_FunctionLibrary_C::Camera_Line_Trace_By_Profile(double Length, int32 
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Camera_Line_Trace_For_Objects(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Camera_Line_Trace_For_Objects(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1225,8 +1225,8 @@ void UUBPP_FunctionLibrary_C::Camera_Line_Trace_For_Objects(double Length, int32
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1236,9 +1236,9 @@ void UUBPP_FunctionLibrary_C::Camera_Line_Trace_For_Objects(double Length, int32
 // const struct FVector&                   Vector_A                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Vector_B                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Combine_Vectors__Max_(const struct FVector& Vector_A, const struct FVector& Vector_B, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Combine_Vectors__Max_(const struct FVector& Vector_A, const struct FVector& Vector_B, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1253,8 +1253,8 @@ void UUBPP_FunctionLibrary_C::Combine_Vectors__Max_(const struct FVector& Vector
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -1264,9 +1264,9 @@ void UUBPP_FunctionLibrary_C::Combine_Vectors__Max_(const struct FVector& Vector
 // const struct FVector&                   Vector_A                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Vector_B                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Combine_Vectors__Min_(const struct FVector& Vector_A, const struct FVector& Vector_B, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Combine_Vectors__Min_(const struct FVector& Vector_A, const struct FVector& Vector_B, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1281,8 +1281,8 @@ void UUBPP_FunctionLibrary_C::Combine_Vectors__Min_(const struct FVector& Vector
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -1331,9 +1331,9 @@ void UUBPP_FunctionLibrary_C::Create_Widget_Compact(class APlayerController* Pla
 // Parameters:
 // uint8                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Double__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Double__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1347,8 +1347,8 @@ void UUBPP_FunctionLibrary_C::Double__Byte_(uint8 Value, class UObject* __WorldC
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1357,9 +1357,9 @@ void UUBPP_FunctionLibrary_C::Double__Byte_(uint8 Value, class UObject* __WorldC
 // Parameters:
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Double__Float_(double Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Double__Float_(double Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1373,8 +1373,8 @@ void UUBPP_FunctionLibrary_C::Double__Float_(double Value, class UObject* __Worl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1383,9 +1383,9 @@ void UUBPP_FunctionLibrary_C::Double__Float_(double Value, class UObject* __Worl
 // Parameters:
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Double__Int_(int32 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Double__Int_(int32 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1399,8 +1399,8 @@ void UUBPP_FunctionLibrary_C::Double__Int_(int32 Value, class UObject* __WorldCo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1409,9 +1409,9 @@ void UUBPP_FunctionLibrary_C::Double__Int_(int32 Value, class UObject* __WorldCo
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Double__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Double__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1425,8 +1425,8 @@ void UUBPP_FunctionLibrary_C::Double__Int64_(int64 Value, class UObject* __World
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1464,9 +1464,9 @@ void UUBPP_FunctionLibrary_C::Draw_Static_Mesh_Debug_Box(class AStaticMeshActor*
 // const struct FColor&                    A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FColor&                    B                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equal__Color_(const struct FColor& A, const struct FColor& B, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equal__Color_(const struct FColor& A, const struct FColor& B, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1481,8 +1481,8 @@ void UUBPP_FunctionLibrary_C::Equal__Color_(const struct FColor& A, const struct
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1492,9 +1492,9 @@ void UUBPP_FunctionLibrary_C::Equal__Color_(const struct FColor& A, const struct
 // const struct FSlateColor&               A                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // const struct FSlateColor&               B                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equal__Slate_Color_(const struct FSlateColor& A, const struct FSlateColor& B, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equal__Slate_Color_(const struct FSlateColor& A, const struct FSlateColor& B, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1509,8 +1509,8 @@ void UUBPP_FunctionLibrary_C::Equal__Slate_Color_(const struct FSlateColor& A, c
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1520,9 +1520,9 @@ void UUBPP_FunctionLibrary_C::Equal__Slate_Color_(const struct FSlateColor& A, c
 // const struct FRandomStream&             A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 // const struct FRandomStream&             B                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equal__Stream_(const struct FRandomStream& A, const struct FRandomStream& B, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equal__Stream_(const struct FRandomStream& A, const struct FRandomStream& B, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1537,8 +1537,8 @@ void UUBPP_FunctionLibrary_C::Equal__Stream_(const struct FRandomStream& A, cons
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1572,9 +1572,9 @@ bool UUBPP_FunctionLibrary_C::Equals_Max__Byte_(uint8 Input_Value, class UObject
 // Parameters:
 // uint8                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Not_Max__Byte_(uint8 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Not_Max__Byte_(uint8 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1588,8 +1588,8 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Max__Byte_(uint8 Input_Value, class UOb
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1598,9 +1598,9 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Max__Byte_(uint8 Input_Value, class UOb
 // Parameters:
 // uint8                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Byte_(uint8 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Byte_(uint8 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1614,8 +1614,8 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Byte_(uint8 Input_Value, class UO
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1624,9 +1624,9 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Byte_(uint8 Input_Value, class UO
 // Parameters:
 // double                                  Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1640,8 +1640,8 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Float_(double Input_Value, class 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1650,9 +1650,9 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Float_(double Input_Value, class 
 // Parameters:
 // int32                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1666,8 +1666,8 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int_(int32 Input_Value, class UOb
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1676,9 +1676,9 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int_(int32 Input_Value, class UOb
 // Parameters:
 // int64                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1692,8 +1692,8 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int64_(int64 Input_Value, class U
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1702,9 +1702,9 @@ void UUBPP_FunctionLibrary_C::Equals_Not_Zero__Int64_(int64 Input_Value, class U
 // Parameters:
 // uint8                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Zero__Byte_(uint8 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Zero__Byte_(uint8 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1718,8 +1718,8 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Byte_(uint8 Input_Value, class UObjec
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1728,9 +1728,9 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Byte_(uint8 Input_Value, class UObjec
 // Parameters:
 // double                                  Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1744,8 +1744,8 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Float_(double Input_Value, class UObj
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1754,9 +1754,9 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Float_(double Input_Value, class UObj
 // Parameters:
 // int32                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1770,8 +1770,8 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Int_(int32 Input_Value, class UObject
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1780,9 +1780,9 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Int_(int32 Input_Value, class UObject
 // Parameters:
 // int64                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Equals_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Equals_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1796,8 +1796,8 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Int64_(int64 Input_Value, class UObje
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -1807,9 +1807,9 @@ void UUBPP_FunctionLibrary_C::Equals_Zero__Int64_(int64 Input_Value, class UObje
 // class AActor*                           Start                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FRotator*                        Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FRotator*                        Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UUBPP_FunctionLibrary_C::Find_Actor_Look_at_Rotation(class AActor* Start, class AActor* Target, class UObject* __WorldContext, struct FRotator* Return_Value)
+void UUBPP_FunctionLibrary_C::Find_Actor_Look_at_Rotation(class AActor* Start, class AActor* Target, class UObject* __WorldContext, struct FRotator* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1824,8 +1824,8 @@ void UUBPP_FunctionLibrary_C::Find_Actor_Look_at_Rotation(class AActor* Start, c
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -1836,9 +1836,9 @@ void UUBPP_FunctionLibrary_C::Find_Actor_Look_at_Rotation(class AActor* Start, c
 // int32                                   PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Length_Range                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FRotator*                        Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FRotator*                        Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UUBPP_FunctionLibrary_C::Find_Look_At_Rotation__Crosshair_(const struct FVector& Start, int32 PlayerIndex, double Length_Range, class UObject* __WorldContext, struct FRotator* Return_Value)
+void UUBPP_FunctionLibrary_C::Find_Look_At_Rotation__Crosshair_(const struct FVector& Start, int32 PlayerIndex, double Length_Range, class UObject* __WorldContext, struct FRotator* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1854,8 +1854,8 @@ void UUBPP_FunctionLibrary_C::Find_Look_At_Rotation__Crosshair_(const struct FVe
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -2306,9 +2306,9 @@ void UUBPP_FunctionLibrary_C::Generate_Random_Int_Array_in_Range_From_Stream(int
 // Parameters:
 // class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Actor_Backward_Vector(class AActor* Target, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Actor_Backward_Vector(class AActor* Target, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2322,8 +2322,8 @@ void UUBPP_FunctionLibrary_C::Get_Actor_Backward_Vector(class AActor* Target, cl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -2332,9 +2332,9 @@ void UUBPP_FunctionLibrary_C::Get_Actor_Backward_Vector(class AActor* Target, cl
 // Parameters:
 // class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Actor_Down_Vector(class AActor* Target, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Actor_Down_Vector(class AActor* Target, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2348,8 +2348,8 @@ void UUBPP_FunctionLibrary_C::Get_Actor_Down_Vector(class AActor* Target, class 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -2358,9 +2358,9 @@ void UUBPP_FunctionLibrary_C::Get_Actor_Down_Vector(class AActor* Target, class 
 // Parameters:
 // class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Actor_Left_Vector(class AActor* Target, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Actor_Left_Vector(class AActor* Target, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2374,8 +2374,8 @@ void UUBPP_FunctionLibrary_C::Get_Actor_Left_Vector(class AActor* Target, class 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -2385,9 +2385,9 @@ void UUBPP_FunctionLibrary_C::Get_Actor_Left_Vector(class AActor* Target, class 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D*                       Return_Value_Vector2D                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Alignment(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Vector2D, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Alignment(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Vector2D, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2404,8 +2404,8 @@ void UUBPP_FunctionLibrary_C::Get_Alignment(class UWidget* Widget, class UObject
 	if (Return_Value_Vector2D != nullptr)
 		*Return_Value_Vector2D = std::move(Parms.Return_Value_Vector2D);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2415,9 +2415,9 @@ void UUBPP_FunctionLibrary_C::Get_Alignment(class UWidget* Widget, class UObject
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FAnchors*                        Return_Value_Anchors                                   (Parm, OutParm, NoDestructor)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Anchors(class UWidget* Widget, class UObject* __WorldContext, struct FAnchors* Return_Value_Anchors, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Anchors(class UWidget* Widget, class UObject* __WorldContext, struct FAnchors* Return_Value_Anchors, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2434,8 +2434,8 @@ void UUBPP_FunctionLibrary_C::Get_Anchors(class UWidget* Widget, class UObject* 
 	if (Return_Value_Anchors != nullptr)
 		*Return_Value_Anchors = std::move(Parms.Return_Value_Anchors);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2445,9 +2445,9 @@ void UUBPP_FunctionLibrary_C::Get_Anchors(class UWidget* Widget, class UObject* 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Return_Value_Auto_Size                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Auto_Size(class UWidget* Widget, class UObject* __WorldContext, bool* Return_Value_Auto_Size, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Auto_Size(class UWidget* Widget, class UObject* __WorldContext, bool* Return_Value_Auto_Size, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2464,8 +2464,8 @@ void UUBPP_FunctionLibrary_C::Get_Auto_Size(class UWidget* Widget, class UObject
 	if (Return_Value_Auto_Size != nullptr)
 		*Return_Value_Auto_Size = Parms.Return_Value_Auto_Size;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2531,9 +2531,9 @@ void UUBPP_FunctionLibrary_C::Get_Box_Extent_Site_Points(const struct FVector& O
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Return_Value_Column                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Column(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Column, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Column(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Column, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2550,8 +2550,8 @@ void UUBPP_FunctionLibrary_C::Get_Column(class UWidget* Widget, class UObject* _
 	if (Return_Value_Column != nullptr)
 		*Return_Value_Column = Parms.Return_Value_Column;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2561,9 +2561,9 @@ void UUBPP_FunctionLibrary_C::Get_Column(class UWidget* Widget, class UObject* _
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Return_Value_ZOrder                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Column_Span(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_ZOrder, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Column_Span(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_ZOrder, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2580,8 +2580,8 @@ void UUBPP_FunctionLibrary_C::Get_Column_Span(class UWidget* Widget, class UObje
 	if (Return_Value_ZOrder != nullptr)
 		*Return_Value_ZOrder = Parms.Return_Value_ZOrder;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2707,9 +2707,9 @@ void UUBPP_FunctionLibrary_C::Get_Farthest_Vector(const struct FVector& OriginVe
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Return_Value_Fill_Empty_Space                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Fill_Empty_Space(class UWidget* Widget, class UObject* __WorldContext, bool* Return_Value_Fill_Empty_Space, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Fill_Empty_Space(class UWidget* Widget, class UObject* __WorldContext, bool* Return_Value_Fill_Empty_Space, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2726,8 +2726,8 @@ void UUBPP_FunctionLibrary_C::Get_Fill_Empty_Space(class UWidget* Widget, class 
 	if (Return_Value_Fill_Empty_Space != nullptr)
 		*Return_Value_Fill_Empty_Space = Parms.Return_Value_Fill_Empty_Space;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2737,9 +2737,9 @@ void UUBPP_FunctionLibrary_C::Get_Fill_Empty_Space(class UWidget* Widget, class 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // double*                                 Return_Value_Fill_Span_when_Less_Than                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Fill_Span_When_Less_Than(class UWidget* Widget, class UObject* __WorldContext, double* Return_Value_Fill_Span_when_Less_Than, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Fill_Span_When_Less_Than(class UWidget* Widget, class UObject* __WorldContext, double* Return_Value_Fill_Span_when_Less_Than, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2756,8 +2756,8 @@ void UUBPP_FunctionLibrary_C::Get_Fill_Span_When_Less_Than(class UWidget* Widget
 	if (Return_Value_Fill_Span_when_Less_Than != nullptr)
 		*Return_Value_Fill_Span_when_Less_Than = Parms.Return_Value_Fill_Span_when_Less_Than;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -2915,9 +2915,9 @@ void UUBPP_FunctionLibrary_C::Get_Hit_Item__Hit_(const struct FHitResult& In_Hit
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // EHorizontalAlignment*                   Return_Value_Horizontal_Alignment                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Horizontal_Alignment(class UWidget* Widget, class UObject* __WorldContext, EHorizontalAlignment* Return_Value_Horizontal_Alignment, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Horizontal_Alignment(class UWidget* Widget, class UObject* __WorldContext, EHorizontalAlignment* Return_Value_Horizontal_Alignment, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2934,8 +2934,8 @@ void UUBPP_FunctionLibrary_C::Get_Horizontal_Alignment(class UWidget* Widget, cl
 	if (Return_Value_Horizontal_Alignment != nullptr)
 		*Return_Value_Horizontal_Alignment = Parms.Return_Value_Horizontal_Alignment;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3049,9 +3049,9 @@ void UUBPP_FunctionLibrary_C::Get_Is_Blocking_Hit__Hit_(const struct FHitResult&
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Return_Value_Layer                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Layer(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Layer, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Layer(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Layer, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3068,8 +3068,8 @@ void UUBPP_FunctionLibrary_C::Get_Layer(class UWidget* Widget, class UObject* __
 	if (Return_Value_Layer != nullptr)
 		*Return_Value_Layer = Parms.Return_Value_Layer;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3079,9 +3079,9 @@ void UUBPP_FunctionLibrary_C::Get_Layer(class UWidget* Widget, class UObject* __
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FAnchorData*                     Return_Value_Layout                                    (Parm, OutParm, NoDestructor)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Layout(class UWidget* Widget, class UObject* __WorldContext, struct FAnchorData* Return_Value_Layout, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Layout(class UWidget* Widget, class UObject* __WorldContext, struct FAnchorData* Return_Value_Layout, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3098,8 +3098,8 @@ void UUBPP_FunctionLibrary_C::Get_Layout(class UWidget* Widget, class UObject* _
 	if (Return_Value_Layout != nullptr)
 		*Return_Value_Layout = std::move(Parms.Return_Value_Layout);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3136,9 +3136,9 @@ void UUBPP_FunctionLibrary_C::Get_Location__Hit_(const struct FHitResult& In_Hit
 // const struct FVector&                   Sphere_Origin                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Sphere_Radius                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Nearest_Sphere_Point(const struct FVector& Point, const struct FVector& Sphere_Origin, double Sphere_Radius, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Nearest_Sphere_Point(const struct FVector& Point, const struct FVector& Sphere_Origin, double Sphere_Radius, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3154,8 +3154,8 @@ void UUBPP_FunctionLibrary_C::Get_Nearest_Sphere_Point(const struct FVector& Poi
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -3269,9 +3269,9 @@ void UUBPP_FunctionLibrary_C::Get_Normal__Hit_(const struct FHitResult& In_Hit_R
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D*                       Return_Value_Nudge                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Nudge(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Nudge, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Nudge(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Nudge, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3288,8 +3288,8 @@ void UUBPP_FunctionLibrary_C::Get_Nudge(class UWidget* Widget, class UObject* __
 	if (Return_Value_Nudge != nullptr)
 		*Return_Value_Nudge = std::move(Parms.Return_Value_Nudge);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3299,9 +3299,9 @@ void UUBPP_FunctionLibrary_C::Get_Nudge(class UWidget* Widget, class UObject* __
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FMargin*                         Return_Value_Offsets                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Offsets(class UWidget* Widget, class UObject* __WorldContext, struct FMargin* Return_Value_Offsets, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Offsets(class UWidget* Widget, class UObject* __WorldContext, struct FMargin* Return_Value_Offsets, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3318,8 +3318,8 @@ void UUBPP_FunctionLibrary_C::Get_Offsets(class UWidget* Widget, class UObject* 
 	if (Return_Value_Offsets != nullptr)
 		*Return_Value_Offsets = std::move(Parms.Return_Value_Offsets);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3329,9 +3329,9 @@ void UUBPP_FunctionLibrary_C::Get_Offsets(class UWidget* Widget, class UObject* 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FMargin*                         Return_Value_Padding                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Padding(class UWidget* Widget, class UObject* __WorldContext, struct FMargin* Return_Value_Padding, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Padding(class UWidget* Widget, class UObject* __WorldContext, struct FMargin* Return_Value_Padding, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3348,8 +3348,8 @@ void UUBPP_FunctionLibrary_C::Get_Padding(class UWidget* Widget, class UObject* 
 	if (Return_Value_Padding != nullptr)
 		*Return_Value_Padding = std::move(Parms.Return_Value_Padding);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3385,9 +3385,9 @@ void UUBPP_FunctionLibrary_C::Get_Phys_Mat__Hit_(const struct FHitResult& In_Hit
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D*                       Return_Value_Position                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Position(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Position, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Position(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Position, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3404,8 +3404,8 @@ void UUBPP_FunctionLibrary_C::Get_Position(class UWidget* Widget, class UObject*
 	if (Return_Value_Position != nullptr)
 		*Return_Value_Position = std::move(Parms.Return_Value_Position);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3625,9 +3625,9 @@ void UUBPP_FunctionLibrary_C::Get_Random_Numeric_Code_from_Stream(int32 Code_Len
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Return_Value_Row                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Row(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Row, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Row(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Row, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3644,8 +3644,8 @@ void UUBPP_FunctionLibrary_C::Get_Row(class UWidget* Widget, class UObject* __Wo
 	if (Return_Value_Row != nullptr)
 		*Return_Value_Row = Parms.Return_Value_Row;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3655,9 +3655,9 @@ void UUBPP_FunctionLibrary_C::Get_Row(class UWidget* Widget, class UObject* __Wo
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Return_Value_Row_Span                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Row_Span(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Row_Span, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Row_Span(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_Row_Span, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3674,8 +3674,8 @@ void UUBPP_FunctionLibrary_C::Get_Row_Span(class UWidget* Widget, class UObject*
 	if (Return_Value_Row_Span != nullptr)
 		*Return_Value_Row_Span = Parms.Return_Value_Row_Span;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3685,9 +3685,9 @@ void UUBPP_FunctionLibrary_C::Get_Row_Span(class UWidget* Widget, class UObject*
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FSlateChildSize*                 Return_Value_Size                                      (Parm, OutParm, NoDestructor)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Size__Slate_Child_Size_(class UWidget* Widget, class UObject* __WorldContext, struct FSlateChildSize* Return_Value_Size, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Size__Slate_Child_Size_(class UWidget* Widget, class UObject* __WorldContext, struct FSlateChildSize* Return_Value_Size, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3704,8 +3704,8 @@ void UUBPP_FunctionLibrary_C::Get_Size__Slate_Child_Size_(class UWidget* Widget,
 	if (Return_Value_Size != nullptr)
 		*Return_Value_Size = std::move(Parms.Return_Value_Size);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3715,9 +3715,9 @@ void UUBPP_FunctionLibrary_C::Get_Size__Slate_Child_Size_(class UWidget* Widget,
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D*                       Return_Value_Size                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Size__Vector2D_(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Size, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Size__Vector2D_(class UWidget* Widget, class UObject* __WorldContext, struct FVector2D* Return_Value_Size, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3734,8 +3734,8 @@ void UUBPP_FunctionLibrary_C::Get_Size__Vector2D_(class UWidget* Widget, class U
 	if (Return_Value_Size != nullptr)
 		*Return_Value_Size = std::move(Parms.Return_Value_Size);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3867,9 +3867,9 @@ void UUBPP_FunctionLibrary_C::Get_Trace_Start__Hit_(const struct FHitResult& In_
 // const struct FVector&                   Vector_A                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Vector_B                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Vector_Difference(const struct FVector& Vector_A, const struct FVector& Vector_B, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Vector_Difference(const struct FVector& Vector_A, const struct FVector& Vector_B, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3884,8 +3884,8 @@ void UUBPP_FunctionLibrary_C::Get_Vector_Difference(const struct FVector& Vector
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -3895,9 +3895,9 @@ void UUBPP_FunctionLibrary_C::Get_Vector_Difference(const struct FVector& Vector
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // EVerticalAlignment*                     Return_Value_Vertical_Alignment                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_Vertical_Alignment(class UWidget* Widget, class UObject* __WorldContext, EVerticalAlignment* Return_Value_Vertical_Alignment, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_Vertical_Alignment(class UWidget* Widget, class UObject* __WorldContext, EVerticalAlignment* Return_Value_Vertical_Alignment, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3914,8 +3914,8 @@ void UUBPP_FunctionLibrary_C::Get_Vertical_Alignment(class UWidget* Widget, clas
 	if (Return_Value_Vertical_Alignment != nullptr)
 		*Return_Value_Vertical_Alignment = Parms.Return_Value_Vertical_Alignment;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3925,9 +3925,9 @@ void UUBPP_FunctionLibrary_C::Get_Vertical_Alignment(class UWidget* Widget, clas
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32*                                  Return_Value_ZOrder                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Get_ZOrder(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_ZOrder, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Get_ZOrder(class UWidget* Widget, class UObject* __WorldContext, int32* Return_Value_ZOrder, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3944,8 +3944,8 @@ void UUBPP_FunctionLibrary_C::Get_ZOrder(class UWidget* Widget, class UObject* _
 	if (Return_Value_ZOrder != nullptr)
 		*Return_Value_ZOrder = Parms.Return_Value_ZOrder;
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3955,9 +3955,9 @@ void UUBPP_FunctionLibrary_C::Get_ZOrder(class UWidget* Widget, class UObject* _
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Percentage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::GetPercentage__Float_(double Value, double Percentage, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::GetPercentage__Float_(double Value, double Percentage, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3972,8 +3972,8 @@ void UUBPP_FunctionLibrary_C::GetPercentage__Float_(double Value, double Percent
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -3983,9 +3983,9 @@ void UUBPP_FunctionLibrary_C::GetPercentage__Float_(double Value, double Percent
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Percentage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::GetPercentage__Int_(int32 Value, double Percentage, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::GetPercentage__Int_(int32 Value, double Percentage, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4000,8 +4000,8 @@ void UUBPP_FunctionLibrary_C::GetPercentage__Int_(int32 Value, double Percentage
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4011,9 +4011,9 @@ void UUBPP_FunctionLibrary_C::GetPercentage__Int_(int32 Value, double Percentage
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Percentage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::GetPercentage__Int64_(int64 Value, double Percentage, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::GetPercentage__Int64_(int64 Value, double Percentage, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4028,8 +4028,8 @@ void UUBPP_FunctionLibrary_C::GetPercentage__Int64_(int64 Value, double Percenta
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4038,9 +4038,9 @@ void UUBPP_FunctionLibrary_C::GetPercentage__Int64_(int64 Value, double Percenta
 // Parameters:
 // uint8                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Half__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Half__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4054,8 +4054,8 @@ void UUBPP_FunctionLibrary_C::Half__Byte_(uint8 Value, class UObject* __WorldCon
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4064,9 +4064,9 @@ void UUBPP_FunctionLibrary_C::Half__Byte_(uint8 Value, class UObject* __WorldCon
 // Parameters:
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Half__Float_(double Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Half__Float_(double Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4080,8 +4080,8 @@ void UUBPP_FunctionLibrary_C::Half__Float_(double Value, class UObject* __WorldC
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4090,9 +4090,9 @@ void UUBPP_FunctionLibrary_C::Half__Float_(double Value, class UObject* __WorldC
 // Parameters:
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Half__Int_(int32 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Half__Int_(int32 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4106,8 +4106,8 @@ void UUBPP_FunctionLibrary_C::Half__Int_(int32 Value, class UObject* __WorldCont
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4116,9 +4116,9 @@ void UUBPP_FunctionLibrary_C::Half__Int_(int32 Value, class UObject* __WorldCont
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Half__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Half__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4132,8 +4132,8 @@ void UUBPP_FunctionLibrary_C::Half__Int64_(int64 Value, class UObject* __WorldCo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4146,9 +4146,9 @@ void UUBPP_FunctionLibrary_C::Half__Int64_(int64 Value, class UObject* __WorldCo
 // bool                                    Inclusive_Min                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Inclusive_Max                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::InRange__Byte_(uint8 Value, uint8 Min, uint8 Max, bool Inclusive_Min, bool Inclusive_Max, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::InRange__Byte_(uint8 Value, uint8 Min, uint8 Max, bool Inclusive_Min, bool Inclusive_Max, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4166,8 +4166,8 @@ void UUBPP_FunctionLibrary_C::InRange__Byte_(uint8 Value, uint8 Min, uint8 Max, 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4180,9 +4180,9 @@ void UUBPP_FunctionLibrary_C::InRange__Byte_(uint8 Value, uint8 Min, uint8 Max, 
 // bool                                    Inclusive_Min                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Inclusive_Max                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::InRange__Vector_(const struct FVector& Value, const struct FVector& Min, const struct FVector& Max, bool Inclusive_Min, bool Inclusive_Max, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::InRange__Vector_(const struct FVector& Value, const struct FVector& Min, const struct FVector& Max, bool Inclusive_Min, bool Inclusive_Max, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4200,8 +4200,8 @@ void UUBPP_FunctionLibrary_C::InRange__Vector_(const struct FVector& Value, cons
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4470,9 +4470,9 @@ void UUBPP_FunctionLibrary_C::Integer64_To_Text(int64 Input_Value, class UObject
 // Parameters:
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Invert_Float(double Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Invert_Float(double Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4486,8 +4486,8 @@ void UUBPP_FunctionLibrary_C::Invert_Float(double Value, class UObject* __WorldC
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4496,9 +4496,9 @@ void UUBPP_FunctionLibrary_C::Invert_Float(double Value, class UObject* __WorldC
 // Parameters:
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Invert_Integer(int32 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Invert_Integer(int32 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4512,8 +4512,8 @@ void UUBPP_FunctionLibrary_C::Invert_Integer(int32 Value, class UObject* __World
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4522,9 +4522,9 @@ void UUBPP_FunctionLibrary_C::Invert_Integer(int32 Value, class UObject* __World
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Invert_Integer64(int64 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Invert_Integer64(int64 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4538,8 +4538,8 @@ void UUBPP_FunctionLibrary_C::Invert_Integer64(int64 Value, class UObject* __Wor
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4548,9 +4548,9 @@ void UUBPP_FunctionLibrary_C::Invert_Integer64(int64 Value, class UObject* __Wor
 // Parameters:
 // const struct FVector&                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Invert_Vector(const struct FVector& Value, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Invert_Vector(const struct FVector& Value, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4564,8 +4564,8 @@ void UUBPP_FunctionLibrary_C::Invert_Vector(const struct FVector& Value, class U
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -4573,9 +4573,9 @@ void UUBPP_FunctionLibrary_C::Invert_Vector(const struct FVector& Value, class U
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Android_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Android_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4588,8 +4588,8 @@ void UUBPP_FunctionLibrary_C::Is_Android_Platform(class UObject* __WorldContext,
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4597,9 +4597,9 @@ void UUBPP_FunctionLibrary_C::Is_Android_Platform(class UObject* __WorldContext,
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_26(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_26(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4612,8 +4612,8 @@ void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_26(class UObject* __WorldConte
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4621,9 +4621,9 @@ void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_26(class UObject* __WorldConte
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_27(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_27(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4636,8 +4636,8 @@ void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_27(class UObject* __WorldConte
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4652,10 +4652,10 @@ void UUBPP_FunctionLibrary_C::Is_Engine_Version_4_27(class UObject* __WorldConte
 // bool                                    TraceComplex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector*                         Wall_Height_Point                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Facing_Wall(class AActor* Actor, double Max_Distance_To_Wall, bool Get_More_Informations__Height_, double Max_Height_To_Check, ETraceTypeQuery TraceChannel, bool TraceComplex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, bool* Return_Value, struct FVector* Wall_Height_Point)
+void UUBPP_FunctionLibrary_C::Is_Facing_Wall(class AActor* Actor, double Max_Distance_To_Wall, bool Get_More_Informations__Height_, double Max_Height_To_Check, ETraceTypeQuery TraceChannel, bool TraceComplex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, bool* Return_value, struct FVector* Wall_Height_Point)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4675,8 +4675,8 @@ void UUBPP_FunctionLibrary_C::Is_Facing_Wall(class AActor* Actor, double Max_Dis
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 
 	if (Wall_Height_Point != nullptr)
 		*Wall_Height_Point = std::move(Parms.Wall_Height_Point);
@@ -4687,9 +4687,9 @@ void UUBPP_FunctionLibrary_C::Is_Facing_Wall(class AActor* Actor, double Max_Dis
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_IOS_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_IOS_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4702,8 +4702,8 @@ void UUBPP_FunctionLibrary_C::Is_IOS_Platform(class UObject* __WorldContext, boo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4711,9 +4711,9 @@ void UUBPP_FunctionLibrary_C::Is_IOS_Platform(class UObject* __WorldContext, boo
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Linux_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Linux_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4726,8 +4726,8 @@ void UUBPP_FunctionLibrary_C::Is_Linux_Platform(class UObject* __WorldContext, b
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4735,9 +4735,9 @@ void UUBPP_FunctionLibrary_C::Is_Linux_Platform(class UObject* __WorldContext, b
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Mac_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Mac_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4750,8 +4750,8 @@ void UUBPP_FunctionLibrary_C::Is_Mac_Platform(class UObject* __WorldContext, boo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4762,9 +4762,9 @@ void UUBPP_FunctionLibrary_C::Is_Mac_Platform(class UObject* __WorldContext, boo
 // const struct FVector&                   Sphere_Origin                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Sphere_Radius                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Point_In_Sphere(const struct FVector& Point, const struct FVector& Sphere_Origin, double Sphere_Radius, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Point_In_Sphere(const struct FVector& Point, const struct FVector& Sphere_Origin, double Sphere_Radius, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4780,8 +4780,8 @@ void UUBPP_FunctionLibrary_C::Is_Point_In_Sphere(const struct FVector& Point, co
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4789,9 +4789,9 @@ void UUBPP_FunctionLibrary_C::Is_Point_In_Sphere(const struct FVector& Point, co
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_PS4_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_PS4_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4804,8 +4804,8 @@ void UUBPP_FunctionLibrary_C::Is_PS4_Platform(class UObject* __WorldContext, boo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4817,9 +4817,9 @@ void UUBPP_FunctionLibrary_C::Is_PS4_Platform(class UObject* __WorldContext, boo
 // const struct FVector&                   Sphere_Origin                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Sphere_Radius                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Sphere_Completely_In_Sphere(const struct FVector& Point__Sphere_, double Point_Radius, const struct FVector& Sphere_Origin, double Sphere_Radius, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Sphere_Completely_In_Sphere(const struct FVector& Point__Sphere_, double Point_Radius, const struct FVector& Sphere_Origin, double Sphere_Radius, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4836,8 +4836,8 @@ void UUBPP_FunctionLibrary_C::Is_Sphere_Completely_In_Sphere(const struct FVecto
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4849,9 +4849,9 @@ void UUBPP_FunctionLibrary_C::Is_Sphere_Completely_In_Sphere(const struct FVecto
 // const struct FVector&                   Sphere_2                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Radius_2                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Sphere_Touching_Sphere(const struct FVector& Sphere_1, double Radius_1, const struct FVector& Sphere_2, double Radius_2, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Sphere_Touching_Sphere(const struct FVector& Sphere_1, double Radius_1, const struct FVector& Sphere_2, double Radius_2, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4868,8 +4868,8 @@ void UUBPP_FunctionLibrary_C::Is_Sphere_Touching_Sphere(const struct FVector& Sp
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4877,9 +4877,9 @@ void UUBPP_FunctionLibrary_C::Is_Sphere_Touching_Sphere(const struct FVector& Sp
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_Windows_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_Windows_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4892,8 +4892,8 @@ void UUBPP_FunctionLibrary_C::Is_Windows_Platform(class UObject* __WorldContext,
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4901,9 +4901,9 @@ void UUBPP_FunctionLibrary_C::Is_Windows_Platform(class UObject* __WorldContext,
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Is_XboxOne_Platform(class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Is_XboxOne_Platform(class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4916,8 +4916,8 @@ void UUBPP_FunctionLibrary_C::Is_XboxOne_Platform(class UObject* __WorldContext,
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4928,9 +4928,9 @@ void UUBPP_FunctionLibrary_C::Is_XboxOne_Platform(class UObject* __WorldContext,
 // const struct FVector&                   Box_Origin                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Box_Extent                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::IsVectorInBoxExtent(const struct FVector& Input_Vector, const struct FVector& Box_Origin, const struct FVector& Box_Extent, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::IsVectorInBoxExtent(const struct FVector& Input_Vector, const struct FVector& Box_Origin, const struct FVector& Box_Extent, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4946,8 +4946,8 @@ void UUBPP_FunctionLibrary_C::IsVectorInBoxExtent(const struct FVector& Input_Ve
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4956,9 +4956,9 @@ void UUBPP_FunctionLibrary_C::IsVectorInBoxExtent(const struct FVector& Input_Ve
 // Parameters:
 // const class FText&                      Input_Text                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Len__Text_(const class FText& Input_Text, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Len__Text_(const class FText& Input_Text, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4972,8 +4972,8 @@ void UUBPP_FunctionLibrary_C::Len__Text_(const class FText& Input_Text, class UO
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -4983,9 +4983,9 @@ void UUBPP_FunctionLibrary_C::Len__Text_(const class FText& Input_Text, class UO
 // int32                                   Pre_Decimal_Places                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Decimal_Places                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Make_Float(int32 Pre_Decimal_Places, int32 Decimal_Places, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Make_Float(int32 Pre_Decimal_Places, int32 Decimal_Places, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5000,8 +5000,8 @@ void UUBPP_FunctionLibrary_C::Make_Float(int32 Pre_Decimal_Places, int32 Decimal
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5292,9 +5292,9 @@ void UUBPP_FunctionLibrary_C::Min_Int64(class UObject* __WorldContext, int64* Ma
 // Parameters:
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_Absolute__Float_(double Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_Absolute__Float_(double Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5308,8 +5308,8 @@ void UUBPP_FunctionLibrary_C::Minus_Absolute__Float_(double Value, class UObject
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5318,9 +5318,9 @@ void UUBPP_FunctionLibrary_C::Minus_Absolute__Float_(double Value, class UObject
 // Parameters:
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_Absolute__Int_(int32 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_Absolute__Int_(int32 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5334,8 +5334,8 @@ void UUBPP_FunctionLibrary_C::Minus_Absolute__Int_(int32 Value, class UObject* _
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5344,9 +5344,9 @@ void UUBPP_FunctionLibrary_C::Minus_Absolute__Int_(int32 Value, class UObject* _
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_Absolute__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_Absolute__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5360,8 +5360,8 @@ void UUBPP_FunctionLibrary_C::Minus_Absolute__Int64_(int64 Value, class UObject*
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5370,9 +5370,9 @@ void UUBPP_FunctionLibrary_C::Minus_Absolute__Int64_(int64 Value, class UObject*
 // Parameters:
 // uint8                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_One__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_One__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5386,8 +5386,8 @@ void UUBPP_FunctionLibrary_C::Minus_One__Byte_(uint8 Value, class UObject* __Wor
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5396,9 +5396,9 @@ void UUBPP_FunctionLibrary_C::Minus_One__Byte_(uint8 Value, class UObject* __Wor
 // Parameters:
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_One__Float_(double Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_One__Float_(double Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5412,8 +5412,8 @@ void UUBPP_FunctionLibrary_C::Minus_One__Float_(double Value, class UObject* __W
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5422,9 +5422,9 @@ void UUBPP_FunctionLibrary_C::Minus_One__Float_(double Value, class UObject* __W
 // Parameters:
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_One__Int_(int32 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_One__Int_(int32 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5438,8 +5438,8 @@ void UUBPP_FunctionLibrary_C::Minus_One__Int_(int32 Value, class UObject* __Worl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5448,9 +5448,9 @@ void UUBPP_FunctionLibrary_C::Minus_One__Int_(int32 Value, class UObject* __Worl
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Minus_One__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Minus_One__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5464,8 +5464,8 @@ void UUBPP_FunctionLibrary_C::Minus_One__Int64_(int64 Value, class UObject* __Wo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5526,9 +5526,9 @@ struct FVector2D UUBPP_FunctionLibrary_C::Mouse_Position_on_Viewport(class UObje
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              OutHits                                                (Parm, OutParm, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Channel(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Channel(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery Trace_Channel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5550,8 +5550,8 @@ void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Channel(double Length, 
 	if (OutHits != nullptr)
 		*OutHits = std::move(Parms.OutHits);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5566,9 +5566,9 @@ void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Channel(double Length, 
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              OutHits                                                (Parm, OutParm, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Profile(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Profile(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5590,8 +5590,8 @@ void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Profile(double Length, 
 	if (OutHits != nullptr)
 		*OutHits = std::move(Parms.OutHits);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5606,9 +5606,9 @@ void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_By_Profile(double Length, 
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              OutHits                                                (Parm, OutParm, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_for_Objects(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_for_Objects(double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5630,8 +5630,8 @@ void UUBPP_FunctionLibrary_C::Multi_Camera_Line_Trace_for_Objects(double Length,
 	if (OutHits != nullptr)
 		*OutHits = std::move(Parms.OutHits);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5764,9 +5764,9 @@ bool UUBPP_FunctionLibrary_C::Multi_Noise_Line_Trace_For_Objects(const struct FV
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              OutHits                                                (Parm, OutParm, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Channel(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery TraceC_hannel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Channel(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery TraceC_hannel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5789,8 +5789,8 @@ void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Channel(const struct FV
 	if (OutHits != nullptr)
 		*OutHits = std::move(Parms.OutHits);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5806,9 +5806,9 @@ void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Channel(const struct FV
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              OutHits                                                (Parm, OutParm, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Profile(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Profile(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5831,8 +5831,8 @@ void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Profile(const struct FV
 	if (OutHits != nullptr)
 		*OutHits = std::move(Parms.OutHits);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5848,9 +5848,9 @@ void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_By_Profile(const struct FV
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FHitResult>*              OutHits                                                (Parm, OutParm, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_For_Objects(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_For_Objects(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, TArray<struct FHitResult>* OutHits, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5873,8 +5873,8 @@ void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_For_Objects(const struct F
 	if (OutHits != nullptr)
 		*OutHits = std::move(Parms.OutHits);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -5883,9 +5883,9 @@ void UUBPP_FunctionLibrary_C::Multi_Weapon_Line_Trace_For_Objects(const struct F
 // Parameters:
 // class FName                             Input_Name                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Name_to_Int(class FName Input_Name, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Name_to_Int(class FName Input_Name, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5899,8 +5899,8 @@ void UUBPP_FunctionLibrary_C::Name_to_Int(class FName Input_Name, class UObject*
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6054,9 +6054,9 @@ void UUBPP_FunctionLibrary_C::Object_Array_To_Display_Name_Array(TArray<class UO
 // Parameters:
 // uint8                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Plus_One__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Plus_One__Byte_(uint8 Value, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6070,8 +6070,8 @@ void UUBPP_FunctionLibrary_C::Plus_One__Byte_(uint8 Value, class UObject* __Worl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6080,9 +6080,9 @@ void UUBPP_FunctionLibrary_C::Plus_One__Byte_(uint8 Value, class UObject* __Worl
 // Parameters:
 // double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Plus_One__Float_(double Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::Plus_One__Float_(double Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6096,8 +6096,8 @@ void UUBPP_FunctionLibrary_C::Plus_One__Float_(double Value, class UObject* __Wo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6106,9 +6106,9 @@ void UUBPP_FunctionLibrary_C::Plus_One__Float_(double Value, class UObject* __Wo
 // Parameters:
 // int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Plus_One__Int_(int32 Value, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Plus_One__Int_(int32 Value, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6122,8 +6122,8 @@ void UUBPP_FunctionLibrary_C::Plus_One__Int_(int32 Value, class UObject* __World
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6132,9 +6132,9 @@ void UUBPP_FunctionLibrary_C::Plus_One__Int_(int32 Value, class UObject* __World
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int64*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Plus_One__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_Value)
+void UUBPP_FunctionLibrary_C::Plus_One__Int64_(int64 Value, class UObject* __WorldContext, int64* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6148,8 +6148,8 @@ void UUBPP_FunctionLibrary_C::Plus_One__Int64_(int64 Value, class UObject* __Wor
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6224,9 +6224,9 @@ void UUBPP_FunctionLibrary_C::Print_String_Array(TArray<class FString>& Input_Ar
 // Parameters:
 // uint8                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Byte(uint8 Max, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Byte(uint8 Max, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6240,8 +6240,8 @@ void UUBPP_FunctionLibrary_C::Random_Byte(uint8 Max, class UObject* __WorldConte
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6251,9 +6251,9 @@ void UUBPP_FunctionLibrary_C::Random_Byte(uint8 Max, class UObject* __WorldConte
 // uint8                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FRandomStream&             Stream                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Byte_From_Stream(uint8 Max, const struct FRandomStream& Stream, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Byte_From_Stream(uint8 Max, const struct FRandomStream& Stream, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6268,8 +6268,8 @@ void UUBPP_FunctionLibrary_C::Random_Byte_From_Stream(uint8 Max, const struct FR
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6279,9 +6279,9 @@ void UUBPP_FunctionLibrary_C::Random_Byte_From_Stream(uint8 Max, const struct FR
 // uint8                                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Byte_In_Range(uint8 Min, uint8 Max, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Byte_In_Range(uint8 Min, uint8 Max, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6296,8 +6296,8 @@ void UUBPP_FunctionLibrary_C::Random_Byte_In_Range(uint8 Min, uint8 Max, class U
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6308,9 +6308,9 @@ void UUBPP_FunctionLibrary_C::Random_Byte_In_Range(uint8 Min, uint8 Max, class U
 // uint8                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FRandomStream&             Stream                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Byte_In_Range_From_Stream(uint8 Min, uint8 Max, const struct FRandomStream& Stream, class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Byte_In_Range_From_Stream(uint8 Min, uint8 Max, const struct FRandomStream& Stream, class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6326,8 +6326,8 @@ void UUBPP_FunctionLibrary_C::Random_Byte_In_Range_From_Stream(uint8 Min, uint8 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6335,9 +6335,9 @@ void UUBPP_FunctionLibrary_C::Random_Byte_In_Range_From_Stream(uint8 Min, uint8 
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// uint8*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Byte_Max(class UObject* __WorldContext, uint8* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Byte_Max(class UObject* __WorldContext, uint8* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6350,8 +6350,8 @@ void UUBPP_FunctionLibrary_C::Random_Byte_Max(class UObject* __WorldContext, uin
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -6914,9 +6914,9 @@ void UUBPP_FunctionLibrary_C::Random_Stream(class UObject* __WorldContext, struc
 // const struct FVector&                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Vector_In_Range(const struct FVector& Min, const struct FVector& Max, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Vector_In_Range(const struct FVector& Min, const struct FVector& Max, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6931,8 +6931,8 @@ void UUBPP_FunctionLibrary_C::Random_Vector_In_Range(const struct FVector& Min, 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -6943,9 +6943,9 @@ void UUBPP_FunctionLibrary_C::Random_Vector_In_Range(const struct FVector& Min, 
 // const struct FVector&                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FRandomStream&             Stream                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Random_Vector_In_Range_from_Stream(const struct FVector& Min, const struct FVector& Max, const struct FRandomStream& Stream, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Random_Vector_In_Range_from_Stream(const struct FVector& Min, const struct FVector& Max, const struct FRandomStream& Stream, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6961,8 +6961,8 @@ void UUBPP_FunctionLibrary_C::Random_Vector_In_Range_from_Stream(const struct FV
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -6973,9 +6973,9 @@ void UUBPP_FunctionLibrary_C::Random_Vector_In_Range_from_Stream(const struct FV
 // uint8                                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<uint8>*                          Return_Value                                           (Parm, OutParm)
+// TArray<uint8>*                          Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_All_Bytes_Not_In_Range(TArray<uint8>& Input_Array, uint8 Min, uint8 Max, class UObject* __WorldContext, TArray<uint8>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_All_Bytes_Not_In_Range(TArray<uint8>& Input_Array, uint8 Min, uint8 Max, class UObject* __WorldContext, TArray<uint8>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -6993,8 +6993,8 @@ void UUBPP_FunctionLibrary_C::Remove_All_Bytes_Not_In_Range(TArray<uint8>& Input
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7037,9 +7037,9 @@ void UUBPP_FunctionLibrary_C::Remove_All_Floats_Not_in_Range(TArray<double>& Inp
 // int32                                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<int32>*                          Return_Value                                           (Parm, OutParm)
+// TArray<int32>*                          Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_All_Ints_Not_In_Range(TArray<int32>& Input_Array, int32 Min, int32 Max, class UObject* __WorldContext, TArray<int32>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_All_Ints_Not_In_Range(TArray<int32>& Input_Array, int32 Min, int32 Max, class UObject* __WorldContext, TArray<int32>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7057,8 +7057,8 @@ void UUBPP_FunctionLibrary_C::Remove_All_Ints_Not_In_Range(TArray<int32>& Input_
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7069,9 +7069,9 @@ void UUBPP_FunctionLibrary_C::Remove_All_Ints_Not_In_Range(TArray<int32>& Input_
 // int64                                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int64                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<int64>*                          Return_Value                                           (Parm, OutParm)
+// TArray<int64>*                          Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_All_Ints64_Not_In_Range(TArray<int64>& Input_Array, int64 Min, int64 Max, class UObject* __WorldContext, TArray<int64>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_All_Ints64_Not_In_Range(TArray<int64>& Input_Array, int64 Min, int64 Max, class UObject* __WorldContext, TArray<int64>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7089,8 +7089,8 @@ void UUBPP_FunctionLibrary_C::Remove_All_Ints64_Not_In_Range(TArray<int64>& Inpu
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7101,9 +7101,9 @@ void UUBPP_FunctionLibrary_C::Remove_All_Ints64_Not_In_Range(TArray<int64>& Inpu
 // const struct FVector&                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FVector>*                 Return_Value                                           (Parm, OutParm)
+// TArray<struct FVector>*                 Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_All_Vectors_Not_In_Range(TArray<struct FVector>& Input_Array, const struct FVector& Min, const struct FVector& Max, class UObject* __WorldContext, TArray<struct FVector>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_All_Vectors_Not_In_Range(TArray<struct FVector>& Input_Array, const struct FVector& Min, const struct FVector& Max, class UObject* __WorldContext, TArray<struct FVector>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7121,8 +7121,8 @@ void UUBPP_FunctionLibrary_C::Remove_All_Vectors_Not_In_Range(TArray<struct FVec
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7159,9 +7159,9 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Actors(TArray<class AActor*>& In
 // Parameters:
 // TArray<uint8>&                          Input_Array                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<uint8>*                          Return_Value                                           (Parm, OutParm)
+// TArray<uint8>*                          Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Bytes(TArray<uint8>& Input_Array, class UObject* __WorldContext, TArray<uint8>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Bytes(TArray<uint8>& Input_Array, class UObject* __WorldContext, TArray<uint8>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7177,8 +7177,8 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Bytes(TArray<uint8>& Input_Array
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7187,9 +7187,9 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Bytes(TArray<uint8>& Input_Array
 // Parameters:
 // TArray<double>&                         Input_Array                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<double>*                         Return_Value                                           (Parm, OutParm)
+// TArray<double>*                         Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Floats(TArray<double>& Input_Array, class UObject* __WorldContext, TArray<double>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Floats(TArray<double>& Input_Array, class UObject* __WorldContext, TArray<double>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7205,8 +7205,8 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Floats(TArray<double>& Input_Arr
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7215,9 +7215,9 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Floats(TArray<double>& Input_Arr
 // Parameters:
 // TArray<int64>&                          Input_Array                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<int64>*                          Return_Value                                           (Parm, OutParm)
+// TArray<int64>*                          Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Integers64(TArray<int64>& Input_Array, class UObject* __WorldContext, TArray<int64>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Integers64(TArray<int64>& Input_Array, class UObject* __WorldContext, TArray<int64>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7233,8 +7233,8 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Integers64(TArray<int64>& Input_
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7243,9 +7243,9 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Integers64(TArray<int64>& Input_
 // Parameters:
 // TArray<int32>&                          Input_Array                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<int32>*                          Return_Value                                           (Parm, OutParm)
+// TArray<int32>*                          Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Ints(TArray<int32>& Input_Array, class UObject* __WorldContext, TArray<int32>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Ints(TArray<int32>& Input_Array, class UObject* __WorldContext, TArray<int32>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7261,8 +7261,8 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Ints(TArray<int32>& Input_Array,
 
 	Input_Array = std::move(Parms.Input_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7299,9 +7299,9 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Strings(TArray<class FString>& I
 // Parameters:
 // TArray<struct FVector>&                 Input_Vector_Array                                     (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FVector>*                 Return_Value                                           (Parm, OutParm)
+// TArray<struct FVector>*                 Return_value                                           (Parm, OutParm)
 
-void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Vectors(TArray<struct FVector>& Input_Vector_Array, class UObject* __WorldContext, TArray<struct FVector>* Return_Value)
+void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Vectors(TArray<struct FVector>& Input_Vector_Array, class UObject* __WorldContext, TArray<struct FVector>* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7317,8 +7317,8 @@ void UUBPP_FunctionLibrary_C::Remove_Not_Unique_Vectors(TArray<struct FVector>& 
 
 	Input_Vector_Array = std::move(Parms.Input_Vector_Array);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -7681,9 +7681,9 @@ void UUBPP_FunctionLibrary_C::Server_Travel(const TSoftObjectPtr<class UWorld> L
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FVector2D&                 InAlignment                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Alignment(class UWidget* Widget, const struct FVector2D& InAlignment, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Alignment(class UWidget* Widget, const struct FVector2D& InAlignment, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7698,8 +7698,8 @@ void UUBPP_FunctionLibrary_C::Set_Alignment(class UWidget* Widget, const struct 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7709,9 +7709,9 @@ void UUBPP_FunctionLibrary_C::Set_Alignment(class UWidget* Widget, const struct 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FAnchors&                  InAnchors                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Anchors(class UWidget* Widget, const struct FAnchors& InAnchors, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Anchors(class UWidget* Widget, const struct FAnchors& InAnchors, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7726,8 +7726,8 @@ void UUBPP_FunctionLibrary_C::Set_Anchors(class UWidget* Widget, const struct FA
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7737,9 +7737,9 @@ void UUBPP_FunctionLibrary_C::Set_Anchors(class UWidget* Widget, const struct FA
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    InbAutoSize                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Auto_Size(class UWidget* Widget, bool InbAutoSize, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Auto_Size(class UWidget* Widget, bool InbAutoSize, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7754,8 +7754,8 @@ void UUBPP_FunctionLibrary_C::Set_Auto_Size(class UWidget* Widget, bool InbAutoS
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7765,9 +7765,9 @@ void UUBPP_FunctionLibrary_C::Set_Auto_Size(class UWidget* Widget, bool InbAutoS
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   InColumn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Column(class UWidget* Widget, int32 InColumn, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Column(class UWidget* Widget, int32 InColumn, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7782,8 +7782,8 @@ void UUBPP_FunctionLibrary_C::Set_Column(class UWidget* Widget, int32 InColumn, 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7793,9 +7793,9 @@ void UUBPP_FunctionLibrary_C::Set_Column(class UWidget* Widget, int32 InColumn, 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   InColumnSpan                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Column_Span(class UWidget* Widget, int32 InColumnSpan, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Column_Span(class UWidget* Widget, int32 InColumnSpan, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7810,8 +7810,8 @@ void UUBPP_FunctionLibrary_C::Set_Column_Span(class UWidget* Widget, int32 InCol
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7821,9 +7821,9 @@ void UUBPP_FunctionLibrary_C::Set_Column_Span(class UWidget* Widget, int32 InCol
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    InbFillEmptySpace                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Fill_Empty_Space(class UWidget* Widget, bool InbFillEmptySpace, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Fill_Empty_Space(class UWidget* Widget, bool InbFillEmptySpace, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7838,8 +7838,8 @@ void UUBPP_FunctionLibrary_C::Set_Fill_Empty_Space(class UWidget* Widget, bool I
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7849,9 +7849,9 @@ void UUBPP_FunctionLibrary_C::Set_Fill_Empty_Space(class UWidget* Widget, bool I
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // double                                  InFillSpanWhenLessThan                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Fill_Span_When_Less_Than(class UWidget* Widget, double InFillSpanWhenLessThan, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Fill_Span_When_Less_Than(class UWidget* Widget, double InFillSpanWhenLessThan, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7866,8 +7866,8 @@ void UUBPP_FunctionLibrary_C::Set_Fill_Span_When_Less_Than(class UWidget* Widget
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7877,9 +7877,9 @@ void UUBPP_FunctionLibrary_C::Set_Fill_Span_When_Less_Than(class UWidget* Widget
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EHorizontalAlignment                    InHorizontalAlignment                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Horizontal_Alignment(class UWidget* Widget, EHorizontalAlignment InHorizontalAlignment, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Horizontal_Alignment(class UWidget* Widget, EHorizontalAlignment InHorizontalAlignment, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7894,8 +7894,8 @@ void UUBPP_FunctionLibrary_C::Set_Horizontal_Alignment(class UWidget* Widget, EH
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7905,9 +7905,9 @@ void UUBPP_FunctionLibrary_C::Set_Horizontal_Alignment(class UWidget* Widget, EH
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   InLayer                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Layer(class UWidget* Widget, int32 InLayer, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Layer(class UWidget* Widget, int32 InLayer, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7922,8 +7922,8 @@ void UUBPP_FunctionLibrary_C::Set_Layer(class UWidget* Widget, int32 InLayer, cl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7933,9 +7933,9 @@ void UUBPP_FunctionLibrary_C::Set_Layer(class UWidget* Widget, int32 InLayer, cl
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FAnchorData&               InLayoutData                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Layout(class UWidget* Widget, const struct FAnchorData& InLayoutData, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Layout(class UWidget* Widget, const struct FAnchorData& InLayoutData, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -7950,8 +7950,8 @@ void UUBPP_FunctionLibrary_C::Set_Layout(class UWidget* Widget, const struct FAn
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -7991,9 +7991,9 @@ void UUBPP_FunctionLibrary_C::Set_Location__Transform_(struct FTransform& Transf
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FVector2D&                 InNudge                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Nudge(class UWidget* Widget, const struct FVector2D& InNudge, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Nudge(class UWidget* Widget, const struct FVector2D& InNudge, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8008,8 +8008,8 @@ void UUBPP_FunctionLibrary_C::Set_Nudge(class UWidget* Widget, const struct FVec
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8019,9 +8019,9 @@ void UUBPP_FunctionLibrary_C::Set_Nudge(class UWidget* Widget, const struct FVec
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FMargin&                   InOffset                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Offsets(class UWidget* Widget, const struct FMargin& InOffset, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Offsets(class UWidget* Widget, const struct FMargin& InOffset, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8036,8 +8036,8 @@ void UUBPP_FunctionLibrary_C::Set_Offsets(class UWidget* Widget, const struct FM
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8047,9 +8047,9 @@ void UUBPP_FunctionLibrary_C::Set_Offsets(class UWidget* Widget, const struct FM
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FMargin&                   InPadding                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Padding(class UWidget* Widget, const struct FMargin& InPadding, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Padding(class UWidget* Widget, const struct FMargin& InPadding, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8064,8 +8064,8 @@ void UUBPP_FunctionLibrary_C::Set_Padding(class UWidget* Widget, const struct FM
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8075,9 +8075,9 @@ void UUBPP_FunctionLibrary_C::Set_Padding(class UWidget* Widget, const struct FM
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FVector2D&                 InPosition                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Position(class UWidget* Widget, const struct FVector2D& InPosition, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Position(class UWidget* Widget, const struct FVector2D& InPosition, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8092,8 +8092,8 @@ void UUBPP_FunctionLibrary_C::Set_Position(class UWidget* Widget, const struct F
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8133,9 +8133,9 @@ void UUBPP_FunctionLibrary_C::Set_Rotation__Transform_(struct FTransform& Transf
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   InRow                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Row(class UWidget* Widget, int32 InRow, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Row(class UWidget* Widget, int32 InRow, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8150,8 +8150,8 @@ void UUBPP_FunctionLibrary_C::Set_Row(class UWidget* Widget, int32 InRow, class 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8161,9 +8161,9 @@ void UUBPP_FunctionLibrary_C::Set_Row(class UWidget* Widget, int32 InRow, class 
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   InRowSpan                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Row_Span(class UWidget* Widget, int32 InRowSpan, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Row_Span(class UWidget* Widget, int32 InRowSpan, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8178,8 +8178,8 @@ void UUBPP_FunctionLibrary_C::Set_Row_Span(class UWidget* Widget, int32 InRowSpa
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8219,9 +8219,9 @@ void UUBPP_FunctionLibrary_C::Set_Scale__Transform_(struct FTransform& Transform
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FSlateChildSize&           InSize                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Size__Slate_Child_Size_(class UWidget* Widget, const struct FSlateChildSize& InSize, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Size__Slate_Child_Size_(class UWidget* Widget, const struct FSlateChildSize& InSize, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8236,8 +8236,8 @@ void UUBPP_FunctionLibrary_C::Set_Size__Slate_Child_Size_(class UWidget* Widget,
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8247,9 +8247,9 @@ void UUBPP_FunctionLibrary_C::Set_Size__Slate_Child_Size_(class UWidget* Widget,
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // const struct FVector2D&                 InSize                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Size__Vector2D_(class UWidget* Widget, const struct FVector2D& InSize, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Size__Vector2D_(class UWidget* Widget, const struct FVector2D& InSize, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8264,8 +8264,8 @@ void UUBPP_FunctionLibrary_C::Set_Size__Vector2D_(class UWidget* Widget, const s
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8299,9 +8299,9 @@ void UUBPP_FunctionLibrary_C::Set_Text__Name_(class UTextBlock* Target, class FN
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EVerticalAlignment                      InVerticalAlignment                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_Vertical_Alignment(class UWidget* Widget, EVerticalAlignment InVerticalAlignment, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_Vertical_Alignment(class UWidget* Widget, EVerticalAlignment InVerticalAlignment, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8316,8 +8316,8 @@ void UUBPP_FunctionLibrary_C::Set_Vertical_Alignment(class UWidget* Widget, EVer
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8417,9 +8417,9 @@ void UUBPP_FunctionLibrary_C::Set_Z__Vector_3D_(struct FVector& Vector_Ref, doub
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   InZOrder                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Set_ZOrder(class UWidget* Widget, int32 InZOrder, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Set_ZOrder(class UWidget* Widget, int32 InZOrder, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8434,8 +8434,8 @@ void UUBPP_FunctionLibrary_C::Set_ZOrder(class UWidget* Widget, int32 InZOrder, 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8471,9 +8471,9 @@ void UUBPP_FunctionLibrary_C::SetText__String_(class UTextBlock* Target, const c
 // const struct FVector&                   Orient                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // double                                  Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Slerp__Vector_(const struct FVector& Start, const struct FVector& End, const struct FVector& Orient, double Alpha, class UObject* __WorldContext, struct FVector* Return_Value)
+void UUBPP_FunctionLibrary_C::Slerp__Vector_(const struct FVector& Start, const struct FVector& End, const struct FVector& Orient, double Alpha, class UObject* __WorldContext, struct FVector* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8490,8 +8490,8 @@ void UUBPP_FunctionLibrary_C::Slerp__Vector_(const struct FVector& Start, const 
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = std::move(Parms.Return_Value);
+	if (Return_value != nullptr)
+		*Return_value = std::move(Parms.Return_value);
 }
 
 
@@ -8500,9 +8500,9 @@ void UUBPP_FunctionLibrary_C::Slerp__Vector_(const struct FVector& Start, const 
 // Parameters:
 // double                                  Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8516,8 +8516,8 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Float_(double Input_Value, c
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8526,9 +8526,9 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Float_(double Input_Value, c
 // Parameters:
 // int32                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8542,8 +8542,8 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int_(int32 Input_Value, clas
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8552,9 +8552,9 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int_(int32 Input_Value, clas
 // Parameters:
 // int64                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8568,8 +8568,8 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int64_(int64 Input_Value, cl
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8578,9 +8578,9 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_or_Zero__Int64_(int64 Input_Value, cl
 // Parameters:
 // double                                  Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Float_(double Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8594,8 +8594,8 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Float_(double Input_Value, clas
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8604,9 +8604,9 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Float_(double Input_Value, clas
 // Parameters:
 // int32                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int_(int32 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8620,8 +8620,8 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int_(int32 Input_Value, class U
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8630,9 +8630,9 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int_(int32 Input_Value, class U
 // Parameters:
 // int64                                   Input_Value                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int64_(int64 Input_Value, class UObject* __WorldContext, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8646,8 +8646,8 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int64_(int64 Input_Value, class
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8661,9 +8661,9 @@ void UUBPP_FunctionLibrary_C::Smaller_Than_Zero__Int64_(int64 Input_Value, class
 // double                                  Z_Location                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Sweep_Hit_Result                                       (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Snap_Actor_To_Grid(class AActor* Actor, double Grid_Size, bool Teleport, bool Specific_Z_Location, double Z_Location, class UObject* __WorldContext, struct FHitResult* Sweep_Hit_Result, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Snap_Actor_To_Grid(class AActor* Actor, double Grid_Size, bool Teleport, bool Specific_Z_Location, double Z_Location, class UObject* __WorldContext, struct FHitResult* Sweep_Hit_Result, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8684,8 +8684,8 @@ void UUBPP_FunctionLibrary_C::Snap_Actor_To_Grid(class AActor* Actor, double Gri
 	if (Sweep_Hit_Result != nullptr)
 		*Sweep_Hit_Result = std::move(Parms.Sweep_Hit_Result);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8796,9 +8796,9 @@ void UUBPP_FunctionLibrary_C::String_Array_Add(TArray<class FString>& Input_Arra
 // Parameters:
 // const class FText&                      Input_Text                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Text_to_Int(const class FText& Input_Text, class UObject* __WorldContext, int32* Return_Value)
+void UUBPP_FunctionLibrary_C::Text_to_Int(const class FText& Input_Text, class UObject* __WorldContext, int32* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8812,8 +8812,8 @@ void UUBPP_FunctionLibrary_C::Text_to_Int(const class FText& Input_Text, class U
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8822,9 +8822,9 @@ void UUBPP_FunctionLibrary_C::Text_to_Int(const class FText& Input_Text, class U
 // Parameters:
 // int64                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::To_Float__Int_64_(int64 Value, class UObject* __WorldContext, double* Return_Value)
+void UUBPP_FunctionLibrary_C::To_Float__Int_64_(int64 Value, class UObject* __WorldContext, double* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8838,8 +8838,8 @@ void UUBPP_FunctionLibrary_C::To_Float__Int_64_(int64 Value, class UObject* __Wo
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8923,9 +8923,9 @@ void UUBPP_FunctionLibrary_C::Vector_Array_Add(TArray<struct FVector>& Input_Arr
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Channel(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery TraceC_hannel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Channel(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, ETraceTypeQuery TraceC_hannel, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8948,8 +8948,8 @@ void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Channel(const struct FVector&
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -8965,9 +8965,9 @@ void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Channel(const struct FVector&
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Profile(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Profile(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, class FName ProfileName, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -8990,8 +8990,8 @@ void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Profile(const struct FVector&
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 
@@ -9007,9 +9007,9 @@ void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_By_Profile(const struct FVector&
 // const struct FUBPP_Struct_Trace&        Trace_Options                                          (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult*                      Out_Hit                                                (Parm, OutParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return_value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_For_Objects(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_Value)
+void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_For_Objects(const struct FVector& Start, double Length, int32 Player_Camera_Manager_Index, const struct FUBPP_Struct_Noise& Noise, const TArray<EObjectTypeQuery>& ObjectTypes, bool Trace_Complex, const struct FUBPP_Struct_Trace& Trace_Options, class UObject* __WorldContext, struct FHitResult* Out_Hit, bool* Return_value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -9032,8 +9032,8 @@ void UUBPP_FunctionLibrary_C::Weapon_Line_Trace_For_Objects(const struct FVector
 	if (Out_Hit != nullptr)
 		*Out_Hit = std::move(Parms.Out_Hit);
 
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+	if (Return_value != nullptr)
+		*Return_value = Parms.Return_value;
 }
 
 }

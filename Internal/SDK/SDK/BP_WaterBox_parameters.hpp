@@ -17,27 +17,44 @@
 namespace SDK::Params
 {
 
-// Function BP_WaterBox.BP_WaterBox_C.UserConstructionScript
-// 0x0018 (0x0018 - 0x0000)
-struct BP_WaterBox_C_UserConstructionScript final
+// Function BP_WaterBox.BP_WaterBox_C.BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_WaterBox_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_WaterBox_C_UserConstructionScript");
-static_assert(sizeof(BP_WaterBox_C_UserConstructionScript) == 0x000018, "Wrong size on BP_WaterBox_C_UserConstructionScript");
-static_assert(offsetof(BP_WaterBox_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000000, "Member 'BP_WaterBox_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
-// Function BP_WaterBox.BP_WaterBox_C.SetCollisionType
-// 0x0010 (0x0010 - 0x0000)
-struct BP_WaterBox_C_SetCollisionType final
+// Function BP_WaterBox.BP_WaterBox_C.BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature final
 {
 public:
-	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WaterBox_C_SetCollisionType) == 0x000008, "Wrong alignment on BP_WaterBox_C_SetCollisionType");
-static_assert(sizeof(BP_WaterBox_C_SetCollisionType) == 0x000010, "Wrong size on BP_WaterBox_C_SetCollisionType");
-static_assert(offsetof(BP_WaterBox_C_SetCollisionType, K2Node_MakeArray_Array) == 0x000000, "Member 'BP_WaterBox_C_SetCollisionType::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(alignof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(sizeof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
+static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function BP_WaterBox.BP_WaterBox_C.ExecuteUbergraph_BP_WaterBox
 // 0x0158 (0x0158 - 0x0000)
@@ -85,44 +102,27 @@ static_assert(offsetof(BP_WaterBox_C_ExecuteUbergraph_BP_WaterBox, CallFunc_GetC
 static_assert(offsetof(BP_WaterBox_C_ExecuteUbergraph_BP_WaterBox, CallFunc_IsValid_ReturnValue) == 0x000150, "Member 'BP_WaterBox_C_ExecuteUbergraph_BP_WaterBox::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_WaterBox_C_ExecuteUbergraph_BP_WaterBox, CallFunc_IsValid_ReturnValue_1) == 0x000151, "Member 'BP_WaterBox_C_ExecuteUbergraph_BP_WaterBox::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
-// Function BP_WaterBox.BP_WaterBox_C.BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature final
+// Function BP_WaterBox.BP_WaterBox_C.SetCollisionType
+// 0x0010 (0x0010 - 0x0000)
+struct BP_WaterBox_C_SetCollisionType final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm)
 };
-static_assert(alignof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
+static_assert(alignof(BP_WaterBox_C_SetCollisionType) == 0x000008, "Wrong alignment on BP_WaterBox_C_SetCollisionType");
+static_assert(sizeof(BP_WaterBox_C_SetCollisionType) == 0x000010, "Wrong size on BP_WaterBox_C_SetCollisionType");
+static_assert(offsetof(BP_WaterBox_C_SetCollisionType, K2Node_MakeArray_Array) == 0x000000, "Member 'BP_WaterBox_C_SetCollisionType::K2Node_MakeArray_Array' has a wrong offset!");
 
-// Function BP_WaterBox.BP_WaterBox_C.BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_WaterBox.BP_WaterBox_C.UserConstructionScript
+// 0x0018 (0x0018 - 0x0000)
+struct BP_WaterBox_C_UserConstructionScript final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature) == 0x000108, "Wrong size on BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'BP_WaterBox_C_BndEvt__BP_WaterBox_Cube_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
+static_assert(alignof(BP_WaterBox_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_WaterBox_C_UserConstructionScript");
+static_assert(sizeof(BP_WaterBox_C_UserConstructionScript) == 0x000018, "Wrong size on BP_WaterBox_C_UserConstructionScript");
+static_assert(offsetof(BP_WaterBox_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000000, "Member 'BP_WaterBox_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 }
 

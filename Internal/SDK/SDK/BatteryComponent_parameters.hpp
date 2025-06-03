@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ContainerPickupsInfo_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
 
 
 namespace SDK::Params

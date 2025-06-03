@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "EnhancedInput_structs.hpp"
-#include "Struct_ItemsToSell_structs.hpp"
 #include "Enum_RadiationLevel_structs.hpp"
+#include "Struct_ItemsToCraft_structs.hpp"
 #include "Enum_ContainerLootTables_structs.hpp"
 #include "Enum_VendorTypes_structs.hpp"
+#include "Struct_ItemsToSell_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Enum_CraftingTableTypes_structs.hpp"
-#include "Struct_ItemsToCraft_structs.hpp"
+#include "S_NotificationDetails_structs.hpp"
+#include "EnhancedInput_structs.hpp"
+#include "Enum_AILootTables_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Struct_UniqueLoot_structs.hpp"
 #include "RandomContainerItem_structs.hpp"
 #include "Struct_Difficulty_structs.hpp"
 #include "AutoSettings_structs.hpp"
 #include "Enum_Difficulty_structs.hpp"
-#include "S_NotificationDetails_structs.hpp"
 #include "Enum_LootDifficulties_structs.hpp"
 #include "Enum_LootType_structs.hpp"
-#include "Enum_AILootTables_structs.hpp"
 #include "ContainerPickupsInfo_structs.hpp"
 
 
@@ -1228,9 +1228,9 @@ static_assert(offsetof(GameFunctionLibrary_C_GetUDW, UDW) == 0x000008, "Member '
 static_assert(offsetof(GameFunctionLibrary_C_GetUDW, CallFunc_GetActorOfClass_ReturnValue) == 0x000010, "Member 'GameFunctionLibrary_C_GetUDW::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GameFunctionLibrary_C_GetUDW, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'GameFunctionLibrary_C_GetUDW::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-// Function GameFunctionLibrary.GameFunctionLibrary_C.IsKeyDown
+// Function GameFunctionLibrary.GameFunctionLibrary_C.isKeyDown
 // 0x0078 (0x0078 - 0x0000)
-struct GameFunctionLibrary_C_IsKeyDown final
+struct GameFunctionLibrary_C_isKeyDown final
 {
 public:
 	const class UInputAction*                     Action;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -1251,22 +1251,22 @@ public:
 	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GameFunctionLibrary_C_IsKeyDown) == 0x000008, "Wrong alignment on GameFunctionLibrary_C_IsKeyDown");
-static_assert(sizeof(GameFunctionLibrary_C_IsKeyDown) == 0x000078, "Wrong size on GameFunctionLibrary_C_IsKeyDown");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, Action) == 0x000000, "Member 'GameFunctionLibrary_C_IsKeyDown::Action' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, __WorldContext) == 0x000008, "Member 'GameFunctionLibrary_C_IsKeyDown::__WorldContext' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, Down) == 0x000010, "Member 'GameFunctionLibrary_C_IsKeyDown::Down' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000018, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_QueryKeysMappedToAction_self_CastInput) == 0x000028, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_QueryKeysMappedToAction_self_CastInput' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_QueryKeysMappedToAction_ReturnValue) == 0x000038, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_QueryKeysMappedToAction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, Temp_int_Array_Index_Variable) == 0x000048, "Member 'GameFunctionLibrary_C_IsKeyDown::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_Array_Get_Item) == 0x000050, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_IsInputKeyDown_ReturnValue) == 0x000068, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_IsInputKeyDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, Temp_int_Loop_Counter_Variable) == 0x00006C, "Member 'GameFunctionLibrary_C_IsKeyDown::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GameFunctionLibrary_C_IsKeyDown, CallFunc_Add_IntInt_ReturnValue) == 0x000074, "Member 'GameFunctionLibrary_C_IsKeyDown::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(alignof(GameFunctionLibrary_C_isKeyDown) == 0x000008, "Wrong alignment on GameFunctionLibrary_C_isKeyDown");
+static_assert(sizeof(GameFunctionLibrary_C_isKeyDown) == 0x000078, "Wrong size on GameFunctionLibrary_C_isKeyDown");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, Action) == 0x000000, "Member 'GameFunctionLibrary_C_isKeyDown::Action' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, __WorldContext) == 0x000008, "Member 'GameFunctionLibrary_C_isKeyDown::__WorldContext' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, Down) == 0x000010, "Member 'GameFunctionLibrary_C_isKeyDown::Down' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000018, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_QueryKeysMappedToAction_self_CastInput) == 0x000028, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_QueryKeysMappedToAction_self_CastInput' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_QueryKeysMappedToAction_ReturnValue) == 0x000038, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_QueryKeysMappedToAction_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, Temp_int_Array_Index_Variable) == 0x000048, "Member 'GameFunctionLibrary_C_isKeyDown::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_Array_Get_Item) == 0x000050, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_IsInputKeyDown_ReturnValue) == 0x000068, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_IsInputKeyDown_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, Temp_int_Loop_Counter_Variable) == 0x00006C, "Member 'GameFunctionLibrary_C_isKeyDown::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GameFunctionLibrary_C_isKeyDown, CallFunc_Add_IntInt_ReturnValue) == 0x000074, "Member 'GameFunctionLibrary_C_isKeyDown::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function GameFunctionLibrary.GameFunctionLibrary_C.IsOutsideOfPlayerView?
 // 0x01F0 (0x01F0 - 0x0000)

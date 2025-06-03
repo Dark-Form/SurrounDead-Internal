@@ -620,7 +620,7 @@ static_assert(offsetof(BP_MainJigInventory_C_SpawnCharacterPreview, CallFunc_Cre
 struct BP_MainJigInventory_C_UpdatePreviewCharacter final
 {
 public:
-	class UJSIContainer_C*                        ContainerREF;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UJSIContainer_C*                        ContainerRef;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UJSIContainer_C*                        ToContainer;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Equipped_;                                         // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -658,7 +658,7 @@ public:
 };
 static_assert(alignof(BP_MainJigInventory_C_UpdatePreviewCharacter) == 0x000008, "Wrong alignment on BP_MainJigInventory_C_UpdatePreviewCharacter");
 static_assert(sizeof(BP_MainJigInventory_C_UpdatePreviewCharacter) == 0x0000D8, "Wrong size on BP_MainJigInventory_C_UpdatePreviewCharacter");
-static_assert(offsetof(BP_MainJigInventory_C_UpdatePreviewCharacter, ContainerREF) == 0x000000, "Member 'BP_MainJigInventory_C_UpdatePreviewCharacter::ContainerREF' has a wrong offset!");
+static_assert(offsetof(BP_MainJigInventory_C_UpdatePreviewCharacter, ContainerRef) == 0x000000, "Member 'BP_MainJigInventory_C_UpdatePreviewCharacter::ContainerRef' has a wrong offset!");
 static_assert(offsetof(BP_MainJigInventory_C_UpdatePreviewCharacter, ToContainer) == 0x000008, "Member 'BP_MainJigInventory_C_UpdatePreviewCharacter::ToContainer' has a wrong offset!");
 static_assert(offsetof(BP_MainJigInventory_C_UpdatePreviewCharacter, Equipped_) == 0x000010, "Member 'BP_MainJigInventory_C_UpdatePreviewCharacter::Equipped_' has a wrong offset!");
 static_assert(offsetof(BP_MainJigInventory_C_UpdatePreviewCharacter, Temp_int_Array_Index_Variable) == 0x000014, "Member 'BP_MainJigInventory_C_UpdatePreviewCharacter::Temp_int_Array_Index_Variable' has a wrong offset!");

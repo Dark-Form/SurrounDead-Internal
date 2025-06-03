@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ContainerPickupsInfo_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "ContainerPickupsInfo_structs.hpp"
 #include "S_ReplicatedContainerInfo_structs.hpp"
 
 

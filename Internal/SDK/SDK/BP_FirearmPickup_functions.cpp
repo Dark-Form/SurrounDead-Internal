@@ -996,6 +996,96 @@ void ABP_FirearmPickup_C::Jig_ToggleAttachmentActiveState()
 }
 
 
+// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnItemConsumed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FRepItemInfo&              ConsumedItem                                           (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Remaining                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              InsideOf                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    CustomData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    CallbackToPlayer_                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FirearmPickup_C::JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FirearmPickup_C", "JigMP_OnItemConsumed");
+
+	Params::BP_FirearmPickup_C_JigMP_OnItemConsumed Parms{};
+
+	Parms.ConsumedItem = std::move(ConsumedItem);
+	Parms.Amount = Amount;
+	Parms.Remaining = Remaining;
+	Parms.InsideOf = std::move(InsideOf);
+	Parms.FromContainer = FromContainer;
+	Parms.CustomData = std::move(CustomData);
+	Parms.CallbackToPlayer_ = CallbackToPlayer_;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnMainContainerItemRemoved
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRepItemInfo&              ItemRemovedInfo                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FirearmPickup_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FirearmPickup_C", "JigMP_OnMainContainerItemRemoved");
+
+	Params::BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved Parms{};
+
+	Parms.FromContainerUID = std::move(FromContainerUID);
+	Parms.ItemUID = std::move(ItemUID);
+	Parms.ContainerName = ContainerName;
+	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnUpdateChamberUID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FirearmPickup_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FirearmPickup_C", "JigMP_OnUpdateChamberUID");
+
+	Params::BP_FirearmPickup_C_JigMP_OnUpdateChamberUID Parms{};
+
+	Parms.NewUID = std::move(NewUID);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
 // Function BP_FirearmPickup.BP_FirearmPickup_C.Local_CheckCanReload
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1408,6 +1498,20 @@ void ABP_FirearmPickup_C::ProjectileTraceFromCamera(struct FTransform* Transform
 }
 
 
+// Function BP_FirearmPickup.BP_FirearmPickup_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_FirearmPickup_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FirearmPickup_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_FirearmPickup.BP_FirearmPickup_C.RecoilTL__FinishedFunc
 // (BlueprintEvent)
 
@@ -1783,110 +1887,6 @@ void ABP_FirearmPickup_C::WeaponRecoilValues(double* Vertical, double* Horizonta
 
 	if (Horizontal != nullptr)
 		*Horizontal = Parms.Horizontal;
-}
-
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnItemConsumed
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FRepItemInfo&              ConsumedItem                                           (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Remaining                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              InsideOf                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class FName                             FromContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    CustomData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    CallbackToPlayer_                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FirearmPickup_C::JigMP_OnItemConsumed(const struct FRepItemInfo& ConsumedItem, int32 Amount, int32 Remaining, const struct FRepItemInfo& InsideOf, class FName FromContainer, const class FString& CustomData, bool CallbackToPlayer_, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirearmPickup_C", "JigMP_OnItemConsumed");
-
-	Params::BP_FirearmPickup_C_JigMP_OnItemConsumed Parms{};
-
-	Parms.ConsumedItem = std::move(ConsumedItem);
-	Parms.Amount = Amount;
-	Parms.Remaining = Remaining;
-	Parms.InsideOf = std::move(InsideOf);
-	Parms.FromContainer = FromContainer;
-	Parms.CustomData = std::move(CustomData);
-	Parms.CallbackToPlayer_ = CallbackToPlayer_;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnMainContainerItemRemoved
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     FromContainerUID                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     ItemUID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ContainerName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRepItemInfo&              ItemRemovedInfo                                        (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FirearmPickup_C::JigMP_OnMainContainerItemRemoved(const struct FGuid& FromContainerUID, const struct FGuid& ItemUID, class FName ContainerName, const struct FRepItemInfo& ItemRemovedInfo, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirearmPickup_C", "JigMP_OnMainContainerItemRemoved");
-
-	Params::BP_FirearmPickup_C_JigMP_OnMainContainerItemRemoved Parms{};
-
-	Parms.FromContainerUID = std::move(FromContainerUID);
-	Parms.ItemUID = std::move(ItemUID);
-	Parms.ContainerName = ContainerName;
-	Parms.ItemRemovedInfo = std::move(ItemRemovedInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.JigMP_OnUpdateChamberUID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     NewUID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FirearmPickup_C::JigMP_OnUpdateChamberUID(const struct FGuid& NewUID, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirearmPickup_C", "JigMP_OnUpdateChamberUID");
-
-	Params::BP_FirearmPickup_C_JigMP_OnUpdateChamberUID Parms{};
-
-	Parms.NewUID = std::move(NewUID);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function BP_FirearmPickup.BP_FirearmPickup_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_FirearmPickup_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirearmPickup_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

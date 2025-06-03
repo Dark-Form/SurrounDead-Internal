@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "PrefabMaster_classes.hpp"
 #include "Engine_structs.hpp"
+#include "PrefabMaster_classes.hpp"
 
 
 namespace SDK
@@ -28,8 +28,8 @@ public:
 	class UParticleSystemComponent*               Smoke;                                             // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_Prefab_AbandonedMedicalSuppliesTruck(int32 EntryPoint);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
