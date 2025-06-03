@@ -2,7 +2,6 @@
 #include <algorithm>
 #pragma once
 
-// Helper functions
 namespace Utils {
     SDK::FVector VectorSubtract(SDK::FVector Vector1, SDK::FVector Vector2) {
 	SDK::FVector Vec;
@@ -53,7 +52,7 @@ namespace Utils {
 							);
 
         float healthPercentage = health / maxHealth;
-							healthPercentage = std::clamp(healthPercentage, 0.0f, 1.0f);
+		healthPercentage = std::clamp(healthPercentage, 0.0f, 1.0f);
         float healthWidth = width * healthPercentage;
 
         drawList->AddRectFilled(
@@ -65,16 +64,16 @@ namespace Utils {
 
     void DrawTextWithBackground(ImDrawList* drawList, const ImVec2& position, const char* text, ImColor textColor) {
         ImVec2 textSize = ImGui::CalcTextSize(text);
-							ImVec2 textPos = ImVec2(
+			ImVec2 textPos = ImVec2(
             position.x - textSize.x * 0.5f,
             position.y
-							);
+		);
 
         drawList->AddRectFilled(
-								ImVec2(textPos.x - 2, textPos.y - 2),
-								ImVec2(textPos.x + textSize.x + 2, textPos.y + textSize.y + 2),
-								ImColor(0, 0, 0, 180)
-							);
+		    ImVec2(textPos.x - 2, textPos.y - 2),
+			ImVec2(textPos.x + textSize.x + 2, textPos.y + textSize.y + 2),
+			ImColor(0, 0, 0, 180)
+		);
 
         drawList->AddText(textPos, textColor, text);
     }
@@ -135,8 +134,8 @@ namespace Utils {
                     }
                 } else {
                     drawList->AddLine(
-									ImVec2(BoneScreen.X, BoneScreen.Y),
-									ImVec2(PrevBoneScreen.X, PrevBoneScreen.Y),
+						ImVec2(BoneScreen.X, BoneScreen.Y),
+						ImVec2(PrevBoneScreen.X, PrevBoneScreen.Y),
                         isVisible ? visibleColor : hiddenColor,
                         2.0f
                     );
@@ -147,13 +146,13 @@ namespace Utils {
         const auto HeadLoc = Character->Mesh->GetSocketLocation(Character->Mesh->GetBoneName(skeleton::head));
         if (PlayerController->ProjectWorldLocationToScreen(HeadLoc, &BoneScreen, false)) {
             drawList->AddCircle(
-								ImVec2(BoneScreen.X, BoneScreen.Y),
+				ImVec2(BoneScreen.X, BoneScreen.Y),
                 4.0f,
                 ImColor(255, 255, 255, 255),
-								12
-							);
-						}
-					}
+				12
+			    );
+		    }
+		}
 
     SDK::FVector GetForwardDirection(SDK::FRotator Rotation) {
         auto gMath = (SDK::UKismetMathLibrary*)SDK::UKismetMathLibrary::StaticClass();
@@ -164,7 +163,6 @@ namespace Utils {
     }
 }
 
-// Unified Aimbot function
 void SetRotation(SDK::ACharacter* Target, SDK::FVector AimLocation, bool is_visible) {
     if (c_menu::u_vars::VisCheck && !is_visible) return;
 
@@ -185,7 +183,6 @@ void SetRotation(SDK::ACharacter* Target, SDK::FVector AimLocation, bool is_visi
     LocalPlayer->PlayerController->ClientSetRotation(AimRotation, false);
 }
 
-// Unified ESP function
 void DrawESP(SDK::ACharacter* Character, SDK::APlayerController* PlayerController, 
     const char* name, float health, float maxHealth, float distance,
     bool showName, bool showHealth, bool showDistance, bool showSkeleton,
@@ -237,10 +234,10 @@ void DrawESP(SDK::ACharacter* Character, SDK::APlayerController* PlayerControlle
         );
     }
 
-						float yOffset = 5.0f;
-						const float lineHeight = 17.0f;
-						const float barWidth = 50.0f;
-						const float barHeight = 5.0f;
+    float yOffset = 5.0f;
+    const float lineHeight = 17.0f;
+    const float barWidth = 50.0f;
+    const float barHeight = 5.0f;
 
     if (c_menu::u_vars::DebugESP) {
         char debugInfo[256];
@@ -263,20 +260,20 @@ void DrawESP(SDK::ACharacter* Character, SDK::APlayerController* PlayerControlle
         Utils::DrawHealthBar(ImGui::GetForegroundDrawList(), 
             ImVec2(FootCenter.X, FootCenter.Y + yOffset), 
             health, maxHealth, barWidth, barHeight);
-							yOffset += barHeight + 3.0f;
-						}
+			yOffset += barHeight + 3.0f;
+	}
 
     if (showName) {
         Utils::DrawTextWithBackground(ImGui::GetForegroundDrawList(),
             ImVec2(FootCenter.X, FootCenter.Y + yOffset),
             name,
             nameColor);
-							yOffset += lineHeight;
-						}
+			yOffset += lineHeight;
+	}
 
     if (showDistance) {
-							char distanceText[32];
-							sprintf_s(distanceText, "%.1fm", distance);
+		char distanceText[32];
+		sprintf_s(distanceText, "%.1fm", distance);
         Utils::DrawTextWithBackground(ImGui::GetForegroundDrawList(),
             ImVec2(FootCenter.X, FootCenter.Y + yOffset),
             distanceText,
@@ -289,7 +286,6 @@ void DrawESP(SDK::ACharacter* Character, SDK::APlayerController* PlayerControlle
     }
 }
 
-// Add a new function to draw debug ESP for any actor
 void DrawDebugActorESP(SDK::AActor* Actor, SDK::APlayerController* PlayerController) {
     if (!Actor || !PlayerController) return;
 
@@ -354,7 +350,6 @@ public:
         SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
         if (!PlayerController) return;
 
-        // Draw waypoints
         if (WaypointSystem::WaypointManager::showWaypoints) {
             SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
             for (const auto& waypoint : WaypointSystem::WaypointManager::waypoints) {
@@ -362,20 +357,19 @@ public:
                 if (distance <= WaypointSystem::WaypointManager::maxDistance) {
                     SDK::FVector2D ScreenLocation;
                     if (PlayerController->ProjectWorldLocationToScreen(waypoint.location, &ScreenLocation, false)) {
-                        // Draw waypoint marker
-                        ImGui::GetForegroundDrawList()->AddCircleFilled(
+                        WaypointSystem::WaypointManager::DrawIcon(
+                            ImGui::GetForegroundDrawList(),
                             ImVec2(ScreenLocation.X, ScreenLocation.Y),
-                            5.0f,
-                            waypoint.color,
-                            12
+                            waypoint.icon,
+                            10.0f,
+                            waypoint.color
                         );
 
-                        // Draw waypoint name and distance
                         char info[256];
                         sprintf_s(info, "%s [%.1fm]", waypoint.name.c_str(), distance);
                         Utils::DrawTextWithBackground(
                             ImGui::GetForegroundDrawList(),
-                            ImVec2(ScreenLocation.X, ScreenLocation.Y - 20),
+                            ImVec2(ScreenLocation.X, ScreenLocation.Y - 25),
                             info,
                             waypoint.color
                         );
@@ -406,17 +400,14 @@ public:
         SDK::ACharacter* Target = nullptr;
         SDK::FVector AimLocation;
 
-        // Process all actors
         for (std::int32_t i = 0; i < ActorCount; i++) {
             SDK::AActor* Actor = *(SDK::AActor**)(Actors + i * sizeof(uintptr_t));
             if (!Actor) continue;
 
-            // Draw debug ESP for all actors if enabled
             if (c_menu::u_vars::DebugShowAllActors) {
                 DrawDebugActorESP(Actor, PlayerController);
             }
 
-            // Handle different actor types
             if (Actor->IsA(SDK::ABP_FirearmPickup_C::StaticClass())) {
                 HandleFirearmPickup(static_cast<SDK::ABP_FirearmPickup_C*>(Actor));
             }
@@ -568,11 +559,10 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, zombie, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = zombie->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
         DrawESP(zombie, PlayerController,
             PlayerName.ToString().c_str(),
             Health, MaxHealth, distance,
@@ -588,28 +578,27 @@ private:
             c_menu::u_vars::ZombieMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::ZombieMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = zombie;
                 AimLocation = zombie->Mesh->GetSocketLocation(zombie->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
 								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
 				}
 			}
+		}
+	}
 
     static void HandlePlayer(SDK::ABP_PlayerCharacter_C* player, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -623,11 +612,11 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, player, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = player->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
+
         DrawESP(player, PlayerController,
             PlayerName.ToString().c_str(),
             Health, MaxHealth, distance,
@@ -643,28 +632,27 @@ private:
             c_menu::u_vars::PlayerMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::PlayerMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = player;
                 AimLocation = player->Mesh->GetSocketLocation(player->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
+						SetRotation(Target, AimLocation, EntityVisible);
 				}
 			}
+		}
+	}
 
     static void HandleMilitary(SDK::ABP_MasterMilitary_C* military, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -678,11 +666,10 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, military, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = military->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
         DrawESP(military, PlayerController,
             PlayerName.c_str(),
             Health, MaxHealth, distance,
@@ -690,7 +677,7 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
+			c_menu::u_vars::AINameColor,
             c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
@@ -698,28 +685,27 @@ private:
             c_menu::u_vars::AIMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::AIMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = military;
                 AimLocation = military->Mesh->GetSocketLocation(military->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
+						SetRotation(Target, AimLocation, EntityVisible);
 				}
 			}
+		}
+	}
 
     static void HandleBandit(SDK::ABP_MasterBandit_C* bandit, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -733,11 +719,10 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, bandit, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = bandit->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
         DrawESP(bandit, PlayerController,
             PlayerName,
             Health, MaxHealth, distance,
@@ -745,36 +730,35 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
-								c_menu::u_vars::AIDistanceColor,
+			c_menu::u_vars::AINameColor,
+			c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
             c_menu::u_vars::AIDirectionColor,
             c_menu::u_vars::AIMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::AIMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = bandit;
                 AimLocation = bandit->Mesh->GetSocketLocation(bandit->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
+						SetRotation(Target, AimLocation, EntityVisible);
 				}
 			}
+		}
+	}
 
     static void HandleTrader(SDK::ABP_MasterTrader_C* trader, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -788,11 +772,10 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, trader, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = trader->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
         DrawESP(trader, PlayerController,
             PlayerName,
             Health, MaxHealth, distance,
@@ -800,36 +783,35 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
-								c_menu::u_vars::AIDistanceColor,
+			c_menu::u_vars::AINameColor,
+			c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
             c_menu::u_vars::AIDirectionColor,
             c_menu::u_vars::AIMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::AIMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = trader;
                 AimLocation = trader->Mesh->GetSocketLocation(trader->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
+						SetRotation(Target, AimLocation, EntityVisible);
 					}
 				}
-			}
+		}
+	}
 
     static void HandleScavenger(SDK::ABP_MasterScavenger_C* scavenger, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -843,11 +825,10 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, scavenger, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = scavenger->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
         DrawESP(scavenger, PlayerController,
             PlayerName,
             Health, MaxHealth, distance,
@@ -855,36 +836,35 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
-								c_menu::u_vars::AIDistanceColor,
+            c_menu::u_vars::AINameColor,
+            c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
             c_menu::u_vars::AIDirectionColor,
             c_menu::u_vars::AIMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::AIMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = scavenger;
                 AimLocation = scavenger->Mesh->GetSocketLocation(scavenger->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
+						SetRotation(Target, AimLocation, EntityVisible);
 				}
 			}
+		}
+	}
 
     static void HandleCivilian(SDK::ABP_RandomCivilian_C* civilian, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -898,11 +878,10 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, civilian, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = civilian->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
-        // Draw ESP
         DrawESP(civilian, PlayerController,
             PlayerName,
             Health, MaxHealth, distance,
@@ -910,7 +889,7 @@ private:
             c_menu::u_vars::CivilianShowHealth,
             c_menu::u_vars::CivilianShowDistance,
             c_menu::u_vars::CivilianEspSkeleton,
-								c_menu::u_vars::CivilianNameColor,
+			c_menu::u_vars::CivilianNameColor,
             c_menu::u_vars::CivilianDistanceColor,
             c_menu::u_vars::CivilianSkeletonVisibleColor,
             c_menu::u_vars::CivilianSkeletonHiddenColor,
@@ -918,7 +897,6 @@ private:
             c_menu::u_vars::CivilianMaxDistance
         );
 
-        // Handle Aimbot
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::CivilianMaxDistance) {
