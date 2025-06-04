@@ -330,6 +330,189 @@ public:
         WaypointSystem::WaypointManager::LoadWaypoints();
     }
 
+    static void DrawRadar() {
+        if (!c_menu::u_vars::ShowRadar) return;
+
+        SDK::UWorld* Gworld = SDK::UWorld::GetWorld();
+        if (!Gworld) return;
+
+        SDK::UGameInstance* GameInstance = Gworld->OwningGameInstance;
+        if (!GameInstance) return;
+
+        SDK::ULocalPlayer* LocalPlayer = GameInstance->LocalPlayers[0];
+        if (!LocalPlayer) return;
+
+        SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
+        if (!PlayerController) return;
+
+        SDK::ABP_PlayerCharacter_C* SelfPlayerCharacter = static_cast<SDK::ABP_PlayerCharacter_C*>(PlayerController->AcknowledgedPawn);
+        if (!SelfPlayerCharacter) return;
+
+        SDK::FVector MyLocation = SelfPlayerCharacter->K2_GetActorLocation();
+        SDK::FRotator MyRotation = SelfPlayerCharacter->K2_GetActorRotation();
+
+        ImDrawList* drawList = ImGui::GetForegroundDrawList();
+        float radarSize = c_menu::u_vars::RadarSize;
+        float radarX = c_menu::u_vars::RadarX;
+        float radarY = c_menu::u_vars::RadarY;
+
+        ImColor radarBackground = ImColor(0, 0, 0, 180);
+        ImColor radarBorder = ImColor(255, 255, 255, 255);
+
+        if (c_menu::showMenu) {
+            ImGui::SetNextWindowPos(ImVec2(radarX, radarY), ImGuiCond_FirstUseEver);
+            ImGui::SetNextWindowSize(ImVec2(radarSize, radarSize), ImGuiCond_FirstUseEver);
+            ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0, 0));
+            ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0);
+            ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0);
+            ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0, 0, 0, 0));
+            ImGui::Begin("Radar", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoBackground);
+            
+            ImVec2 windowPos = ImGui::GetWindowPos();
+            c_menu::u_vars::RadarX = windowPos.x;
+            c_menu::u_vars::RadarY = windowPos.y;
+            
+            ImGui::End();
+            ImGui::PopStyleColor();
+            ImGui::PopStyleVar(3);
+        }
+
+        drawList->AddRectFilled(
+            ImVec2(radarX, radarY),
+            ImVec2(radarX + radarSize, radarY + radarSize),
+            radarBackground
+        );
+
+        drawList->AddRect(
+            ImVec2(radarX, radarY),
+            ImVec2(radarX + radarSize, radarY + radarSize),
+            radarBorder
+        );
+
+        float centerX = radarX + radarSize / 2;
+        float centerY = radarY + radarSize / 2;
+        drawList->AddLine(
+            ImVec2(centerX - 5, centerY),
+            ImVec2(centerX + 5, centerY),
+            radarBorder
+        );
+        drawList->AddLine(
+            ImVec2(centerX, centerY - 5),
+            ImVec2(centerX, centerY + 5),
+            radarBorder
+        );
+
+        SDK::ULevel* PersistentLevel = Gworld->PersistentLevel;
+        if (!PersistentLevel) return;
+
+        uintptr_t Actors = *(uintptr_t*)((uintptr_t)PersistentLevel + 0x98);
+        if (!Actors) return;
+
+        int32_t ActorCount = *(int32_t*)((uintptr_t)PersistentLevel + 0xa0);
+        if (!ActorCount) return;
+
+        for (std::int32_t i = 0; i < ActorCount; i++) {
+            SDK::AActor* Actor = *(SDK::AActor**)(Actors + i * sizeof(uintptr_t));
+            if (!Actor) continue;
+
+            SDK::FVector ActorLocation = Actor->K2_GetActorLocation();
+            float distance = Utils::CalculateDistance(MyLocation, ActorLocation);
+            if (distance > c_menu::u_vars::RadarDistance) continue;
+
+            SDK::FVector RelativeLocation = ActorLocation - MyLocation;
+            float playerYaw = (MyRotation.Yaw * (3.14159f / 180.0f));
+            float angle = -(std::atan2(RelativeLocation.Y, RelativeLocation.X) - playerYaw) - (3.14159f / 2.0f);
+            
+            float scaledDistance = (distance / c_menu::u_vars::RadarDistance) * (radarSize / 2);
+
+            float dotX = centerX + (std::cos(angle) * scaledDistance);
+            float dotY = centerY + (std::sin(angle) * scaledDistance);
+
+            ImColor dotColor;
+            bool shouldDraw = false;
+            bool isPlayer = false;
+
+            if (Actor->IsA(SDK::ABP_PlayerCharacter_C::StaticClass()) && c_menu::u_vars::RadarShowPlayers) {
+                SDK::ABP_PlayerCharacter_C* player = static_cast<SDK::ABP_PlayerCharacter_C*>(Actor);
+                if (!player->PlayerDead_) {
+                    dotColor = c_menu::u_vars::RadarPlayerColor;
+                    shouldDraw = true;
+                    isPlayer = true;
+                }
+            }
+            else if (Actor->IsA(SDK::ABP_MasterZombie_C::StaticClass()) && c_menu::u_vars::RadarShowZombies) {
+                SDK::ABP_MasterZombie_C* zombie = static_cast<SDK::ABP_MasterZombie_C*>(Actor);
+                if (!zombie->IsDead_) {
+                    dotColor = c_menu::u_vars::RadarZombieColor;
+                    shouldDraw = true;
+                }
+            }
+            else if (Actor->IsA(SDK::ABP_MasterMilitary_C::StaticClass()) && c_menu::u_vars::RadarShowAI) {
+                SDK::ABP_MasterMilitary_C* military = static_cast<SDK::ABP_MasterMilitary_C*>(Actor);
+                if (!military->BP_AIComponent || !military->BP_AIComponent->Dead) {
+                    dotColor = c_menu::u_vars::RadarAIColor;
+                    shouldDraw = true;
+                }
+            }
+            else if (Actor->IsA(SDK::ABP_MasterTrader_C::StaticClass()) && c_menu::u_vars::RadarShowTraders) {
+                SDK::ABP_MasterTrader_C* trader = static_cast<SDK::ABP_MasterTrader_C*>(Actor);
+                if (!trader->BP_AIComponent || !trader->BP_AIComponent->Dead) {
+                    dotColor = c_menu::u_vars::RadarTraderColor;
+                    shouldDraw = true;
+                }
+            }
+            else if (Actor->IsA(SDK::ABP_MasterScavenger_C::StaticClass()) && c_menu::u_vars::RadarShowScavengers) {
+                SDK::ABP_MasterScavenger_C* scavenger = static_cast<SDK::ABP_MasterScavenger_C*>(Actor);
+                if (!scavenger->BP_AIComponent || !scavenger->BP_AIComponent->Dead) {
+                    dotColor = c_menu::u_vars::RadarScavengerColor;
+                    shouldDraw = true;
+                }
+            }
+            else if (Actor->IsA(SDK::ABP_MasterBandit_C::StaticClass()) && c_menu::u_vars::RadarShowBandits) {
+                SDK::ABP_MasterBandit_C* bandit = static_cast<SDK::ABP_MasterBandit_C*>(Actor);
+                if (!bandit->BP_AIComponent || !bandit->BP_AIComponent->Dead) {
+                    dotColor = c_menu::u_vars::RadarBanditColor;
+                    shouldDraw = true;
+                }
+            }
+            else if (Actor->IsA(SDK::ABP_RandomCivilian_C::StaticClass()) && c_menu::u_vars::RadarShowCivilians) {
+                SDK::ABP_RandomCivilian_C* civilian = static_cast<SDK::ABP_RandomCivilian_C*>(Actor);
+                if (!civilian->Dead) {
+                    dotColor = c_menu::u_vars::RadarCivilianColor;
+                    shouldDraw = true;
+                }
+            }
+
+            if (shouldDraw) {
+                drawList->AddCircleFilled(
+                    ImVec2(dotX, dotY),
+                    3.0f,
+                    dotColor
+                );
+
+                if (Actor->IsA(SDK::ACharacter::StaticClass())) {
+                    SDK::ACharacter* Character = static_cast<SDK::ACharacter*>(Actor);
+                    SDK::FRotator ActorRotation = Character->K2_GetActorRotation();
+                    float actorYaw = (ActorRotation.Yaw * (3.14159f / 180.0f));
+                    float directionAngle = -(actorYaw - playerYaw) - (3.14159f / 2.0f);
+
+                    float triangleSize = 6.0f;
+                    float triangleX = dotX + (std::cos(directionAngle) * triangleSize);
+                    float triangleY = dotY + (std::sin(directionAngle) * triangleSize);
+
+                    drawList->AddTriangleFilled(
+                        ImVec2(triangleX, triangleY),
+                        ImVec2(dotX + (std::cos(directionAngle + 2.5f) * triangleSize * 0.5f), 
+                               dotY + (std::sin(directionAngle + 2.5f) * triangleSize * 0.5f)),
+                        ImVec2(dotX + (std::cos(directionAngle - 2.5f) * triangleSize * 0.5f),
+                               dotY + (std::sin(directionAngle - 2.5f) * triangleSize * 0.5f)),
+                        dotColor
+                    );
+                }
+            }
+        }
+    }
+
     static void Tick() {
         if (c_menu::u_vars::SilentAim || c_menu::u_vars::Aimbot)
             ImGui::GetForegroundDrawList()->AddCircle(
@@ -351,7 +534,7 @@ public:
         if (!PlayerController) return;
 
         if (WaypointSystem::WaypointManager::showWaypoints) {
-            SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
             for (const auto& waypoint : WaypointSystem::WaypointManager::waypoints) {
                 float distance = Utils::CalculateDistance(MyLocation, waypoint.location);
                 if (distance <= WaypointSystem::WaypointManager::maxDistance) {
@@ -432,6 +615,8 @@ public:
                 HandleCivilian(static_cast<SDK::ABP_RandomCivilian_C*>(Actor), PlayerController, ClosestDistance, Target, AimLocation);
             }
         }
+
+        DrawRadar();
     }
 
 private:
@@ -558,7 +743,7 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, zombie, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = zombie->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
@@ -580,24 +765,24 @@ private:
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::ZombieMaxDistance) {
-				static int boneId = skeleton::head;
+						static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-				}
+						}
 
-				ClosestDistance = Distance;
+						ClosestDistance = Distance;
                 Target = zombie;
                 AimLocation = zombie->Mesh->GetSocketLocation(zombie->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
 								SetRotation(Target, AimLocation, EntityVisible);
+						}
+					}
 				}
 			}
-		}
-	}
 
     static void HandlePlayer(SDK::ABP_PlayerCharacter_C* player, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -611,7 +796,7 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, player, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = player->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
@@ -634,24 +819,24 @@ private:
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::PlayerMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = player;
                 AimLocation = player->Mesh->GetSocketLocation(player->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
+						SetRotation(Target, AimLocation, EntityVisible);
 				}
 			}
+		}
+	}
 
     static void HandleMilitary(SDK::ABP_MasterMilitary_C* military, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -665,7 +850,7 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, military, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = military->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
@@ -676,7 +861,7 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
+            c_menu::u_vars::AINameColor,
             c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
@@ -782,8 +967,8 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
-								c_menu::u_vars::AIDistanceColor,
+            c_menu::u_vars::AINameColor,
+			c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
             c_menu::u_vars::AIDirectionColor,
@@ -793,24 +978,24 @@ private:
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::AIMaxDistance) {
-						static int boneId = skeleton::head;
+				static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-						}
+				}
 
-						ClosestDistance = Distance;
+				ClosestDistance = Distance;
                 Target = trader;
                 AimLocation = trader->Mesh->GetSocketLocation(trader->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-								SetRotation(Target, AimLocation, EntityVisible);
-						}
-					}
+						SetRotation(Target, AimLocation, EntityVisible);
 				}
 			}
+		}
+	}
 
     static void HandleScavenger(SDK::ABP_MasterScavenger_C* scavenger, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -824,7 +1009,7 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, scavenger, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+	    SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = scavenger->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
@@ -835,8 +1020,8 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-								c_menu::u_vars::AINameColor,
-								c_menu::u_vars::AIDistanceColor,
+			c_menu::u_vars::AINameColor,
+			c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
             c_menu::u_vars::AIDirectionColor,
@@ -888,7 +1073,7 @@ private:
             c_menu::u_vars::CivilianShowHealth,
             c_menu::u_vars::CivilianShowDistance,
             c_menu::u_vars::CivilianEspSkeleton,
-								c_menu::u_vars::CivilianNameColor,
+            c_menu::u_vars::CivilianNameColor,
             c_menu::u_vars::CivilianDistanceColor,
             c_menu::u_vars::CivilianSkeletonVisibleColor,
             c_menu::u_vars::CivilianSkeletonHiddenColor,

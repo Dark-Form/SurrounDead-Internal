@@ -134,6 +134,40 @@ public:
 
 		static inline const char* BoneList[] = { "Head", "Body", "Pelvis" };
 		static inline int AimBone = 0;
+
+		// Entity Counters
+		static inline bool ShowEntityCounters = true;
+		static inline bool ShowZombieCount = true;
+		static inline bool ShowAICount = true;
+		static inline bool ShowPlayerCount = true;
+		static inline bool ShowCivilianCount = true;
+		static inline bool ShowTraderCount = true;
+		static inline bool ShowScavengerCount = true;
+		static inline bool ShowBanditCount = true;
+		static inline ImColor CounterTextColor = ImColor(255, 255, 255);
+
+		// Radar Settings
+		static inline bool ShowRadar = true;
+		static inline float RadarSize = 200.0f;
+		static inline float RadarDistance = 100.0f;
+		static inline float RadarX = 20.0f;
+		static inline float RadarY = 20.0f;
+		static inline bool RadarShowPlayers = true;
+		static inline bool RadarShowZombies = true;
+		static inline bool RadarShowAI = true;
+		static inline bool RadarShowTraders = true;
+		static inline bool RadarShowScavengers = true;
+		static inline bool RadarShowBandits = true;
+		static inline bool RadarShowCivilians = true;
+		static inline ImColor RadarBackgroundColor = ImColor(0, 0, 0, 180);
+		static inline ImColor RadarBorderColor = ImColor(255, 255, 255, 255);
+		static inline ImColor RadarPlayerColor = ImColor(0, 255, 0, 255);
+		static inline ImColor RadarZombieColor = ImColor(255, 0, 0, 255);
+		static inline ImColor RadarAIColor = ImColor(0, 0, 255, 255);
+		static inline ImColor RadarTraderColor = ImColor(255, 255, 0, 255);
+		static inline ImColor RadarScavengerColor = ImColor(255, 165, 0, 255);
+		static inline ImColor RadarBanditColor = ImColor(255, 0, 255, 255);
+		static inline ImColor RadarCivilianColor = ImColor(255, 255, 255, 255);
 	};
 
 	static void Tick()
@@ -610,6 +644,75 @@ public:
 									}
 								}
 								ImGui::EndGroup();
+							}
+						}
+						ImGui::EndGroup();
+						ImGui::EndTabItem();
+					}
+
+					if (ImGui::BeginTabItem("Radar"))
+					{
+						ImGui::BeginGroup();
+						{
+							ImGui::Checkbox("Show Radar", &u_vars::ShowRadar);
+							if (u_vars::ShowRadar)
+							{
+								ImGui::BeginChild("RadarSettings", ImVec2(ImGui::GetWindowWidth() * 0.5f - 20, 0), true);
+								{
+									ImGui::Text("Radar Settings");
+									ImGui::Separator();
+									
+									ImGui::Text("Size and Distance");
+									ImGui::SliderFloat("Size", &u_vars::RadarSize, 100.0f, 500.0f, "%.0f");
+									ImGui::SliderFloat("Distance", &u_vars::RadarDistance, 50.0f, 500.0f, "%.0fm");
+									
+									ImGui::Spacing();
+									ImGui::Text("Tip: Drag the radar when menu is open to reposition");
+								}
+								ImGui::EndChild();
+
+								ImGui::SameLine();
+
+								ImGui::BeginChild("RadarEntities", ImVec2(0, 0), true);
+								{
+									ImGui::Text("Entity Settings");
+									ImGui::Separator();
+
+									ImGui::Columns(2, "EntityColumns", false);
+									{
+										ImGui::Text("Entity Types");
+										ImGui::Checkbox("Players", &u_vars::RadarShowPlayers);
+										ImGui::Checkbox("Zombies", &u_vars::RadarShowZombies);
+										ImGui::Checkbox("AI", &u_vars::RadarShowAI);
+										ImGui::Checkbox("Traders", &u_vars::RadarShowTraders);
+
+										ImGui::NextColumn();
+
+										ImGui::Text("Entity Colors");
+										ImGui::ColorEdit4("Players##Color", (float*)&u_vars::RadarPlayerColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+										ImGui::ColorEdit4("Zombies##Color", (float*)&u_vars::RadarZombieColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+										ImGui::ColorEdit4("AI##Color", (float*)&u_vars::RadarAIColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+										ImGui::ColorEdit4("Traders##Color", (float*)&u_vars::RadarTraderColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+									}
+									ImGui::Columns(1);
+
+									ImGui::Separator();
+
+									ImGui::Columns(2, "EntityColumns2", false);
+									{
+										ImGui::Checkbox("Scavengers", &u_vars::RadarShowScavengers);
+										ImGui::Checkbox("Bandits", &u_vars::RadarShowBandits);
+										ImGui::Checkbox("Civilians", &u_vars::RadarShowCivilians);
+
+										ImGui::NextColumn();
+
+										ImGui::ColorEdit4("Scavengers##Color", (float*)&u_vars::RadarScavengerColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+										ImGui::ColorEdit4("Bandits##Color", (float*)&u_vars::RadarBanditColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+										ImGui::ColorEdit4("Civilians##Color", (float*)&u_vars::RadarCivilianColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+									}
+									ImGui::Columns(1);
+								}
+								ImGui::EndChild();
 							}
 						}
 						ImGui::EndGroup();
