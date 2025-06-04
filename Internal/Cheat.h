@@ -348,8 +348,8 @@ public:
         SDK::ABP_PlayerCharacter_C* SelfPlayerCharacter = static_cast<SDK::ABP_PlayerCharacter_C*>(PlayerController->AcknowledgedPawn);
         if (!SelfPlayerCharacter) return;
 
-        SDK::FVector MyLocation = SelfPlayerCharacter->K2_GetActorLocation();
-        SDK::FRotator MyRotation = SelfPlayerCharacter->K2_GetActorRotation();
+        SDK::FVector MyLocation = SelfPlayerCharacter->Camera->K2_GetComponentLocation();
+        SDK::FRotator MyRotation = SelfPlayerCharacter->Camera->K2_GetComponentRotation();
 
         ImDrawList* drawList = ImGui::GetForegroundDrawList();
         float radarSize = c_menu::u_vars::RadarSize;
@@ -357,7 +357,8 @@ public:
         float radarY = c_menu::u_vars::RadarY;
 
         ImColor radarBackground = ImColor(0, 0, 0, 180);
-        ImColor radarBorder = ImColor(255, 255, 255, 255);
+        ImColor radarBorder = ImColor(150, 150, 150, 180);
+        ImColor Cross = ImColor(255, 255, 255, 255);
 
         if (c_menu::showMenu) {
             ImGui::SetNextWindowPos(ImVec2(radarX, radarY), ImGuiCond_FirstUseEver);
@@ -394,12 +395,12 @@ public:
         drawList->AddLine(
             ImVec2(centerX - 5, centerY),
             ImVec2(centerX + 5, centerY),
-            radarBorder
+            Cross
         );
         drawList->AddLine(
             ImVec2(centerX, centerY - 5),
             ImVec2(centerX, centerY + 5),
-            radarBorder
+            Cross
         );
 
         SDK::ULevel* PersistentLevel = Gworld->PersistentLevel;
@@ -434,6 +435,9 @@ public:
 
             if (Actor->IsA(SDK::ABP_PlayerCharacter_C::StaticClass()) && c_menu::u_vars::RadarShowPlayers) {
                 SDK::ABP_PlayerCharacter_C* player = static_cast<SDK::ABP_PlayerCharacter_C*>(Actor);
+                if (player == SelfPlayerCharacter)
+                    continue;
+
                 if (!player->PlayerDead_) {
                     dotColor = c_menu::u_vars::RadarPlayerColor;
                     shouldDraw = true;
@@ -743,7 +747,7 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, zombie, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = zombie->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
@@ -819,24 +823,24 @@ private:
         if (c_menu::u_vars::Aimbot) {
             float Distance = Utils::Distance2D(ScreenCenter, Head);
             if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::PlayerMaxDistance) {
-				static int boneId = skeleton::head;
+						static int boneId = skeleton::head;
                 switch (c_menu::u_vars::AimBone) {
                 case 0: boneId = skeleton::head; break;
                 case 1: boneId = skeleton::spine_02; break;
                 case 2: boneId = skeleton::Pelvis; break;
-				}
+						}
 
-				ClosestDistance = Distance;
+						ClosestDistance = Distance;
                 Target = player;
                 AimLocation = player->Mesh->GetSocketLocation(player->Mesh->GetBoneName(boneId));
 
                 if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
                     if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
-						SetRotation(Target, AimLocation, EntityVisible);
+								SetRotation(Target, AimLocation, EntityVisible);
+						}
+					}
 				}
 			}
-		}
-	}
 
     static void HandleMilitary(SDK::ABP_MasterMilitary_C* military, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
@@ -850,7 +854,7 @@ private:
         SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, military, skeleton::head);
         if (!Head.X || !Head.Y) return;
 
-		SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+				SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
         SDK::FVector TargetLocation = military->K2_GetActorLocation();
         float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
 
@@ -861,7 +865,7 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-            c_menu::u_vars::AINameColor,
+								c_menu::u_vars::AINameColor,
             c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
@@ -967,7 +971,7 @@ private:
             c_menu::u_vars::AIShowHealth,
             c_menu::u_vars::AIShowDistance,
             c_menu::u_vars::AIEspSkeleton,
-            c_menu::u_vars::AINameColor,
+								c_menu::u_vars::AINameColor,
 			c_menu::u_vars::AIDistanceColor,
             c_menu::u_vars::AISkeletonVisibleColor,
             c_menu::u_vars::AISkeletonHiddenColor,
@@ -1073,7 +1077,7 @@ private:
             c_menu::u_vars::CivilianShowHealth,
             c_menu::u_vars::CivilianShowDistance,
             c_menu::u_vars::CivilianEspSkeleton,
-            c_menu::u_vars::CivilianNameColor,
+								c_menu::u_vars::CivilianNameColor,
             c_menu::u_vars::CivilianDistanceColor,
             c_menu::u_vars::CivilianSkeletonVisibleColor,
             c_menu::u_vars::CivilianSkeletonHiddenColor,
