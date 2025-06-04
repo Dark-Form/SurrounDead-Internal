@@ -120,8 +120,7 @@ public:
 
 		static inline bool NoRecoil = true;
 		static inline bool FullAuto = false;
-		static inline bool CustomFireRate = false;
-		static inline float FireRate = 15.0f;
+		static inline bool QuickSwing = false;
 		static inline bool InfAmmo = false;
 
 		static inline bool InstaLoot = false;
@@ -134,17 +133,6 @@ public:
 
 		static inline const char* BoneList[] = { "Head", "Body", "Pelvis" };
 		static inline int AimBone = 0;
-
-		// Entity Counters
-		static inline bool ShowEntityCounters = true;
-		static inline bool ShowZombieCount = true;
-		static inline bool ShowAICount = true;
-		static inline bool ShowPlayerCount = true;
-		static inline bool ShowCivilianCount = true;
-		static inline bool ShowTraderCount = true;
-		static inline bool ShowScavengerCount = true;
-		static inline bool ShowBanditCount = true;
-		static inline ImColor CounterTextColor = ImColor(255, 255, 255);
 
 		// Radar Settings
 		static inline bool ShowRadar = true;
@@ -159,6 +147,7 @@ public:
 		static inline bool RadarShowScavengers = true;
 		static inline bool RadarShowBandits = true;
 		static inline bool RadarShowCivilians = true;
+		static inline bool RadarShowBosses = true;
 		static inline ImColor RadarBackgroundColor = ImColor(0, 0, 0, 180);
 		static inline ImColor RadarBorderColor = ImColor(255, 255, 255, 255);
 		static inline ImColor RadarPlayerColor = ImColor(0, 255, 0, 255);
@@ -168,6 +157,7 @@ public:
 		static inline ImColor RadarScavengerColor = ImColor(255, 165, 0, 255);
 		static inline ImColor RadarBanditColor = ImColor(255, 0, 255, 255);
 		static inline ImColor RadarCivilianColor = ImColor(255, 255, 255, 255);
+		static inline ImColor RadarBossColor = ImColor(255, 0, 255, 255);
 	};
 
 	static void Tick()
@@ -515,7 +505,7 @@ public:
 						ImGui::EndTabItem();
 					}
 
-					if (ImGui::BeginTabItem("Player"))
+					if (ImGui::BeginTabItem("Misc"))
 					{
 						ImGui::BeginGroup();
 						{
@@ -524,6 +514,7 @@ public:
 							ImGui::Checkbox("Infinite Staturation", &u_vars::NoDrain);
 							//ImGui::Checkbox("No Recoil", &u_vars::NoRecoil);
 							ImGui::Checkbox("Full Auto", &u_vars::FullAuto);
+							ImGui::Checkbox("Quick Swing", &u_vars::QuickSwing);
 							//ImGui::Checkbox("Infinite Ammo", &u_vars::InfAmmo);
 							ImGui::Checkbox("No Lockpick Break", &u_vars::InfLockPick);
 							ImGui::Checkbox("SpeedHack", &u_vars::SpeedHack);
@@ -685,6 +676,7 @@ public:
 										ImGui::Checkbox("Zombies", &u_vars::RadarShowZombies);
 										ImGui::Checkbox("AI", &u_vars::RadarShowAI);
 										ImGui::Checkbox("Traders", &u_vars::RadarShowTraders);
+										ImGui::Checkbox("Bosses", &u_vars::RadarShowBosses);
 
 										ImGui::NextColumn();
 
@@ -693,6 +685,7 @@ public:
 										ImGui::ColorEdit4("Zombies##Color", (float*)&u_vars::RadarZombieColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
 										ImGui::ColorEdit4("AI##Color", (float*)&u_vars::RadarAIColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
 										ImGui::ColorEdit4("Traders##Color", (float*)&u_vars::RadarTraderColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
+										ImGui::ColorEdit4("Bosses##Color", (float*)&u_vars::RadarBossColor, ImGuiColorEditFlags_NoInputs | ImGuiColorEditFlags_AlphaBar);
 									}
 									ImGui::Columns(1);
 

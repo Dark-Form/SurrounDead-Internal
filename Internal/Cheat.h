@@ -486,6 +486,13 @@ public:
                     shouldDraw = true;
                 }
             }
+            else if (Actor->IsA(SDK::ABP_ZombieBoss_C::StaticClass()) && c_menu::u_vars::RadarShowBosses) {
+                SDK::ABP_ZombieBoss_C* boss = static_cast<SDK::ABP_ZombieBoss_C*>(Actor);
+                if (!boss->IsDead_) {
+                    dotColor = c_menu::u_vars::RadarBossColor;
+                    shouldDraw = true;
+                }
+            }
 
             if (shouldDraw) {
                 drawList->AddCircleFilled(
@@ -500,9 +507,9 @@ public:
                     float actorYaw = (ActorRotation.Yaw * (3.14159f / 180.0f));
                     float directionAngle = actorYaw - playerYaw;
 
-                    float triangleSize = 2.0f;
-                    float baseDistance = triangleSize * 2.0f;
-                    float tipDistance = triangleSize * 3.0f;
+                    float triangleSize = 3.0f;
+                    float baseDistance = triangleSize * 3.0f;
+                    float tipDistance = triangleSize * 4.0f;
 
                     float baseX = dotX + (std::sin(directionAngle) * baseDistance);
                     float baseY = dotY - (std::cos(directionAngle) * baseDistance);
@@ -618,6 +625,9 @@ public:
             else if (Actor->IsA(SDK::ABP_MasterBandit_C::StaticClass())) {
                 HandleBandit(static_cast<SDK::ABP_MasterBandit_C*>(Actor), PlayerController, ClosestDistance, Target, AimLocation);
             }
+            else if (Actor->IsA(SDK::ABP_ZombieBoss_C::StaticClass())) {
+                HandleBoss(static_cast<SDK::ABP_ZombieBoss_C*>(Actor), PlayerController, ClosestDistance, Target, AimLocation);
+            }
             else if (Actor->IsA(SDK::ABP_MasterTrader_C::StaticClass())) {
                 HandleTrader(static_cast<SDK::ABP_MasterTrader_C*>(Actor), PlayerController, ClosestDistance, Target, AimLocation);
             }
@@ -642,9 +652,18 @@ private:
                 auto neededHealth = SelfPlayerCharacter->MedicalComponent->MaxHealth - SelfPlayerCharacter->MedicalComponent->Health;
                 SelfPlayerCharacter->MedicalComponent->IncreaseHealth(neededHealth);
                 SelfPlayerCharacter->bCanBeDamaged = false;
+                SelfPlayerCharacter->MedicalComponent->BrokenBone_ = false;
+                SelfPlayerCharacter->MedicalComponent->Bleed_ = false;
+                SelfPlayerCharacter->MedicalComponent->HeavyBleed_ = false;
+                SelfPlayerCharacter->MedicalComponent->RadiationSickness_ = false;
                 SelfPlayerCharacter->MedicalComponent->bIsActive = false;
                 SelfPlayerCharacter->PlayerDead_ = false;
             }
+        }
+        else
+        {
+            SelfPlayerCharacter->bCanBeDamaged = true;
+            SelfPlayerCharacter->MedicalComponent->bIsActive = true;
         }
 
         if (c_menu::u_vars::NoDrain) {
@@ -709,6 +728,11 @@ private:
                 return;
 
             firearm->BP_WeaponsPickupComponent->IsWeaponAutomatic_ = true;
+        }
+
+        if (c_menu::u_vars::QuickSwing)
+        {
+            firearm->BP_WeaponsPickupComponent->DelayBetweenSwings = 0.0f;
         }
 
         if (c_menu::u_vars::InfAmmo) {
@@ -956,6 +980,59 @@ private:
 					}
 				}
 			}
+
+    static void HandleBoss(SDK::ABP_ZombieBoss_C* boss, SDK::APlayerController* PlayerController,
+        float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
+        if (!boss || !boss->DamageComponent || boss->IsDead_) return;
+
+        auto MaxHealth = boss->DamageComponent->MaxHealth;
+        auto Health = boss->DamageComponent->CurrentHealth;
+        auto PlayerName = boss->AIName;
+        bool EntityVisible = PlayerController->LineOfSightTo(boss, { 0.f,0.f,0.f }, false);
+
+        SDK::FVector2D Head = Utils::BoneToScreenLocation(PlayerController, boss, skeleton::head);
+        if (!Head.X || !Head.Y) return;
+
+        SDK::FVector MyLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+        SDK::FVector TargetLocation = boss->K2_GetActorLocation();
+        float distance = Utils::CalculateDistance(MyLocation, TargetLocation);
+
+        DrawESP(boss, PlayerController,
+            PlayerName.ToString().c_str(),
+            Health, MaxHealth, distance,
+            c_menu::u_vars::BossShowName,
+            c_menu::u_vars::BossShowHealth,
+            c_menu::u_vars::BossShowDistance,
+            c_menu::u_vars::BossEspSkeleton,
+            c_menu::u_vars::BossNameColor,
+            c_menu::u_vars::BossDistanceColor,
+            c_menu::u_vars::BossSkeletonVisibleColor,
+            c_menu::u_vars::BossSkeletonHiddenColor,
+            c_menu::u_vars::BossDirectionColor,
+            c_menu::u_vars::BossMaxDistance
+        );
+
+        if (c_menu::u_vars::Aimbot) {
+            float Distance = Utils::Distance2D(ScreenCenter, Head);
+            if (Distance < ClosestDistance && Distance < c_menu::u_vars::FovRadius && distance <= c_menu::u_vars::BossMaxDistance) {
+                static int boneId = skeleton::head;
+                switch (c_menu::u_vars::AimBone) {
+                case 0: boneId = skeleton::head; break;
+                case 1: boneId = skeleton::spine_02; break;
+                case 2: boneId = skeleton::Pelvis; break;
+                }
+
+                ClosestDistance = Distance;
+                Target = boss;
+                AimLocation = boss->Mesh->GetSocketLocation(boss->Mesh->GetBoneName(boneId));
+
+                if (AimLocation.X && AimLocation.Y && AimLocation.Z) {
+                    if (GetAsyncKeyState(VK_XBUTTON1) & 0x8000)
+                        SetRotation(Target, AimLocation, EntityVisible);
+                }
+            }
+        }
+    }
 
     static void HandleTrader(SDK::ABP_MasterTrader_C* trader, SDK::APlayerController* PlayerController,
         float& ClosestDistance, SDK::ACharacter*& Target, SDK::FVector& AimLocation) {
