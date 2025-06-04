@@ -348,7 +348,7 @@ public:
         SDK::ABP_PlayerCharacter_C* SelfPlayerCharacter = static_cast<SDK::ABP_PlayerCharacter_C*>(PlayerController->AcknowledgedPawn);
         if (!SelfPlayerCharacter) return;
 
-        SDK::FVector MyLocation = SelfPlayerCharacter->Camera->K2_GetComponentLocation();
+        SDK::FVector MyLocation = SelfPlayerCharacter->K2_GetActorLocation();
         SDK::FRotator MyRotation = SelfPlayerCharacter->Camera->K2_GetComponentRotation();
 
         ImDrawList* drawList = ImGui::GetForegroundDrawList();
@@ -357,8 +357,8 @@ public:
         float radarY = c_menu::u_vars::RadarY;
 
         ImColor radarBackground = ImColor(0, 0, 0, 180);
-        ImColor radarBorder = ImColor(150, 150, 150, 180);
-        ImColor Cross = ImColor(255, 255, 255, 255);
+        ImColor radarBorder = ImColor(100, 100, 100, 180);
+        ImColor Cross = ImColor(255, 255, 255, 180);
 
         if (c_menu::showMenu) {
             ImGui::SetNextWindowPos(ImVec2(radarX, radarY), ImGuiCond_FirstUseEver);
@@ -422,12 +422,12 @@ public:
 
             SDK::FVector RelativeLocation = ActorLocation - MyLocation;
             float playerYaw = (MyRotation.Yaw * (3.14159f / 180.0f));
-            float angle = -(std::atan2(RelativeLocation.Y, RelativeLocation.X) - playerYaw) - (3.14159f / 2.0f);
+            float angle = std::atan2(RelativeLocation.Y, RelativeLocation.X) - playerYaw;
             
             float scaledDistance = (distance / c_menu::u_vars::RadarDistance) * (radarSize / 2);
 
-            float dotX = centerX + (std::cos(angle) * scaledDistance);
-            float dotY = centerY + (std::sin(angle) * scaledDistance);
+            float dotX = centerX + (std::sin(angle) * scaledDistance);
+            float dotY = centerY - (std::cos(angle) * scaledDistance);
 
             ImColor dotColor;
             bool shouldDraw = false;
@@ -498,18 +498,27 @@ public:
                     SDK::ACharacter* Character = static_cast<SDK::ACharacter*>(Actor);
                     SDK::FRotator ActorRotation = Character->K2_GetActorRotation();
                     float actorYaw = (ActorRotation.Yaw * (3.14159f / 180.0f));
-                    float directionAngle = -(actorYaw - playerYaw) - (3.14159f / 2.0f);
+                    float directionAngle = actorYaw - playerYaw;
 
-                    float triangleSize = 6.0f;
-                    float triangleX = dotX + (std::cos(directionAngle) * triangleSize);
-                    float triangleY = dotY + (std::sin(directionAngle) * triangleSize);
+                    float triangleSize = 2.0f;
+                    float baseDistance = triangleSize * 2.0f;
+                    float tipDistance = triangleSize * 3.0f;
+
+                    float baseX = dotX + (std::sin(directionAngle) * baseDistance);
+                    float baseY = dotY - (std::cos(directionAngle) * baseDistance);
+
+                    float tipX = dotX + (std::sin(directionAngle) * tipDistance);
+                    float tipY = dotY - (std::cos(directionAngle) * tipDistance);
+
+                    float base1X = baseX + (std::sin(directionAngle + 2.5f) * triangleSize);
+                    float base1Y = baseY - (std::cos(directionAngle + 2.5f) * triangleSize);
+                    float base2X = baseX + (std::sin(directionAngle - 2.5f) * triangleSize);
+                    float base2Y = baseY - (std::cos(directionAngle - 2.5f) * triangleSize);
 
                     drawList->AddTriangleFilled(
-                        ImVec2(triangleX, triangleY),
-                        ImVec2(dotX + (std::cos(directionAngle + 2.5f) * triangleSize * 0.5f), 
-                               dotY + (std::sin(directionAngle + 2.5f) * triangleSize * 0.5f)),
-                        ImVec2(dotX + (std::cos(directionAngle - 2.5f) * triangleSize * 0.5f),
-                               dotY + (std::sin(directionAngle - 2.5f) * triangleSize * 0.5f)),
+                        ImVec2(tipX, tipY),
+                        ImVec2(base1X, base1Y),
+                        ImVec2(base2X, base2Y),
                         dotColor
                     );
                 }
