@@ -733,6 +733,7 @@ private:
         if (c_menu::u_vars::QuickSwing)
         {
             firearm->BP_WeaponsPickupComponent->DelayBetweenSwings = 0.0f;
+            firearm->BP_WeaponsPickupComponent->SwingSpeed = 999.0f;
         }
 
         if (c_menu::u_vars::InfAmmo) {
